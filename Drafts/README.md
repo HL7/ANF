@@ -1,0 +1,1 @@
+This directory will contain draft versions of the Hl7 ANF ballot submission document.

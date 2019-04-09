@@ -1,0 +1,1 @@
+This directory will contain final versions of the Hl7 ANF ballot submission document.
