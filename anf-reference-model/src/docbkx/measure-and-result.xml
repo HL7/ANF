@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Measure and Result</title>
+    <para>A unique aspect of the ANF Model is that all measures and results are numeric ranges. The
+        hierarchy of classes to represent these is shown in Figure 10,
+            “Result Hierarchy”. An important point to notice in this class diagram is that
+        the ANF Model does not allow coded results, only a numeric interval is possible. </para>
+    <figure>
+        <title>Result Hierarchy</title>
+        
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="images/result_hierarchy.png" scalefit="1" width="100%" contentdepth="100%"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+
+    <section>
+        <title>Measure </title>
+        <para>Measure captures measurable elements of clinical statements , e.g. the results of test procedures, time periods, frequencies of repetitions
+            for procedures or medication administrations. Note that the inherited attributes from
+            the Interval class will be discussed here.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>lowerBound</title>
+        <para/>
+        <para>Lowerbound represents the lower bound of a measurableelement. This can be the lower bound of a range: For the “Administration of 25 to 50 mg
+            of medication X” the lower bound is 25. For a test result, which is not a range, lower
+            and upper bound are the same. Example: systolic blood pressure 110 mmHg. The lower and
+            upper bound are both 110 mmHg.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>upperBound</title>
+        <para> </para>
+        <para/>
+        <para>Upper bound represents the upper bound of a measurable element. This can be the upper
+            boundary of a range: For the “Administration of 25 to 50 mg of medication X” the upper
+            bound is 50 mg. In cases, where the measurable element does not represent a range, upper
+            and lower bound have the same value.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>includeLowerBound</title>
+        <para> </para>
+        <para>Includelower bound states whether the lower bound in the interval is included in the
+            interval. In the medication examples above, the lower bound would be included. The lower
+            range dose of 25 mg of medication X dose can be administered.</para>
+        <para>Theinclusion or exclusion of lower bound is needed to express measurable elements
+            which include relative properties, such as “greater than”, “less than” and others.
+            Example: “Persistent cough for more than 10 days”. If a lower bound of “10” is chosen,
+            it would not be included, because the example states: <emphasis role="underline"
+                >more</emphasis> than 10 days. Choosing “11” would require to include the lower
+            bound.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>includeUpperBound</title>
+        <para> </para>
+        <para>Include upper bound states whether the upper bound in the interval is included in the
+            interval. Similar to lower bound, where the measurable element has relative properties,
+            the same rules apply. If the upper bound of a measure is not defined, e.g. “blood
+            glucose measurement daily for at least 2 weeks”, the upper bound will be captured as
+            “inf” (infinite). Infinite as an upper bound is never included.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>Resolution</title>
+        <para> </para>
+        <para>TheResolution within a measure defines the possible or allowed increments in which the
+            measured “thing” can be counted. In the example of the systolic blood pressure of 110
+            mmHg, the resolution is “1”, because the blood pressure measurement result can be
+            counted in 1 mmHg increments. The Resolution is not always defined or known. Example: a
+            clinical statement like “History of breast cancer” implies an undefined amount of time
+            in the past and it is not stated, if it is years, months, etc.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>measureSemantic</title>
+        <para> </para>
+        <para>Measure semantic represents the unit of measure. It is described using a logical
+            expression. In systolic bloodpressure, the unit of measure is millimeters of mercury,
+            and thus the measure semantic is a SNOMED CT concept: 259018001 |Millimeter of mercury
+            (qualifier value). For blood glucose measurement daily for 2 weeks, the measure semantic
+            would be “258705008 |week (qualifier value)”. In cases where the measure pertains to
+            something relative to the statement time, as in the example above of “History of breast
+            cancer” the standardized time/date format ISO 8601 is used for the measure semantic: ISO
+            8601 prior to statement time.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>InterventionResult</title>
+        <para> </para>
+        <para>Intervention Result is a result, thus inheriting all the attributes of Result, and
+            adds the attribute <emphasis role="italic">status</emphasis>, which is a coded value
+            representing the current status of the intervention.</para>
+        <figure>
+            <title>Intervention Result</title>
+            
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/intervention_results.png" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para> </para>
+    </section>
+    <section>
+        <title>ObservationResult</title>
+        <para> </para>
+        <para> Observation Result is a result, thus inheriting all the attributes of Result, and
+            adds the attributes <emphasis role="italic">healthRisk </emphasis>and <emphasis
+                role="italic">normalRange</emphasis>. Health Risk is used to flag a result with
+            coded values such as 'low', 'normal', high', and 'critical'. Normal Range is the
+            interval of values that are normal.</para>
+    </section>
+</section>

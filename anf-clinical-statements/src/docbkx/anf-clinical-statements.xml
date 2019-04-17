@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>ANF Clinical Statements</title>
+    <para>In the context of the ANF Model, aclinical statement represents an entry in the patient
+        record that documents in a structured/computable manner clinical information related to the
+        patient that is asserted by a particular source, recorded, and potentially verified. </para>
+    <para> </para>
+    <para>Clinicians author clinical statements and enter them into their organization’s electronic
+        health record (EHR). Clinicians typically enter the
+        information via a manner that we call here the clinical input form (CIF). However, the CIF
+        is not a literal form that clinicians select and enter data in. Rather, it refers to the
+        manner in which information is presented to the clinicians and how they enter the data, such
+        as by constraining the information to allow only certain values to be entered, such as
+        through a drop-down list or radio button, or breaking up large chunks of related information
+        into smaller parts.</para>
+    
+    <para><emphasis role="bold"><emphasis role="underline">Examples:</emphasis></emphasis></para>
+  
+    <itemizedlist>
+        <listitem>
+            <para>Clinicians can measure a patient’s pulse rate by different methods, e.g. by
+                palpation of the radial pulse or by using a doppler ultrasound device. The recording
+                of the pulse rate to be entered in a CIF of different Electronic Medical Record
+                (EMR) Systems in different ways. </para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>One EMR could display a set of options to choose from:</para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Pulse rate by Palpation</para>
+        </listitem>
+        <listitem>
+            <para>Pulse rate by Doppler</para>
+        </listitem>
+        <listitem>
+            <para>Pulse rate by Finger Tip Pulse Oximeter</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>The clinician would make a choice and then record the measurement result in a text
+        field.</para>
+    <para> </para>
+    <para>A different EMR could display a text field with a label “Pulse Rate” to enter the
+        measurement result and in addition offer options to choose from to record the method:</para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Palpation</para>
+        </listitem>
+        <listitem>
+            <para>Doppler</para>
+        </listitem>
+        <listitem>
+            <para>Finger Tip Pulse Oximeter</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>In addition to the kind of device used, there could be a choice of the measurement being
+        taken at rest or exercised. Again, this could be displayed in different ways.</para>
+    <para> </para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>The current guidance for blood pressure measurements for adults includes the body
+                site, the blood pressure cuff size to use as well as some prerequisites. The patient
+                should be in a sitting position for at least 5 minutes and should have urinated no
+                more than 30 minutes before the measurement.</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>There are different ways the measurement result could be entered into a form in an EMR.
+        Display options for the user could be, e.g. a text field to enter the measurement result
+        (e.g. 120 mmHg) with the label of the complete guideline:</para>
+    <para> </para>
+    <para>“Arterial blood pressure ____ mmHg, taken on right brachial artery, using adult size blood
+        pressure cuff, patient in sitting position for at least 5 minutes, urinated no more than 30
+        minutes prior to measurement”. For the user, this would be the easiest way to document the
+        measurement. However, the various parts of information about the body site, the blood
+        pressure cuff, patient position etc. would be lost to any attempt of data retrieval.</para>
+    <para> </para>
+    <para> </para>
+    <para>A different EMR could display a text field for the result and lists of choices for the
+        body site:</para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Right brachial artery</para>
+        </listitem>
+        <listitem>
+            <para>Left brachial artery</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>Or:</para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Brachial artery</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Right</para>
+                </listitem>
+                <listitem>
+                    <para>Left</para>
+                </listitem>
+            </itemizedlist>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>And a list of choices for the blood pressure cuff size used:</para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Adult size Small</para>
+        </listitem>
+        <listitem>
+            <para>Adult size Medium</para>
+        </listitem>
+        <listitem>
+            <para>Adult size Large</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para>Or other permutations of this. </para>
+    <para> </para>
+    <para> </para>
+    <para>The same could be true for the display and documentation option for the patient position
+        (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could
+        differ between systems. </para>
+    <para> </para>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>When a clinician orders a medication, rather than selecting this information all
+                at once with a single item, they will choose the various parts of the medication
+                order, such as</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Kind of drug and strength (e.g., Acetaminophen 150 mg)</para>
+        </listitem>
+        <listitem>
+            <para>Amount and how often the patient should take the medication (e.g., 1 tablet twice
+                daily)</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Duration (2 days)</para>
+                </listitem>
+            </itemizedlist>
+        </listitem>
+        <listitem>
+            <para>Any constraints (e.g., do not exceed a total daily dosage of 600 mg)</para>
+        </listitem>
+    </itemizedlist>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <section>
+        <title><anchor xml:id="_Toc1824812"/>Types of ANF Clinical Statements</title>
+        <para> </para>
+        <para> </para>
+        <para>There are two types of ANF clinical statements:</para>
+        <para> </para>
+        <itemizedlist>
+            <listitem>
+                <emphasis role="bold">Performance of action: </emphasis>
+                <para>Actions may include passive observation of a phenomenon related to patients
+                    and their health status or family history, and may also include active
+                    interventions, such as providing education or administering medications or
+                    documenting that a patient is participating in exercise to improve their overall
+                    health status.</para>
+            </listitem>
+        </itemizedlist>
+        <para/>
+        <itemizedlist>
+            <listitem>
+                <emphasis role="bold">Request for action: </emphasis>
+                <para>Requests for future actions may include defining goals, consultation with
+                    other providers, or active interventions.</para>
+            </listitem>
+        </itemizedlist>
+        <para>.</para>
+        <para> </para>
+        <section>
+            <title><anchor xml:id="_Toc1824813"/>Performance Clinical Statements</title>
+            <para>Aperformance statement describes an action that has previously been performed, and
+                – if applicable - the results of that action. As
+                shown in the examples below, this can range from documenting that a subject of
+                record:</para>
+            <para> </para>
+            <itemizedlist>
+                <listitem>
+                    <para>Was observed to have the presence or absence of a clinical
+                        phenomenon</para>
+                </listitem>
+                <listitem>
+                    <para>Underwent a specific test/screening or procedure, and its resultant value,
+                        if any</para>
+                </listitem>
+                <listitem>
+                    <para>Was administered a medication or other substance</para>
+                </listitem>
+                <listitem>
+                    <para>Was provided educational materials</para>
+                </listitem>
+                <listitem>
+                    <para>Has any other state or specific characteristic that is clinically relevant<para> 
+                    </para></para>
+                </listitem>
+            </itemizedlist>
+            <para>Examples of performance clinical statements:</para>
+            <para/>
+            <itemizedlist>
+                <listitem>
+                    <emphasis role="bold">Pulse rate of 72/min. taken by palpation of radial artery
+                        (resting and exercising)</emphasis>
+                </listitem>
+                <listitem>
+                    <emphasis role="bold">Systolic blood pressure of 120 mmHg taken from right
+                        brachial artery while seated and no more than 30 minutes after the patient
+                        last urinated</emphasis>
+                </listitem>
+                <listitem>
+                    <para>Diabetes mellitus is present</para>
+                </listitem>
+                <listitem>
+                    <para>Diabetes mellitus is not present</para>
+                </listitem>
+                <listitem>
+                    <para>Three dot blot hemorrhages</para>
+                </listitem>
+                <listitem>
+                    <para>Dot blot hemorrhage is present</para>
+                </listitem>
+                <listitem>
+                    <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed
+                        for pain</para>
+                </listitem>
+                <listitem>
+                    <para>Positive screen for fall risk</para>
+                </listitem>
+                <listitem>
+                    <para>Negative screen for PTSD and depression</para>
+                </listitem>
+                <listitem>
+                    <para>Family history of colon cancer<para> </para></para>
+                </listitem>
+                <listitem>
+                    <para>Patient provided educational materials on pre-diabetes diagnosis</para>
+                </listitem>
+                <listitem>
+                    <para>Patient counseled on the health risks of continuingsmoking</para>
+                </listitem>
+            </itemizedlist>
+            <para> </para>
+            <para> </para>
+        </section>
+        <section>
+            <title><anchor xml:id="_Toc1824814"/>Request Clinical Statements</title>
+            <para>A Request clinical statement describes a request for an action made by a
+                clinician. Most of the times, but not always, the object of the request (e.g., lab
+                test, medication order) will be fulfilled by someone other than the clinician (e.g.,
+                lab technician, pharmacist) making the request. All information about the request
+                will be documented in this clinical statement, including information about details
+                relating to the request, such as patient must fast for 12 hours before having a
+                lipids blood test.</para>
+            <para> </para>
+            <para>Examples of Request clinical statements:</para>
+            <para> </para>
+            <orderedlist>
+                <listitem>
+                    <para>Lipids panel for patient Jane Doe. Patient must fast for 12 hours prior to
+                        the blood test.</para>
+                </listitem>
+                <listitem>
+                    <para>Head CT with contrast for patient John Doe.</para>
+                </listitem>
+                <listitem>
+                    <para>Cardiology referral for patient Mary Smith.</para>
+                </listitem>
+                <listitem>
+                    <para>Penicillinmedication for patient Michael Smith to be taken twice a day by
+                        mouth with food for 10 days.</para>
+                </listitem>
+                <listitem>
+                    <para>Advised to participate in group tobacco cessation counseling once a
+                        week.</para>
+                </listitem>
+                <listitem>
+                    <para>Advised to lose 15 pounds within 3 months.</para>
+                </listitem>
+                <listitem>
+                    <para>Advised to exercise at least 3 times a week for 30 minutes per day for 3
+                        months.</para>
+                </listitem>
+                <listitem>
+                    <para>Advised to decrease the number of packs smoked per day from 3 to 2 within
+                        6 months by using a nicotine patch.<para> </para></para>
+                </listitem>
+            </orderedlist>
+            
+            <para> </para>
+        </section>
+        <section>
+            <title><anchor xml:id="_Toc5884759"/>Precision of Clinical Statements Using ANF</title>
+            <para> </para>
+            <para><emphasis role="bold">From Ioana:</emphasis></para>
+            <para>I think it would be valuable if we could show how ANF can improve the precision of
+                “clinical statements”.</para>
+            <para>Both C-CDA and FHIR US core specify profiles intended to represent data captured
+                by EHRs. If we could show how an EHR-produced “result” could be represented in
+                ANF.</para>
+            <para>We could propose this improvement to Orders&amp;Observations, Patient Care, and
+                Clinical Decision Support work groups. </para>
+            <para> </para>
+            <para> </para>
+        </section>
+    </section>
+    <section>
+        <title>Statement Models </title>
+        <para> </para>
+        <para/>
+        <para><emphasis role="bold">PLACEHOLDER</emphasis></para>
+    </section>
+    
+    
+</chapter>

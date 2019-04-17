@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Clinical Input Form</title>
+    <para>Ideally, the way the information is presented to clinicians is in a manner that is most
+        efficient for the clinicians to use. However, what is an efficient way for clinicians to
+        select and enter data may not be the most efficient way for data analysts to use when they
+        are querying data once it has been normalized and stored in a database, such as when
+        creating a new CDS rule or compiling prevalence statistics. For this, the data is normalized
+        using the <emphasis role="italic">Analysis Normal Form (ANF) </emphasis>and stored in a
+        database. Again, the ANF is not necessarily a physical structure, but is how a data analyst
+        might see the data when they are looking at it in a database, and not as clinicians would
+        see it in the user interface (i.e., CIF).</para>
+    <para> </para>
+    <para>Clinician collects data ð Clinical Input Form</para>
+    <para>Data is normalized ð Transformation process from CIF to ANF ð Representable/storable in
+        multiple types of databases, </para>
+    <para>Dataanalyst who is using or querying the data (e.g., creating a CDS rule or working on
+        prevalence statistics) ð ANF (it is how the data is represented or stored in the database;
+        must know enough about the data to know what is stored in the topic vs. what is stored as a
+        result or detail)</para>
+    <para> </para>
+    <para>Thegoal of ANF is to enable analysts to understand the data and how it is stored in lieu
+        of having to teach them about the thousands of ways data can exist within an isosemantic
+        family (i.e., CIF) and ensure the data that has to be expressed can be expressed in an
+        operable and scalable way. The more that data is
+        normalized, the simpler it will become to analyze, and the likelihood of analysis errors
+        will be reduced. Without the ANF, the probability of patient safety risks is increased.
+        Examples of problems that can occur are:</para>
+    <para> </para>
+    <para><emphasis role="bold">An inability</emphasis> to determine that two clinical statements
+        are equivalent</para>
+    <para>Taking two 250 mg acetaminophen tablets is the same as taking one 500 mg tablet but the analyst only queries for one of the statements, not
+        both.</para>
+    <para>Presenceof dot blot hemorrhage and 2 dot blot hemorrhages observed are equalin regard to
+        presence and absence but the analyst queries only for
+        presence vs. a quantitative finding of dot blot hemorrhages.</para>
+    <para><emphasis role="bold">An inability </emphasis>to express something that is clinically
+        significant</para>
+    <para>Wemay not be able to express chest pain on inspiration,
+        whichcan be a sign of pleurisy. The ability to differentiate cardiac chest pain from other
+        types of chest pain is clinically important. An example of something that needs to be
+        represented is <emphasis role="italic">chestpain that worsens when you breathe, cough, or
+            sneeze</emphasis>.</para>
+    <para><emphasis role="bold">An error is made</emphasis> in recording or in querying a repository
+        for clinical statements</para>
+    <para>On October 1, 2016, a provider enters a medication order for acetaminophen 250 mg for a
+        patientto take 1 tablet twice daily for 2 days starting October 1, 2016</para>
+    <para>CIF: Provider enters the medication order</para>
+    <para>ANF: Analyst creates a CDS rule to identify all patients ordered acetaminophen during
+        theperiod September 1 – December 31, 2016. However, while the analyst creates a query to
+        search for a clinical statement (i.e., Request) where acetaminophen was the direct substance
+        and was ordered during the period September 1 – December 31, 2016, the analyst did not
+        include a Request topic of “Administration of drug or medication PO BID for pain.” Thus, the
+        medication order would not be included in the query results.</para>
+    
+</chapter>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Examples of Performance Clinical Statments</title>
+    <para> </para>
+    <para>For the examples in the following chapters, the focus has been to illustrate the ANF
+        Model, using easy and intuitive examples, rather than focus on the correctness of the
+        modeling. The modeling within the post-coordinated expressions of the “topic” could
+        potentially be done in different ways.</para>
+    <para> </para>
+    <para> </para>
+    <section>
+        <title><anchor xml:id="_Toc5884786"/>Blood Pressure Measurement </title>
+    </section>
+    <section>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col2"><emphasis role="bold">Table
+                                </emphasis><emphasis role="bold">1</emphasis><emphasis role="bold">:
+                                Performance </emphasis><emphasis role="bold">Clinical
+                                Statement</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
+                                        ><emphasis role="italic">Arterial blood pressure 120 mmHg;
+                                        taken on right brachial artery using adult blood pressure
+                                        cuff;</emphasis></emphasis> patient in sitting position for
+                                at least 5 minutes; urinated not more than 30 minutes prior to
+                                measurement</para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                        >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                    professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                    procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(260686004|Method) [302199004|Examination
+                                    - action]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [163030003 |On
+                                    examination - Systolic blood pressure
+                                reading]-</emphasis></para>
+                            <para><emphasis role="italic">(405813007 |Procedure site – Direct)
+                                    [</emphasis><emphasis role="italic">723962009 |Structure of
+                                    right brachial artery]-</emphasis></para>
+                            <para><emphasis role="italic">(424226004 |Using device)
+                                    [</emphasis><emphasis role="italic">720737000 |Blood pressure
+                                    cuff, adult size];</emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry morerows="2">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Result: 120<emphasis role="italic"> [259018001 |Millimeter of
+                                mercury]</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: </para>
+                            <para>fc48551f-876a-42c1-b179-3169e3748332<emphasis role="bold"
+                                        ><emphasis role="italic"> (</emphasis></emphasis><emphasis
+                                    role="bold"><emphasis role="italic">Table 2: Associated Clinical
+                                        Statement </emphasis></emphasis><emphasis role="bold"
+                                        ><emphasis role="italic">1)</emphasis></emphasis></para>
+                            <para>df478857-2eae-40b2-909f-68ef0d0b9eb5 <emphasis role="bold"
+                                        ><emphasis role="italic">(</emphasis></emphasis><emphasis
+                                    role="bold"><emphasis role="italic">Table 3: Associated Clinical
+                                        Statement </emphasis></emphasis><emphasis role="bold"
+                                        ><emphasis role="italic">2)</emphasis></emphasis></para>
+                            <para/>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z Statement id: a3b46565-
+                                f8cd-4354-b4b6-3dff42d33496</para>
+                            <para/>
+                            <para>Subject of record ID:</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </section>
+    <section>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col2"><anchor xml:id="_Ref3798599"/><emphasis
+                                role="bold">Table </emphasis><emphasis role="bold"
+                                >2</emphasis><emphasis role="bold">: Associated Clinical Statement
+                                </emphasis><emphasis role="bold">1</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: Arterial blood
+                                pressure 120 mmHg; taken on right brachial artery using adult blood
+                                pressure cuff; <emphasis role="bold"><emphasis role="italic">patient
+                                        in sitting position for at least 5
+                                    minutes</emphasis></emphasis>; urinated not more than 30 minutes
+                                prior to measurement</para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                        >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                    professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                    procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [33586001|Sitting
+                                    position finding]</emphasis></para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry morerows="2">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Timing: ≥ 5 min. prior to statement time </para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Result: 5 <emphasis role="italic"
+                                >[258701004 |min]</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
+                            <para/>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z</para>
+                            <para>Statement id: fc48551f-876a-42c1-b179-3169e3748332</para>
+                            <para/>
+                            <para>Subject of record ID:</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para> </para>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col2"><anchor xml:id="_Ref3798642"/><emphasis
+                                role="bold">Table </emphasis><emphasis role="bold"
+                                >3</emphasis><emphasis role="bold">: Associated Clinical Statement
+                                </emphasis><emphasis role="bold">2</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: Arterial blood
+                                pressure 120 mmHg; taken on right brachial artery using adult blood
+                                pressure cuff; patient in sitting position for at least 5 minutes;
+                                    <emphasis role="bold"><emphasis role="italic">urinated not more
+                                        than 30 minutes prior to
+                                measurement</emphasis></emphasis></para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                        >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                    professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                    procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [252041008
+                                    |Micturition finding]</emphasis></para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry morerows="2">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Timing: ≤ 30 min. prior to statement time </para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                    record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Result: 30 <emphasis role="italic">[258701004
+                            |min]</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
+                            <para/>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z</para>
+                            <para>Statement id: df478857-2eae-40b2-909f-68ef0d0b9eb5</para>
+                            <para/>
+                            <para>Subject of record ID:</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para> </para>
+        <para> </para>
+    </section>
+    <section>
+        <title><anchor xml:id="_Toc5884787"/>Pulse Rate Measurement</title>
+        <para> </para>
+        <para> </para>
+        <para><emphasis role="bold">PLACEHOLDER</emphasis></para>
+        <para> </para>
+        <para> </para>
+    </section>
+    <section>
+        <title>Performance Statement Example 4</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Patient has thromboembolism history.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of thromboembolism.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[1, inf)</para>
+                            <para><emphasis role="bold"><emphasis role="italic">Timing </emphasis></emphasis></para>
+                            <para><emphasis role="bold">Value: </emphasis>[1, inf)</para>
+                            <para><emphasis role="bold">measureSemantic: </emphasis>ISO 8601 prior to statement
+                                time</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 5</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Diabetes Mellitus present.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of Diabetes Mellitus.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[1, inf)</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 6</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Diabetes Mellitus not present. </entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of Diabetes Mellitus.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[0,0]</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 7</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Three dot blot hemorrhages.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of Dot blot hemorrhage.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[3,3]</para>
+                            <para><emphasis role="bold">Unit: </emphasis> count</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 8</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Dot blot hemorrhage present.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of Dot blot hemorrhage.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[1,inf)</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 9</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Patient observed to have fall risk.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Observation of fall risk.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[1,1]</para>
+                            <para><emphasis role="bold">Unit: </emphasis>count</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+    <section>
+        <title>Performance Statement Example 10</title>
+        <table> <title></title>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <tbody>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Family history (mother) of colon cancer.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic </emphasis></entry>
+                        <entry namest="col2" nameend="col2">Mother.</entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance </emphasis></entry>
+                        <entry namest="col2" nameend="col2"><para><emphasis role="italic"><emphasis role="bold">Observation
+                            Result</emphasis></emphasis></para><para><emphasis role="bold">Value: </emphasis>[1,inf)</para>
+                            <para><emphasis role="bold">measureSemantic: </emphasis>ISO 8601 prior to statement
+                                time</para></entry>
+                        
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </section>
+</section>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+  <title>HL7 ANF Ballot</title>
+  <subtitle>Submission Document</subtitle>
+
+  <!-- Introduction -->
+  <xi:include href="../../../introduction/src/docbkx/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Introduction to Clinical Statements -->
+  <xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- ANF Clinical Statements -->
+  <xi:include href="../../../anf-clinical-statements/src/docbkx/anf-clinical-statements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- Clinical Input Form -->
+  <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- Analysis Normal Form -->
+  <xi:include href="../../../analysis-normal-form/src/docbkx/analysis-normal-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- ANF Reference Model -->
+  <xi:include href="../../../anf-reference-model/src/docbkx/anf-reference-model.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- Transformation -->
+  <xi:include href="../../../transformation/src/docbkx/transformation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- Differences between ANF and CIF -->
+  <xi:include href="../../../anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+</book>

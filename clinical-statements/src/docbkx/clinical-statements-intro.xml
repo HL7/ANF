@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    
+    <title>Introduction to Clinical Statements</title>
+    
+    <para>Clinical Statements are used to model all “entries” in a Clinical Document
+        Architecture(CDA) document section. The Clinical Statement “Common Model Element Type”
+        (CMET) is the base model for the all Consolidated CDA “clinical statement” templates that
+        are still mandatory for Electronic Health Record (EHR) vendors. The concept of “clinical
+        statement” is widely understood though there is an issue with consistency across HL7
+        paradigms: V3, CDA, and FHIR.</para>
+    <para>Placeholder <emphasis role="bold">HERE</emphasis> for more detail about other paradigms
+        later in the document (maybe forward link for more detail here)</para>
+    <section>
+        <title>Normative HL7 V3 Clinical Statement Definition</title>
+        <para>“An expression of a discrete item of clinical, clinically-related or public health
+            information that is recorded because of its relevance to the care of a patient or other
+            entity. Clinical or public health information can be expressed with different levels of
+            granularity and therefore the extent and detail conveyed in a single statement may vary.
+            To be regarded as a Clinical Statement, a concept must be associated with a patient or
+            other entity in a manner which makes clear:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Its temporal context</para>
+            </listitem>
+            <listitem>
+                <para>Its relationship to the entity or entities</para>
+            </listitem>
+            <listitem>
+                <para>In the case of an observation, its mood and presence, absence or value</para>
+            </listitem>
+            <listitem>
+                <para>In the case of a procedure, its mood and status</para>
+            </listitem>
+        </itemizedlist>
+        <para>This clarity may be achieved by:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Explicit representation; or</para>
+            </listitem>
+            <listitem>
+                <para>Implicit application of defaults ONLY where explicitly modeled rules state the
+                    appropriate defaults."</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+    <section>
+        <title>(Details about other paradigms?)</title>
+    </section>
+    
+</chapter>

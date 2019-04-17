@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Clinical Statement</title>
+    <figure>
+        <title>Clinical Statement</title>
+        
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="images/clinical_statement.png" scalefit="1" width="100%" contentdepth="100%"/>
+            </imageobject>
+        </mediaobject>
+    </figure>
+    <para>Clinical Statement is the main class which describes an entry of clinical information into
+        the patient record. Most importantly it contains the 'topic' which describes what this
+        statement is about, and the 'circumstance' which will contain either request or result
+        information regarding the 'topic'.</para>
+    <section>
+        <title>statementTime</title>
+        <para>Statement Time describes when the statement was documented in ISO 8601 Date/Time
+            Standard Format</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>statementId</title>
+        <para>Statement Identifier is a unique identifier for the statement represented by a
+            UUID.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>subjectOfRecordId</title>
+        <para>Apatient's clinical record will contain many statements. The subjectOfRecordId is a
+            uuid which identifies the patient clinical record in which this statement is contained.
+            If this statement is in John Doe's patient record, then John Doe is the subject of
+            record and the subjectOfRecordId is a uuid that identifies John Doe. </para>
+    </section>
+    <section>
+        <title>statementAuthor</title>
+        <figure>
+            <title>Participant</title>
+            
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/participant.png" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Statementauthor is an optional list of authoring participants. Either a Participant or its
+            subclass IdentifiedParticipant can be used. Participant includes a coded <emphasis
+                role="italic">participantRole </emphasis>for values such as 'Healthcare
+            professional', 'Nurse', or 'Requestor'. IdentifiedParticipant adds the additional
+            attribute </para>
+        <para><emphasis role="italic">participantId </emphasis>which is a UUID to uniquely identify
+            the participant.</para>
+        <para/>
+        <para><anchor xml:id="_Toc5178967"/>Figure 3: Participant</para>
+        <para/>
+    </section>
+    <section>
+        <title>subjectOfInformation</title>
+        <para>Subject of Information is a coded field used to express <emphasis role="bold">WHO
+            </emphasis>the clinical statement is about. A patient's clinical record may contain
+            statements not only about the patient, but also statements about children, relatives and
+            donors. Thus, some possible values for subjectOfInformation, would include codes for
+            'subject of record' (the patient), 'family member', or 'donor'. The majority of
+            statements will have a subjectOfInformation with a value of 'subject of record', since
+            most statements in a patient record will be about the patient.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>statementType</title>
+        <para>Statement Type distinguishes between a performance ('performed') and a request
+            ('requested'). Performances may be observational performances, e.g. the observation of a
+            clinical finding or disorder being present or absent. They can also be a procedure or
+            intervention which has been performed on the subject of record in the past, e.g. “a
+            procedure using a 12-lead electrocardiogram”. Performances can – but do not have to –
+            include quantitative or qualitative results, e.g. “3 dot blot hemorrhages” or “Hepatitis
+            A antibody positive”.</para>
+        <para> </para>
+    </section>
+    <section>
+        <title>Topic</title>
+        <para>Topic is the expression of <emphasis role="bold">WHAT </emphasis>is being requested or
+            what was performed. For both clinical statement types (request or performance) a
+            pre-coordinated or post-coordinated Solor “procedure” concept as a logical expression is
+            required to sufficiently capture the action, which is either requested or
+            performed.</para>
+        <para> </para>
+        <para><emphasis role="bold"><emphasis role="italic">Requests for actions
+                </emphasis></emphasis>can be requests for actions such as procedures or
+            interventions:</para>
+        <para> </para>
+        <itemizedlist>
+            <listitem>
+                <para>Stress echocardiogram</para>
+            </listitem>
+            <listitem>
+                <para>Administration of Aspirin 81 mg oral tablet</para>
+            </listitem>
+            <listitem>
+                <para>Systolic blood pressure measurement</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para>
+        <para><emphasis role="bold"><emphasis role="italic">Performances of actions
+                </emphasis></emphasis>can be performed procedures like the examples above. They can
+            also be observational procedures, describing the absence or presence of clinical
+            findings or disorders. In these cases, the observation action of the clinical findings
+            and disorders is performed:</para>
+        <para> </para>
+        <itemizedlist>
+            <listitem>
+                <para>Congestive heart failure</para>
+            </listitem>
+            <listitem>
+                <para>History of malignant neoplasm of bone</para>
+            </listitem>
+            <listitem>
+                <para>Numbness of left arm</para>
+            </listitem>
+            <listitem>
+                <para>History of cognitive behavioral therapy</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para>
+        <para>The topic is the central component of clinical statements. The following are proposed
+            principles for the topic of a clinical statement.</para>
+        <para> </para>
+        <para><emphasis role="bold">Principle 1: </emphasis>The topic defines the action being
+            performed or requested.</para>
+        <para><emphasis role="bold">Principle 2: </emphasis>The topic has to be able to exist on its
+            own and still retain original intent and clarity of meaning. </para>
+        <para><emphasis role="bold">Principle 3: </emphasis>The topic includes what is being
+            measured or observed. </para>
+        <para><emphasis role="bold">Principle 4: </emphasis>Each clinical statement may only have
+            one topic. </para>
+        <para> </para>
+        <para> </para>
+    </section>
+    <section>
+        <title>Circumstance</title>
+        <figure>
+            <title>Circumstance and Subtypes</title>
+            
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/circumstance_and_subtype.png" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis role="bold"
+                >WHY </emphasis>and <emphasis role="bold">WHEN </emphasis>a requested or performed
+            action will be or was carried out. </para>
+        <para> </para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Principle 1:</emphasis></para>
+                <para> Circumstances refine or further qualify the topic. </para>
+            </listitem>
+            <listitem>
+            <para><emphasis role="bold">Principle 2:</emphasis></para>
+                <para> Not every request for action or performance of action requires circumstances
+                    to be sufficiently defined.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Principle 3:</emphasis></para>
+                <para> A circumstance has a key and a value, where the value can be a concept or a
+                    numeric range with unit.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Principle 4:</emphasis></para>
+                <para> A circumstance can also be given a defining category such as a prerequisite
+                    or technique.</para>
+            </listitem>
+        </itemizedlist>
+        <para> </para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="bold">Prerequisite</emphasis>:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="italic">Definition</emphasis>: A <emphasis role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before something else can happen or be done.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>The state must exist can prior to the performance of the
+                                    action</para>
+                            </listitem>
+                            <listitem>
+                                <para>The state that must exist pertains to</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>the subject of record (e.g. patient)</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>the environment (e.g. necessary room temperature,
+                                            required time of day)</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                            <listitem>
+                                <para>A prerequisite is separable from the topic and can be
+                                    expressed as a stand-alone clinical statement</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Example: Arterial blood pressure 120 mmHg, taken with
+                                            patient in sitting position.
+                                            <emphasis role="italic">“Patient in sitting
+                                                position”</emphasis>
+                                        is separable from the topic and exists prior to the
+                                            performance of the action and therefore constitutes a
+                                            prerequisite.</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Technique:</emphasis></para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="italic">Definition</emphasis> : A device used, a method applied, or a temporary state in which the
+                            patient was <emphasis role="bold">actively</emphasis> placed <emphasis role="bold">during</emphasis> performance of the action.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Actions can be performed by various techniques. As opposed to
+                                    the action itself, which is
+                                <emphasis role="italic"><emphasis role="underline"
+                                    >what</emphasis></emphasis>
+                                is carried out, the technique defines
+                                <emphasis role="italic"><emphasis role="underline"
+                                    >how</emphasis></emphasis>
+                                the action is done in general or in a particular
+                                    instance.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The use of the device or the method that is applied must start
+                                    during the performance of the action.</para>
+                            </listitem>
+                            <listitem>
+                                <para>A technique is inseparable from the topic and cannot be
+                                    expressed as a stand-alone clinical statement.</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Example: Arterial blood pressure 120 mmHg, taken on
+                                            right brachial artery.
+                                            <emphasis role="italic">“Taken on right brachial
+                                                artery”</emphasis>
+                                        is inseparable from the topic and cannot be expressed
+                                            as a stand-alone clinical statement. It therefore
+                                            constitutes a technique.</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <para></para>
+        <para>Requests and performances have some shared circumstances:</para>
+        <para/>
+        <itemizedlist>
+            <listitem>
+                <para>Timing: <emphasis role="bold">WHEN </emphasis>a requested action should be
+                    performed or <emphasis role="bold">WHEN </emphasis>an observed finding or
+                    disorder was present or absent.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Examples:</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Cardiology Consult in 2 weeks</para>
+                            </listitem>
+                            <listitem>
+                                <para>Breast cancer screening 3 months ago</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+
+            <listitem>
+                <para>Purpose: <emphasis role="bold">WHY</emphasis> an action was performed or requested</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Examples:</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Ibuprofen 400 mg oral tables for back pain</para>
+                            </listitem>
+                            <listitem>
+                                <para>Physical therapy 3 times/week for mobilization </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        
+
+       
+        <para>Other circumstances are specific to requests or performances.</para>
+        <para> </para>
+        <orderedlist numeration="upperalpha">
+            <listitem>
+                <para><emphasis role="bold">RequestCircumstance</emphasis></para>
+                <para>Request circumstance further specifies <emphasis role="bold">HOW </emphasis>a
+                    requested action is to be performed, e.g. how often or how long.</para>
+                <figure>
+                    <title>Request Circumstance</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/request_circumstance.png" scalefit="1" width="100%" contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">conditionalTrigger</emphasis></para>
+                <para>TBD</para>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">requestedParticipant</emphasis></para>
+                <para>Requested participants is an optional list of either specific persons or roles who
+                    perform an action, assist in performing an action or are targets of an action.</para>
+                <para> </para>
+                <para>Examples:</para>
+                <para> </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Cardiology consultation with Chief Cardiologist</para>
+                    </listitem>
+                    <listitem>
+                        <para>Smoking cessation education with patient and patient’s spouse</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">Priortity</emphasis></para>
+                <para>Priority expresses the priority with which a requested action has to be carried out,
+                    e.g. “routine” or “stat”.</para>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">Repetition</emphasis></para>
+                <figure>
+                    <title>Repetition</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/repetition.png" scalefit="1" width="100%" contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>Repetition is used to describe when an action is requested for more than a single
+                    occurrence:</para>
+                <para> </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>When the repeated action should begin (periodStart), e.g. NOW</para>
+                    </listitem>
+                    <listitem>
+                        <para>How long the repetitions should persist (periodDuration), e.g. for 3
+                            weeks</para>
+                    </listitem>
+                    <listitem>
+                        <para>How often the action should occur (eventFrequency), e.g. 3 times per
+                            week</para>
+                    </listitem>
+                    <listitem>
+                        <para>How long between actions (eventSeparation), e.g. for 2 weeks</para>
+                    </listitem>
+                    <listitem>
+                        <para>How long every action should last (eventDuration), e.g. for 5 minutes</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">requestedResult</emphasis></para>
+                <para>Arequested result is a patient goal to be achieved. It can include specified or
+                    quantified details of an action that is to be performed, such as '3 times daily'. </para>
+                <para> </para>
+                <para>Examples:</para>
+                <para/>
+                <itemizedlist>
+                    <listitem>
+                        <para>Narrative:Administration of Metoprolol tartrate 50 mg oral </para>
+                        <para><emphasis role="underline">daily2 times</emphasis></para>
+                        <para> to lower systolic blood pressure to &lt;130 mmHg</para>
+                    </listitem>
+                    <listitem>
+                        <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one tablet</emphasis>
+                            oral daily 4 times</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </orderedlist>
+
+    </section>
+    <section>
+        <title>PerformanceCircumstance</title>
+        <para>Performance Circumstance specifies the result of the performance.</para>
+        <para> </para>
+        <figure>
+            <title>Performance Circumstances</title>
+            
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/performance_circumstance.png" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
+        <orderedlist numeration="upperalpha">
+            <listitem>
+                <para><emphasis role="bold">Result</emphasis></para>
+                <para>Resultof diagnostic or observational procedures. There are two types of results shown
+                    in Figure10, “Result Hierarchy” which are InterventionResult and ObservationResult.</para>
+                <para> </para>
+                <para>Examples:</para>
+                <itemizedlist>
+                <listitem>
+                    <para>Narrative: Systolic blood pressure <emphasis role="underline">120
+                                mmHg</emphasis></para>
+                </listitem>
+                <listitem>
+                    <para>Narrative: Body weight <emphasis role="underline">165
+                            pounds</emphasis></para>
+                </listitem>
+                </itemizedlist>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">performanceParticipant</emphasis></para>
+                <para>Participants involved in performing the action, e.g. technician, nurse</para>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">UnstructuredCircumstance</emphasis></para>
+                <para>Unstructured Circumstance is used to document additional parts of clinical statements,
+                    which are not necessary for accurate data coding or retrieval. </para>
+                <figure>
+                    <title>Unstructured Circumstances</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/unstructured_circumstance.png" scalefit="1" width="100%" contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">unstructuredText</emphasis></para>
+                <para>Text field to document unstructured circumstances.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">statementAssociation</emphasis></para>
+                <para>Statement associations enable the clinical statement to link to other clinical
+                    statements. They are part of the narrative but are not considered part of the topic.
+                    They can further specify, e.g. instructions that apply to the performance of an action.
+                    If the topic is a laboratory result panel, each association would point to another
+                    statement which is a laboratory result.</para>
+                <figure>
+                    <title>Statment Association</title>
+                    
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/statement_association.png" scalefit="1" width="100%" contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">associationSemantic</emphasis></para>
+                <para>Association semantic is a logical expression to capture how the target statement is
+                    associated.</para>
+            </listitem>
+
+            <listitem>
+                <para><emphasis role="bold">associatedStatementId</emphasis></para>
+                <para>AssociatedStatement Id is a UUID to identify associated statements. This UUID is the
+                    statementId of the target ClinicalStatement</para>
+            </listitem>
+        </orderedlist>
+
+    </section>
+    
+    
+</section>
