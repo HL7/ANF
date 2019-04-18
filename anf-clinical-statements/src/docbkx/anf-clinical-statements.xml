@@ -5,18 +5,28 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>ANF Clinical Statements</title>
-    <para>In the context of the ANF Model, aclinical statement represents an entry in the patient
-        record that documents in a structured/computable manner clinical information related to the
-        patient that is asserted by a particular source, recorded, and potentially verified. </para>
+    <para>In the context of the ANF Model, aclinical
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T110233-0400" comment="Comment from WC:
+This is too imprecise:
+1) ‘structured’ according to what? Sentences are also structured, some according to English grammar, others according to a grammar for technical sublanguage (see Naomi Sager’s Linguistic String project).
+2) ‘computable’ by whom or what? Some algorithms can, others can’t.
+3) ‘A clinical statement REPRESENTS and entry in the patient record’: do you mean (a) ‘is’ an entry, such that if x is an instance of Clinical Statement, then x is also an instance of Entry in a Patient Record, or (b) if x is instance of Clinical Statement, then there is some y instance of Entry in the Patient record such that x represents y, or (c) the ‘documents’ restricts the scope of what record entries qualify as clinical statements, namely those that document clinical information?
+4) ‘Clinical Information’? this extends the previous issue: is this a third thing z instance of Clinical Information such that x represents y and y documents z? I would argue that clinical statements and clinical information under whatever interpretation.
+"?>statement
+        represents an entry in the patient record that documents in a structured/computable manner
+        clinical information related to the patient that is asserted by a particular source,
+        recorded, and potentially verified. <?oxy_comment_end?></para>
     <para> </para>
-    <para>Clinicians author clinical statements and enter them into their organization’s electronic
-        health record (EHR). Clinicians typically enter the
-        information via a manner that we call here the clinical input form (CIF). However, the CIF
-        is not a literal form that clinicians select and enter data in. Rather, it refers to the
-        manner in which information is presented to the clinicians and how they enter the data, such
-        as by constraining the information to allow only certain values to be entered, such as
-        through a drop-down list or radio button, or breaking up large chunks of related information
-        into smaller parts.</para>
+    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110250-0400" comment="Comment from WC:
+Can clinicians author clinical statements without entering them in the record? If so, then the description in the previous paragraphs about what a ‘clinical statement’ is becomes even more problematic
+"?>Clinicians
+        author clinical statements and enter them into their organization’s electronic health record
+        (EHR)<?oxy_comment_end?>. Clinicians typically enter the information via a manner that we
+        call here the clinical input form (CIF). However, the CIF is not a literal form that
+        clinicians select and enter data in. Rather, it refers to the manner in which information is
+        presented to the clinicians and how they enter the data, such as by constraining the
+        information to allow only certain values to be entered, such as through a drop-down list or
+        radio button, or breaking up large chunks of related information into smaller parts.</para>
     
     <para><emphasis role="bold"><emphasis role="underline">Examples:</emphasis></emphasis></para>
   
@@ -171,7 +181,7 @@
         <para> </para>
         <itemizedlist>
             <listitem>
-                <emphasis role="bold">Performance of action: </emphasis>
+                <para><emphasis role="bold">Performance of action: </emphasis></para>
                 <para>Actions may include passive observation of a phenomenon related to patients
                     and their health status or family history, and may also include active
                     interventions, such as providing education or administering medications or
@@ -182,7 +192,7 @@
         <para/>
         <itemizedlist>
             <listitem>
-                <emphasis role="bold">Request for action: </emphasis>
+                <para><emphasis role="bold">Request for action: </emphasis></para>
                 <para>Requests for future actions may include defining goals, consultation with
                     other providers, or active interventions.</para>
             </listitem>
@@ -191,10 +201,12 @@
         <para> </para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance Clinical Statements</title>
-            <para>Aperformance statement describes an action that has previously been performed, and
-                – if applicable - the results of that action. As
-                shown in the examples below, this can range from documenting that a subject of
-                record:</para>
+            <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
+As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
+"?>Aperformance
+                statement describes an action that has previously been performed, and – if
+                applicable - the results of that action.<?oxy_comment_end?> As shown in the examples
+                below, this can range from documenting that a subject of record:</para>
             <para> </para>
             <itemizedlist>
                 <listitem>
@@ -212,21 +224,24 @@
                     <para>Was provided educational materials</para>
                 </listitem>
                 <listitem>
-                    <para>Has any other state or specific characteristic that is clinically relevant<para> 
-                    </para></para>
+                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
+For instance that a test is ordered?
+"?>Has
+                        any other state or specific characteristic that is clinically
+                        relevant<?oxy_comment_end?></para> 
                 </listitem>
             </itemizedlist>
             <para>Examples of performance clinical statements:</para>
             <para/>
-            <itemizedlist>
+            <orderedlist numeration="arabic">
                 <listitem>
-                    <emphasis role="bold">Pulse rate of 72/min. taken by palpation of radial artery
-                        (resting and exercising)</emphasis>
+                    <para><emphasis role="bold">Pulse rate of 72/min. taken by palpation of radial artery
+                        (resting and exercising)</emphasis></para>
                 </listitem>
                 <listitem>
-                    <emphasis role="bold">Systolic blood pressure of 120 mmHg taken from right
+                    <para><emphasis role="bold">Systolic blood pressure of 120 mmHg taken from right
                         brachial artery while seated and no more than 30 minutes after the patient
-                        last urinated</emphasis>
+                        last urinated</emphasis></para>
                 </listitem>
                 <listitem>
                     <para>Diabetes mellitus is present</para>
@@ -251,7 +266,10 @@
                     <para>Negative screen for PTSD and depression</para>
                 </listitem>
                 <listitem>
-                    <para>Family history of colon cancer<para> </para></para>
+                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
+Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
+"?>Family
+                        history of colon cancer<?oxy_comment_end?></para>
                 </listitem>
                 <listitem>
                     <para>Patient provided educational materials on pre-diabetes diagnosis</para>
@@ -259,7 +277,7 @@
                 <listitem>
                     <para>Patient counseled on the health risks of continuingsmoking</para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
             <para> </para>
             <para> </para>
         </section>
@@ -291,6 +309,9 @@
                         mouth with food for 10 days.</para>
                 </listitem>
                 <listitem>
+                    <?oxy_comment_start author="kmaulden" timestamp="20190418T110448-0400" comment="Comment from WC:
+The distinction with a performance clinical statement concerning giving him educational materials is tiny.
+"?>
                     <para>Advised to participate in group tobacco cessation counseling once a
                         week.</para>
                 </listitem>
@@ -299,33 +320,30 @@
                 </listitem>
                 <listitem>
                     <para>Advised to exercise at least 3 times a week for 30 minutes per day for 3
-                        months.</para>
+                        months.<?oxy_comment_end?></para>
                 </listitem>
                 <listitem>
                     <para>Advised to decrease the number of packs smoked per day from 3 to 2 within
-                        6 months by using a nicotine patch.<para> </para></para>
+                        6 months by using a nicotine patch.</para>
                 </listitem>
             </orderedlist>
             
             <para> </para>
         </section>
         <section>
-            <title><anchor xml:id="_Toc5884759"/>Precision of Clinical Statements Using ANF</title>
-            <para> </para>
-            <para><emphasis role="bold">From Ioana:</emphasis></para>
-            <para>I think it would be valuable if we could show how ANF can improve the precision of
-                “clinical statements”.</para>
-            <para>Both C-CDA and FHIR US core specify profiles intended to represent data captured
-                by EHRs. If we could show how an EHR-produced “result” could be represented in
-                ANF.</para>
-            <para>We could propose this improvement to Orders&amp;Observations, Patient Care, and
-                Clinical Decision Support work groups. </para>
-            <para> </para>
+            <title><anchor xml:id="_Toc5884759"
+                /><?oxy_comment_start author="kmaulden" timestamp="20190418T110521-0400" comment="From Ioana:
+I think it would be valuable if we could show how ANF can improve the precision of “clinical statements”.
+Both C-CDA and FHIR US core specify profiles intended to represent data captured by EHRs. If we could show how an EHR-produced “result” could be represented in ANF.
+We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
+" id="c2z_fxv_lhb" mid="8"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb" mid="7"?>Precisio<?oxy_comment_end mid="7"?><?oxy_comment_end?><?oxy_comment_end mid="8"?>n
+                of Clinical Statements Using ANF</title>
             <para> </para>
         </section>
     </section>
     <section>
-        <title>Statement Models </title>
+        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T110630-0400" comment="KH: Should we introduce the idea of Statement Models (a.k.a. Clinical Observation Models) here or will that be too deep in the woods for this part?"?>Statement
+            Models <?oxy_comment_end?></title>
         <para> </para>
         <para/>
         <para><emphasis role="bold">PLACEHOLDER</emphasis></para>

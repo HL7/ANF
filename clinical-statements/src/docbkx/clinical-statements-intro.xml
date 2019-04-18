@@ -4,17 +4,25 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    
-    <title>Introduction to Clinical Statements</title>
-    
-    <para>Clinical Statements are used to model all “entries” in a Clinical Document
-        Architecture(CDA) document section. The Clinical Statement “Common Model Element Type”
-        (CMET) is the base model for the all Consolidated CDA “clinical statement” templates that
-        are still mandatory for Electronic Health Record (EHR) vendors. The concept of “clinical
-        statement” is widely understood though there is an issue with consistency across HL7
-        paradigms: V3, CDA, and FHIR.</para>
+    <title>Introduction to
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T105747-0400" comment="KC: How is “clinical statement” defined here and how are we different from what exists, e.g. in HL7 clinical statement. (get pointer from Ioana), also work with Joey on this"?>Clinical
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T105724-0400" comment="•	Keith’s initial guidance:
+o	Should be written at a higher level for general understanding of the problem
+o	Non-technical explanation of issues around clinical content and data analysis
+o	Explain, how same piece of clinical data can be recorded in multiple different ways (CIF).
+o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient status) and Blood Pressure (Systolic BP 120 mmHg, taken on right brachial artery), then go into some more complex examples
+	Cite reference study about importance of patient position, micturition etc.
+" mid="1"?>Statements<?oxy_comment_end?><?oxy_comment_end mid="1"?></title>
+    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T105806-0400" comment="This was provided by Ioana"?>Clinical
+        Statements are used to model all “entries” in a Clinical Document Architecture(CDA) document
+        section. The Clinical Statement “Common Model Element Type” (CMET) is the base model for the
+        all Consolidated CDA “clinical statement” templates that are still mandatory for Electronic
+        Health Record (EHR) vendors. The concept of “clinical statement” is widely understood though
+        there is an issue with consistency across HL7 paradigms: V3, CDA, and
+        FHIR.<?oxy_comment_end?></para>
+    <?oxy_comment_start author="kmaulden" timestamp="20190418T105920-0400" comment="placeholder"?>
     <para>Placeholder <emphasis role="bold">HERE</emphasis> for more detail about other paradigms
-        later in the document (maybe forward link for more detail here)</para>
+        later in the document (maybe forward link for more detail here)</para><?oxy_comment_end?>
     <section>
         <title>Normative HL7 V3 Clinical Statement Definition</title>
         <para>“An expression of a discrete item of clinical, clinically-related or public health
@@ -49,7 +57,7 @@
         </itemizedlist>
     </section>
     <section>
-        <title>(Details about other paradigms?)</title>
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T105938-0400" comment="KH: Tim?"?>
+        <title>(Details about other paradigms?)</title><?oxy_comment_end?>
     </section>
-    
 </chapter>

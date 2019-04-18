@@ -6,9 +6,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Measure and Result</title>
     <para>A unique aspect of the ANF Model is that all measures and results are numeric ranges. The
-        hierarchy of classes to represent these is shown in Figure 10,
-            “Result Hierarchy”. An important point to notice in this class diagram is that
-        the ANF Model does not allow coded results, only a numeric interval is possible. </para>
+        hierarchy of classes to represent these is shown in Figure 10, “Result Hierarchy”.
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  "?>An
+        important point to notice in this class diagram is that the ANF Model does not allow coded
+        results, only a numeric interval is possible. <?oxy_comment_end?></para>
     <figure>
         <title>Result Hierarchy</title>
         
@@ -20,19 +21,30 @@
     </figure>
 
     <section>
-        <title>Measure </title>
-        <para>Measure captures measurable elements of clinical statements , e.g. the results of test procedures, time periods, frequencies of repetitions
-            for procedures or medication administrations. Note that the inherited attributes from
-            the Interval class will be discussed here.</para>
+        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T112454-0400" comment="Comment from WC:
+Don’t use names for statements or building blocks thereof that are synonymous with what such statements or building blocks describe. That is typical OOD and HL7-style nonsense. What is depicted in Figure 1 is surely not a measure but a building block to document a measure.
+"?>Measure<?oxy_comment_end?>
+        </title>
+        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112507-0400" comment="Comment from WC:
+Also HL7-ese. A measurable element of a clinical statement would be its length, the language it is written in, etc. That is for sure not what is meant here. Rename perhaps as ‘Measure BB’?
+"?>Measure
+            captures measurable elements of clinical statements<?oxy_comment_end?> , e.g. the
+            results of test procedures, time periods, frequencies of repetitions for procedures or
+            medication administrations. Note that the inherited attributes from the Interval class
+            will be discussed here.</para>
         <para> </para>
     </section>
     <section>
         <title>lowerBound</title>
         <para/>
-        <para>Lowerbound represents the lower bound of a measurableelement. This can be the lower bound of a range: For the “Administration of 25 to 50 mg
-            of medication X” the lower bound is 25. For a test result, which is not a range, lower
-            and upper bound are the same. Example: systolic blood pressure 110 mmHg. The lower and
-            upper bound are both 110 mmHg.</para>
+        <para>Lowerbound represents the lower bound of a
+            <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
+This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
+"?>measurable
+            element<?oxy_comment_end?>. This can be the lower bound of a range: For the
+            “Administration of 25 to 50 mg of medication X” the lower bound is 25. For a test
+            result, which is not a range, lower and upper bound are the same. Example: systolic
+            blood pressure 110 mmHg. The lower and upper bound are both 110 mmHg.</para>
         <para> </para>
     </section>
     <section>

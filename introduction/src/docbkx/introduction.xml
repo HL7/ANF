@@ -34,30 +34,21 @@
         <para>A FHIR implementation guide can eventually be developed.</para>
     </section>
     <section>
-        <title>Purpose</title>
+        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T105057-0400" comment="KC: Purpose should be to explain an approach that involves data with many of the CIMI principles and how we support analysis."?>Purpose<?oxy_comment_end?></title>
         <para>The purpose of this document is to inform the CIMI community about ANF and why it is
             needed as an additional standard isosemantic representation of models within
-            CIMI.</para>
-        <para><emphasis role="bold">From Ioana:</emphasis></para>
-        <para>I believe the ANF specification can start answer the question: how do we describe a
-            “clinical statement” in a paradigm-neutral way to support clinical decision support and
-            patient safety?</para>
-        <para>There are tens of examples of <emphasis role="bold">Clinical Statements</emphasis> in
-            the Consolidated CDA specification that was adopted by all the MU-certified EHR vendors.
-            If we could demonstrate how ANF could be used to encode those clinical statements in an
-            implementation-neutral way and perhaps even how that ANF expression can be used migrate
-            to FHIR, we could provide a potent business case for ANF and Solor. </para>
-        <para>I see an opportunity to say that the ANF specification provides harmonization across
-            HL7 paradigms and perhaps foreshadow how this ANF specification can help. A work group
-            to address these inconsistencies was established and then merged into Orders and
-            Observation (O&amp;O) Work Group. If we want to present this ballot to the HL7
-            membership at-large.</para>
+            CIMI.<?oxy_comment_start author="kmaulden" timestamp="20190418T105223-0400" comment="From Ioana:
+I believe the ANF specification can start answer the question: how do we describe a “clinical statement” in a paradigm-neutral way to support clinical decision support and patient safety?
+There are tens of examples of Clinical Statements in the Consolidated CDA specification that was adopted by all the MU-certified EHR vendors. If we could demonstrate how ANF could be used to encode those clinical statements in an implementation-neutral way and perhaps even how that ANF expression can be used migrate to FHIR, we could provide a potent business case for ANF and Solor. 
+I see an opportunity to say that the ANF specification provides harmonization across HL7 paradigms and perhaps foreshadow how this ANF specification can help. A work group to address these inconsistencies was established and then merged into Orders and Observation (O&amp;O) Work Group. If we want to present this ballot to the HL7 membership at-large.
+"?></para><?oxy_comment_end?>
     </section>
     <section>
         <title>Scope</title>
         <para>This document will present the specification of the Analysis Normal Form (ANF), how it
-            is used to create detailed clinical models (DCMs), and how it differs from CIMI's
-            current standard modeling paradigm.</para>
+            is used to create detailed clinical models (DCMs), and how it differs
+            from<?oxy_comment_start author="kmaulden" timestamp="20190418T105315-0400" comment="KC: Work with Joey and Ioana on what this is exactly;"?>
+            CIMI's current standard modeling paradigm<?oxy_comment_end?>.</para>
     </section>
     <section>
         <title>Audience</title>

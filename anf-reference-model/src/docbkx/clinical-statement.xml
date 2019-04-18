@@ -83,11 +83,14 @@
     </section>
     <section>
         <title>Topic</title>
-        <para>Topic is the expression of <emphasis role="bold">WHAT </emphasis>is being requested or
-            what was performed. For both clinical statement types (request or performance) a
-            pre-coordinated or post-coordinated Solor “procedure” concept as a logical expression is
-            required to sufficiently capture the action, which is either requested or
-            performed.</para>
+        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111914-0400" comment="Comment from WC:
+This comment is written after I made other comments on assertions in section 1.6.10. Although I get, I think, the gist, this entire section – and actually the entire larger section 1.6 – is unclear because of insufficient distinction between what is description and what the description is about. Section 1.6’s title is ‘clinical statement components’ and the impression is given that the components are listed one by one in the subsections. The main problem I have is that there is not explicit enough distinction between what is on the side of the patient – e.g. a tumor – and what is on the side of documentation thereof, i.e. what a clinical statement should be, f.i. ‘observation of tumor’, ‘removal of tumor’, … Now are ‘clinical statement components’ strictly components of descriptions or does it include components of the patient itself? If it is only on the side of the description, is it to be taken as a literal part of the description, does it include implicit components that are identified in certain linguistic theories about term formation (e.g. case grammar, case theory, …). Most essential to get clear is what ‘topic’ exactly stands for. 
+"?>Topic
+            is the expression of <emphasis role="bold">WHAT </emphasis>is being requested or what
+            was performed.<?oxy_comment_end?> For both clinical statement types (request or
+            performance) a pre-coordinated or post-coordinated Solor “procedure” concept as a
+            logical expression is required to sufficiently capture the action, which is either
+            requested or performed.</para>
         <para> </para>
         <para><emphasis role="bold"><emphasis role="italic">Requests for actions
                 </emphasis></emphasis>can be requests for actions such as procedures or
@@ -95,7 +98,10 @@
         <para> </para>
         <itemizedlist>
             <listitem>
-                <para>Stress echocardiogram</para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T111925-0400" comment="Comment from WC:
+You don’t mean that just the phrase ‘stress echocardiogram’ is a request for action? It could as well be an observation that it was done.
+"?>
+                <para>Stress echocardiogram</para><?oxy_comment_end?>
             </listitem>
             <listitem>
                 <para>Administration of Aspirin 81 mg oral tablet</para>
@@ -113,6 +119,9 @@
         <para> </para>
         <itemizedlist>
             <listitem>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T111940-0400" comment="Comment from WC:
+But surely you should disambiguate between the phenomena themselves and the observations thereof. Plus be more precise about what ‘observation’ exactly is, otherwise you get trapped in HL7-nonsense. Clearly, you can only observe phenomena that are there: you can only observe congestive heart failure in a patient when it is there. But you can state in a record that the patient has CHF without he having it. In such case, the clinician might believe he observed an instance of CHF, but he did not observe it. Furthermore, ‘observe’ should not be overloaded with ‘deduce’. You can’t observe ‘psychosis’, only deduce it on the basis of … 
+"?>
                 <para>Congestive heart failure</para>
             </listitem>
             <listitem>
@@ -122,7 +131,7 @@
                 <para>Numbness of left arm</para>
             </listitem>
             <listitem>
-                <para>History of cognitive behavioral therapy</para>
+                <para>History of cognitive behavioral therapy<?oxy_comment_end?></para>
             </listitem>
         </itemizedlist>
         <para> </para>
@@ -131,12 +140,23 @@
         <para> </para>
         <para><emphasis role="bold">Principle 1: </emphasis>The topic defines the action being
             performed or requested.</para>
-        <para><emphasis role="bold">Principle 2: </emphasis>The topic has to be able to exist on its
-            own and still retain original intent and clarity of meaning. </para>
-        <para><emphasis role="bold">Principle 3: </emphasis>The topic includes what is being
-            measured or observed. </para>
-        <para><emphasis role="bold">Principle 4: </emphasis>Each clinical statement may only have
-            one topic. </para>
+        <para><emphasis role="bold">Principle 2:
+            </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T112000-0400" comment="Comment from WC:
+This is unclear. Is the topic part of the assertion, or is it that what (part of) the assertion is about? If it is what the assertion is about, it cannot have clarity of meaning. If the topic is the patient’s CHF, what would be the clarity of meaning of his disease? Is it the assertion, then do you mean that instances of the specified type must exist (perhaps not in this patient), or that it must be able to exist in the patient (thus accounting for mistakes, misdiagnosis, …)?
+"?>The
+            topic has to be able to exist on its own and still retain original intent and clarity of
+            meaning. <?oxy_comment_end?></para>
+        <para><emphasis role="bold">Principle 3:
+            </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T112017-0400" comment="Comment from WC:
+‘Observed’ or ‘measured’ is a problem as explained. It does not account for mistakes.
+"?>The
+            topic includes what is being measured or observed. <?oxy_comment_end?></para>
+        <para><emphasis role="bold">Principle 4:
+            </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T112032-0400" comment="Comment from WC:
+But that the mother of the patient had colon cancer is both about the mother, the cancer and the patient. So ‘aboutness’ of observations/measurement must be much better characterized.
+"?>Each
+            clinical statement may only have one topic.<?oxy_comment_end?>
+        </para>
         <para> </para>
         <para> </para>
     </section>
@@ -266,9 +286,12 @@
         <para/>
         <itemizedlist>
             <listitem>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T112050-0400" comment="Comment from WC:
+Lack of distinction between the observation as an action and that what is observed leads to ambiguity about whether an absent observed finding is an assertion about whether, for example, a requested observation was not done, or whether it was done but there was nothing to observe.
+"?>
                 <para>Timing: <emphasis role="bold">WHEN </emphasis>a requested action should be
                     performed or <emphasis role="bold">WHEN </emphasis>an observed finding or
-                    disorder was present or absent.</para>
+                    disorder was present or absent.<?oxy_comment_end?></para>
                 <itemizedlist>
                     <listitem>
                         <para>Examples:</para>
@@ -324,7 +347,9 @@
 
             <listitem>
                 <para><emphasis role="bold">conditionalTrigger</emphasis></para>
-                <para>TBD</para>
+                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112102-0400" comment="Comment from WC:
+Ironically, this is one of the few things that IS clear to me. It should describe the circumstances which are conditions for the requested action to be performed, ‘when awake’, ‘after breakfast’, ‘if x still present after 3 days’, …Main issue is not to confuse it with the WHEN although many triggers can be expressed as such and not to leave anything implicit: e.g. if a trigger is ‘after breakfast’ doesit mean that if pt did not have breakfast it shouldn’t happen?  What is not clear, however, is how to squeeze such distinctions with enough clarity in formal expressions.
+"?>TBD<?oxy_comment_end?></para>
             </listitem>
 
             <listitem>
@@ -336,10 +361,14 @@
                 <para> </para>
                 <itemizedlist>
                     <listitem>
-                        <para>Cardiology consultation with Chief Cardiologist</para>
+                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
+Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
+"?>Cardiology
+                            consultation with Chief Cardiologist</para>
                     </listitem>
                     <listitem>
-                        <para>Smoking cessation education with patient and patient’s spouse</para>
+                        <para>Smoking cessation education with patient and patient’s
+                            spouse<?oxy_comment_end?></para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -387,8 +416,12 @@
 
             <listitem>
                 <para><emphasis role="bold">requestedResult</emphasis></para>
-                <para>Arequested result is a patient goal to be achieved. It can include specified or
-                    quantified details of an action that is to be performed, such as '3 times daily'. </para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
+Would it not be better to call this then ‘request goal’?
+"?>
+                <para>Arequested result is a patient goal to be achieved. It can include specified
+                    or quantified details of an action that is to be performed, such as '3 times
+                    daily'. <?oxy_comment_end?></para>
                 <para> </para>
                 <para>Examples:</para>
                 <para/>
@@ -399,8 +432,11 @@
                         <para> to lower systolic blood pressure to &lt;130 mmHg</para>
                     </listitem>
                     <listitem>
-                        <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one tablet</emphasis>
-                            oral daily 4 times</para>
+                        <?oxy_comment_start author="kmaulden" timestamp="20190418T112144-0400" comment="Comment from WC:
+This is an example of having an unclear topic. Is it the (implicit) request that such tablets are taken, or is it such tablets?
+"?>
+                        <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one
+                                tablet</emphasis> oral daily 4 times</para><?oxy_comment_end?>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -447,14 +483,18 @@
 
             <listitem>
                 <para><emphasis role="bold">UnstructuredCircumstance</emphasis></para>
-                <para>Unstructured Circumstance is used to document additional parts of clinical statements,
-                    which are not necessary for accurate data coding or retrieval. </para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T112339-0400" comment="Comment from WC:
+Brings in another level of confusion: I thought this entire discussion was about documenting what is on the side of the patient, here you include documenting how clinical statements are configured. That might be valid too, and I would even recommend it for quality control purposes, but then an extra meta-level needs to be included.
+"?>
+                <para>Unstructured Circumstance is used to document additional parts of clinical
+                    statements, which are not necessary for accurate data coding or retrieval.
+                    <?oxy_comment_end?></para>
                 <figure>
                     <title>Unstructured Circumstances</title>
-                    
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/unstructured_circumstance.png" scalefit="1" width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/unstructured_circumstance.png" scalefit="1"
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
