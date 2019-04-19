@@ -6,9 +6,9 @@
    </parent>
    <modelVersion>4.0.0</modelVersion>
 
-   <artifactId>statements</artifactId>
-   <name>ISAAC's KOMET: Statements</name>
-   <description>Description of Statement models for Analysis Normal Form and Clinical Input Form</description>
+   <artifactId>ballot-root</artifactId>
+   <name>ANF Ballot: Root</name>
+   <description>Root module for the ANF Ballot Submission</description>
    <packaging>pom</packaging>
 
    <properties>

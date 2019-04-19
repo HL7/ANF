@@ -6,9 +6,8 @@
    <artifactId>anf-ballot-submission</artifactId>
    <packaging>pom</packaging>
    <version>0.13-SNAPSHOT</version>
-   <name>ISAAC's KOMET: (Multi-Module Documentation Project)</name>
-   <url>http://informatics-architecture.net/isaacs-komet</url>
-   
+   <name>ANF Ballot Submission</name>
+
    <inceptionYear>2015</inceptionYear>
 
    <licenses>
@@ -20,24 +19,6 @@
       </license>    
    </licenses>
 
-   <issueManagement>
-      <url>http://issues.osehra.org/projects/ISAAC/summary</url>
-      <system>JIRA</system>
-   </issueManagement>
-    
-   <distributionManagement>
-      <site>
-         <id>isaacs.komet.website</id>
-         <name>ISAAC's KOMET website</name>
-         <url>file:/Library/WebServer/Documents/isaacs.komet.web</url>
-      </site>
-   </distributionManagement>
-    
-   <scm>
-      <url>https://github.com/OSEHRA/komet/tree/develop</url>
-      <connection>scm:git:https://github.com/OSEHRA/komet.git</connection>
-      <developerConnection>scm:git:https://github.com/OSEHRA/komet.git</developerConnection>
-   </scm>
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
