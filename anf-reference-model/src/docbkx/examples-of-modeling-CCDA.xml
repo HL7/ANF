@@ -8,7 +8,8 @@
     <section>
         <title><anchor xml:id="_Toc5884799"/>Summary of Care</title>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Summary of Care 1</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -165,10 +166,11 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Summary of Care 2</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -327,10 +329,11 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Summary of Care 3</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -426,14 +429,15 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
         <para> </para>
     </section>
     <section>
         <title><anchor xml:id="_Toc5884800"/>Patient Chart Summary (Excerpt)</title>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Patient Chart Summary 1</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -623,7 +627,7 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
     </section>
 </section>

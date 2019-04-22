@@ -9,7 +9,8 @@
         <title><anchor xml:id="_Toc5884802"/>Atrial Fibrillation / Atrial Flutter Order Set
             (Excerpt)</title>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Artial Fabrillation 1</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -115,9 +116,10 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Artial Fabrillation 2</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -154,7 +156,7 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
         <para> </para>
     </section>
@@ -163,7 +165,8 @@
             (Excerpt)</title>
         <para> </para>
         <para> </para>
-        <informaltable>
+        <table>
+            <title>Diagnostic Breast Imaging Documentation Template 1</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -260,7 +263,7 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
     </section>
 </section>
