@@ -8,15 +8,44 @@
 o	Goal is to show in examples, how ANF normalizes the data from CIF
 
 "?>Analysis<?oxy_comment_end?>
-        Normal Form</title>
-    <para> </para>
+        Normal Form (Joey)</title>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>To explain ANF modeling principles</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Describe principles</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Describe and explain architectural separation of
+                                            concerns and why this matters</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Describe benefits of ANF Modeling principles</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                        <para> </para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
     <para> </para>
     <section>
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para><emphasis role="bold">Separationof Concerns: </emphasis>Asdefined by
-                        Wikipedia<anchor xml:id="_ftnref1"/>[1]: Separation of Concerns (SoC) is a
+                <para><emphasis role="bold">Separation of Concerns: </emphasis>Asdefined by
+                        Wikipedia [1]: Separation of Concerns (SoC) is a
                     design principle for separating a computer program into distinct sections, such
                     that each section addresses a separate concern.
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:

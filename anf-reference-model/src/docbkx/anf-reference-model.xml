@@ -4,7 +4,26 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>ANF Reference Model</title>
+    <title>ANF Reference Model (Joey)</title>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>To detail and explain the ANF Model, its components (building
+                                    blocks) and how each component is represented</para>
+                            </listitem>
+                        </itemizedlist>
+                        <para> </para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
     
     <para>The ANF Reference Model is a small static model that can easily be described with UML, OpenEHR BMM, or FHIR StructureDefintion. 
         Detailed Clinical Models are then described as constraints of this reference model. 

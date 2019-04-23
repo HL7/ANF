@@ -4,8 +4,31 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Differences between ANF and CIF</title>
-    <para>Thereare two fundamental differences between the ANF and CIF approach. The first is the
+    <?oxy_comment_start author="kmaulden" timestamp="20190423T101923-0400" comment="Not sure, if this chapter is in the right place. Should it be further up, e.g. before Chapter 7?"?>
+    <title>Differences between ANF and CIF (Joey)</title><?oxy_comment_end?>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Explain how the ANF Model is different from CIF </para>
+                            </listitem>
+                            <listitem>
+                                <para>Explain the consequences of the differences for data
+                                    retrieval</para>
+                            </listitem>
+                        </itemizedlist>
+                        <para> </para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+    <para>There are two fundamental differences between the ANF and CIF approach. The first is the
         representation of topic, and the second is the representation of results.</para>
     <orderedlist>
         <listitem>
@@ -137,14 +160,13 @@
             </listitem>
         </itemizedlist>
         <para> </para>
+        <?oxy_comment_start author="kmaulden" timestamp="20190423T101942-0400" comment="So, are we saying here, that CIF is actually better than ANF for queries?"?>
         <para>When querying instance data, the Assertion or ANF style is much more difficult for
             things like breath sounds.To query any breath sound instances, you must have knowledge
             of all possible breath sound topics and query for each. With the EvaluationResult style,
             querying is simpler as you simply query for a topic of 'breath sound', and the code
             result tells you what type of breath sound it is. Thus, you do not have to know all the
-            members of the valueset apriori to form the query. Clinical StatementExamples.</para>
+            members of the valueset apriori to form the query. Clinical
+        StatementExamples.</para><?oxy_comment_end?>
     </section>
-    
-    
-    
 </chapter>

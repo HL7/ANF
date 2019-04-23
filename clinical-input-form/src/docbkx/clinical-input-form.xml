@@ -9,6 +9,32 @@
 	Continue to show, how the different ways of recording data are perfectly normal and acceptable and elaborate on the issues for data retrieval and analysis
 "?>Clinical<?oxy_comment_end?>
         Input Form</title>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>To further illustrate, how the different ways of recording
+                                    data are perfectly normal and acceptable for users and explain
+                                    how this poses issues for data retrieval</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Provide examples where those issues
+                                                can be patient safety risks</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                        <para> </para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
     <para>Ideally, the way the information is presented to clinicians is in a manner that is most
         efficient for the clinicians to use. However, what is an efficient way for clinicians to
         select and enter data may not be the most efficient way for data analysts to use when they
@@ -31,20 +57,14 @@ Chain not clear, meaning of ‘’? When is the data normalized?
         prevalence statistics) ð ANF (it is how the data is represented or stored in the database;
         must know enough about the data to know what is stored in the topic vs. what is stored as a
         result or detail)</para>
-    <para> </para>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110756-0400" comment="Comment from WC:
-Key here is not to lose information from CIF to ANF.
-"?>Thegoal
-        of ANF is to enable analysts to understand the data and how it is stored in lieu of having
-        to teach them about the thousands of ways data can exist within an isosemantic family (i.e.,
-        CIF) and ensure the data that has to be expressed can be expressed in an operable and
-        scalable way.<?oxy_comment_end?> The more that data is normalized, the simpler it will
-        become to analyze, and the likelihood of analysis errors will be reduced. Without the ANF,
-        the probability of patient safety risks is increased. Examples of problems that can occur
+    <para> The more that data is normalized, the simpler it will become to analyze, and the
+        likelihood of analysis errors will be reduced. The critical part of this is to ensure that
+        information is not lost between the CIP and the ANF data normalization.Without the ANF, the
+        probability of patient safety risks is increased. Examples of problems that can occur
         are:</para>
     <para> </para>
     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110833-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example
-"?><emphasis
+"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100827-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example" mid="3"?><emphasis
             role="bold">An inability</emphasis> to determine that two clinical statements are
         equivalent</para>
     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110852-0400" comment="Comment from WC:
@@ -82,5 +102,5 @@ Example obscure: why would the specified request topic be needed in the query fo
         and was ordered during the period September 1 – December 31, 2016, the analyst did not
         include a Request topic of “Administration of drug or medication PO BID for pain.” Thus, the
         medication order would not be included in the query
-        results.<?oxy_comment_end?><?oxy_comment_end mid="7"?></para>
+        results.<?oxy_comment_end?><?oxy_comment_end mid="3"?><?oxy_comment_end mid="7"?></para>
 </chapter>

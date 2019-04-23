@@ -4,7 +4,10 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Introduction</title>
+    <title>Introduction
+        (<?oxy_comment_start author="kmaulden" timestamp="20190423T093902-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. 
+Re-using some of the work in the interoperability paper is probably wise. I think a distillation of key concepts should be part of the HL7 ballot document. We need to motivate why an ANF approch is necessary as opposed to the status quo.
+"?>Ioana<?oxy_comment_end?>)</title>
     <section>
         <title>Background</title>
         <para>The Clinical Information Modeling Initiative (CIMI) is an HL7 group that is defining a
@@ -34,7 +37,11 @@
         <para>A FHIR implementation guide can eventually be developed.</para>
     </section>
     <section>
-        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T105057-0400" comment="KC: Purpose should be to explain an approach that involves data with many of the CIMI principles and how we support analysis."?>Purpose<?oxy_comment_end?></title>
+        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T105057-0400" comment="KC: Purpose should be to explain an approach that involves data with many of the CIMI principles and how we support analysis."?><?oxy_comment_start author="kmaulden" timestamp="20190423T094001-0400" comment="Joey Coyle:
+Is Purpose, the purpose of this document, or is it the purpose of ANF?
+
+Depending on the above…  we could mention here that most current representations mix clinical information into the property names of the clinical data structures.  The ANF representation will have a clean separation of clinical terminology from a generic Clinical Statement data structure.
+" mid="2"?>Purpose<?oxy_comment_end?><?oxy_comment_end mid="2"?></title>
         <para>The purpose of this document is to inform the CIMI community about ANF and why it is
             needed as an additional standard isosemantic representation of models within
             CIMI.<?oxy_comment_start author="kmaulden" timestamp="20190418T105223-0400" comment="From Ioana:
@@ -45,13 +52,16 @@ I see an opportunity to say that the ANF specification provides harmonization ac
     </section>
     <section>
         <title>Scope</title>
-        <para>This document will present the specification of the Analysis Normal Form (ANF), how it
-            is used to create detailed clinical models (DCMs), and how it differs
-            from<?oxy_comment_start author="kmaulden" timestamp="20190418T105315-0400" comment="KC: Work with Joey and Ioana on what this is exactly;"?>
+        <para><?oxy_comment_start author="kmaulden" timestamp="20190423T094055-0400" comment="Joey Coyle:
+Do you want this for later sections, or do you want to explain it here?
+"?>This
+            document will present the specification of the Analysis Normal Form (ANF), how it is
+            used to create detailed clinical models (DCMs), and how it differs
+            from<?oxy_comment_end?><?oxy_comment_start author="kmaulden" timestamp="20190418T105315-0400" comment="KC: Work with Joey and Ioana on what this is exactly;"?>
             CIMI's current standard modeling paradigm<?oxy_comment_end?>.</para>
     </section>
     <section>
-        <title>Audience</title>
+        <title><?oxy_comment_start author="kmaulden" timestamp="20190423T094112-0400" comment="KC: Should be broad audience"?>Audience<?oxy_comment_end?></title>
         <para>The intended audience for this document are all HL7 members.</para>
     </section>
     

@@ -4,174 +4,53 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>ANF Clinical Statements</title>
-    <para>In the context of the ANF Model, aclinical
+    <title>ANF Clinical Statements (Kirsten)</title>
+    <para> </para>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>To provide understanding of ANF clinical statements </para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Introduce the 2 types of ANF clinical statements and
+                                            their purpose</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Explain the benefits of having only 2 types</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                        <para> </para>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+    <para>In the context of the ANF Model, a clinical
         <?oxy_comment_start author="kmaulden" timestamp="20190418T110233-0400" comment="Comment from WC:
 This is too imprecise:
 1) ‘structured’ according to what? Sentences are also structured, some according to English grammar, others according to a grammar for technical sublanguage (see Naomi Sager’s Linguistic String project).
 2) ‘computable’ by whom or what? Some algorithms can, others can’t.
 3) ‘A clinical statement REPRESENTS and entry in the patient record’: do you mean (a) ‘is’ an entry, such that if x is an instance of Clinical Statement, then x is also an instance of Entry in a Patient Record, or (b) if x is instance of Clinical Statement, then there is some y instance of Entry in the Patient record such that x represents y, or (c) the ‘documents’ restricts the scope of what record entries qualify as clinical statements, namely those that document clinical information?
 4) ‘Clinical Information’? this extends the previous issue: is this a third thing z instance of Clinical Information such that x represents y and y documents z? I would argue that clinical statements and clinical information under whatever interpretation.
-"?>statement
+" id="ddb_byf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100033-0400" comment="Joey Coyle:
+An Entry is a Clinical Statement, and a Clinical Statement is an Entry.   In the case of 13606, Entry has a defined data structure and instances which conform to constraints applied to this data structure.  Clinical Statement has a defined data structure and instances which conform to constraints applied to this data structure. 
+
+Anyway, maybe the following for the first paragraph which avoids all the comments above.
+
+A Clinical Statement is a complete description about a particular aspect, characteristic, or condition of a patient.  The ANF Model attempts to define a data structure to represent these clinical statements in a reproducible and computable manner.
+" parentID="ddb_byf_nhb" mid="1"?>statement
         represents an entry in the patient record that documents in a structured/computable manner
         clinical information related to the patient that is asserted by a particular source,
-        recorded, and potentially verified. <?oxy_comment_end?></para>
-    <para> </para>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110250-0400" comment="Comment from WC:
-Can clinicians author clinical statements without entering them in the record? If so, then the description in the previous paragraphs about what a ‘clinical statement’ is becomes even more problematic
-"?>Clinicians
-        author clinical statements and enter them into their organization’s electronic health record
-        (EHR)<?oxy_comment_end?>. Clinicians typically enter the information via a manner that we
-        call here the clinical input form (CIF). However, the CIF is not a literal form that
-        clinicians select and enter data in. Rather, it refers to the manner in which information is
-        presented to the clinicians and how they enter the data, such as by constraining the
-        information to allow only certain values to be entered, such as through a drop-down list or
-        radio button, or breaking up large chunks of related information into smaller parts.</para>
-    
-    <para><emphasis role="bold"><emphasis role="underline">Examples:</emphasis></emphasis></para>
-  
-    <itemizedlist>
-        <listitem>
-            <para>Clinicians can measure a patient’s pulse rate by different methods, e.g. by
-                palpation of the radial pulse or by using a doppler ultrasound device. The recording
-                of the pulse rate to be entered in a CIF of different Electronic Medical Record
-                (EMR) Systems in different ways. </para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>One EMR could display a set of options to choose from:</para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Pulse rate by Palpation</para>
-        </listitem>
-        <listitem>
-            <para>Pulse rate by Doppler</para>
-        </listitem>
-        <listitem>
-            <para>Pulse rate by Finger Tip Pulse Oximeter</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>The clinician would make a choice and then record the measurement result in a text
-        field.</para>
-    <para> </para>
-    <para>A different EMR could display a text field with a label “Pulse Rate” to enter the
-        measurement result and in addition offer options to choose from to record the method:</para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Palpation</para>
-        </listitem>
-        <listitem>
-            <para>Doppler</para>
-        </listitem>
-        <listitem>
-            <para>Finger Tip Pulse Oximeter</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>In addition to the kind of device used, there could be a choice of the measurement being
-        taken at rest or exercised. Again, this could be displayed in different ways.</para>
-    <para> </para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>The current guidance for blood pressure measurements for adults includes the body
-                site, the blood pressure cuff size to use as well as some prerequisites. The patient
-                should be in a sitting position for at least 5 minutes and should have urinated no
-                more than 30 minutes before the measurement.</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>There are different ways the measurement result could be entered into a form in an EMR.
-        Display options for the user could be, e.g. a text field to enter the measurement result
-        (e.g. 120 mmHg) with the label of the complete guideline:</para>
-    <para> </para>
-    <para>“Arterial blood pressure ____ mmHg, taken on right brachial artery, using adult size blood
-        pressure cuff, patient in sitting position for at least 5 minutes, urinated no more than 30
-        minutes prior to measurement”. For the user, this would be the easiest way to document the
-        measurement. However, the various parts of information about the body site, the blood
-        pressure cuff, patient position etc. would be lost to any attempt of data retrieval.</para>
-    <para> </para>
-    <para> </para>
-    <para>A different EMR could display a text field for the result and lists of choices for the
-        body site:</para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Right brachial artery</para>
-        </listitem>
-        <listitem>
-            <para>Left brachial artery</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>Or:</para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Brachial artery</para>
-            <itemizedlist>
-                <listitem>
-                    <para>Right</para>
-                </listitem>
-                <listitem>
-                    <para>Left</para>
-                </listitem>
-            </itemizedlist>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>And a list of choices for the blood pressure cuff size used:</para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Adult size Small</para>
-        </listitem>
-        <listitem>
-            <para>Adult size Medium</para>
-        </listitem>
-        <listitem>
-            <para>Adult size Large</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para>Or other permutations of this. </para>
-    <para> </para>
-    <para> </para>
-    <para>The same could be true for the display and documentation option for the patient position
-        (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could
-        differ between systems. </para>
-    <para> </para>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>When a clinician orders a medication, rather than selecting this information all
-                at once with a single item, they will choose the various parts of the medication
-                order, such as</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <itemizedlist>
-        <listitem>
-            <para>Kind of drug and strength (e.g., Acetaminophen 150 mg)</para>
-        </listitem>
-        <listitem>
-            <para>Amount and how often the patient should take the medication (e.g., 1 tablet twice
-                daily)</para>
-            <itemizedlist>
-                <listitem>
-                    <para>Duration (2 days)</para>
-                </listitem>
-            </itemizedlist>
-        </listitem>
-        <listitem>
-            <para>Any constraints (e.g., do not exceed a total daily dosage of 600 mg)</para>
-        </listitem>
-    </itemizedlist>
-    <para> </para>
-    <para> </para>
+        recorded, and potentially verified. <?oxy_comment_end mid="1"?><?oxy_comment_end?>
+    </para>
     <para> </para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Clinical Statements</title>
@@ -203,9 +82,12 @@ Can clinicians author clinical statements without entering them in the record? I
             <title><anchor xml:id="_Toc1824813"/>Performance Clinical Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
 As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
-"?>Aperformance
-                statement describes an action that has previously been performed, and – if
-                applicable - the results of that action.<?oxy_comment_end?> As shown in the examples
+" id="xfp_jyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
+As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
+" parentID="xfp_jyf_nhb" mid="3"?>A
+                performance statement describes an action that has previously been performed, and –
+                if applicable - the results of that
+                action.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
                 below, this can range from documenting that a subject of record:</para>
             <para> </para>
             <itemizedlist>
@@ -268,8 +150,10 @@ For instance that a test is ordered?
                 <listitem>
                     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-"?>Family
-                        history of colon cancer<?oxy_comment_end?></para>
+" id="ppm_nyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
+" parentID="ppm_nyf_nhb" mid="6"?>Family
+                        history of colon cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?></para>
                 </listitem>
                 <listitem>
                     <para>Patient provided educational materials on pre-diabetes diagnosis</para>

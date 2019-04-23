@@ -4,7 +4,42 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    
-    <title>Transformation</title>
-    
+    <title><?oxy_comment_start author="kmaulden" timestamp="20190423T101734-0400" comment="KC: Don’t put too much effort into this. Describe transformation on a high level. Put the most work into the examples (BP, Pulse etc. earlier in the document)
+IS: Big value is the endpoint of data being normalized into ANF. 
+KC: We can convince people that ANF has value like 1st normal form and 2nd normal form (Tim has expertise here). 
+"?>Transformation<?oxy_comment_end?></title>
+    <para/>
+    <informaltable>
+        <tgroup cols="1">
+            <colspec colnum="1" colname="col1"/>
+            <tbody>
+                <row>
+                    <entry>
+                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Explain how the ANF Model transforms the clinical statements
+                                    into normalized data</para>
+                            </listitem>
+                        </itemizedlist>
+                        <para/>
+                        <para/>
+                    </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+    <para/>
+    <?oxy_comment_start author="kmaulden" timestamp="20190423T101818-0400" comment="I am not sure, if Walter Sujanski’s whitepaper is the right content here. Need to discuss with team." id="wbf_k1g_nhb"?>
+    <?oxy_comment_start author="kmaulden" timestamp="20190423T101828-0400" comment="2	joey
+This whitepaper addresses processes for transforming clinical data that were collected
+            using an object-oriented data model (CIMI) into semantically equivalent data structures
+            represented using a description-logic model (SOLOR). The paper discusses the motivation
+            for performing such transformations and evaluates several candidate languages for
+            specifying and executing the transformations. Specific recommendations are made
+            regarding the next steps in selecting the best language for CIMI-to-SOLOR
+            transformations of clinical data
+" parentID="wbf_k1g_nhb" mid="2"?>
+    <para>PLACEHOLDER Walter Sujanski’s Whitepaper (original title: CEM to CIMI Conversion White
+        Paper)</para><?oxy_comment_end?><?oxy_comment_end mid="2"?>
 </chapter>
