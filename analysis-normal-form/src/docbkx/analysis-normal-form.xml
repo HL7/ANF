@@ -95,8 +95,8 @@ Is ‘Practitioner’ here are a Role or an Attribute. Is ‘Person’ an Entity
                     <title>Architectural Seperation of Concerns</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/architectural_seperation_of_concerns.png"
-                                scalefit="1" width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/PASTF2.png" scalefit="1" width="100%"
+                                contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
