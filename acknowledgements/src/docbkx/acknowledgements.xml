@@ -5,5 +5,38 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Acknowledgements</title>
+    <para>The project would like to acknowledge the contributions in time, effort and intellectual
+        capital from the following individuals:</para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>Keith Campbell</para>
+            </listitem>
+            <listitem>
+                <para>Richard Esmond</para>
+            </listitem>
+            <listitem>
+                <para>Ioana Singureanu</para>
+            </listitem>
+            <listitem>
+                <para>Joey Coyle</para>
+            </listitem>
+            <listitem>
+                <para>Walter Sujansky</para>
+            </listitem>
+            <listitem>
+                <para>Werner Ceusters</para>
+            </listitem>
+            <listitem>
+                <para>Kirsten Haake</para>
+            </listitem>
+            <listitem>
+                <para>Tim Williams</para>
+            </listitem>
+            <listitem>
+                <para>Raja Cholan</para>
+            </listitem>
+        </itemizedlist>
+    </para>
 
 </chapter>
