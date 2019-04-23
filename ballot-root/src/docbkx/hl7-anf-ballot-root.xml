@@ -30,5 +30,8 @@
   
   <!-- Differences between ANF and CIF -->
   <xi:include href="../../../anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!-- Acknowledgements -->
+  <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  
 
 </book>

@@ -168,35 +168,7 @@
          </plugin>
       </plugins>
    </build>
-   <!--<reporting>-->
-      <!--<plugins>-->
-         <!--<plugin>-->
-            <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
-            <!--<version>2.9</version>-->
-            <!--<configuration>-->
-               <!--<dependencyLocationsEnabled>false</dependencyLocationsEnabled>-->
-            <!--</configuration>-->
-         <!--</plugin>-->
-         <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-jxr-plugin</artifactId>-->
-            <!--<version>2.5</version>-->
-            <!--<configuration>-->
-               <!--<aggregate>true</aggregate>-->
-            <!--</configuration>-->
-         <!--</plugin>-->
-         <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-surefire-report-plugin</artifactId>-->
-            <!--<version>2.19.1</version>-->
-         <!--</plugin>-->
-         <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
-            <!--<version>2.17</version>-->
-         <!--</plugin>-->
-      <!--</plugins>-->
-   <!--</reporting>-->
+
    <modules>
       <module>ballot-root</module>
       <module>doc-logging</module>
@@ -209,44 +181,6 @@
       <module>clinical-statements</module>
       <module>introduction</module>
       <module>transformation</module>
+      <module>acknowledgements</module>
    </modules>
-   <!--<profiles>-->
-      <!--<profile>-->
-         <!--<id>xep-profile</id>-->
-         <!--<activation>-->
-            <!--<file>-->
-               <!--<exists>/Applications/XEP/xep</exists>-->
-            <!--</file>-->
-         <!--</activation>-->
-         <!--<build>-->
-            <!--<plugins>-->
-               <!--<plugin>-->
-                  <!--<groupId>org.codehaus.mojo</groupId>-->
-                  <!--<artifactId>exec-maven-plugin</artifactId>-->
-                  <!--<version>1.6.0</version>-->
-                  <!--<executions>-->
-                     <!--<execution>-->
-                        <!--<phase>process-classes</phase>-->
-                        <!--<goals>-->
-                           <!--<goal>exec</goal>-->
-                        <!--</goals>-->
-                     <!--</execution>-->
-                  <!--</executions>-->
-                  <!--<configuration>-->
-                     <!--<executable>/Applications/XEP/xep</executable>-->
-                     <!--<workingDirectory>${project.basedir}/src/docbkx</workingDirectory>-->
-                     <!--<successCodes>0,1</successCodes>-->
-                     <!--<arguments>-->
-                        <!--<argument>-fo</argument>-->
-                        <!--<argument>${project.build.directory}/site/docbook/${project.artifactId}.fo</argument>-->
-                        <!--<argument>-pdf</argument>-->
-                        <!--<argument>${project.build.directory}/site/docbook/${project.artifactId}.xep.pdf</argument>-->
-                     <!--</arguments>-->
-                  <!--</configuration>-->
-               <!--</plugin>-->
-            <!--</plugins>-->
-         <!--</build>-->
-      <!--</profile>-->
-
-   <!--</profiles>-->
 </project>
