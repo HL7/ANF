@@ -46,7 +46,11 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
         the patient, made by healthcare provider, e.g. a nurse or a physician. This can be the
         statement of a condition being present, a request for a procedure to be done, the results of
         lab tests or the patient’s family history of
-        <?oxy_comment_start author="kmaulden" timestamp="20190423T094928-0400" comment="KC: Put footnote in that says there is more than one implementation that satisfies that definition, e.g. the HL7 V3….OUR implementation is described as an ANF Statement"?>cancer<?oxy_comment_end?>. </para>
+        <?oxy_comment_start author="kmaulden" timestamp="20190423T094928-0400" comment="KC: Put footnote in that says there is more than one implementation that satisfies that definition, e.g. the HL7 V3….OUR implementation is described as an ANF Statement"?>cancer<?oxy_comment_end?>.
+        There is a number of implementation, which fit this description, e.g. the current normative
+        definition of Clinical Statements in HL7 V3 describes principles and constraints for
+        Clinical Statements <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>(add
+        footnote to this below)<?oxy_custom_end?>.</para>
     <?oxy_comment_start author="kmaulden" timestamp="20190423T095000-0400" comment="Joey Coyle:
 As above, I don’t think we want to do this so boldly, again, this is just another example of a Clinical Statement.  Cimi is all about Clinical Statements, but never once in 5 years has there been any discussion of the V3 implementation of a Clinical Statement.
 
@@ -54,54 +58,19 @@ I just don’t think it is a good idea to confuse HL7 members that this is some 
 
 I think we should start off by generally defining what a clinical statement is, and then state there have been many implementations of a clinical statement, and then list these. And be careful not to use these implementations as the definition of what a clinical statement is.  We need to be careful not to confuse readers that ANF clinical statements is somehow an extension of these implementations.
 "?>
-    <para>The current normative definition of Clinical Statements in HL7 V3 describes principles and
-        constraints for Clinical Statements:</para>
-    <para><emphasis role="italic">“An expression of a discrete item of clinical, clinically-related
-            or public health information that is recorded because of its relevance to the care of a
-            patient or other entity. Clinical or public health information can be expressed with
-            different levels of granularity and therefore the extent and detail conveyed in a single
-            statement may vary. To be regarded as a Clinical Statement, a concept must be associated
-            with a patient or other entity in a manner which makes clear:</emphasis></para>
-    <itemizedlist>
-        <listitem>
-            <para><emphasis role="italic">Its temporal context</emphasis></para>
-        </listitem>
-        <listitem>
-            <para><emphasis role="italic">Its relationship to the entity or
-                entities</emphasis></para>
-        </listitem>
-        <listitem>
-            <para><emphasis role="italic">In the case of an observation, its mood and presence,
-                    absence or value</emphasis></para>
-        </listitem>
-        <listitem>
-            <para><emphasis role="italic">In the case of a procedure, its mood and
-                status</emphasis></para>
-        </listitem>
-    </itemizedlist>
-    <para><emphasis role="italic">This clarity may be achieved by:</emphasis></para>
-    <itemizedlist>
-        <listitem>
-            <para><emphasis role="italic">Explicit representation; or</emphasis></para>
-        </listitem>
-        <listitem>
-            <para><emphasis role="italic">Implicit application of defaults ONLY where explicitly
-                    modeled rules state the appropriate defaults." </emphasis></para>
-        </listitem>
-    </itemizedlist>
     <para><anchor xml:id="_ftn1"/>[1]<link
             xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
             >http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40</link><?oxy_comment_end?></para>
     <?oxy_comment_start author="kmaulden" timestamp="20190423T095113-0400" comment="Joey Coyle:
 This should be worded as one example/implementation of Clinical Statements, because the definition of Clinical Statements pre-dated  CDA-CMET.  Clinical Statement is a generic informatics term from the early 90’s or maybe even 80’s, not sure. But it was firmly established when we created Intermountain’s Clinical Element Model in 2001, as the Clinical Element “statement” was an implantation of a clinical statement.
 "?>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T105806-0400" comment="This was provided by Ioana" id="w1b_5wf_nhb" mid="6"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095053-0400" comment="I believe that in our context here, clinical statements are something different. They are statements about a subject of record made by a person in a role (e.g. healthcare provider, nurse). This understanding is consistent with the HL7 V3 definition above. I would think that in the context of a CDA, clinical statements ARE entries. Need to discuss with team." parentID="w1b_5wf_nhb" mid="5"?>Clinical
+    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T105806-0400" comment="This was provided by Ioana" id="w1b_5wf_nhb" mid="7"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095053-0400" comment="I believe that in our context here, clinical statements are something different. They are statements about a subject of record made by a person in a role (e.g. healthcare provider, nurse). This understanding is consistent with the HL7 V3 definition above. I would think that in the context of a CDA, clinical statements ARE entries. Need to discuss with team." parentID="w1b_5wf_nhb" mid="6"?>Clinical
         Statements are used to model all “entries” in a Clinical Document Architecture(CDA) document
         section. The Clinical Statement “Common Model Element Type” (CMET) is the base model for the
         all Consolidated CDA “clinical statement” templates that are still mandatory for Electronic
         Health Record (EHR) vendors. The concept of “clinical statement” is widely understood though
         there is an issue with consistency across HL7 paradigms: V3, CDA, and
-        FHIR.<?oxy_comment_end mid="5"?><?oxy_comment_end mid="6"?><?oxy_comment_end?></para>
+        FHIR.<?oxy_comment_end mid="6"?><?oxy_comment_end mid="7"?><?oxy_comment_end?></para>
     <?oxy_comment_start author="kmaulden" timestamp="20190418T105920-0400" comment="placeholder"?>
     <para>Placeholder <emphasis role="bold">HERE</emphasis> for more detail about other paradigms
         later in the document (maybe forward link for more detail here?)</para><?oxy_comment_end?>
@@ -124,9 +93,9 @@ The big difference I see is that ANF has a pure and consistent coded topic with 
 
 Maybe…
 Structured Coded Form
-" id="hhx_wxf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095920-0400" comment="KC: Supports general idea. In CIMI we allow expression tree both in topic and in the value, which creates problem like the dot blot hemorrhages. We should get 1 or two examples of statements and how ANF uses it, how CIMI uses it and what it looks like in CIF. Let this emerge through worked examples. We need to explain, how ANF is different from CIMI. Need example of what “classic CIMI” is. Add to BP and Pulse example one more that has a non-numeric result." parentID="hhx_wxf_nhb" mid="9"?>
+" id="hhx_wxf_nhb" mid="10"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095920-0400" comment="KC: Supports general idea. In CIMI we allow expression tree both in topic and in the value, which creates problem like the dot blot hemorrhages. We should get 1 or two examples of statements and how ANF uses it, how CIMI uses it and what it looks like in CIF. Let this emerge through worked examples. We need to explain, how ANF is different from CIMI. Need example of what “classic CIMI” is. Add to BP and Pulse example one more that has a non-numeric result." parentID="hhx_wxf_nhb"?>
         typically in a manner that we call here the clinical input form (CIF). However, the CIF is
-        not a literal form<?oxy_comment_end mid="9"?><?oxy_comment_end?> that clinicians select and
+        not a literal form<?oxy_comment_end?><?oxy_comment_end mid="10"?> that clinicians select and
         enter data in. Rather, it refers to the manner in which information is presented to the
         clinicians and how they enter the data, such as by constraining the information to allow
         only certain values to be entered, e.g. through a drop-down list or radio button, or
@@ -251,6 +220,9 @@ Structured Coded Form
             <para>When a clinician orders a medication, rather than selecting this information all
                 at once with a single item, they will choose the various parts of the medication
                 order, such as</para>
+        </listitem>
+        <listitem>
+            <para/>
             <para> </para>
             <itemizedlist>
                 <listitem>
@@ -282,4 +254,5 @@ Structured Coded Form
         increased.</para>
     <para>The following chapters will discuss how the ANF Model provides the clinical data
         normalization capabilities to support accurate data retrieval and analysis.</para>
+    <para/>
 </chapter>
