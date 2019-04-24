@@ -182,5 +182,6 @@
       <module>introduction</module>
       <module>transformation</module>
       <module>acknowledgements</module>
+      <module>references</module>
    </modules>
 </project>

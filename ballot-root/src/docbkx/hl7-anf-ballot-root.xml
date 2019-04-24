@@ -33,5 +33,8 @@
   
   <!-- Acknowledgements -->
   <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  
+  
+  <!-- References -->
+  <xi:include href="../../../references/src/docbkx/references.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> 
 
 </book>
