@@ -1,4 +1,4 @@
-This repository contains the contents for the HL7 ANF ballot submission. 
+This repository contains the contents for the HL7 ANF ballot submission.
 
 The contents of this repository are in draft format and may be published in another format.
 
@@ -8,7 +8,7 @@ ANF Ballot GitHub Repository SOP
 
 Notes: All Git functionality in this guide is described using the Fork Git GUI. It is recommended but not required to use Fork to interface with Git and GitHub. You may use other Git GUI’s or the command line if you prefer. Additionally, all XML editing is described for use of the Oxygen XML editor. Use of this editing tool is once again not required, but recommended.
 
-Prerequisite: You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build.
+Prerequisite: You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build. 
 
 Steps to edit, add, and update content for the ANF Ballot:
 
@@ -18,7 +18,7 @@ To clone the repository, follow the following steps:
 a.	Open Fork
 b.	Select File -> Clone…
 c.	Place “https://github.com/HL7/ANF.git” in the “Repository URL” field.
-d.	Select where you would like your local repository to live in the “Parent Folder” field – if you have already set up a parent folder for another repository (i.e C:\code), please consider using the same folder for consistency.
+d.	Select where you would like your local repository to live in the “Parent Folder” field – if you have already set up a parent folder for another repository (i.e C:\code), please consider using the same folder for consistency. 
 e.	In the name field, enter the name for your local repository (i.e. how the repository will appear in your file explorer). I suggest something like “ANF Ballot”
 f.	Click “Clone”
 
@@ -41,6 +41,8 @@ The current sections can be found in the following XML files:
 •	Transformation: transformation/src/docbkx/transformation.xml
 •	Differences between ANF and CIF: anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml
 •	Acknowledgements: acknowledgements/src/docbkx/acknowledgements.xml
+•	Bibliography:  references/src/docbkx/bibliography.xml
+•	Glossary:  references/src/docbkx/glossary.xml
 
 Note: If you wish to create a completely new section of the document, you should create a new XML file and reference this file from the existing root xml file. Please contact Kyle Maulden and Benson Chang, at kmaulden@deloitte.com and bechang@deloitte.com, for assistance.
 
@@ -50,15 +52,15 @@ Note: If you wish to create a completely new section of the document, you should
 
 In Oxygen you will see a build log. Once the build is complete, you will either see “Build Success” or “Build Failure.” If the build succeeded, you may proceed to step 5. Otherwise DO NOT PROCEED UNTIL YOU HAVE RESOLVED THE BUILD ERROR.
 
-5.	Pull immediately before committing. To pull, make sure you still have the ANF repository open in Fork and click the “Pull” button in the upper left. Fork may notify you that you have uncommitted changes. If so, select “Stash and Reapply.”
+5.	Pull immediately before committing. To pull, make sure you still have the ANF repository open in Fork and click the “Pull” button in the upper left. Fork may notify you that you have uncommitted changes. If so, select “Stash and Reapply.” 
 
 Resolve any merge conflicts that may occur and seek help if needed. Reach out to Kyle Maulden at kmaulden@deloitte.com or Ryan Bradley at rbradley@deloitte.com for help.
-
+ 
 6.	Commit your changes, with a meaningful commit message. Do this, by clicking on the “Changes” tab on the left hand side of Fork. Once you click on changes you will see two panels in the screen, one names “Unstaged Files” and the other names “Staged Files.” Move all files that you wish to commit from “Unstaged” to “Staged” by clicking on each individual file and clicking “Stage.”
 
 Once all desired files have been staged, enter a commit subject and description on the bottom portion of the screen that describes the work you have done and then press the “Commit” button in the bottom right.
 
-7.	Push your changes by clicking the “Push” button in the upper left.
+7.	Push your changes by clicking the “Push” button in the upper left. 
 
 Verify that you changes have been pushed successfully by clicking on “All Commits” on the left hand part of the screen. You should see your commit description and name on the top row with both the red “master” tag and the green “origin/master” tag. This indicates that your local version of the repository is in sync with what is on GitHub and that all changes have been made public.
 
@@ -69,7 +71,7 @@ Steps to obtain the PDF output from the ANF Ballot repository:
 3.	Navigate to the appropriate folder
 a.	Find the ANF Ballot repository in your local file explorer
 b.	Then go to ballot-root  >  target
-c.	Unzip the “ballot-root-0.13-SNAPSHOT-pdf.zip”
+c.	Unzip the “ballot-root-0.13-SNAPSHOT-pdf.zip”  
 d.	Navigate to org.hl7  >  ballot-root
-4.	Open the “hl7-anf-ballot-root.pdf” document with you favorite PDF viewer.
+4.	Open the “hl7-anf-ballot-root.pdf” document with you favorite PDF viewer.    
 
