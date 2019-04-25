@@ -4,5 +4,46 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Glossary</title>
+    <para><emphasis role="bold">ANF – Analysis Normal Form</emphasis>, an approach to clinical
+        statements that ensures the statement representation is reproducible and scalable, with the
+        adherence to principles of being simple, reproducible, and use case driven, with
+        immutability and no false dichotomies. </para>
+    <para><emphasis role="bold">CDS – Clinical Decision Support</emphasis>, a function for
+        electronic health records systems designed to help sift through large amounts of electronic
+        health data to suggest next steps for treatments, alert providers to available information
+        they may not have seen, or catch potential problems, such as dangerous medication
+        interaction. Also a workgroup of Health Level 7 (HL7) that focuses on development of
+        standards to support system-agnostic implementations of clinical decision support, including
+        messages, services, information models, and knowledge representation formalisms. For more
+        information please see <link
+            xlink:href="http://www.hl7.org/Special/committees/dss/index.cfm"
+            >http://www.hl7.org/Special/committees/dss/index.cfm</link>.</para>
+    <para><emphasis role="bold">CIF – Clinical Input Form</emphasis>, the manner by which clinicians
+        author clinical statements and enter them into their organizations’ electronic health record
+        (EHR). CIF refers to the manner in which information is presented to the clinicians and how
+        they enter the data, such as by constraining the information to allow only certain values to
+        be entered, such as through a drop-down list or radio button, or breaking up large chunks of
+        related information into smaller parts. </para>
+    <para><emphasis role="bold">CIMI – Clinical Information Modeling Initiative</emphasis>, a
+        workgroup of Health Level 7 (HL7) focused on improving the interoperability of healthcare
+        systems through shared implementable clinical information models, and a sponsor of this
+        whitepaper. For more information please see <link
+            xlink:href="http://www.hl7.org/Special/Committees/cimi/index.cfm"
+            >http://www.hl7.org/Special/Committees/cimi/index.cfm</link></para>
+    <para><emphasis role="bold">EHR – Electronic Health Record, </emphasis>an electronic system that
+        allows clinicians providing care in a clinical setting to enter and store data used in
+        clinical care in structured or unstructured format for retrieval, exchange and analysis
+        according to permitted uses.</para>
+    <para><emphasis role="bold">FHIR – Fast Healthcare Interoperability Resources</emphasis>, the
+        newest standard for exchanging healthcare information electronically from Health Level 7
+        (HL7). For more information please see <link
+            xlink:href="https://www.hl7.org/fhir/overview.html"
+            >https://www.hl7.org/fhir/overview.html</link></para>
+    <para><emphasis role="bold">Solor</emphasis> – A project sponsored by the Department of
+        Veteran’s Affairs that represents and brings together different terminology standards by
+        using a single model that can encompass any customized content. Solor allows informaticists
+        and developers to convert user-supplied terminologies into a single model using open source
+        software to produce Solor content. For more information please see <link
+            xlink:href="http://solor.io">http://solor.io</link></para>
 
 </section>
