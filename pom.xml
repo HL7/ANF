@@ -183,5 +183,6 @@
       <module>transformation</module>
       <module>acknowledgements</module>
       <module>references</module>
+      <module>conclusion</module>
    </modules>
 </project>
