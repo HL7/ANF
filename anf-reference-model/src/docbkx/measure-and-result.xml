@@ -6,20 +6,52 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Measure and Result</title>
     <para>A unique aspect of the ANF Model is that all measures and results are numeric ranges. The
-        hierarchy of classes to represent these is shown in Figure 10, “Result Hierarchy”.
+        hierarchy of classes to represent these is shown below, “Result Hierarchy”.
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  "?>An
         important point to notice in this class diagram is that the ANF Model does not allow coded
         results, only a numeric interval is possible. <?oxy_comment_end?></para>
     <figure>
         <title>Result Hierarchy</title>
-        
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/result_hierarchy.png" scalefit="1" width="100%" contentdepth="100%"/>
             </imageobject>
         </mediaobject>
     </figure>
-
+    <para>This approach reduces data retrieval difficulties by eliminating the potential for
+        multiple differing representations of the same clinical statement. For example, with coded
+        results there are multiple potential methods to represent eye color that complicate data
+        retrieval. The Topic couple be a Finding refined by an Observable (Iris finding->Interprets
+        = Color of iris) or a Finding with no refinement (Finding of color of iris). In both of
+        these cases the Result would be a qualifier of Blue color. The ANF would represent Eye color
+        using the Blue iris Finding as the Topic and the Result would be Present, represented as
+        Lower bound =1, Upper bound=inf. <figure>
+            <title>Blue Eye Example - Observable Refinement </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/BlueEye_invalid1.jpg" scalefit="1" width="100"
+                        contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>Blue Eye Example - Finding with Qualifier </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/BlueEye_invalid2.jpg" scalefit="1" width="100%"
+                        contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>Blue Eye Example - ANF </title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/BlueEye_valid.jpg" scalefit="1" width="100%"
+                        contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure></para>
     <section>
         <title><?oxy_comment_start author="kmaulden" timestamp="20190418T112454-0400" comment="Comment from WC:
 Don’t use names for statements or building blocks thereof that are synonymous with what such statements or building blocks describe. That is typical OOD and HL7-style nonsense. What is depicted in Figure 1 is surely not a measure but a building block to document a measure.
@@ -32,12 +64,18 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
             results of test procedures, time periods, frequencies of repetitions for procedures or
             medication administrations. Note that the inherited attributes from the Interval class
             will be discussed here.</para>
-        <para> </para>
+        <figure>
+            <title>Measure</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/measure.png" scalefit="1" width="100%" contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
     </section>
     <section>
         <title>lowerBound</title>
-        <para/>
-        <para>Lowerbound represents the lower bound of a
+        <para>lowerBound represents the lower bound of a
             <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
 This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
 "?>measurable
@@ -45,22 +83,17 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             “Administration of 25 to 50 mg of medication X” the lower bound is 25. For a test
             result, which is not a range, lower and upper bound are the same. Example: systolic
             blood pressure 110 mmHg. The lower and upper bound are both 110 mmHg.</para>
-        <para> </para>
     </section>
     <section>
         <title>upperBound</title>
-        <para> </para>
-        <para/>
-        <para>Upper bound represents the upper bound of a measurable element. This can be the upper
+        <para>upperBound represents the upper bound of a measurable element. This can be the upper
             boundary of a range: For the “Administration of 25 to 50 mg of medication X” the upper
             bound is 50 mg. In cases, where the measurable element does not represent a range, upper
             and lower bound have the same value.</para>
-        <para> </para>
     </section>
     <section>
         <title>includeLowerBound</title>
-        <para> </para>
-        <para>Includelower bound states whether the lower bound in the interval is included in the
+        <para>includeLowerBound states whether the lower bound in the interval is included in the
             interval. In the medication examples above, the lower bound would be included. The lower
             range dose of 25 mg of medication X dose can be administered.</para>
         <para>Theinclusion or exclusion of lower bound is needed to express measurable elements
@@ -69,32 +102,26 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             it would not be included, because the example states: <emphasis role="underline"
                 >more</emphasis> than 10 days. Choosing “11” would require to include the lower
             bound.</para>
-        <para> </para>
     </section>
     <section>
         <title>includeUpperBound</title>
-        <para> </para>
-        <para>Include upper bound states whether the upper bound in the interval is included in the
+        <para>includeUpperBound states whether the upper bound in the interval is included in the
             interval. Similar to lower bound, where the measurable element has relative properties,
             the same rules apply. If the upper bound of a measure is not defined, e.g. “blood
             glucose measurement daily for at least 2 weeks”, the upper bound will be captured as
             “inf” (infinite). Infinite as an upper bound is never included.</para>
-        <para> </para>
     </section>
     <section>
         <title>Resolution</title>
-        <para> </para>
         <para>TheResolution within a measure defines the possible or allowed increments in which the
             measured “thing” can be counted. In the example of the systolic blood pressure of 110
             mmHg, the resolution is “1”, because the blood pressure measurement result can be
             counted in 1 mmHg increments. The Resolution is not always defined or known. Example: a
             clinical statement like “History of breast cancer” implies an undefined amount of time
             in the past and it is not stated, if it is years, months, etc.</para>
-        <para> </para>
     </section>
     <section>
         <title>measureSemantic</title>
-        <para> </para>
         <para>Measure semantic represents the unit of measure. It is described using a logical
             expression. In systolic bloodpressure, the unit of measure is millimeters of mercury,
             and thus the measure semantic is a SNOMED CT concept: 259018001 |Millimeter of mercury
@@ -103,28 +130,23 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             something relative to the statement time, as in the example above of “History of breast
             cancer” the standardized time/date format ISO 8601 is used for the measure semantic: ISO
             8601 prior to statement time.</para>
-        <para> </para>
     </section>
     <section>
         <title>InterventionResult</title>
-        <para> </para>
         <para>Intervention Result is a result, thus inheriting all the attributes of Result, and
             adds the attribute <emphasis role="italic">status</emphasis>, which is a coded value
             representing the current status of the intervention.</para>
         <figure>
-            <title>Intervention Result</title>
-            
+            <title>Intervention Result</title>         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/intervention_results.png" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/intervention_results.jpg" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
-        <para> </para>
     </section>
     <section>
         <title>ObservationResult</title>
-        <para> </para>
         <para> Observation Result is a result, thus inheriting all the attributes of Result, and
             adds the attributes <emphasis role="italic">healthRisk </emphasis>and <emphasis
                 role="italic">normalRange</emphasis>. Health Risk is used to flag a result with
