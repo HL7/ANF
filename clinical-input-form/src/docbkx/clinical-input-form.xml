@@ -23,8 +23,8 @@
                                     how this poses issues for data retrieval</para>
                                 <itemizedlist>
                                     <listitem>
-                                        <para>Provide examples where those issues
-                                                can be patient safety risks</para>
+                                        <para>Provide examples where those issues can be patient
+                                            safety risks</para>
                                     </listitem>
                                 </itemizedlist>
                             </listitem>
@@ -44,27 +44,32 @@
         database. Again, the ANF is not necessarily a physical structure, but is how a data analyst
         might see the data when they are looking at it in a database, and not as clinicians would
         see it in the user interface (i.e., CIF).</para>
-    <para> </para>
-    <para>Clinician collects data
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T110732-0400" comment="Comment from WC:
-Chain not clear, meaning of ‘’? When is the data normalized?
-
-"?>ð<?oxy_comment_end?>
-        Clinical Input Form</para>
-    <para>Data is normalized ð Transformation process from CIF to ANF ð Representable/storable in
-        multiple types of databases, </para>
-    <para>Dataanalyst who is using or querying the data (e.g., creating a CDS rule or working on
-        prevalence statistics) ð ANF (it is how the data is represented or stored in the database;
-        must know enough about the data to know what is stored in the topic vs. what is stored as a
-        result or detail)</para>
+    <para> Steps for a clinician utilizing CIF might be the following:</para>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para>Clinician collects data using Clinical Input Form</para>
+            </listitem>
+            <listitem>
+                <para>Data is normalized using a Transformation process from CIF to ANF which is
+                    representable/storable in multiple types of databases</para>
+            </listitem>
+            <listitem>
+                <para>A data analyst who is uses or queries the data (e.g., creating a CDS rule or
+                    working on prevalence statistics) using ANF </para>
+                <para>ANF it is how the data is represented or stored in the database; A data
+                    analysis must know enough about the data to know what is stored in the topic vs.
+                    what is stored as a result or detail.</para>
+            </listitem>
+        </orderedlist>
+    </para>
     <para> The more that data is normalized, the simpler it will become to analyze, and the
         likelihood of analysis errors will be reduced. The critical part of this is to ensure that
-        information is not lost between the CIP and the ANF data normalization.Without the ANF, the
-        probability of patient safety risks is increased. Examples of problems that can occur
-        are:</para>
-    <para> </para>
+        information is not lost between the CIF and the ANF data normalization.Without the ANF, the
+        probability of patient safety risks is increased. </para>
+    <para>Examples of problems that can occur are:</para>
     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110833-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example
-"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100827-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example" mid="3"?><emphasis
+"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100827-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example" mid="2"?><emphasis
             role="bold">An inability</emphasis> to determine that two clinical statements are
         equivalent</para>
     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110852-0400" comment="Comment from WC:
@@ -95,12 +100,12 @@ When? If the CIF doesn’t allow it, I don’t see how the ANF would be able to 
     <para>CIF: Provider enters the medication order</para>
     <?oxy_comment_start author="kmaulden" timestamp="20190418T110951-0400" comment="Comment from WC:
 Example obscure: why would the specified request topic be needed in the query for the stated CDS rule? Something missing?
-" mid="7"?>
+" mid="6"?>
     <para>ANF: Analyst creates a CDS rule to identify all patients ordered acetaminophen during
         theperiod September 1 – December 31, 2016. However, while the analyst creates a query to
         search for a clinical statement (i.e., Request) where acetaminophen was the direct substance
         and was ordered during the period September 1 – December 31, 2016, the analyst did not
         include a Request topic of “Administration of drug or medication PO BID for pain.” Thus, the
         medication order would not be included in the query
-        results.<?oxy_comment_end?><?oxy_comment_end mid="3"?><?oxy_comment_end mid="7"?></para>
+        results.<?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="6"?></para>
 </chapter>
