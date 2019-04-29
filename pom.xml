@@ -184,5 +184,7 @@
       <module>acknowledgements</module>
       <module>references</module>
       <module>conclusion</module>
+      <module>citation-editor-plugin</module>
+      <module>bibliography-db</module>
    </modules>
 </project>
