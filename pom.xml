@@ -5,7 +5,7 @@
    <groupId>org.hl7</groupId>
    <artifactId>anf-ballot-submission</artifactId>
    <packaging>pom</packaging>
-   <version>0.13-SNAPSHOT</version>
+   <version>1.0-SNAPSHOT</version>
    <name>ANF Ballot Submission</name>
 
    <inceptionYear>2015</inceptionYear>

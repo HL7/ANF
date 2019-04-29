@@ -4,8 +4,9 @@
    <parent>
       <groupId>org.hl7</groupId>
       <artifactId>anf-ballot-submission</artifactId>
-      <version>0.13-SNAPSHOT</version>
+      <version>1.0-SNAPSHOT</version>
    </parent>
+   <groupId>org.hl7.anf-ballot-submission</groupId>
    <artifactId>doc-logging</artifactId>
    <name>ANF Ballot: Document generation logging</name>
    <description>Log4j resources to enable logging of DocBook generation and rendering. </description>
