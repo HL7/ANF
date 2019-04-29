@@ -8,7 +8,7 @@
     <artifactId>bibliography-db</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>HL7 ANF Ballot: Bibliography database</name>
+    <name>ANF Ballot: Bibliography database</name>
     <description>Bibliography content for HL7 ANF Ballot Submission</description>
     <packaging>pom</packaging>
     <properties>
@@ -18,15 +18,9 @@
         <dependency>
             <groupId>org.hl7.anf-ballot-submission</groupId>
             <artifactId>docbook-customization</artifactId>
-            <classifier>docbook-customization</classifier>
-            <version>${project.version}</version>
-            <type>zip</type>
+            <version>1.0-SNAPSHOT</version>
+            <type>pom</type>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.hl7.anf-ballot-submission</groupId>-->
-            <!--<artifactId>citation-editor-plugin</artifactId>-->
-            <!--<version>1.0-SNAPSHOT</version>-->
-        <!--</dependency>-->
     </dependencies>
     <profiles>
         <profile>
