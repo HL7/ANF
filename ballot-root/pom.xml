@@ -60,6 +60,7 @@
          <plugin>
             <groupId>com.agilejava.docbkx</groupId>
             <artifactId>docbkx-maven-plugin</artifactId>
+            <version>2.0.17</version>
             <executions>
                <execution>
                   <id>generate-docbook</id>
@@ -125,6 +126,7 @@
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
             <configuration>
                <executable>/Applications/XEP/xep</executable>
                <workingDirectory>${project.basedir}/src/docbkx</workingDirectory>
