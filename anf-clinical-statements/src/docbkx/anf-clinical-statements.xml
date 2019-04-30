@@ -40,17 +40,25 @@ This is too imprecise:
 2) ‘computable’ by whom or what? Some algorithms can, others can’t.
 3) ‘A clinical statement REPRESENTS and entry in the patient record’: do you mean (a) ‘is’ an entry, such that if x is an instance of Clinical Statement, then x is also an instance of Entry in a Patient Record, or (b) if x is instance of Clinical Statement, then there is some y instance of Entry in the Patient record such that x represents y, or (c) the ‘documents’ restricts the scope of what record entries qualify as clinical statements, namely those that document clinical information?
 4) ‘Clinical Information’? this extends the previous issue: is this a third thing z instance of Clinical Information such that x represents y and y documents z? I would argue that clinical statements and clinical information under whatever interpretation.
-" id="ddb_byf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100033-0400" comment="Joey Coyle:
+" id="ddb_byf_nhb" mid="1"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100033-0400" comment="Joey Coyle:
 An Entry is a Clinical Statement, and a Clinical Statement is an Entry.   In the case of 13606, Entry has a defined data structure and instances which conform to constraints applied to this data structure.  Clinical Statement has a defined data structure and instances which conform to constraints applied to this data structure. 
 
 Anyway, maybe the following for the first paragraph which avoids all the comments above.
 
 A Clinical Statement is a complete description about a particular aspect, characteristic, or condition of a patient.  The ANF Model attempts to define a data structure to represent these clinical statements in a reproducible and computable manner.
-" parentID="ddb_byf_nhb" mid="1"?>statement
-        represents an entry in the patient record that documents in a structured/computable manner
+" parentID="ddb_byf_nhb"?>statement
+        represents an entry in the patient record that documents, in a structured/computable manner,
         clinical information related to the patient that is asserted by a particular source,
-        recorded, and potentially verified. <?oxy_comment_end mid="1"?><?oxy_comment_end?>
+        recorded, and potentially verified. <?oxy_comment_end?><?oxy_comment_end mid="1"?>
     </para>
+    <para>As seen in the Clinical Statements section, clinical information related to the patient
+        can be entered and stored in an EMR in multiple different formats. ANF strives to
+        standardize the structure of clinical statements to eliminate the complexity of the clinical
+        information due to the ability of EMR implementers having multiple ways of presenting input.
+        By structuring the clinical statement and transforming the multiple differing
+        representations into the appropriate ANF clinical statement, clinical information becomes
+        more easily computable.  Transforming the clinical input into the ANF structure eliminates
+        the need to create multiple ways to analyze the same data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Clinical Statements</title>
         <para>There are two types of ANF clinical statements:</para>
@@ -137,17 +145,28 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                             </imageobject>
                         </mediaobject>
                     </figure>
+                </listitem>
+                <listitem>
                     <para>Was administered a medication or other substance</para>
+                    <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed
+                        for pain</para>
                 </listitem>
                 <listitem>
                     <para>Was provided educational materials</para>
+                    <para>Patient provided educational materials on pre-diabetes diagnosis</para>
                 </listitem>
                 <listitem>
                     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
 For instance that a test is ordered?
 "?>Has
                         any other state or specific characteristic that is clinically
-                        relevant<?oxy_comment_end?></para> 
+                        relevant<?oxy_comment_end?></para>
+                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
+Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
+" id="ppm_nyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
+" parentID="ppm_nyf_nhb" mid="6"?>Family
+                        history of colon cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?></para>
                 </listitem>
             </itemizedlist>
             <para>Examples of performance clinical statements:</para>
@@ -160,26 +179,12 @@ For instance that a test is ordered?
                     <para>Dot blot hemorrhage is present</para>
                 </listitem>
                 <listitem>
-                    <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed
-                        for pain</para>
-                </listitem>
-                <listitem>
                     <para>Positive screen for fall risk</para>
                 </listitem>
                 <listitem>
                     <para>Negative screen for PTSD and depression</para>
                 </listitem>
-                <listitem>
-                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
-Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
-Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
-" parentID="ppm_nyf_nhb" mid="6"?>Family
-                        history of colon cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?></para>
-                </listitem>
-                <listitem>
-                    <para>Patient provided educational materials on pre-diabetes diagnosis</para>
-                </listitem>
+
                 <listitem>
                     <para>Patient counseled on the health risks of continuing smoking</para>
                 </listitem>
@@ -235,6 +240,7 @@ Both C-CDA and FHIR US core specify profiles intended to represent data captured
 We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
 " id="c2z_fxv_lhb" mid="8"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb" mid="7"?>Precisio<?oxy_comment_end mid="7"?><?oxy_comment_end?><?oxy_comment_end mid="8"?>n
                 of Clinical Statements Using ANF</title>
+            <para>Normal Form discussion (1st and 2nd Normal Forms?)</para>
         </section>
     </section>
     <section>
