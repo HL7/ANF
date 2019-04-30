@@ -51,13 +51,9 @@ A Clinical Statement is a complete description about a particular aspect, charac
         clinical information related to the patient that is asserted by a particular source,
         recorded, and potentially verified. <?oxy_comment_end mid="1"?><?oxy_comment_end?>
     </para>
-    <para> </para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Clinical Statements</title>
-        <para> </para>
-        <para> </para>
         <para>There are two types of ANF clinical statements:</para>
-        <para> </para>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Performance of action: </emphasis></para>
@@ -68,7 +64,6 @@ A Clinical Statement is a complete description about a particular aspect, charac
                     health status.</para>
             </listitem>
         </itemizedlist>
-        <para/>
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Request for action: </emphasis></para>
@@ -76,8 +71,6 @@ A Clinical Statement is a complete description about a particular aspect, charac
                     other providers, or active interventions.</para>
             </listitem>
         </itemizedlist>
-        <para>.</para>
-        <para> </para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance Clinical Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
@@ -89,17 +82,61 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 if applicable - the results of that
                 action.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
                 below, this can range from documenting that a subject of record:</para>
-            <para> </para>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
                         phenomenon</para>
+                    <para>Diabetes mellitus is present</para>
+                    <para>Diabetes mellitus is not present</para>
                 </listitem>
                 <listitem>
                     <para>Underwent a specific test/screening or procedure, and its resultant value,
                         if any</para>
-                </listitem>
-                <listitem>
+                    <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
+                    <figure>
+                        <title>Pulse Rate Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/pulse_rate_anfExample.jpg" scalefit="1"
+                                    width="100%" contentdepth="50%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                        <para><emphasis role="bold">Systolic blood pressure 120 mmHg, taken on right
+                                brachial artery, using BP cuff adult size, patient in sitting
+                                position for at least 5 minutes, urinated not more than 30 minutes
+                                prior to measurement</emphasis></para>
+                        <figure>
+                            <title>Systolic Blood Pressure Clinical Statement Example</title>
+                            <mediaobject>
+                                <imageobject>
+                                        <imagedata
+                                            fileref="images/systolicBloodPressure_anfExample1.jpg"
+                                            scalefit="1" width="100%" contentdepth="50%"/>
+                                    
+                                </imageobject>
+                            </mediaobject>
+                        </figure>
+                    <figure>
+                        <title>Systolic Blood Pressure Associated Clinical Statement 1
+                            Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/systolicBloodPressure_anfExample2.jpg"
+                                    scalefit="1" width="100%" contentdepth="50%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                    <figure>
+                        <title>Systolic Blood Pressure Associated Clinical Statement 2
+                            Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/systolicBloodPressure_anfExample3.jpg"
+                                    scalefit="1" width="100%" contentdepth="50%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                     <para>Was administered a medication or other substance</para>
                 </listitem>
                 <listitem>
@@ -114,23 +151,8 @@ For instance that a test is ordered?
                 </listitem>
             </itemizedlist>
             <para>Examples of performance clinical statements:</para>
-            <para/>
             <orderedlist numeration="arabic">
-                <listitem>
-                    <para><emphasis role="bold">Pulse rate of 72/min. taken by palpation of radial artery
-                        (resting and exercising)</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para><emphasis role="bold">Systolic blood pressure of 120 mmHg taken from right
-                        brachial artery while seated and no more than 30 minutes after the patient
-                        last urinated</emphasis></para>
-                </listitem>
-                <listitem>
-                    <para>Diabetes mellitus is present</para>
-                </listitem>
-                <listitem>
-                    <para>Diabetes mellitus is not present</para>
-                </listitem>
+                
                 <listitem>
                     <para>Three dot blot hemorrhages</para>
                 </listitem>
@@ -159,11 +181,9 @@ Doing family history, donor statements using subject of information is now the n
                     <para>Patient provided educational materials on pre-diabetes diagnosis</para>
                 </listitem>
                 <listitem>
-                    <para>Patient counseled on the health risks of continuingsmoking</para>
+                    <para>Patient counseled on the health risks of continuing smoking</para>
                 </listitem>
             </orderedlist>
-            <para> </para>
-            <para> </para>
         </section>
         <section>
             <title><anchor xml:id="_Toc1824814"/>Request Clinical Statements</title>
@@ -174,9 +194,7 @@ Doing family history, donor statements using subject of information is now the n
                 will be documented in this clinical statement, including information about details
                 relating to the request, such as patient must fast for 12 hours before having a
                 lipids blood test.</para>
-            <para> </para>
             <para>Examples of Request clinical statements:</para>
-            <para> </para>
             <orderedlist>
                 <listitem>
                     <para>Lipids panel for patient Jane Doe. Patient must fast for 12 hours prior to
@@ -196,23 +214,18 @@ Doing family history, donor statements using subject of information is now the n
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T110448-0400" comment="Comment from WC:
 The distinction with a performance clinical statement concerning giving him educational materials is tiny.
 "?>
-                    <para>Advised to participate in group tobacco cessation counseling once a
-                        week.</para>
+                    <para>Advised to participate in group tobacco cessation counseling once a week.</para>
                 </listitem>
                 <listitem>
                     <para>Advised to lose 15 pounds within 3 months.</para>
                 </listitem>
                 <listitem>
-                    <para>Advised to exercise at least 3 times a week for 30 minutes per day for 3
-                        months.<?oxy_comment_end?></para>
+                    <para>Advised to exercise at least 3 times a week for 30 minutes per day for 3 months.<?oxy_comment_end?></para>
                 </listitem>
                 <listitem>
-                    <para>Advised to decrease the number of packs smoked per day from 3 to 2 within
-                        6 months by using a nicotine patch.</para>
+                    <para>Advised to decrease the number of packs smoked per day from 3 to 2 within 6 months by using a nicotine patch.</para>
                 </listitem>
             </orderedlist>
-            
-            <para> </para>
         </section>
         <section>
             <title><anchor xml:id="_Toc5884759"
@@ -222,16 +235,11 @@ Both C-CDA and FHIR US core specify profiles intended to represent data captured
 We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
 " id="c2z_fxv_lhb" mid="8"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb" mid="7"?>Precisio<?oxy_comment_end mid="7"?><?oxy_comment_end?><?oxy_comment_end mid="8"?>n
                 of Clinical Statements Using ANF</title>
-            <para> </para>
         </section>
     </section>
     <section>
         <title><?oxy_comment_start author="kmaulden" timestamp="20190418T110630-0400" comment="KH: Should we introduce the idea of Statement Models (a.k.a. Clinical Observation Models) here or will that be too deep in the woods for this part?"?>Statement
             Models <?oxy_comment_end?></title>
-        <para> </para>
-        <para/>
         <para><emphasis role="bold">PLACEHOLDER</emphasis></para>
     </section>
-    
-    
 </chapter>
