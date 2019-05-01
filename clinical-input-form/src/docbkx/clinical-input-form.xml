@@ -35,77 +35,232 @@
             </tbody>
         </tgroup>
     </informaltable>
-    <para>Ideally, the way the information is presented to clinicians is in a manner that is most
-        efficient for the clinicians to use. However, what is an efficient way for clinicians to
-        select and enter data may not be the most efficient way for data analysts to use when they
-        are querying data once it has been normalized and stored in a database, such as when
-        creating a new CDS rule or compiling prevalence statistics. For this, the data is normalized
-        using the <emphasis role="italic">Analysis Normal Form (ANF) </emphasis>and stored in a
-        database. Again, the ANF is not necessarily a physical structure, but is how a data analyst
-        might see the data when they are looking at it in a database, and not as clinicians would
-        see it in the user interface (i.e., CIF).</para>
-    <para> Steps for a clinician utilizing CIF might be the following:</para>
-    <para>
-        <orderedlist>
+    <section>
+        <title>Introduction to Clinical Input Form (CIF)</title>
+        <para>Ideally, clinical information is represented in a manner that is most efficient for
+            use. The problem is that users have many different requirements for clinical information, thus no single
+            representation can be the most efficient representation for all the various use cases. Thus, maximum efficiency
+            for each use case necessitates that any particular clinical information be available in multiple
+            representations. Although different in form, each of these different representations semantically model the same
+            information. These are known as isosemantic models.</para>
+        <para> The central focus of the CIMI Reference Model is the Clinical Statement. A Clinical
+            Statement represents structured electronic communication made about a patient typically
+            documented as an 'entry' in the patient record. For example, Clinical Statement can be
+            used to represent the following statements made about a patient. </para>
+        <itemizedlist mark="bullet" spacing="compact">
             <listitem>
-                <para>Clinician collects data using Clinical Input Form</para>
+                <para> Patient has a diagnosis of congestive heart failure. </para>
             </listitem>
             <listitem>
-                <para>Data is normalized using a Transformation process from CIF to ANF which is
-                    representable/storable in multiple types of databases</para>
+                <para> Patient has a family history of breast cancer. </para>
             </listitem>
             <listitem>
-                <para>A data analyst who is uses or queries the data (e.g., creating a CDS rule or
-                    working on prevalence statistics) using ANF </para>
-                <para>ANF it is how the data is represented or stored in the database; A data
-                    analysis must know enough about the data to know what is stored in the topic vs.
-                    what is stored as a result or detail.</para>
+                <para> Patient has a goal of smoking cessation. </para>
             </listitem>
-        </orderedlist>
-    </para>
-    <para> The more that data is normalized, the simpler it will become to analyze, and the
-        likelihood of analysis errors will be reduced. The critical part of this is to ensure that
-        information is not lost between the CIF and the ANF data normalization.Without the ANF, the
-        probability of patient safety risks is increased. </para>
-    <para>Examples of problems that can occur are:</para>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110833-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example
-"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100827-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example" mid="2"?><emphasis
-            role="bold">An inability</emphasis> to determine that two clinical statements are
-        equivalent</para>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110852-0400" comment="Comment from WC:
+            <listitem>
+                <para> Patient has an order for Physical Therapy. </para>
+            </listitem>
+            <listitem>
+                <para> Patient has a lab result of Serum Sodium equals 130 mEq/L with delta flag.
+                </para>
+            </listitem>
+            <listitem>
+                <para> Patient had an appendectomy. </para>
+            </listitem>
+            <listitem>
+                <para> Patient has a paternal uncle with Hemophilia C. </para>
+            </listitem>
+        </itemizedlist>
+        <para> Clinical Statement, shown in <xref linkend="cif_msg_cstatement_0135"/>, has a ‘key’,
+            ‘topic’, ‘context’, and ‘metadata’. The ‘key’ is the terminology meaning binding for the
+            entire Clinical Statement. The ‘topic’ is the clinical entity being described. The
+            ‘context’ describes the circumstances that form the setting in which the ‘topic’ should
+            be evaluated. Finally, ‘metadata’ is the collection of metadata that is associated with
+            the clinical statement: the who, where, why and when information. </para>
+        <figure xml:id="cif_msg_cstatement_0135">
+            <title>Clinical Statement</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/cif_clinical_statement.png" align="center"
+                        format="png" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <variablelist>
+            <varlistentry>
+                <term><emphasis role="bold">Topic</emphasis></term>
+                <listitem>
+                    <para> The ‘topic’ is the clinical entity described by the Clinical Statement. A
+                        few examples of topic include clinical assertions, evaluation results, and
+                        procedures. For each of these topics the information described is quite
+                        different. Therefore, CIMI describes topic types that contain the
+                        appropriate attributes to describe the required information for the given
+                        topic. The number of topic types will change as CIMI progresses. Currently
+                        the allowable topic types are listed here. </para>
+                    <itemizedlist mark="bullet" spacing="compact">
+                        <listitem>
+                            <para>ProcedureTopic</para>
+                        </listitem>
+                        <listitem>
+                            <para>FindingTopic</para>
+                            <itemizedlist mark="bullet" spacing="compact">
+                                <listitem>
+                                    <para>EvaluationResultTopic</para>
+                                </listitem>
+                                <listitem>
+                                    <para>AssertionTopic</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis role="bold">Context</emphasis></term>
+                <listitem>
+                    <para> The ‘context’ describes the circumstances that form the setting in which
+                        the ‘topic’ should be evaluated. CIMI describes context types that contain
+                        the appropriate attributes to describe the required information for the
+                        given context. The number of context types will change as CIMI progresses.
+                        Currently the allowable context types are listed here. </para>
+                    <itemizedlist mark="bullet" spacing="compact">
+                        <listitem>
+                            <para>ActionContext</para>
+                            <itemizedlist mark="bullet" spacing="compact">
+                                <listitem>
+                                    <para>RequestContext</para>
+                                </listitem>
+                                <listitem>
+                                    <para>OrderContext</para>
+                                </listitem>
+                                <listitem>
+                                    <para>PerformanceContext</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                        <listitem>
+                            <para>FindingContext</para>
+                            <itemizedlist mark="bullet" spacing="compact">
+                                <listitem>
+                                    <para>PresenceContext</para>
+                                </listitem>
+                                <listitem>
+                                    <para>AbsenceContext</para>
+                                </listitem>
+                                <listitem>
+                                    <para>GoalContext</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis role="bold">Metadata</emphasis></term>
+                <listitem>
+                    <para> ‘Metadata’ is not actually an attribute of ClinicalStatement, but is
+                        intended here to represent the various attributes in a clinical statement
+                        that represent metadata about the clinical statement. This includes
+                        attribution information relating to the statement itself such as who
+                        authored, verified, recorded, or signed the statement or more informally,
+                        the who, where, why, and when information. Other attributes include 'subject
+                        of record' and 'subject of information'. </para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+        
+    </section>
+    <section>
+        <title>CIF Examples</title>
+        <para>Pulse examples with different CIF representations</para>
+        <para>BP examples with different CIF representations</para>
+        <para> Steps for a clinician utilizing CIF might be the following:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Clinician collects data using Clinical Input Form</para>
+                </listitem>
+                <listitem>
+                    <para>Data is normalized using a Transformation process from CIF to ANF which is
+                        representable/storable in multiple types of databases</para>
+                </listitem>
+                <listitem>
+                    <para>A data analyst who uses or queries the data (e.g., creating a CDS rule or
+                        working on prevalence statistics) using ANF </para>
+                    <para>ANF is how the data is represented or stored in the database; A data
+                        analysis must know enough about the data to know what is stored in the topic
+                        vs. what is stored as a result or detail.</para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+    <section>
+        <title>CIF Issues with data retrieval</title>
+        <para>Ideally, the way the information is presented to clinicians is in a manner that is
+            most efficient for the clinicians to use. However, what is an efficient way for
+            clinicians to select and enter data may not be the most efficient way for data analysts
+            to use when they are querying data once it has been normalized and stored in a database,
+            such as when creating a new CDS rule or compiling prevalence statistics. For this, the
+            data is normalized using the <emphasis role="italic">Analysis Normal Form (ANF)
+            </emphasis>and stored in a database. Again, the ANF is not necessarily a physical
+            structure, but is how a data analyst might see the data when they are looking at it in a
+            database, and not as clinicians would see it in the user interface (i.e., CIF).</para>
+        <para>The more that data is normalized, the simpler it will become to analyze, and the
+            likelihood of analysis errors will be reduced. The critical part of this is to ensure
+            that information is not lost between the CIF and the ANF data normalization.Without the
+            ANF, the probability of patient safety risks is increased. </para>
+        <para>Examples of problems that can occur are:</para>
+        <itemizedlist>
+            <listitem>
+                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110833-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example
+" flag="done"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100827-0400" comment="Need to decide about leaving these examples here or keep using (and expanding on) the Pulse/BP example" flag="done" mid="2"?><emphasis
+                        role="bold">An inability</emphasis> to determine that two clinical
+                    statements are equivalent</para>
+                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110852-0400" comment="Comment from WC:
 Clearly not the same. What is extra similar is the dose of acetaminophen taken on the condition the two 250 mg tablets are taken at the same time.
-"?>Taking
-        two 250 mg acetaminophen tablets is the same as taking one 500 mg tablet<?oxy_comment_end?>
-        but the analyst only queries for one of the statements, not both.</para>
-    <para>Presenceof dot blot hemorrhage and 2 dot blot hemorrhages observed are
-        e<?oxy_comment_start author="kmaulden" timestamp="20190418T110917-0400" comment="Comment from WC:
+" flag="done"?>Taking
+                    two 250 mg acetaminophen tablets together contains the same strength of
+                    acetaminophen as taking one 500 mg tablet<?oxy_comment_end?> but the analyst
+                    only queries for one of the statements, not both.</para>
+                <para>If querying for the presence of a dot blot hemorrhage, statements recorded as
+                    Present dot blot hemorrhage and 2 dot blot hemorrhages observed are
+                    e<?oxy_comment_start author="kmaulden" timestamp="20190418T110917-0400" comment="Comment from WC:
 Also not quite, except for a query about whether any dot blot hemorrhage is present.
-"?>qualin
-        regard to presence and absence<?oxy_comment_end?> but the analyst queries only for presence
-        vs. a quantitative finding of dot blot hemorrhages.</para>
-    <para><emphasis role="bold">An inability </emphasis>to express something that is clinically
-        significant</para>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110937-0400" comment="Comment from WC:
+" flag="done"?>qual
+                    in regard to presence<?oxy_comment_end?> but the analyst queries only for
+                    presence vs. a quantitative finding of dot blot hemorrhages.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">An inability </emphasis>to express something that is
+                    clinically significant</para>
+                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110937-0400" comment="Comment from WC:
 When? If the CIF doesn’t allow it, I don’t see how the ANF would be able to solve that problem
-"?>Wemay
-        not be able to express chest pain on inspiration,<?oxy_comment_end?> whichcan be a sign of
-        pleurisy. The ability to differentiate cardiac chest pain from other types of chest pain is
-        clinically important. An example of something that needs to be represented is <emphasis
-            role="italic">chestpain that worsens when you breathe, cough, or
-        sneeze</emphasis>.</para>
-    <para><emphasis role="bold">An error is made</emphasis> in recording or in querying a repository
-        for clinical statements</para>
-    <para>On October 1, 2016, a provider enters a medication order for acetaminophen 250 mg for a
-        patientto take 1 tablet twice daily for 2 days starting October 1, 2016</para>
-    <para>CIF: Provider enters the medication order</para>
-    <?oxy_comment_start author="kmaulden" timestamp="20190418T110951-0400" comment="Comment from WC:
+"?>We
+                    may not be able to express chest pain on inspiration,<?oxy_comment_end?> which
+                    can be a sign of pleurisy. The ability to differentiate cardiac chest pain from
+                    other types of chest pain is clinically important. An example of something that
+                    needs to be represented is <emphasis role="italic">chest pain that worsens when
+                        you breathe, cough, or sneeze</emphasis>.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">An error is made</emphasis> in recording or in querying
+                    a repository for clinical statements</para>
+                <para>On October 1, 2016, a provider enters a medication order for acetaminophen 250
+                    mg for a patient to take 1 tablet twice daily for 2 days starting October 1,
+                    2016</para>
+                <para>CIF: Provider enters the medication order</para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T110951-0400" comment="Comment from WC:
 Example obscure: why would the specified request topic be needed in the query for the stated CDS rule? Something missing?
 " mid="6"?>
-    <para>ANF: Analyst creates a CDS rule to identify all patients ordered acetaminophen during
-        theperiod September 1 – December 31, 2016. However, while the analyst creates a query to
-        search for a clinical statement (i.e., Request) where acetaminophen was the direct substance
-        and was ordered during the period September 1 – December 31, 2016, the analyst did not
-        include a Request topic of “Administration of drug or medication PO BID for pain.” Thus, the
-        medication order would not be included in the query
-        results.<?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="6"?></para>
+                <para>ANF: Analyst creates a CDS rule to identify all patients ordered acetaminophen
+                    during the period September 1 – December 31, 2016. However, while the analyst
+                    creates a query to search for a clinical statement (i.e., Request) where
+                    acetaminophen was the direct substance and was ordered during the period
+                    September 1 – December 31, 2016, the analyst did not include a Request topic of
+                    “Administration of drug or medication PO BID for pain.” Thus, the medication
+                    order would not be included in the query
+                results.</para><?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="6"?>
+            </listitem>
+        </itemizedlist>
+    </section>
 </chapter>
