@@ -44,37 +44,53 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
     </informaltable>
     <section>
         <title>Clinical Statement Definition</title>
-        <para>In a general sense, a clinical statement is any statement about a subject of record,
-            e.g. the patient, made by healthcare provider, e.g. a nurse or a physician. This can be
-            the statement of a condition being present, a request for a procedure to be done, the
+        <para>A <emphasis role="italic">clinical statement</emphasis> represents an entry in the
+            patient record that documents in a structured/computable manner clinical information
+            about a subject of information, such as a patient or a relative of the patient, and that
+            is asserted by a particular source, recorded, and potentially verified. In a general
+            sense, a clinical statement is any statement about a subject of record, e.g. the
+            patient, made by healthcare provider, e.g. a nurse or a physician. This can be the
+            statement of a condition being present, a request for a procedure to be done, the
             results of lab tests or the patient’s family history of cancer. There are a number of
             implementations which fit this description, e.g. the current normative definition of
             Clinical Statements in HL7 V3 describes principles and constraints for Clinical
-            Statements.
-            <footnote>
+            Statements. <footnote>
                 <para>
-                    <link xmlns:xlink="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
+                    <link
+                        xmlns:xlink="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
                         >http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40</link>
                 </para>
             </footnote></para>
-        <para>Clinical Statements are used to model all “entries” in a Clinical Document Architecture(CDA)
-            document section. The Clinical Statement “Common Model Element Type” (CMET) is the base
-            model for the all Consolidated CDA “clinical statement” templates that are still
-            mandatory for Electronic Health Record (EHR) vendors. The concept of “clinical
-            statement” is widely understood though there is an issue with consistency across HL7
-            paradigms: V3, CDA, and FHIR. Placeholder HERE for more detail about other paradigms
-            later in the document (maybe forward link for more detail here?)</para>
+        <para>Clinical Statements are used to model all “entries” in a Clinical Document
+            Architecture(CDA) document section. The Clinical Statement “Common Model Element Type”
+            (CMET) is the base model for the all Consolidated CDA “clinical statement” templates
+            that are still mandatory for Electronic Health Record (EHR) vendors. The concept of
+            “clinical statement” is widely understood though there is an issue with consistency
+            across HL7 paradigms: V3, CDA, and FHIR.
+            <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Placeholder HERE for
+            more detail about other paradigms later in the document (maybe forward link for more
+            detail here?)<?oxy_custom_end?></para>
+        <para>Let's consider the following example for blood pressure measurement and the clinical
+            statement that may be entered to represent this information.</para>
+        <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
+            blood pressure cuff, patient in sitting position for at least 5 minutes, urinated no
+            more than 30 minutes prior to measurement”. For the user, this would be the easiest way
+            to document the measurement. However, the various parts of information about the body
+            site, the blood pressure cuff, patient position etc. would be lost to any attempt of
+            data retrieval. Rather than selecting this information all at once with a single item,
+            they will choose the various parts of information pertinent to the blood pressure
+            measurement. </para>
     </section>
 
     <section>
         <title>Clinical Input Statements</title>
-        <para>Clinical statements can be expressed and documented in many different ways in Electronic
-            Medical Record (EMR) systems, where Clinical Input Forms provide different options to
-            document the same clinical statement. These differences pose challenges for data retrieval,
-            data analysis and data analysts in their attempts to extract accurate clinical analysis
-            results. </para>
+        <para>Clinicians author clinical statements and enter them into their organization’s EHR
+            systems. Clinical statements can be expressed and documented in many different ways in
+            EHR systems, where Clinical Input Forms provide different options to document the same
+            clinical statement. These differences pose challenges for data retrieval, data analysis
+            and data analysts in their attempts to extract accurate clinical analysis results. </para>
         <para>Clinicians enter clinical statements into their organization’s
-            EMR<?oxy_comment_start author="kmaulden" timestamp="20190423T095907-0400" comment="Joey Coyle:
+            EHR<?oxy_comment_start author="kmaulden" timestamp="20190423T095907-0400" comment="Joey Coyle:
 We need a better term than CIF, as Classic CIMI is not CIF. Classic CIMI is as post-coordinated as is reasonable for the purpose of making queries and analysis easier.  A clinical input form is the opposite and is usually as pre-coordinated as is reasonable. During data input, these pre-coordinated instances would then need to be transformed to a post-coordinated form before being stored in a repository.
 
 The main problem is that both ANF and highly post-coordinated models are for analysis.  ANF may be more reproducibly consistent and better for analysis, but to assert that CIMI models are designed to aid in clinical input is an error.
@@ -85,23 +101,25 @@ The big difference I see is that ANF has a pure and consistent coded topic with 
 
 Maybe…
 Structured Coded Form
-" id="hhx_wxf_nhb" mid="3"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095920-0400" comment="KC: Supports general idea. In CIMI we allow expression tree both in topic and in the value, which creates problem like the dot blot hemorrhages. We should get 1 or two examples of statements and how ANF uses it, how CIMI uses it and what it looks like in CIF. Let this emerge through worked examples. We need to explain, how ANF is different from CIMI. Need example of what “classic CIMI” is. Add to BP and Pulse example one more that has a non-numeric result." parentID="hhx_wxf_nhb"?>
-            typically in a manner that we call here the clinical input form (CIF). However, the CIF is
-            not a literal form<?oxy_comment_end?><?oxy_comment_end mid="3"?> that clinicians select and
-            enter data in. Rather, it refers to the manner in which information is presented to the
-            clinicians and how they enter the data, such as by constraining the information to allow
-            only certain values to be entered, e.g. through a drop-down list or radio button, or
-            breaking up large chunks of related information into smaller parts.</para>
+" id="hhx_wxf_nhb" mid="4"?><?oxy_comment_start author="kmaulden" timestamp="20190423T095920-0400" comment="KC: Supports general idea. In CIMI we allow expression tree both in topic and in the value, which creates problem like the dot blot hemorrhages. We should get 1 or two examples of statements and how ANF uses it, how CIMI uses it and what it looks like in CIF. Let this emerge through worked examples. We need to explain, how ANF is different from CIMI. Need example of what “classic CIMI” is. Add to BP and Pulse example one more that has a non-numeric result." parentID="hhx_wxf_nhb"?>
+            typically in a manner that we call here the clinical input form (CIF). However, the CIF
+            is not a literal form<?oxy_comment_end?><?oxy_comment_end mid="4"?> that clinicians
+            select and enter data in. Rather, it refers to the manner in which information is
+            presented to the clinicians and how they enter the data, such as by constraining the
+            information to allow only certain values to be entered, e.g. through a drop-down list or
+            radio button, or breaking up large chunks of related information into smaller
+            parts.</para>
 
-        <para><emphasis role="bold"><emphasis role="underline">Examples:</emphasis></emphasis></para>
+        <para><emphasis role="bold"><emphasis role="underline">The follow examples illustrate
+                    :</emphasis></emphasis></para>
 
         <orderedlist>
             <listitem>
                 <para>Clinicians can measure a patient’s pulse rate by different methods, e.g. by
-                    palpation of the radial pulse or by using a doppler ultrasound device. The recording
-                    of the pulse rate to be entered in a CIF of different Electronic Medical Record
-                    (EMR) Systems in different ways. </para>
-                <para>One EMR could display a set of options to choose from:</para>
+                    palpation of the radial pulse or by using a doppler ultrasound device. The
+                    recording of the pulse rate to be entered in a CIF of different EHR systems  in
+                    different ways. </para>
+                <para>One EHR could display a set of options to choose from:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Pulse rate by Palpation</para>
@@ -115,9 +133,9 @@ Structured Coded Form
                 </itemizedlist>
                 <para>The clinician would make a choice and then record the measurement result in a text
                     field.</para>
-                <para>A different EMR could display a text field with a label “Pulse Rate” to enter the
-                    measurement result and in addition offer options to choose from to record the
-                    method:</para>
+                <para>A different EHR could display a text field with a label “Pulse Rate” to enter
+                    the measurement result and in addition offer options to choose from to record
+                    the method:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Palpation</para>
@@ -134,21 +152,12 @@ Structured Coded Form
                     ways.</para>
             </listitem>
             <listitem>
-                <para>The current guidance for blood pressure measurements for adults includes the body
-                    site, the blood pressure cuff size to use as well as some prerequisites. The patient
-                    should be in a sitting position for at least 5 minutes and should have urinated no
-                    more than 30 minutes before the measurement.</para>
-                <para>There are different ways the measurement result could be entered into a form in an
-                    EMR. Display options for the user could be, e.g. a text field to enter the
-                    measurement result (e.g. 120 mmHg) with the label of the complete guideline:</para>
-                <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult
-                    size blood pressure cuff, patient in sitting position for at least 5 minutes,
-                    urinated no more than 30 minutes prior to measurement”. For the user, this would
-                    be the easiest way to document the measurement. However, the various parts of
-                    information about the body site, the blood pressure cuff, patient position etc.
-                    would be lost to any attempt of data retrieval.</para>
-                <para>A different EMR could display a text field for the result and lists of choices for
-                    the body site:</para>
+                <para>The current guidance for blood pressure measurements for adults includes the
+                    body site, the blood pressure cuff size to use as well as some prerequisites.
+                    The patient should be in a sitting position for at least 5 minutes and should
+                    have urinated no more than 30 minutes before the measurement.</para>
+                <para>For example, a EHR could display a text field for the result and lists of
+                    choices for the body site:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Right brachial artery</para>
@@ -184,16 +193,17 @@ Structured Coded Form
                     </listitem>
                 </itemizedlist>
                 <para>Or other permutations of this. </para>
-                <para>The same could be true for the display and documentation option for the patient
-                    position (sitting yes/no, how long, urinated yes/no, how long prior to measurement),
-                    which could differ between systems. </para>
+                <para>The same could be true for the display and documentation option for the
+                    patient position (sitting yes/no, how long, urinated yes/no, how long prior to
+                    measurement), which could differ between systems. There are different ways the
+                    measurement result could be entered into a form in an EHR. Display options for
+                    the user could be, e.g. a text field to enter the measurement result (e.g. 120
+                    mmHg) with the label of the complete guideline:</para>
             </listitem>
             <listitem>
-                <para>When a clinician orders a medication, rather than selecting this information all
-                    at once with a single item, they will choose the various parts of the medication
-                    order, such as</para>
-            </listitem>
-            <listitem>
+                <para>When a clinician orders a medication, rather than selecting this information
+                    all at once with a single item, they will choose the various parts of the
+                    medication order, such as</para>
                 <itemizedlist>
                     <listitem>
                         <para>Kind of drug and strength (e.g., Acetaminophen 150 mg)</para>
@@ -217,15 +227,41 @@ Structured Coded Form
     </section>
     <section>
         <title>Analysis Clinical Statements</title>
-        <para>The ways in which data is entered determine, how data is stored in the EMR databases. The
-            goal of ANF is to enable analysts to understand the data and how it is stored in lieu of
-            having to teach them about the thousands of ways data can be entered (i.e., CIF) and ensure
-            the data that has to be expressed can be expressed in an operable and scalable way. The more
-            that data is normalized, the simpler it will become to analyze, and the likelihood of
-            analysis errors will be reduced. Without the ANF, the probability of patient safety risks is
-            increased.</para>
+        <para>Ideally, the way the information is presented to clinicians is in a manner that is
+            most efficient for the clinicians to use. The ways in which data is entered determine,
+            how data is stored in the EHR databases.  However, what is an efficient way for
+            clinicians to select and enter data may not be the most efficient way for data analysts
+            to use when they are querying data once it has been normalized and stored in a database,
+            such as when creating a new clinical decision support rule or compiling prevalence
+            statistics. For this, the data is normalized using the <emphasis role="italic">analysis
+                normal form (ANF)</emphasis> and stored in a database. The ANF is not necessarily a
+            physical structure, but is how a data analyst might see the data when they are looking
+            at it in a database, and not as clinicians would see it in the user interface (i.e.,
+            CIF).</para>
+        <itemizedlist>
+            <listitem>
+                <para>Clinician collects data → Clinical Input Form</para>
+            </listitem>
+            <listitem>
+                <para>Data is normalized → Transformation process from CIF to ANF →
+                    Representable/storable in multiple types of databases, which <emphasis
+                        role="underline">could</emphasis> include VistA but a separate process would
+                    need to be performed to make that happen.</para>
+            </listitem>
+            <listitem>
+                <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or
+                    working on prevalence statistics) →  ANF (it is how the data is represented or
+                    stored in the database; must know enough about the data to know what is stored
+                    in the topic vs. what is stored as a result or detail)</para>
+            </listitem>
+        </itemizedlist>
+        <para>The goal of ANF is to enable analysts to understand the data and how it is stored in
+            lieu of having to teach them about the thousands of ways data can be entered (i.e., CIF)
+            and ensure the data that has to be expressed can be expressed in an operable and
+            scalable way. The more that data is normalized, the simpler it will become to analyze,
+            and the likelihood of analysis errors will be reduced. Without the ANF, the probability
+            of patient safety risks is increased.</para>
         <para>The following chapters will discuss how the ANF Model provides the clinical data
             normalization capabilities to support accurate data retrieval and analysis.</para>
-        <para/>
     </section>    
 </chapter>
