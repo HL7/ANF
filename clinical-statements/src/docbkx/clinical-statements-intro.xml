@@ -62,7 +62,7 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
                 </para>
             </footnote></para>
         <para>Clinical Statements are used to model all “entries” in a Clinical Document
-            Architecture(CDA) document section. The Clinical Statement “Common Model Element Type”
+            Architecture (CDA) document section. The Clinical Statement “Common Model Element Type”
             (CMET) is the base model for the all Consolidated CDA “clinical statement” templates
             that are still mandatory for Electronic Health Record (EHR) vendors. The concept of
             “clinical statement” is widely understood though there is an issue with consistency
@@ -78,8 +78,8 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
             to document the measurement. However, the various parts of information about the body
             site, the blood pressure cuff, patient position etc. would be lost to any attempt of
             data retrieval. Rather than selecting this information all at once with a single item,
-            they will choose the various parts of information pertinent to the blood pressure
-            measurement. </para>
+            the user could choose the various parts of information pertinent to the blood pressure
+            measurement in various ways. </para>
     </section>
 
     <section>
@@ -115,6 +115,7 @@ Structured Coded Form
 
         <orderedlist>
             <listitem>
+                <para><emphasis role="bold">Pulse Rate 68 bpm, taken by pulse oximeter</emphasis></para>
                 <para>Clinicians can measure a patient’s pulse rate by different methods, e.g. by
                     palpation of the radial pulse or by using a doppler ultrasound device. The
                     recording of the pulse rate to be entered in a CIF of different EHR systems  in
@@ -152,6 +153,10 @@ Structured Coded Form
                     ways.</para>
             </listitem>
             <listitem>
+                <para><emphasis role="bold">Systolic Blood Pressure 120 mmHg, taken on right
+                        brachial artery, using BP cuff adult size, patient in sitting position for
+                        at least 5 minutes, urinated not more than 30 minutes prior to
+                        measurement</emphasis></para>
                 <para>The current guidance for blood pressure measurements for adults includes the
                     body site, the blood pressure cuff size to use as well as some prerequisites.
                     The patient should be in a sitting position for at least 5 minutes and should
@@ -166,7 +171,8 @@ Structured Coded Form
                         <para>Left brachial artery</para>
                     </listitem>
                 </itemizedlist>
-                <para>Or:</para>
+                <para>Or it could be diplayed with the site and allow further refinement to specify
+                    the laterality:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Brachial artery</para>
@@ -180,7 +186,8 @@ Structured Coded Form
                         </itemizedlist>
                     </listitem>
                 </itemizedlist>
-                <para>And a list of choices for the blood pressure cuff size used:</para>
+                <para>In addition to specifiying the body site a list of choices for the blood
+                    pressure cuff size used would also be selected, for example:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Adult size Small</para>
@@ -192,7 +199,6 @@ Structured Coded Form
                         <para>Adult size Large</para>
                     </listitem>
                 </itemizedlist>
-                <para>Or other permutations of this. </para>
                 <para>The same could be true for the display and documentation option for the
                     patient position (sitting yes/no, how long, urinated yes/no, how long prior to
                     measurement), which could differ between systems. There are different ways the
@@ -201,12 +207,14 @@ Structured Coded Form
                     mmHg) with the label of the complete guideline:</para>
             </listitem>
             <listitem>
+                <para><emphasis role="bold">Acetaminophen 250 mg for a patient to take 1 tablet twice daily for 2
+                    days</emphasis></para>
                 <para>When a clinician orders a medication, rather than selecting this information
                     all at once with a single item, they will choose the various parts of the
                     medication order, such as</para>
                 <itemizedlist>
                     <listitem>
-                        <para>Kind of drug and strength (e.g., Acetaminophen 150 mg)</para>
+                        <para>Kind of drug and strength (e.g., Acetaminophen 250 mg)</para>
                     </listitem>
                     <listitem>
                         <para>Amount and how often the patient should take the medication (e.g., 1
@@ -218,8 +226,8 @@ Structured Coded Form
                         </itemizedlist>
                     </listitem>
                     <listitem>
-                        <para>Any constraints (e.g., do not exceed a total daily dosage of 600
-                            mg)</para>
+                        <para>Any constraints can also be represented (e.g., do not exceed a total
+                            daily dosage of 600 mg)</para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -228,25 +236,26 @@ Structured Coded Form
     <section>
         <title>Analysis Clinical Statements</title>
         <para>Ideally, the way the information is presented to clinicians is in a manner that is
-            most efficient for the clinicians to use. The ways in which data is entered determine,
-            how data is stored in the EHR databases.  However, what is an efficient way for
+            most efficient for the clinicians to use. The ways in which data is entered determines
+            how data is stored in the EHR databases. However, what is an efficient way for
             clinicians to select and enter data may not be the most efficient way for data analysts
             to use when they are querying data once it has been normalized and stored in a database,
             such as when creating a new clinical decision support rule or compiling prevalence
-            statistics. For this, the data is normalized using the <emphasis role="italic">analysis
-                normal form (ANF)</emphasis> and stored in a database. The ANF is not necessarily a
-            physical structure, but is how a data analyst might see the data when they are looking
-            at it in a database, and not as clinicians would see it in the user interface (i.e.,
-            CIF).</para>
+            statistics. For this, the data should be normalized using an <emphasis role="italic"
+                >analysis normal form (ANF)</emphasis> and stored in a database in such a way to
+            optimize retrieval. The ANF is not necessarily a physical structure, but is how a data
+            analyst might see the data when they are looking at it in a database, and not as
+            clinicians would see it in the user interface (i.e., CIF).</para>
         <itemizedlist>
             <listitem>
-                <para>Clinician collects data → Clinical Input Form</para>
+                <para>Clinician collects data → Clinical Input Form (CIF)</para>
             </listitem>
             <listitem>
-                <para>Data is normalized → Transformation process from CIF to ANF →
-                    Representable/storable in multiple types of databases, which <emphasis
-                        role="underline">could</emphasis> include VistA but a separate process would
-                    need to be performed to make that happen.</para>
+                <para>Data is normalized → Transformation process from CIF to Analysis Normal Form
+                    (ANF) → Representable/storable in multiple types of databases, which <emphasis
+                        role="underline">could</emphasis> include
+                    <?oxy_comment_start author="timowilliams" timestamp="20190502T125824-0500" comment="Should we mention VistA here or just change it to EMR?"?>VistA<?oxy_comment_end?>
+                    but a separate process would need to be performed to make that happen.</para>
             </listitem>
             <listitem>
                 <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or
@@ -257,7 +266,7 @@ Structured Coded Form
         </itemizedlist>
         <para>The goal of ANF is to enable analysts to understand the data and how it is stored in
             lieu of having to teach them about the thousands of ways data can be entered (i.e., CIF)
-            and ensure the data that has to be expressed can be expressed in an operable and
+            and ensure the data that has to be expressed, can be expressed in an operable and
             scalable way. The more that data is normalized, the simpler it will become to analyze,
             and the likelihood of analysis errors will be reduced. Without the ANF, the probability
             of patient safety risks is increased.</para>
