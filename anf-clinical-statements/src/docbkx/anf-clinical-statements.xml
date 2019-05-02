@@ -238,9 +238,65 @@ The distinction with a performance clinical statement concerning giving him educ
 I think it would be valuable if we could show how ANF can improve the precision of “clinical statements”.
 Both C-CDA and FHIR US core specify profiles intended to represent data captured by EHRs. If we could show how an EHR-produced “result” could be represented in ANF.
 We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
-" id="c2z_fxv_lhb" mid="8"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb" mid="7"?>Precisio<?oxy_comment_end mid="7"?><?oxy_comment_end?><?oxy_comment_end mid="8"?>n
-                of Clinical Statements Using ANF</title>
-            <para>Normal Form discussion (1st and 2nd Normal Forms?)</para>
+" id="c2z_fxv_lhb" mid="9"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb" mid="10"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb"?>Precisio<?oxy_comment_end?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?>n
+                of Clinical Statements Using ANF (*DRAFT*)</title>
+            <para>The representation of clinical data across disparate healthcare organizations is
+                highly variable; due to the various networks, communication channels, set of
+                transformations, and different organizations of clinical data that currently exist.
+                Despite the fact that there are mandated and widely implemented clinical terminology
+                standards, standardized representation of clinical data is non-trivial because each
+                standard has different semantics models, and use different formalisms and tools for
+                their representation, have separate release cycles, and different versioning
+                mechanisms. These terminologies are often used in an inconsistent way across
+                implementations of the same underlying systems, and the minimal integration of
+                systems such as SNOMED CT and LOINC and RxNorm is an area requiring considerable
+                attention if we want to support safe and effective portability of software
+                components and the ability to reuse code across healthcare organizations. </para>
+            <para>One implementation of a decision support alert of quality measure query at the
+                Veterans Health Administration, for instance, is not completely transferrable to
+                another institution; analysts at each organization will have to modify the
+                underlying query which might be in Structured Query Language (SQL) for instance so
+                that it is computable against their respective clinical database structure.
+                Furthermore, all of the standards-based encoded concepts are not recorded in the
+                same way in different EHR implementations; what may be structured in one system and
+                represented by LOINC may be represented in another system by SNOMED Ct, and yet
+                another system may represent the concepts using free text.</para>
+            <para>The standardization of clinical observations in a manner that supports automated
+                processing requires a formal terminology model. The most important requirements of
+                such a terminology model are that (1) it can represent any clinician-specified
+                observation accurately and precisely and (2) it can support automated query and
+                retrieval operations correctly and efficiently.</para>
+            <para>Importantly, ANF supports the ability to express new medical concepts by combining
+                pre-existing ones. This process, called post-coordination, enables clinicians who
+                use SCT to express observations that do not appear as pre-defined concepts in the
+                terminology, thereby vastly increasing the expressive power of clinical
+                terminologies. For example, a clinician could document that a patient has “bacterial
+                pneumonia caused by methicillin-resistant Staph. Aureus” by combining the
+                pre-existing concept “bacterial pneumonia” with the pre-existing concept
+                “Methicillin Resistant Staph. Aureus” and specifying that the latter is the
+                “causative agent” of the former. The patient’s medical record would then contain an
+                entry consisting of the following expression: </para>
+            <para>Bacterial Pneumonia (ConceptID = 53084003) : Causative Agent (ConceptID=246075003)
+                = Methicillin Resistant Staph. Aureus (ConceptID=115329001)</para>
+            <para>If specified correctly, post-coordinated expressions also support subsumption
+                testing. Hence, the patient whose record contains the expression above would also be
+                identified by the query “find all patients with a diagnosis of any infectious
+                disease (Infectious Disease : ConceptID = 40733004) in their record.”</para>
+            <para>Normalization is the process of minimizing redundancy from a relation or set of
+                relations. Redundancy in relation may cause insertion, deletion and updation
+                anomalies. So, it helps to minimize the redundancy in relations. Normal forms are
+                used to eliminate or reduce redundancy in database tables.</para>
+            <para><emphasis role="bold">1. First Normal Form</emphasis></para>
+            <para>If a relation contain composite or multi-valued attribute, it violates first
+                normal form or a relation is in first normal form if it does not contain any
+                composite or multi-valued attribute. A relation is in first normal form if every
+                attribute in that relation is singled valued attribute.</para>
+            <para><emphasis role="bold">2. Second Normal Form</emphasis></para>
+            <para>To be in second normal form, a relation must be in first normal form and relation
+                must not contain any partial dependency. A relation is in 2NF iff it has No Partial
+                Dependency, i.e., no non-prime attribute (attributes which are not part of any
+                candidate key) is dependent on any proper subset of any candidate key of the
+                table.</para>
         </section>
     </section>
     <section>
