@@ -6,15 +6,15 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Measure and Result</title>
     <para>A unique aspect of the ANF Model is that all measures and results are numeric ranges. The
-        hierarchy of classes to represent these is shown below, “Result Hierarchy”.
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  "?>An
+        hierarchy of classes to represent these is shown in the below, “Result Hierarchy”.
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  " flag="done"?>An
         important point to notice in this class diagram is that the ANF Model does not allow coded
         results, only a numeric interval is possible. <?oxy_comment_end?></para>
     <figure>
         <title>Result Hierarchy</title>
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/result_hierarchy.png" scalefit="1" width="100%" contentdepth="100%"/>
+                <imagedata fileref="images/result_hierarchy.svg" scalefit="1" width="100%" contentdepth="50%"/>
             </imageobject>
         </mediaobject>
     </figure>
@@ -29,8 +29,9 @@
             <title>Blue Eye Example - Observable Refinement </title>
             <mediaobject>
                 <imageobject>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190502T102042-0500" comment="Convert these images to svg.  Need to move powerpoint to Visio and store in Confluence"?>
                     <imagedata fileref="images/BlueEye_invalid1.jpg" scalefit="1" width="100"
-                        contentdepth="50%"/>
+                        contentdepth="50%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -68,11 +69,24 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
             <title>Measure</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/measure.png" scalefit="1" width="100%" contentdepth="50%"/>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190502T102204-0500" comment="Should we re-do this image to get rid of the float, boolean, etc information and make it more abstract?  This looks more like a technical specification.  Or maybe use the image I inserted below &quot;Measure Hierarchy&quot;?"?>
+                    <imagedata fileref="images/measure.png" scalefit="1" width="100%"
+                        contentdepth="50%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
-    </section>
+        
+        <figure>
+            <title>Measure Heirarchy</title>
+            <mediaobject>
+                <imageobject>
+                    
+                    <imagedata fileref="images/measure_hierarchy.svg" scalefit="1" width="100%"
+                        contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    
     <section>
         <title>lowerBound</title>
         <para>lowerBound represents the lower bound of a
@@ -80,7 +94,8 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
 This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
 "?>measurable
             element<?oxy_comment_end?>. This can be the lower bound of a range: For the
-            “Administration of 25 to 50 mg of medication X” the lower bound is 25. For a test
+            “<?oxy_comment_start author="timowilliams" timestamp="20190502T140203-0500" comment="How does this reconcile the other medication examples where the dosage information is contained only in the topic?  Should we change this to something else?"?>Administration
+            of 25 to 50 mg of medication X<?oxy_comment_end?>” the lower bound is 25. For a test
             result, which is not a range, lower and upper bound are the same. Example: systolic
             blood pressure 110 mmHg. The lower and upper bound are both 110 mmHg.</para>
     </section>
@@ -96,7 +111,7 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
         <para>includeLowerBound states whether the lower bound in the interval is included in the
             interval. In the medication examples above, the lower bound would be included. The lower
             range dose of 25 mg of medication X dose can be administered.</para>
-        <para>Theinclusion or exclusion of lower bound is needed to express measurable elements
+        <para>The inclusion or exclusion of lower bound is needed to express measurable elements
             which include relative properties, such as “greater than”, “less than” and others.
             Example: “Persistent cough for more than 10 days”. If a lower bound of “10” is chosen,
             it would not be included, because the example states: <emphasis role="underline"
@@ -113,9 +128,9 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
     </section>
     <section>
         <title>Resolution</title>
-        <para>TheResolution within a measure defines the possible or allowed increments in which the
-            measured “thing” can be counted. In the example of the systolic blood pressure of 110
-            mmHg, the resolution is “1”, because the blood pressure measurement result can be
+        <para>The Resolution within a measure defines the possible or allowed increments in which
+            the measured “thing” can be counted. In the example of the systolic blood pressure of
+            120 mmHg, the resolution is “1”, because the blood pressure measurement result can be
             counted in 1 mmHg increments. The Resolution is not always defined or known. Example: a
             clinical statement like “History of breast cancer” implies an undefined amount of time
             in the past and it is not stated, if it is years, months, etc.</para>
@@ -123,7 +138,7 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
     <section>
         <title>measureSemantic</title>
         <para>Measure semantic represents the unit of measure. It is described using a logical
-            expression. In systolic bloodpressure, the unit of measure is millimeters of mercury,
+            expression. In systolic blood pressure, the unit of measure is millimeters of mercury,
             and thus the measure semantic is a SNOMED CT concept: 259018001 |Millimeter of mercury
             (qualifier value). For blood glucose measurement daily for 2 weeks, the measure semantic
             would be “258705008 |week (qualifier value)”. In cases where the measure pertains to
@@ -131,26 +146,35 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             cancer” the standardized time/date format ISO 8601 is used for the measure semantic: ISO
             8601 prior to statement time.</para>
     </section>
+    </section>
     <section>
         <title>InterventionResult</title>
-        <para>Intervention Result is a result, thus inheriting all the attributes of Result, and
-            adds the attribute <emphasis role="italic">status</emphasis>, which is a coded value
+        <para>InterventionResult is a result, thus inheriting all the attributes of Result, and adds
+            the attribute <emphasis role="italic">status</emphasis>, which is a coded value
             representing the current status of the intervention.</para>
         <figure>
             <title>Intervention Result</title>         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/intervention_results.jpg" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/intervention_results.svg" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
     </section>
     <section>
         <title>ObservationResult</title>
-        <para> Observation Result is a result, thus inheriting all the attributes of Result, and
-            adds the attributes <emphasis role="italic">healthRisk </emphasis>and <emphasis
-                role="italic">normalRange</emphasis>. Health Risk is used to flag a result with
-            coded values such as 'low', 'normal', high', and 'critical'. Normal Range is the
-            interval of values that are normal.</para>
+        <para>Observation Result is a result, thus inheriting all the attributes of Result, and adds
+            the attributes <emphasis role="italic">healthRisk </emphasis>and <emphasis role="italic"
+                >normalRange</emphasis>. Health Risk is used to flag a result with coded values such
+            as 'low', 'normal', high', and 'critical'. Normal Range is the interval of values that
+            are normal.</para>
+        <figure>
+            <title>Observation Result</title>         
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/observation_result.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
     </section>
 </section>
