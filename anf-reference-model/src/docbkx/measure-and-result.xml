@@ -149,14 +149,16 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
     </section>
     <section>
         <title>InterventionResult</title>
+        <?oxy_comment_start author="timowilliams" timestamp="20190502T170054-0500" comment="Would this be used to represent the values for procedure context (scheduled, done, did not attend, etc)?"?>
         <para>InterventionResult is a result, thus inheriting all the attributes of Result, and adds
             the attribute <emphasis role="italic">status</emphasis>, which is a coded value
-            representing the current status of the intervention.</para>
+            representing the current status of the intervention.<?oxy_comment_end?></para>
         <figure>
-            <title>Intervention Result</title>         
+            <title>Intervention Result</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/intervention_results.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/intervention_results.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
