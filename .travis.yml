@@ -5,9 +5,16 @@ cache:
   - $HOME/.m2
 install: /bin/true
 script: mvn -B -e clean install
+
 notifications:
-  email:
-    on_success: always # default: always
+  webhooks:
+    urls:
+      - secure: "NrGIS32IMzrX1GbSMwPzv7S6bv1oKRd10SeAD5sITWSwG9dqaZwxD5KqzsfHY/ccA6zNHU9QH6MqaZpjHnYyEDP2rqUG+PWZ7zHysKQVCXYPkpry5c74jbnXpRWaMx26krII5E7lNAGPqwGUx9UB1kKrCBTxhQSOaVBMiqpyMGqe/zsfSgVh20QuYLq5+siFCJMOOJb7f9fO22HZpqwiuxPJMQEK8AWPLngExMgCHhhPSzh19dudcOVEIwiRpRRqhn9RsMln+dD+3sJ1Ik7TYRkJ8SdRSkdHNEWuvaJs3GyJsq6o7VCN2sy5dx7DIxaQ0P/sriOvtUksELBmOEbHC43oIXCHdv9TMKNLMcNIP9pQFUSqbr17dbOn7DPJaM1MH3Y60EjUXKg0NEVauEqk6xtDXdaFV/KdCQpvirth5n/iSMIaK9m+q40U/277cY4AnrDZIFBsA9PW4qmzfvuZWrkxNfEEULYUCnINRC5/QznHBCrf7dYklfCfXPOnoSe0fGQ+uCpJQxRJdbxPX3i4ZnHfKvADQ9KJGOSTS0ohN+G3NH9e1Q9kDIeelwvSxbdlf9Dud/EFj9tprR0BAwa/DtB7FchkcI2zVrZZCXEv0gP3emJrqt/WCeJHS7AG+ykNOGqB6VyY8vPTWyow4QU536pMmUd4toivseHO5tRXNgA="
+    on_success: change # default: always
     on_failure: always # default: always
-    on_start: never   # default: never
+    on_start: change   # default: never
     on_cancel: never
+
+
+
+
