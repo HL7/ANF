@@ -11,8 +11,6 @@
         Model, using easy and intuitive examples, rather than focus on the correctness of the
         modeling. The modeling within the post-coordinated expressions of the “topic” could
         potentially be done in different ways.</para>
-    <para> </para>
-    <para> </para>
     <section>
         <title><anchor xml:id="_Toc5884786"/>Blood Pressure Measurement </title>
         <table>
@@ -24,7 +22,7 @@
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Arterial blood pressure 120 mmHg;
+                                        ><emphasis role="italic">Systolic blood pressure 120 mmHg;
                                         taken on right brachial artery using adult blood pressure
                                         cuff;</emphasis></emphasis> patient in sitting position for
                                 at least 5 minutes; urinated not more than 30 minutes prior to
@@ -70,8 +68,10 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>Result: 120<emphasis role="italic"> [259018001 |Millimeter of
-                                mercury]</emphasis></entry>
+                        <entry><?oxy_comment_start author="timowilliams" timestamp="20190503T111842-0500" comment="Do we need to expand this to be upper, lowerbound and measure semantic?
+"?>Result:
+                                120<emphasis role="italic"> [259018001 |Millimeter of
+                                mercury]</emphasis><?oxy_comment_end?></entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
@@ -233,23 +233,85 @@
                 </tbody>
             </tgroup>
         </table>
-        <para> </para>
-        <para> </para>
     </section>
     <section>
         <title><anchor xml:id="_Toc5884787"/>Pulse Rate Measurement</title>
-        <para> </para>
-        <para> </para>
-        <para><emphasis role="bold"
-                ><?oxy_comment_start author="kmaulden" timestamp="20190418T112643-0400" comment="PLACEHOLDER"?>PLACEHOLDER<?oxy_comment_end?></emphasis></para>
-        <para> </para>
+        <para>
+            <table>
+                <title>Performance Clinical Statement</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1"/>
+                    <colspec colnum="2" colname="col2"/>
+                    <tbody>
+                        <row>
+                            <entry namest="col1" nameend="col2">
+                                <para><emphasis role="bold">Narrative</emphasis>: <emphasis
+                                        role="bold"><emphasis role="italic">Pulse Rate 68 bpm, taken
+                                            by pulse oximeter</emphasis></emphasis></para>
+                                <para/>
+                                <para>Statement type:<emphasis role="underline"><emphasis
+                                            role="italic">[Performance]</emphasis></emphasis></para>
+                                <para/>
+                                <para>Subject of info: <emphasis role="italic">[410604004 |Subject
+                                        of record]</emphasis></para>
+                                <para> </para>
+                                <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                        professional]</emphasis></para>
+                                <para/>
+                                <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                        procedure]-</emphasis></para>
+                                <para><emphasis role="italic">(260686004|Method)
+                                        [302199004|Examination - action]-</emphasis></para>
+                                <para><emphasis role="italic">(363702006 |Has focus) [162986007 |On
+                                        examination - pulse rate]-</emphasis></para>
+                                <para><emphasis role="italic">(424226004 |Using device)
+                                        [</emphasis><emphasis role="italic">448703006 |Pulse
+                                        oximeter];</emphasis></para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry morerows="2">Circumstance:</entry>
+                            <entry>Performance Circumstance</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                        format]</emphasis></para>
+                                <para>Purposes: Ø</para>
+                                <para>Triggers: Ø</para>
+                                <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                        record]</emphasis></para>
+                                <para>Priority: Ø</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Result: 68<emphasis role="italic"> [258983007
+                                    |Beats/minute]</emphasis></entry>
+                        </row>
+                        <row>
+                            <entry namest="col1" nameend="col2">
+                                <para>Associations: </para>
+                                <para/>
+                                <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                        format]</emphasis></para>
+                                <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                                    </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                    2007-04-05T14:30Z </para>
+                                <para/>
+                                <para>Subject of record ID:</para>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </para>
         <para> </para>
     </section>
     <section>
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112637-0400" comment="This and all the following examples still have to be either formatted (tables) like the examples above or moved into an Appendix, where the formatting could be simpler."?>
-        <title>Performance Statement Example 4</title><?oxy_comment_end?>
+        <title>Patient History</title><?oxy_comment_end?>
         <table>
-            <title>Performance Statement Example 4</title>
+            <title>Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -258,7 +320,7 @@
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
                         <entry namest="col2" nameend="col2">Patient has thromboembolism
-                            history.</entry>
+                            history</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -284,7 +346,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 5</title>
+        <title>Condition Present</title>
         <table>
             <title>Performance Statement Example 5</title>
             <tgroup cols="2">
@@ -294,7 +356,7 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Diabetes Mellitus present.</entry>
+                        <entry namest="col2" nameend="col2">Diabetes Mellitus present</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -316,7 +378,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 6</title>
+        <title>Condition Not Present</title>
         <table>
             <title>Performance Statement Example 6</title>
             <tgroup cols="2">
@@ -326,7 +388,7 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Diabetes Mellitus not present. </entry>
+                        <entry namest="col2" nameend="col2">Diabetes Mellitus not present</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -348,7 +410,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 7</title>
+        <title>Three dot blot hemorrhages</title>
         <table>
             <title>Performance Statement Example 7</title>
             <tgroup cols="2">
@@ -358,7 +420,7 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Three dot blot hemorrhages.</entry>
+                        <entry namest="col2" nameend="col2">Three dot blot hemorrhages</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -381,7 +443,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 8</title>
+        <title>Dot blot hemorrhage present</title>
         <table>
             <title>Performance Statement Example 8</title>
             <tgroup cols="2">
@@ -391,7 +453,7 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Dot blot hemorrhage present.</entry>
+                        <entry namest="col2" nameend="col2">Dot blot hemorrhage present</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -413,7 +475,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 9</title>
+        <title>Patient Observed Risk</title>
         <table>
             <title>Performance Statement Example 9</title>
             <tgroup cols="2">
@@ -424,7 +486,7 @@
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
                         <entry namest="col2" nameend="col2">Patient observed to have fall
-                            risk.</entry>
+                            risk</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -446,7 +508,7 @@
         </table>
     </section>
     <section>
-        <title>Performance Statement Example 10</title>
+        <title>Family History</title>
         <table>
             <title>Performance Statement Example 10</title>
             <tgroup cols="2">
@@ -457,7 +519,7 @@
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
                         <entry namest="col2" nameend="col2">Family history (mother) of colon
-                            cancer.</entry>
+                            cancer</entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
