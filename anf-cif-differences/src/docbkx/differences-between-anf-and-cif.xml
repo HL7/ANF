@@ -78,92 +78,104 @@
             and Assertion becomes muddied. For example, a model for Breath Sound could be an
             EvaluationResult with a topic of 'breath sound' and a coded result with the following
             valueset. Thus, any of the breath sounds within the valueset can act as a result for
-            this model. The other option, is that each of the breath sounds in the valueset is
-            modeled as an Assertion with a topic of 'assertion', and a result of each particular
-            code. To decided which model is better, usually we ponder how the clinician thinks about
-            the data, or how it will be collected, or how it will be queried.</para>
+            this model. </para>
+        <para>
+            <table>
+                <title>Breath Sound Valueset</title>
+                <tgroup cols="1">
+                    <thead>
+                        <row><entry>Breath Sound Value</entry></row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Absent</entry>
+                        </row>
+                        <row>
+                            <entry>Audible</entry>
+                        </row>
+                        <row>
+                            <entry>Clear</entry>
+                        </row>
+                        <row>
+                            <entry>Coarse Breath Sounds</entry>
+                        </row>
+                        <row>
+                            <entry>Coarse Crackles</entry>
+                        </row>
+                        <row>
+                            <entry>Crackles</entry>
+                        </row>
+                        <row>
+                            <entry>Diminished</entry>
+                        </row>
+                        <row>
+                            <entry>Expiratory wheezing</entry>
+                        </row>
+                        <row>
+                            <entry>Faint</entry>
+                        </row>
+                        <row>
+                            <entry>Fine Crackles</entry>
+                        </row>
+                        <row>
+                            <entry>Forced</entry>
+                        </row>
+                        <row>
+                            <entry>Inspiratory wheezing</entry>
+                        </row>
+                        <row>
+                            <entry>Left Ventricular Assist Device Noise</entry>
+                        </row>
+                        <row>
+                            <entry>Markedly Decreased</entry>
+                        </row>
+                        <row>
+                            <entry>Moderately Decreased</entry>
+                        </row>
+                        <row>
+                            <entry>Pleural Rub</entry>
+                        </row>
+                        <row>
+                            <entry>Prolonged Expiration</entry>
+                        </row>
+                        <row>
+                            <entry>Rhonchi</entry>
+                        </row>
+                        <row>
+                            <entry>Slightly Decreased</entry>
+                        </row>
+                        <row>
+                            <entry>Stridor</entry>
+                        </row>
+                        <row>
+                            <entry>Tubular Breath Sounds</entry>
+                        </row>
+                        <row>
+                            <entry>Upper Airway Congestion</entry>
+                        </row>
+                        <row>
+                            <entry>Wheeze</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </para>
+        <para>The other option, is that each of the breath sounds in the valueset is modeled as an
+            Assertion with a topic of 'assertion', and a result of each particular code. To decided
+            which model is better, usually we ponder how the clinician thinks about the data, or how
+            it will be collected, or how it will be queried.</para>
         <para>The ANF model cannot do an EvaluationResult style model as it doesn't allow coded
             results. Thus, ANF is forced to make one and only one choice, which is an assertion
             style where the particular breath sound is the topic, and the result will be numeric
             count indicating presence or absence.</para>
-        <itemizedlist>
-            <listitem>
-                <para>Absent</para>
-            </listitem>
-            <listitem>
-                <para>Audible</para>
-            </listitem>
-            <listitem>
-                <para>Clear</para>
-            </listitem>
-            <listitem>
-                <para>Coarse Breath Sounds</para>
-            </listitem>
-            <listitem>
-                <para>Coarse Crackles</para>
-            </listitem>
-            <listitem>
-                <para>Crackles</para>
-            </listitem>
-            <listitem>
-                <para>Diminished</para>
-            </listitem>
-            <listitem>
-                <para>Expiratory wheezing</para>
-            </listitem>
-            <listitem>
-                <para>Faint</para>
-            </listitem>
-            <listitem>
-                <para>Fine Crackles</para>
-            </listitem>
-            <listitem>
-                <para>Forced</para>
-            </listitem>
-            <listitem>
-                <para>Inspiratory wheezing</para>
-            </listitem>
-            <listitem>
-                <para>Left Ventricular Assist Device Noise</para>
-            </listitem>
-            <listitem>
-                <para>Markedly Decreased</para>
-            </listitem>
-            <listitem>
-                <para>Moderately Decreased</para>
-            </listitem>
-            <listitem>
-                <para>Pleural Rub</para>
-            </listitem>
-            <listitem>
-                <para>Prolonged Expiration</para>
-            </listitem>
-            <listitem>
-                <para>Rhonchi</para>
-            </listitem>
-            <listitem>
-                <para>Slightly Decreased</para>
-            </listitem>
-            <listitem>
-                <para>Stridor</para>
-            </listitem>
-            <listitem>
-                <para>Tubular Breath Sounds</para>
-            </listitem>
-            <listitem>
-                <para>Upper Airway Congestion</para>
-            </listitem>
-            <listitem>
-                <para>Wheeze</para>
-            </listitem>
-        </itemizedlist>
         <?oxy_comment_start author="kmaulden" timestamp="20190423T101942-0400" comment="So, are we saying here, that CIF is actually better than ANF for queries?"?>
         <para>When querying instance data, the Assertion or ANF style is much more difficult for
             things like breath sounds. To query any breath sound instances, you must have knowledge
-            of all possible breath sound topics and query for each. With the EvaluationResult style,
-            querying is simpler as you simply query for a topic of 'breath sound', and the code
-            result tells you what type of breath sound it is. Thus, you do not have to know all the
-            members of the valueset apriori to form the query. Clinical
-        StatementExamples.</para><?oxy_comment_end?>
+            of all possible
+            <?oxy_comment_start author="timowilliams" timestamp="20190501T223018-0500" comment="Is this really true?  Wouldn&apos;t they all be subtypes of finding of breath sounds, assuming all breath sounds are in the correct hierarchy?"?>breath<?oxy_comment_end?>
+            sound topics and query for each. With the EvaluationResult style, querying is simpler as
+            you simply query for a topic of 'breath sound', and the code result tells you what type
+            of breath sound it is. Thus, you do not have to know all the members of the valueset
+            apriori to form the query. Clinical StatementExamples.</para><?oxy_comment_end?>
     </section>
 </chapter>
