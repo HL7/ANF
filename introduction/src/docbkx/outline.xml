@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Outline *DELETE BEFORE SUBMISSION*</title>
+    <para><emphasis role="bold"><emphasis role="underline">I.
+        INTRODUCTION</emphasis></emphasis></para>
+    <para>
+        <orderedlist>
+            <listitem>
+                <para><emphasis role="bold"><emphasis role="underline"
+                        >Motivation</emphasis></emphasis></para>
+                <para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>HRO Definition, Context</para>
+                        </listitem>
+                        <listitem>
+                            <para>Rely on measures, reports, alerts</para>
+                        </listitem>
+                        <listitem>
+                            <para> Measures rely on standardized implementations</para>
+                        </listitem>
+                        <listitem>
+                            <para> However, variation exists in implementations due to various
+                                networks, communication channels, set of transformations, and
+                                different organizations of clinical data that currently exist.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para> Part of the problem is expression-logic, part of the problem is
+                                terminology. </para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>To assist, there are standards, and DCMs, but variation
+                                        exists here in</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para> a) how the data is represented in clinical
+                                                statements (INTRO TO CLINICAL STATEMENTS)</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>b) how the data is entered by end-users in the
+                                                structured capture (CLINCAL INPUT FORM)</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                    <itemizedlist>
+                        <listitem>
+                            <para> What we need is a formal, integrated terminology model,
+                                post-coordination to minimize complexity in the backend and
+                                facilitate better design on front end. </para>
+                        </listitem>
+                    </itemizedlist>
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    <emphasis role="bold"><emphasis role="underline"
+                        >Background</emphasis></emphasis>
+                </para>
+                <para>(Raja did preliminary Lit Review. See Sections: 'Statement Models' and
+                    'Precision of Clinical Statements in the Chapter ANF Clinical Statements
+                    (anf-clinical-statements/src/docbkx/anf-clinical-statements.xml)</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>DCMs </para>
+                    </listitem>
+                    <listitem>
+                        <para>CIMI</para>
+                    </listitem>
+                    <listitem>
+                        <para>Isosemantic Models</para>
+                    </listitem>
+                    <listitem>
+                        <para>HL7v3, CDA, FHIR</para>
+                    </listitem>
+                    <listitem>
+                        <para>Gaps in existing models and lack of interoperability</para>
+                        <para>Note from Keith: For the ANF document, we should somewhere describe
+                            assumptions about what an ANF implementation requires. For example, ANF
+                            requires an ability to classify topic expressions (and expressions that
+                            may go in other locations). Maybe a section that describes the
+                            requirements of a "mapping" based system with a plethora of statement
+                            models, and then what ANF requires above and beyond a mapping system,
+                            and what the benefits are. </para>
+                        <para>Re-using some of the work in the interoperability paper is probably
+                            wise. I think a distillation of key concepts should be part of the HL7
+                            ballot document. We need to motivate why an ANF approch is necessary as
+                            opposed to the status quo.</para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold"><emphasis role="underline"
+                        >Objectives/Purpose</emphasis></emphasis></para>
+            </listitem>
+        </orderedlist>
+    </para>
+    <para>  - Therefore, we are proposing ANF. </para>
+    <para> </para>
+    <para><emphasis role="bold"><emphasis role="underline">II.
+        PRINCIPLES</emphasis></emphasis></para>
+    <para>RC: Add Glossary and needs text for flow</para>
+    <para> </para>
+    <para><emphasis role="bold"><emphasis role="underline">III. OVERVIEW ANF
+        </emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Definitions</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Context</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Performance</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Examples</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Request</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Examples</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Precision </para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">IV. ANF vs
+        CIF</emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Intro - MORE NEEDED</para>
+        </listitem>
+        <listitem>
+            <para>Representation of Topic</para>
+        </listitem>
+        <listitem>
+            <para>Representation of Result</para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">V. ANF Reference
+            Model</emphasis></emphasis>
+    </para>
+    <itemizedlist>
+        <listitem>
+            <para>Intro</para>
+        </listitem>
+        <listitem>
+            <para>Clinical Statement</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>statementTime, statementId, subjectOfRecordId, statementAuthor,
+                    subjectofInformation, statementType, Topic, Circumstance</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Measure and Result</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>lowerBound, upperBound, includeLowerBound, includeUpperBound, Resolution,
+                    measureSemantic, InterventionResult</para>
+            </listitem>
+        </itemizedlist>
+    </itemizedlist>
+    <itemizedlist>
+        <listitem>
+            <para>Examples</para>
+        </listitem>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">VI.
+        TRANSFORMATION</emphasis></emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VII.
+        IMPLICATIONS</emphasis></emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VIII.
+        CONCLUSION</emphasis></emphasis></para>
+    <para>*******************************************************************************************</para>
+    <para>RC: I propose that we try to  include the following woven into the motivation and
+        background above. </para>
+    <para>*******************************************************************************************</para>
+    <para>
+        <emphasis role="bold"><emphasis role="underline">INTRO TO CLINICAL STATEMENTS
+            </emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Definitions</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Context</para>
+            </listitem>
+            <listitem>
+                <para>Textual Example</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Clinical Input Statements</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Definitions</para>
+            </listitem>
+            <listitem>
+                <para>Context - NEED MORE</para>
+            </listitem>
+            <listitem>
+                <para>Examples</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Analysis Clinical Statements</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>We need this info semantically represented to enable secondary use</para>
+            </listitem>
+            <listitem>
+                <para>ANF</para>
+            </listitem>
+        </itemizedlist>
+    </itemizedlist>
+    <para><emphasis role="bold"><emphasis role="underline">CLINICAL INPUT
+        FORM</emphasis></emphasis></para>
+    <itemizedlist>
+        <listitem>
+            <para>Definitions</para>
+        </listitem>
+        <itemizedlist>
+            <listitem>
+                <para>Context - NEED MORE</para>
+            </listitem>
+            <listitem>
+                <para>Textual Examples</para>
+            </listitem>
+            <listitem>
+                <para>Topic, Context, Metadata</para>
+            </listitem>
+        </itemizedlist>
+        <listitem>
+            <para>Examples of problems</para>
+        </listitem>
+    </itemizedlist>
+</chapter>

@@ -4,11 +4,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title><?oxy_comment_start author="kmaulden" timestamp="20190418T111024-0400" comment="•	Keith’s initial guidance
-o	Goal is to show in examples, how ANF normalizes the data from CIF
-
-"?>Analysis<?oxy_comment_end?>
-        Normal Form (Joey)</title>
+    <title>Modeling Principles</title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -39,7 +35,8 @@ o	Goal is to show in examples, how ANF normalizes the data from CIF
             </tbody>
         </tgroup>
     </informaltable>
-    <para> </para>
+    <para> RC: Intro text needed</para>
+    <para>RC: Look at Glossary and Add here</para>
     <section>
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">

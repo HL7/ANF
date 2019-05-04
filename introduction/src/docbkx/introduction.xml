@@ -3,42 +3,39 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Introduction
-        (<?oxy_comment_start author="kmaulden" timestamp="20190423T093902-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. 
+  <title>Introduction<?oxy_comment_start author="kmaulden" timestamp="20190423T093902-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. 
 Re-using some of the work in the interoperability paper is probably wise. I think a distillation of key concepts should be part of the HL7 ballot document. We need to motivate why an ANF approch is necessary as opposed to the status quo.
-"?>Ioana<?oxy_comment_end?>)</title>
+"?><?oxy_comment_end?></title>
   <section>
     <title>Acknowledgements</title>
     <para>The project team would like to acknowledge the contributions and assistance received from the following:</para>
   </section>
   <section>
-    <title>Background</title>
+    <title>Background
+      <?oxy_comment_start author="rcholan" timestamp="20190504T134707-0400" comment="Please see the Outline Chapter and ANF Tracker Spreadsheet for suggestions for Introduction. "?></title><?oxy_comment_end?>
     <para>The Clinical Information Modeling Initiative (CIMI) is an HL7 group that is defining a
-            library of de- tailed clinical information models using a common modeling formalism.
-            CIMI was established to improve the interoperability of healthcare information systems
-            through shared implementable clinical information models that can be used to generate
-            platform-specific model specifications such as FHIR profiles or CDA templates. These
-            models are grouped into semantically equivalent (or ‘isosemantic’) families of clinical
-            models, which capture the same clinical meaning using different combinations of concept
-            pre-coordination and corresponding information model structure.</para>
+      library of de- tailed clinical information models using a common modeling formalism. CIMI was
+      established to improve the interoperability of healthcare information systems through shared
+      implementable clinical information models that can be used to generate platform-specific model
+      specifications such as FHIR profiles or CDA templates. These models are grouped into
+      semantically equivalent (or ‘isosemantic’) families of clinical models, which capture the same
+      clinical meaning using different combinations of concept pre-coordination and corresponding
+      information model structure.</para>
     <para>
       <emphasis role="bold">Isosemantic Models</emphasis>
     </para>
-    <para>Ideally,clinical information is modeled in a manner that is most efficient for use.
-            This is a problem because there are many different use cases for clinical information
-            with a wide range of requirements. There is no single model that can be the most
-            efficient model for all the various use cases. Maximum efficiency for each use case
-            necessitates that any particular clinical information be available in multiple modeled
-            forms. These models, although different in form, semantically represent the same
-            information, and are known as isosemantic models. Any particular detailed clinical model
-            exists within a family of isosemantic siblings. </para>
-    <para>Different isosemantic models can support different purposes, such as clinical data
-            input, clinical data storage, clinical data querying, clinical data analysis, and
-            modeler preference. </para>
+    <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
+      is a problem because there are many different use cases for clinical information with a wide
+      range of requirements. There is no single model that can be the most efficient model for all
+      the various use cases. Maximum efficiency for each use case necessitates that any particular
+      clinical information be available in multiple modeled forms. These models, although different
+      in form, semantically represent the same information, and are known as isosemantic models. Any
+      particular detailed clinical model exists within a family of isosemantic siblings. </para>
+    <para>Different isosemantic models can support different purposes, such as clinical data input,
+      clinical data storage, clinical data querying, clinical data analysis, and modeler preference. </para>
     <para>Here, we introduce a new isosemantic representation that is designed to aid in the
-            analysis of clinical information and will represent one member in each isosemantic
-            family of detailed clinical models. This representation is called Analysis Normal Form
-            (ANF).</para>
+      analysis of clinical information and will represent one member in each isosemantic family of
+      detailed clinical models. This representation is called Analysis Normal Form (ANF).</para>
     <para>A FHIR implementation guide can eventually be developed.</para>
   </section>
   <section>

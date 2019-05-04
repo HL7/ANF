@@ -304,10 +304,10 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
             Models <?oxy_comment_end?></title>
         <para><emphasis role="bold">PLACEHOLDER</emphasis>
         </para>
-        <para>**********5.4.2019. RC - I perused references that may be relevant to this section.
-            The following is textual excerpts which I cut &amp; pasted from the various references.
-            Some of this might help inform this section, or perhaps in the
-            Introduction.**********</para>
+        <para>**********5.4.2019. RC -<emphasis> I perused references that may be relevant to this
+                section. The following is textual excerpts which I cut &amp; pasted from the various
+                references. Some of this might help inform this section, or perhaps in the
+                Introduction.</emphasis>**********</para>
         <para><emphasis role="bold">Following text is from DCM Ballot of September 2010
                 Introduction: </emphasis></para>
         <para>From &lt;<link
@@ -375,8 +375,10 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
                 <para>CIMI productivity and reusability will be limited till its partners converge
                     on consistent informatics terms and model representations, processes,
                     governance, configuration management, system-of-record repository, and
-                    “isosemantic” model transformations. The proposed OMG </para>
-                <emphasis role="bold">AML</emphasis>
+                    “isosemantic” model transformations. The proposed OMG  </para>
+            </listitem>
+            <listitem>
+                <para>AML</para>
                 <para> (Archetype Modeling Language) profile for UML, which includes ADL like
                     features, to constrain models, is intended to help catalyze sharing of
                     isosemantically equivalent ADL and UML models. The objective of OMG’s AML UML

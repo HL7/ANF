@@ -6,27 +6,37 @@
       xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>HL7 ANF Ballot</title>
   <subtitle>Submission Document</subtitle>
-  
+ 
+  <!-- Objectives -->
+ <xi:include href="../../../introduction/src/docbkx/outline.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ 
   <!-- Introduction -->
-  <xi:include href="../../../introduction/src/docbkx/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../../introduction/src/docbkx/introduction.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   <!-- Analysis Normal Form -->
-  <xi:include href="../../../analysis-normal-form/src/docbkx/analysis-normal-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../../analysis-normal-form/src/docbkx/analysis-normal-form.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
     
   <!-- Introduction to Clinical Statements -->
-  <xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   <!-- Clinical Input Form -->
   <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
    
   <!-- ANF Clinical Statements -->
-  <xi:include href="../../../anf-clinical-statements/src/docbkx/anf-clinical-statements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../../anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   <!-- Differences between ANF and CIF -->
-   <xi:include href="../../../anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+   <xi:include href="../../../anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- ANF Reference Model -->
-   <xi:include href="../../../anf-reference-model/src/docbkx/anf-reference-model.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+   <xi:include href="../../../anf-reference-model/src/docbkx/anf-reference-model.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   <!-- Transformation -->
   <xi:include href="../../../transformation/src/docbkx/transformation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

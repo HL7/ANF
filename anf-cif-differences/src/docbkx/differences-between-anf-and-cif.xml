@@ -4,8 +4,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <?oxy_comment_start author="kmaulden" timestamp="20190423T101923-0400" comment="Not sure, if this chapter is in the right place. Should it be further up, e.g. before Chapter 7?"?>
-    <title>Differences between ANF and CIF (Joey)</title><?oxy_comment_end?>
+    <title>Differences between ANF and CIF </title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -84,7 +83,9 @@
                 <title>Breath Sound Valueset</title>
                 <tgroup cols="1">
                     <thead>
-                        <row><entry>Breath Sound Value</entry></row>
+                        <row>
+                            <entry>Breath Sound Value</entry>
+                        </row>
                     </thead>
                     <tbody>
                         <row>

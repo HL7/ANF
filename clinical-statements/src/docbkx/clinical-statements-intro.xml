@@ -12,8 +12,7 @@ o	Non-technical explanation of issues around clinical content and data analysis
 o	Explain, how same piece of clinical data can be recorded in multiple different ways (CIF).
 o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient status) and Blood Pressure (Systolic BP 120 mmHg, taken on right brachial artery), then go into some more complex examples
 	Cite reference study about importance of patient position, micturition etc.
-" mid="1"?>Statements<?oxy_comment_end?><?oxy_comment_end mid="1"?>
-        (Kirsten)</title>
+" mid="1"?>Statements<?oxy_comment_end?><?oxy_comment_end mid="1"?></title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -28,7 +27,7 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
                                 <itemizedlist>
                                     <listitem>
                                         <para>Describe at a high level (not too technical) what
-                                            clinical statements are </para>
+                                            clinical statements are a</para>
                                     </listitem>
                                     <listitem>
                                         <para>Explain issues with data analysis of clinical
@@ -110,8 +109,8 @@ Structured Coded Form
             radio button, or breaking up large chunks of related information into smaller
             parts.</para>
 
-        <para><emphasis role="bold"><emphasis role="underline">The follow examples illustrate
-                    :</emphasis></emphasis></para>
+        <para><emphasis role="bold"><emphasis role="underline">The following examples illustrate
+                    this paradigm of CIF and/or Structured Coded Form:</emphasis></emphasis></para>
 
         <orderedlist>
             <listitem>
