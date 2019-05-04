@@ -100,7 +100,7 @@
                         <para>Figure. Archetype Modeling Language (AML) UML-Profile <emphasis>2012
                                 CIMI Word Document from Google Search</emphasis><link
                                 xlink:href="http://informatics.mayo.edu/CIMI/images/5/5b/CIMI_Informatics-Modeling_Terms%2C_Tools_and_Their_iEHR_Use.docx"
-                            />></para>
+                            /></para>
                         <para><inlinemediaobject>
                                 <imageobject>
                                     <imagedata
@@ -108,11 +108,6 @@
                                     />
                                 </imageobject>
                             </inlinemediaobject></para>
-                        <para>
-                            <mediaobject>
-                                <imageobject/>
-                            </mediaobject>
-                        </para>
                     </listitem>
                     <listitem>
                         <para>Gaps in existing models and lack of interoperability</para>
@@ -162,7 +157,7 @@
     </itemizedlist>
     <para> DCM 2010 Ballot as an example:<link
             xlink:href="http://wiki.hl7.org/index.php?title=Detailed_Clinical_Models"/></para>
-    <para/>
+    <para> </para>
     <para><emphasis role="bold"><emphasis role="underline">II.
         PRINCIPLES</emphasis></emphasis></para>
     <para>RC: Add Glossary and needs text for flow</para>
@@ -173,27 +168,12 @@
         <listitem>
             <para>Definitions</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Context</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
-            <para>Performance</para>
+            <para>Performane +Examples</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Examples</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
-            <para>Request</para>
+            <para>Request + Examples</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Examples</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
             <para>Precision </para>
         </listitem>
@@ -220,22 +200,14 @@
         </listitem>
         <listitem>
             <para>Clinical Statement</para>
+            <para>statementTime, statementId, subjectOfRecordId, statementAuthor,
+                subjectofInformation, statementType, Topic, Circumstance</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>statementTime, statementId, subjectOfRecordId, statementAuthor,
-                    subjectofInformation, statementType, Topic, Circumstance</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
             <para>Measure and Result</para>
+            <para>lowerBound, upperBound, includeLowerBound, includeUpperBound, Resolution,
+                measureSemantic, InterventionResult</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>lowerBound, upperBound, includeLowerBound, includeUpperBound, Resolution,
-                    measureSemantic, InterventionResult</para>
-            </listitem>
-        </itemizedlist>
     </itemizedlist>
     <itemizedlist>
         <listitem>
@@ -258,59 +230,35 @@
     <itemizedlist>
         <listitem>
             <para>Definitions</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Context</para>
+                </listitem>
+                <listitem>
+                    <para>Textual Example</para>
+                </listitem>
+            </itemizedlist>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Context</para>
-            </listitem>
-            <listitem>
-                <para>Textual Example</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
             <para>Clinical Input Statements</para>
+            <para>     -Definitions</para>
+            <para>     -Context</para>
+            <para>     -Examples</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Definitions</para>
-            </listitem>
-            <listitem>
-                <para>Context </para>
-            </listitem>
-            <listitem>
-                <para>Examples</para>
-            </listitem>
-        </itemizedlist>
         <listitem>
             <para>Analysis Clinical Statements</para>
+            <para>      -We need this info semantically represented to enable secondary use</para>
+            <para>      -ANF</para>
         </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>We need this info semantically represented to enable secondary use</para>
-            </listitem>
-            <listitem>
-                <para>ANF</para>
-            </listitem>
-        </itemizedlist>
     </itemizedlist>
     <para><emphasis role="bold"><emphasis role="underline">CLINICAL INPUT
         FORM</emphasis></emphasis></para>
     <itemizedlist>
         <listitem>
             <para>Definitions</para>
-        </listitem>
-        <itemizedlist>
-            <listitem>
-                <para>Context </para>
-            </listitem>
-            <listitem>
-                <para>Textual Examples</para>
-            </listitem>
-            <listitem>
-                <para>Topic, Context, Metadata</para>
-            </listitem>
-        </itemizedlist>
-        <listitem>
+            <para>     -Context </para>
+            <para>     -Textual Examples</para>
+            <para>     -Topic, Context, Metadata</para>
             <para>Examples of problems</para>
         </listitem>
     </itemizedlist>

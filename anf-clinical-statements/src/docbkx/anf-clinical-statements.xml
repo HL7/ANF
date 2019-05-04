@@ -375,52 +375,51 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
                 <para>CIMI productivity and reusability will be limited till its partners converge
                     on consistent informatics terms and model representations, processes,
                     governance, configuration management, system-of-record repository, and
-                    “isosemantic” model transformations. The proposed OMG  </para>
+                    “isosemantic” model transformations. The proposed OMG </para>
+                <para>AML</para>
             </listitem>
             <listitem>
-                <para>AML</para>
                 <para> (Archetype Modeling Language) profile for UML, which includes ADL like
                     features, to constrain models, is intended to help catalyze sharing of
                     isosemantically equivalent ADL and UML models. The objective of OMG’s AML UML
                     profile is to to support the CIMI modeling requirements. </para>
+                <para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>AML supports model-to-model transformations (ADL or CDL archetypes
+                                to UML and vice-a-versa)</para>
+                        </listitem>
+                    </itemizedlist>
+                    <itemizedlist>
+                        <listitem>
+                            <para>AML UML specifications support MDHT and commercial tool venders to
+                                include the AML UML-Profile</para>
+                        </listitem>
+                        <listitem>
+                            <para>OMG has already created a profile to support NIEM called NIEM
+                                UML</para>
+                        </listitem>
+                        <listitem>
+                            <para>NIEM UML is not sufficient to create healthcare models; but, AML
+                                UML will subsume NIEM UML</para>
+                        </listitem>
+                        <listitem>
+                            <para>Models based upon AML can be transformed into other modeling
+                                paradigms and structures</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>AML to ADL, CDL, CDA, NIEM, XML, JSON, IDL, etc.</para>
+                                    <para>Other modeling paradigms can be transformed into a subset
+                                        of AML models</para>
+                                </listitem>
+                                <listitem>
+                                    <para>AML includes ADL, CDL, CDA, NIEM constructs</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                </para>
             </listitem>
-            <itemizedlist>
-                <listitem>
-                    <para>AML supports model-to-model transformations (ADL or CDL archetypes to UML
-                        and vice-a-versa)</para>
-                </listitem>
-                <listitem>
-                    <para>AML UML specifications support MDHT and commercial tool venders to include
-                        the AML UML-Profile</para>
-                </listitem>
-                <listitem>
-                    <para>OMG has already created a profile to support NIEM called NIEM UML</para>
-                </listitem>
-                <itemizedlist>
-                    <listitem>
-                        <para>NIEM UML is not sufficient to create healthcare models; but, AML UML
-                            will subsume NIEM UML</para>
-                    </listitem>
-                    <listitem>
-                        <para>Models based upon AML can be transformed into other modeling paradigms
-                            and structures</para>
-                    </listitem>
-                    <itemizedlist>
-                        <listitem>
-                            <para>AML to ADL, CDL, CDA, NIEM, XML, JSON, IDL, etc.</para>
-                        </listitem>
-                    </itemizedlist>
-                    <listitem>
-                        <para>Other modeling paradigms can be transformed into a subset of AML
-                            models</para>
-                    </listitem>
-                    <itemizedlist>
-                        <listitem>
-                            <para> AML includes ADL, CDL, CDA, NIEM constructs</para>
-                        </listitem>
-                    </itemizedlist>
-                </itemizedlist>
-            </itemizedlist>
         </itemizedlist>
         <para>This paper will be periodically updated to facilitate understanding-of-differences as
             we harmonize CIMI processes and products required to efficiently support the CIMI goal
@@ -454,15 +453,12 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
             and only need specific descriptions to distinguish these from each other. <link
                 xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/figure/F1/">Figure
                 1</link> illustrates the distinction [<link
-                xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B5"
-            >5</link>].</para>
-        <para><link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/figure/F1/">
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="clip_image002_2092618099.jpg" depth="266" width="720"/>
-                    </imageobject>
-                </mediaobject>
-            </link></para>
+                xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B5">5</link>].<mediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image002_2092618099.jpg" depth="266" width="720"/>
+                </imageobject>
+            </mediaobject>
+        </para>
         <para> </para>
         <para>From &lt;<link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
                 >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>> </para>
