@@ -43,7 +43,19 @@
                                         </listitem>
                                         <listitem>
                                             <para>b) how the data is entered by end-users in the
-                                                structured capture (CLINCAL INPUT FORM)</para>
+                                                structured capture (CLINCAL INPUT FORM)  <inlinemediaobject>
+                                                  <imageobject>
+                                                  <imagedata
+                                                  fileref="../../../anf-clinical-statements/src/docbkx/clip_image002_-1458651199.jpg"
+                                                  />
+                                                  </imageobject>
+                                                </inlinemediaobject> &lt;<link
+                                                  xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
+                                                  >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>>
+                                                  <emphasis>William Goossen: "Detailed Clinical
+                                                  Models: Representing Knowledge, Data and Semantics
+                                                  in Healthcare Information Technology"
+                                                </emphasis></para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -67,6 +79,9 @@
                 <para>(Raja did preliminary Lit Review. See Sections: 'Statement Models' and
                     'Precision of Clinical Statements in the Chapter ANF Clinical Statements
                     (anf-clinical-statements/src/docbkx/anf-clinical-statements.xml)</para>
+                <para>See last 4 paragraphs from Introduction in 2010 DCM Ballot: <link
+                        xlink:href="http://wiki.hl7.org/index.php?title=Detailed_Clinical_Models"
+                    /></para>
                 <itemizedlist>
                     <listitem>
                         <para>DCMs </para>
@@ -81,7 +96,38 @@
                         <para>HL7v3, CDA, FHIR</para>
                     </listitem>
                     <listitem>
+                        <para>Sujansky papers in the transormation folder are useful here</para>
+                        <para>Figure. Archetype Modeling Language (AML) UML-Profile <emphasis>2012
+                                CIMI Word Document from Google Search</emphasis><link
+                                xlink:href="http://informatics.mayo.edu/CIMI/images/5/5b/CIMI_Informatics-Modeling_Terms%2C_Tools_and_Their_iEHR_Use.docx"
+                            />></para>
+                        <para><inlinemediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="../../../anf-clinical-statements/src/docbkx/clip_image001_363175252.png"
+                                    />
+                                </imageobject>
+                            </inlinemediaobject></para>
+                        <para>
+                            <mediaobject>
+                                <imageobject/>
+                            </mediaobject>
+                        </para>
+                    </listitem>
+                    <listitem>
                         <para>Gaps in existing models and lack of interoperability</para>
+                        <para><inlinemediaobject>
+                                <imageobject>
+                                    <imagedata
+                                        fileref="../../../anf-clinical-statements/src/docbkx/clip_image003_1055507215.jpg"
+                                    />
+                                </imageobject>
+                            </inlinemediaobject><link
+                                xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
+                                >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>>
+                                <emphasis>William Goossen: "Detailed Clinical Models: Representing
+                                Knowledge, Data and Semantics in Healthcare Information Technology"
+                            </emphasis></para>
                         <para>Note from Keith: For the ANF document, we should somewhere describe
                             assumptions about what an ANF implementation requires. For example, ANF
                             requires an ability to classify topic expressions (and expressions that
@@ -103,7 +149,20 @@
         </orderedlist>
     </para>
     <para>  - Therefore, we are proposing ANF. </para>
-    <para> </para>
+    <itemizedlist>
+        <listitem>
+            <para>Concrete Objectives</para>
+        </listitem>
+        <listitem>
+            <para>Usage of ANF</para>
+        </listitem>
+        <listitem>
+            <para>Use cases</para>
+        </listitem>
+    </itemizedlist>
+    <para> DCM 2010 Ballot as an example:<link
+            xlink:href="http://wiki.hl7.org/index.php?title=Detailed_Clinical_Models"/></para>
+    <para/>
     <para><emphasis role="bold"><emphasis role="underline">II.
         PRINCIPLES</emphasis></emphasis></para>
     <para>RC: Add Glossary and needs text for flow</para>
@@ -152,8 +211,8 @@
             <para>Representation of Result</para>
         </listitem>
     </itemizedlist>
-    <para><emphasis role="bold"><emphasis role="underline">V. ANF Reference
-            Model</emphasis></emphasis>
+    <para><emphasis role="bold"><emphasis role="underline">V. ANF Reference Model /
+                Format</emphasis></emphasis>
     </para>
     <itemizedlist>
         <listitem>
@@ -183,10 +242,10 @@
             <para>Examples</para>
         </listitem>
     </itemizedlist>
-    <para><emphasis role="bold"><emphasis role="underline">VI.
-        TRANSFORMATION</emphasis></emphasis></para>
-    <para><emphasis role="bold"><emphasis role="underline">VII.
-        IMPLICATIONS</emphasis></emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VI. TRANSFORMATION with
+            ANF</emphasis></emphasis></para>
+    <para><emphasis role="bold"><emphasis role="underline">VII. IMPLICATIONS</emphasis>(BENEFITS AND
+            CONCERNS)</emphasis></para>
     <para><emphasis role="bold"><emphasis role="underline">VIII.
         CONCLUSION</emphasis></emphasis></para>
     <para>*******************************************************************************************</para>
@@ -216,7 +275,7 @@
                 <para>Definitions</para>
             </listitem>
             <listitem>
-                <para>Context - NEED MORE</para>
+                <para>Context </para>
             </listitem>
             <listitem>
                 <para>Examples</para>
@@ -242,7 +301,7 @@
         </listitem>
         <itemizedlist>
             <listitem>
-                <para>Context - NEED MORE</para>
+                <para>Context </para>
             </listitem>
             <listitem>
                 <para>Textual Examples</para>
