@@ -42,4 +42,11 @@ This whitepaper addresses processes for transforming clinical data that were col
 " parentID="wbf_k1g_nhb" mid="2"?>
     <para>PLACEHOLDER Walter Sujanski’s Whitepaper (original title: CEM to CIMI Conversion White
         Paper)</para><?oxy_comment_end?><?oxy_comment_end mid="2"?>
+    
+    <xi:include href="transformation_from_compendium.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+    <section>
+        <title>         </title>
+    </section>
+    
 </chapter>

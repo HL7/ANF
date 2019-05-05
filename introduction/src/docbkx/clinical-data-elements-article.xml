@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<article version="5.0" xml:lang="en-US" xmlns="http://docbook.org/ns/docbook"
+<section version="5.0" xml:lang="en-US" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:ns5="http://www.w3.org/1999/xhtml"
     xmlns:ns4="http://www.w3.org/1998/Math/MathML"
@@ -306,4 +306,4 @@
             defined, rather than define them independently and hope that a mapping to SOLOR is
             possible at a later time.</para>
     </section>
-</article>
+</section>

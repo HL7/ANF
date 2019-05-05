@@ -7,14 +7,18 @@
   <title>HL7 ANF Ballot</title>
   <subtitle>Submission Document</subtitle>
  
-  <!-- Objectives -->
+  <!-- Outline -->
  <xi:include href="../../../introduction/src/docbkx/outline.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
   <!-- Introduction -->
   <xi:include href="../../../introduction/src/docbkx/introduction.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
+ <!-- Background References -->
+ <xi:include href="../../../introduction/src/docbkx/background_refs.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Analysis Normal Form -->
   <xi:include href="../../../analysis-normal-form/src/docbkx/analysis-normal-form.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
