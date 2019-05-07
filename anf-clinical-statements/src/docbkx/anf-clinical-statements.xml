@@ -163,10 +163,11 @@ For instance that a test is ordered?
                         relevant<?oxy_comment_end?></para>
                     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+" id="ppm_nyf_nhb" mid="7"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
-" parentID="ppm_nyf_nhb" mid="6"?>Family
-                        history of colon cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?></para>
+" parentID="ppm_nyf_nhb"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?" mid="6"?>Family
+                        history of colon
+                        cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?><?oxy_comment_end mid="7"?></para>
                 </listitem>
             </itemizedlist>
             <para>Examples of performance clinical statements:</para>
@@ -298,11 +299,5 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
                 candidate key) is dependent on any proper subset of any candidate key of the
                 table.</para>
         </section>
-    </section>
-    <section>
-        <title><?oxy_comment_start author="kmaulden" timestamp="20190418T110630-0400" comment="KH: Should we introduce the idea of Statement Models (a.k.a. Clinical Observation Models) here or will that be too deep in the woods for this part?"?>Statement
-            Models <?oxy_comment_end?></title>
-        <para><emphasis role="bold">PLACEHOLDER</emphasis>
-        </para>
     </section>
 </chapter>

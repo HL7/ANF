@@ -77,7 +77,7 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
         </figure>
         
         <figure>
-            <title>Measure Heirarchy</title>
+            <title>Measure Hierarchy</title>
             <mediaobject>
                 <imageobject>
                     
@@ -90,14 +90,15 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
     <section>
         <title>lowerBound</title>
         <para>lowerBound represents the lower bound of a
-            <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
 This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
 "?>measurable
-            element<?oxy_comment_end?>. This can be the lower bound of a range: For the
-            “<?oxy_comment_start author="timowilliams" timestamp="20190502T140203-0500" comment="How does this reconcile the other medication examples where the dosage information is contained only in the topic?  Should we change this to something else?"?>Administration
-            of 25 to 50 mg of medication X<?oxy_comment_end?>” the lower bound is 25. For a test
-            result, which is not a range, lower and upper bound are the same. Example: systolic
-            blood pressure 110 mmHg. The lower and upper bound are both 110 mmHg.</para>
+                element<?oxy_comment_end?>. This can be the lower bound of a range: For the
+                “<?oxy_comment_start author="timowilliams" timestamp="20190502T140203-0500" comment="How does this reconcile the other medication examples where the dosage information is contained only in the topic?  Should we change this to something else?" id="ctp_ymy_qhb"?><?oxy_comment_start author="timowilliams" timestamp="20190506T154417-0500" comment="Remove this meds example." parentID="ctp_ymy_qhb" mid="7"?>Administration
+                of 25 to 50 mg of medication X<?oxy_comment_end mid="7"?><?oxy_comment_end?>” the
+                lower bound is 25. For a test result, which is not a range, lower and upper bound
+                are the same. Example: systolic blood pressure 110 mmHg. The lower and upper bound
+                are both 110 mmHg.</para>
     </section>
     <section>
         <title>upperBound</title>
