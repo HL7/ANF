@@ -108,9 +108,6 @@
                         <para>HL7v3, CDA, FHIR</para>
                     </listitem>
                     <listitem>
-                        <para/>
-                    </listitem>
-                    <listitem>
                         <para>Gaps in existing models and lack of interoperability </para>
                         <para><inlinemediaobject>
                                 <imageobject>
