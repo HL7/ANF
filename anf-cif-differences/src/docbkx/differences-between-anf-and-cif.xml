@@ -47,7 +47,7 @@
                 <title>Topic Comparison for a Complex Topic</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/cif_anf_topic.png"/>
+                        <imagedata fileref="images/cif_anf_topic.svg"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -178,5 +178,52 @@
             you simply query for a topic of 'breath sound', and the code result tells you what type
             of breath sound it is. Thus, you do not have to know all the members of the valueset
             apriori to form the query. Clinical StatementExamples.</para><?oxy_comment_end?>
+    </section>
+    <section>
+        <title>ANF vs CIMI Examples</title>
+        <para></para>
+        <section>
+            <title>Simple Systolic Blood Pressure</title>
+            <figure>
+                <title>Simple Systolic Blood Pressure - ANF Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/blood_pressure_anf.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Simple Systolic Blood Pressure - CIMI Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/blood_pressure_cimi.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </section>
+        <section>
+            <title>Pulse Rate</title>
+            <figure>
+                <title>Pulse Rate - ANF Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Pulse Rate - CIMI Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </section>    
+        
     </section>
 </chapter>
