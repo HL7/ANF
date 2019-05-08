@@ -9,145 +9,189 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   <section>
     <title>Acknowledgements </title>
     <para>The project team would like to acknowledge the contributions and assistance received from
-      the following:</para>
-  </section>
-  <section> <title>Motivation</title> 
-  <para>Health care organizations are striving to become high reliability organizations (HROs),
-      characterized by high levels of safety under inherently risky, technologically-complex, and
-      demanding conditions.( <link
-        xlink:href="https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf"
-        >https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf</link>) Chassin
-      and Loeb published a conceptual framework for assessing progress towards becoming a HRO and
-      included the safe use of health IT and review of quality measures, which are dependent on data
-      from Electronic Health Record (EHR) systems. (<link
-        xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/"
-        >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/</link>) Deployment of EHR systems is
-      nearly ubiquitous in the US and there is increasing opportunity to leverage a substantial
-      number of extant EHR mapped data sets to improve population health through quality measures,
-      case reporting, and decision support. </para>
-    <para>Pragmatically, these electronic tools are implemented by manually mapping the right
-      clinical data stated in specifications from the right sources in the EHR to generate a report.
-      While there are published, standardized specifications of measures, reports, and alerts with
-      machine-readable, human-readable, and value set specifications, there is currently vast
-      variation seen in implementations of these tools across the healthcare system (refs xxx). Some
-      of this variation is due to discrepancies in how implementers of these reports interpret the
-      expression-logic of specifications. However, even if the implementations of query logic were
-      standardized there is still existing variation in the representation of how clinical data
-      within an EHR is organized, the clinical terminology that is applied, the value range that is
-      valid, which units of measurement may be used, and which data values are required (<link
-        xlink:href="http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf"
-        >http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf</link>). </para>
-    <para>To assist with these challenges, The Clinical Information Modeling Initiative (CIMI) is an
-      HL7 group that is defining a library of de- tailed clinical information models using a common
-      modeling formalism. CIMI was established to improve the interoperability of healthcare
-      information systems through shared implementable clinical information models that can be used
-      to generate platform-specific model specifications such as FHIR profiles or CDA templates.
-      These models are grouped into semantically equivalent (or ‘isosemantic’) families of clinical
-      models, which capture the same clinical meaning using different combinations of concept
-      pre-coordination and corresponding information model structure. The central focus of the CIMI
-      Reference Model is the Clinical Statement. A Clinical Statement represents structured
-      electronic communication made about a patient typically documented as an 'entry' in the
-      patient record. For example, Clinical Statement can be used to represent the following
-      statements made about a patient. This can be the statement of a condition being present, a
-      request for a procedure to be done, the results of lab tests or the patient’s family history
-      of cancer.<itemizedlist>
+      the following:<itemizedlist>
         <listitem>
-          <para>Patient has a diagnosis of congestive heart failure</para>
+          <para>Keith Campbell</para>
         </listitem>
         <listitem>
-          <para>Patient has a family history of breast cancer</para>
+          <para>Richard Esmond</para>
         </listitem>
         <listitem>
-          <para>Patient has a goal of smoking cessation</para>
+          <para>Ioana Singureanu</para>
         </listitem>
         <listitem>
-          <para>Patient has an order for Physical Therapy</para>
+          <para>Joey Coyle</para>
         </listitem>
         <listitem>
-          <para>Patient had an appendectomy</para>
+          <para>Walter Sujansky</para>
+        </listitem>
+        <listitem>
+          <para>Werner Ceusters</para>
+        </listitem>
+        <listitem>
+          <para>Kirsten Haake</para>
+        </listitem>
+        <listitem>
+          <para>Tim Williams</para>
+        </listitem>
+        <listitem>
+          <para>Raja Cholan</para>
         </listitem>
       </itemizedlist></para>
-    <para>Let's consider the following example for blood pressure measurement and the clinical
-      statement that may be entered to represent this information.</para>
-    <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size blood
-      pressure cuff, patient in sitting position for at least 5 minutes, urinated no more than 30
-      minutes prior to measurement”. For the user, this would be the easiest way to document the
-      measurement. However, the various parts of information about the body site, the blood pressure
-      cuff, patient position etc. would be lost to any attempt of data retrieval. Rather than
-      selecting this information all at once with a single item, the user could choose the various
-      parts of information pertinent to the blood pressure measurement in various ways. </para>
-    <para>Clinicians author clinical statements and enter them into their organization’s EHR
-      systems. Clinical statements can be expressed and documented in many different ways in EHR
-      systems, where Clinical Input Forms provide different options to document the same clinical
-      statement. These differences pose challenges for data retrieval, data analysis and data
-      analysts in their attempts to extract accurate clinical analysis results. </para>
-    <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
-      that we call here structured data capture, or the manner in which information is presented to
-      the clinicians and how they enter the data, such as by constraining the information to allow
-      only certain values to be entered, e.g. through a drop-down list or radio button, or breaking
-      up large chunks of related information into smaller parts.</para>
-    <para>
-      <emphasis role="bold"><emphasis role="underline">The following examples illustrate Structured
-          Data Capture:</emphasis></emphasis></para>
-    <para><emphasis>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP cuff
-        adult size, patient in sitting position for at least 5 minutes, urinated not more than 30
-        minutes prior to measurement</emphasis></para>
-    <para>The current guidance for blood pressure measurements for adults includes the body site,
-      the blood pressure cuff size to use as well as some prerequisites. The patient should be in a
-      sitting position for at least 5 minutes and should have urinated no more than 30 minutes
-      before the measurement.</para>
-    <para>For example, a EHR could display a text field for the result and lists of choices for the
-      body site:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Right brachial artery</para>
-      </listitem>
-      <listitem>
-        <para>Left brachial artery</para>
-      </listitem>
-    </itemizedlist>
-    <para>Or it could be diplayed with the site and allow further refinement to specify the
-      laterality:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Brachial artery</para>
-        <itemizedlist>
+  </section>
+  <section>
+    <title>Motivation</title>
+    <section>
+      <title>Context</title>
+      <para>Health care organizations are striving to become high reliability organizations (HROs),
+        characterized by high levels of safety under inherently risky, technologically-complex, and
+        demanding conditions.( <link
+          xlink:href="https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf"
+          >https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf</link>)
+        Chassin and Loeb published a conceptual framework for assessing progress towards becoming a
+        HRO and included the safe use of health IT and review of quality measures, which are
+        dependent on data from Electronic Health Record (EHR) systems. (<link
+          xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/"
+          >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/</link>) Deployment of EHR systems
+        is nearly ubiquitous in the US and there is increasing opportunity to leverage a substantial
+        number of extant EHR mapped data sets to improve population health through quality measures,
+        case reporting, and decision support. </para>
+      <para>Pragmatically, these electronic tools are implemented by manually mapping the right
+        clinical data stated in specifications from the right sources in the EHR to generate a
+        report. While there are published, standardized specifications of measures, reports, and
+        alerts with machine-readable, human-readable, and value set specifications, there is
+        currently vast variation seen in implementations of these tools across the healthcare system
+        (refs xxx). Some of this variation is due to discrepancies in how implementers of these
+        reports interpret the expression-logic of specifications. However, even if the
+        implementations of query logic were standardized there is still existing variation in the
+        representation of how clinical data within an EHR is organized, the clinical terminology
+        that is applied, the value range that is valid, which units of measurement may be used, and
+        which data values are required (<link
+          xlink:href="http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf"
+          >http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf</link>). </para>
+    </section>
+    <section>
+      <title>HL7 Clinical Information Modeling Initiative</title>
+      <para>To assist with these challenges, The Clinical Information Modeling Initiative (CIMI) is
+        an HL7 group that is defining a library of de- tailed clinical information models using a
+        common modeling formalism. CIMI was established to improve the interoperability of
+        healthcare information systems through shared implementable clinical information models that
+        can be used to generate platform-specific model specifications such as FHIR profiles or CDA
+        templates. These models are grouped into semantically equivalent (or ‘isosemantic’) families
+        of clinical models, which capture the same clinical meaning using different combinations of
+        concept pre-coordination and corresponding information model structure. The central focus of
+        the CIMI Reference Model is the Clinical Statement. A Clinical Statement represents
+        structured electronic communication made about a patient typically documented as an 'entry'
+        in the patient record. For example, Clinical Statement can be used to represent the
+        following statements made about a patient. This can be the statement of a condition being
+        present, a request for a procedure to be done, the results of lab tests or the patient’s
+        family history of cancer.<itemizedlist>
           <listitem>
-            <para>Right</para>
+            <para>Patient has a diagnosis of congestive heart failure</para>
           </listitem>
           <listitem>
-            <para>Left</para>
+            <para>Patient has a family history of breast cancer</para>
           </listitem>
-        </itemizedlist>
-      </listitem>
-    </itemizedlist>
-    <para>In addition to specifiying the body site a list of choices for the blood pressure cuff
-      size used would also be selected, for example:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Adult size Small</para>
-      </listitem>
-      <listitem>
-        <para>Adult size Medium</para>
-      </listitem>
-      <listitem>
-        <para>Adult size Large</para>
-      </listitem>
-    </itemizedlist>
-    <para>The same could be true for the display and documentation option for the patient position
-      (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could differ
-      between systems. There are different ways the measurement result could be entered into a form
-      in an EHR. Display options for the user could be, e.g. a text field to enter the measurement
-      result (e.g. 120 mmHg) with the label of the complete guideline. </para>
-    <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This is
-      a problem because there are many different use cases for clinical information with a wide
-      range of requirements. There is no single model that can be the most efficient model for all
-      the various use cases. Maximum efficiency for each use case necessitates that any particular
-      clinical information be available in multiple modeled forms. These models, although different
-      in form, semantically represent the same information, and are known as isosemantic models. Any
-      particular detailed clinical model exists within a family of isosemantic siblings. </para>
-    <para>Different isosemantic models can support different purposes, such as clinical data input,
-      clinical data storage, clinical data querying, clinical data analysis, and modeler preference. </para>
+          <listitem>
+            <para>Patient has a goal of smoking cessation</para>
+          </listitem>
+          <listitem>
+            <para>Patient has an order for Physical Therapy</para>
+          </listitem>
+          <listitem>
+            <para>Patient had an appendectomy</para>
+          </listitem>
+        </itemizedlist></para>
+      <para>Let's consider the following example for blood pressure measurement and the clinical
+        statement that may be entered to represent this information.</para>
+      <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
+        blood pressure cuff, patient in sitting position for at least 5 minutes, urinated no more
+        than 30 minutes prior to measurement”. For the user, this would be the easiest way to
+        document the measurement. However, the various parts of information about the body site, the
+        blood pressure cuff, patient position etc. would be lost to any attempt of data retrieval.
+        Rather than selecting this information all at once with a single item, the user could choose
+        the various parts of information pertinent to the blood pressure measurement in various
+        ways. </para>
+    </section>
+    <section>
+      <title>Structured Data Capture</title>
+      <para>Clinicians author clinical statements and enter them into their organization’s EHR
+        systems. Clinical statements can be expressed and documented in many different ways in EHR
+        systems, where Clinical Input Forms provide different options to document the same clinical
+        statement. These differences pose challenges for data retrieval, data analysis and data
+        analysts in their attempts to extract accurate clinical analysis results. </para>
+      <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
+        that we call here structured data capture, or the manner in which information is presented
+        to the clinicians and how they enter the data, such as by constraining the information to
+        allow only certain values to be entered, e.g. through a drop-down list or radio button, or
+        breaking up large chunks of related information into smaller parts.</para>
+      <para>
+        <emphasis role="bold"><emphasis role="underline">The following examples illustrate
+            Structured Data Capture:</emphasis></emphasis></para>
+      <para><emphasis>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP
+          cuff adult size, patient in sitting position for at least 5 minutes, urinated not more
+          than 30 minutes prior to measurement</emphasis></para>
+      <para>The current guidance for blood pressure measurements for adults includes the body site,
+        the blood pressure cuff size to use as well as some prerequisites. The patient should be in
+        a sitting position for at least 5 minutes and should have urinated no more than 30 minutes
+        before the measurement.</para>
+      <para>For example, a EHR could display a text field for the result and lists of choices for
+        the body site:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Right brachial artery</para>
+        </listitem>
+        <listitem>
+          <para>Left brachial artery</para>
+        </listitem>
+      </itemizedlist>
+      <para>Or it could be diplayed with the site and allow further refinement to specify the
+        laterality:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Brachial artery</para>
+          <itemizedlist>
+            <listitem>
+              <para>Right</para>
+            </listitem>
+            <listitem>
+              <para>Left</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
+      <para>In addition to specifiying the body site a list of choices for the blood pressure cuff
+        size used would also be selected, for example:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Adult size Small</para>
+        </listitem>
+        <listitem>
+          <para>Adult size Medium</para>
+        </listitem>
+        <listitem>
+          <para>Adult size Large</para>
+        </listitem>
+      </itemizedlist>
+      <para>The same could be true for the display and documentation option for the patient position
+        (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could
+        differ between systems. There are different ways the measurement result could be entered
+        into a form in an EHR. Display options for the user could be, e.g. a text field to enter the
+        measurement result (e.g. 120 mmHg) with the label of the complete guideline. </para>
+      <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
+        is a problem because there are many different use cases for clinical information with a wide
+        range of requirements. There is no single model that can be the most efficient model for all
+        the various use cases. Maximum efficiency for each use case necessitates that any particular
+        clinical information be available in multiple modeled forms. These models, although
+        different in form, semantically represent the same information, and are known as isosemantic
+        models. Any particular detailed clinical model exists within a family of isosemantic
+        siblings. </para>
+      <para>Different isosemantic models can support different purposes, such as clinical data
+        input, clinical data storage, clinical data querying, clinical data analysis, and modeler
+        preference. </para>
+    </section>
+  </section>
+  <section><title> Purpose </title>
     <para>Here, we introduce a new isosemantic representation that is designed to aid in the
       analysis of clinical information and will represent one member in each isosemantic family of
       detailed clinical models. This representation is called Analysis Normal Form (ANF). A FHIR
@@ -155,27 +199,26 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     <para>ANF is not necessarily a physical structure, but is how a data analyst might see the data
       when they are looking at it in a database, and not as clinicians would see it in the user
       interface (i.e., structured data capture). </para>
-    <itemizedlist spacing='compact'>
+    <itemizedlist spacing="compact">
       <listitem>
         <para>Clinician collects data &#x21D2; Clinical Input Form</para>
       </listitem>
       <listitem>
-        <para>Data is normalized &#x21D2; Transformation process from CIF to ANF  &#x21D2; Representable/storable in multiple types of databases.</para>
+        <para>Data is normalized &#x21D2; Transformation process from CIF to ANF &#x21D2;
+          Representable/storable in multiple types of databases.</para>
       </listitem>
       <listitem>
-        <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or working on prevalence statistics) &#x21D2; ANF (it is how the data is represented or stored in the database; must know enough about the data to know what is stored in the topic vs. what is stored as a result or detail)</para>
+        <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or working
+          on prevalence statistics) &#x21D2; ANF (it is how the data is represented or stored in the
+          database; must know enough about the data to know what is stored in the topic vs. what is
+          stored as a result or detail)</para>
       </listitem>
     </itemizedlist>
     <para>The goal of ANF is to enable analysts to understand the data and how it is stored in lieu
       of having to teach them about the thousands of ways data can be entered and ensure the data
       that has to be expressed, can be expressed in an operable and scalable way. The more that data
       is normalized, the simpler it will become to analyze, and the likelihood of analysis errors
-      will be reduced. Without the ANF, the probability of patient safety risks is increased.</para>
-    <para>The following document will discuss how the ANF Model provides the clinical data
-      normalization capabilities to support accurate data retrieval and analysis.</para>
-  </section>
-  <section><title> Purpose </title>
-    <para>The purpose of ANF is as follows xxx</para><para> </para> <section><title> Concrete Objectives </title>
+      will be reduced. Without the ANF, the probability of patient safety risks is increased.</para> <section><title> Concrete Objectives </title>
      <para> </para>   </section>
     <section>
       <title> Usage</title> <para> </para>
@@ -195,12 +238,9 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   </section>
   <section>
     <title>Scope</title>
-    <para><?oxy_comment_start author="kmaulden" timestamp="20190423T094055-0400" comment="Joey Coyle:
-Do you want this for later sections, or do you want to explain it here?
-"?>This
-      document will present the specification of the Analysis Normal Form (ANF), how it is used to
-      create detailed clinical models (DCMs), and how it differs
-      from<?oxy_comment_end?><?oxy_comment_start author="kmaulden" timestamp="20190418T105315-0400" comment="KC: Work with Joey and Ioana on what this is exactly;"?>
-      CIMI's current standard modeling paradigm<?oxy_comment_end?>.</para>
+    <para>The following document will discuss (1) how the ANF Model provides the clinical data
+      normalization capabilities to support accurate data retrieval and analysis; (2) how ANF is
+      used to create detailed clinical models (DCMs); and, (3) how it differs from CIMI's current
+      standard modeling paradigm. </para>
   </section>
 </chapter>

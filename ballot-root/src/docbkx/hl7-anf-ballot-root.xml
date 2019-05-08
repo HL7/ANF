@@ -24,11 +24,11 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
     
   <!-- Introduction to Clinical Statements -->
-  <xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
   
   <!-- Clinical Input Form -->
-  <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+ <!--<xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
    
   <!-- ANF Clinical Statements -->
   <xi:include href="../../../anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"
@@ -49,7 +49,7 @@
    <xi:include href="../../../conclusion/src/docbkx/conclusion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   <!-- Acknowledgements -->
-   <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  
+ <!-- <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   -->
   
   <!-- References -->
   <xi:include href="../../../references/src/docbkx/references.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> 
