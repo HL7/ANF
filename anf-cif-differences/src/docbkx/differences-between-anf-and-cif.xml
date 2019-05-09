@@ -59,16 +59,22 @@
             for authoring and analysis would be required to parse and process both syntaxes.</para>
         <para>The CIF model, on the other hand, would be fully represented using the formalism that
             represents the CIF reference model and constraints such as HL7's StructureDefinition
-            syntax or OpenEHR's BMM/ADL syntax.</para>
+            syntax or OpenEHR's BMM/ADL syntax.
+            <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="Add example based on Joey discussion"?>This
+            model however allows for multiple possible representations of data that are not easily
+            queried for equivalence.  <?oxy_comment_end?></para>
     </section>
     <section>
         <title>The Representation of Results</title>
         <para>In the CIMI CIF model, EvaluationResult and Assertion models are used to represent
-            results. Evaluation- Result has a topic representing what is being observed, and a
-            result represented by a choice of datatypes. An Assertion on the other hand, has simply
-            a topic with a value of 'assertion', and a result stated what is being asserted.</para>
+            results. EvaluationResult has a topic representing what is being observed, and a result
+            represented by a choice of datatypes. An Assertion on the other hand, has simply a topic
+            with a value of 'assertion', and a result stated what is being asserted.</para>
         <para>In the ANF model, the topic represents what is being observed and the result may only
-            be a range of either a count or quantity. No coded results are allowed.</para>
+            be a range of either a count or quantity. No coded results are allowed. Not allowing
+            coded results forces more of the semantics to be representing in the terminology model
+            and constrains the ability to allow multiple different representations of the same
+            data.</para>
         <para>In the CIF model, when creating a model with a numeric result, the choice is quite
             clear, and the choice will be an EvaluationResult, such as a topic of 'SerumSodium' and
             result with a numeric quantity. In this case, the CIF and ANF model are very aligned,
@@ -177,13 +183,18 @@
             sound topics and query for each. With the EvaluationResult style, querying is simpler as
             you simply query for a topic of 'breath sound', and the code result tells you what type
             of breath sound it is. Thus, you do not have to know all the members of the valueset
-            apriori to form the query. Clinical StatementExamples.</para><?oxy_comment_end?>
+            apriori to form the query.</para><?oxy_comment_end?>
     </section>
     <section>
         <title>ANF vs CIMI Examples</title>
-        <para></para>
+        <para>The following examples seek to highlight the differences between the ANF and CIMI
+            models.  These representations are at a graphic high level and are not intended to be
+            exact representations.</para>
         <section>
-            <title>Simple Systolic Blood Pressure</title>
+            <title>Simple Systolic Blood Pressure Statement</title>
+            <para>In this systolic blood pressure example both the ANF and CIMI models are closely
+                aligned.  Since the ANF model requires both an upper and lower bound there is extra
+                information required.</para>
             <figure>
                 <title>Simple Systolic Blood Pressure - ANF Representation</title>
                 <mediaobject>
@@ -204,7 +215,54 @@
             </figure>
         </section>
         <section>
-            <title>Pulse Rate</title>
+            <title>Complex Systolic Blood Pressure Statement</title>
+            <?oxy_comment_start author="timowilliams" timestamp="20190508T141911-0500" comment="Explain more about the separation of the clinical statements."?>
+            <para>In this systolic blood pressure example the ANF model requires multiple statements
+                to accurately capture all parts of the narrative clinical statement. The ANF model
+                is much more expressive and is able to capture the timing information for the
+                position and urination that requires a separate code to be created in the CIMI
+                model.<?oxy_comment_end?></para>
+            <figure>
+                <title>Complex Systolic Blood Pressure - ANF Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/bp_complex_anf.svg" scalefit="1" width="100%"
+                            contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Complex Systolic Blood Pressure - Associated ANF Statement #1</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/bp_complex2_anf.svg" scalefit="1" width="100%"
+                            contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Complex Systolic Blood Pressure - Associated ANF Statement #2</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/bp_complex3_anf.svg" scalefit="1" width="100%"
+                            contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Complex Systolic Blood Pressure - CIMI Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?"?>
+                        <imagedata fileref="images/bp_complex_cimi.svg" scalefit="1" width="100%"
+                            contentdepth="50%"/><?oxy_comment_end?>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </section>
+        <section>
+            <title>Pulse Rate Statement</title>
+            <para></para>
             <figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
@@ -218,12 +276,38 @@
                 <title>Pulse Rate - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?"?>
+                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
+                            contentdepth="50%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
         </section>    
-        
+        <section>
+            <title>Diabetes Mellitus Statement</title>
+            <para>The Diabetes Mellitus example highlights the main difference between ANF and CIF
+                in the case of stating that a condition is present.  In the case of ANF, since
+                Result is not allowed to use a coded value it represents the presence as a
+                lowerBound of 1 and an upperBound of infinite.  Representing absence would be done
+                with an upper and lower bound of zero.</para>
+            <figure>
+                <title>Diabetes Mellitus - ANF Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/dm_anf.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Diabetes Mellitus - CIMI Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/dm_cimi.svg" scalefit="1"
+                            width="100%" contentdepth="50%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </section>
     </section>
 </chapter>
