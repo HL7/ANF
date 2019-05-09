@@ -60,9 +60,10 @@
         <para>The CIF model, on the other hand, would be fully represented using the formalism that
             represents the CIF reference model and constraints such as HL7's StructureDefinition
             syntax or OpenEHR's BMM/ADL syntax.
-            <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="Add example based on Joey discussion"?>This
+            <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="I believe we can use one of the examples below to highlight this by representing the bodysite with and without the laterality.
+"?>This
             model however allows for multiple possible representations of data that are not easily
-            queried for equivalence.  <?oxy_comment_end?></para>
+            queried for equivalence. <?oxy_comment_end?></para>
     </section>
     <section>
         <title>The Representation of Results</title>
@@ -179,7 +180,7 @@
         <para>When querying instance data, the Assertion or ANF style is much more difficult for
             things like breath sounds. To query any breath sound instances, you must have knowledge
             of all possible
-            <?oxy_comment_start author="timowilliams" timestamp="20190501T223018-0500" comment="Is this really true?  Wouldn&apos;t they all be subtypes of finding of breath sounds, assuming all breath sounds are in the correct hierarchy?"?>breath<?oxy_comment_end?>
+            <?oxy_comment_start author="timowilliams" timestamp="20190501T223018-0500" comment="Is this really true?  Wouldn&apos;t they all be subtypes of finding of breath sounds as long as breath sounds are modeled correctly?  I think we should remove this paragraph."?>breath<?oxy_comment_end?>
             sound topics and query for each. With the EvaluationResult style, querying is simpler as
             you simply query for a topic of 'breath sound', and the code result tells you what type
             of breath sound it is. Thus, you do not have to know all the members of the valueset
@@ -200,7 +201,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/blood_pressure_anf.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                            width="100%" contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -209,25 +210,32 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/blood_pressure_cimi.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                            width="100%" contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
         </section>
         <section>
             <title>Complex Systolic Blood Pressure Statement</title>
-            <?oxy_comment_start author="timowilliams" timestamp="20190508T141911-0500" comment="Explain more about the separation of the clinical statements."?>
             <para>In this systolic blood pressure example the ANF model requires multiple statements
                 to accurately capture all parts of the narrative clinical statement. The ANF model
-                is much more expressive and is able to capture the timing information for the
-                position and urination that requires a separate code to be created in the CIMI
-                model.<?oxy_comment_end?></para>
+                requires a clinical statement to be separated if  the clinical statement could stand
+                on its own.  For example, in the clinical statement "Systolic Blood Pressure 120
+                mmHg, taken on right brachial artery, using BP cuff adult size, patient in sitting
+                position for at least 5 minutes, urinated not more than 30 minutes prior to
+                measurement" The patient sitting position and urination parts of the statement are
+                recorded as separate associated clincal statements since they could both recorded as
+                clincial statements on their own if they were not associated with the blood pressure
+                clinical statement.</para>
+            <para>The ANF model is much more expressive and is able to capture the timing
+                information for the position and urination that requires a separate code to be
+                created in the CIMI model.</para>
             <figure>
                 <title>Complex Systolic Blood Pressure - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_anf.svg" scalefit="1" width="100%"
-                            contentdepth="50%"/>
+                            contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -236,7 +244,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex2_anf.svg" scalefit="1" width="100%"
-                            contentdepth="50%"/>
+                            contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -245,7 +253,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex3_anf.svg" scalefit="1" width="100%"
-                            contentdepth="50%"/>
+                            contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -253,9 +261,9 @@
                 <title>Complex Systolic Blood Pressure - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?  I think this could be an example of the same CIMI example being represented in multipe ways that would require multiple different queries to determine equivalence."?>
                         <imagedata fileref="images/bp_complex_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="50%"/><?oxy_comment_end?>
+                            contentdepth="75%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -268,7 +276,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                            width="100%" contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -276,9 +284,9 @@
                 <title>Pulse Rate - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
                         <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="50%"/><?oxy_comment_end?>
+                            contentdepth="75%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -295,7 +303,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_anf.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                            width="100%" contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -304,7 +312,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_cimi.svg" scalefit="1"
-                            width="100%" contentdepth="50%"/>
+                            width="100%" contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
