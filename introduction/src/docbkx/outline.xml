@@ -111,7 +111,8 @@
                         <para>Gaps in existing models and lack of interoperability </para>
                         <para><inlinemediaobject>
                                 <imageobject>
-                                    <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg"/>
+                                    <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg"
+                                        scale="50"/>
                                 </imageobject>
                             </inlinemediaobject></para>
                         <para>Note from Keith: For the ANF document, we should somewhere describe
@@ -131,10 +132,21 @@
         </orderedlist>
     </para>
     <para> </para>
-    <para><emphasis role="bold"><emphasis role="underline">II.
-        PRINCIPLES</emphasis></emphasis></para>
-    <para>RC: Add Glossary and needs text for flow</para>
-    <para> </para>
+    <para><emphasis role="bold"><emphasis role="underline">II. CIMI Clinical
+            Statements</emphasis></emphasis></para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>Intro to  Clinical Statements, CIF</para>
+            </listitem>
+            <listitem>
+                <para>Examples of multiple ways of representing BP and HR</para>
+            </listitem>
+            <listitem>
+                <para>Definitons of Assertions, Evaluation Results</para>
+            </listitem>
+        </itemizedlist>
+    </para>
     <para><emphasis role="bold"><emphasis role="underline">III. OVERVIEW ANF
         </emphasis></emphasis></para>
     <itemizedlist>
@@ -142,26 +154,23 @@
             <para>Definitions</para>
         </listitem>
         <listitem>
-            <para>Performane +Examples</para>
+            <para>Performance +Examples</para>
         </listitem>
         <listitem>
-            <para>Request + Examples</para>
-        </listitem>
-        <listitem>
-            <para>Precision </para>
+            <para>Request + Examples </para>
         </listitem>
     </itemizedlist>
     <para><emphasis role="bold"><emphasis role="underline">IV. ANF vs
         CIF</emphasis></emphasis></para>
     <itemizedlist>
         <listitem>
-            <para>Intro - MORE NEEDED</para>
+            <para>In CIF, Evaluation Result, Assertion: Refresher Definitions</para>
         </listitem>
         <listitem>
-            <para>Representation of Topic</para>
+            <para>Representation of Topic - side by side examples</para>
         </listitem>
         <listitem>
-            <para>Representation of Result</para>
+            <para>Representation of Result - side by side examples</para>
         </listitem>
     </itemizedlist>
     <para><emphasis role="bold"><emphasis role="underline">V. ANF Reference Model /
@@ -193,46 +202,4 @@
             CONCERNS)</emphasis></para>
     <para><emphasis role="bold"><emphasis role="underline">VIII.
         CONCLUSION</emphasis></emphasis></para>
-    <para>*******************************************************************************************</para>
-    <para>RC: I propose that we try to  include the following woven into the motivation and
-        background above. </para>
-    <para>*******************************************************************************************</para>
-    <para>
-        <emphasis role="bold"><emphasis role="underline">INTRO TO CLINICAL STATEMENTS
-            </emphasis></emphasis></para>
-    <itemizedlist>
-        <listitem>
-            <para>Definitions</para>
-            <itemizedlist>
-                <listitem>
-                    <para>Context</para>
-                </listitem>
-                <listitem>
-                    <para>Textual Example</para>
-                </listitem>
-            </itemizedlist>
-        </listitem>
-        <listitem>
-            <para>Clinical Input Statements</para>
-            <para>     -Definitions</para>
-            <para>     -Context</para>
-            <para>     -Examples</para>
-        </listitem>
-        <listitem>
-            <para>Analysis Clinical Statements</para>
-            <para>      -We need this info semantically represented to enable secondary use</para>
-            <para>      -ANF</para>
-        </listitem>
-    </itemizedlist>
-    <para><emphasis role="bold"><emphasis role="underline">CLINICAL INPUT
-        FORM</emphasis></emphasis></para>
-    <itemizedlist>
-        <listitem>
-            <para>Definitions</para>
-            <para>     -Context </para>
-            <para>     -Textual Examples</para>
-            <para>     -Topic, Context, Metadata</para>
-            <para>Examples of problems</para>
-        </listitem>
-    </itemizedlist>
 </chapter>

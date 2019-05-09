@@ -15,6 +15,10 @@
   <xi:include href="../../../introduction/src/docbkx/introduction.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
+ <!-- Clinical Input Form -->
+ <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
  <!-- Background References -->
  <xi:include href="../../../introduction/src/docbkx/background_refs.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -22,14 +26,15 @@
   <!-- Analysis Normal Form -->
   <xi:include href="../../../analysis-normal-form/src/docbkx/analysis-normal-form.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    
-  <!-- Introduction to Clinical Statements -->
+ 
+ <!-- Clinical Input Form -->
+ <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml"
+  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+ <!-- Introduction to Clinical Statements -->
  <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
-  
-  <!-- Clinical Input Form -->
- <!--<xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
-   
+    
   <!-- ANF Clinical Statements -->
   <xi:include href="../../../anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>

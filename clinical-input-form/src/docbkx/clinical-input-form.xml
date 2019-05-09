@@ -4,11 +4,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title><?oxy_comment_start author="kmaulden" timestamp="20190418T110656-0400" comment="•	Keith’s initial Guidance
-	Continue the Pulse/BP example here
-	Continue to show, how the different ways of recording data are perfectly normal and acceptable and elaborate on the issues for data retrieval and analysis
-"?>Clinical<?oxy_comment_end?>
-        Input Form</title>
+    <title>CIMI Clinical Statements</title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -36,47 +32,14 @@
         </tgroup>
     </informaltable>
     <section>
-        <title>Introduction to Clinical Input Form (CIF)</title>
-        <para>Ideally, clinical information is represented in a manner that is most efficient for
-            use. The problem is that users have many different requirements for clinical information, thus no single
-            representation can be the most efficient representation for all the various use cases. Thus, maximum efficiency
-            for each use case necessitates that any particular clinical information be available in multiple
-            representations. Although different in form, each of these different representations semantically model the same
-            information. These are known as isosemantic models.</para>
-        <para> The central focus of the CIMI Reference Model is the Clinical Statement. A Clinical
-            Statement represents structured electronic communication made about a patient typically
-            documented as an 'entry' in the patient record. For example, Clinical Statement can be
-            used to represent the following statements made about a patient. </para>
-        <itemizedlist mark="bullet" spacing="compact">
-            <listitem>
-                <para> Patient has a diagnosis of congestive heart failure. </para>
-            </listitem>
-            <listitem>
-                <para> Patient has a family history of breast cancer. </para>
-            </listitem>
-            <listitem>
-                <para> Patient has a goal of smoking cessation. </para>
-            </listitem>
-            <listitem>
-                <para> Patient has an order for Physical Therapy. </para>
-            </listitem>
-            <listitem>
-                <para> Patient has a lab result of Serum Sodium equals 130 mEq/L with delta flag.
-                </para>
-            </listitem>
-            <listitem>
-                <para> Patient had an appendectomy. </para>
-            </listitem>
-            <listitem>
-                <para> Patient has a paternal uncle with Hemophilia C. </para>
-            </listitem>
-        </itemizedlist>
-        <para> Clinical Statement, shown in <xref linkend="cif_msg_cstatement_0135"/>, has a ‘key’,
-            ‘topic’, ‘context’, and ‘metadata’. The ‘key’ is the terminology meaning binding for the
-            entire Clinical Statement. The ‘topic’ is the clinical entity being described. The
-            ‘context’ describes the circumstances that form the setting in which the ‘topic’ should
-            be evaluated. Finally, ‘metadata’ is the collection of metadata that is associated with
-            the clinical statement: the who, where, why and when information. </para>
+        <title>Introduction to CIMI Clinical Statements </title>
+        <para> The central focus of the CIMI Reference Model is the Clinical Statement. Clinical
+            Statement, shown in <xref linkend="cif_msg_cstatement_0135"/>, has a ‘key’, ‘topic’,
+            ‘context’, and ‘metadata’. The ‘key’ is the terminology meaning binding for the entire
+            Clinical Statement. The ‘topic’ is the clinical entity being described. The ‘context’
+            describes the circumstances that form the setting in which the ‘topic’ should be
+            evaluated. Finally, ‘metadata’ is the collection of metadata that is associated with the
+            clinical statement: the who, where, why and when information. </para>
         <figure xml:id="cif_msg_cstatement_0135">
             <title>Clinical Statement</title>
             <mediaobject>
@@ -90,7 +53,7 @@
             <varlistentry>
                 <term><emphasis role="bold">Topic</emphasis></term>
                 <listitem>
-                    <para> The ‘topic’ is the clinical entity described by the Clinical Statement. A
+                    <para>The ‘topic’ is the clinical entity described by the Clinical Statement. A
                         few examples of topic include clinical assertions, evaluation results, and
                         procedures. For each of these topics the information described is quite
                         different. Therefore, CIMI describes topic types that contain the
@@ -118,7 +81,7 @@
             <varlistentry>
                 <term><emphasis role="bold">Context</emphasis></term>
                 <listitem>
-                    <para> The ‘context’ describes the circumstances that form the setting in which
+                    <para>The ‘context’ describes the circumstances that form the setting in which
                         the ‘topic’ should be evaluated. CIMI describes context types that contain
                         the appropriate attributes to describe the required information for the
                         given context. The number of context types will change as CIMI progresses.
@@ -158,7 +121,7 @@
             <varlistentry>
                 <term><emphasis role="bold">Metadata</emphasis></term>
                 <listitem>
-                    <para> ‘Metadata’ is not actually an attribute of ClinicalStatement, but is
+                    <para>‘Metadata’ is not actually an attribute of ClinicalStatement, but is
                         intended here to represent the various attributes in a clinical statement
                         that represent metadata about the clinical statement. This includes
                         attribution information relating to the statement itself such as who
@@ -171,11 +134,19 @@
         
     </section>
     <section>
-        <title>CIF Examples</title>
-        <para>Pulse examples with different CIF representations</para>
-        <para>BP examples with different CIF representations</para>
-        <para> Steps for a clinician utilizing CIF might be the following:</para>
-        <para>
+        <title>CIMI Examples</title>
+        <para>The CIMI Working Group recognizes it is unlikely a one-size-fits-all approach will
+            accommodate the wide variety of clinical and implementation use cases. As such, the CIMI
+            architecture supports alternate representations of the same model to address the
+            requirements of specific use cases. For instance, interface models may have different
+            modeling requirements than persisted models or logical models. The CIMI architecture
+            should thus support the definition of iso-semantic models, which are sets of
+            semantically equivalent models differing primarily in their structure and terminology
+            pre-coordination.</para>
+        <para>Pulse examples with different representations &lt;NEED EXAMPLES></para>
+        <para>BP examples with different representations &lt;NEED EXAMPLES></para>
+        <!-- <para> Steps for a clinician utilizing CIF might be the following:</para>
+         <para>
             <orderedlist>
                 <listitem>
                     <para>Clinician collects data using Clinical Input Form</para>
@@ -261,6 +232,66 @@ Example obscure: why would the specified request topic be needed in the query fo
                     order would not be included in the query
                 results.</para><?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="6"?>
             </listitem>
-        </itemizedlist>
+        </itemizedlist> -->
+    </section>
+    <section>
+        <title>CIMI Topic Patterns</title>
+        <para>The topic patterns CIMI has developed to date include Assertion, EvaluationResult, and
+            Procedure. Each of these topic subtypes contains a collection of attributes that are
+            appropriate to describe the given pattern. These patterns provide the foundational
+            structure for detailed clinical model archetype instances (ref
+            https://issues.osehra.org/secure/attachment/15835/cimi_modeling_quality_guide.pdf ) </para>
+        <para> </para>
+        <para>
+            <inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Topic%20Hierarchy.png"/>
+                </imageobject>
+            </inlinemediaobject></para>
+        <section>
+            <title>Assertion</title>
+            <para>The first topic type described here is the Assertion Pattern and its included
+                attributes, as shown in Figure 6, “Assertion Pattern”, which is used to represent a
+                clinical finding. This pattern is used to assert the presence (or absence) of a
+                condition in a patient, for example:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>ChestPainAssertion asserts the presence of chest pain</para>
+                </listitem>
+                <listitem>
+                    <para>ChestPainAssertion asserts the absence of chest pain</para>
+                </listitem>
+                <listitem>
+                    <para>EdemaAssertion asserts the presence of edema</para>
+                </listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title>Evaluation Result</title>
+            <para>EvaluationResult, which is used to document a characteristic of a patient or a
+                clinical value being observed. An EvaluationResult may hold the name of a test in
+                the ’key’ attribute (e.g., “heart rate evaluation”, “serum glucose lab test”, etc.)
+                and the resulting value of the test in the ‘result’ attribute. Viewed another way,
+                the EvaluationResult ‘key’ holds a question (e.g., "what is the heart rate?", "what
+                is the serum glucose?") and the ‘result’ holds the answer. Any clinical statement
+                such as a laboratory test, a vital sign, or a questionnaire question that fits this
+                pattern of a question and a resulting value is modeled with the EvaluationResult
+                pattern. </para>
+        </section>
+        <section>
+            <title>Assertion vs. Evaluation Result</title>
+            <para>In most cases, the decision between using the evaluation result pattern and the
+                assertion pattern is intuitive and straightforward. “Urine color”, for example, is
+                clearly best modeled as an evaluation result because the property being evaluated is
+                the color of the patient’s urine and the result of the evaluation is the set of
+                codes representing the colors that may be observed. To model urine color as an
+                assertion would require the creation of a large number of pre-coordinated concepts –
+                the key would be “assertion” and result would be populated with a code from a set of
+                codes such as “amber urine” (meaning “the patient has amber urine”), “clear urine”,
+                etc. However, this highlights any evaluation model may be transformed into an
+                assertion model. (Conversely, any assertion model may be transformed into an
+                evaluation model.) In the case of urine color, the decision is intuitive. But in
+                other cases, the decision is less clear.</para>
+        </section>
     </section>
 </chapter>

@@ -71,7 +71,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           >http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf</link>). </para>
     </section>
     <section>
-      <title>HL7 Clinical Information Modeling Initiative</title>
+      <title>Representation of Clinical Statements</title>
       <para>To assist with these challenges, The Clinical Information Modeling Initiative (CIMI) is
         an HL7 group that is defining a library of de- tailed clinical information models using a
         common modeling formalism. CIMI was established to improve the interoperability of
@@ -117,7 +117,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       <title>Structured Data Capture</title>
       <para>Clinicians author clinical statements and enter them into their organization’s EHR
         systems. Clinical statements can be expressed and documented in many different ways in EHR
-        systems, where Clinical Input Forms provide different options to document the same clinical
+        systems, where input forms provide different options to document the same clinical
         statement. These differences pose challenges for data retrieval, data analysis and data
         analysts in their attempts to extract accurate clinical analysis results. </para>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
@@ -126,8 +126,8 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         allow only certain values to be entered, e.g. through a drop-down list or radio button, or
         breaking up large chunks of related information into smaller parts.</para>
       <para>
-        <emphasis role="bold"><emphasis role="underline">The following examples illustrate
-            Structured Data Capture:</emphasis></emphasis></para>
+        <emphasis role="bold"><emphasis role="underline">The following example illustrates
+            challenges with Structured Data Capture:</emphasis></emphasis></para>
       <para><emphasis>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP
           cuff adult size, patient in sitting position for at least 5 minutes, urinated not more
           than 30 minutes prior to measurement</emphasis></para>
@@ -225,7 +225,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     </section>  </section>
   
   <section>
-    <title><?oxy_comment_start author="rcholan" timestamp="20190507T221927-0400" comment="Add historical context of CIMI modeling efforts"?>Background<?oxy_comment_end?>
+    <title><?oxy_comment_start author="rcholan" timestamp="20190507T221927-0400" comment="Add historical context of CIMI modeling efforts. Highlight that there are multiple ways to represent the same information, and the impact that this has downstream on implementations of code. Also, highlight here that CIMI models have a reference layer and have a constraint layer. By the end of this section readers should understand the gaps of current models. "?>Background<?oxy_comment_end?>
     </title>
     <para>Clinical Event Model </para>
     <para>Clinical Element Model</para>
