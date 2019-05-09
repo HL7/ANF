@@ -34,12 +34,12 @@
     <section>
         <title>Introduction to CIMI Clinical Statements </title>
         <para> The central focus of the CIMI Reference Model is the Clinical Statement. Clinical
-            Statement, shown in <xref linkend="cif_msg_cstatement_0135"/>, has a ‘key’, ‘topic’,
-            ‘context’, and ‘metadata’. The ‘key’ is the terminology meaning binding for the entire
-            Clinical Statement. The ‘topic’ is the clinical entity being described. The ‘context’
-            describes the circumstances that form the setting in which the ‘topic’ should be
-            evaluated. Finally, ‘metadata’ is the collection of metadata that is associated with the
-            clinical statement: the who, where, why and when information. </para>
+            Statement, shown in the figure below, has a ‘key’, ‘topic’, ‘context’, and ‘metadata’.
+            The ‘key’ is the terminology meaning binding for the entire Clinical Statement. The
+            ‘topic’ is the clinical entity being described. The ‘context’ describes the
+            circumstances that form the setting in which the ‘topic’ should be evaluated. Finally,
+            ‘metadata’ is the collection of metadata that is associated with the clinical statement:
+            the who, where, why and when information. </para>
         <figure xml:id="cif_msg_cstatement_0135">
             <title>Clinical Statement</title>
             <mediaobject>
