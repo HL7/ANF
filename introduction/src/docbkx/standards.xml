@@ -19,7 +19,7 @@
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/refmodel_constraints.jpg" align="center" format="jpg"
-                    width="60%"/>
+                    width="60%" scale="50"/>
             </imageobject>
         </mediaobject>
     </figure>
@@ -36,7 +36,7 @@
         Definition Language (ADL). </para>
     <para><inlinemediaobject>
             <imageobject>
-                <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg"/>
+                <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg" scale="50"/>
             </imageobject>
         </inlinemediaobject></para>
 </section>

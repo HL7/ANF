@@ -236,7 +236,7 @@ Example obscure: why would the specified request topic be needed in the query fo
     </section>
     <section>
         <title>CIMI Topic Patterns</title>
-        <para>The topic patterns CIMI has developed to date include Assertion, EvaluationResult, and
+        <para>The topic patterns CIMI has developed to date to include Assertion, EvaluationResult, and
             Procedure. Each of these topic subtypes contains a collection of attributes that are
             appropriate to describe the given pattern. These patterns provide the foundational
             structure for detailed clinical model archetype instances (ref
@@ -245,7 +245,7 @@ Example obscure: why would the specified request topic be needed in the query fo
         <para>
             <inlinemediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Topic%20Hierarchy.png"/>
+                    <imagedata fileref="images/Topic%20Hierarchy.png" scale="50"/>
                 </imageobject>
             </inlinemediaobject></para>
         <section>

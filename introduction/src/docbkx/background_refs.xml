@@ -181,7 +181,7 @@
         <para>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image001_-1649578188.png" depth="425" width="720"/>
+                    <imagedata fileref="clip_image001_-1649578188.png" scale="50" depth="425" width="720"/>
                 </imageobject>
             </mediaobject>
         </para>
@@ -209,7 +209,7 @@
                 1</link> illustrates the distinction [<link
                 xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B5">5</link>].<mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image002_2092618099.jpg" depth="266" width="720"/>
+                    <imagedata fileref="clip_image002_2092618099.jpg" scale="50" depth="266" width="720"/>
                 </imageobject>
             </mediaobject>
         </para>
@@ -241,7 +241,7 @@
         <para>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image003_-406149578.jpg" depth="314" width="720"/>
+                    <imagedata fileref="clip_image003_-406149578.jpg" scale="50" depth="314" width="720"/>
                 </imageobject>
             </mediaobject>
         </para>
@@ -256,7 +256,7 @@
                 xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/figure/F7/">Figure
                 7</link>, using UML."<mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image004_60462841.jpg" depth="507" width="720"/>
+                    <imagedata fileref="clip_image004_60462841.jpg" scale="50" depth="507" width="720"/>
                 </imageobject>
             </mediaobject></para>
     </section>
