@@ -15,10 +15,6 @@
   <xi:include href="../../../introduction/src/docbkx/introduction.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
- <!-- Background References -->
- <xi:include href="../../../introduction/src/docbkx/background_refs.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
  <!-- Clinical Input Form -->
  <xi:include href="../../../clinical-input-form/src/docbkx/clinical-input-form.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>

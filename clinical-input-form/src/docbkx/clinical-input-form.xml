@@ -33,7 +33,7 @@
     </informaltable>
     <section>
         <title>Introduction to CIMI Clinical Statements </title>
-        <para> The central focus of the CIMI Reference Model is the Clinical Statement. Clinical
+        <para>The central focus of the CIMI Reference Model is the Clinical Statement. Clinical
             Statement, shown in the figure below, has a ‘key’, ‘topic’, ‘context’, and ‘metadata’.
             The ‘key’ is the terminology meaning binding for the entire Clinical Statement. The
             ‘topic’ is the clinical entity being described. The ‘context’ describes the

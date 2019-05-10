@@ -218,23 +218,169 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       of having to teach them about the thousands of ways data can be entered and ensure the data
       that has to be expressed, can be expressed in an operable and scalable way. The more that data
       is normalized, the simpler it will become to analyze, and the likelihood of analysis errors
-      will be reduced. Without the ANF, the probability of patient safety risks is increased.</para> <section><title> Concrete Objectives </title>
-     <para> </para>   </section>
+      will be reduced. Without the ANF, the probability of patient safety risks is increased.</para>
+    <para>The <emphasis role="bold">purpose of ANF</emphasis> is suggested as follows:</para>
+    <para>The purpose of ANF is to provide precise semantic consistent data and terminology
+      specification that are comparable and sharable between multiple care providers, health
+      enterprises and standards-based Healthcare Information Technology (HIT).</para>
+    <para>ANF can be used for multiple objectives. Examples of such objectives are:</para>
+    <itemizedlist>
+      <listitem>
+        <para>clinical data collection and communication</para>
+      </listitem>
+      <listitem>
+        <para>clinical care</para>
+      </listitem>
+      <listitem>
+        <para>continuity of care</para>
+      </listitem>
+      <listitem>
+        <para>electronic exchange of information</para>
+      </listitem>
+      <listitem>
+        <para>lifetime storage and retrieval linked to the context in which this took place</para>
+      </listitem>
+      <listitem>
+        <para>quality measurement</para>
+      </listitem>
+      <listitem>
+        <para>research</para>
+      </listitem>
+      <listitem>
+        <para>management and policy making</para>
+      </listitem>
+      <listitem>
+        <para>aggregation of data for other purposes</para>
+      </listitem>
+      <listitem>
+        <para>among others.</para>
+      </listitem>
+    </itemizedlist>
+    <para>ANF is intended to be agnostic or neutral with respect to reference model and platform.
+      For ANF to be used in applications, it needs to be transformed into platform specific
+      artefacts, for example HL7 FHIR Resources.</para> <section><title> Concrete Objectives </title>
+     <para>ANF specifies clinical information for one or more sets of clinical concepts and their
+        corresponding data elements and terminology. This with the goal of supporting the semantic
+        interoperability between standards and technologies by means of representing<itemizedlist>
+          <listitem>
+            <para>the topic,</para>
+          </listitem>
+          <listitem>
+            <para>the circumstance,</para>
+          </listitem>
+          <listitem>
+            <para>the measure and result,</para>
+          </listitem>
+          <listitem>
+            <para>interpretation of values and ranges,</para>
+          </listitem>
+        </itemizedlist></para>   </section>
     <section>
-      <title> Usage</title> <para> </para>
+      <title> Usage</title> <para>Overall, ANF supports the following functions:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use in EHR</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use in HL7 messages, FHIR and CDA</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for User Interfaces</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use in Medical Devices</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use as Quality Measures and National Registries</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content and knowledge for use in Healthcare Guidelines and
+            Protocols</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use in Medical, Health Care and Epidemiological
+            Research</para>
+        </listitem>
+      </itemizedlist>
+      <itemizedlist>
+        <listitem>
+          <para>Specify clinical content for use in Clinical Decision Support Systems</para>
+        </listitem>
+      </itemizedlist>
+      <para>such that these specifications on the same concept are consistent for all these
+        functions that it tries to achieve.</para>
     </section>  </section>
   
   <section>
     <title><?oxy_comment_start author="rcholan" timestamp="20190507T221927-0400" comment="Add historical context of CIMI modeling efforts. Highlight that there are multiple ways to represent the same information, and the impact that this has downstream on implementations of code. Also, highlight here that CIMI models have a reference layer and have a constraint layer. By the end of this section readers should understand the gaps of current models. "?>Background<?oxy_comment_end?>
     </title>
-    <para>Clinical Event Model </para>
-    <para>Clinical Element Model</para>
-    <para>OpenEHR</para>
-    <para>13606</para>
-    <para>HL7v3</para>
-    <para>CDA</para>
-    <para>DCMs</para>
-    <para>FHIR</para>
+    <para>In detailed clinical modeling there is a general approach shown in the figure below, that
+      most standards have taken where there is a reference model which is then constrained with
+      constraint models. In , the reference model and constraint model of various standards are
+      shown. Additional information shown is the syntax used to describe the reference or constraint
+      model, and if the standard is shaded grey, this symbolizes that clinical content is modeled in
+      this part of the standard. </para>
+    <figure>
+      <title>Reference Model Constraint Paradigm</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/refmodel_constraints.jpg" align="center" format="jpg"
+            width="60%" scale="50"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>The reference model for the CEM standard is called the Abstract Instance Model. It is not
+      formally defined with a syntax, but instead is defined in a specification which can then be
+      implemented in various implementations such as java or xml. This reference model is very small
+      and has no defined clinical content. Instead, clinical content is defined only in the
+      constraint models of the CEM standard which are written in Clinical Element Modeling Language
+      (CEML). </para>
+    <para>The reference model for the CIMI v2 standard describes clinical content in both the
+      reference and constraint models using the Archetype formalism developed by OpenEHR. The
+      reference model is described in the Basic Meta-Model (BMM) using Object Data Instance Notation
+      (ODIN) and the constraint models are described as Archetypes with Archetype Definition
+      Language (ADL). </para>
+    <para><inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg" scale="50"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    
+    <para>From &lt;<link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
+      >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>> </para>
+    <para>"With the DCM approach the benefits of the two level modeling are respected and the
+      enormous efforts that went into the clinical modeling efforts are also acknowledged. The idea
+      dates back to 2007 where during a workshop, an overarching approach called Detailed Clinical
+      Modeling emerged, using a term from Huff et al. [<link
+        xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B1">1</link>]. This
+      approach takes the commonalties of the various specifications to keep the conceptual
+      descriptions and the logical models of data elements, code binding, relationships, data type
+      specifications and such [<link
+        xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B9">9</link>]. However, it
+      does not go to the level of physical specification, and even, the logical model can easily be
+      converted to reference model based approaches as Health Level 7 Reference Information Model
+      (HL7 RIM) or OpenEHR or reference models.</para>
+    <para>Due to the interoperability issues among these clinical modeling approaches and the
+      investments already made, there currently is an approach trying to harmonize the existing
+      work. This is carried out by the Clinical Information Modeling Initiative (CIMI). Their goal
+      is to create a harmonized reference model for clinical knowledge models using both the ADL and
+      UML formalisms. From these baseline formats, any kind of technical artifact can potentially be
+      derived. CIMI also works on an EHR clinical model repository as open content. However, in
+      practice, with all good intentions, CIMI has created yet another reference model and yet
+      another dialect of ADL. Nevertheless, other initiatives seem to start picking these
+      harmonization results up."</para>
   </section>
   <section>
     <title>Scope</title>
