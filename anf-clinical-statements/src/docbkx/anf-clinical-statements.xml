@@ -238,7 +238,16 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     <para>Was administered a medication or other substance</para>
                     <itemizedlist>
                         <listitem>
-                            <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed for pain</para>
+                            <para>Patient took one Acetaminophen 500 mg tablet by mouth for
+                                pain</para>
+                            <figure>
+                                <title>Medication Administered Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/meds_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
                         </listitem>
                     </itemizedlist>
                     
@@ -247,10 +256,15 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     <para>Was provided educational materials</para>
                     <itemizedlist>
                         <listitem>
-                            <para>Patient provided educational materials on pre-diabetes diagnosis</para>
-                        </listitem>
-                        <listitem>
-                            <para>Patient counseled on the health risks of continuing smoking</para>
+                            <para>Patient was provided with educational on diabetes</para>
+                            <figure>
+                                <title>Education Provided Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/educ_perf_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
                         </listitem>
                     </itemizedlist>
                     
@@ -266,11 +280,19 @@ For instance that a test is ordered?
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb" mid="7"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+" id="ppm_nyf_nhb" mid="6"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
-" parentID="ppm_nyf_nhb" mid="6"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
-                                    history of colon
-                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="6"?><?oxy_comment_end mid="7"?></para>
+" parentID="ppm_nyf_nhb" mid="7"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
+                                    history of breast
+                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="7"?><?oxy_comment_end mid="6"?></para>
+                                <figure>
+                                    <title>Family History Clinical Statement Example</title>
+                                    <mediaobject>
+                                        <imageobject>
+                                            <imagedata fileref="images/fh_ca_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        </imageobject>
+                                    </mediaobject>
+                                </figure>
                             </listitem>
                         </itemizedlist>
                     </para>
@@ -287,46 +309,81 @@ Doing family history, donor statements using subject of information is now the n
                 relating to the request, such as patient must fast for 12 hours before having a
                 lipids blood test.</para>
             <para>Examples of Request clinical statements:</para>
-            <orderedlist>
+            <itemizedlist>
                 <listitem>
-                    <para>Lipids panel for patient Jane Doe. Patient must fast for 12 hours prior to
-                        the blood test.</para>
+                    <para>Request for Rheumatoid factor 1 time routine</para>
+                    <figure>
+                        <title>Lab Request Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/lab_request_anf.svg" scalefit="1"
+                                    width="100%" contentdepth="75%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
-                    <para>Request for Head CT with contrast.</para>
+                    <para>Request for X-ray chest to evaluate for heart failure</para>
+                    <figure>
+                        <title>X-Ray Request Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/xray_request_anf.svg" scalefit="1"
+                                    width="100%" contentdepth="75%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
-                    <para>Cardiology referral.</para>
+                    <para>Cardiology referral</para>
+                    <figure>
+                        <title>Referral Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/referral_anf.svg" scalefit="1"
+                                    width="100%" contentdepth="75%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
-                    <para>Penicillin medication for patient Michael Smith to be taken twice a day by
-                        mouth with food for 10 days.</para>
+                    <para>Ribavirin 200 mg capsule oral, take 2 capsules every morning</para>
+                    <figure>
+                        <title>Medication Request Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/meds_request_anf.svg" scalefit="1"
+                                    width="100%" contentdepth="75%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
                 </listitem>
                 <listitem>
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T110448-0400" comment="Comment from WC:
 The distinction with a performance clinical statement concerning giving him educational materials is tiny.
 "?>
-                    <para>Advised to participate in group tobacco cessation counseling once a week.</para>
-                </listitem>
-                <listitem>
-                    <para>Advised to lose 15 pounds within 3 months.</para>
-                </listitem>
-                <listitem>
-                    <para>Advised to exercise at least 3 times a week for 30 minutes per day for 3 months.<?oxy_comment_end?></para>
-                </listitem>
-                <listitem>
-                    <para>Advised to decrease the number of packs smoked per day from 3 to 2 within 6 months by using a nicotine patch.</para>
-                </listitem>
-            </orderedlist>
+                    <para>Advised to participate in tobacco cessation counseling once a week.</para>
+                    <figure>
+                        <title>Counseling Request Clinical Statement Example</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="images/counseling_request_anf.svg" scalefit="1"
+                                    width="100%" contentdepth="75%"/>
+                            </imageobject>
+                        </mediaobject>
+                    </figure>
+                </listitem><?oxy_comment_end?>
+            </itemizedlist>
         </section>
         <section>
-            <title><anchor xml:id="_Toc5884759"
+            <title><?oxy_comment_start author="timowilliams" timestamp="20190510T125905-0500" comment="Should this go here or in the differences section?"?><anchor
+                    xml:id="_Toc5884759"
                 /><?oxy_comment_start author="kmaulden" timestamp="20190418T110521-0400" comment="From Ioana:
 I think it would be valuable if we could show how ANF can improve the precision of “clinical statements”.
 Both C-CDA and FHIR US core specify profiles intended to represent data captured by EHRs. If we could show how an EHR-produced “result” could be represented in ANF.
 We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
-" id="c2z_fxv_lhb" mid="9"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb" mid="10"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb"?>Precisio<?oxy_comment_end?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?>n
-                of Clinical Statements Using ANF (*DRAFT*)</title>
+" id="c2z_fxv_lhb" mid="11"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb" mid="12"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb"?>Precisio<?oxy_comment_end?><?oxy_comment_end mid="12"?><?oxy_comment_end mid="11"?>n
+                of Clinical Statements Using ANF (*DRAFT*)</title><?oxy_comment_end?>
             <para>The representation of clinical data across disparate healthcare organizations is
                 highly variable; due to the various networks, communication channels, set of
                 transformations, and different organizations of clinical data that currently exist.
