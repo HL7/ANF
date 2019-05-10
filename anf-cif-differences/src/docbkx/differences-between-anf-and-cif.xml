@@ -40,8 +40,8 @@
         <title>The Representation of Topic</title>
         <para>In the ANF model, the topic is represented by a single field containing a simple to
             complex expression using codeable concepts, whereas in the CIF model, all the pieces of
-            information that make up the topic are broken out and structured as needed into multiple
-            properties with property names and appropriate datatypes.</para>
+            information that make up the topic can be broken out and structured as needed into
+            multiple properties with property names and appropriate datatypes.</para>
         <para>
             <figure>
                 <title>Topic Comparison for a Complex Topic</title>
@@ -52,15 +52,14 @@
                 </mediaobject>
             </figure>
         </para>
-        <section>
-            <title>Pulse Rate Statement</title>
-            <para></para>
-            <figure>
+        <para> As we can see in the Pulse Rate examples below, the topic for the ANF representation
+            is a post-coordinated expression while the CIMI Representation is represented with a
+            single concept in the topic and associated properties representing the pulse oximeter device.<figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
+                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1" width="100%"
+                            contentdepth="75%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -74,7 +73,7 @@
                     </imageobject>
                 </mediaobject>
             </figure>
-        </section>   
+        </para>  
         <para>One implication of this is that the ANF is using two formalisms to represent the
             detailed clinical model. First it uses the formalism that represents the ANF reference
             model and constraints such as HL7's StructureDefinition syntax or OpenEHR's BMM/ADL
@@ -97,12 +96,41 @@
         <para>In the ANF model, the topic represents what is being observed and the result may only
             be a range of either a count or quantity. No coded results are allowed. Not allowing
             coded results forces more of the semantics to be representing in the terminology model
-            and constrains the ability to allow multiple different representations of the same
-            data.</para>
+            and constrains the ability to allow multiple different representations of the same data.
+            In the example below we see Dot blot hemorrhage represented in ANF as either present or
+            with the number of hemorrhages that exist.</para>
+        <figure>
+            <title>Dot Blot Hemorrhage Present - ANF</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/dbh_anf.svg" scalefit="1" width="100%"
+                        contentdepth="75%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>Three Dot Blot Hemorrhage - ANF</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/Three_dbh_anf.svg" scalefit="1" width="100%"
+                        contentdepth="75%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>In the CIF model, when creating a model with a numeric result, the choice is quite
-            clear, and the choice will be an EvaluationResult, such as a topic of 'SerumSodium' and
-            result with a numeric quantity. In this case, the CIF and ANF model are very aligned,
-            except for the fact that the ANF model will use a range of that quantity.</para>
+            clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic Blood
+            Pressure' and result with a numeric quantity. In this case, the CIF and ANF model are
+            very aligned, except for the fact that the ANF model will use a range of that
+            quantity.</para>
+        <figure>
+            <title>Simple Systolic Blood Pressure - CIMI Representation</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/blood_pressure_cimi.svg" scalefit="1" width="100%"
+                        contentdepth="75%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>But when a CIF model has a potential coded result, the choice between EvaluationResult
             and Assertion becomes muddied. For example, a model for Breath Sound could be an
             EvaluationResult with a topic of 'breath sound' and a coded result with the following
@@ -191,23 +219,46 @@
                 </tgroup>
             </table>
         </para>
+        <figure>
+            <title>Breath Sound - CIMI Evaluation Representation</title>
+            <mediaobject>
+                <imageobject>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190510T115942-0500" comment="I think this one may be off."?>
+                    <imagedata fileref="images/breath_evalutation_cimi.svg" scalefit="1"
+                        width="100%" contentdepth="75%"/><?oxy_comment_end?>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>The other option, is that each of the breath sounds in the valueset is modeled as an
             Assertion with a topic of 'assertion', and a result of each particular code. To decided
             which model is better, usually we ponder how the clinician thinks about the data, or how
             it will be collected, or how it will be queried.</para>
+        <figure>
+            <title>Breath Sound - CIMI Assertion Representation</title>
+            <mediaobject>
+                <imageobject>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
+"?>
+                    <imagedata fileref="images/breath_assertion_cimi.svg" scalefit="1" width="100%"
+                        contentdepth="75%"/><?oxy_comment_end?>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>The ANF model cannot do an EvaluationResult style model as it doesn't allow coded
             results. Thus, ANF is forced to make one and only one choice, which is an assertion
             style where the particular breath sound is the topic, and the result will be numeric
             count indicating presence or absence.</para>
-        <?oxy_comment_start author="kmaulden" timestamp="20190423T101942-0400" comment="So, are we saying here, that CIF is actually better than ANF for queries?"?>
-        <para>When querying instance data, the Assertion or ANF style is much more difficult for
-            things like breath sounds. To query any breath sound instances, you must have knowledge
-            of all possible
-            <?oxy_comment_start author="timowilliams" timestamp="20190501T223018-0500" comment="Is this really true?  Wouldn&apos;t they all be subtypes of finding of breath sounds as long as breath sounds are modeled correctly?  I think we should remove this paragraph."?>breath<?oxy_comment_end?>
-            sound topics and query for each. With the EvaluationResult style, querying is simpler as
-            you simply query for a topic of 'breath sound', and the code result tells you what type
-            of breath sound it is. Thus, you do not have to know all the members of the valueset
-            apriori to form the query.</para><?oxy_comment_end?>
+        <para>When querying instance data, the Assertion or ANF style can be more difficult to
+            represent as it requires concepts to be pre-coordinated in the terminology or having
+            sufficient semantics available in the concept model to allow for representation of a
+            post-coordinated expression. To successfully query any breath sound instances using the
+            Assertion/ANF style, the underlying terminology must be correctly modeled to support. If
+            one of the breath sound values is not correctly placed under the higher level concept of
+            366135003 |Finding of breath sounds (finding)|, then retrieving all breath sounds will
+            require knowledge of all the possible breath sound values.  With the EvaluationResult
+            style, querying is simpler as you simply query for a topic of 'breath sound', and the
+            code result tells you what type of breath sound it is. Thus, you do not have to know all
+            the members of the valueset apriori to form the query.</para>
     </section>
     <section>
         <title>ANF vs CIMI Examples</title>
