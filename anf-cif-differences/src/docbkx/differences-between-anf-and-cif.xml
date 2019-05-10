@@ -52,6 +52,29 @@
                 </mediaobject>
             </figure>
         </para>
+        <section>
+            <title>Pulse Rate Statement</title>
+            <para></para>
+            <figure>
+                <title>Pulse Rate - ANF Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
+                            width="100%" contentdepth="75%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <figure>
+                <title>Pulse Rate - CIMI Representation</title>
+                <mediaobject>
+                    <imageobject>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
+                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
+                            contentdepth="75%"/><?oxy_comment_end?>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+        </section>   
         <para>One implication of this is that the ANF is using two formalisms to represent the
             detailed clinical model. First it uses the formalism that represents the ANF reference
             model and constraints such as HL7's StructureDefinition syntax or OpenEHR's BMM/ADL
@@ -268,29 +291,7 @@
                 </mediaobject>
             </figure>
         </section>
-        <section>
-            <title>Pulse Rate Statement</title>
-            <para></para>
-            <figure>
-                <title>Pulse Rate - ANF Representation</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <figure>
-                <title>Pulse Rate - CIMI Representation</title>
-                <mediaobject>
-                    <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
-                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/><?oxy_comment_end?>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-        </section>    
+         
         <section>
             <title>Diabetes Mellitus Statement</title>
             <para>The Diabetes Mellitus example highlights the main difference between ANF and CIF

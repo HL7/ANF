@@ -94,66 +94,166 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
                         phenomenon</para>
-                    <para>Diabetes mellitus is present</para>
-                    <para>Diabetes mellitus is not present</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Diabetes mellitus is present</para>
+                            <figure>
+                                <title>Diabetes Mellitus Present Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/dm_anf.svg" scalefit="1"
+                                            width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Diabetes mellitus is not present</para>
+                            <figure>
+                                <title>Diabetes Mellitus Absent Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/dm_absent_anf.svg" scalefit="1"
+                                            width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Dot blot hemorrhage is present</para>
+                            <figure>
+                                <title>Dot Blot Hemorrhage Present Clinical Statement
+                                    Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/dbh_anf.svg"
+                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                    </itemizedlist>
+                    
                 </listitem>
                 <listitem>
                     <para>Underwent a specific test/screening or procedure, and its resultant value,
                         if any</para>
-                    <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
-                    <figure>
-                        <title>Pulse Rate Clinical Statement Example</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/pulse_rate_anfExample.jpg" scalefit="1"
-                                    width="100%" contentdepth="50%"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                        <para><emphasis role="bold">Systolic blood pressure 120 mmHg, taken on right
+                    <itemizedlist>
+                        <listitem>
+                            <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
+                            <figure>
+                                <title>Pulse Rate Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
+                                            width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Systolic blood pressure 120 mmHg, taken on right
                                 brachial artery, using BP cuff adult size, patient in sitting
                                 position for at least 5 minutes, urinated not more than 30 minutes
-                                prior to measurement</emphasis></para>
-                        <figure>
-                            <title>Systolic Blood Pressure Clinical Statement Example</title>
-                            <mediaobject>
-                                <imageobject>
+                                prior to measurement</para>
+                            <figure>
+                                <title>Systolic Blood Pressure Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
                                         <imagedata
-                                            fileref="images/systolicBloodPressure_anfExample1.jpg"
-                                            scalefit="1" width="100%" contentdepth="50%"/>
-                                    
-                                </imageobject>
-                            </mediaobject>
-                        </figure>
-                    <figure>
-                        <title>Systolic Blood Pressure Associated Clinical Statement 1
-                            Example</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/systolicBloodPressure_anfExample2.jpg"
-                                    scalefit="1" width="100%" contentdepth="50%"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
-                    <figure>
-                        <title>Systolic Blood Pressure Associated Clinical Statement 2
-                            Example</title>
-                        <mediaobject>
-                            <imageobject>
-                                <imagedata fileref="images/systolicBloodPressure_anfExample3.jpg"
-                                    scalefit="1" width="100%" contentdepth="50%"/>
-                            </imageobject>
-                        </mediaobject>
-                    </figure>
+                                            fileref="images/bp_complex_anf.svg"
+                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                        
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure>
+                                <title>Systolic Blood Pressure Associated Clinical Statement 1
+                                    Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/bp_complex2_anf.svg"
+                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure>
+                                <title>Systolic Blood Pressure Associated Clinical Statement 2
+                                    Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/bp_complex3_anf.svg"
+                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Three dot blot hemorrhages</para>
+                            <figure>
+                                <title>Three Dot Blot Hemorrhages Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/three_dbh_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Positive screen for fall risk</para>
+                            <figure>
+                                <title>Positive Screen for Fall Risk Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/pos_scree_fall_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        <listitem>
+                            <para>Negative screen for PTSD and depression</para>
+                            <figure>
+                                <title>Negative Screen for PTSD Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/ptsd_neg_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                            <figure>
+                                <title>Negative Screen for Depression Clinical Statement Example</title>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata fileref="images/depress_neg_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </figure>
+                        </listitem>
+                        
+                    </itemizedlist>
+                    
+                        
                 </listitem>
                 <listitem>
                     <para>Was administered a medication or other substance</para>
-                    <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed
-                        for pain</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Patient taking one Acetaminophen 100 mg tablet by mouth daily as needed for pain</para>
+                        </listitem>
+                    </itemizedlist>
+                    
                 </listitem>
                 <listitem>
                     <para>Was provided educational materials</para>
-                    <para>Patient provided educational materials on pre-diabetes diagnosis</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Patient provided educational materials on pre-diabetes diagnosis</para>
+                        </listitem>
+                        <listitem>
+                            <para>Patient counseled on the health risks of continuing smoking</para>
+                        </listitem>
+                    </itemizedlist>
+                    
                 </listitem>
                 <listitem>
                     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
@@ -161,35 +261,21 @@ For instance that a test is ordered?
 "?>Has
                         any other state or specific characteristic that is clinically
                         relevant<?oxy_comment_end?></para>
-                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
 " id="ppm_nyf_nhb" mid="7"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
-" parentID="ppm_nyf_nhb"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?" mid="6"?>Family
-                        history of colon
-                        cancer<?oxy_comment_end mid="6"?><?oxy_comment_end?><?oxy_comment_end mid="7"?></para>
+" parentID="ppm_nyf_nhb" mid="6"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
+                                    history of colon
+                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="6"?><?oxy_comment_end mid="7"?></para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
                 </listitem>
             </itemizedlist>
-            <para>Examples of performance clinical statements:</para>
-            <orderedlist numeration="arabic">
-                
-                <listitem>
-                    <para>Three dot blot hemorrhages</para>
-                </listitem>
-                <listitem>
-                    <para>Dot blot hemorrhage is present</para>
-                </listitem>
-                <listitem>
-                    <para>Positive screen for fall risk</para>
-                </listitem>
-                <listitem>
-                    <para>Negative screen for PTSD and depression</para>
-                </listitem>
-
-                <listitem>
-                    <para>Patient counseled on the health risks of continuing smoking</para>
-                </listitem>
-            </orderedlist>
         </section>
         <section>
             <title><anchor xml:id="_Toc1824814"/>Request Clinical Statements</title>
@@ -207,13 +293,13 @@ Doing family history, donor statements using subject of information is now the n
                         the blood test.</para>
                 </listitem>
                 <listitem>
-                    <para>Head CT with contrast for patient John Doe.</para>
+                    <para>Request for Head CT with contrast.</para>
                 </listitem>
                 <listitem>
-                    <para>Cardiology referral for patient Mary Smith.</para>
+                    <para>Cardiology referral.</para>
                 </listitem>
                 <listitem>
-                    <para>Penicillinmedication for patient Michael Smith to be taken twice a day by
+                    <para>Penicillin medication for patient Michael Smith to be taken twice a day by
                         mouth with food for 10 days.</para>
                 </listitem>
                 <listitem>
@@ -260,7 +346,7 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
                 that it is computable against their respective clinical database structure.
                 Furthermore, all of the standards-based encoded concepts are not recorded in the
                 same way in different EHR implementations; what may be structured in one system and
-                represented by LOINC may be represented in another system by SNOMED Ct, and yet
+                represented by LOINC may be represented in another system by SNOMED CT, and yet
                 another system may represent the concepts using free text.</para>
             <para>The standardization of clinical observations in a manner that supports automated
                 processing requires a formal terminology model. The most important requirements of
