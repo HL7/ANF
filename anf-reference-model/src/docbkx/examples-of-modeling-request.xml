@@ -15,39 +15,40 @@
             <tbody>
                 <row>
                     <entry namest="col1" nameend="col2">
-                        <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Request for administration of
                                         Ibuprofen 400 mg tablet oral every 6 hours as needed for
                                         back pain; may increase dose frequency to one tablet every 4
                                         hours</emphasis></emphasis></para>
-                        <para/>
-                        <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                    >[Request]</emphasis></emphasis></para>
-                        <para/>
-                        <para>Subject of info:<emphasis role="italic"
-                                ><?oxy_comment_start author="kmaulden" timestamp="20190418T113928-0400" comment="Comment from WC:
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                        >[Request]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info:<emphasis role="italic"
+                                    ><?oxy_comment_start author="kmaulden" timestamp="20190418T113928-0400" comment="Comment from WC:
 I would expect here the unique identifier for the person who is the Subject of record, and not the concept Subject of Record
-"?>[410604004
-                                |Subject of record] <?oxy_comment_end?></emphasis>
-                        </para>
-                        <para/>
-                        <para>Authors: <emphasis role="italic">[223366009|Healthcare professional]
-                            </emphasis></para>
-                        <para/>
-                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T113944-0400" comment="Comment from WC:
+" id="sxp_fxr_thb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112208-0500" comment="Nope.  That is the Subject of Record ID" parentID="sxp_fxr_thb" flag="done" mid="1"?>[410604004
+                                    |Subject of record]
+                                    <?oxy_comment_end mid="1"?><?oxy_comment_end?></emphasis>
+                            </para>
+                            <para/>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                    professional] </emphasis></para>
+                            <para/>
+                            <para><?oxy_comment_start author="kmaulden" timestamp="20190418T113944-0400" comment="Comment from WC:
 The problem with this approach is that expressions of this sort are restricted to generic entities (concepts) and that the specific entities involved are not represented. As an example, you don’t specify here to whom the substance is administered: it might very well be the subject of record administering it to somebody else. Even if you would add “(370131001 | Recipient category) [410604004 |Subject of record] ”, you still are not saying who precisely it is. I also don’t see the ‘every 6 hours’ represented here.
-"?>Topic:
-                                <emphasis role="italic">[71388002|Procedure]-</emphasis></para>
-                        <para><emphasis role="italic">(260686004|Method) [129445006|Administration -
-                                action] (363701004|Direct substance) [197805|Ibuprofen 400 MG Oral
-                                Tablet]</emphasis></para>
-                        <para><emphasis role="italic">(410675002|Route of administration)
-                                [260548002|Oral]</emphasis><?oxy_comment_end?></para>
-                    </entry>
+" id="wtw_dyr_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112914-0500" comment="Isn&apos;t who it applies to covered by the subjectOfRecordId?" parentID="wtw_dyr_thb" mid="3"?>Topic:
+                                    <emphasis role="italic">[71388002|Procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(260686004|Method)
+                                    [129445006|Administration - action] (363701004|Direct substance)
+                                    [197805|Ibuprofen 400 MG Oral Tablet]</emphasis></para>
+                            <para><emphasis role="italic">(410675002|Route of administration)
+                                    [260548002|Oral]</emphasis><?oxy_comment_end?><?oxy_comment_end mid="3"?></para>
+                        </entry>
                 </row>
                 <row>
-                    <entry morerows="1">Circumstance:</entry>
-                    <entry>Request Circumstance</entry>
+                    <entry morerows="3">Circumstance:</entry>
+                    <entry>RequestCircumstance:</entry>
                 </row>
                 <row>
                     <entry>
@@ -57,7 +58,7 @@ The problem with this approach is that expressions of this sort are restricted t
                                 |Backache]</emphasis></para>
                             <para/>
                             <para>conditionalTrigger:
-                                <?oxy_comment_start author="timowilliams" timestamp="20190503T135728-0500" comment="Should we add in the associated statement below this one?
+                                <?oxy_comment_start author="timowilliams" timestamp="20190503T135728-0500" comment="This isn&apos;t really an associated statement, but a query statement correct?
 "?>associate
                                 statement backache present <?oxy_comment_end?></para>
                             <para> </para>
@@ -67,12 +68,20 @@ The problem with this approach is that expressions of this sort are restricted t
                             <para>Priority: <emphasis role="italic">[50811001
                                 |Routine]</emphasis></para>
                             <para/>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190503T141910-0500" comment="These don&apos;t exist in the ANF reference model above?  Should it?" id="f3n_m4y_qhb"?><?oxy_comment_start author="timowilliams" timestamp="20190506T155558-0500" comment="It exists under EventFrequency
-" parentID="f3n_m4y_qhb" mid="4"?>Frequency
-                                Lower Bound: 4 <emphasis role="italic">[258702006
-                                |hour]</emphasis></para>
-                            <para>Frequency Upper Bound: 6 <emphasis role="italic">[258702006
-                                    |hour]</emphasis><?oxy_comment_end?><?oxy_comment_end mid="4"?></para>
+                            
+                        </entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Repetition:</para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>
+                            <para>event<?oxy_comment_start author="timowilliams" timestamp="20190503T141910-0500" comment="eventFrequency doesnt have a measureSemantic?  Should it?  We would need to make it a Measure instead of an Interval." id="f3n_m4y_qhb"?>Frequency.lowerBound:
+                                4 <emphasis role="italic">[258702006 |hour]</emphasis></para>
+                            <para>eventFrequency.upperBound: 6 <emphasis role="italic">[258702006
+                                    |hour]</emphasis><?oxy_comment_end?></para>
                             <para/>
                         </entry>
                 </row>
@@ -80,14 +89,16 @@ The problem with this approach is that expressions of this sort are restricted t
                     <entry namest="col1" nameend="col2">
                         <para>Associations: Ø</para>
                         <para/>
-                        <para>Statement time: <code>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M
-                                </code><emphasis role="italic">[ISO 8601]</emphasis></para>
+                        <para>Statement time:
+                                    <code><?oxy_comment_start author="timowilliams" timestamp="20190516T133705-0500" comment="Should we use [ISO 8601 date/time format] instead since that is what we use in examples-of-performance.xml?"?>[2007-04-05T14:30Z,
+                                    2007-04-05T15:00Z]±P5M </code><emphasis role="italic">[ISO
+                                    8601]</emphasis><?oxy_comment_end?></para>
                         <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module] </emphasis>,
                                 <emphasis role="italic">[Release Path] </emphasis>,
                             2007-04-05T14:30Z Statement id: a3b46565-
                             f8cd-4354-b4b6-3dff42d33496</para>
                         <para/>
-                        <para>Subject of record ID:</para>
+                        <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                     </entry>
                 </row>
             </tbody>
@@ -139,7 +150,8 @@ The problem with this approach is that expressions of this sort are restricted t
                                     of record]</emphasis></para>
                             <para/>
                             <para>Priority: <emphasis role="italic">[50811001
-                                |Routine]</emphasis></para>
+                                |Routine]</emphasis><?oxy_comment_start author="timowilliams" timestamp="20190516T135234-0500" comment="RequestedResult?
+"?></para><?oxy_comment_end?>
                         </entry>
                     </row>
                     <row>
@@ -152,7 +164,7 @@ The problem with this approach is that expressions of this sort are restricted t
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                 2007-04-05T14:30Z</para>
                             <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID: [<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -178,11 +190,8 @@ The problem with this approach is that expressions of this sort are restricted t
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Request]</emphasis></emphasis></para>
                             <para/>
-                            <para>Subject of info:<emphasis role="italic"
-                                    ><?oxy_comment_start author="kmaulden" timestamp="20190418T113928-0400" comment="Comment from WC:
-I would expect here the unique identifier for the person who is the Subject of record, and not the concept Subject of Record
-"?>[410604004
-                                    |Subject of record] <?oxy_comment_end?></emphasis>
+                            <para>Subject of info:<emphasis role="italic">[410604004 |Subject of
+                                    record] </emphasis>
                             </para>
                             <para/>
                             <para>Authors: <emphasis role="italic">[223366009|Healthcare
@@ -211,16 +220,17 @@ The problem with this approach is that expressions of this sort are restricted t
                     </row>
                     <row>
                         <entry>
-                            <para>Value:  [1,1]</para>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190516T135441-0500" comment="Is this the RequestedResult?"?>
+                            <para>Value: [1,1]</para>
                             <para>Resolution: (1)</para>
-                            <para>measureSemantic: [385084005
-                                |Conventional release sublingual tablet]</para>
+                            <para>measureSemantic: [385084005 |Conventional release sublingual
+                                tablet]<?oxy_comment_end?></para>
                             <para><emphasis role="bold"><emphasis role="italic"
                                     >Frequency</emphasis></emphasis></para>
                             <para>Value: [5,15]</para>
                             <para>Resolution: 5</para>
                             <para>measureSemantic: minute</para>
-                            <para>Purpose:  Therapeutic; chest pain</para>
+                            <para>Purpose: Therapeutic; chest pain</para>
                             <para>Priority: [50811001 |Routine]</para>
                         </entry>
                     </row>
@@ -234,7 +244,7 @@ The problem with this approach is that expressions of this sort are restricted t
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                 2007-04-05T14:30Z </para>
                             <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>

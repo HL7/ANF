@@ -53,7 +53,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
@@ -68,10 +68,16 @@
                         </entry>
                     </row>
                     <row>
-                        <entry><?oxy_comment_start author="timowilliams" timestamp="20190503T111842-0500" comment="Do we need to expand this to be upper, lowerbound and measure semantic?
-"?>Result:
-                                120<emphasis role="italic"> [259018001 |Millimeter of
-                                mercury]</emphasis><?oxy_comment_end?></entry>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>upperBound: 120</para>
+                            <para>lowerBound: 120</para>
+                            <para>measureSemantic: [259018001 |Millimeter of mercury]</para>
+                        </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
@@ -94,7 +100,7 @@
                                 2007-04-05T14:30Z Statement id: a3b46565-
                                 f8cd-4354-b4b6-3dff42d33496</para>
                             <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -132,7 +138,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
@@ -146,9 +152,17 @@
                         </entry>
                     </row>
                     <row>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
                         <entry><?oxy_comment_start author="kmaulden" timestamp="20190418T112624-0400" comment=" can we allow in the result, e.g. result status, like “pending”, or “complete” or “performed”? Maybe add a section somewhere on how we would represent “pending” or ‘in progress” – or do we?
- "?>Result<?oxy_comment_end?>:
-                            5 <emphasis role="italic">[258701004 |min]</emphasis></entry>
+ "?>
+                            <para>upperBound: 5</para>
+                            <para>lowerBound: 5</para>
+                            <para>measureSemantic: [258701004 |min]</para>
+                            <?oxy_comment_end?></entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
@@ -161,7 +175,7 @@
                                 2007-04-05T14:30Z</para>
                             <para>Statement id: fc48551f-876a-42c1-b179-3169e3748332</para>
                             <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -199,7 +213,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
@@ -213,8 +227,16 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>Result: 30 <emphasis role="italic">[258701004
-                            |min]</emphasis></entry>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>                       
+                            <para>upperBound: 30</para>
+                            <para>lowerBound: 30</para>
+                            <para>measureSemantic: [258701004 |min]</para>
+                        </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
@@ -227,7 +249,7 @@
                                 2007-04-05T14:30Z</para>
                             <para>Statement id: df478857-2eae-40b2-909f-68ef0d0b9eb5</para>
                             <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -270,7 +292,7 @@
                             </entry>
                         </row>
                         <row>
-                            <entry morerows="2">Circumstance:</entry>
+                            <entry morerows="3">Circumstance:</entry>
                             <entry>Performance Circumstance</entry>
                         </row>
                         <row>
@@ -285,27 +307,32 @@
                             </entry>
                         </row>
                         <row>
-                            <entry>Result: 68<emphasis role="italic"> [258983007
-                                    |Beats/minute]</emphasis></entry>
+                            <entry>
+                                <para>Result:</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para>upperBound: 68</para>
+                                <para>lowerBound: 68</para>
+                                <para>measureSemantic: [258983007 |Beats/minute]</para>
+                            </entry>
                         </row>
                         <row>
                             <entry namest="col1" nameend="col2">
-                                <para>Associations: </para>
-                                <para/>
+                                <para>Associations: Ø</para>
                                 <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                         format]</emphasis></para>
                                 <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                     </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                     2007-04-05T14:30Z </para>
-                                <para/>
-                                <para>Subject of record ID:</para>
+                                <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                             </entry>
                         </row>
                     </tbody>
                 </tgroup>
             </table>
         </para>
-        <para> </para>
     </section>
     <section>
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112637-0400" comment="This and all the following examples still have to be either formatted (tables) like the examples above or moved into an Appendix, where the formatting could be simpler."?>
@@ -340,13 +367,13 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
+                            <para>Timing Value: [(1, inf) measureSemantic: ISO 8601 prior to
+                                statement time]</para>
                             <para>Purposes: Ø</para>
                             <para>Triggers: Ø</para>
                             <para>Participants: <emphasis role="italic">[410604004 |Subject of
@@ -356,24 +383,27 @@
                     </row>
                     <row>
                         <entry>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190515T225246-0500" comment="Remove this"?>Result:
-                                    68<emphasis role="italic"> [258983007
-                                |Beats/minute]</emphasis><?oxy_comment_end?></para>
-                            <para>Observation Result Value: [1, inf) Timing Value: [1, inf)
-                                measureSemantic: ISO 8601 prior to statement time</para>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><?oxy_comment_start author="timowilliams" timestamp="20190516T100344-0500" comment="Is this correct?"?>upperBound:
+                                inf</para>
+                            <para>lowerBound: 1</para>
+                            <para>measureSemantic: [ISO 8601 prior to statement
+                                time]<?oxy_comment_end?></para>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: </para>
-                            <para/>
+                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                 2007-04-05T14:30Z </para>
-                            <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -412,7 +442,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
@@ -428,24 +458,25 @@
                     </row>
                     <row>
                         <entry>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190515T225246-0500" comment="Remove this"?>Result:
-                                68<emphasis role="italic"> [258983007
-                                    |Beats/minute]</emphasis><?oxy_comment_end?></para>
-                            <para>Observation Result
-                                Value: [1, inf)</para>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>upperBound: inf</para>
+                            <para>lowerBound: 1</para>
+                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: </para>
-                            <para/>
+                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                             </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                 2007-04-05T14:30Z </para>
-                            <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -484,9 +515,10 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="2">Circumstance:</entry>
+                        <entry morerows="3">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
+                    
                     <row>
                         <entry>
                             <para>Timing: <emphasis role="italic">[ISO 8601 date/time
@@ -500,24 +532,25 @@
                     </row>
                     <row>
                         <entry>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190515T225246-0500" comment="Remove this"?>Result:
-                                68<emphasis role="italic"> [258983007
-                                    |Beats/minute]</emphasis><?oxy_comment_end?></para>
-                            <para>Observation Result <emphasis role="bold">Value:
-                                </emphasis>[0,0])</para>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>upperBound: 0</para>
+                            <para>lowerBound: 0</para>
+                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: </para>
-                            <para/>
+                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                             </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
                                 2007-04-05T14:30Z </para>
-                            <para/>
-                            <para>Subject of record ID:</para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -527,30 +560,71 @@
     <section>
         <title>Three dot blot hemorrhages</title>
         <table>
-            <title>Performance Statement Example 7</title>
+            <title>Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
                 <tbody>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Three dot blot hemorrhages</entry>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
+                                        ><emphasis role="italic">Three dot blot
+                                        hemorrhages</emphasis></emphasis></para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
+                                record]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(260686004|Method) [302199004|Examination
+                                - action]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [48742005 |Deep
+                                    retinal hemorrhage];</emphasis></para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Observation of Dot blot
-                            hemorrhage.</entry>
+                        <entry morerows="3">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    
+                    <row>
+                        <entry>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">
-                            <para><emphasis role="italic"><emphasis role="bold">Observation
-                                        Result</emphasis></emphasis></para>
-                            <para><emphasis role="bold">Value: </emphasis>[3,3]</para>
-                            <para><emphasis role="bold">Unit: </emphasis> count</para>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>upperBound: 3</para>
+                            <para>lowerBound: 3</para>
+                            <para>measureSemantic: [260299005 |Number]</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: Ø</para>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z </para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -560,29 +634,71 @@
     <section>
         <title>Dot blot hemorrhage present</title>
         <table>
-            <title>Performance Statement Example 8</title>
+            <title>Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
                 <tbody>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Dot blot hemorrhage present</entry>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
+                                        ><emphasis role="italic">Dot blot hemorrhage
+                                        present</emphasis></emphasis></para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
+                                record]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(260686004|Method) [302199004|Examination
+                                - action]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [48742005 |Deep
+                                retinal hemorrhage];</emphasis></para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Observation of Dot blot
-                            hemorrhage.</entry>
+                        <entry morerows="3">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    
+                    <row>
+                        <entry>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">
-                            <para><emphasis role="italic"><emphasis role="bold">Observation
-                                        Result</emphasis></emphasis></para>
-                            <para><emphasis role="bold">Value: </emphasis>[1,inf)</para>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>upperBound: inf</para>
+                            <para>lowerBound: 1</para>
+                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: Ø</para>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z </para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>
@@ -600,8 +716,9 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Patient observed to have fall
-                            risk</entry>
+                        <entry namest="col2" nameend="col2"
+                            ><?oxy_comment_start author="timowilliams" timestamp="20190516T105422-0500" comment="Is this really a [1,1] or is this present[1,inf]?"?>Patient
+                            observed to have fall risk<?oxy_comment_end?></entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
@@ -625,31 +742,73 @@
     <section>
         <title>Family History</title>
         <table>
-            <title>Performance Statement Example 10</title>
+            <title>Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
                 <tbody>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Family history (mother) of colon
-                            cancer</entry>
+                        <entry namest="col1" nameend="col2">
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
+                                        ><emphasis role="italic">Family history (mother) of colon
+                                        cancer</emphasis></emphasis></para>
+                            <para/>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
+                                >[Performance]</emphasis></emphasis></para>
+                            <para/>
+                            <para>Subject of info: <emphasis role="italic">[444301002 |Mother of
+                                    subject]</emphasis></para>
+                            <para> </para>
+                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
+                                professional]</emphasis></para>
+                            <para/>
+                            <para>Topic: <emphasis role="italic">[5751000205109|Observation
+                                procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(260686004|Method) [302199004|Examination
+                                - action]-</emphasis></para>
+                            <para><emphasis role="italic">(363702006 |Has focus) [363406005
+                                    |Malignant neoplasm of colon];</emphasis></para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Topic
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">Mother.</entry>
+                        <entry morerows="3">Circumstance:</entry>
+                        <entry>Performance Circumstance</entry>
+                    </row>
+                    
+                    <row>
+                        <entry>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Purposes: Ø</para>
+                            <para>Triggers: Ø</para>
+                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
+                                record]</emphasis></para>
+                            <para>Priority: Ø</para>
+                        </entry>
                     </row>
                     <row>
-                        <entry namest="col1" nameend="col1"><emphasis role="bold">Circumstance
-                            </emphasis></entry>
-                        <entry namest="col2" nameend="col2">
-                            <para><emphasis role="italic"><emphasis role="bold">Observation
-                                        Result</emphasis></emphasis></para>
-                            <para><emphasis role="bold">Value: </emphasis>[1,inf)</para>
-                            <para><emphasis role="bold">measureSemantic: </emphasis>ISO 8601 prior
-                                to statement time</para>
+                        <entry>
+                            <para>Result:</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190516T110605-0500" comment="Is this correct for history of?"?>
+                            <para>upperBound: inf</para>
+                            <para>lowerBound: 1</para>
+                            <para>measureSemantic: [ISO 8601 prior to statement
+                                time]<?oxy_comment_end?></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry namest="col1" nameend="col2">
+                            <para>Associations: Ø</para>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                format]</emphasis></para>
+                            <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
+                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z </para>
+                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
                 </tbody>

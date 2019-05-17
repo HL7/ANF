@@ -34,7 +34,6 @@
                                     >[386053000 |Evaluation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [195080001 |Atrial
                                     fibrillation and flutter]</emphasis></para>
-                            <para> </para>
                         </entry>
                     </row>
                     <row>
@@ -50,7 +49,6 @@
                                     >[386053000 |Evaluation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [698247007 |Cardiac
                                     arrhythmia]</emphasis></para>
-                            <para> </para>
                         </entry>
                     </row>
                     <row>
@@ -66,7 +64,6 @@
                                     >[386053000 |Evaluation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [366188009 |Finding
                                     of left ventricular function]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                     <row>
@@ -85,7 +82,6 @@
                             <para/>
                             <para><emphasis role="bold">Priority: </emphasis><emphasis role="italic"
                                     >[49499008 |Stat]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                     <row>
@@ -96,7 +92,6 @@
                             <para/>
                             <para><emphasis role="bold">Topic: </emphasis>[<emphasis role="italic"
                                     >1421000205106 |Basic metabolic panel]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                     <row>
@@ -110,8 +105,6 @@
                             <para/>
                             <para><emphasis role="bold">Priority: </emphasis><emphasis role="italic"
                                     >[50811001 |Routine]</emphasis></para>
-                            <para/>
-                            <para/>
                         </entry>
                     </row>
                 </tbody>
@@ -150,20 +143,15 @@
                             <para/>
                             <para><emphasis role="bold">Frequency: 2 </emphasis><emphasis
                                     role="italic">[258703001 |day]</emphasis></para>
-                            <para/>
-                            <para/>
                         </entry>
                     </row>
                 </tbody>
             </tgroup>
         </table>
-        <para> </para>
-        <para> </para>
     </section>
     <section>
         <title><anchor xml:id="_Toc5884803"/>Diagnostic Breast Imaging Documentation Template
             (Excerpt)</title>
-        <para> </para>
         <para> </para>
         <table>
             <title>Diagnostic Breast Imaging Documentation Template 1</title>
@@ -183,7 +171,6 @@
                             <para> </para>
                             <para><emphasis role="bold">Topic:</emphasis> [24623002 |Screening
                                 mammography]</para>
-                            <para> </para>
                         </entry>
                     </row>
                     <row>
@@ -200,7 +187,6 @@
                             <para/>
                             <para><emphasis role="bold">Result Status:</emphasis><emphasis
                                     role="italic"> [17621005 |Normal]</emphasis></para>
-                            <para> </para>
                         </entry>
                     </row>
                     <row>
@@ -213,7 +199,6 @@
                                     >5751000205109|Observation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [54302000
                                     |Discharge from nipple]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                     <row>
@@ -240,7 +225,6 @@
                                     >5751000205109|Observation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [115951000119105
                                     |Breast symptom of change in skin]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                     <row>
@@ -258,12 +242,10 @@
                             <para><emphasis role="italic">(363702006 |Has focus) [445333001 |Breast
                                     cancer genetic marker of susceptibility
                                 positive]</emphasis></para>
-                            <para/>
                         </entry>
                     </row>
                 </tbody>
             </tgroup>
         </table>
-        <para> </para>
     </section>
 </section>
