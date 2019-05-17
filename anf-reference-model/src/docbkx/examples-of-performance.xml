@@ -388,11 +388,9 @@
                     </row>
                     <row>
                         <entry>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190516T100344-0500" comment="Is this correct?"?>upperBound:
-                                inf</para>
+                            <para>upperBound: inf</para>
                             <para>lowerBound: 1</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement
-                                time]<?oxy_comment_end?></para>
+                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
                         </entry>
                     </row>
                     <row>
@@ -717,8 +715,9 @@
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
                         <entry namest="col2" nameend="col2"
-                            ><?oxy_comment_start author="timowilliams" timestamp="20190516T105422-0500" comment="Is this really a [1,1] or is this present[1,inf]?"?>Patient
-                            observed to have fall risk<?oxy_comment_end?></entry>
+                            ><?oxy_comment_start author="timowilliams" timestamp="20190516T105422-0500" comment="Is this really a [1,1] or is this present[1,inf]?" id="v4v_ksy_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T095144-0500" comment="Should this be on a scale?" parentID="v4v_ksy_thb" mid="4"?>Patient
+                            observed to have fall
+                            risk<?oxy_comment_end mid="4"?><?oxy_comment_end?></entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Topic

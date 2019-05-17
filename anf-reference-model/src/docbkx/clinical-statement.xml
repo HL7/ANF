@@ -213,9 +213,9 @@ But surely you should disambiguate between the phenomena themselves and the obse
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Principle 2:</emphasis>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190514T211839-0500" comment="Based on the clinical statement image above, at least one circumstance is required since the cardinality is 1..1"?>Not
+                    <?oxy_comment_start author="timowilliams" timestamp="20190514T211839-0500" comment="Based on the clinical statement image above, at least one circumstance is required since the cardinality is 1..1" id="wkl_hqy_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T093530-0500" comment="Confirm with Joey" parentID="wkl_hqy_thb" mid="9"?>Not
                     every request for action or performance of action requires a circumstance to be
-                    sufficiently defined.<?oxy_comment_end?></para>
+                    sufficiently defined.<?oxy_comment_end mid="9"?><?oxy_comment_end?></para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Principle 3:</emphasis> A circumstance has a key and a
@@ -232,8 +232,10 @@ But surely you should disambiguate between the phenomena themselves and the obse
         <para> </para>
         <itemizedlist>
             <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221107-0500" comment="Where does this fit?"?><emphasis
-                        role="bold">Prerequisite</emphasis><?oxy_comment_end?>:</para>
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221107-0500" comment="Where does this fit?" id="azm_dry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094158-0500" comment="Regards to Topic.  Should these go with editorial rules
+" parentID="azm_dry_thb" mid="12"?><emphasis
+                        role="bold"
+                    >Prerequisite</emphasis><?oxy_comment_end?><?oxy_comment_end mid="12"?>:</para>
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="italic">Definition</emphasis>: A <emphasis role="bold"
@@ -275,8 +277,9 @@ But surely you should disambiguate between the phenomena themselves and the obse
                 </itemizedlist>
             </listitem>
             <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221115-0500" comment="Where does this fit?"?><emphasis
-                        role="bold">Technique:</emphasis><?oxy_comment_end?></para>
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221115-0500" comment="Where does this fit?" id="ihs_bry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094127-0500" comment="Associated Statement" parentID="ihs_bry_thb" mid="14"?><emphasis
+                        role="bold"
+                    >Technique:</emphasis><?oxy_comment_end?><?oxy_comment_end mid="14"?></para>
                 <itemizedlist>
                     <listitem>
                         <para><emphasis role="italic">Definition</emphasis> : A device used, a
@@ -333,6 +336,9 @@ Lack of distinction between the observation as an action and that what is observ
                         <?oxy_comment_start author="timowilliams" timestamp="20190515T214417-0500" comment="Should we also include &quot;Performance of action did not occur&quot;"?>has
                         taken place in the past<?oxy_comment_end?> (including “History of
                         X….)</para>
+                </listitem>
+                <listitem>
+                    <para>Performance of action that hasn't taken place</para>
                 </listitem>
             </itemizedlist><?oxy_comment_end?>
             <para>Timing is described in more detail in the <link
@@ -421,10 +427,10 @@ Ironically, this is one of the few things that IS clear to me. It should describ
                     action.</para>
                 <figure>
                     <title>Participant</title>
-                    
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/participant_only.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/participant_only.svg" scalefit="1"
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -437,18 +443,18 @@ Here might be situations under which the limitations of terminology models may c
                             consultation with Chief Cardiologist</para>
                     </listitem>
                     <listitem>
-                        <para>Smoking cessation education with
-                            <?oxy_comment_start author="timowilliams" timestamp="20190515T164058-0500" comment="In this case, do we have two statements or one?" mid="17"?>patient
-                            and patient’s
-                            spouse<?oxy_comment_end?><?oxy_comment_end mid="17"?></para>
+                        <para>Smoking cessation education with patient and patient’s
+                            spouse<?oxy_comment_end?></para>
                     </listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Priortity</title>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb" mid="21"?>
                 <para>Priority expresses the priority with which a requested action has to be
-                    carried out, e.g. “routine” or “stat”.<?oxy_comment_end?></para>
+                    carried out, e.g. “routine” or
+                    “stat”.<?oxy_comment_end mid="21"?><?oxy_comment_end?></para>
                 <para><emphasis>Examples:</emphasis></para>
                 <para/>
             </section>
@@ -458,8 +464,9 @@ Here might be situations under which the limitations of terminology models may c
                     <title>Repetition</title>
                     <mediaobject>
                         <imageobject>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190517T095656-0500" comment="eventFrequency needs to be a Measure instead of an Interval"?>
                             <imagedata fileref="images/repetition.svg" scalefit="1" width="100%"
-                                contentdepth="100%"/>
+                                contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -486,18 +493,17 @@ Here might be situations under which the limitations of terminology models may c
                     </listitem>
                 </itemizedlist>
                 <para>Intervals and Measures are described in more detail in the <link
-                    xlink:href="measure-and-result.xml">Measure and
-                    result</link>section.</para>
+                        xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             </section>
             <section>
                 <title>requestedResult</title>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
 Would it not be better to call this then ‘request goal’?
-" id="dz2_qyn_thb"?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb" mid="20"?>
+" id="dz2_qyn_thb" mid="24"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb"?>
                 <para>A requested result is a patient goal to be achieved. It can include specified
                     or quantified details of an action that is to be performed, such as '3 times
-                    daily'. <?oxy_comment_end mid="20"?><?oxy_comment_end?>requestedResults are
+                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="24"?>requestedResults are
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
@@ -552,7 +558,6 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 <para>Participants involved in performing the action, e.g. technician, nurse</para>
             </section>
         </section>
-        
         <section>
             <title>UnstructuredCircumstance</title>
             <?oxy_comment_start author="kmaulden" timestamp="20190418T112339-0400" comment="Comment from WC:
@@ -587,9 +592,8 @@ Brings in another level of confusion: I thought this entire discussion was about
             <title>statmentAssociation</title>
             <mediaobject>
                 <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190515T222533-0500" comment="Since AssociationSemantic doesn&apos;t seem to be used, should it be 0..1?"?>
                     <imagedata fileref="images/statement_association.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/><?oxy_comment_end?>
+                        contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>

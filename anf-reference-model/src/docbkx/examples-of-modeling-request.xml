@@ -78,10 +78,10 @@ The problem with this approach is that expressions of this sort are restricted t
                 </row>
                 <row>
                     <entry>
-                            <para>event<?oxy_comment_start author="timowilliams" timestamp="20190503T141910-0500" comment="eventFrequency doesnt have a measureSemantic?  Should it?  We would need to make it a Measure instead of an Interval." id="f3n_m4y_qhb"?>Frequency.lowerBound:
-                                4 <emphasis role="italic">[258702006 |hour]</emphasis></para>
+                            <para>eventFrequency.lowerBound: 4 <emphasis role="italic">[258702006
+                                    |hour]</emphasis></para>
                             <para>eventFrequency.upperBound: 6 <emphasis role="italic">[258702006
-                                    |hour]</emphasis><?oxy_comment_end?></para>
+                                    |hour]</emphasis></para>
                             <para/>
                         </entry>
                 </row>
