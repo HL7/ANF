@@ -33,7 +33,11 @@
             </tbody>
         </tgroup>
     </informaltable>
-    <para>In the context of the ANF Model, a clinical
+    <para>
+        In the context of the ANF Model, a clinical statement
+        represents an entry in the patient record that documents, in a structured/computable manner,
+        clinical information related to the patient that is asserted by a particular source,
+        recorded, and potentially verified. 
         <?oxy_comment_start author="kmaulden" timestamp="20190418T110233-0400" comment="Comment from WC:
 This is too imprecise:
 1) ‘structured’ according to what? Sentences are also structured, some according to English grammar, others according to a grammar for technical sublanguage (see Naomi Sager’s Linguistic String project).
@@ -46,26 +50,21 @@ An Entry is a Clinical Statement, and a Clinical Statement is an Entry.   In the
 Anyway, maybe the following for the first paragraph which avoids all the comments above.
 
 A Clinical Statement is a complete description about a particular aspect, characteristic, or condition of a patient.  The ANF Model attempts to define a data structure to represent these clinical statements in a reproducible and computable manner.
-" parentID="ddb_byf_nhb"?>statement
-        represents an entry in the patient record that documents, in a structured/computable manner,
-        clinical information related to the patient that is asserted by a particular source,
-        recorded, and potentially verified. <?oxy_comment_end?><?oxy_comment_end mid="1"?>
+" parentID="ddb_byf_nhb"?>
     </para>
     <para>As seen in the Clinical Statements section, clinical information related to the patient
-        can be entered and stored in an EMR in multiple different formats. ANF strives to
-        standardize the structure of clinical statements to eliminate the complexity of the clinical
-        information due to the ability of EMR implementers having multiple ways of presenting input.
-        By structuring the clinical statement and transforming the multiple differing
-        representations into the appropriate ANF clinical statement, clinical information becomes
-        more easily computable.  Transforming the clinical input into the ANF structure eliminates
-        the need to create multiple ways to analyze the same data.</para>
+        can be entered and stored in an EMR structured in multiple different ways. ANF strives to
+        standardize the structure of clinical statements to eliminate the disparity of clinical
+        information by limiting the design choices a clinical modeler must make.
+        ANF can then act as a consistent transformation target for the multiple differing clinical information representations that currently exist, making this clinical information
+        more easily computable and eliminates the need to create multiple ways to analyze the same data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Clinical Statements</title>
         <para>There are two types of ANF clinical statements:</para>
         <itemizedlist>
             <listitem>
-                <para><emphasis role="bold">Performance of action: </emphasis></para>
-                <para>Actions may include passive observation of a phenomenon related to patients
+                <para><emphasis role="bold">Performance: </emphasis></para>
+                <para>A Performance may include the passive observation of a phenomenon related to patients
                     and their health status or family history, and may also include active
                     interventions, such as providing education or administering medications or
                     documenting that a patient is participating in exercise to improve their overall
@@ -74,8 +73,8 @@ A Clinical Statement is a complete description about a particular aspect, charac
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para><emphasis role="bold">Request for action: </emphasis></para>
-                <para>Requests for future actions may include defining goals, consultation with
+                <para><emphasis role="bold">Request: </emphasis></para>
+                <para>Requests for future goals, consultation with
                     other providers, or active interventions.</para>
             </listitem>
         </itemizedlist>
@@ -85,10 +84,10 @@ A Clinical Statement is a complete description about a particular aspect, charac
 As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
 " id="xfp_jyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
 As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
-" parentID="xfp_jyf_nhb" mid="3"?>A
-                performance statement describes an action that has previously been performed, and –
-                if applicable - the results of that
-                action.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
+" parentID="xfp_jyf_nhb" mid="3"?>A 
+                performance statement describes a topic that has previously been performed, and –
+                if applicable - the result that
+                corresponds to the topic.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
                 below, this can range from documenting that a subject of record:</para>
             <itemizedlist>
                 <listitem>
@@ -301,7 +300,7 @@ Doing family history, donor statements using subject of information is now the n
         </section>
         <section>
             <title><anchor xml:id="_Toc1824814"/>Request Clinical Statements</title>
-            <para>A Request clinical statement describes a request for an action made by a
+            <para>A Request clinical statement describes a request made by a
                 clinician. Most of the times, but not always, the object of the request (e.g., lab
                 test, medication order) will be fulfilled by someone other than the clinician (e.g.,
                 lab technician, pharmacist) making the request. All information about the request
@@ -410,7 +409,7 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
                 such a terminology model are that (1) it can represent any clinician-specified
                 observation accurately and precisely and (2) it can support automated query and
                 retrieval operations correctly and efficiently.</para>
-            <para>Importantly, ANF supports the ability to express new medical concepts by combining
+            <para>Importantly, ANF use of SOLOR supports the ability to express new medical concepts by combining
                 pre-existing ones. This process, called post-coordination, enables clinicians who
                 use SCT to express observations that do not appear as pre-defined concepts in the
                 terminology, thereby vastly increasing the expressive power of clinical
