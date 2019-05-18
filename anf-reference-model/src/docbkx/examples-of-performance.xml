@@ -82,25 +82,20 @@
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para>Associations: </para>
-                            <para>fc48551f-876a-42c1-b179-3169e3748332<emphasis role="bold"
-                                        ><emphasis role="italic"> (</emphasis></emphasis><emphasis
-                                    role="bold"><emphasis role="italic">Table 2: Associated Clinical
-                                        Statement </emphasis></emphasis><emphasis role="bold"
-                                        ><emphasis role="italic">1)</emphasis></emphasis></para>
-                            <para>df478857-2eae-40b2-909f-68ef0d0b9eb5 <emphasis role="bold"
-                                        ><emphasis role="italic">(</emphasis></emphasis><emphasis
-                                    role="bold"><emphasis role="italic">Table 3: Associated Clinical
-                                        Statement </emphasis></emphasis><emphasis role="bold"
-                                        ><emphasis role="italic">2)</emphasis></emphasis></para>
+                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis
+                                        role="italic"> (Table 2: Associated Clinical Statement
+                                        1)</emphasis></emphasis></para>
+                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis
+                                        role="italic">(Table 3: Associated Clinical Statement
+                                        2)</emphasis></emphasis></para>
                             <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z Statement id: a3b46565-
-                                f8cd-4354-b4b6-3dff42d33496</para>
+                                2007-04-05T14:30Z Statement id: <emphasis>[UUID]</emphasis></para>
                             <para/>
-                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
+                            <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
                 </tbody>
@@ -166,7 +161,7 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
+                            <para>Associations: <emphasis>[UUID]</emphasis></para>
                             <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
@@ -175,7 +170,7 @@
                                 2007-04-05T14:30Z</para>
                             <para>Statement id: fc48551f-876a-42c1-b179-3169e3748332</para>
                             <para/>
-                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
+                            <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
                 </tbody>
@@ -240,16 +235,16 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
+                            <para>Associations: <emphasis>[UUID]</emphasis></para>
                             <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z</para>
+                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis></para>
                             <para>Statement id: df478857-2eae-40b2-909f-68ef0d0b9eb5</para>
                             <para/>
-                            <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
+                            <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
                 </tbody>
@@ -325,7 +320,8 @@
                                         format]</emphasis></para>
                                 <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                     </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                    2007-04-05T14:30Z </para>
+                                    2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis>
+                                </para>
                                 <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                             </entry>
                         </row>
@@ -400,7 +396,7 @@
                                     format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID] </emphasis></para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -472,8 +468,8 @@
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
-                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID] </emphasis></para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -546,8 +542,9 @@
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
-                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis>
+                            </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -620,8 +617,8 @@
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
-                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -694,8 +691,8 @@
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
-                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -805,8 +802,8 @@
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                 format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
-                            </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>

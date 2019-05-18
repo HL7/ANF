@@ -52,22 +52,18 @@ The problem with this approach is that expressions of this sort are restricted t
                 </row>
                 <row>
                     <entry>
-                            <para>Timing: <code>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M
-                                    </code><emphasis role="italic">[ISO 8601]</emphasis></para>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
                             <para>Purpose: <emphasis role="italic">[161891005
                                 |Backache]</emphasis></para>
                             <para/>
-                            <para>conditionalTrigger:
-                                <?oxy_comment_start author="timowilliams" timestamp="20190503T135728-0500" comment="This isn&apos;t really an associated statement, but a query statement correct?
-"?>associate
-                                statement backache present <?oxy_comment_end?></para>
-                            <para> </para>
+                            <para>conditionalTrigger: <emphasis>if (backache present
+                                    statement)</emphasis></para>
                             <para>requestedParticipant: <emphasis role="italic">[410604004 |Subject
                                     of record]</emphasis></para>
                             <para/>
                             <para>Priority: <emphasis role="italic">[50811001
                                 |Routine]</emphasis></para>
-                            <para/>
                             
                         </entry>
                 </row>
@@ -78,25 +74,21 @@ The problem with this approach is that expressions of this sort are restricted t
                 </row>
                 <row>
                     <entry>
-                            <para>eventFrequency.lowerBound: 4 <emphasis role="italic">[258702006
+                            <para>eventFrequency.lowerBound: <emphasis>4</emphasis></para>
+                            <para>eventFrequency.upperBound: <emphasis>6</emphasis></para>
+                            <para>eventFrequency.measureSemantic: <emphasis role="italic">[258702006
                                     |hour]</emphasis></para>
-                            <para>eventFrequency.upperBound: 6 <emphasis role="italic">[258702006
-                                    |hour]</emphasis></para>
-                            <para/>
                         </entry>
                 </row>
                 <row>
                     <entry namest="col1" nameend="col2">
-                        <para>Associations: Ø</para>
+                        <para>Associations: <emphasis>Ø</emphasis></para>
                         <para/>
-                        <para>Statement time:
-                                    <code><?oxy_comment_start author="timowilliams" timestamp="20190516T133705-0500" comment="Should we use [ISO 8601 date/time format] instead since that is what we use in examples-of-performance.xml?"?>[2007-04-05T14:30Z,
-                                    2007-04-05T15:00Z]±P5M </code><emphasis role="italic">[ISO
-                                    8601]</emphasis><?oxy_comment_end?></para>
+                        <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
                         <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module] </emphasis>,
-                                <emphasis role="italic">[Release Path] </emphasis>,
-                            2007-04-05T14:30Z Statement id: a3b46565-
-                            f8cd-4354-b4b6-3dff42d33496</para>
+                                    <emphasis role="italic">[Release Path] </emphasis>,
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                         <para/>
                         <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                     </entry>
@@ -141,8 +133,8 @@ The problem with this approach is that expressions of this sort are restricted t
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <code>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M
-                                    </code><emphasis role="italic">[ISO 8601]</emphasis></para>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
                             <para>Purpose: <emphasis role="italic">[444821009 |Assessment of chest
                                     pain]</emphasis></para>
                             <para/>
@@ -150,19 +142,18 @@ The problem with this approach is that expressions of this sort are restricted t
                                     of record]</emphasis></para>
                             <para/>
                             <para>Priority: <emphasis role="italic">[50811001
-                                |Routine]</emphasis><?oxy_comment_start author="timowilliams" timestamp="20190516T135234-0500" comment="RequestedResult?
-"?></para><?oxy_comment_end?>
+                                |Routine]</emphasis><?oxy_comment_start author="timowilliams" timestamp="20190516T135234-0500" comment="RequestedResult?, it is currently required but I think we should change that."?></para><?oxy_comment_end?>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
+                            <para>Associations: <emphasis>Ø</emphasis></para>
                             <para/>
-                            <para>Statement time: <code>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M
-                                    </code><emphasis role="italic">[ISO 8601]</emphasis></para>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z</para>
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para/>
                             <para>Subject of record ID: [<emphasis>UUID</emphasis>]</para>
                         </entry>
@@ -220,29 +211,33 @@ The problem with this approach is that expressions of this sort are restricted t
                     </row>
                     <row>
                         <entry>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190516T135441-0500" comment="Is this the RequestedResult?"?>
-                            <para>Value: [1,1]</para>
-                            <para>Resolution: (1)</para>
-                            <para>measureSemantic: [385084005 |Conventional release sublingual
-                                tablet]<?oxy_comment_end?></para>
+                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
+                            <para>requestedResult.lowerBound:<emphasis> 1</emphasis></para>
+                            <para>requestedResult.upperBound: <emphasis>1</emphasis></para>
+                            <para>requestedResult.measureSemantic: <emphasis>[385084005
+                                    |Conventional release sublingual tablet]</emphasis></para>
+                            <para>requestedResult.resolution: <emphasis>1</emphasis></para>
                             <para><emphasis role="bold"><emphasis role="italic"
                                     >Frequency</emphasis></emphasis></para>
-                            <para>Value: [5,15]</para>
-                            <para>Resolution: 5</para>
-                            <para>measureSemantic: minute</para>
-                            <para>Purpose: Therapeutic; chest pain</para>
-                            <para>Priority: [50811001 |Routine]</para>
+                            <para>eventFrequency.lowerBound: <emphasis>5</emphasis></para>
+                            <para>eventFrequency.upperBound:<emphasis> 15</emphasis></para>
+                            <para>eventFrequency.resolution: <emphasis>5</emphasis></para>
+                            <para>eventFrequency.measureSemantic: <emphasis>[258701004
+                                    |min]</emphasis></para>
+                            <para>Purpose: <emphasis>[29857009 |Chest pain]</emphasis></para>
+                            <para>Priority: <emphasis>[50811001 |Routine]</emphasis></para>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
+                            <para>Associations: <emphasis>Ø</emphasis></para>
                             <para/>
-                            <para>Statement time: <code>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M
-                            </code><emphasis role="italic">[ISO 8601]</emphasis></para>
+                            <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
+                                    format]</emphasis></para>
                             <para>Stamp coordinate: <emphasis role="italic">[SOLOR Module]
                                 </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z </para>
+                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para/>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>

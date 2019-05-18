@@ -213,9 +213,9 @@ But surely you should disambiguate between the phenomena themselves and the obse
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Principle 2:</emphasis>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190514T211839-0500" comment="Based on the clinical statement image above, at least one circumstance is required since the cardinality is 1..1" id="wkl_hqy_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T093530-0500" comment="Confirm with Joey" parentID="wkl_hqy_thb" mid="9"?>Not
+                    <?oxy_comment_start author="timowilliams" timestamp="20190514T211839-0500" comment="Based on the clinical statement image above, at least one circumstance is required since the cardinality is 1..1" id="wkl_hqy_thb" mid="9"?><?oxy_comment_start author="timowilliams" timestamp="20190517T093530-0500" comment="Confirm with Joey" parentID="wkl_hqy_thb"?>Not
                     every request for action or performance of action requires a circumstance to be
-                    sufficiently defined.<?oxy_comment_end mid="9"?><?oxy_comment_end?></para>
+                    sufficiently defined.<?oxy_comment_end?><?oxy_comment_end mid="9"?></para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Principle 3:</emphasis> A circumstance has a key and a
@@ -227,95 +227,6 @@ But surely you should disambiguate between the phenomena themselves and the obse
             <listitem>
                 <para><emphasis role="bold">Principle 4:</emphasis> A circumstance can also be given
                     a defining category such as a prerequisite or technique.</para>
-            </listitem>
-        </itemizedlist>
-        <para> </para>
-        <itemizedlist>
-            <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221107-0500" comment="Where does this fit?" id="azm_dry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094158-0500" comment="Regards to Topic.  Should these go with editorial rules
-" parentID="azm_dry_thb" mid="12"?><emphasis
-                        role="bold"
-                    >Prerequisite</emphasis><?oxy_comment_end?><?oxy_comment_end mid="12"?>:</para>
-                <itemizedlist>
-                    <listitem>
-                        <para><emphasis role="italic">Definition</emphasis>: A <emphasis role="bold"
-                                >state</emphasis> that <emphasis role="bold">must</emphasis> exist
-                            before something else can happen or be done.</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>The state must exist can prior to the performance of the
-                                    action</para>
-                            </listitem>
-                            <listitem>
-                                <para>The state that must exist pertains to</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>the subject of record (e.g. patient)</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>the environment (e.g. necessary room temperature,
-                                            required time of day)</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </listitem>
-                            <listitem>
-                                <para>A prerequisite is separable from the topic and can be
-                                    expressed as a stand-alone clinical statement</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Example: Arterial blood pressure 120 mmHg, taken with
-                                            patient in sitting position. <emphasis role="italic"
-                                                >“Patient in sitting position”</emphasis> is
-                                            separable from the topic and exists prior to the
-                                            performance of the action and therefore constitutes a
-                                            prerequisite.</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-            </listitem>
-            <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221115-0500" comment="Where does this fit?" id="ihs_bry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094127-0500" comment="Associated Statement" parentID="ihs_bry_thb" mid="14"?><emphasis
-                        role="bold"
-                    >Technique:</emphasis><?oxy_comment_end?><?oxy_comment_end mid="14"?></para>
-                <itemizedlist>
-                    <listitem>
-                        <para><emphasis role="italic">Definition</emphasis> : A device used, a
-                            method applied, or a temporary state in which the patient was <emphasis
-                                role="bold">actively</emphasis> placed <emphasis role="bold"
-                                >during</emphasis> performance of the action.</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Actions can be performed by various techniques. As opposed to
-                                    the action itself, which is <emphasis role="italic"><emphasis
-                                            role="underline">what</emphasis></emphasis> is carried
-                                    out, the technique defines <emphasis role="italic"><emphasis
-                                            role="underline">how</emphasis></emphasis> the action is
-                                    done in general or in a particular instance.</para>
-                            </listitem>
-                            <listitem>
-                                <para>The use of the device or the method that is applied must start
-                                    during the performance of the action.</para>
-                            </listitem>
-                            <listitem>
-                                <para>A technique is inseparable from the topic and cannot be
-                                    expressed as a stand-alone clinical statement.</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Example: Arterial blood pressure 120 mmHg, taken on
-                                            right brachial artery. <emphasis role="italic">“Taken on
-                                                right brachial artery”</emphasis> is inseparable
-                                            from the topic and cannot be expressed as a stand-alone
-                                            clinical statement. It therefore constitutes a
-                                            technique.</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
             </listitem>
         </itemizedlist>
         <para>Requests and performances have some shared circumstances:</para>
@@ -333,7 +244,7 @@ Lack of distinction between the observation as an action and that what is observ
                 </listitem>
                 <listitem>
                     <para>Performance of action, which
-                        <?oxy_comment_start author="timowilliams" timestamp="20190515T214417-0500" comment="Should we also include &quot;Performance of action did not occur&quot;"?>has
+                        <?oxy_comment_start author="timowilliams" timestamp="20190515T214417-0500" comment="Should we also include &quot;Performance of action did not occur&quot;" flag="done"?>has
                         taken place in the past<?oxy_comment_end?> (including “History of
                         X….)</para>
                 </listitem>
@@ -416,9 +327,10 @@ Lack of distinction between the observation as an action and that what is observ
             </figure>
             <section>
                 <title>conditionalTrigger</title>
-                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112102-0400" comment="Comment from WC:
-Ironically, this is one of the few things that IS clear to me. It should describe the circumstances which are conditions for the requested action to be performed, ‘when awake’, ‘after breakfast’, ‘if x still present after 3 days’, …Main issue is not to confuse it with the WHEN although many triggers can be expressed as such and not to leave anything implicit: e.g. if a trigger is ‘after breakfast’ doesit mean that if pt did not have breakfast it shouldn’t happen?  What is not clear, however, is how to squeeze such distinctions with enough clarity in formal expressions.
-"?>TBD<?oxy_comment_end?></para>
+                <para>conditionalTrigger is used to represent a condition, or set of conditions that
+                    must exist in order for a Request to be executed.  For example, Ibuprofen 400 mg
+                    tablet oral every 6 hours as needed for back pain, the use of Ibuprofen is
+                    conditional on the presence of back pain.</para>
             </section>
             <section>
                 <title>requestedParticipant</title>
@@ -450,11 +362,11 @@ Here might be situations under which the limitations of terminology models may c
             </section>
             <section>
                 <title>Priortity</title>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb"?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb" mid="21"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" mid="16"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb"?>
                 <para>Priority expresses the priority with which a requested action has to be
                     carried out, e.g. “routine” or
-                    “stat”.<?oxy_comment_end mid="21"?><?oxy_comment_end?></para>
+                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="16"?></para>
                 <para><emphasis>Examples:</emphasis></para>
                 <para/>
             </section>
@@ -499,11 +411,11 @@ Here might be situations under which the limitations of terminology models may c
                 <title>requestedResult</title>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
 Would it not be better to call this then ‘request goal’?
-" id="dz2_qyn_thb" mid="24"?>
+" id="dz2_qyn_thb" mid="19"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb"?>
                 <para>A requested result is a patient goal to be achieved. It can include specified
                     or quantified details of an action that is to be performed, such as '3 times
-                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="24"?>requestedResults are
+                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="19"?>requestedResults are
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
