@@ -101,7 +101,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/dm_anf.svg" scalefit="1"
-                                            width="100%" contentdepth="75%"/>
+                                            width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -113,7 +113,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/dm_absent_anf.svg" scalefit="1"
-                                            width="100%" contentdepth="75%"/>
+                                            width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -126,7 +126,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/dbh_anf.svg"
-                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                            scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -145,7 +145,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1"
-                                            width="100%" contentdepth="75%"/>
+                                            width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -161,7 +161,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                     <imageobject>
                                         <imagedata
                                             fileref="images/bp_complex_anf.svg"
-                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                            scalefit="1" width="100%" contentdepth="50%"/>
                                         
                                     </imageobject>
                                 </mediaobject>
@@ -172,7 +172,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/bp_complex2_anf.svg"
-                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                            scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -182,7 +182,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <mediaobject>
                                     <imageobject>
                                         <imagedata fileref="images/bp_complex3_anf.svg"
-                                            scalefit="1" width="100%" contentdepth="75%"/>
+                                            scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -193,7 +193,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Three Dot Blot Hemorrhages Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/three_dbh_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/three_dbh_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -204,7 +204,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Positive Screen for Fall Risk Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/pos_scree_fall_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/pos_scree_fall_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -215,7 +215,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Negative Screen for PTSD Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/ptsd_neg_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/ptsd_neg_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -223,7 +223,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Negative Screen for Depression Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/depress_neg_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/depress_neg_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -243,7 +243,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Medication Administered Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/meds_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/meds_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -260,7 +260,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Education Provided Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/educ_perf_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                        <imagedata fileref="images/educ_perf_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -288,7 +288,7 @@ Doing family history, donor statements using subject of information is now the n
                                     <title>Family History Clinical Statement Example</title>
                                     <mediaobject>
                                         <imageobject>
-                                            <imagedata fileref="images/fh_ca_anf.svg" scalefit="1" width="100%" contentdepth="75%"/>
+                                            <imagedata fileref="images/fh_ca_anf.svg" scalefit="1" width="100%" contentdepth="50%"/>
                                         </imageobject>
                                     </mediaobject>
                                 </figure>
@@ -316,7 +316,7 @@ Doing family history, donor statements using subject of information is now the n
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/lab_request_anf.svg" scalefit="1"
-                                    width="100%" contentdepth="75%"/>
+                                    width="100%" contentdepth="50%"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -328,7 +328,7 @@ Doing family history, donor statements using subject of information is now the n
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/xray_request_anf.svg" scalefit="1"
-                                    width="100%" contentdepth="75%"/>
+                                    width="100%" contentdepth="50%"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -340,7 +340,7 @@ Doing family history, donor statements using subject of information is now the n
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/referral_anf.svg" scalefit="1"
-                                    width="100%" contentdepth="75%"/>
+                                    width="100%" contentdepth="50%"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -352,7 +352,7 @@ Doing family history, donor statements using subject of information is now the n
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/meds_request_anf.svg" scalefit="1"
-                                    width="100%" contentdepth="75%"/>
+                                    width="100%" contentdepth="50%"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
@@ -367,7 +367,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="images/counseling_request_anf.svg" scalefit="1"
-                                    width="100%" contentdepth="75%"/>
+                                    width="100%" contentdepth="50%"/>
                             </imageobject>
                         </mediaobject>
                     </figure>
