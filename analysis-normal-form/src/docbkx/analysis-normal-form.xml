@@ -41,15 +41,15 @@
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para><emphasis role="bold">Separation of Concerns: </emphasis>Asdefined by
-                        Wikipedia [1]: Separation of Concerns (SoC) is a
-                    design principle for separating a computer program into distinct sections, such
-                    that each section addresses a separate concern.
+                <para><emphasis role="bold">Separation of Concerns: </emphasis>As defined by
+                    Wikipedia [1]: Separation of Concerns (SoC) is a design principle for separating
+                    a computer program into distinct sections, such that each section addresses a
+                    separate concern.
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:
 &quot;Clearly, explained this way, this design principle is flawed because of regress to each individual symbol in the code.
 "?>A
-                    concern is a set of information that affects the code of a computer program.A
-                    concerncan be as general as the details of the hardware the code is being
+                    concern is a set of information that affects the code of a computer program. A
+                    concern can be as general as the details of the hardware the code is being
                     optimized for, or as specific as the name of a class to
                     instantiate.<?oxy_comment_end?> A program that embodies SoC well is called a
                     modular program. Modularity, and hence separation of concerns, is achieved by
@@ -67,10 +67,8 @@ With the drawback of hiding also certain assumptions that a potential re-user sh
                     the ability to later improve or modify one section of code without having to
                     know the details of the other sections, and without having to make corresponding
                     changes to those sections.</para>
-                <para> </para>
                 <para>The use of immutable objects (see principle B Immutability below) is a
-                    technique that fulfills theSeparation of Concerns principle.</para>
-                <para> </para>
+                    technique that fulfills the Separation of Concerns principle.</para>
                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111123-0400" comment="Comment from WC:
 Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semantic concept’, and ‘class’.
 "?>Attributes
@@ -87,29 +85,25 @@ Is ‘Practitioner’ here are a Role or an Attribute. Is ‘Person’ an Entity
                     attributes for an Entity (e.g., Person). This allows a person to assume a number
                     of roles over their lifetime or to function in more than one role.</para>
                 <para> </para>
-                <para> </para>
                 <figure>
-                    <title>Architectural Seperation of Concerns</title>
+                    <title>Architectural Separation of Concerns</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/PASTF2.png" scalefit="1" width="100%"
+                            <imagedata fileref="images/PASTF2.svg" scalefit="1" width="100%"
                                 contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>Figure 1: Architectural Separation of Concerns</para>
-                <para>Figure 1, “Architectural Separation of Concerns” shows the Statement layer is
-                    separate from Terminology layers, yet most CIF statement models mix terminology
-                    concerns into the structural attributes of the statement model. ANF attempts to
-                    maintain a clean separation between these layers. </para>
-                <para> </para>
-                <para>TheLanguage and Definitional layers are used to define what is being measured,
-                    such as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
-                <para> </para>
+                <para>“Architectural Separation of Concerns” shows the Statement layer is separate
+                    from Terminology layers, yet most CIF statement models mix terminology concerns
+                    into the structural attributes of the statement model. ANF attempts to maintain
+                    a cleaner separation between these layers. </para>
+                <para>The Language and Definitional layers are used to define what is being
+                    measured, such as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Immutability:</emphasis>AnImmutable Object as defined by
-                        Wikipedia<anchor xml:id="_ftnref2"/>[2]: Used in object-oriented and
+                <para><emphasis role="bold">Immutability:</emphasis>An Immutable Object as defined
+                    by Wikipedia<anchor xml:id="_ftnref2"/>[2]: Used in object-oriented and
                     functional programming,
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111203-0400" comment="Comment from WC:
 Depends on what constitutes a ‘change’. Changing merely location, leaving everything else equal, does not change the object itself. If a database table is considered an object, it changes of course each time when some value in it is changed or a row added.
@@ -119,9 +113,8 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     created.<?oxy_comment_end?> There are multiple reasons for using immutable
                     objects, including improved readability and runtime efficiency and higher
                     security.</para>
-                <para> </para>
                 <para>Although building immutable objects requires a bit more up-front complexity,
-                    the downstreamsimplification forced by this abstraction easily offsets the
+                    the downstream simplification forced by this abstraction easily offsets the
                     effort. One of the benefits of switching to a functional mindset is the
                     realization that tests exist to check that changes occur successfully in code.
                     In other words, testing’s real purpose is to validate mutation – and the more
@@ -129,10 +122,8 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     If you isolate the places where changes occur by severely restricting mutation,
                     you create a much smaller space for errors to occur and have few plates to
                     test.</para>
-                <para> </para>
                 <para>Finally,one of the best features of immutable classes is how well they fit
                     into the composition abstraction.</para>
-                <para> </para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Composition Over Inheritance: </emphasis></para>
@@ -141,39 +132,35 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     and code reuse by their composition (by containing those instances of other
                     classes that implement the desired functionality) rather than inheritance from a
                     base or parent class.</para>
-                <para> </para>
-                <para>Tofavor composition over inheritance is a design principle that gives the
+                <para>To favor composition over inheritance is a design principle that gives the
                     design higher flexibility. It is more natural to build business-domain classes
                     out of various components than trying to find commonality between them and
                     creating a family tree.</para>
-                <para> </para>
                 <para>Initial design is simplified by identifying system object behaviors in
-                    separate interfaces instead ofcreating a hierarchical relationship to distribute
-                    behaviors among business-domain classes via inheritance. This approach more
-                    easily accommodates future requirements changes that would otherwise require a
-                    complete restructuring of business-domain classes in the inheritance
-                    model.</para>
+                    separate interfaces instead of creating a hierarchical relationship to
+                    distribute behaviors among business-domain classes via inheritance. This
+                    approach more easily accommodates future requirements changes that would
+                    otherwise require a complete restructuring of business-domain classes in the
+                    inheritance model.</para>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="7"?>
-                <para><?oxy_comment_end?><?oxy_comment_end mid="7"?>
-                </para>
+" parentID="ckd_fyv_lhb" mid="6"?><?oxy_comment_end?><?oxy_comment_end mid="6"?>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">ANFClinical Statements Represent the Minimum Disjoint
+                <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
                         Set:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111314-0400" comment="Comment from WC:
 This is too cryptic for me to understand. Any source suggestion?
-"?>AnalysisNormal
-                    Form (ANF) clinical statements represent the minimum disjoint set of statement
-                    topic, result, and circumstance and may not be further
+"?>Analysis
+                    Normal Form (ANF) clinical statements represent the minimum disjoint set of
+                    statement topic, result, and circumstance and may not be further
                     specified.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Classes Cleanly Separate Concerns:
-                    </emphasis>Analysis Normal Form (ANF) classes must cleanly sepa- rate the
-                    concerns of
+                    </emphasis>Analysis Normal Form (ANF) classes must cleanly separate the concerns
+                    of
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111328-0400" comment="Comment from WC:
 That is a concern indeed, not just one concern unfortunately.
 "?>concept
@@ -183,7 +170,7 @@ That is a concern indeed, not just one concern unfortunately.
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111344-0400" comment="Note from Joey; Joey, can you elaborate on this?
 "?><emphasis
                                 role="bold"><emphasis role="italic"
-                                >NOTE:</emphasis></emphasis><emphasis role="italic">Needto define
+                                >NOTE:</emphasis></emphasis><emphasis role="italic">Need to define
                                 the domain models thoroughly here. </emphasis>The strawman
                             description is that domain models use concept definitions as a building
                             block to define non-defining relationships or associations between
@@ -194,7 +181,7 @@ That is a concern indeed, not just one concern unfortunately.
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
 Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
 "?><emphasis
-                                        role="bold">Example: </emphasis>Lateralityshould be a
+                                        role="bold">Example: </emphasis>Laterality should be a
                                     concern of either the concept definition or the domain model,
                                     but not both. We can relax this principle for the Clinical Input
                                     Form (CIF) but for ANF we need a clean and invariant separation
@@ -210,13 +197,13 @@ I can help you with that if you allow me.
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Clinical Statement Model Stability: </emphasis></para>
-                <para>Stability is different from immutability. Stable means that the modelcan still
-                    meet unanticipated requirements without having to change. It is not acceptable
-                    to change the model every time a new way to administer a drug or to treat a
-                    condition is identified. By representing these types of potentially dynamic
-                    concerns in the terminology expressions, as opposed to static fields in a class
-                    structure, we do not have to change the model every time something new is
-                    discovered. As Terry Winograd said, anticipating breakdowns, and providing a
+                <para>Stability is different from immutability. Stable means that the model can
+                    still meet unanticipated requirements without having to change. It is not
+                    acceptable to change the model every time a new way to administer a drug or to
+                    treat a condition is identified. By representing these types of potentially
+                    dynamic concerns in the terminology expressions, as opposed to static fields in
+                    a class structure, we do not have to change the model every time something new
+                    is discovered. As Terry Winograd said, anticipating breakdowns, and providing a
                     space for action when they occur, is a design imperative.</para>
                 <para>In some regards, in this context “stable” means “not brittle.” A model easily
                     broken by changes that someone could anticipate is one possible definition of
@@ -229,13 +216,13 @@ What does that mean for the table example I gave? Clearly it changes, which of t
                     in an object that represents a clinical statement. </para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">OverallModel Simplicity:
+                <para><emphasis role="bold">Overall Model Simplicity:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
 1) How do you quantify simplicity?
 2) Why not design the principles so they don’t collide?
-"?>Incases
-                    where different principles collide, we shall favor the enhancement of simplicity
-                    of the entire system over simplicity in one area of the
+"?>In
+                    cases where different principles collide, we shall favor the enhancement of
+                    simplicity of the entire system over simplicity in one area of the
                     system.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
@@ -244,21 +231,21 @@ What does that mean for the table example I gave? Clearly it changes, which of t
 Very unclear. Examples should be given.
 
 "?></emphasis>Related
-                    classes should reside in the same module or construction. The placement of
-                    aclass in a module should reduce the dependencies between
+                    classes should reside in the same module or construction. The placement of a
+                    class in a module should reduce the dependencies between
                     modules.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Reusability:</emphasis>Architecturalpatterns should
+                <para><emphasis role="bold">Reusability:</emphasis>Architectural patterns should
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
 But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
-"?>encourageclass
-                    reusability where possible.<?oxy_comment_end?>Reusability may further refine
-                    encapsulation when composition is considered.</para>
+"?>encourage
+                    class reusability where possible.<?oxy_comment_end?> Reusability may further
+                    refine encapsulation when composition is considered.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Assumption-free: </emphasis></para>
-                <para>Implied semantics must be surfaced explicitly in themodel.</para>
+                <para>Implied semantics must be surfaced explicitly in the model.</para>
                 <itemizedlist>
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
@@ -266,7 +253,7 @@ Incomplete and partially ambiguous.
 Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
 ‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
 "?><emphasis
-                                role="bold">Example:</emphasis>Implicitin the statement, “I order a
+                                role="bold">Example:</emphasis>Implicit in the statement, “I order a
                             book from Amazon” are: paying for the book, delivery of the book to some
                             location, and the transfer of ownership of the book from the vendor to
                             the client.<?oxy_comment_end?></para>
@@ -283,9 +270,9 @@ Also implicit is (1) that the statement is in English, (2) that the asserter exi
 The HL7-RIM disaster.
 "?>An
                     example of design by constraint is to create a single procedure class containing
-                    all attributes for all known procedures and constraining out irrelevant at-
-                    tributes in a more specialized model. This approach is very difficult to
-                    implement and violatesnumerous object-oriented best
+                    all attributes for all known procedures and constraining out irrelevant
+                    attributes in a more specialized model. This approach is very difficult to
+                    implement and violates numerous object-oriented best
                     practices.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
@@ -346,6 +333,99 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         role="bold">Iterative development and validation of model using use cases:
                         TBD</emphasis><?oxy_comment_end?></para>
             </listitem>
+            <listitem>
+                            <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221107-0500" comment="Where does this fit?" id="azm_dry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094158-0500" comment="Regards to Topic.  Should these go with editorial rules
+" parentID="azm_dry_thb" mid="26"?><emphasis
+                                    role="bold"
+                                >Prerequisite</emphasis><?oxy_comment_end?><?oxy_comment_end mid="26"?>:</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>A <emphasis role="bold">state</emphasis> that <emphasis
+                                role="bold">must</emphasis> exist before something else can happen
+                            or be done.</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>The state must exist can prior to the performance
+                                                of the action</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>The state that must exist pertains to</para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>the subject of record (e.g. patient)</para>
+                                                </listitem>
+                                                <listitem>
+                                                  <para>the environment (e.g. necessary room
+                                                  temperature, required time of day)</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                        <listitem>
+                                            <para>A prerequisite is separable from the topic and can
+                                                be expressed as a stand-alone clinical
+                                                statement</para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>Example: Arterial blood pressure 120 mmHg,
+                                                  taken with patient in sitting position. <emphasis
+                                                  role="italic">“Patient in sitting
+                                                  position”</emphasis> is separable from the topic
+                                                  and exists prior to the performance of the action
+                                                  and therefore constitutes a prerequisite.</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+            </listitem>
+                        <listitem>
+                            <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221115-0500" comment="Where does this fit?" id="ihs_bry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094127-0500" comment="Associated Statement" parentID="ihs_bry_thb" mid="28"?><emphasis
+                                    role="bold"
+                                >Technique:</emphasis><?oxy_comment_end?><?oxy_comment_end mid="28"?></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="italic">Definition</emphasis> : A device
+                                        used, a method applied, or a temporary state in which the
+                                        patient was <emphasis role="bold">actively</emphasis> placed
+                                            <emphasis role="bold">during</emphasis> performance of
+                                        the action.</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Actions can be performed by various techniques. As
+                                                opposed to the action itself, which is <emphasis
+                                                  role="italic"><emphasis role="underline"
+                                                  >what</emphasis></emphasis> is carried out, the
+                                                technique defines <emphasis role="italic"><emphasis
+                                                  role="underline">how</emphasis></emphasis> the
+                                                action is done in general or in a particular
+                                                instance.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>The use of the device or the method that is
+                                                applied must start during the performance of the
+                                                action.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>A technique is inseparable from the topic and
+                                                cannot be expressed as a stand-alone clinical
+                                                statement.</para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                  <para>Example: Arterial blood pressure 120 mmHg,
+                                                  taken on right brachial artery. <emphasis
+                                                  role="italic">“Taken on right brachial
+                                                  artery”</emphasis> is inseparable from the topic
+                                                  and cannot be expressed as a stand-alone clinical
+                                                  statement. It therefore constitutes a
+                                                  technique.</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
         </orderedlist>
 
     </section>
