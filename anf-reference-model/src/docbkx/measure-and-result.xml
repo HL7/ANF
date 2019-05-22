@@ -65,16 +65,7 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
             results of test procedures, time periods, frequencies of repetitions for procedures or
             medication administrations. Note that the inherited attributes from the Interval class
             will be discussed here.</para>
-        <figure>
-            <title>Measure</title>
-            <mediaobject>
-                <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190502T102204-0500" comment="Should we re-do this image to get rid of the float, boolean, etc information and make it more abstract?  This looks more like a technical specification.  Or maybe use the image I inserted below &quot;Measure Hierarchy&quot;?"?>
-                    <imagedata fileref="images/measure.png" scalefit="1" width="100%"
-                        contentdepth="50%"/><?oxy_comment_end?>
-                </imageobject>
-            </mediaobject>
-        </figure>
+        
         
         <figure>
             <title>Measure Hierarchy</title>
@@ -93,25 +84,23 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
 This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
 "?>measurable
-                element<?oxy_comment_end?>. This can be the lower bound of a range: For the
-                “<?oxy_comment_start author="timowilliams" timestamp="20190502T140203-0500" comment="How does this reconcile the other medication examples where the dosage information is contained only in the topic?  Should we change this to something else?" id="ctp_ymy_qhb"?><?oxy_comment_start author="timowilliams" timestamp="20190506T154417-0500" comment="Remove this meds example." parentID="ctp_ymy_qhb" mid="7"?>Administration
-                of 25 to 50 mg of medication X<?oxy_comment_end mid="7"?><?oxy_comment_end?>” the
-                lower bound is 25. For a test result, which is not a range, lower and upper bound
-                are the same. Example: systolic blood pressure 110 mmHg. The lower and upper bound
-                are both 110 mmHg.</para>
+                element<?oxy_comment_end?>. This can be the lower bound of a range: For the “Tumor
+                greater than 1 cm but less than 4 cm” the lower bound is 1. For a test result, which
+                is not a range, lower and upper bound are the same. Example: systolic blood pressure
+                110 mmHg. The lower and upper bound are both 110 mmHg.</para>
     </section>
     <section>
         <title>upperBound</title>
         <para>upperBound represents the upper bound of a measurable element. This can be the upper
-            boundary of a range: For the “Administration of 25 to 50 mg of medication X” the upper
-            bound is 50 mg. In cases, where the measurable element does not represent a range, upper
-            and lower bound have the same value.</para>
+                boundary of a range: For the “Tumor greater than 1 cm but less than 4 cm” the upper
+                bound is 4. In cases, where the measurable element does not represent a range, upper
+                and lower bound have the same value.</para>
     </section>
     <section>
         <title>includeLowerBound</title>
         <para>includeLowerBound states whether the lower bound in the interval is included in the
-            interval. In the medication examples above, the lower bound would be included. The lower
-            range dose of 25 mg of medication X dose can be administered.</para>
+                interval. In the tumor size example above, the lower bound would not be included.
+                The lower range size of 1cm is not included.</para>
         <para>The inclusion or exclusion of lower bound is needed to express measurable elements
             which include relative properties, such as “greater than”, “less than” and others.
             Example: “Persistent cough for more than 10 days”. If a lower bound of “10” is chosen,
