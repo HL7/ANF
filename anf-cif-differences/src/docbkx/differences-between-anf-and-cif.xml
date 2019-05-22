@@ -68,11 +68,9 @@
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
-
-                        <!-- JCoyle - I'm not sure what you are saying here.  What do you mean by a separate entity?  Are you saying to redo this same instance leaving out the device information? -->
-
+                        <?oxy_comment_start author="timowilliams" timestamp="20190520T161717-0500" comment=" JCoyle - I&apos;m not sure what you are saying here.  What do you mean by a separate entity?  Are you saying to redo this same instance leaving out the device information? " mid="1"?>
                         <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/><?oxy_comment_end?>
+                            contentdepth="75%"/><?oxy_comment_end?><?oxy_comment_end mid="1"?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -225,19 +223,18 @@
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T115942-0500" comment="I think this one may be off."?>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161744-0500" comment=" JCoyle - Yes, the result doesn&apos;t go in the topic, it goes in context.  
 
-                    <!-- JCoyle - Yes, the result doesn't go in the topic, it goes in context.  
-
-                    context(PresenceContext).contextCode = "Some breath sound code"
+                    context(PresenceContext).contextCode = &quot;Some breath sound code&quot;
 
                     -
 
                     Also, I would either choose a result from the valueset, or add your result to the valueset 
 
-                    -->
-
+                    " mid="4"?>
                     <imagedata fileref="images/breath_evalutation_cimi.svg" scalefit="1"
-                        width="100%" contentdepth="75%"/><?oxy_comment_end?>
+                        width="100%" contentdepth="75%"
+                    /><?oxy_comment_end?><?oxy_comment_end mid="4"?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -251,10 +248,9 @@
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
 "?>
-                    <!-- JCoyle - Same problem with topic as above -->
-
+                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" mid="6"?>
                     <imagedata fileref="images/breath_assertion_cimi.svg" scalefit="1" width="100%"
-                        contentdepth="75%"/><?oxy_comment_end?>
+                        contentdepth="75%"/><?oxy_comment_end?><?oxy_comment_end mid="6"?>
                 </imageobject>
             </mediaobject>
         </figure>
