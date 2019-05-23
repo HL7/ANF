@@ -8,7 +8,6 @@
 IS: Big value is the endpoint of data being normalized into ANF. 
 KC: We can convince people that ANF has value like 1st normal form and 2nd normal form (Tim has expertise here). 
 "?>Transformation<?oxy_comment_end?></title>
-    <para/>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -28,45 +27,75 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
         </tgroup>
     </informaltable>
     <section>
-        <title> Draft Transformation Content</title>
-        <para>In this chapter we will discuss how ANF helps transform clinical data into normalized
-            data – it can help with reconciling data that is captured in a variety of mechanisms and
-            make it compatible with other data, move it to another system, join it with other data,
-            or aggregate information in the data. Ultimately, this will assist with use for CDS and
-            patient safety. </para>
-        <para>EHR data will start off overly post-coordinated with the data potentially spread
-            across multiple fields. By creating an ANF statement, one can take the disparate
+        <title> Transformation</title>
+        <para>ANF provides a normal form for clinical information captured using any approach to
+            data entry using either standard-based logical models (e.g. CIMI, DCM, etc.) or
+            proprietary data entry approaches (See “Structured Clinical Statement” section). ANF
+            helps transform clinical data into normalized data that can then be used to: </para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>reconcile data that is captured in a variety of mechanisms and making it
+                        compatible with other data</para>
+                </listitem>
+                <listitem>
+                    <para>moving clinical data to another system</para>
+                </listitem>
+                <listitem>
+                    <para>joining it with other clinical data, or aggregate information in the
+                        data</para>
+                </listitem>
+                <listitem>
+                    <para>facilitate CDS and patient safety. </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>Clinical data will start off overly post-coordinated but with the data potentially
+            spread across multiple fields. By creating an ANF statement, one can take the disparate
             information and organize it so that the post-coordination is mostly contained in the
-            topic representation instead of being spread across disparate fields. </para>
-        <para>For instance, there may be 1 clinical statement in an EHR for blood pressure
-            measurement and care planning that might be 5 observations when represented by FHIR.
-            There are many different ways to create the FHIR data structures. </para>
-        <para><emphasis>Challenges that will likely arise: You may have multiples. How is that a
-                challenge? One would have to search for the 1st thing and then return and query that
-                to find the next thing…</emphasis></para>
-        <para>A current solution to minimize the variation by implementation is that healthcare
-            organizations will make a choice to either use Assertion style vs. Evaluation Result and
-            will not create the other format. When transferring data structures between and amongst
-            institutions, these different styles may be a problem. The current approach is to solve
-            the problem by conformity rather than with technology. </para>
-        <para>With ANF, we will be able to handle concrete domains by increasing the payload in the
-            topic representation and by putting all of the topic details in a post-coordinated
-            SNOMED CT expression. With ANF, with the increased specificity of the topic expression,
-            there are not several different ways to represent the same clinical statement. In ANF,
-            you can’t do the CIMI Evaluation Result style, because you can’t have a coded answer,
-            that choice is taken away from you by the constructs of ANF. Qualifiers do change the
-            meaning of data. With ANF, the things that change meaning are always in the topic.
-            Whether something is a request or has occurred – this is not in the topic. That
-            separation is okay because of xxx</para>
+            topic representation instead of being spread across disparate fields. For instance,
+            there may be 1 clinical statement in an EHR for blood pressure measurement and care
+            planning that might be 5 observations when represented by FHIR. There are many different
+            ways to create the FHIR data structures. </para>
+        <para>A current solution to minimize the variation of implementations is by healthcare
+            organizations making a choice to either use Assertion style vs. Evaluation Result. When
+            transferring data structures between and amongst institutions, these different styles
+            may be a problem. The current approach is to solve the problem by conformity rather than
+            with technology. </para>
+        <para><?oxy_comment_start author="timowilliams" timestamp="20190522T215723-0500" comment="Where do concrete domains fit in?"?>With
+            ANF, we will be able to handle concrete domains by increasing the payload in the topic
+            representation and by putting all of the topic details in a post-coordinated SNOMED CT
+            expression. <?oxy_comment_end?>By using the ANF model, with the increased specificity of
+            the topic expression, the variability in representations is reduced since the CIMI
+            Evaluation Result style representation of clinical data is eliminated..
+            <?oxy_comment_start author="timowilliams" timestamp="20190522T220242-0500" comment="Is this true?  What about Status and Priority?  Even Presence and Absence can change the meaning of the topic."?>With
+            ANF, the things that change meaning are always in the topic.<?oxy_comment_end?> Whether
+            something is a request or has occurred – this is not in the topic. That separation is
+            okay because of xxx</para>
+        <?oxy_comment_start author="timowilliams" timestamp="20190522T220532-0500" comment="Haven&apos;t we described this already?"?>
         <para>Not having coded answers is a big paradigm shift. We need to describe the benefits. If
             ANF topic expression is created in correct way, you can query for all permutations of a
             concept with a single parent concept that can create them. In FHIR, one thing that is
             built in already is ability to search for attribute for resource that comes from a
-            published value set.</para>
+            published value set.<?oxy_comment_end?></para>
+        <?oxy_comment_start author="timowilliams" timestamp="20190522T134113-0500" comment="Does this belong here?"?>
         <para>With ANF, we are cutting down the choices modelers will have to make, but we do not
             eliminate all the choices. There may still be more than 1 way to represent things in ANF
             and therefore there are the following editorial rules that we recommend to promote
-            conformity amongst modelers: xxx</para>
-        <para> </para>
+            conformity amongst modelers: xxx</para><?oxy_comment_end?>
+        <para>The following diagram highlights how clinical statements recorded using a model of
+            knowledge (e.g. CIMI model or archetype) are used to enter information that may be
+            exchanged using a variety of interoperability artifacts (e.g. HL7 V2 messages, CDA
+            documents, FHIR resources). If the information is aggregated and normalized for
+            analysis, the ANF clinical statement may be used to extract/query normalized clinical
+            statements using ANF-based FHIR template. The diagram illustrates the role each SAIF-CD
+            Perspective. <figure>
+                <title>Applying ANF to analysis of aggregate clinical statements</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/transformation.svg"/>
+                    </imageobject>
+                </mediaobject>
+            </figure></para>
     </section>
 </chapter>
