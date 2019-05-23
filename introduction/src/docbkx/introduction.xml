@@ -390,7 +390,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         <title>Model Derivation according to SAIF</title>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/Perspectives.png" scalefit="1" width="100%" contentdepth="65%"/>
+            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="100%" contentdepth="65%"/>
           </imageobject>
         </mediaobject>
       </figure>      

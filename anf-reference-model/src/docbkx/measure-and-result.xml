@@ -30,8 +30,8 @@
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190502T102042-0500" comment="Convert these images to svg.  Need to move powerpoint to Visio and store in Confluence"?>
-                    <imagedata fileref="images/BlueEye_invalid1.jpg" scalefit="1" width="100"
-                        contentdepth="50%"/><?oxy_comment_end?>
+                    <imagedata fileref="images/BlueEye_invalid1.svg" format="SVG" scalefit="1" width="100%"
+                        contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -39,8 +39,8 @@
             <title>Blue Eye Example - Finding with Qualifier </title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/BlueEye_invalid2.jpg" scalefit="1" width="100%"
-                        contentdepth="50%"/>
+                    <imagedata fileref="images/BlueEye_invalid2.svg" format="SVG" scalefit="1" width="100%"
+                        contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -48,8 +48,8 @@
             <title>Blue Eye Example - ANF </title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/BlueEye_valid.jpg" scalefit="1" width="100%"
-                        contentdepth="50%"/>
+                    <imagedata fileref="images/BlueEye_valid.svg" format="SVG" scalefit="1" width="100%"
+                        contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure></para>

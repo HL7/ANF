@@ -44,8 +44,7 @@
             <title>Clinical Statement</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/cif_clinical_statement.png" align="center"
-                        format="png" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/cif_clinical_statement.svg" format="SVG" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -264,7 +263,7 @@ Example obscure: why would the specified request topic be needed in the query fo
         <para>
             <inlinemediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Topic%20Hierarchy.png" scale="50"/>
+                    <imagedata fileref="images/Topic%20Hierarchy.svg" scalefit="1" width="100%" format="SVG" contentdepth="100%"/>
                 </imageobject>
             </inlinemediaobject></para>
         <section>
