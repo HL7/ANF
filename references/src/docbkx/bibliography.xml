@@ -9,7 +9,14 @@
     <bibliodiv>
         <title></title>
         <!--<bibliomixed xml:id="welcome"/>-->
-        
+        <bibliomixed xml:id="HRO_HIT"/>
+        <bibliomixed xml:id="Chassin"/>
+        <bibliomixed xml:id="concepts"/>
+        <bibliomixed xml:id="Cholan_specs"/>
+        <bibliomixed xml:id="lookback"/>
+        <bibliomixed xml:id="Hemler"/>
+        <bibliomixed xml:id="Dorr"/>
+        <bibliomixed xml:id="DCM_Quality"/>     
     </bibliodiv>
     
 </bibliography>
