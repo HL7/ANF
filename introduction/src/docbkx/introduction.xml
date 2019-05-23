@@ -363,6 +363,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         <listitem>
           <para>Implicit application of defaults ONLY where explicitly modeled rules state the
             appropriate defaults." </para>
+          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release 1</para>
         </listitem>
       </itemizedlist>
       <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
@@ -377,7 +378,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability.</para>
-      <para>SAIF-CD specification defines three SAIF Perspectives: Conceptual, Logical, and
+      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives: Conceptual, Logical, and
         Implementable. These perspective are not formally equivalent with Object Management Group’s
         (OMG) levels-of-abstraction in Model-Driven Architecture (MDA) even though it reuses the
         same derivation. Therefore, the Implementable Perspective is derived from the Logical
@@ -425,7 +426,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           DEs and SMEs and rigorous enough to serve as input into the development in the Logical
           Perspective.</para>
         <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs) and
-          business models that represent stakeholder requirements analyzed by SMEs and Dec. This
+          business models that represent stakeholder requirements analyzed by SMEs and DEs. This
           perspective that precede the development of either logical or implantable artifacts and
           it’s a key to successful testing of implementations. </para>
       </section>
@@ -436,7 +437,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           “inward-facing analysts.” Also included are additional specification materials required by
           architects preparing artifacts for consumption by developers. </para>
         <para>Note that there is no firm or fixed line that definitively and unambiguously
-          determines where the Conceptual Perspective end sand the Logical Perspective begins. The
+          determines where the Conceptual Perspective ends and the Logical Perspective begins. The
           same is true of the lack of definitive boundaries between the Logical and Implementable
           Perspectives. Therefore, it’s important for organizations such as HL7 to standardize
           logical models used to generate/create implementable artifacts (i.e. implementation

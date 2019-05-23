@@ -16,7 +16,9 @@
         <bibliomixed xml:id="lookback"/>
         <bibliomixed xml:id="Hemler"/>
         <bibliomixed xml:id="Dorr"/>
-        <bibliomixed xml:id="DCM_Quality"/>     
+        <bibliomixed xml:id="DCM_Quality"/>   
+        <bibliomixed xml:id="HL7v3"/>   
+        <bibliomixed xml:id="SAIF-CD"/>   
     </bibliodiv>
     
 </bibliography>
