@@ -10,8 +10,7 @@
         
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/clinical_statement.svg" scalefit="1" width="100%"
-                    contentdepth="100%"/>
+                <imagedata fileref="images/clinical_statement.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
             </imageobject>
         </mediaobject>
     </figure>
@@ -44,7 +43,7 @@
             
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/participant.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/participant.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -198,8 +197,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190515T155442-0500" comment="Based on below, I think requestedResult should be 0..1"?>
-                    <imagedata fileref="images/circumstance_and_subtype.svg" scalefit="1"
-                        width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                    <imagedata fileref="images/circumstance_and_subtype.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -320,8 +318,7 @@ Lack of distinction between the observation as an action and that what is observ
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190506T161223-0500" comment="Make requestedResult 0..1 or drop cardinality information altogether
 "?>
-                        <imagedata fileref="images/request_circumstance.svg" scalefit="1"
-                            width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                        <imagedata fileref="images/request_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -341,8 +338,7 @@ Lack of distinction between the observation as an action and that what is observ
                     <title>Participant</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/participant_only.svg" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/participant_only.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -377,8 +373,7 @@ Here might be situations under which the limitations of terminology models may c
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190517T095656-0500" comment="eventFrequency needs to be a Measure instead of an Interval"?>
-                            <imagedata fileref="images/repetition.svg" scalefit="1" width="100%"
-                                contentdepth="100%"/><?oxy_comment_end?>
+                            <imagedata fileref="images/repetition.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -442,8 +437,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 <title>Performance Circumstances</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/performance_circumstance.svg" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/performance_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -482,8 +476,7 @@ Brings in another level of confusion: I thought this entire discussion was about
                 <title>UnstructuredCircumstance</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/unstructured_circumstance.svg" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/unstructured_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -504,8 +497,7 @@ Brings in another level of confusion: I thought this entire discussion was about
             <title>statmentAssociation</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/statement_association.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                    <imagedata fileref="images/statement_association.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>

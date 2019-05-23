@@ -14,7 +14,7 @@
         <title>Result Hierarchy</title>
         <mediaobject>
             <imageobject>
-                <imagedata fileref="images/result_hierarchy.svg" scalefit="1" width="100%" contentdepth="50%"/>
+                <imagedata fileref="images/result_hierarchy.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
             </imageobject>
         </mediaobject>
     </figure>
@@ -72,8 +72,7 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
             <mediaobject>
                 <imageobject>
                     
-                    <imagedata fileref="images/measure_hierarchy.svg" scalefit="1" width="100%"
-                        contentdepth="50%"/>
+                    <imagedata fileref="images/measure_hierarchy.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -149,8 +148,7 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             <title>Intervention Result</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/intervention_results.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                    <imagedata fileref="images/intervention_results.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -166,7 +164,7 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             <title>Observation Result</title>         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/observation_result.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/observation_result.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>

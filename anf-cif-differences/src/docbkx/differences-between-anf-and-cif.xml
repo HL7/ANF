@@ -47,7 +47,7 @@
                 <title>Topic Comparison for a Complex Topic</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/cif_anf_topic.svg"/>
+                        <imagedata fileref="images/cif_anf_topic.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -58,8 +58,7 @@
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/pulse_rate_anf.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/>
+                        <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -69,8 +68,7 @@
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
                         <?oxy_comment_start author="timowilliams" timestamp="20190520T161717-0500" comment=" JCoyle - I&apos;m not sure what you are saying here.  What do you mean by a separate entity?  Are you saying to redo this same instance leaving out the device information? " mid="1"?>
-                        <imagedata fileref="images/pulse_rate_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/><?oxy_comment_end?><?oxy_comment_end mid="1"?>
+                        <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?><?oxy_comment_end mid="1"?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -102,8 +100,7 @@
             <title>Dot Blot Hemorrhage Present - ANF</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/dbh_anf.svg" scalefit="1" width="100%"
-                        contentdepth="75%"/>
+                    <imagedata fileref="images/dbh_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -111,8 +108,7 @@
             <title>Three Dot Blot Hemorrhage - ANF</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Three_dbh_anf.svg" scalefit="1" width="100%"
-                        contentdepth="75%"/>
+                    <imagedata fileref="images/Three_dbh_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -125,8 +121,7 @@
             <title>Simple Systolic Blood Pressure - CIMI Representation</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/blood_pressure_cimi.svg" scalefit="1" width="100%"
-                        contentdepth="75%"/>
+                    <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -232,9 +227,7 @@
                     Also, I would either choose a result from the valueset, or add your result to the valueset 
 
                     " mid="4"?>
-                    <imagedata fileref="images/breath_evalutation_cimi.svg" scalefit="1"
-                        width="100%" contentdepth="75%"
-                    /><?oxy_comment_end?><?oxy_comment_end mid="4"?>
+                    <imagedata fileref="images/breath_evalutation_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?><?oxy_comment_end mid="4"?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -249,8 +242,7 @@
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
 "?>
                     <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" mid="6"?>
-                    <imagedata fileref="images/breath_assertion_cimi.svg" scalefit="1" width="100%"
-                        contentdepth="75%"/><?oxy_comment_end?><?oxy_comment_end mid="6"?>
+                    <imagedata fileref="images/breath_assertion_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?><?oxy_comment_end mid="6"?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -284,8 +276,7 @@
                 <title>Simple Systolic Blood Pressure - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/blood_pressure_anf.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
+                        <imagedata fileref="images/blood_pressure_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -293,8 +284,7 @@
                 <title>Simple Systolic Blood Pressure - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/blood_pressure_cimi.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
+                        <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -318,8 +308,7 @@
                 <title>Complex Systolic Blood Pressure - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/bp_complex_anf.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/>
+                        <imagedata fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -327,8 +316,7 @@
                 <title>Complex Systolic Blood Pressure - Associated ANF Statement #1</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/bp_complex2_anf.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/>
+                        <imagedata fileref="images/bp_complex2_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -336,8 +324,7 @@
                 <title>Complex Systolic Blood Pressure - Associated ANF Statement #2</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/bp_complex3_anf.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/>
+                        <imagedata fileref="images/bp_complex3_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -346,8 +333,7 @@
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?  I think this could be an example of the same CIMI example being represented in multipe ways that would require multiple different queries to determine equivalence."?>
-                        <imagedata fileref="images/bp_complex_cimi.svg" scalefit="1" width="100%"
-                            contentdepth="75%"/><?oxy_comment_end?>
+                        <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -364,8 +350,7 @@
                 <title>Diabetes Mellitus - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/dm_anf.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
+                        <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -373,8 +358,7 @@
                 <title>Diabetes Mellitus - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/dm_cimi.svg" scalefit="1"
-                            width="100%" contentdepth="75%"/>
+                        <imagedata fileref="images/dm_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
