@@ -11,10 +11,16 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     <para>The project team would like to acknowledge the contributions and assistance received from
       the following:<itemizedlist>
         <listitem>
-          <para>Keith Campbell</para>
+          <para>Keith E. Campbell</para>
         </listitem>
         <listitem>
           <para>Richard Esmond</para>
+        </listitem>
+        <listitem>
+          <para>Tim Williams</para>
+        </listitem>
+        <listitem>
+          <para>Raja A. Cholan</para>
         </listitem>
         <listitem>
           <para>Ioana Singureanu</para>
@@ -32,10 +38,10 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           <para>Kirsten Haake</para>
         </listitem>
         <listitem>
-          <para>Tim Williams</para>
+          <para>Andy Wang</para>
         </listitem>
         <listitem>
-          <para>Raja Cholan</para>
+          <para>Benson Chang</para>
         </listitem>
       </itemizedlist></para>
   </section>
@@ -45,30 +51,24 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       <title>Context</title>
       <para>Health care organizations are striving to become high reliability organizations (HROs),
         characterized by high levels of safety under inherently risky, technologically-complex, and
-        demanding conditions.( <link
-          xlink:href="https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf"
-          >https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf</link>)
-        Chassin and Loeb published a conceptual framework for assessing progress towards becoming a
-        HRO and included the safe use of health IT and review of quality measures, which are
-        dependent on data from Electronic Health Record (EHR) systems. (<link
-          xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/"
-          >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790522/</link>) Deployment of EHR systems
-        is nearly ubiquitous in the US and there is increasing opportunity to leverage a substantial
-        number of extant EHR mapped data sets to improve population health through quality measures,
-        case reporting, and decision support. </para>
+        demanding conditions.<citation>HRO_HIT</citation>Chassin and Loeb published a conceptual
+        framework for assessing progress towards becoming a HRO and included the safe use of health
+        IT and review of quality measures, which are dependent on data from Electronic Health Record
+        (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
+        the US and there is increasing opportunity to leverage a substantial number of extant EHR
+        mapped data sets to improve population health through quality measures, case reporting, and
+        decision support. </para>
       <para>Pragmatically, these electronic tools are implemented by manually mapping the right
         clinical data stated in specifications from the right sources in the EHR to generate a
         report. While there are published, standardized specifications of measures, reports, and
         alerts with machine-readable, human-readable, and value set specifications, there is
         currently vast variation seen in implementations of these tools across the healthcare system
-        (refs xxx). Some of this variation is due to discrepancies in how implementers of these
+        .<citation>concepts</citation><citation>Cholan_specs</citation><citation>lookback</citation><citation>Hemler</citation><citation>Dorr</citation> Some of this variation is due to discrepancies in how implementers of these
         reports interpret the expression-logic of specifications. However, even if the
         implementations of query logic were standardized there is still existing variation in the
         representation of how clinical data within an EHR is organized, the clinical terminology
         that is applied, the value range that is valid, which units of measurement may be used, and
-        which data values are required (<link
-          xlink:href="http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf"
-          >http://www.snu-dhpm.ac.kr/pds/files/1-s2.0-S1386505612001906-main.pdf</link>). </para>
+        which data values are required.<citation>DCM_Quality</citation> </para>
     </section>
     <section>
       <title>Representation of Clinical Statements</title>
@@ -114,17 +114,25 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         ways. </para>
     </section>
     <section>
-      <title>Structured Data Capture</title>
+      <title>Structured Clinical Statements</title>
       <para>Clinicians author clinical statements and enter them into their organization’s EHR
-        systems. Clinical statements can be expressed and documented in many different ways in EHR
-        systems, where input forms provide different options to document the same clinical
+        systems. This concept describes any data entry mechanism used by clinicians to record
+        clinical statements. An instance of a clinical statement may be created using one or more
+        forms. Vendors compete on usability but, in some cases, structured clinical statement are
+        based on standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be
+        based on proprietary models. For the purposes of this document, the type or usability of
+        data structure used for capture or display of clinical statements is not in scope. We assume
+        that <emphasis role="bold">any suitably encoded</emphasis> structure clinical statement may
+        be suitable for normalization for analysis.  </para>
+      <para>Therefore, clinical statements can be expressed and documented in many different ways in
+        EHR systems, where input forms provide different options to document the same clinical
         statement. These differences pose challenges for data retrieval, data analysis and data
         analysts in their attempts to extract accurate clinical analysis results. </para>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
-        that we call here structured data capture, or the manner in which information is presented
-        to the clinicians and how they enter the data, such as by constraining the information to
-        allow only certain values to be entered, e.g. through a drop-down list or radio button, or
-        breaking up large chunks of related information into smaller parts.</para>
+        that we call here structured clinical statements, or the manner in which information is
+        presented to the clinicians and how they enter the data, such as by constraining the
+        information to allow only certain values to be entered, e.g. through a drop-down list or
+        radio button, or breaking up large chunks of related information into smaller parts.</para>
       <para>
         <emphasis role="bold"><emphasis role="underline">The following example illustrates
             challenges with Structured Data Capture:</emphasis></emphasis></para>
@@ -324,63 +332,128 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     </section>  </section>
   
   <section>
-    <title><?oxy_comment_start author="rcholan" timestamp="20190507T221927-0400" comment="Add historical context of CIMI modeling efforts. Highlight that there are multiple ways to represent the same information, and the impact that this has downstream on implementations of code. Also, highlight here that CIMI models have a reference layer and have a constraint layer. By the end of this section readers should understand the gaps of current models. "?>Background<?oxy_comment_end?>
-    </title>
-    <para>In detailed clinical modeling there is a general approach shown in the figure below, that
-      most standards have taken where there is a reference model which is then constrained with
-      constraint models. In , the reference model and constraint model of various standards are
-      shown. Additional information shown is the syntax used to describe the reference or constraint
-      model, and if the standard is shaded grey, this symbolizes that clinical content is modeled in
-      this part of the standard. </para>
-    <figure>
-      <title>Reference Model Constraint Paradigm</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/refmodel_constraints.jpg" align="center" format="jpg"
-            width="60%" scale="50"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
-    <para>The reference model for the CEM standard is called the Abstract Instance Model. It is not
-      formally defined with a syntax, but instead is defined in a specification which can then be
-      implemented in various implementations such as java or xml. This reference model is very small
-      and has no defined clinical content. Instead, clinical content is defined only in the
-      constraint models of the CEM standard which are written in Clinical Element Modeling Language
-      (CEML). </para>
-    <para>The reference model for the CIMI v2 standard describes clinical content in both the
-      reference and constraint models using the Archetype formalism developed by OpenEHR. The
-      reference model is described in the Basic Meta-Model (BMM) using Object Data Instance Notation
-      (ODIN) and the constraint models are described as Archetypes with Archetype Definition
-      Language (ADL). </para>
-    <para><inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="images/refcon_comparison%20-%20Copy.jpg" scale="50"/>
-        </imageobject>
-      </inlinemediaobject></para>
-    
-    <para>From &lt;<link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/"
-      >https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/</link>> </para>
-    <para>"With the DCM approach the benefits of the two level modeling are respected and the
-      enormous efforts that went into the clinical modeling efforts are also acknowledged. The idea
-      dates back to 2007 where during a workshop, an overarching approach called Detailed Clinical
-      Modeling emerged, using a term from Huff et al. [<link
-        xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B1">1</link>]. This
-      approach takes the commonalties of the various specifications to keep the conceptual
-      descriptions and the logical models of data elements, code binding, relationships, data type
-      specifications and such [<link
-        xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141130/#B9">9</link>]. However, it
-      does not go to the level of physical specification, and even, the logical model can easily be
-      converted to reference model based approaches as Health Level 7 Reference Information Model
-      (HL7 RIM) or OpenEHR or reference models.</para>
-    <para>Due to the interoperability issues among these clinical modeling approaches and the
-      investments already made, there currently is an approach trying to harmonize the existing
-      work. This is carried out by the Clinical Information Modeling Initiative (CIMI). Their goal
-      is to create a harmonized reference model for clinical knowledge models using both the ADL and
-      UML formalisms. From these baseline formats, any kind of technical artifact can potentially be
-      derived. CIMI also works on an EHR clinical model repository as open content. However, in
-      practice, with all good intentions, CIMI has created yet another reference model and yet
-      another dialect of ADL. Nevertheless, other initiatives seem to start picking these
-      harmonization results up."</para>
+    <title>Background </title>
+    <section>
+      <title>HL7 Version 3 Clinical Statement</title>
+      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
+        statement is:  </para>
+      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
+        is:</para>
+      <para>An expression of a discrete item of clinical, clinically-related or public health
+        information that is recorded because of its relevance to the care of a patient or other
+        entities. Clinical or public health information can be expressed with different levels of
+        granularity and therefore the extent and detail conveyed in a single statement may vary. To
+        be regarded as a Clinical Statement, a concept must be associated with a patient or other
+        entity in a manner which makes clear:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Its temporal context</para>
+        </listitem>
+        <listitem>
+          <para>Its relationship to the entity or entities</para>
+        </listitem>
+      </itemizedlist>
+      <para>In the case of an observation, its mood and presence, absence or value</para>
+      <para>In the case of a procedure, its mood and status</para>
+      <para>This clarity may be achieved by:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Explicit representation; or</para>
+        </listitem>
+        <listitem>
+          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
+            appropriate defaults." </para>
+        </listitem>
+      </itemizedlist>
+      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
+        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in Figure
+        1, the V3 Clinical Statement Model is a polymorphic model: it can represent observations,
+        procedures, encounters, public health reports, supply, medications, exposure, and
+        derivations of clinical acts. </para>
+    </section>
+    <section>
+      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD)</title>
+      <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
+        architecture to allow for a clear separation of concerns among interoperability models and
+        specification from the abstract or conceptual to the most precise, implementable, and
+        testable that ensures semantic interoperability.</para>
+      <para>SAIF-CD specification defines three SAIF Perspectives: Conceptual, Logical, and
+        Implementable. These perspective are not formally equivalent with Object Management Group’s
+        (OMG) levels-of-abstraction in Model-Driven Architecture (MDA) even though it reuses the
+        same derivation. Therefore, the Implementable Perspective is derived from the Logical
+        Perspective and the Logical Perspective is derived from the Conceptual Perspective. This
+        approach ensures that any implementable artifacts (i.e. service specifications,
+        implementation guides) are traceable to business/clinical requirements and logical models of
+        knowledge.</para>
+      <figure>
+        <title>Model Derivation according to SAIF</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/Perspectives.png" scalefit="1" width="100%" contentdepth="65%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>      
+      <!-- <figure>
+        <title>Model Derivation according to
+          SAIF-<?oxy_comment_start author="rcholan" timestamp="20190522T180111-0400" comment="Need to fix SVG"?>CD<?oxy_comment_end?></title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/Perspectives.svg" scalefit="1" width="100%" format="SVG"
+              contentdepth="100%"/>
+          </imageobject>
+        </mediaobject>
+      </figure> -->
+      <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
+        of Computationally Independent Model (CIM), the Logical Perspective is not equivalent to the
+        MDA Platform Independent Model (PIM), nor is the Implementable Perspective equivalent to the
+        MDA Platform Specific Model although this Perspective is the SAIF Perspective that most
+        closely aligns with an MDA analogue.</para>
+      <section>
+        <title>Conceptual Perspective</title>
+        <para>The artifacts of the Conceptual Perspective are of interest to and readable by Domain
+          Experts (DEs) or Subject Matter Experts (SMEs). In the context of typically clinicians and
+          business analysts. These artifacts are most commonly focused on the “Problem-Space” rather
+          than the “Solution Space,” and contain explicit, unambiguous descriptions of the various
+          dimensions of the component (e.g. clinical statement) or system being specified. </para>
+        <para>Artifacts of the Conceptual Perspective are normally developed by “outward-facing
+          analysts” who have reasonable domain knowledge and can facilitate dialogues with DEs and
+          SMEs. These analysts also take the results of such dialogues and represent the content in
+          structured artifacts which remain understandable to DEs or SMEs. These sometimes formally
+          structured artifacts may include clearly-stated business rules, concept maps, and simple
+          UML class or activity diagrams. </para>
+        <para>A fully-specified Conceptual Perspective thus should be both readable and traceable by
+          DEs and SMEs and rigorous enough to serve as input into the development in the Logical
+          Perspective.</para>
+        <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs) and
+          business models that represent stakeholder requirements analyzed by SMEs and Dec. This
+          perspective that precede the development of either logical or implantable artifacts and
+          it’s a key to successful testing of implementations. </para>
+      </section>
+      <section>
+        <title>Logical Perspective</title>
+        <para>Artifacts in the Logical Perspective represent traceable translations of
+          Conceptual-level artifacts into a form and format, usable by and useful to architects and
+          “inward-facing analysts.” Also included are additional specification materials required by
+          architects preparing artifacts for consumption by developers. </para>
+        <para>Note that there is no firm or fixed line that definitively and unambiguously
+          determines where the Conceptual Perspective end sand the Logical Perspective begins. The
+          same is true of the lack of definitive boundaries between the Logical and Implementable
+          Perspectives. Therefore, it’s important for organizations such as HL7 to standardize
+          logical models used to generate/create implementable artifacts (i.e. implementation
+          guides, profiles, and templates).</para>
+      </section>
+      <section>
+        <title>Implementable Perspective</title>
+        <para>Artifacts in the Implementable Perspective are typically defined by developers or
+          standards implementers, often through discussion with software designers, architects, or
+          system integrators. Note that the artifacts in the Implementable Perspective are not
+          actual implementations, but rather implementable in a number of implementation instances.
+          Thus, all the necessary technical bindings, including data types, value sets, class
+          libraries, and interface specifications are part of the Implementable Perspective. FHIR
+          implementation artifact include
+          <?oxy_comment_start author="rcholan" timestamp="20190522T173538-0400" comment="Check with Ioana to finish sentence. "?>xxx<?oxy_comment_end?></para>
+      </section>
+    </section>
   </section>
   <section>
     <title>Scope</title>
