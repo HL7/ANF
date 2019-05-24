@@ -196,41 +196,20 @@ But surely you should disambiguate between the phenomena themselves and the obse
             <title>Circumstance and Subtypes</title>
             <mediaobject>
                 <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190515T155442-0500" comment="Based on below, I think requestedResult should be 0..1"?>
-                    <imagedata fileref="images/circumstance_and_subtype.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190515T155442-0500" comment="Based on below, I think requestedResult should be 0..1" flag="done"?>
+                    <imagedata fileref="images/circumstance_and_subtype.svg" format="SVG"
+                        scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
         <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis role="bold"
                 >WHY </emphasis>and <emphasis role="bold">WHEN </emphasis>a requested or performed
             action will be or was carried out. </para>
-        <itemizedlist>
-            <listitem>
-                <para><emphasis role="bold">Principle 1:</emphasis> Circumstances refine or further
-                    qualify the topic. </para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Principle 2:</emphasis>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190514T211839-0500" comment="Based on the clinical statement image above, at least one circumstance is required since the cardinality is 1..1" id="wkl_hqy_thb" mid="9"?><?oxy_comment_start author="timowilliams" timestamp="20190517T093530-0500" comment="Confirm with Joey" parentID="wkl_hqy_thb"?>Not
-                    every request for action or performance of action requires a circumstance to be
-                    sufficiently defined.<?oxy_comment_end?><?oxy_comment_end mid="9"?></para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Principle 3:</emphasis> A circumstance has a key and a
-                    value,
-                    <?oxy_comment_start author="timowilliams" timestamp="20190514T214135-0500" comment="Where are the key and value in the diagram above?"?>where
-                    the value can be a concept or a numeric range with
-                    unit.<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Principle 4:</emphasis> A circumstance can also be given
-                    a defining category such as a prerequisite or technique.</para>
-            </listitem>
-        </itemizedlist>
         <para>Requests and performances have some shared circumstances:</para>
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112050-0400" comment="Comment from WC:
 Lack of distinction between the observation as an action and that what is observed leads to ambiguity about whether an absent observed finding is an assertion about whether, for example, a requested observation was not done, or whether it was done but there was nothing to observe.
-"?>
+" id="t5z_trt_vhb"?>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="9"?>
         <section>
             <title>Timing</title>
             <para><emphasis role="bold">WHEN </emphasis>a requested action should be performed or
@@ -249,7 +228,7 @@ Lack of distinction between the observation as an action and that what is observ
                 <listitem>
                     <para>Performance of action that hasn't taken place</para>
                 </listitem>
-            </itemizedlist><?oxy_comment_end?>
+            </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="9"?>
             <para>Timing is described in more detail in the <link
                     xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             <para><emphasis>Examples:</emphasis></para>
@@ -317,15 +296,16 @@ Lack of distinction between the observation as an action and that what is observ
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190506T161223-0500" comment="Make requestedResult 0..1 or drop cardinality information altogether
-"?>
-                        <imagedata fileref="images/request_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
+" flag="done"?>
+                        <imagedata fileref="images/request_circumstance.svg" format="SVG"
+                            scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
             <section>
                 <title>conditionalTrigger</title>
                 <para>conditionalTrigger is used to represent a condition, or set of conditions that
-                    must exist in order for a Request to be executed.  For example, Ibuprofen 400 mg
+                    must exist in order for a Request to be executed. For example, Ibuprofen 400 mg
                     tablet oral every 6 hours as needed for back pain, the use of Ibuprofen is
                     conditional on the presence of back pain.</para>
             </section>
@@ -338,7 +318,8 @@ Lack of distinction between the observation as an action and that what is observ
                     <title>Participant</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/participant_only.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/participant_only.svg" format="SVG"
+                                scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -347,22 +328,23 @@ Lack of distinction between the observation as an action and that what is observ
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
 Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
-"?>Cardiology
+" id="wsg_ttt_vhb"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb" mid="13"?>Cardiology
                             consultation with Chief Cardiologist</para>
                     </listitem>
                     <listitem>
                         <para>Smoking cessation education with patient and patient’s
-                            spouse<?oxy_comment_end?></para>
+                            spouse<?oxy_comment_end mid="13"?><?oxy_comment_end?></para>
                     </listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Priortity</title>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" mid="16"?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" flag="done" mid="15"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb" flag="done"?>
                 <para>Priority expresses the priority with which a requested action has to be
                     carried out, e.g. “routine” or
-                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="16"?></para>
+                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="15"?>  By default a Request
+                    will be considered "routine" unless otherwise specified.</para>
                 <para><emphasis>Examples:</emphasis></para>
                 <para/>
             </section>
@@ -372,8 +354,9 @@ Here might be situations under which the limitations of terminology models may c
                     <title>Repetition</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190517T095656-0500" comment="eventFrequency needs to be a Measure instead of an Interval"?>
-                            <imagedata fileref="images/repetition.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190517T095656-0500" comment="eventFrequency needs to be a Measure instead of an Interval" flag="done"?>
+                            <imagedata fileref="images/repetition.svg" format="SVG" scalefit="1"
+                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -406,11 +389,11 @@ Here might be situations under which the limitations of terminology models may c
                 <title>requestedResult</title>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
 Would it not be better to call this then ‘request goal’?
-" id="dz2_qyn_thb" mid="19"?>
+" id="dz2_qyn_thb" mid="18"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb"?>
                 <para>A requested result is a patient goal to be achieved. It can include specified
                     or quantified details of an action that is to be performed, such as '3 times
-                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="19"?>requestedResults are
+                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="18"?>requestedResults are
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
@@ -423,9 +406,11 @@ Would it not be better to call this then ‘request goal’?
                     <listitem>
                         <?oxy_comment_start author="kmaulden" timestamp="20190418T112144-0400" comment="Comment from WC:
 This is an example of having an unclear topic. Is it the (implicit) request that such tablets are taken, or is it such tablets?
-"?>
+" id="wy1_p5t_vhb"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="20"?>
                         <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one
-                                tablet</emphasis> oral daily 4 times</para><?oxy_comment_end?>
+                                tablet</emphasis> oral daily 4
+                        times</para><?oxy_comment_end?><?oxy_comment_end mid="20"?>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -437,7 +422,8 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 <title>Performance Circumstances</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/performance_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/performance_circumstance.svg" format="SVG"
+                            scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -470,13 +456,15 @@ This is an example of having an unclear topic. Is it the (implicit) request that
 Brings in another level of confusion: I thought this entire discussion was about documenting what is on the side of the patient, here you include documenting how clinical statements are configured. That might be valid too, and I would even recommend it for quality control purposes, but then an extra meta-level needs to be included.
 "?>
             <para>Unstructured Circumstance is used to document additional parts of clinical
-                statements, which are not necessary for accurate data coding or retrieval.
+                statements that have not been coded and are narrative in nature. This unstructred
+                circumstances are not necessary for accurate data coding or retrieval.
                 <?oxy_comment_end?></para>
             <figure>
                 <title>UnstructuredCircumstance</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/unstructured_circumstance.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/unstructured_circumstance.svg" format="SVG"
+                            scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
