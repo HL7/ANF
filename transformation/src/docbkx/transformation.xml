@@ -84,18 +84,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             and therefore there are the following editorial rules that we recommend to promote
             conformity amongst modelers:
             <?oxy_comment_start author="rcholan" timestamp="20190523T005636-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. "?>xxx<?oxy_comment_end?></para><?oxy_comment_end?>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T103205-0500" comment="Should we discuss mapping issues here?  Can we reuse some of the Solor slides around mapping to highlight an issue of using mapping?"?>
         <para>The following diagram highlights how clinical statements recorded using a model of
             knowledge (e.g. CIMI model or archetype) are used to enter information that may be
             exchanged using a variety of interoperability artifacts (e.g. HL7 V2 messages, CDA
             documents, FHIR resources). If the information is aggregated and normalized for
             analysis, the ANF clinical statement may be used to extract/query normalized clinical
             statements using ANF-based FHIR template. The diagram illustrates the role each SAIF-CD
-            Perspective. <figure>
+            Perspective. <?oxy_comment_end?><figure>
                 <title>Applying ANF to analysis of aggregate clinical statements</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/transformation.svg" scalefit="1" width="100%" format="SVG"
-                            contentdepth="40%"/>
+                        <imagedata fileref="images/transformation.svg" scalefit="1" width="100%"
+                            format="SVG" contentdepth="40%"/>
                     </imageobject>
                 </mediaobject>
             </figure></para>
