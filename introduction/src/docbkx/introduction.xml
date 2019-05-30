@@ -46,7 +46,8 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       </itemizedlist></para>
   </section>
   <section>
-    <title>Motivation</title>
+    <title>Motivation
+      <?oxy_comment_start author="rcholan" timestamp="20190529T090453-0400" comment="KC: 5/28/19: We want to try to introduce the concept of high reliability systems, and high reliability data management. One of things to emphasize, figuring out how to normalize the data in a high reliability framework in mind. They hire every terminology mapping provider who is out there, compare the results, and then abstract out generalized part of data to work off of. We are trying to set a higher bar. Then, reference that when we talk about transformations. Patient safety implications for the transforms…"?></title><?oxy_comment_end?>
     <section>
       <title>Context</title>
       <para>Health care organizations are striving to become high reliability organizations (HROs),
@@ -63,12 +64,14 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         report. While there are published, standardized specifications of measures, reports, and
         alerts with machine-readable, human-readable, and value set specifications, there is
         currently vast variation seen in implementations of these tools across the healthcare system
-        .<citation>concepts</citation><citation>Cholan_specs</citation><citation>lookback</citation><citation>Hemler</citation><citation>Dorr</citation> Some of this variation is due to discrepancies in how implementers of these
-        reports interpret the expression-logic of specifications. However, even if the
-        implementations of query logic were standardized there is still existing variation in the
-        representation of how clinical data within an EHR is organized, the clinical terminology
-        that is applied, the value range that is valid, which units of measurement may be used, and
-        which data values are required.<citation>DCM_Quality</citation> </para>
+          .<citation>concepts</citation><citation>Cholan_specs</citation><citation>lookback</citation><citation>Hemler</citation><citation>Dorr</citation>
+        Some of this variation is due to discrepancies in how implementers of these reports
+        interpret the expression-logic of specifications. However, even if the implementations of
+        query logic were standardized there is still existing variation in the representation of how
+        clinical data within an EHR is organized, the clinical terminology that is applied, the
+        value range that is valid, which units of measurement may be used, and which data values are
+          required.<citation>DCM_Quality</citation>
+      </para>
     </section>
     <section>
       <title>Representation of Clinical Statements</title>
@@ -78,14 +81,14 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         healthcare information systems through shared implementable clinical information models that
         can be used to generate platform-specific model specifications such as FHIR profiles or CDA
         templates. These models are grouped into semantically equivalent (or ‘isosemantic’) families
-        of clinical models, which capture the same clinical meaning using different combinations of
-        concept pre-coordination and corresponding information model structure. The central focus of
-        the CIMI Reference Model is the Clinical Statement. A Clinical Statement represents
-        structured electronic communication made about a patient typically documented as an 'entry'
-        in the patient record. For example, Clinical Statement can be used to represent the
-        following statements made about a patient. This can be the statement of a condition being
-        present, a request for a procedure to be done, the results of lab tests or the patient’s
-        family history of cancer.<itemizedlist>
+        of detailed clinical models, which capture the same clinical meaning using different
+        combinations of concept pre-coordination and corresponding information model structure. The
+        central focus of the CIMI Reference Model is the Clinical Statement. A Clinical Statement
+        represents structured electronic communication made about a patient typically documented as
+        an 'entry' in the patient record. For example, Clinical Statement can be used to represent
+        the following statements made about a patient. This can be the statement of a condition
+        being present, a request for a procedure to be done, the results of lab tests or the
+        patient’s family history of cancer.<itemizedlist>
           <listitem>
             <para>Patient has a diagnosis of congestive heart failure</para>
           </listitem>
@@ -104,17 +107,31 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         </itemizedlist></para>
       <para>Let's consider the following example for blood pressure measurement and the clinical
         statement that may be entered to represent this information.</para>
+      <para>"Systolic blood pressure 120 mmHg, taken on the right brachial artery".</para>
+      <para>For the user, the easiest way to document the measurement is in narrative text. However,
+        the various parts of information about the artery, laterality, and measurement would be lost
+        to any attempt of data retrieval. Rather than selecting this information all at once with a
+        single item (i.e, precoordination) the user could choose the various parts of information
+        pertinent to the blood pressure measurement in various ways using concepts and modifiers
+        (i.e., postcoordination).</para>
+      <para>Because CIMI defines several different isosemantic detailed clinical models, there is
+        currently a decreased chance that modelers of clinical statements apply postcoordinated
+        terminology concepts and models consistently. </para>
+      <para>Let's consider the same example with additional information about the blood pressure
+        cuff:</para>
       <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
-        blood pressure cuff, patient in sitting position for at least 5 minutes, urinated no more
-        than 30 minutes prior to measurement”. For the user, this would be the easiest way to
-        document the measurement. However, the various parts of information about the body site, the
-        blood pressure cuff, patient position etc. would be lost to any attempt of data retrieval.
-        Rather than selecting this information all at once with a single item, the user could choose
-        the various parts of information pertinent to the blood pressure measurement in various
-        ways. </para>
+        blood pressure cuff”. </para>
+      <para>One modeler may choose to structure this is one complex clinical statement (or a
+        compound clinical statement) with various concepts and consituent expressions included
+        within in it.  This is also referred to as 'compositionality' in which a complex statement
+        is determined by the meanings of its constituent expressions and rules used to combine them.
+        In other words, some compound clinical statements should in fact be broken down into a
+        number of simpler clinical statements to improve reproducibility of the detailed clinical
+        model. </para>
     </section>
     <section>
-      <title>Structured Clinical Statements</title>
+      <title><?oxy_comment_start author="rcholan" timestamp="20190529T090042-0400" comment="Clinical Input Form is one that has value in preserving but per Joey, we should not confuse CIF with CIMI models. So how do we articulate these all in a coherent way?"?>Structured<?oxy_comment_end?>
+        Clinical Input</title>
       <para>Clinicians author clinical statements and enter them into their organization’s EHR
         systems. This concept describes any data entry mechanism used by clinicians to record
         clinical statements. An instance of a clinical statement may be created using one or more
@@ -123,7 +140,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         based on proprietary models. For the purposes of this document, the type or usability of
         data structure used for capture or display of clinical statements is not in scope. We assume
         that <emphasis role="bold">any suitably encoded</emphasis> structure clinical statement may
-        be suitable for normalization for analysis.  </para>
+        be suitable for normalization for analysis. </para>
       <para>Therefore, clinical statements can be expressed and documented in many different ways in
         EHR systems, where input forms provide different options to document the same clinical
         statement. These differences pose challenges for data retrieval, data analysis and data
@@ -133,17 +150,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         presented to the clinicians and how they enter the data, such as by constraining the
         information to allow only certain values to be entered, e.g. through a drop-down list or
         radio button, or breaking up large chunks of related information into smaller parts.</para>
-      <para>
-        <emphasis role="bold"><emphasis role="underline">The following example illustrates
-            challenges with Structured Data Capture:</emphasis></emphasis></para>
-      <para><emphasis>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP
-          cuff adult size, patient in sitting position for at least 5 minutes, urinated not more
-          than 30 minutes prior to measurement</emphasis></para>
-      <para>The current guidance for blood pressure measurements for adults includes the body site,
-        the blood pressure cuff size to use as well as some prerequisites. The patient should be in
-        a sitting position for at least 5 minutes and should have urinated no more than 30 minutes
-        before the measurement.</para>
-      <para>For example, a EHR could display a text field for the result and lists of choices for
+      <para> For example, a EHR could display a text field for the result and lists of choices for
         the body site:</para>
       <itemizedlist>
         <listitem>
@@ -186,6 +193,26 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         differ between systems. There are different ways the measurement result could be entered
         into a form in an EHR. Display options for the user could be, e.g. a text field to enter the
         measurement result (e.g. 120 mmHg) with the label of the complete guideline. </para>
+      <para>The following is an example of two distinct user interfaces for capturing a set of
+        “clinical statements" related to Blood Pressure. </para>
+      <figure>
+        <title> Blood Pressure Statement recorded using structured clinical statement 1</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/BP data capture.svg" scalefit="1" width="100%" format="SVG"
+              contentdepth="100%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <figure>
+        <title> Blood Pressure Statement recorded using structured clinical statement 2</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/EHR-2.svg" scalefit="1" width="100%" format="SVG"
+              contentdepth="100%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
       <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
         is a problem because there are many different use cases for clinical information with a wide
         range of requirements. There is no single model that can be the most efficient model for all

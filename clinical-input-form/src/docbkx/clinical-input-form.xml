@@ -141,28 +141,8 @@
             modeling requirements than persisted models or logical models. The CIMI architecture
             should thus support the definition of iso-semantic models, which are sets of
             semantically equivalent models differing primarily in their structure and terminology
-            pre-coordination.</para>
-        <para>The following is an example of two distinct user interfaces for capturing a set of
-            “clinical statements" related to Blood Pressure. ANF provides a predictable approach to
-            transforming an arbitrary set of clinical statement to a normal form.</para>
-        <figure>
-            <title> Blood Pressure Statement recorded using structured clinical statement 1</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/BP data capture.svg" scalefit="1" width="100%" format="SVG"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
-        <figure>
-            <title> Blood Pressure Statement recorded using structured clinical statement 2</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/EHR-2.svg" scalefit="1" width="100%" format="SVG"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+            pre-coordination.
+            <?oxy_comment_start author="rcholan" timestamp="20190529T213324-0400" comment="Need to add examples of inconsistent representation of models for the same clinical statement."?></para><?oxy_comment_end?>
         <!-- <para> Steps for a clinician utilizing CIF might be the following:</para>
          <para>
             <orderedlist>
