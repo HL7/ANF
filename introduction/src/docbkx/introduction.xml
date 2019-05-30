@@ -121,7 +121,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         cuff:</para>
       <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
         blood pressure cuff”. </para>
-      <para>One modeler may choose to structure this is one complex clinical statement (or a
+      <para>One modeler may choose to structure this as one complex clinical statement (or a
         compound clinical statement) with various concepts and consituent expressions included
         within in it.  This is also referred to as 'compositionality' in which a complex statement
         is determined by the meanings of its constituent expressions and rules used to combine them.
@@ -231,9 +231,6 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         different in form, semantically represent the same information, and are known as isosemantic
         models. Any particular detailed clinical model exists within a family of isosemantic
         siblings. </para>
-      <para>Different isosemantic models can support different purposes, such as clinical data
-        input, clinical data storage, clinical data querying, clinical data analysis, and modeler
-        preference. </para>
     </section>
   </section>
   <section>
@@ -251,8 +248,8 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         <para>Clinician collects data &#x21D2; Clinical Input Form</para>
       </listitem>
       <listitem>
-        <para>Data is normalized &#x21D2; Transformation process from CIF to ANF &#x21D2;
-          Representable/storable in multiple types of databases.</para>
+        <para>Data is normalized &#x21D2; Transformation process from Structured Clinical Input to
+          ANF &#x21D2; Representable/storable in multiple types of databases.</para>
       </listitem>
       <listitem>
         <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or working
@@ -266,6 +263,20 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       that has to be expressed, can be expressed in an operable and scalable way. The more that data
       is normalized, the simpler it will become to analyze, and the likelihood of analysis errors
       will be reduced. Without the ANF, the probability of patient safety risks is increased.</para>
+    <para>ANF aims to allow highly postcoordinated compositional terminologies to provide greater
+      content coverage in a complete and consistent way than terminology content that is restricted
+      to relying on precoordinated concepts. While postcoordinated compositional terminologies can
+      be expressively powerful, they may generate expressions whose  equivalency cannot be easily
+      determined. ANF aims to assist by providing comparable data in a normalized manner with
+      respect to the content and semantics. Ideally, precoordinated experssions should retain the
+      same representational structure as postcoordinated expressions. What is required with
+      knowledge representation of postcoordinated compositional statements is the ability to
+      faithfully expand from a reduced form or compare to other statemetns with ease and no loss of
+      semantic integrity. Elkin wrote about what is needed in order for postcoordinated statements
+      to be comparable and captured one of ANF's key objectives: "to be a formal terminological
+      composition and decomposition mechanism for lossless information representation such that both
+      explicit and implicit information can be faithfully recovered, maintained, and modified with
+      ease." (Elkin, pg 14) </para>
     <para>The <emphasis role="bold">purpose of ANF</emphasis> is suggested as follows:</para>
     <para>The purpose of ANF is to provide precise semantic consistent data and terminology
       specification that are comparable and sharable between multiple care providers, health
@@ -378,9 +389,10 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   <section>
     <title>Background </title>
     <section>
-      <title>HL7 Version 3 Clinical Statement</title>
-      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
-        statement is:  </para>
+      <title>HL7 Version 3 Clinical Statement </title>
+      <?oxy_comment_start author="rcholan" timestamp="20190530T120903-0400" comment=" Needs better transition from the previous section."?>
+      <para><?oxy_comment_end?>Starting with HL7 Version 3, the minimum requirements for the
+        interoperable clinical statement is: </para>
       <para>“Clinical Statement for the care of patients (persons, animals and other entities)
         is:</para>
       <para>An expression of a discrete item of clinical, clinically-related or public health
@@ -407,7 +419,8 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         <listitem>
           <para>Implicit application of defaults ONLY where explicitly modeled rules state the
             appropriate defaults." </para>
-          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release 1</para>
+          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
+            1</para>
         </listitem>
       </itemizedlist>
       <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
@@ -417,27 +430,29 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         derivations of clinical acts. </para>
     </section>
     <section>
-      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD)</title>
+      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD)
+        <?oxy_comment_start author="rcholan" timestamp="20190530T120829-0400" comment="Can we make this section more concise and more pertinent to ANF specifically? Can we reduce the number of aronyms we use?"?></title><?oxy_comment_end?>
       <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability.</para>
-      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives: Conceptual, Logical, and
-        Implementable. These perspective are not formally equivalent with Object Management Group’s
-        (OMG) levels-of-abstraction in Model-Driven Architecture (MDA) even though it reuses the
-        same derivation. Therefore, the Implementable Perspective is derived from the Logical
-        Perspective and the Logical Perspective is derived from the Conceptual Perspective. This
-        approach ensures that any implementable artifacts (i.e. service specifications,
-        implementation guides) are traceable to business/clinical requirements and logical models of
-        knowledge.</para>
+      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
+        Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
+        Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
+        even though it reuses the same derivation. Therefore, the Implementable Perspective is
+        derived from the Logical Perspective and the Logical Perspective is derived from the
+        Conceptual Perspective. This approach ensures that any implementable artifacts (i.e. service
+        specifications, implementation guides) are traceable to business/clinical requirements and
+        logical models of knowledge.</para>
       <figure>
         <title>Model Derivation according to SAIF</title>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="100%" contentdepth="65%"/>
+            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="100%"
+              contentdepth="65%"/>
           </imageobject>
         </mediaobject>
-      </figure>      
+      </figure>
       <!-- <figure>
         <title>Model Derivation according to
           SAIF-<?oxy_comment_start author="rcholan" timestamp="20190522T180111-0400" comment="Need to fix SVG"?>CD<?oxy_comment_end?></title>
@@ -502,10 +517,12 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   </section>
   <section>
     <title>Scope</title>
-    <para><emphasis role="underline">RC Suggestion: </emphasis>In Scope we should make it clear
-      where ANF fits in with other CIMI efforts and the aforementioned discussion about SAIF-CD
-      Perspectives. We need a better transition from the SAIF-CD Perspectives back to detailed
-      clinical modeling and ANF. </para>
+    <para>Here, we define ANF, an isosemantic representation of detailed clinical models that is
+      designed to aid in the analysis of clinical information. Different isosemantic models can
+      support different purposes, such as clinical data input, clinical data storage, clinical data
+      querying, clinical data analysis, and modeler preference. ANF intends to assist with logical
+      modeling or within the "Logical Perspective" in the SAIF-CD Framework.
+      <?oxy_comment_start author="rcholan" timestamp="20190530T120752-0400" comment="RC: I am braindumping some ideas here. We may want to discuss this."?></para>
     <para><inlinemediaobject>
         <imageobject>
           <imagedata fileref="../../../introduction/src/docbkx/clip_image002_-1458651199.jpg"/>
@@ -531,12 +548,20 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         </listitem>
         <listitem>
           <para>Highlight here at a high-level why ANF is better than alternative DCMs. What is the
-            higher bar that we are trying to achieve. </para>
+            higher bar that we are trying to achieve. <?oxy_comment_end?></para>
         </listitem>
       </itemizedlist>
     </para>
-    <para>The following document will discuss the following specific aims (these need to be
-      edited/improved): </para>
+    <para>In order to define comparison functions for postcoordinated expressions, normalization of
+      both the contents and the semantics of the contents of the terminology needs to be
+      accomplished by an appropriate knowledge representation format (ANF) that facilitates the
+      process. In addition the representation format that permits such a functional comparison
+      requires a storage and messaging paradigm robust enough to represent completely the explicit
+      or implicit information contained within compound compositional clinical statements. ANF
+      presents a formalism for storing and representing postcooridnated compositional clinical
+      statements. </para>
+    <para>The following document will discuss the following specific aims:
+      <?oxy_comment_start author="rcholan" timestamp="20190530T121125-0400" comment="Specific Aims need editing/improvement"?></para><?oxy_comment_end?>
     <para>(1) how the ANF Model provides the clinical data normalization capabilities to support
       accurate data retrieval and analysis; </para>
     <para>(2) how ANF is used to create detailed clinical models (DCMs); and, </para>

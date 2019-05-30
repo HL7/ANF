@@ -54,19 +54,5 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
             Hence, the patient whose record contains the expression above would also be identified
             by the query “find all patients with a diagnosis of any infectious disease (Infectious
             Disease : ConceptID = 40733004) in their record.”</para>
-        <para>Normalization is the process of minimizing redundancy from a relation or set of
-            relations. Redundancy in relation may cause insertion, deletion and updation anomalies.
-            So, it helps to minimize the redundancy in relations. Normal forms are used to eliminate
-            or reduce redundancy in database tables.</para>
-        <para><emphasis role="bold">1. First Normal Form</emphasis></para>
-        <para>If a relation contain composite or multi-valued attribute, it violates first normal
-            form or a relation is in first normal form if it does not contain any composite or
-            multi-valued attribute. A relation is in first normal form if every attribute in that
-            relation is singled valued attribute.</para>
-        <para><emphasis role="bold">2. Second Normal Form</emphasis></para>
-        <para>To be in second normal form, a relation must be in first normal form and relation must
-            not contain any partial dependency. A relation is in 2NF iff it has No Partial
-            Dependency, i.e., no non-prime attribute (attributes which are not part of any candidate
-            key) is dependent on any proper subset of any candidate key of the table.</para>
     </section>
 </chapter>

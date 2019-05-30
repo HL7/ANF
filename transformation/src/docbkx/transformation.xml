@@ -7,8 +7,10 @@
     <title><?oxy_comment_start author="kmaulden" timestamp="20190423T101734-0400" comment="KC: Don’t put too much effort into this. Describe transformation on a high level. Put the most work into the examples (BP, Pulse etc. earlier in the document)
 IS: Big value is the endpoint of data being normalized into ANF. 
 KC: We can convince people that ANF has value like 1st normal form and 2nd normal form (Tim has expertise here). 
-"?>Transformation<?oxy_comment_end?></title>
-    <informaltable>
+"?>Transformation<?oxy_comment_end?>
+    </title>
+    <?oxy_comment_start author="rcholan" timestamp="20190530T135236-0400" comment="Perhaps we should change this chapter name to Normalization..."?>
+    <informaltable><?oxy_comment_end?>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
             <tbody>
@@ -57,34 +59,44 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             topic representation instead of being spread across disparate fields. For instance,
             there may be 1 clinical statement in an EHR for blood pressure measurement and care
             planning that might be 5 observations when represented by FHIR. There are many different
-            ways to create the FHIR data structures. </para>
-        <para>A current solution to minimize the variation of implementations is by healthcare
-            organizations making a choice to either use Assertion style vs. Evaluation Result. When
-            transferring data structures between and amongst institutions, these different styles
-            may be a problem. The current approach is to solve the problem by conformity rather than
-            with technology. </para>
-        <para><?oxy_comment_start author="timowilliams" timestamp="20190522T215723-0500" comment="Where do concrete domains fit in?"?>With
-            ANF, we will be able to handle concrete domains by increasing the payload in the topic
-            representation and by putting all of the topic details in a post-coordinated SNOMED CT
-            expression. <?oxy_comment_end?>By using the ANF model, with the increased specificity of
-            the topic expression, the variability in representations is reduced since the CIMI
-            Evaluation Result style representation of clinical data is eliminated..
+            ways to create the FHIR data structures. Redundancy in representation of clinical
+            statmenets may cause insertion, deletion and, maintenance of anomalies. </para>
+        <para>Normalization of clinical statements is defined by Elkin as "the ability to identify
+            every representational format that confers the same meaning as being equivalent (i.e.,
+            unambiguous representation). Currently, there are three basic categories of errors that
+            might be associated with attempts at normalizing clinical statement represenation. The
+            first is error assosicated with normalization of content of the terminology; the second
+            is error associated with normalization of the semantics of the terminology; and, third
+            is errors that result from ambiguous or misleading interaction between the structured
+            clinical input and presentation of compound terminology to clinician end-users. </para>
+        <para>A current solution to minimize the variation of representing clinical statements is by
+            using rules that protect against unrecognized ambiguity. Rules are created and
+            documented by various healthcare organizations and aim to help modelers in making
+            choices related to compostional grammar rules and to adhere to modeling "style guides".
+            For instance, a common style guide choice in the CIMI Clinical Statement model is to
+            either use the Assertion style or the Evaluation Result style. When transferring data
+            structures between and amongst institutions, these different styles may be a problem.
+            The current approach is to solve the problem by conformity rather than with technology.
+            Normalization implies the ability to recognize all representations that express the same
+            meaning as being algorithimically equivalent.
+            <?oxy_comment_start author="rcholan" timestamp="20190530T135125-0400" comment="We need exampes to walk through normalization. "?></para><?oxy_comment_end?>
+        <para>With ANF, we aim to reduce the ambiguity and redundancy in model representation of
+            clincial statements. ANF
+            <?oxy_comment_start author="timowilliams" timestamp="20190522T215723-0500" comment="Where do concrete domains fit in?"?>will
+            be able to handle concrete domains by increasing the payload in the topic representation
+            and by putting all of the topic details in a post-coordinated SNOMED CT expression.
+            <?oxy_comment_end?>By using the ANF model, with the increased specificity of the topic
+            expression, the variability in representations is reduced since the CIMI Evaluation
+            Result style representation of clinical data is eliminated..
             <?oxy_comment_start author="timowilliams" timestamp="20190522T220242-0500" comment="Is this true?  What about Status and Priority?  Even Presence and Absence can change the meaning of the topic."?>With
             ANF, the things that change meaning are always in the topic.<?oxy_comment_end?> Whether
             something is a request or has occurred – this is not in the topic. That separation is
             okay because of xxx</para>
-        <?oxy_comment_start author="timowilliams" timestamp="20190522T220532-0500" comment="Haven&apos;t we described this already?"?>
-        <para>Not having coded answers is a big paradigm shift. We need to describe the benefits. If
-            ANF topic expression is created in correct way, you can query for all permutations of a
-            concept with a single parent concept that can create them. In FHIR, one thing that is
-            built in already is ability to search for attribute for resource that comes from a
-            published value set.<?oxy_comment_end?></para>
-        <?oxy_comment_start author="timowilliams" timestamp="20190522T134113-0500" comment="Does this belong here?"?>
         <para>With ANF, we are cutting down the choices modelers will have to make, but we do not
             eliminate all the choices. There may still be more than 1 way to represent things in ANF
             and therefore there are the following editorial rules that we recommend to promote
-            conformity amongst modelers:
-            <?oxy_comment_start author="rcholan" timestamp="20190523T005636-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. "?>xxx<?oxy_comment_end?></para><?oxy_comment_end?>
+            conformity amongst modelers: <?oxy_comment_start author="rcholan" timestamp="20190523T005636-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. "?>xxx<?oxy_comment_end?>
+            <?oxy_comment_start author="rcholan" timestamp="20190530T135833-0400" comment="Tim&apos;s decision tree?"?></para><?oxy_comment_end?>
         <?oxy_comment_start author="timowilliams" timestamp="20190523T103205-0500" comment="Should we discuss mapping issues here?  Can we reuse some of the Solor slides around mapping to highlight an issue of using mapping?"?>
         <para>The following diagram highlights how clinical statements recorded using a model of
             knowledge (e.g. CIMI model or archetype) are used to enter information that may be
@@ -92,7 +104,9 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             documents, FHIR resources). If the information is aggregated and normalized for
             analysis, the ANF clinical statement may be used to extract/query normalized clinical
             statements using ANF-based FHIR template. The diagram illustrates the role each SAIF-CD
-            Perspective. <?oxy_comment_end?><figure>
+            Perspective. </para><?oxy_comment_end?>
+        <para>
+            <figure>
                 <title>Applying ANF to analysis of aggregate clinical statements</title>
                 <mediaobject>
                     <imageobject>
@@ -100,6 +114,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                             format="SVG" contentdepth="50%"/>
                     </imageobject>
                 </mediaobject>
-            </figure></para>
+            </figure>
+        </para>
+        <para>Normal forms are commonly used to eliminate or reduce redundancy in database tables.
+            ANF can have similar benefits on clinical data storage and retrieval:</para>
+        <para><emphasis role="bold">1. First Normal Form</emphasis></para>
+        <para>If a relation contain composite or multi-valued attribute, it violates first normal
+            form or a relation is in first normal form if it does not contain any composite or
+            multi-valued attribute. A relation is in first normal form if every attribute in that
+            relation is singled valued attribute.</para>
+        <para><emphasis role="bold">2. Second Normal Form</emphasis></para>
+        <para>To be in second normal form, a relation must be in first normal form and relation must
+            not contain any partial dependency. A relation is in 2NF iff it has No Partial
+            Dependency, i.e., no non-prime attribute (attributes which are not part of any candidate
+            key) is dependent on any proper subset of any candidate key of the table.</para>
     </section>
 </chapter>
