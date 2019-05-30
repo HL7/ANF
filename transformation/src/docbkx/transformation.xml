@@ -28,8 +28,9 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
     </informaltable>
     <section>
         <title> Transformation</title>
-        <para>ANF provides a normal form for clinical information captured using any approach to
-            data entry using either standard-based logical models (e.g. CIMI, DCM, etc.) or
+        <para>ANF seeks to simplify the complexity that currently exists in clinical statement
+            models.  ANF provides a normal form for clinical information captured using any approach
+            to data entry using either standard-based logical models (e.g. CIMI, DCM, etc.) or
             proprietary data entry approaches (See “Structured Clinical Statement” section). ANF
             helps transform clinical data into normalized data that can then be used to: </para>
         <para>
@@ -96,7 +97,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/transformation.svg" scalefit="1" width="100%"
-                            format="SVG" contentdepth="40%"/>
+                            format="SVG" contentdepth="50%"/>
                     </imageobject>
                 </mediaobject>
             </figure></para>
