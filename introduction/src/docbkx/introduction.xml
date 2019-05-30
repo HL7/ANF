@@ -132,25 +132,30 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     <section>
       <title><?oxy_comment_start author="rcholan" timestamp="20190529T090042-0400" comment="Clinical Input Form is one that has value in preserving but per Joey, we should not confuse CIF with CIMI models. So how do we articulate these all in a coherent way?"?>Structured<?oxy_comment_end?>
         Clinical Input</title>
-      <para>Clinicians author clinical statements and enter them into their organization’s EHR
-        systems. This concept describes any data entry mechanism used by clinicians to record
-        clinical statements. An instance of a clinical statement may be created using one or more
-        forms. Vendors compete on usability but, in some cases, structured clinical statement are
-        based on standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be
-        based on proprietary models. For the purposes of this document, the type or usability of
-        data structure used for capture or display of clinical statements is not in scope. We assume
-        that <emphasis role="bold">any suitably encoded</emphasis> structure clinical statement may
-        be suitable for normalization for analysis. </para>
+      <para>Not only is there a potential for a lack of consistency with representing clinical
+        statements with current detailed clinical modeling efforts, but there is also further
+        variation in how the data is entered into information systems by end-users. Clinicians
+        author clinical statements and enter them into their organization’s EHR systems as
+        "Structured Clinical Input". This concept describes any data entry mechanism used by
+        clinicians to record clinical statements. An instance of a clinical statement may be created
+        using one or more forms. Vendors compete on usability for seamless Structured Clinical Input
+        but, in some cases, structured clinical statement are based on standard-based models (e.g.
+        CIMI, openEHR archetypes, etc.) but they may also be based on proprietary models. For the
+        purposes of this document, the type or usability of data structure used for capture or
+        display of clinical statements is not in scope. We assume that <emphasis role="bold">any
+          suitably encoded</emphasis> structured clinical statement may be suitable for
+        normalization for analysis. </para>
       <para>Therefore, clinical statements can be expressed and documented in many different ways in
         EHR systems, where input forms provide different options to document the same clinical
-        statement. These differences pose challenges for data retrieval, data analysis and data
-        analysts in their attempts to extract accurate clinical analysis results. </para>
+        statement. These differences pose challenges for how the data is modeled, how the data is
+        stored, ant therefore has implications on data retrieval, data analysis,accuracy of clinical
+        analysis results. </para>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
-        that we call here structured clinical statements, or the manner in which information is
-        presented to the clinicians and how they enter the data, such as by constraining the
-        information to allow only certain values to be entered, e.g. through a drop-down list or
-        radio button, or breaking up large chunks of related information into smaller parts.</para>
-      <para> For example, a EHR could display a text field for the result and lists of choices for
+        that we call here structured clinical input, or the manner in which information is presented
+        to the clinicians and how they enter the data, such as by constraining the information to
+        allow only certain values to be entered, e.g. through a drop-down list or radio button, or
+        breaking up large chunks of related information into smaller parts.</para>
+      <para>For example, a EHR could display a text field for the result and lists of choices for
         the body site:</para>
       <itemizedlist>
         <listitem>
@@ -213,6 +218,11 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           </imageobject>
         </mediaobject>
       </figure>
+      <para>In the first wireframe, the structured clinical input has separate drop down constraints
+        to enter the artery and laterality as distinct concepts. In the second wireframe, the
+        structured clinical input has combined the artery and laterality into a compond concept.
+        This variation present in the structured clinical input may also have implications on the
+        how the clinical statement is modeled. </para>
       <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
         is a problem because there are many different use cases for clinical information with a wide
         range of requirements. There is no single model that can be the most efficient model for all
@@ -226,7 +236,9 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         preference. </para>
     </section>
   </section>
-  <section><title> Purpose </title>
+  <section>
+    <title> Purpose
+      <?oxy_comment_start author="rcholan" timestamp="20190529T235034-0400" comment="RC Suggestion: We should probably mention that there is a goal to normalize data in a high reliability framework in mind. "?></title><?oxy_comment_end?>
     <para>Here, we introduce a new isosemantic representation that is designed to aid in the
       analysis of clinical information and will represent one member in each isosemantic family of
       detailed clinical models. This representation is called Analysis Normal Form (ANF). A FHIR
@@ -293,8 +305,10 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     </itemizedlist>
     <para>ANF is intended to be agnostic or neutral with respect to reference model and platform.
       For ANF to be used in applications, it needs to be transformed into platform specific
-      artefacts, for example HL7 FHIR Resources.</para> <section><title> Concrete Objectives </title>
-     <para>ANF specifies clinical information for one or more sets of clinical concepts and their
+      artefacts, for example HL7 FHIR Resources.</para>
+    <section>
+      <title> Concrete Objectives </title>
+      <para>ANF specifies clinical information for one or more sets of clinical concepts and their
         corresponding data elements and terminology. This with the goal of supporting the semantic
         interoperability between standards and technologies by means of representing<itemizedlist>
           <listitem>
@@ -309,9 +323,11 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           <listitem>
             <para>interpretation of values and ranges,</para>
           </listitem>
-        </itemizedlist></para>   </section>
+        </itemizedlist></para>
+    </section>
     <section>
-      <title> Usage</title> <para>Overall, ANF supports the following functions:</para>
+      <title> Usage</title>
+      <para>Overall, ANF supports the following functions:</para>
       <itemizedlist>
         <listitem>
           <para>Specify clinical content for use in EHR</para>
@@ -356,7 +372,8 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       </itemizedlist>
       <para>such that these specifications on the same concept are consistent for all these
         functions that it tries to achieve.</para>
-    </section>  </section>
+    </section>
+  </section>
   
   <section>
     <title>Background </title>
@@ -485,9 +502,44 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   </section>
   <section>
     <title>Scope</title>
-    <para>The following document will discuss (1) how the ANF Model provides the clinical data
-      normalization capabilities to support accurate data retrieval and analysis; (2) how ANF is
-      used to create detailed clinical models (DCMs); and, (3) how it differs from CIMI's current
-      standard modeling paradigm. </para>
+    <para><emphasis role="underline">RC Suggestion: </emphasis>In Scope we should make it clear
+      where ANF fits in with other CIMI efforts and the aforementioned discussion about SAIF-CD
+      Perspectives. We need a better transition from the SAIF-CD Perspectives back to detailed
+      clinical modeling and ANF. </para>
+    <para><inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="../../../introduction/src/docbkx/clip_image002_-1458651199.jpg"/>
+        </imageobject>
+      </inlinemediaobject></para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para>I think a figure inspired by this Goosen image showing where/how ANF fits in and
+            highlights the SAIF-CD Perspectives (Concept/Logical/Implementation) could help with the
+            transition back to DCM and ANF. </para>
+        </listitem>
+        <listitem>
+          <para>In some ways, the "columns" in the Goosen figure above are analagous to the SAIF-CD
+            Perspectives: </para>
+          <itemizedlist>
+            <listitem>
+              <para>Conceptual = DCM Repository + Entry and Presentation</para>
+              <para>Logical = Terminology/coding + Store/Process</para>
+              <para>Implementation =Medical Knowledge + Communication</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+        <listitem>
+          <para>Highlight here at a high-level why ANF is better than alternative DCMs. What is the
+            higher bar that we are trying to achieve. </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>The following document will discuss the following specific aims (these need to be
+      edited/improved): </para>
+    <para>(1) how the ANF Model provides the clinical data normalization capabilities to support
+      accurate data retrieval and analysis; </para>
+    <para>(2) how ANF is used to create detailed clinical models (DCMs); and, </para>
+    <para>(3) how it differs from CIMI's current standard modeling paradigm. </para>
   </section>
 </chapter>
