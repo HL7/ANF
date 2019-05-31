@@ -2,8 +2,7 @@
 <?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="kmaulden" timestamp="20190418T112606-0400" comment="Taking Ioana’s suggestion, we could use examples from the Consolidated CDA specification that was adopted by all the MU-certified EHR vendors here."?>
     <title>Examples of Performance Clinical Statments</title><?oxy_comment_end?>
     <para> </para>
@@ -21,15 +20,13 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Systolic blood pressure 120 mmHg;
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Systolic blood pressure 120 mmHg;
                                         taken on right brachial artery using adult blood pressure
                                         cuff;</emphasis></emphasis> patient in sitting position for
                                 at least 5 minutes; urinated not more than 30 minutes prior to
                                 measurement</para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                        >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                     record]</emphasis></para>
@@ -53,40 +50,59 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                    record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: 120</para>
-                            <para>lowerBound: 120</para>
-                            <para>measureSemantic: [259018001 |Millimeter of mercury]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: 120</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 120</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [259018001 |Millimeter of
+                                                mercury]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para>Associations: </para>
-                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis
-                                        role="italic"> (Table 2: Associated Clinical Statement
+                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis role="italic"> (Table 2: Associated Clinical Statement
                                         1)</emphasis></emphasis></para>
-                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis
-                                        role="italic">(Table 3: Associated Clinical Statement
+                            <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis role="italic">(Table 3: Associated Clinical Statement
                                         2)</emphasis></emphasis></para>
                             <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
@@ -116,8 +132,7 @@
                                     minutes</emphasis></emphasis>; urinated not more than 30 minutes
                                 prior to measurement</para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                        >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                     record]</emphasis></para>
@@ -133,31 +148,51 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: ≥ 5 min. prior to statement time </para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                    record]</emphasis></para>
-                            <para>Priority: Ø</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>Result:</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: ≥ 5 min. prior to statement time </para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry><?oxy_comment_start author="kmaulden" timestamp="20190418T112624-0400" comment=" can we allow in the result, e.g. result status, like “pending”, or “complete” or “performed”? Maybe add a section somewhere on how we would represent “pending” or ‘in progress” – or do we?
- "?>
-                            <para>upperBound: 5</para>
-                            <para>lowerBound: 5</para>
-                            <para>measureSemantic: [258701004 |min]</para>
-                            <?oxy_comment_end?></entry>
+ "?><?oxy_comment_end?>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: 5</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 5</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [258701004 |min]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
@@ -191,8 +226,7 @@
                                         than 30 minutes prior to
                                 measurement</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                        >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                     record]</emphasis></para>
@@ -208,29 +242,49 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: ≤ 30 min. prior to statement time </para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                    record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: ≤ 30 min. prior to statement time </para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>                       
-                            <para>upperBound: 30</para>
-                            <para>lowerBound: 30</para>
-                            <para>measureSemantic: [258701004 |min]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: 30</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 30</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [258701004 |min]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -262,12 +316,10 @@
                     <tbody>
                         <row>
                             <entry namest="col1" nameend="col2">
-                                <para><emphasis role="bold">Narrative</emphasis>: <emphasis
-                                        role="bold"><emphasis role="italic">Pulse Rate 68 bpm, taken
+                                <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Pulse Rate 68 bpm, taken
                                             by pulse oximeter</emphasis></emphasis></para>
                                 <para/>
-                                <para>Statement type:<emphasis role="underline"><emphasis
-                                            role="italic">[Performance]</emphasis></emphasis></para>
+                                <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                                 <para/>
                                 <para>Subject of info: <emphasis role="italic">[410604004 |Subject
                                         of record]</emphasis></para>
@@ -287,30 +339,51 @@
                             </entry>
                         </row>
                         <row>
-                            <entry morerows="3">Circumstance:</entry>
+                            <entry morerows="2">Circumstance:</entry>
                             <entry>Performance Circumstance</entry>
                         </row>
                         <row>
                             <entry>
-                                <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                        format]</emphasis></para>
-                                <para>Purposes: Ø</para>
-                                <para>Triggers: Ø</para>
-                                <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                        record]</emphasis></para>
-                                <para>Priority: Ø</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                                format]</emphasis></para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Purposes: Ø</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Triggers: Ø</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Participants: <emphasis role="italic">[410604004
+                                                |Subject of record]</emphasis></para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Priority: Ø</para>
+                                    </listitem>
+                                </itemizedlist>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para>Result:</para>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para>upperBound: 68</para>
-                                <para>lowerBound: 68</para>
-                                <para>measureSemantic: [258983007 |Beats/minute]</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Result:</para>
+                                        <itemizedlist>
+                                            <listitem>
+                                                <para>upperBound: 68</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>lowerBound: 68</para>
+                                            </listitem>
+                                            <listitem>
+                                                <para>measureSemantic: [258983007
+                                                  |Beats/minute]</para>
+                                            </listitem>
+                                        </itemizedlist>
+                                    </listitem>
+                                </itemizedlist>
                             </entry>
                         </row>
                         <row>
@@ -341,12 +414,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Patient has thromboembolism
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Patient has thromboembolism
                                         history</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                        >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                     record]</emphasis></para>
@@ -363,32 +434,54 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing Value: [(1, inf) measureSemantic: ISO 8601 prior to
-                                statement time]</para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                    record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing Value: [(1, inf) measureSemantic: ISO 8601 prior to
+                                        statement time]</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: inf</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 1</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [ISO 8601 prior to statement
+                                                time]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: inf</para>
-                            <para>lowerBound: 1</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
-                        </entry>
-                    </row>
+                    
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para>Associations: Ø</para>
@@ -414,12 +507,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Diabetes Mellitus
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Diabetes Mellitus
                                         present</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                 record]</emphasis></para>
@@ -436,30 +527,51 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: inf</para>
-                            <para>lowerBound: 1</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: inf</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 1</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [ISO 8601 prior to statement
+                                                time]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -487,12 +599,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Diabetes Mellitus not
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Diabetes Mellitus not
                                         present</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                 record]</emphasis></para>
@@ -509,31 +619,52 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: 0</para>
-                            <para>lowerBound: 0</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: 0</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 0</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [ISO 8601 prior to statement
+                                                time]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -562,12 +693,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Three dot blot
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Three dot blot
                                         hemorrhages</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                 record]</emphasis></para>
@@ -584,31 +713,51 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: 3</para>
-                            <para>lowerBound: 3</para>
-                            <para>measureSemantic: [260299005 |Number]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: 3</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 3</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [260299005 |Number]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -636,12 +785,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Dot blot hemorrhage
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Dot blot hemorrhage
                                         present</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[410604004 |Subject of
                                 record]</emphasis></para>
@@ -658,31 +805,52 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>upperBound: inf</para>
-                            <para>lowerBound: 1</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement time]</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Result:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: inf</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 1</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [ISO 8601 prior to statement
+                                                time]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -711,8 +879,7 @@
                     <row>
                         <entry namest="col1" nameend="col1"><emphasis role="bold">Narrative
                             </emphasis></entry>
-                        <entry namest="col2" nameend="col2"
-                            ><?oxy_comment_start author="timowilliams" timestamp="20190516T105422-0500" comment="Is this really a [1,1] or is this present[1,inf]?" id="v4v_ksy_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T095144-0500" comment="Should this be on a scale?" parentID="v4v_ksy_thb" mid="4"?>Patient
+                        <entry namest="col2" nameend="col2"><?oxy_comment_start author="timowilliams" timestamp="20190516T105422-0500" comment="Is this really a [1,1] or is this present[1,inf]?" id="v4v_ksy_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T095144-0500" comment="Should this be on a scale?" parentID="v4v_ksy_thb" mid="4"?>Patient
                             observed to have fall
                             risk<?oxy_comment_end mid="4"?><?oxy_comment_end?></entry>
                     </row>
@@ -745,12 +912,10 @@
                 <tbody>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Family history (mother) of colon
+                            <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"><emphasis role="italic">Family history (mother) of colon
                                         cancer</emphasis></emphasis></para>
                             <para/>
-                            <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Performance]</emphasis></emphasis></para>
+                            <para>Statement type:<emphasis role="underline"><emphasis role="italic">[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[444301002 |Mother of
                                     subject]</emphasis></para>
@@ -767,33 +932,52 @@
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="3">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Performance Circumstance</entry>
                     </row>
                     
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                format]</emphasis></para>
-                            <para>Purposes: Ø</para>
-                            <para>Triggers: Ø</para>
-                            <para>Participants: <emphasis role="italic">[410604004 |Subject of
-                                record]</emphasis></para>
-                            <para>Priority: Ø</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purposes: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Triggers: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Participants: <emphasis role="italic">[410604004 |Subject
+                                            of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: Ø</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Result:</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190516T110605-0500" comment="Is this correct for history of?"?>
-                            <para>upperBound: inf</para>
-                            <para>lowerBound: 1</para>
-                            <para>measureSemantic: [ISO 8601 prior to statement
-                                time]<?oxy_comment_end?></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><?oxy_comment_start author="timowilliams" timestamp="20190531T162722-0500" comment="Is this correct for history of?"?>Result:<?oxy_comment_end?></para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>upperBound: inf</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>lowerBound: 1</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: [ISO 8601 prior to statement
+                                                time]</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
