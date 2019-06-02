@@ -9,7 +9,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
   <section>
     <title>Acknowledgements </title>
     <para>The project team would like to acknowledge the contributions and assistance received from
-      the following:<itemizedlist>
+      the following:<itemizedlist spacing="compact">
         <listitem>
           <para>Keith E. Campbell</para>
         </listitem>
@@ -50,17 +50,19 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       <?oxy_comment_start author="rcholan" timestamp="20190529T090453-0400" comment="KC: 5/28/19: We want to try to introduce the concept of high reliability systems, and high reliability data management. One of things to emphasize, figuring out how to normalize the data in a high reliability framework in mind. They hire every terminology mapping provider who is out there, compare the results, and then abstract out generalized part of data to work off of. We are trying to set a higher bar. Then, reference that when we talk about transformations. Patient safety implications for the transforms…"?></title><?oxy_comment_end?>
     <section>
       <title>Context</title>
+       <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="What is the purpose of the Context
+       Section, and how is that different than the Representation of Clinical Statement section below. Context seems to state models are represented in every which way, and so do the following sections.  Also the clinical statement and the structured clinical imput section seem to have overlapping information."?><?oxy_comment_end?>
       <para>Health care organizations are striving to become high reliability organizations (HROs),
         characterized by high levels of safety under inherently risky, technologically-complex, and
-        demanding conditions.<citation>HRO_HIT</citation>Chassin and Loeb published a conceptual
+        demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
         framework for assessing progress towards becoming a HRO and included the safe use of health
         IT and review of quality measures, which are dependent on data from Electronic Health Record
         (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
         the US and there is increasing opportunity to leverage a substantial number of extant EHR
         mapped data sets to improve population health through quality measures, case reporting, and
         decision support. </para>
-      <para>Pragmatically, these electronic tools are implemented by manually mapping the right
-        clinical data stated in specifications from the right sources in the EHR to generate a
+      <para>Pragmatically, these electronic tools are implemented by manually mapping EHR clinical data to 
+        the appropriate clinical data stated in specifications to generate a
         report. While there are published, standardized specifications of measures, reports, and
         alerts with machine-readable, human-readable, and value set specifications, there is
         currently vast variation seen in implementations of these tools across the healthcare system
@@ -71,24 +73,34 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         clinical data within an EHR is organized, the clinical terminology that is applied, the
         value range that is valid, which units of measurement may be used, and which data values are
           required.<citation>DCM_Quality</citation>
+         <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I'm not following the flow here.
+          What do you mean my interpret the expression-logic of specifications, and how that jumps to query logic"?><?oxy_comment_end?>
+
       </para>
     </section>
     <section>
+      <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="Started editing the following sections,
+      but realized we may need a different direction.  Would be better to clearly separate and present the fact that there are 
+      data structures with properties and there is terminology. Both can be be pre and post-coordinated. Clinical information can exist either at the data structure property level or the terminology level or a mix of both.  Then show the infinite
+      variations a modeler can choose"?><?oxy_comment_end?>
       <title>Representation of Clinical Statements</title>
       <para>To assist with these challenges, The Clinical Information Modeling Initiative (CIMI) is
-        an HL7 group that is defining a library of de- tailed clinical information models using a
+        an HL7 group that is defining a library of detailed clinical information models using a
         common modeling formalism. CIMI was established to improve the interoperability of
         healthcare information systems through shared implementable clinical information models that
-        can be used to generate platform-specific model specifications such as FHIR profiles or CDA
-        templates. These models are grouped into semantically equivalent (or ‘isosemantic’) families
+        can be used to generate platform-specific model specifications such as FHIR profiles,CDA
+        templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or Intermountain CEMs. These CIMI 
+        models are grouped into semantically equivalent (or ‘isosemantic’) families
         of detailed clinical models, which capture the same clinical meaning using different
-        combinations of concept pre-coordination and corresponding information model structure. The
+        combinations of concept pre and post-coordination and corresponding information model structure. The
         central focus of the CIMI Reference Model is the Clinical Statement. A Clinical Statement
         represents structured electronic communication made about a patient typically documented as
         an 'entry' in the patient record. For example, Clinical Statement can be used to represent
         the following statements made about a patient. This can be the statement of a condition
         being present, a request for a procedure to be done, the results of lab tests or the
-        patient’s family history of cancer.<itemizedlist>
+        patient’s family history of cancer.  
+        <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I think platform-specific is not really correct, maybe just be more generic and say something like other modeling specifications"?><?oxy_comment_end?>
+        <itemizedlist>
           <listitem>
             <para>Patient has a diagnosis of congestive heart failure</para>
           </listitem>
@@ -104,18 +116,25 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           <listitem>
             <para>Patient had an appendectomy</para>
           </listitem>
-        </itemizedlist></para>
+        </itemizedlist>
+      </para>
       <para>Let's consider the following example for blood pressure measurement and the clinical
-        statement that may be entered to represent this information.</para>
+        statement that may be entered to represent this information.
+      </para>
       <para>"Systolic blood pressure 120 mmHg, taken on the right brachial artery".</para>
       <para>For the user, the easiest way to document the measurement is in narrative text. However,
-        the various parts of information about the artery, laterality, and measurement would be lost
-        to any attempt of data retrieval. Rather than selecting this information all at once with a
-        single item (i.e, precoordination) the user could choose the various parts of information
-        pertinent to the blood pressure measurement in various ways using concepts and modifiers
-        (i.e., postcoordination).</para>
+        the various parts of information about the artery, laterality, or measurement would require 
+        natural language processing and would be lost to any attempt of data retrieval. Another option to
+        document the measurement would be to choose various parts of information
+        pertinent to the blood pressure measurement and arrange them in various states of 
+        pre and post-coordination.
+      </para>
+      <para>"Systolic blood pressure taken on the right brachial artery" = 120 mmHG</para>
+      <para>"Systolic blood pressure" 'body location'='brachial artery' 
+        'body location laterality'='right' = 120 mmHG
+      </para>
       <para>Because CIMI defines several different isosemantic detailed clinical models, there is
-        currently a decreased chance that modelers of clinical statements apply postcoordinated
+        currently a decreased chance that modelers of clinical statements apply pre and post-coordinated
         terminology concepts and models consistently. </para>
       <para>Let's consider the same example with additional information about the blood pressure
         cuff:</para>
@@ -127,7 +146,9 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         is determined by the meanings of its constituent expressions and rules used to combine them.
         In other words, some compound clinical statements should in fact be broken down into a
         number of simpler clinical statements to improve reproducibility of the detailed clinical
-        model. </para>
+        model. 
+      </para>
+      <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This is not a good example for this, as I don't think anyone would model this as a compound set of individual statements, as none of these extra elements can stand alone, and instead are clearly qualifiers."?><?oxy_comment_end?>
     </section>
     <section>
       <title><?oxy_comment_start author="rcholan" timestamp="20190529T090042-0400" comment="Clinical Input Form is one that has value in preserving but per Joey, we should not confuse CIF with CIMI models. So how do we articulate these all in a coherent way?"?>Structured<?oxy_comment_end?>
@@ -148,7 +169,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       <para>Therefore, clinical statements can be expressed and documented in many different ways in
         EHR systems, where input forms provide different options to document the same clinical
         statement. These differences pose challenges for how the data is modeled, how the data is
-        stored, ant therefore has implications on data retrieval, data analysis,accuracy of clinical
+        stored, and therefore has implications on data retrieval, data analysis,accuracy of clinical
         analysis results. </para>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
         that we call here structured clinical input, or the manner in which information is presented
@@ -157,7 +178,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         breaking up large chunks of related information into smaller parts.</para>
       <para>For example, a EHR could display a text field for the result and lists of choices for
         the body site:</para>
-      <itemizedlist>
+      <itemizedlist spacing="compact">
         <listitem>
           <para>Right brachial artery</para>
         </listitem>
@@ -167,10 +188,10 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       </itemizedlist>
       <para>Or it could be diplayed with the site and allow further refinement to specify the
         laterality:</para>
-      <itemizedlist>
+      <itemizedlist spacing="compact">
         <listitem>
           <para>Brachial artery</para>
-          <itemizedlist>
+          <itemizedlist spacing="compact">
             <listitem>
               <para>Right</para>
             </listitem>
@@ -183,7 +204,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       <para>In addition to specifiying the body site a list of choices for the blood pressure cuff
         size used would also be selected, for example:</para>
       <itemizedlist>
-        <listitem>
+        <listitem spacing="compact">
           <para>Adult size Small</para>
         </listitem>
         <listitem>
