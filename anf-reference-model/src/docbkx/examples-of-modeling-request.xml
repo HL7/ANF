@@ -52,32 +52,60 @@ The problem with this approach is that expressions of this sort are restricted t
                 </row>
                 <row>
                     <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
-                            <para>Purpose: <emphasis role="italic">[161891005
-                                |Backache]</emphasis></para>
-                            <para/>
-                            <para>conditionalTrigger: <emphasis>if (backache present
-                                    statement)</emphasis></para>
-                            <para>requestedParticipant: <emphasis role="italic">[410604004 |Subject
-                                    of record]</emphasis></para>
-                            <para/>
-                            <para>Priority: <emphasis role="italic">[50811001
-                                |Routine]</emphasis></para>
-                            
+                            <itemizedlist>
+                                <listitem>
+                                    <para>timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>purpose: <emphasis role="italic">[161891005
+                                            |Backache]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>conditionalTrigger: <emphasis>if (backache present
+                                            statement)</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>requestedParticipant: <emphasis role="italic">[410604004
+                                            |Subject of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>priority: <emphasis role="italic">[50811001
+                                            |Routine]</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                 </row>
                 <row>
                     <entry>
-                        <para>Repetition:</para>
-                    </entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>repetition:</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>eventFrequency.lowerBound:
+                                                <emphasis>4</emphasis></para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>eventFrequency.upperBound:
+                                                <emphasis>6</emphasis></para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>eventFrequency.measureSemantic: <emphasis
+                                                  role="italic">[258702006 |hour]</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
                 </row>
                 <row>
                     <entry>
-                            <para>eventFrequency.lowerBound: <emphasis>4</emphasis></para>
-                            <para>eventFrequency.upperBound: <emphasis>6</emphasis></para>
-                            <para>eventFrequency.measureSemantic: <emphasis role="italic">[258702006
-                                    |hour]</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>requestedResult</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                 </row>
                 <row>
@@ -128,21 +156,38 @@ The problem with this approach is that expressions of this sort are restricted t
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="1">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Request Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
-                            <para>Purpose: <emphasis role="italic">[444821009 |Assessment of chest
-                                    pain]</emphasis></para>
-                            <para/>
-                            <para>requestedParticipant: <emphasis role="italic">[410604004 |Subject
-                                    of record]</emphasis></para>
-                            <para/>
-                            <para>Priority: <emphasis role="italic">[50811001
-                                |Routine]</emphasis><?oxy_comment_start author="timowilliams" timestamp="20190516T135234-0500" comment="RequestedResult?, it is currently required but I think we should change that."?></para><?oxy_comment_end?>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>purpose: <emphasis role="italic">[444821009 |Assessment of
+                                            chest pain]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>requestedParticipant: <emphasis role="italic">[410604004
+                                            |Subject of record]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>priority: <emphasis role="italic">[50811001
+                                            |Routine]</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>requestedResult</para>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
@@ -206,18 +251,24 @@ The problem with this approach is that expressions of this sort are restricted t
                         </entry>
                     </row>
                     <row>
-                        <entry morerows="1">Circumstance:</entry>
+                        <entry morerows="2">Circumstance:</entry>
                         <entry>Request Circumstance</entry>
                     </row>
                     <row>
                         <entry>
-                            <para>Timing: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
-                            <para>requestedResult.lowerBound:<emphasis> 1</emphasis></para>
-                            <para>requestedResult.upperBound: <emphasis>1</emphasis></para>
-                            <para>requestedResult.measureSemantic: <emphasis>[385084005
-                                    |Conventional release sublingual tablet]</emphasis></para>
-                            <para>requestedResult.resolution: <emphasis>1</emphasis></para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Timing: <emphasis role="italic">[ISO 8601 date/time
+                                            format]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Purpose: <emphasis>[29857009 |Chest
+                                        pain]</emphasis></para>
+                                </listitem>
+                                <listitem>
+                                    <para>Priority: <emphasis>[50811001 |Routine]</emphasis></para>
+                                </listitem>
+                            </itemizedlist>
                             <para><emphasis role="bold"><emphasis role="italic"
                                     >Frequency</emphasis></emphasis></para>
                             <para>eventFrequency.lowerBound: <emphasis>5</emphasis></para>
@@ -225,8 +276,31 @@ The problem with this approach is that expressions of this sort are restricted t
                             <para>eventFrequency.resolution: <emphasis>5</emphasis></para>
                             <para>eventFrequency.measureSemantic: <emphasis>[258701004
                                     |min]</emphasis></para>
-                            <para>Purpose: <emphasis>[29857009 |Chest pain]</emphasis></para>
-                            <para>Priority: <emphasis>[50811001 |Routine]</emphasis></para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>requestedResult</para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>lowerBound:<emphasis> 1</emphasis></para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>upperBound: <emphasis>1</emphasis></para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>measureSemantic: <emphasis>[385084005
+                                                  |Conventional release sublingual
+                                                  tablet]</emphasis></para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>resolution: <emphasis>1</emphasis></para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </listitem>
+                            </itemizedlist>
                         </entry>
                     </row>
                     <row>
