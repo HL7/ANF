@@ -61,6 +61,10 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             planning that might be 5 observations when represented by FHIR. There are many different
             ways to create the FHIR data structures. Redundancy in representation of clinical
             statmenets may cause insertion, deletion and, maintenance of anomalies. </para>
+            <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I believe this is
+            actually the opposite.  Normalization will result in the information being spread across more
+            clinical statements.  For example, in ANF, patient sitting and having urinated will be there
+            own associated clinical statements"?><?oxy_comment_end?>
         <para>Normalization of clinical statements is defined by Elkin as "the ability to identify
             every representational format that confers the same meaning as being equivalent (i.e.,
             unambiguous representation). Currently, there are three basic categories of errors that
@@ -128,5 +132,348 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             not contain any partial dependency. A relation is in 2NF iff it has No Partial
             Dependency, i.e., no non-prime attribute (attributes which are not part of any candidate
             key) is dependent on any proper subset of any candidate key of the table.</para>
+    </section>
+    <section>
+        <title>Transformation Languages</title>
+        <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This section was
+        taken and edited from Walter Sujansky's Transformation Languages white paper"?><?oxy_comment_end?>
+        <para>
+            A number of options exist for expressing transformation logic 
+            and for executing the transformation on specific instances of clinical data.
+            This section discusses several of these options and the trade-offs among them.
+        </para>
+        <section>
+            <title>XSLT</title>
+            <para>
+                XSLT is a W3C-standard language for the transformation of structured data<footnote xml:id="__EN5__">
+                    <para>
+                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="https://en.wikipedia.org/wiki/XSLT">https://en.wikipedia.org/wiki/XSLT
+                        </link> (Accessed 9/30/2017).
+                    </para>
+                </footnote>. XSLT transformation scripts take as input any valid XML document and
+                produce as output an ASCII-formatted document (including XML, HTML, other formatting
+                languages, free text, etc.). The XSLT language specifies transformations through
+                declarative, rule-based commands (see below). 
+            </para>
+            <para>
+                XSLT is widely used in modern information processing, including in health care
+                applications. Numerous XLST transformation engines exist, including commercial and
+                open-source versions. These implementations are mature, stable, and
+                high-performance, and are available as runtime libraries or embedded in XLST
+                authoring/editing applications. Excellent documentation and training are available
+                for XSLT.
+            </para>
+            <section>
+                <title>Overview of Language and Data Model</title>
+                <para>
+                    XSLT scripts operate over source “trees” containing the structured contents of
+                    parsed XML documents. These trees contain as their nodes the various constructs
+                    of specific XML documents, i.e., the named elements, attributes, and text values
+                    that appear in the documents, and upon parsing, becomes a source tree
+                    for XSLT transformations.</para>
+                <para>
+                    XSLT uses the sub-language “XPath”<footnote xml:id="__EN6__">
+                        <para>
+                            <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="https://en.wikipedia.org/wiki/XPath"
+                                >https://en.wikipedia.org/wiki/XPath</link> (Accessed
+                            9/30/2017).
+                        </para>
+                    </footnote> to reference portions of the XML source tree for purposes of
+                    navigating the tree and selecting specific parts of it to translate. XPath is
+                    essentially a query language for identifying and retrieving XML sub-trees that
+                    match specified criteria. For example, the XPath query
+                </para>
+        
+                <para>
+                    The actual transformation logic in XLST scripts is specified as a series of
+                    “templates”. Each template matches to a specified sub-part of the source tree
+                    and specifies what output will be generated for that sub-part. Template are
+                    generally called from within other templates via a declarative template-matching
+                    process, and a recursive traversal and transformation of the input tree occurs
+                    through this template-invocation model. The transformation logic within
+                    templates may include various conditional, branching, and formatting constructs,
+                    as well as calls to external functions written in various programming languages
+                    (such as Java). 
+                </para>
+            </section>
+            
+            <section>
+                <title>Advantages and Limitations</title>
+                <para>
+                    XSLT is effective in representing and executing the transformation logic
+                    needed for clinical translations. In general, XSLT provides various advantages, 
+                    as well as limitations, for this task.
+                </para>
+                <para><emphasis role="bold">Advantages</emphasis></para>
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>A powerful language</para>
+                    </listitem>
+                    <listitem>
+                        <para>Declarative – automated matching of templates to data</para>
+                    </listitem>
+                    <listitem>
+                        <para>Extensible via extension functions and external function calls</para>
+                    </listitem>
+                    <listitem>
+                        <para>Many mature implementations</para>
+                    </listitem>
+                    <listitem>
+                        <para>Good tooling (e.g., Eclipse plugin, XMLSpy)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Good documentation</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Limitations</emphasis></para>
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>Transformation specifications are verbose and hard to
+                            read/understand/debug/maintain</para>
+                    </listitem>
+                    <listitem>
+                        <para>Transformation are entirely syntactic</para>
+                    </listitem>
+                    <listitem>
+                        <para>Limited to XML input – instances rendered in other formats
+                            cannot be translated</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+        </section>
+        <section>
+            <title>FHIR Mapping Language</title>
+            <para>
+                The FHIR mapping language (FML)<footnote xml:id="__EN7__">
+                    <para>
+                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="https://www.hl7.org/fhir/mapping-language.html"
+                            >https://www.hl7.org/fhir/mapping-language.html</link> (Accessed
+                        9/30/2017).
+                    </para>
+                </footnote> is a relatively new, bespoke transformation language specifically
+                designed to transform HL7 FHIR<footnote xml:id="__EN8__">
+                    <para>
+                        <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="https://www.hl7.org/fhir/index.html"
+                            >https://www.hl7.org/fhir/index.html</link> (Accessed 9/30/2017).
+                    </para>
+                </footnote> resources to alternative representations, including different FHIR
+                resources, C/CDE documents, etc. The mapping language was created by Graham Grieve
+                as a specification of the QVT framework for model-transformation languages (see
+                Section <xref linkend="_Ref494462079"/>).
+            </para>
+
+            <section>
+                <title>Overview of Language and Data Model</title>
+                <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
+                    rules that are automatically matched to input data, (b) includes a sub-language
+                    (“FHIRPath”) to reference parts of source parse trees, and (c) has the ability
+                    to reference external functions written in different languages. There are also
+                    notable differences between FML and XSLT. FHIR inputs are not constrained to XML
+                    documents, but may include any object models and rendering syntaxes conformant
+                    with OMG’s Meta Object Facility (MOF) language<footnote xml:id="__EN9__">
+                        <para>
+                            <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="http://www.omg.org/mof/">http://www.omg.org/mof/</link>
+                            (Accessed 9/30/2017).
+                        </para>
+                    </footnote>. MOF is a general formalism for representing object models as
+                    directed acyclic graphs (DAGs), and MOF-compliant models can use various
+                    syntactic constructs to represent the classes, attributes, and attribute values
+                    of such graphs. 
+                </para>
+
+                <para>
+                    Hence, in FML, there is no built-in notion of source trees containing XML
+                    “elements”, “attributes”, “comments”, “namespaces”, etc. In fact, FML
+                    transformation rules do not specify any target syntax for inputs or outputs,
+                    just the general concepts of named classes, class members, and member values.
+                    This flexibility would allow CIMI-to-SOLOR transformation inputs to be
+                    represented in different formats than XML, were that to be deemed preferable.
+                    For example, instances rendered using JSON, ODIN<footnote xml:id="__EN10__">
+                        <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="http://www.openehr.org/releases/BASE/latest/docs/odin/odin.html"
+                                >http://www.openehr.org/releases/BASE/latest/docs/odin/odin.html</link>
+                            (Accessed 9/30/2017).
+                        </para>
+                    </footnote>, or ASN1 syntax could be the inputs of FML transformations.
+                </para>
+            </section>
+
+            <section>
+                <title>Example Transformation</title>
+                <para><xref linkend="_Ref494463507"/> shows an excerpt from a transformation script
+                    written in the FHIR mapping language. This particular script translates prostate
+                    cancer reports formatted in a non- standard HL7 FHIR format<footnote
+                        xml:id="__FN3__">
+                        <para>In this case, the Royal College of Pathologists of Australasia (RCPA)
+                            standard structured report for prostate cancer (see <link
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="http://fhir.hl7.org.au/fhir/rcpa/prostate.html"
+                                >http://fhir.hl7.org.au/fhir/rcpa/prostate.html</link>). </para>
+                    </footnote> to equivalent reports formatted as standard FHIR Diagnostic Report
+                    resources. Note that the script references classes in the input and output data
+                    models, such as “Prostate” and “DiagnosticReport”, respectively. The script may
+                    do this because the MOF-compliant models for the input and output instances are
+                    specified in the first line of the script, and these models include the
+                    “Prostate” and “DiagnosticReport” classes, respectively. Note also how the
+                    script iteratively traverses the input instance, first addressing and
+                    translating the top-level node (“Prostate”), then addressing its child nodes
+                    (“Prostate.subject” and “Prostate.performer”).</para>
+                <figure xml:id="_Ref494463507">
+                    <title>Sample FHIR Mapping Language script.</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/fml_image14.png"
+                                width="5.5in"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>
+                    The output of an FML transformation is not a text-rendered document (unlike
+                    XSLT), but an internally stored DAG consistent with the specified output model
+                    (in the case above, the logical model of the FHIR DiagnosticReport resource).
+                    Subsequently, the DAG may be rendered in any number of syntaxes, including XML,
+                    JSON, or the tables and fields of a relational database. For example, <xref
+                        linkend="_Ref494464230"/> and <xref linkend="_Ref494464251"/> show the
+                    outputs of the FML transformation script shown in <xref linkend="_Ref494463507"
+                    /> rendered as XML and JSON, respectively.</para>
+                <figure xml:id="_Ref494464230">
+                    <title>Output of the sample FHIR Mapping Language script, rendered as
+                        XML.</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/fml_image15.png"
+                                width="5.5in"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <figure xml:id="_Ref494464251">
+                    <title>Output of the sample FHIR Mapping Language script, rendered as
+                        JSON.</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="images/fml_image16.png"
+                                width="5.5in"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </section>
+            <section>
+                <title>Advantages and Limitations</title>
+                <para>The FHIR Mapping Language may also be effective in representing and executing
+                    the transformation logic needed for CIMI-to-SOLOR translations. As with XSLT,
+                    however, there exist certain trade-offs in its use.
+                </para>
+                <para><emphasis role="bold">Advantages</emphasis></para>
+                <itemizedlist spacking="compact">
+                    <listitem>
+                        <para>Support for input formats other than XML</para>
+                    </listitem>
+                    <listitem>
+                        <para>Transformation logic produces semantic DAGs, which can be subsequently
+                            rendered in a variety of syntaxes.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The mapping specifications are more concise and easy to
+                            read/understand than XLST</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Limitations</emphasis></para>
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>Inputs/outputs other than FHIR logical models currently require
+                            additional custom programming</para>
+                    </listitem>
+                    <listitem>
+                        <para>Only XML and JSON are currently supported as output syntaxes without
+                            custom programming</para>
+                    </listitem>
+                    <listitem>
+                        <para>Only one implementation to date (as a library)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Limited tools for authoring/editing transformation scripts</para>
+                    </listitem>
+                    <listitem>
+                        <para>Limited sources of documentation</para>
+                    </listitem>
+                    <listitem>
+                        <para>Few knowledgeable programmers</para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+        </section>
+        <section xml:id="_Ref494462079">
+            <title>QVT</title>
+            <para>
+                A third alternative is to develop a new transformation language customized to
+                support the requirements of CIMI-to-SOLOR translations, based on the QVT language
+                used to develop the FHIR Mapping Language.
+            </para>
+            <section>
+                <title>Overview</title>
+                <para>QVT<footnote xml:id="__EN11__">
+                        <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="http://www.omg.org/spec/QVT/1.2/PDF/"
+                                >http://www.omg.org/spec/QVT/1.2/PDF/</link> (Accessed
+                            9/30/2017).
+                        </para>
+                    </footnote> is a general model-transformation framework and language developed
+                    by the Object Management Group . It includes both an imperative (“QVT-O”) and a
+                    declarative (“QVT-R”) version, and offers considerable flexibility in defining
+                    the constructs of purpose-specific transformation languages. Although QVT is
+                    intended for the transformation of data <emphasis>models</emphasis> rather than
+                    data instances, the FHIR Mapping Language shows that it can be applied to the
+                    latter task as well.
+                </para>
+
+                <para>
+                    A number of implementations of QVT exist as open-source and commercial
+                    software offerings. These include:
+                </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ATL (open source). Probably the most widely used and maintained of the
+                            available implementations. Includes a library of existing QVT
+                            transformations, to serve as examples and templates.
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>Eclipse M2M Project (open source). An Eclipse project that includes
+                            authoring tools for QVT transformations, as well as various
+                            transformation engines (including the one from ATL).
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>ModelMorf (proprietary)</para>
+                    </listitem>
+                    <listitem>
+                        <para>Others (see <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="https://en.wikipedia.org/wiki/QVT"
+                                >https://en.wikipedia.org/wiki/QVT</link>) 
+                        </para>
+                    </listitem>
+                </itemizedlist>
+            </section>
+            <section>
+                <title>Advantages and Limitations</title>
+                <para>
+                    The strength of QVT is that it is very abstract, which confers great
+                    flexibility and configurability to create custom transformation languages.
+                    However, the abstractness also makes QVT quite difficult to understand and
+                    learn, and there are limited resources to assist in the learning process. For
+                    example, a search on Amazon Books for references on the QVT framework yielded
+                    only 8 relevant results, most of which were not in English. In contrast, a
+                    similar search for XSLT references returned 270 results.
+                </para>
+            </section>
+        </section>
     </section>
 </chapter>
