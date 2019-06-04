@@ -52,6 +52,7 @@ public class BibliographyUtility {
         try{
 
             File file = new File(bibliographyFilePath);
+            file.getParentFile().mkdirs();
             JAXBContext jaxbContext = JAXBContext.newInstance(schemas.docbook.Bibliography.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 

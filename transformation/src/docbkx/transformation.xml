@@ -372,7 +372,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     however, there exist certain trade-offs in its use.
                 </para>
                 <para><emphasis role="bold">Advantages</emphasis></para>
-                <itemizedlist spacking="compact">
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>Support for input formats other than XML</para>
                     </listitem>

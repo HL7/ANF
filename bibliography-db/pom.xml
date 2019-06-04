@@ -3,16 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.hl7</groupId>
+        <artifactId>anf-ballot-submission</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <groupId>org.hl7.anf-ballot-submission</groupId>
     <artifactId>bibliography-db</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
     <name>ANF Ballot: Bibliography database</name>
     <description>Bibliography content for HL7 ANF Ballot Submission</description>
     <packaging>pom</packaging>
     <properties>
-        <docbook.root>bibliography.xml</docbook.root>
+        <docbook.root>bibliography-module.xml</docbook.root>
     </properties>
     <dependencies>
         <dependency>
@@ -74,6 +77,9 @@
                                     <goal>generate-html</goal>
                                 </goals>
                                 <configuration>
+                                    <preProcess>
+                                        <echo>docbook root: ${docbook.root}</echo>
+                                    </preProcess> 
                                     <!-- per execution configuration -->
                                     <includes>${docbook.root}</includes>
                                     <draftMode>yes</draftMode>
@@ -152,9 +158,9 @@
                         <executions>
                             <execution>
                                 <id>GenerateBibliography</id>
-                                <phase>compile</phase>
+                                <phase>generate-sources</phase>
                                 <configuration>
-                                    <directoryPath>${project.basedir}/src/docbkx/bibliography.xml</directoryPath>
+                                    <directoryPath>${project.build.directory}/generated-sources/docbkx/bibliography.xml</directoryPath>
                                     <groupId>${mendeleyGroupId}</groupId>
                                     <tagName>${tagName}</tagName>
                                     <username>${username}</username>
@@ -214,7 +220,6 @@
                     <plugin>
                         <groupId>com.agilejava.docbkx</groupId>
                         <artifactId>docbkx-maven-plugin</artifactId>
-                        <version>2.0.17</version>
                         <executions>
                             <execution>
                                 <id>generate-docbook</id>
@@ -239,7 +244,6 @@
                         </executions>
                         <configuration>
                             <!-- shared configuration -->
-                            <generatedSourceDirectory>${project.build.directory}/docbkx/generated</generatedSourceDirectory>
                             <xincludeSupported>true</xincludeSupported>
                             <paperType>USletter</paperType>
                             <fop1Extensions>1</fop1Extensions>
@@ -284,9 +288,9 @@
                         <executions>
                             <execution>
                                 <id>GenerateBibliography</id>
-                                <phase>compile</phase>
+                                <phase>generate-resources</phase>
                                 <configuration>
-                                    <directoryPath>${project.basedir}/src/docbkx/bibliography.xml</directoryPath>
+                                    <directoryPath>${project.build.directory}/generated-sources/docbkx/bibliography.xml</directoryPath>
                                     <groupId>place_holder</groupId>
                                     <tagName>place_holder</tagName>
                                     <username>place_holder</username>
