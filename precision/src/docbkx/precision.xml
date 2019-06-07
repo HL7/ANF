@@ -11,7 +11,7 @@
 I think it would be valuable if we could show how ANF can improve the precision of “clinical statements”.
 Both C-CDA and FHIR US core specify profiles intended to represent data captured by EHRs. If we could show how an EHR-produced “result” could be represented in ANF.
 We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
-" id="c2z_fxv_lhb" mid="1"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb" mid="2"?>Precisio<?oxy_comment_end mid="2"?><?oxy_comment_end?><?oxy_comment_end mid="1"?>n
+" id="c2z_fxv_lhb" mid="1"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb" mid="2"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb"?>Precisio<?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?>n
             of Clinical Statements Using ANF (*DRAFT*)</title>
         <para>The representation of clinical data across disparate healthcare organizations is
             highly variable; due to the various networks, communication channels, set of
@@ -53,6 +53,8 @@ We could propose this improvement to Orders&amp;Observations, Patient Care, and 
         <para>If specified correctly, post-coordinated expressions also support subsumption testing.
             Hence, the patient whose record contains the expression above would also be identified
             by the query “find all patients with a diagnosis of any infectious disease (Infectious
-            Disease : ConceptID = 40733004) in their record.”</para>
+            Disease : ConceptID = 40733004) in their
+            record.”<?oxy_comment_start author="rcholan" timestamp="20190607T180609-0400" comment="RC: adding comment to test email notification"?></para><?oxy_comment_end?>
+        <para>RC: Test</para>
     </section>
 </chapter>
