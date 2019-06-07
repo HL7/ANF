@@ -4,7 +4,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Modeling Principles</title>
+    <title>ANF Modeling Principles</title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -29,14 +29,11 @@
                                 </itemizedlist>
                             </listitem>
                         </itemizedlist>
-                        <para> </para>
                     </entry>
                 </row>
             </tbody>
         </tgroup>
     </informaltable>
-    <para> RC: Intro text needed</para>
-    <para>RC: Look at Glossary and Add here</para>
     <section>
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
@@ -76,7 +73,6 @@ Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semanti
                     single class and not be spread across a number of classes .<?oxy_comment_end?>
                     Doing the latter leads to tight coupling between classes. Doing the former leads
                     to better decomposition of a potentially complex domain.</para>
-                <para> </para>
                 <para><emphasis role="bold">Example:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111139-0400" comment="Comment from WC:
 Is ‘Practitioner’ here are a Role or an Attribute. Is ‘Person’ an Entity or an Attribute? What is a ‘Role’ and an ‘Entity’? In BFO OWL, everything which is an instance of Role at some time is also instance of Entity at that time.
@@ -292,7 +288,7 @@ Examples needed, although I would favor such an approach, one can’t argue that
                     problematic.
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111712-0400" comment="Comment from WC:
 They never learn, do they? (Or rather their victims never learn).
-"?>For
+" flag="done"?>For
                     instance, in FHIR, the Composition class defines an attribute called Subject. In
                     some subclasses, the attribute may be the entity that this composition refers to
                     (e.g., the patient in a medical record). In other cases, it is the topic being
@@ -333,101 +329,132 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         role="bold">Iterative development and validation of model using use cases:
                         TBD</emphasis><?oxy_comment_end?></para>
             </listitem>
-            <listitem>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221107-0500" comment="Where does this fit?" id="azm_dry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094158-0500" comment="Regards to Topic.  Should these go with editorial rules
-" parentID="azm_dry_thb" mid="26"?><emphasis
-                                    role="bold"
-                                >Prerequisite</emphasis><?oxy_comment_end?><?oxy_comment_end mid="26"?>:</para>
-                            <itemizedlist>
-                                <listitem>
-                                    <para>A <emphasis role="bold">state</emphasis> that <emphasis
-                                role="bold">must</emphasis> exist before something else can happen
-                            or be done.</para>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>The state must exist can prior to the performance
-                                                of the action</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>The state that must exist pertains to</para>
-                                            <itemizedlist>
-                                                <listitem>
-                                                  <para>the subject of record (e.g. patient)</para>
-                                                </listitem>
-                                                <listitem>
-                                                  <para>the environment (e.g. necessary room
-                                                  temperature, required time of day)</para>
-                                                </listitem>
-                                            </itemizedlist>
-                                        </listitem>
-                                        <listitem>
-                                            <para>A prerequisite is separable from the topic and can
-                                                be expressed as a stand-alone clinical
-                                                statement</para>
-                                            <itemizedlist>
-                                                <listitem>
-                                                  <para>Example: Arterial blood pressure 120 mmHg,
-                                                  taken with patient in sitting position. <emphasis
-                                                  role="italic">“Patient in sitting
-                                                  position”</emphasis> is separable from the topic
-                                                  and exists prior to the performance of the action
-                                                  and therefore constitutes a prerequisite.</para>
-                                                </listitem>
-                                            </itemizedlist>
-                                        </listitem>
-                                    </itemizedlist>
-                                </listitem>
-                            </itemizedlist>
-            </listitem>
-                        <listitem>
-                            <para><?oxy_comment_start author="timowilliams" timestamp="20190514T221115-0500" comment="Where does this fit?" id="ihs_bry_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190517T094127-0500" comment="Associated Statement" parentID="ihs_bry_thb" mid="28"?><emphasis
-                                    role="bold"
-                                >Technique:</emphasis><?oxy_comment_end?><?oxy_comment_end mid="28"?></para>
-                            <itemizedlist>
-                                <listitem>
-                                    <para><emphasis role="italic">Definition</emphasis> : A device
-                                        used, a method applied, or a temporary state in which the
-                                        patient was <emphasis role="bold">actively</emphasis> placed
-                                            <emphasis role="bold">during</emphasis> performance of
-                                        the action.</para>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>Actions can be performed by various techniques. As
-                                                opposed to the action itself, which is <emphasis
-                                                  role="italic"><emphasis role="underline"
-                                                  >what</emphasis></emphasis> is carried out, the
-                                                technique defines <emphasis role="italic"><emphasis
-                                                  role="underline">how</emphasis></emphasis> the
-                                                action is done in general or in a particular
-                                                instance.</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>The use of the device or the method that is
-                                                applied must start during the performance of the
-                                                action.</para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>A technique is inseparable from the topic and
-                                                cannot be expressed as a stand-alone clinical
-                                                statement.</para>
-                                            <itemizedlist>
-                                                <listitem>
-                                                  <para>Example: Arterial blood pressure 120 mmHg,
-                                                  taken on right brachial artery. <emphasis
-                                                  role="italic">“Taken on right brachial
-                                                  artery”</emphasis> is inseparable from the topic
-                                                  and cannot be expressed as a stand-alone clinical
-                                                  statement. It therefore constitutes a
-                                                  technique.</para>
-                                                </listitem>
-                                            </itemizedlist>
-                                        </listitem>
-                                    </itemizedlist>
-                                </listitem>
-                            </itemizedlist>
-                        </listitem>
         </orderedlist>
 
     </section>
+    <section>
+        <title>Shared Modeling Guidelines</title>
+        <para>All ANF clinical statements share some common model components. The following modeling
+            guidelines can be used to properly model a narrative into the appropriate components of
+            a single clinical statement or a clinical statement that has multiple associated
+            statements. For the purposes of ANF, a clinical statement is a request or performance of
+            an action that has to be able to exist on its own. Therefore a narrative would be
+            separated into multiple clinical statements if it contains multiple requests or
+            performance of actions that could exist on their own.</para>
+        <para><emphasis role="bold">Prerequisite</emphasis>: A prerequisite is a <emphasis
+                role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
+            something else can happen or be done. Pre-requisite are part of the details under which
+            a procedure is being performed. The state must exist can prior to the performance of the
+            action</para>
+        <itemizedlist>
+                    <listitem>
+                        <para>The state that must exist pertains to</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>the subject of record (e.g. patient)</para>
+                            </listitem>
+                            <listitem>
+                                <para>the environment (e.g. necessary room temperature, required
+                                    time of day)</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>A prerequisite is separable from the topic and can be expressed as a
+                            stand-alone clinical statement</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Example: Arterial blood pressure 120 mmHg, taken with patient
+                                    in sitting position. <emphasis role="italic">“Patient in sitting
+                                        position”</emphasis> is separable from the topic and exists
+                                    prior to the performance of the action and therefore constitutes
+                                    a prerequisite.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Purpose</emphasis>: The purpose is why an action was
+            requested</para>
+        <itemizedlist>
+            <listitem>
+                <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
+                    attribute describing the purpose</para>
+            </listitem>
+        </itemizedlist>
+        <para><emphasis role="bold">Technique:</emphasis></para>
+        <itemizedlist>
+            <listitem>
+                <para><emphasis role="italic">Definition</emphasis> : A device used, a
+                    method applied, or a temporary state in which the patient was <emphasis
+                        role="bold">actively</emphasis> placed <emphasis role="bold"
+                            >during</emphasis> performance of the action.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Actions can be performed by various techniques. As opposed to
+                            the action itself, which is <emphasis role="italic"><emphasis
+                                role="underline">what</emphasis></emphasis> is carried
+                            out, the technique defines <emphasis role="italic"><emphasis
+                                role="underline">how</emphasis></emphasis> the action is
+                            done in general or in a particular instance.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The use of the device or the method that is applied must start
+                            during the performance of the action.</para>
+                    </listitem>
+                    <listitem>
+                        <para>A technique is inseparable from the topic and cannot be
+                            expressed as a stand-alone clinical statement.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Example: Arterial blood pressure 120 mmHg, taken on
+                                    right brachial artery. <emphasis role="italic">“Taken on
+                                        right brachial artery”</emphasis> is inseparable
+                                    from the topic and cannot be expressed as a stand-alone
+                                    clinical statement. It therefore constitutes a
+                                    technique.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </itemizedlist>
+        <figure>
+            <title>Common Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
     
+    <section>
+        <title>Request for Action Guidelines</title>
+        <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
+            always represent a future time, therefore the Measure used in the Timing will be for a
+            future time.</para>
+        <figure>
+            <title>Request for Action Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/request_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    
+    <section>
+        <title>Performance of Action Guidelines</title>
+        <figure>
+            <title>Performance of Action Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/performance_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
 </chapter>
