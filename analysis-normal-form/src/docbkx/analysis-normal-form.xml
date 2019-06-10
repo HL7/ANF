@@ -434,6 +434,37 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
             always represent a future time, therefore the Measure used in the Timing will be for a
             future time.</para>
+        <para><emphasis role="bold">Requested Participant: </emphasis> If the Request for Action
+            specifies a Requested Participant the requestedParticipant will be populated.</para>
+        <para><emphasis role="bold">Topic</emphasis></para>
+        <para>The topic follows a variety of possible patterns:<itemizedlist>
+                <listitem>
+                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Imaging Procedure</emphasis>: For Requesting of Imaging
+                        procedures, the Topic will be built using an Imaging Procedure concept.
+                        These concepts will be further refined with a Method, Procedure site -
+                        Direct and (if appropriate) a laterality for those sites that are
+                        lateralizable.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
+                        is an observation would begin with an Observation procedure.  The
+                        Observation procedure with then have a Has focus attribute linking it to the
+                        Clinical Finding or Disorder that it is being observed.  The observation
+                        procedure can also be further refined by adding the Method, Procedure site -
+                        Direct, (if appropriate) laterality, and Using device.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
+                        would be represented by a Procedure concept with any of the approved
+                        terminology procedure attributes applied.</para>
+                </listitem>
+            </itemizedlist></para>
         <figure>
             <title>Request for Action Modeling Guideline Decision Tree</title>
             <mediaobject>
@@ -447,6 +478,39 @@ I don’t see why, or what the ‘symmetry’ would apply to.
     
     <section>
         <title>Performance of Action Guidelines</title>
+        <para><emphasis role="bold">Timing</emphasis>: For a Performance of Action, the Timing can
+            represent a time in the past or a current time.  If a history of a performance of action
+            is to be represented in ANF the Timing will be XXXX.  Otherwise the Timing will be
+            represented by XXXXX.</para>
+        <para><emphasis role="bold">Topic</emphasis></para>
+        <para>The topic follows a variety of possible patterns:<itemizedlist>
+                <listitem>
+                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
+                        procedures, the Topic will be built using an Imaging Procedure concept.
+                        These concepts will be further refined with a Method, Procedure site -
+                        Direct and (if appropriate) a laterality for those sites that are
+                        lateralizable.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
+                        that is an observation would begin with an Observation procedure.  The
+                        Observation procedure with then have a Has focus attribute linking it to the
+                        Clinical Finding or Disorder that it is being observed.  The observation
+                        procedure can also be further refined by adding the Method, Procedure site -
+                        Direct, (if appropriate) laterality, and Using device.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>All Other Procedures</emphasis>: Any other action that was
+                        performed would be represented by a Procedure concept with any of the
+                        approved terminology procedure attributes applied.</para>
+                </listitem>
+            </itemizedlist></para>
         <figure>
             <title>Performance of Action Modeling Guideline Decision Tree</title>
             <mediaobject>
