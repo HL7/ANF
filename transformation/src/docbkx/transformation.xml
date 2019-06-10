@@ -7,7 +7,7 @@
     <title><?oxy_comment_start author="kmaulden" timestamp="20190423T101734-0400" comment="KC: Don’t put too much effort into this. Describe transformation on a high level. Put the most work into the examples (BP, Pulse etc. earlier in the document)
 IS: Big value is the endpoint of data being normalized into ANF. 
 KC: We can convince people that ANF has value like 1st normal form and 2nd normal form (Tim has expertise here). 
-"?>Transformation<?oxy_comment_end?>
+"?>Normalization<?oxy_comment_end?>
     </title>
     <?oxy_comment_start author="rcholan" timestamp="20190530T135236-0400" comment="Perhaps we should change this chapter name to Normalization..."?>
     <informaltable><?oxy_comment_end?>
@@ -19,8 +19,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                         <para><emphasis role="bold">Purpose of this section:</emphasis></para>
                         <itemizedlist>
                             <listitem>
-                                <para>Explain how the ANF Model transforms the clinical statements
-                                    into normalized data</para>
+                                <para>Explain that the ANF Model is a normalized representation of a clinical statement, and other representations can be transformed into this one view</para>
                             </listitem>
                         </itemizedlist>
                     </entry>
@@ -28,13 +27,99 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             </tbody>
         </tgroup>
     </informaltable>
+
+
+    <para>
+            Normalization of clinical statements is defined by Elkin as "the ability to identify
+            every representational format that confers the same meaning as being equivalent (i.e.,
+            unambiguous representation). 
+    </para>
+
+
     <section>
-        <title> Transformation</title>
-        <para>ANF seeks to simplify the complexity that currently exists in clinical statement
-            models.  ANF provides a normal form for clinical information captured using any approach
-            to data entry using either standard-based logical models (e.g. CIMI, DCM, etc.) or
-            proprietary data entry approaches (See “Structured Clinical Statement” section). ANF
-            helps transform clinical data into normalized data that can then be used to: </para>
+        <title>Data Structures</title>
+        <para>
+            Currently, the standard is to define detailed clinical models using different data structures for 
+            different domains of clinical statements.  For example, FHIR independently defines the resources for Conditions, 
+            Observations, Diagnosis, Procedure, Goal, Medication Administration, Medication Request, etc. 
+            Some implementations, such as FHIR, explicity define the property names
+            for the parts of each data structure tree and other formalisms such as BMM/ADL and CEML 
+            use a form of key-value pairing to genericise the property naming of the data structure tree. 
+            But in all these cases, the fact remains that the resulting structure of the tree still remains different 
+            for different domains of clinical statements. Thus, computation and analysis requires a 
+            prior understanding of the tree structure for each domain.
+        </para>
+        <para>
+
+        </para>
+        <para>ANF seeks to simplify the complexity that currently exists in detailed clinical
+            models.  As it's name suggests, Analysis Normal Form provides one normalized data structure to describe
+            clinical statements from all domains.<footnote>
+                <para>
+                    This isn't entirely true. ANF actually describes different data structures for the Performance of an action versus the Request of an action.  
+                </para>
+            </footnote>
+            ANF accomplishes this by moving the complexity that usually requires a complex data structure into
+            the terminology as a complex post-coordinated snomed expression.
+        </para>
+
+    </section>
+
+    <section>
+        <title>Modeling Choices</title>
+
+        <para>
+            Another variation that currently exists are the allowed design choices which can be made by model authors.
+            For example, a modeler may choose to model breath sounds, as 'breath sounds' with a coded result of 'rales',
+            or as 'rales' with a result of 'present'.
+            Currently, organiztions try to minimize this type of variation by
+            documenting design choice rules in modeling "style guides".
+            For instance, a common style guide choice in the CIMI Clinical Statement model is to
+            either use the Assertion style or the Evaluation Result style, and CIMI documents which types of clinical statement
+            are best suited for each. The current approach is to solve the problem by conformity rather than with technology.
+        </para>
+
+        <para>
+            ANF seeks to minimize this variation by only allowing quantitative results.  This eliminates the choice
+            between Evaluation style versus Assertion style clinical statements as coded results are not possible.
+        </para>
+
+    </section>
+
+    <section>
+        <title>Transformation</title>
+
+        <para>
+            We have described current systems as having variation in data structure and modeling style.  This variation is further compounded
+            when When transferring data between and amongst institutions. Analysis Normal Form can act as a transformation target to normalize
+            these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
+        </para>
+
+        <figure xml:id="transformationToANF_0135">
+            <title>Transformation to ANF</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/transformationToAnf.png" align="center" format="png" width="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
+        <para>
+           Transformation, in this case, is not a simple endeavor that one can hope to automate across domains of clinical statements or even within a single domain of clinical statements. As presented, it will involve navigating disparate data structure trees and include variable representations to then generate a well-formed post-coordinated snomed expression.  It is most likely possible to target subdomains for consistent transformation, such as all quantitative laboratory results, but in some cases, it may be that one detailed clinical model needs it's own unique transformation.
+        </para>
+
+        <para>
+            Currently, there are three basic categories of errors that
+            might be associated with attempts at normalizing clinical statement represenation. The
+            first is error associated with normalization of content of the terminology; the second
+            is error associated with normalization of the semantics of the terminology; and, third
+            is errors that result from ambiguous or misleading interaction between the structured
+            clinical input and presentation of compound terminology to clinician end-users. 
+        </para>
+
+        
+
+    <!--
         <para>
             <itemizedlist>
                 <listitem>
@@ -53,38 +138,36 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                 </listitem>
             </itemizedlist>
         </para>
-        <para>Clinical data will start off overly post-coordinated but with the data potentially
+    
+        <para>
+            Clinical data will start off overly post-coordinated but with the data potentially
             spread across multiple fields. By creating an ANF statement, one can take the disparate
             information and organize it so that the post-coordination is mostly contained in the
             topic representation instead of being spread across disparate fields. For instance,
             there may be 1 clinical statement in an EHR for blood pressure measurement and care
             planning that might be 5 observations when represented by FHIR. There are many different
             ways to create the FHIR data structures. Redundancy in representation of clinical
-            statmenets may cause insertion, deletion and, maintenance of anomalies. </para>
+            statmenets may cause insertion, deletion and, maintenance of anomalies. 
+        </para>
+
+
+
             <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I believe this is
             actually the opposite.  Normalization will result in the information being spread across more
             clinical statements.  For example, in ANF, patient sitting and having urinated will be there
             own associated clinical statements"?><?oxy_comment_end?>
-        <para>Normalization of clinical statements is defined by Elkin as "the ability to identify
-            every representational format that confers the same meaning as being equivalent (i.e.,
-            unambiguous representation). Currently, there are three basic categories of errors that
-            might be associated with attempts at normalizing clinical statement represenation. The
-            first is error assosicated with normalization of content of the terminology; the second
-            is error associated with normalization of the semantics of the terminology; and, third
-            is errors that result from ambiguous or misleading interaction between the structured
-            clinical input and presentation of compound terminology to clinician end-users. </para>
-        <para>A current solution to minimize the variation of representing clinical statements is by
-            using rules that protect against unrecognized ambiguity. Rules are created and
-            documented by various healthcare organizations and aim to help modelers in making
-            choices related to compostional grammar rules and to adhere to modeling "style guides".
-            For instance, a common style guide choice in the CIMI Clinical Statement model is to
-            either use the Assertion style or the Evaluation Result style. When transferring data
-            structures between and amongst institutions, these different styles may be a problem.
-            The current approach is to solve the problem by conformity rather than with technology.
-            Normalization implies the ability to recognize all representations that express the same
-            meaning as being algorithimically equivalent.
-            <?oxy_comment_start author="rcholan" timestamp="20190530T135125-0400" comment="We need exampes to walk through normalization. "?></para><?oxy_comment_end?>
-        <para>With ANF, we aim to reduce the ambiguity and redundancy in model representation of
+
+            
+
+        
+
+        <para>
+            
+        </para>
+            <?oxy_comment_start author="rcholan" timestamp="20190530T135125-0400" comment="We need exampes to walk through normalization. "?><?oxy_comment_end?>
+
+        <para>
+            With ANF, we aim to reduce the ambiguity and redundancy in model representation of
             clincial statements. ANF
             <?oxy_comment_start author="timowilliams" timestamp="20190522T215723-0500" comment="Where do concrete domains fit in?"?>will
             be able to handle concrete domains by increasing the payload in the topic representation
@@ -95,31 +178,36 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             <?oxy_comment_start author="timowilliams" timestamp="20190522T220242-0500" comment="Is this true?  What about Status and Priority?  Even Presence and Absence can change the meaning of the topic."?>With
             ANF, the things that change meaning are always in the topic.<?oxy_comment_end?> Whether
             something is a request or has occurred – this is not in the topic. That separation is
-            okay because of xxx</para>
-        <para>With ANF, we are cutting down the choices modelers will have to make, but we do not
+            okay because of xxx.
+        </para>
+
+        <para>
+            With ANF, we are cutting down the choices modelers will have to make, but we do not
             eliminate all the choices. There may still be more than 1 way to represent things in ANF
             and therefore there are the following editorial rules that we recommend to promote
             conformity amongst modelers: <?oxy_comment_start author="rcholan" timestamp="20190523T005636-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. "?>xxx<?oxy_comment_end?>
-            <?oxy_comment_start author="rcholan" timestamp="20190530T135833-0400" comment="Tim&apos;s decision tree?"?></para><?oxy_comment_end?>
-        <?oxy_comment_start author="timowilliams" timestamp="20190523T103205-0500" comment="Should we discuss mapping issues here?  Can we reuse some of the Solor slides around mapping to highlight an issue of using mapping?"?>
-        <para>The following diagram highlights how clinical statements recorded using a model of
-            knowledge (e.g. CIMI model or archetype) are used to enter information that may be
-            exchanged using a variety of interoperability artifacts (e.g. HL7 V2 messages, CDA
-            documents, FHIR resources). If the information is aggregated and normalized for
-            analysis, the ANF clinical statement may be used to extract/query normalized clinical
-            statements using ANF-based FHIR template. The diagram illustrates the role each SAIF-CD
-            Perspective. </para><?oxy_comment_end?>
-        <para>
-            <figure>
-                <title>Applying ANF to analysis of aggregate clinical statements</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/transformation.svg" scalefit="1" width="100%"
-                            format="SVG" contentdepth="50%"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
+            <?oxy_comment_start author="rcholan" timestamp="20190530T135833-0400" comment="Tim&apos;s decision tree?"?><?oxy_comment_end?>
         </para>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T103205-0500" comment="Should we discuss mapping issues here?  Can we reuse some of the Solor slides around mapping to highlight an issue of using mapping?"?>
+            <para>The following diagram highlights how clinical statements recorded using a model of
+                knowledge (e.g. CIMI model or archetype) are used to enter information that may be
+                exchanged using a variety of interoperability artifacts (e.g. HL7 V2 messages, CDA
+                documents, FHIR resources). If the information is aggregated and normalized for
+                analysis, the ANF clinical statement may be used to extract/query normalized clinical
+                statements using ANF-based FHIR template. The diagram illustrates the role each SAIF-CD
+                Perspective. 
+            </para><?oxy_comment_end?>
+       
+        <figure>
+            <title>Applying ANF to analysis of aggregate clinical statements</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/transformation.svg" scalefit="1" width="100%"
+                        format="SVG" contentdepth="50%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        
         <para>Normal forms are commonly used to eliminate or reduce redundancy in database tables.
             ANF can have similar benefits on clinical data storage and retrieval:</para>
         <para><emphasis role="bold">1. First Normal Form</emphasis></para>
@@ -133,6 +221,24 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             Dependency, i.e., no non-prime attribute (attributes which are not part of any candidate
             key) is dependent on any proper subset of any candidate key of the table.</para>
     </section>
+
+    -->
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
     <section>
         <title>Transformation Languages</title>
         <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This section was
@@ -301,69 +407,15 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                         </para>
                     </footnote>, or ASN1 syntax could be the inputs of FML transformations.
                 </para>
-            </section>
 
-            <section>
-                <title>Example Transformation</title>
-                <para><xref linkend="_Ref494463507"/> shows an excerpt from a transformation script
-                    written in the FHIR mapping language. This particular script translates prostate
-                    cancer reports formatted in a non- standard HL7 FHIR format<footnote
-                        xml:id="__FN3__">
-                        <para>In this case, the Royal College of Pathologists of Australasia (RCPA)
-                            standard structured report for prostate cancer (see <link
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xlink:href="http://fhir.hl7.org.au/fhir/rcpa/prostate.html"
-                                >http://fhir.hl7.org.au/fhir/rcpa/prostate.html</link>). </para>
-                    </footnote> to equivalent reports formatted as standard FHIR Diagnostic Report
-                    resources. Note that the script references classes in the input and output data
-                    models, such as “Prostate” and “DiagnosticReport”, respectively. The script may
-                    do this because the MOF-compliant models for the input and output instances are
-                    specified in the first line of the script, and these models include the
-                    “Prostate” and “DiagnosticReport” classes, respectively. Note also how the
-                    script iteratively traverses the input instance, first addressing and
-                    translating the top-level node (“Prostate”), then addressing its child nodes
-                    (“Prostate.subject” and “Prostate.performer”).</para>
-                <figure xml:id="_Ref494463507">
-                    <title>Sample FHIR Mapping Language script.</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="images/fml_image14.png"
-                                width="5.5in"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
+
                 <para>
                     The output of an FML transformation is not a text-rendered document (unlike
-                    XSLT), but an internally stored DAG consistent with the specified output model
-                    (in the case above, the logical model of the FHIR DiagnosticReport resource).
+                    XSLT), but an internally stored DAG consistent with the specified output model.
                     Subsequently, the DAG may be rendered in any number of syntaxes, including XML,
-                    JSON, or the tables and fields of a relational database. For example, <xref
-                        linkend="_Ref494464230"/> and <xref linkend="_Ref494464251"/> show the
-                    outputs of the FML transformation script shown in <xref linkend="_Ref494463507"
-                    /> rendered as XML and JSON, respectively.</para>
-                <figure xml:id="_Ref494464230">
-                    <title>Output of the sample FHIR Mapping Language script, rendered as
-                        XML.</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="images/fml_image15.png"
-                                width="5.5in"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <figure xml:id="_Ref494464251">
-                    <title>Output of the sample FHIR Mapping Language script, rendered as
-                        JSON.</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="images/fml_image16.png"
-                                width="5.5in"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
+                    JSON, or the tables and fields of a relational database. 
+                </para>
+                
             </section>
             <section>
                 <title>Advantages and Limitations</title>
