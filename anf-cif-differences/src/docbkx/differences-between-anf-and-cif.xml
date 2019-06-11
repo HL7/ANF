@@ -36,7 +36,6 @@
             <para>The representation of results.</para>
         </listitem>
     </orderedlist>
-    <!-- Credential test - jc -->
     <section>
         <title>The Representation of Topic</title>
         <para>In the ANF model, the topic is represented by a single field containing a simple to
