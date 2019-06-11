@@ -415,7 +415,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         <para><emphasis role="bold">Priority:</emphasis> Priority is used to represent the priority
             for which the request is to be carried out.  By default a Request will be considered
             "routine" unless otherwise specified</para>
-        <para><emphasis role="bold">Topic</emphasis>:The topic follows a variety of possible patterns:<itemizedlist>
+        <para><emphasis role="bold">Topic</emphasis>: The topic follows a variety of possible
+            patterns.  For example:</para>
+            <itemizedlist>
                 <listitem>
                     <para><emphasis>Administration of Medication</emphasis>: XXXXX</para>
                 </listitem>
@@ -439,35 +441,37 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         would be represented by a Procedure concept with any of the approved
                         terminology procedure attributes applied.</para>
                 </listitem>
-            </itemizedlist><para><emphasis role="bold">Repetition:</emphasis>  Repetition is used to
-                represent when an action is requested for more than a single occurrence.  Repetition
-                is an optional component for a RequestCircumstance.  A Request Component contains
-                five Measures that are used to further define the parameters of the Repetition:<itemizedlist>
+            </itemizedlist>
+            <para><emphasis role="bold">Repetition:</emphasis> Repetition is used to
+                represent when an action is requested for more than a single occurrence. Repetition
+                is an optional component for a RequestCircumstance. A Request Component contains
+                five Measures that are used to further define the parameters of the Repetition:</para>
+            <itemizedlist>
                     <listitem>
                         <para><emphasis>periodDuration:</emphasis>This required field is used to
-                            represent how long a repetition should persist.  If it is not specified,
+                            represent how long a repetition should persist. If it is not specified,
                             a default value of [0,inf] will be used. e.g. for 3 weeks</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>periodStart:</emphasis> This required field is used to
-                            represent when a repeated action should begin.  If it is not specified,
-                            a default value of [0,inf] will be used. e.g. NOW</para>
+                            represent when a repeated action should begin. If it is not specified, a
+                            default value of [0,inf] will be used. e.g. NOW</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>eventSeparation:</emphasis>This required field is used to
-                            represent how long between actions.  If it is not specified, a default
+                            represent how long between actions. If it is not specified, a default
                             value of [0,inf] will be used. e.g. for 2 weeks</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>eventFrequency:</emphasis>This required field is used to
-                            represent how often the action should occur.  If it is not specified, a
+                            represent how often the action should occur. If it is not specified, a
                             default value of [0,inf] will be used. e.g. 3 times per week</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>eventDuration:</emphasis>This is an optional field that is
-                            used to represent how long every action should last.  </para>
+                            used to represent how long every action should last. </para>
                     </listitem>
-                </itemizedlist></para></para>
+                </itemizedlist>
         <para><emphasis role="bold">conditionalTrigger:</emphasis>conditionalTriggers differ from
             prerequisites in that they cause the action to be performed. conditionalTriggers
             contribute to the timing of when the request will be performed and not necessarily to
