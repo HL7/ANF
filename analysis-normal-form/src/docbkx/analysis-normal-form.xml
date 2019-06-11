@@ -334,6 +334,15 @@ I don’t see why, or what the ‘symmetry’ would apply to.
     </section>
     <section>
         <title>Shared Modeling Guidelines</title>
+        <figure>
+            <title>Common Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>All ANF clinical statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
             a single clinical statement or a clinical statement that has multiple associated
@@ -418,24 +427,28 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </itemizedlist>
             </listitem>
         </itemizedlist>
-        <figure>
-            <title>Common Modeling Guideline Decision Tree</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+        
     </section>
     
     <section>
         <title>Request for Action Guidelines</title>
+        <figure>
+            <title>Request for Action Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/request_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
             always represent a future time, therefore the Measure used in the Timing will be for a
             future time.</para>
         <para><emphasis role="bold">Requested Participant: </emphasis> If the Request for Action
             specifies a Requested Participant the requestedParticipant will be populated.</para>
+        <para><emphasis role="bold">Priority:</emphasis> Priority is used to represent the priority
+            for which the request is to be carried out.  By default a Request will be considered
+            "routine" unless otherwise specified</para>
         <para><emphasis role="bold">Topic</emphasis></para>
         <para>The topic follows a variety of possible patterns:<itemizedlist>
                 <listitem>
@@ -465,19 +478,20 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         terminology procedure attributes applied.</para>
                 </listitem>
             </itemizedlist></para>
-        <figure>
-            <title>Request for Action Modeling Guideline Decision Tree</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/request_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+        
     </section>
     
     <section>
         <title>Performance of Action Guidelines</title>
+        <figure>
+            <title>Performance of Action Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/performance_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para><emphasis role="bold">Timing</emphasis>: For a Performance of Action, the Timing can
             represent a time in the past or a current time.  If a history of a performance of action
             is to be represented in ANF the Timing will be XXXX.  Otherwise the Timing will be
@@ -511,14 +525,5 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         approved terminology procedure attributes applied.</para>
                 </listitem>
             </itemizedlist></para>
-        <figure>
-            <title>Performance of Action Modeling Guideline Decision Tree</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/performance_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
     </section>
 </chapter>
