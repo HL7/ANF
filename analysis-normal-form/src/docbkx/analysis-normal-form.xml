@@ -334,6 +334,15 @@ I don’t see why, or what the ‘symmetry’ would apply to.
     </section>
     <section>
         <title>Shared Modeling Guidelines</title>
+        <figure>
+            <title>Common Modeling Guideline Decision Tree</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
+                        contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
         <para>All ANF clinical statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
             a single clinical statement or a clinical statement that has multiple associated
@@ -418,22 +427,11 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </itemizedlist>
             </listitem>
         </itemizedlist>
-        <figure>
-            <title>Common Modeling Guideline Decision Tree</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-        </figure>
+        
     </section>
     
     <section>
         <title>Request for Action Guidelines</title>
-        <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
-            always represent a future time, therefore the Measure used in the Timing will be for a
-            future time.</para>
         <figure>
             <title>Request for Action Modeling Guideline Decision Tree</title>
             <mediaobject>
@@ -443,6 +441,44 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
+        <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
+            always represent a future time, therefore the Measure used in the Timing will be for a
+            future time.</para>
+        <para><emphasis role="bold">Requested Participant: </emphasis> If the Request for Action
+            specifies a Requested Participant the requestedParticipant will be populated.</para>
+        <para><emphasis role="bold">Priority:</emphasis> Priority is used to represent the priority
+            for which the request is to be carried out.  By default a Request will be considered
+            "routine" unless otherwise specified</para>
+        <para><emphasis role="bold">Topic</emphasis></para>
+        <para>The topic follows a variety of possible patterns:<itemizedlist>
+                <listitem>
+                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Imaging Procedure</emphasis>: For Requesting of Imaging
+                        procedures, the Topic will be built using an Imaging Procedure concept.
+                        These concepts will be further refined with a Method, Procedure site -
+                        Direct and (if appropriate) a laterality for those sites that are
+                        lateralizable.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
+                        is an observation would begin with an Observation procedure.  The
+                        Observation procedure with then have a Has focus attribute linking it to the
+                        Clinical Finding or Disorder that it is being observed.  The observation
+                        procedure can also be further refined by adding the Method, Procedure site -
+                        Direct, (if appropriate) laterality, and Using device.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
+                        would be represented by a Procedure concept with any of the approved
+                        terminology procedure attributes applied.</para>
+                </listitem>
+            </itemizedlist></para>
+        
     </section>
     
     <section>
@@ -456,5 +492,38 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
+        <para><emphasis role="bold">Timing</emphasis>: For a Performance of Action, the Timing can
+            represent a time in the past or a current time.  If a history of a performance of action
+            is to be represented in ANF the Timing will be XXXX.  Otherwise the Timing will be
+            represented by XXXXX.</para>
+        <para><emphasis role="bold">Topic</emphasis></para>
+        <para>The topic follows a variety of possible patterns:<itemizedlist>
+                <listitem>
+                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
+                        procedures, the Topic will be built using an Imaging Procedure concept.
+                        These concepts will be further refined with a Method, Procedure site -
+                        Direct and (if appropriate) a laterality for those sites that are
+                        lateralizable.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
+                        that is an observation would begin with an Observation procedure.  The
+                        Observation procedure with then have a Has focus attribute linking it to the
+                        Clinical Finding or Disorder that it is being observed.  The observation
+                        procedure can also be further refined by adding the Method, Procedure site -
+                        Direct, (if appropriate) laterality, and Using device.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>All Other Procedures</emphasis>: Any other action that was
+                        performed would be represented by a Procedure concept with any of the
+                        approved terminology procedure attributes applied.</para>
+                </listitem>
+            </itemizedlist></para>
     </section>
 </chapter>
