@@ -223,77 +223,55 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
     </section>
 
     -->
-
-
-
-
-
-
-
-
-
-
     </section>
-
-
-
-
-
     <section>
         <title>Transformation Languages</title>
         <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This section was
-        taken and edited from Walter Sujansky's Transformation Languages white paper"?><?oxy_comment_end?>
-        <para>
-            A number of options exist for expressing transformation logic 
-            and for executing the transformation on specific instances of clinical data.
-            This section discusses several of these options and the trade-offs among them.
-        </para>
+        taken and edited from Walter Sujansky&apos;s Transformation Languages white paper"?><?oxy_comment_end?>
+        <para> A number of options exist for expressing transformation logic and for executing the
+            transformation on specific instances of clinical data. This section discusses several of
+            these options and the trade-offs among them. </para>
+        <?oxy_comment_start author="Ioana" timestamp="20190610T232839-0400" comment="Please validate this..."?>
+        <para>Depending on format of the data sources, one of more of the following transformation
+            may be suitable for normalizing ad-hoc clinical statements to
+            ANF:<?oxy_comment_end?></para>
         <section>
             <title>XSLT</title>
-            <para>
-                XSLT is a W3C-standard language for the transformation of structured data<footnote xml:id="__EN5__">
+            <para> XSLT is a W3C-standard language for the transformation of structured
+                    data<footnote xml:id="__EN5__">
                     <para>
                         <link xmlns:xlink="http://www.w3.org/1999/xlink"
-                            xlink:href="https://en.wikipedia.org/wiki/XSLT">https://en.wikipedia.org/wiki/XSLT
-                        </link> (Accessed 9/30/2017).
+                            xlink:href="https://en.wikipedia.org/wiki/XSLT"
+                            >https://en.wikipedia.org/wiki/XSLT </link> (Accessed 9/30/2017).
                     </para>
                 </footnote>. XSLT transformation scripts take as input any valid XML document and
                 produce as output an ASCII-formatted document (including XML, HTML, other formatting
                 languages, free text, etc.). The XSLT language specifies transformations through
-                declarative, rule-based commands (see below). 
-            </para>
-            <para>
-                XSLT is widely used in modern information processing, including in health care
+                declarative, rule-based commands (see below). </para>
+            <para> XSLT is widely used in modern information processing, including in health care
                 applications. Numerous XLST transformation engines exist, including commercial and
                 open-source versions. These implementations are mature, stable, and
                 high-performance, and are available as runtime libraries or embedded in XLST
                 authoring/editing applications. Excellent documentation and training are available
-                for XSLT.
-            </para>
+                for XSLT. </para>
             <section>
                 <title>Overview of Language and Data Model</title>
-                <para>
-                    XSLT scripts operate over source “trees” containing the structured contents of
-                    parsed XML documents. These trees contain as their nodes the various constructs
-                    of specific XML documents, i.e., the named elements, attributes, and text values
-                    that appear in the documents, and upon parsing, becomes a source tree
-                    for XSLT transformations.</para>
-                <para>
-                    XSLT uses the sub-language “XPath”<footnote xml:id="__EN6__">
+                <para> XSLT scripts operate over source “trees” containing the structured contents
+                    of parsed XML documents. These trees contain as their nodes the various
+                    constructs of specific XML documents, i.e., the named elements, attributes, and
+                    text values that appear in the documents, and upon parsing, becomes a source
+                    tree for XSLT transformations.</para>
+                <para> XSLT uses the sub-language “XPath”<footnote xml:id="__EN6__">
                         <para>
                             <link xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xlink:href="https://en.wikipedia.org/wiki/XPath"
-                                >https://en.wikipedia.org/wiki/XPath</link> (Accessed
-                            9/30/2017).
+                                >https://en.wikipedia.org/wiki/XPath</link> (Accessed 9/30/2017).
                         </para>
                     </footnote> to reference portions of the XML source tree for purposes of
                     navigating the tree and selecting specific parts of it to translate. XPath is
                     essentially a query language for identifying and retrieving XML sub-trees that
-                    match specified criteria. For example, the XPath query
-                </para>
-        
-                <para>
-                    The actual transformation logic in XLST scripts is specified as a series of
+                    match specified criteria. For example, the XPath query </para>
+                <para> The actual transformation logic in XLST scripts is specified as a series of
                     “templates”. Each template matches to a specified sub-part of the source tree
                     and specifies what output will be generated for that sub-part. Template are
                     generally called from within other templates via a declarative template-matching
@@ -301,17 +279,13 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     through this template-invocation model. The transformation logic within
                     templates may include various conditional, branching, and formatting constructs,
                     as well as calls to external functions written in various programming languages
-                    (such as Java). 
-                </para>
+                    (such as Java). </para>
             </section>
-            
             <section>
                 <title>Advantages and Limitations</title>
-                <para>
-                    XSLT is effective in representing and executing the transformation logic
-                    needed for clinical translations. In general, XSLT provides various advantages, 
-                    as well as limitations, for this task.
-                </para>
+                <para> XSLT is effective in representing and executing the transformation logic
+                    needed for clinical translations. In general, XSLT provides various advantages,
+                    as well as limitations, for this task. </para>
                 <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
@@ -343,22 +317,20 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                         <para>Transformation are entirely syntactic</para>
                     </listitem>
                     <listitem>
-                        <para>Limited to XML input – instances rendered in other formats
-                            cannot be translated</para>
+                        <para>Limited to XML input – instances rendered in other formats cannot be
+                            translated</para>
                     </listitem>
                 </itemizedlist>
             </section>
         </section>
         <section>
             <title>FHIR Mapping Language</title>
-            <para>
-                The FHIR mapping language (FML)<footnote xml:id="__EN7__">
+            <para> The FHIR mapping language (FML) <footnote xml:id="__EN7__">
                     <para>
                         <link xmlns:xlink="http://www.w3.org/1999/xlink"
                             xlink:href="https://www.hl7.org/fhir/mapping-language.html"
                             >https://www.hl7.org/fhir/mapping-language.html</link> (Accessed
-                        9/30/2017).
-                    </para>
+                        9/30/2017). </para>
                 </footnote> is a relatively new, bespoke transformation language specifically
                 designed to transform HL7 FHIR<footnote xml:id="__EN8__">
                     <para>
@@ -369,60 +341,52 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                 </footnote> resources to alternative representations, including different FHIR
                 resources, C/CDE documents, etc. The mapping language was created by Graham Grieve
                 as a specification of the QVT framework for model-transformation languages (see
-                Section <xref linkend="_Ref494462079"/>).
-            </para>
-
+                Section <xref linkend="_Ref494462079"/>). </para>
             <section>
                 <title>Overview of Language and Data Model</title>
                 <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
                     rules that are automatically matched to input data, (b) includes a sub-language
                     (“FHIRPath”) to reference parts of source parse trees, and (c) has the ability
                     to reference external functions written in different languages. There are also
-                    notable differences between FML and XSLT. FHIR inputs are not constrained to XML
-                    documents, but may include any object models and rendering syntaxes conformant
-                    with OMG’s Meta Object Facility (MOF) language<footnote xml:id="__EN9__">
+                    notable differences between FML and XSLT.
+                    <?oxy_comment_start author="Ioana" timestamp="20190610T232708-0400" comment="XML-encoded FHIR resources are XML documents - instances of XML Document Object Model (DOM)  https://www.w3.org/DOM/"?>FHIR
+                    inputs are not constrained to XML documents,<?oxy_comment_end?> but may include
+                    any object models and rendering syntaxes conformant with OMG’s Meta Object
+                    Facility (MOF) language<footnote xml:id="__EN9__">
                         <para>
                             <link xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xlink:href="http://www.omg.org/mof/">http://www.omg.org/mof/</link>
-                            (Accessed 9/30/2017).
-                        </para>
+                            (Accessed 9/30/2017). </para>
                     </footnote>. MOF is a general formalism for representing object models as
                     directed acyclic graphs (DAGs), and MOF-compliant models can use various
                     syntactic constructs to represent the classes, attributes, and attribute values
-                    of such graphs. 
-                </para>
-
-                <para>
-                    Hence, in FML, there is no built-in notion of source trees containing XML
+                    of such graphs. </para>
+                <para> Hence, in FML, there is no built-in notion of source trees containing XML
                     “elements”, “attributes”, “comments”, “namespaces”, etc. In fact, FML
                     transformation rules do not specify any target syntax for inputs or outputs,
                     just the general concepts of named classes, class members, and member values.
-                    This flexibility would allow CIMI-to-SOLOR transformation inputs to be
-                    represented in different formats than XML, were that to be deemed preferable.
-                    For example, instances rendered using JSON, ODIN<footnote xml:id="__EN10__">
+                    This flexibility would allow
+                    <?oxy_comment_start author="Ioana" timestamp="20190610T232213-0400" comment="Should this say &quot;normalization to ANF&quot;?"?>CIMI-to-SOLOR<?oxy_comment_end?>
+                    transformation inputs to be represented in different formats than XML, were that
+                    to be deemed preferable. For example, instances rendered using JSON,
+                        ODIN<footnote xml:id="__EN10__">
                         <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xlink:href="http://www.openehr.org/releases/BASE/latest/docs/odin/odin.html"
                                 >http://www.openehr.org/releases/BASE/latest/docs/odin/odin.html</link>
-                            (Accessed 9/30/2017).
-                        </para>
-                    </footnote>, or ASN1 syntax could be the inputs of FML transformations.
-                </para>
-
-
-                <para>
-                    The output of an FML transformation is not a text-rendered document (unlike
+                            (Accessed 9/30/2017). </para>
+                    </footnote>, or ASN1 syntax could be the inputs of FML transformations. </para>
+                <para> The output of an FML transformation is not a text-rendered document (unlike
                     XSLT), but an internally stored DAG consistent with the specified output model.
                     Subsequently, the DAG may be rendered in any number of syntaxes, including XML,
-                    JSON, or the tables and fields of a relational database. 
-                </para>
-                
+                    JSON, or the tables and fields of a relational database. </para>
             </section>
             <section>
                 <title>Advantages and Limitations</title>
                 <para>The FHIR Mapping Language may also be effective in representing and executing
-                    the transformation logic needed for CIMI-to-SOLOR translations. As with XSLT,
-                    however, there exist certain trade-offs in its use.
-                </para>
+                    the transformation logic
+                    needed<?oxy_comment_start author="Ioana" timestamp="20190610T160258-0400" comment="Should this section refer to &quot;source information to ANF&quot;?"?>
+                    for CIMI-to-SOLOR translations<?oxy_comment_end?>. As with XSLT, however, there
+                    exist certain trade-offs in its use. </para>
                 <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
@@ -464,18 +428,16 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
         </section>
         <section xml:id="_Ref494462079">
             <title>QVT</title>
-            <para>
-                A third alternative is to develop a new transformation language customized to
-                support the requirements of CIMI-to-SOLOR translations, based on the QVT language
-                used to develop the FHIR Mapping Language.
-            </para>
+            <para> A third alternative is to develop a new transformation language customized to
+                support the requirements of
+                <?oxy_comment_start author="Ioana" timestamp="20190610T232305-0400" comment="Should this be &quot;normalization to ANF&quot;?"?>CIMI-to-SOLOR<?oxy_comment_end?>
+                translations, based on the QVT language used to develop the FHIR Mapping Language. </para>
             <section>
                 <title>Overview</title>
                 <para>QVT<footnote xml:id="__EN11__">
                         <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xlink:href="http://www.omg.org/spec/QVT/1.2/PDF/"
-                                >http://www.omg.org/spec/QVT/1.2/PDF/</link> (Accessed
-                            9/30/2017).
+                                >http://www.omg.org/spec/QVT/1.2/PDF/</link> (Accessed 9/30/2017).
                         </para>
                     </footnote> is a general model-transformation framework and language developed
                     by the Object Management Group . It includes both an imperative (“QVT-O”) and a
@@ -483,25 +445,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     the constructs of purpose-specific transformation languages. Although QVT is
                     intended for the transformation of data <emphasis>models</emphasis> rather than
                     data instances, the FHIR Mapping Language shows that it can be applied to the
-                    latter task as well.
-                </para>
-
-                <para>
-                    A number of implementations of QVT exist as open-source and commercial
-                    software offerings. These include:
-                </para>
+                    latter task as well. </para>
+                <para> A number of implementations of QVT exist as open-source and commercial
+                    software offerings. These include: </para>
                 <itemizedlist>
                     <listitem>
                         <para>ATL (open source). Probably the most widely used and maintained of the
                             available implementations. Includes a library of existing QVT
-                            transformations, to serve as examples and templates.
-                        </para>
+                            transformations, to serve as examples and templates. </para>
                     </listitem>
                     <listitem>
                         <para>Eclipse M2M Project (open source). An Eclipse project that includes
                             authoring tools for QVT transformations, as well as various
-                            transformation engines (including the one from ATL).
-                        </para>
+                            transformation engines (including the one from ATL). </para>
                     </listitem>
                     <listitem>
                         <para>ModelMorf (proprietary)</para>
@@ -509,22 +465,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     <listitem>
                         <para>Others (see <link xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xlink:href="https://en.wikipedia.org/wiki/QVT"
-                                >https://en.wikipedia.org/wiki/QVT</link>) 
-                        </para>
+                                >https://en.wikipedia.org/wiki/QVT</link>) </para>
                     </listitem>
                 </itemizedlist>
             </section>
             <section>
                 <title>Advantages and Limitations</title>
-                <para>
-                    The strength of QVT is that it is very abstract, which confers great
+                <para> The strength of QVT is that it is very abstract, which confers great
                     flexibility and configurability to create custom transformation languages.
                     However, the abstractness also makes QVT quite difficult to understand and
                     learn, and there are limited resources to assist in the learning process. For
                     example, a search on Amazon Books for references on the QVT framework yielded
                     only 8 relevant results, most of which were not in English. In contrast, a
-                    similar search for XSLT references returned 270 results.
-                </para>
+                    similar search for XSLT references returned 270 results. </para>
             </section>
         </section>
     </section>
