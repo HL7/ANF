@@ -3,13 +3,10 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title><?oxy_comment_start author="kmaulden" timestamp="20190423T101734-0400" comment="KC: Don’t put too much effort into this. Describe transformation on a high level. Put the most work into the examples (BP, Pulse etc. earlier in the document)
-IS: Big value is the endpoint of data being normalized into ANF. 
-KC: We can convince people that ANF has value like 1st normal form and 2nd normal form (Tim has expertise here). 
-"?>Normalization<?oxy_comment_end?>
-    </title>
-    <?oxy_comment_start author="rcholan" timestamp="20190530T135236-0400" comment="Perhaps we should change this chapter name to Normalization..."?>
-    <informaltable><?oxy_comment_end?>
+
+    <title>Normalization</title>
+    
+    <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
             <tbody>
@@ -65,7 +62,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
     </section>
 
     <section>
-        <title>Modeling Choices</title>
+        <title>Modeling Style</title>
 
         <para>
             Another variation that currently exists are the allowed design choices which can be made by model authors.
@@ -83,14 +80,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             between Evaluation style versus Assertion style clinical statements as coded results are not possible.
         </para>
 
+        
+
     </section>
 
     <section>
         <title>Transformation</title>
 
         <para>
-            We have described current systems as having variation in data structure and modeling style.  This variation is further compounded
-            when When transferring data between and amongst institutions. Analysis Normal Form can act as a transformation target to normalize
+            The previous sections have described the variation that can exist in the data structure and modeling style of a single standard.  Moreover, this variation is significantly compounded when simultaneously using data from multiple standards, such as when receiving data from mulitple institutions.
+        </para>
+
+        <para>
+            Analysis Normal Form can act as a transformation target to normalize
             these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
         </para>
 
@@ -104,8 +106,22 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
         </figure>
 
         <para>
-           Transformation, in this case, is not a simple endeavor that one can hope to automate across domains of clinical statements or even within a single domain of clinical statements. As presented, it will involve navigating disparate data structure trees and include variable representations to then generate a well-formed post-coordinated snomed expression.  It is most likely possible to target subdomains for consistent transformation, such as all quantitative laboratory results, but in some cases, it may be that one detailed clinical model needs it's own unique transformation.
+           Transformation, in this case, is not a simple endeavor that one can hope to automate across domains of clinical statements or even within a single domain of clinical statements. As presented, it will involve navigating disparate data structure trees and include variable representations to then generate a well-formed post-coordinated snomed expression.  It is most likely possible to target subdomains for consistent transformation, such as all quantitative laboratory results, but in some cases, it may be that each detailed clinical model needs it's own unique transformation.
         </para>
+
+        <para>
+            Potential areas of difficulty during transformation
+        </para>
+
+            <itemizedlist spacing='compact'>
+                <listitem>
+                    <para>One source instance will frequently be transformed to many ANF instances</para>
+                </listitem>
+                <listitem>
+                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated snomed expression for inclusion as ANF Topic</para>
+                </listitem>
+            </itemizedlist>
+
 
         <para>
             Currently, there are three basic categories of errors that
@@ -115,6 +131,8 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             is errors that result from ambiguous or misleading interaction between the structured
             clinical input and presentation of compound terminology to clinician end-users. 
         </para>
+
+    </section>
 
         
 
@@ -219,21 +237,19 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             not contain any partial dependency. A relation is in 2NF iff it has No Partial
             Dependency, i.e., no non-prime attribute (attributes which are not part of any candidate
             key) is dependent on any proper subset of any candidate key of the table.</para>
-    </section>
+       </section>
 
     -->
-    </section>
+    
     <section>
         <title>Transformation Languages</title>
-        <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This section was
-        taken and edited from Walter Sujansky&apos;s Transformation Languages white paper"?><?oxy_comment_end?>
+        
         <para> A number of options exist for expressing transformation logic and for executing the
-            transformation on specific instances of clinical data. This section discusses several of
-            these options and the trade-offs among them. </para>
-        <?oxy_comment_start author="Ioana" timestamp="20190610T232839-0400" comment="Please validate this..."?>
-        <para>Depending on format of the data sources, one of more of the following transformation
-            may be suitable for normalizing ad-hoc clinical statements to
-            ANF:<?oxy_comment_end?></para>
+            transformation on specific instances of clinical data for normalization into ANF. This section discusses several 
+            transformation language options and the trade-offs among them. It should be noted that the suitability of the chosen
+            language also highly depends on the format of the source data.
+        </para>
+
         <section>
             <title>XSLT</title>
             <para> XSLT is a W3C-standard language for the transformation of structured
@@ -322,6 +338,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                 </itemizedlist>
             </section>
         </section>
+
         <section>
             <title>FHIR Mapping Language</title>
             <para> The FHIR mapping language (FML) <footnote xml:id="__EN7__">
@@ -348,8 +365,7 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     (“FHIRPath”) to reference parts of source parse trees, and (c) has the ability
                     to reference external functions written in different languages. There are also
                     notable differences between FML and XSLT.
-                    <?oxy_comment_start author="Ioana" timestamp="20190610T232708-0400" comment="XML-encoded FHIR resources are XML documents - instances of XML Document Object Model (DOM)  https://www.w3.org/DOM/"?>FHIR
-                    inputs are not constrained to XML documents,<?oxy_comment_end?> but may include
+                    The source input of FML is not limited to XML documents, but may include
                     any object models and rendering syntaxes conformant with OMG’s Meta Object
                     Facility (MOF) language<footnote xml:id="__EN9__">
                         <para>
@@ -364,9 +380,8 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     “elements”, “attributes”, “comments”, “namespaces”, etc. In fact, FML
                     transformation rules do not specify any target syntax for inputs or outputs,
                     just the general concepts of named classes, class members, and member values.
-                    This flexibility would allow
-                    <?oxy_comment_start author="Ioana" timestamp="20190610T232213-0400" comment="Should this say &quot;normalization to ANF&quot;?"?>CIMI-to-SOLOR<?oxy_comment_end?>
-                    transformation inputs to be represented in different formats than XML, were that
+                    This flexibility would allow transformation source inputs used in the normalization to ANF
+                    to be represented in different formats than XML, were that
                     to be deemed preferable. For example, instances rendered using JSON,
                         ODIN<footnote xml:id="__EN10__">
                         <para><link xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -382,10 +397,10 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
             <section>
                 <title>Advantages and Limitations</title>
                 <para>The FHIR Mapping Language may also be effective in representing and executing
-                    the transformation logic
-                    needed<?oxy_comment_start author="Ioana" timestamp="20190610T160258-0400" comment="Should this section refer to &quot;source information to ANF&quot;?"?>
-                    for CIMI-to-SOLOR translations<?oxy_comment_end?>. As with XSLT, however, there
-                    exist certain trade-offs in its use. </para>
+                    the transformation logic needed
+                    for normalization to ANF. As with XSLT, however, there
+                    exist certain trade-offs in its use.
+                </para>
                 <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
@@ -425,12 +440,12 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                 </itemizedlist>
             </section>
         </section>
+
         <section xml:id="_Ref494462079">
             <title>QVT</title>
             <para> A third alternative is to develop a new transformation language customized to
-                support the requirements of
-                <?oxy_comment_start author="Ioana" timestamp="20190610T232305-0400" comment="Should this be &quot;normalization to ANF&quot;?"?>CIMI-to-SOLOR<?oxy_comment_end?>
-                translations, based on the QVT language used to develop the FHIR Mapping Language. </para>
+                support the requirements of a normalization to ANF, 
+                based on the QVT language used to develop the FHIR Mapping Language. </para>
             <section>
                 <title>Overview</title>
                 <para>QVT<footnote xml:id="__EN11__">
@@ -479,5 +494,6 @@ KC: We can convince people that ANF has value like 1st normal form and 2nd norma
                     similar search for XSLT references returned 270 results. </para>
             </section>
         </section>
+
     </section>
 </chapter>
