@@ -72,14 +72,6 @@ Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semanti
                     single class and not be spread across a number of classes .<?oxy_comment_end?>
                     Doing the latter leads to tight coupling between classes. Doing the former leads
                     to better decomposition of a potentially complex domain.</para>
-                <para><emphasis role="bold">Example:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111139-0400" comment="Comment from WC:
-Is ‘Practitioner’ here are a Role or an Attribute. Is ‘Person’ an Entity or an Attribute? What is a ‘Role’ and an ‘Entity’? In BFO OWL, everything which is an instance of Role at some time is also instance of Entity at that time.
-"?>Attributes
-                    for a Role (e.g., Practitioner) <?oxy_comment_end?>should not be mixed with
-                    attributes for an Entity (e.g., Person). This allows a person to assume a number
-                    of roles over their lifetime or to function in more than one role.</para>
-                <para> </para>
                 <figure>
                     <title>Architectural Separation of Concerns</title>
                     <mediaobject>
@@ -93,12 +85,27 @@ Is ‘Practitioner’ here are a Role or an Attribute. Is ‘Person’ an Entity
                     from Terminology layers, yet most CIF statement models mix terminology concerns
                     into the structural attributes of the statement model. ANF attempts to maintain
                     a cleaner separation between these layers. </para>
-                <para>The Language and Definitional layers are used to define what is being
-                    measured, such as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
+                <para>The Terminology Knowledge layer is used to define what is being measured, such
+                    as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
+                <para>Analysis Normal Form (ANF) classes must cleanly separate the concerns of
+                    Terminology Knowledge and the concerns of Statement Model.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
+Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
+"?><emphasis
+                                role="bold">Example: </emphasis>Laterality should be a concern of
+                            either the Terminology Knowledge or the Statement Model, but not both.
+                            We can relax this principle for the Clinical Input Form (CIF) but for
+                            ANF we need a clean and invariant separation of
+                            concerns.<?oxy_comment_end?></para>
+                    </listitem>
+                </itemizedlist>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Immutability:</emphasis>An Immutable Object as defined
-                    by Wikipedia<anchor xml:id="_ftnref2"/>[2]: Used in object-oriented and
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T125100-0500" comment="Remove?"?><emphasis
+                        role="bold">Immutability:</emphasis>An Immutable Object as defined by
+                        Wikipedia<anchor xml:id="_ftnref2"/>[2]: Used in object-oriented and
                     functional programming,
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111203-0400" comment="Comment from WC:
 Depends on what constitutes a ‘change’. Changing merely location, leaving everything else equal, does not change the object itself. If a database table is considered an object, it changes of course each time when some value in it is changed or a row added.
@@ -118,15 +125,17 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     you create a much smaller space for errors to occur and have few plates to
                     test.</para>
                 <para>Finally,one of the best features of immutable classes is how well they fit
-                    into the composition abstraction.</para>
+                    into the composition abstraction.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Composition Over Inheritance: </emphasis></para>
-                <para>Composition over inheritance (or composite reuse principle) in object-oriented
-                    programming is the principle that classes should achieve polymorphic behavior
-                    and code reuse by their composition (by containing those instances of other
-                    classes that implement the desired functionality) rather than inheritance from a
-                    base or parent class.</para>
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T131315-0500" comment="Remove?
+"?><emphasis
+                        role="bold">Composition Over Inheritance: </emphasis>Composition over
+                    inheritance (or composite reuse principle) in object-oriented programming is the
+                    principle that classes should achieve polymorphic behavior and code reuse by
+                    their composition (by containing those instances of other classes that implement
+                    the desired functionality) rather than inheritance from a base or parent
+                    class.</para>
                 <para>To favor composition over inheritance is a design principle that gives the
                     design higher flexibility. It is more natural to build business-domain classes
                     out of various components than trying to find commonality between them and
@@ -136,11 +145,11 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     distribute behaviors among business-domain classes via inheritance. This
                     approach more easily accommodates future requirements changes that would
                     otherwise require a complete restructuring of business-domain classes in the
-                    inheritance model.</para>
-                <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?>
+                    inheritance model.<?oxy_comment_end?></para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="6"?><?oxy_comment_end?><?oxy_comment_end mid="6"?>
+" parentID="ckd_fyv_lhb" mid="8"?><?oxy_comment_end mid="8"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
@@ -153,53 +162,15 @@ This is too cryptic for me to understand. Any source suggestion?
                     specified.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">ANF Classes Cleanly Separate Concerns:
-                    </emphasis>Analysis Normal Form (ANF) classes must cleanly separate the concerns
-                    of
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111328-0400" comment="Comment from WC:
-That is a concern indeed, not just one concern unfortunately.
-"?>concept
-                    definition<?oxy_comment_end?> and the concerns of domain models.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111344-0400" comment="Note from Joey; Joey, can you elaborate on this?
-"?><emphasis
-                                role="bold"><emphasis role="italic"
-                                >NOTE:</emphasis></emphasis><emphasis role="italic">Need to define
-                                the domain models thoroughly here. </emphasis>The strawman
-                            description is that domain models use concept definitions as a building
-                            block to define non-defining relationships or associations between
-                            concepts. The domain model represents cardinality, optionality, and
-                            other constraints.<?oxy_comment_end?></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
-Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
-"?><emphasis
-                                        role="bold">Example: </emphasis>Laterality should be a
-                                    concern of either the concept definition or the domain model,
-                                    but not both. We can relax this principle for the Clinical Input
-                                    Form (CIF) but for ANF we need a clean and invariant separation
-                                    of concerns.<?oxy_comment_end?></para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111418-0400" comment="Joey: NOTE: Need to determine better names for “concept definition” and “domainmodels.”" id="jvr_kyv_lhb"?>
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111433-0400" comment="Comment from WC:
-I can help you with that if you allow me.
-" parentID="jvr_kyv_lhb" mid="13"?>
-                </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="13"?>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Clinical Statement Model Stability: </emphasis></para>
-                <para>Stability is different from immutability. Stable means that the model can
-                    still meet unanticipated requirements without having to change. It is not
-                    acceptable to change the model every time a new way to administer a drug or to
-                    treat a condition is identified. By representing these types of potentially
-                    dynamic concerns in the terminology expressions, as opposed to static fields in
-                    a class structure, we do not have to change the model every time something new
-                    is discovered. As Terry Winograd said, anticipating breakdowns, and providing a
-                    space for action when they occur, is a design imperative.</para>
+                <para><emphasis role="bold">Clinical Statement Model Stability: </emphasis>Stable
+                    means that the model can still meet unanticipated requirements without having to
+                    change. It is not acceptable to change the model every time a new way to
+                    administer a drug or to treat a condition is identified. By representing these
+                    types of potentially dynamic concerns in the terminology expressions, as opposed
+                    to static fields in a class structure, we do not have to change the model every
+                    time something new is discovered. As Terry Winograd said, anticipating
+                    breakdowns, and providing a space for action when they occur, is a design
+                    imperative.</para>
                 <para>In some regards, in this context “stable” means “not brittle.” A model easily
                     broken by changes that someone could anticipate is one possible definition of
                     brittle. A stable model is critical in the phase of a known changing landscape.
@@ -221,16 +192,6 @@ What does that mean for the table example I gave? Clearly it changes, which of t
                     system.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Cohesion:
-                        <?oxy_comment_start author="kmaulden" timestamp="20190418T111553-0400" comment="Comment from WC:
-Very unclear. Examples should be given.
-
-"?></emphasis>Related
-                    classes should reside in the same module or construction. The placement of a
-                    class in a module should reduce the dependencies between
-                    modules.<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
                 <para><emphasis role="bold">Reusability:</emphasis>Architectural patterns should
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
 But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
@@ -239,8 +200,8 @@ But in line with previous principle, you have then to drag with you the entire m
                     refine encapsulation when composition is considered.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Assumption-free: </emphasis></para>
-                <para>Implied semantics must be surfaced explicitly in the model.</para>
+                <para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
+                    surfaced explicitly in the model.</para>
                 <itemizedlist>
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
@@ -256,11 +217,13 @@ Also implicit is (1) that the statement is in English, (2) that the asserter exi
                 </itemizedlist>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Design by Composition and/or Class Specialization:
-                    </emphasis>The capture of additional model expressivity must be captured by
-                    composition and/or by class specialization. The modeling approach should avoid
-                    the use of design by constraint (except for terminology binding and attribute
-                    type constraints) as it violates proper decoupling and encapsulation.
+                <para><emphasis role="bold"
+                        ><?oxy_comment_start author="timowilliams" timestamp="20190611T135415-0500" comment="Remove?"?>Design
+                        by Composition and/or Class Specialization: </emphasis>The capture of
+                    additional model expressivity must be captured by composition and/or by class
+                    specialization. The modeling approach should avoid the use of design by
+                    constraint (except for terminology binding and attribute type constraints) as it
+                    violates proper decoupling and encapsulation.
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111645-0400" comment="Comment from WC:
 The HL7-RIM disaster.
 "?>An
@@ -269,7 +232,7 @@ The HL7-RIM disaster.
                     attributes in a more specialized model. This approach is very difficult to
                     implement and violates numerous object-oriented best
                     practices.<?oxy_comment_end?></para>
-            </listitem>
+            </listitem><?oxy_comment_end?>
             <listitem>
                 <para><emphasis role="bold">No False Dichotomies:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111659-0400" comment="Comment from WC:
@@ -295,11 +258,12 @@ They never learn, do they? (Or rather their victims never learn).
                     catalog).<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Convention Over Configuration: </emphasis></para>
-                <para>Convention over configuration (also known as coding by convention) is a
-                    software design paradigm used by software frameworks that attempt to decrease
-                    the number of decisions that a developer using the framework is required to make
-                    without necessarily losing flexibility.</para>
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T140507-0500" comment="Remove?"?><emphasis
+                        role="bold">Convention Over Configuration: </emphasis>Convention over
+                    configuration (also known as coding by convention) is a software design paradigm
+                    used by software frameworks that attempt to decrease the number of decisions
+                    that a developer using the framework is required to make without necessarily
+                    losing flexibility<?oxy_comment_end?>.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Model Consistency:
@@ -334,7 +298,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
     <section>
         <title>Shared Modeling Guidelines</title>
         <figure>
-            <title>Common Modeling Guideline Decision Tree</title>
+            <title>Shared Modeling Guideline Decision Tree</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
@@ -342,13 +306,13 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>All ANF clinical statements share some common model components. The following modeling
+        <para>All ANF statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
-            a single clinical statement or a clinical statement that has multiple associated
-            statements. For the purposes of ANF, a clinical statement is a request or performance of
-            an action that has to be able to exist on its own. Therefore a narrative would be
-            separated into multiple clinical statements if it contains multiple requests or
-            performance of actions that could exist on their own.</para>
+            a single statement or a statement that has multiple associated statements. For the
+            purposes of ANF, a statement is a request or performance of an action that has to be
+            able to exist on its own. Therefore a narrative would be separated into multiple
+            clinical statements if it contains multiple requests or performance of actions that
+            could exist on their own.</para>
         <para><emphasis role="bold">Prerequisite</emphasis>: A prerequisite is a <emphasis
                 role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
             something else can happen or be done. Pre-requisite are part of the details under which
@@ -381,6 +345,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         </itemizedlist>
                     </listitem>
         </itemizedlist>
+        <para><emphasis role="bold">subjectOfInformation</emphasis>: The subjectOfInformation is used
+            to represent who the statement it about.  This is normally the patient unless explicitly
+            stated otherwise.</para>
         <para><emphasis role="bold">Purpose</emphasis>: The purpose is why an action was
             requested</para>
         <itemizedlist>
@@ -440,18 +407,17 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <para><emphasis role="bold">Timing</emphasis>: For a Request for Action, the Timing will
-            always represent a future time, therefore the Measure used in the Timing will be for a
-            future time.</para>
+        <para><emphasis role="bold">Timing</emphasis>: The Timing will always represent a future
+            time  in a Request for Action ANF Statement.  Therefor, the Measure used in the Timing
+            will be for a future time.</para>
         <para><emphasis role="bold">Requested Participant: </emphasis> If the Request for Action
             specifies a Requested Participant the requestedParticipant will be populated.</para>
         <para><emphasis role="bold">Priority:</emphasis> Priority is used to represent the priority
             for which the request is to be carried out.  By default a Request will be considered
             "routine" unless otherwise specified</para>
-        <para><emphasis role="bold">Topic</emphasis></para>
-        <para>The topic follows a variety of possible patterns:<itemizedlist>
+        <para><emphasis role="bold">Topic</emphasis>:The topic follows a variety of possible patterns:<itemizedlist>
                 <listitem>
-                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                    <para><emphasis>Administration of Medication</emphasis>: XXXXX</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>Imaging Procedure</emphasis>: For Requesting of Imaging
@@ -462,21 +428,50 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </listitem>
                 <listitem>
                     <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
-                        is an observation would begin with an Observation procedure.  The
-                        Observation procedure with then have a Has focus attribute linking it to the
-                        Clinical Finding or Disorder that it is being observed.  The observation
-                        procedure can also be further refined by adding the Method, Procedure site -
-                        Direct, (if appropriate) laterality, and Using device.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
+                        is an observation would begin with an Observation procedure. The Observation
+                        procedure with then have a Has focus attribute linking it to the Clinical
+                        Finding or Disorder that it is being observed. The observation procedure can
+                        also be further refined by adding the Method, Procedure site - Direct, (if
+                        appropriate) laterality, and Using device.</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
                         would be represented by a Procedure concept with any of the approved
                         terminology procedure attributes applied.</para>
                 </listitem>
-            </itemizedlist></para>
+            </itemizedlist><para><emphasis role="bold">Repetition:</emphasis>  Repetition is used to
+                represent when an action is requested for more than a single occurrence.  Repetition
+                is an optional component for a RequestCircumstance.  A Request Component contains
+                five Measures that are used to further define the parameters of the Repetition:<itemizedlist>
+                    <listitem>
+                        <para><emphasis>periodDuration:</emphasis>This required field is used to
+                            represent how long a repetition should persist.  If it is not specified,
+                            a default value of [0,inf] will be used. e.g. for 3 weeks</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>periodStart:</emphasis> This required field is used to
+                            represent when a repeated action should begin.  If it is not specified,
+                            a default value of [0,inf] will be used. e.g. NOW</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>eventSeparation:</emphasis>This required field is used to
+                            represent how long between actions.  If it is not specified, a default
+                            value of [0,inf] will be used. e.g. for 2 weeks</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>eventFrequency:</emphasis>This required field is used to
+                            represent how often the action should occur.  If it is not specified, a
+                            default value of [0,inf] will be used. e.g. 3 times per week</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>eventDuration:</emphasis>This is an optional field that is
+                            used to represent how long every action should last.  </para>
+                    </listitem>
+                </itemizedlist></para></para>
+        <para><emphasis role="bold">conditionalTrigger:</emphasis>conditionalTriggers differ from
+            prerequisites in that they cause the action to be performed. conditionalTriggers
+            contribute to the timing of when the request will be performed and not necessarily to
+            the purpose of performing.  conditionalTriggers are optional</para>
         
     </section>
     
@@ -514,9 +509,6 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         Clinical Finding or Disorder that it is being observed.  The observation
                         procedure can also be further refined by adding the Method, Procedure site -
                         Direct, (if appropriate) laterality, and Using device.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Stop Treatment</emphasis>: XXXXX</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>All Other Procedures</emphasis>: Any other action that was
