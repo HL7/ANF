@@ -3,13 +3,13 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Conclusion</title>
-  <para>In conclusion, Analysis Normal Form presents a simple reusable way to approach clinical
-    statements specifically for data analysis.   It reduces clinical statements to two types,
-    Performance of Action and Request for Action, both clinical statement types with topics.   ANF
-    is compatible with other work in statement representation models such as the CIMI approach of
-    CIF, which focuses more on how clinicians represent and enter data into electronic health record
+  <para>In conclusion, Analysis Normal Form (ANF) presents a simple reusable way to approach
+    clinical statements specifically for data analysis. It reduces clinical statements to two types,
+    Performance of Action and Request for Action, both clinical statement types with topics. ANF is
+    compatible with other work in statement representation models such as the CIMI approach of CIF,
+    which focuses more on how clinicians represent and enter data into electronic health record
     systems, whereas ANF focuses on structuring that data in a way for CDS systems can extract that
-    data in an unambiguous way. </para>
+    data in an unambiguous way.</para>
   <para><?oxy_comment_start author="bechang" timestamp="20190426T225012-0600" comment="Need Ioana to expand upon what would be next after successful balloting of this whitepaper in September 2019"?>We
     believe that ANF represents an approach to statement representation that needs to next be
     refined into a normative set of editorial guidelines that can eventually also be expanded upon
