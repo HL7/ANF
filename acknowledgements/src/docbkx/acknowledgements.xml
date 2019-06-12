@@ -2,41 +2,43 @@
 <?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Acknowledgements</title>
-    <para>The project would like to acknowledge the contributions in time, effort and intellectual
-        capital from the following individuals:</para>
-    <para>
-        <itemizedlist>
-            <listitem>
-                <para>Keith Campbell</para>
+<acknowledgements xmlns="http://docbook.org/ns/docbook">
+        <para>The project team would like to acknowledge the contributions and assistance received from
+            the following:
+            <itemizedlist spacing="compact">
+                <listitem>
+                <?oxy_comment_start author="Ioana" timestamp="20190611T180050-0400" comment="We should add the organization each individual is representing."?>
+                <para>Keith E. Campbell<?oxy_comment_end?></para>
             </listitem>
-            <listitem>
-                <para>Richard Esmond</para>
-            </listitem>
-            <listitem>
-                <para>Ioana Singureanu</para>
-            </listitem>
-            <listitem>
-                <para>Joey Coyle</para>
-            </listitem>
-            <listitem>
-                <para>Walter Sujansky</para>
-            </listitem>
-            <listitem>
-                <para>Werner Ceusters</para>
-            </listitem>
-            <listitem>
-                <para>Kirsten Haake</para>
-            </listitem>
-            <listitem>
-                <para>Tim Williams</para>
-            </listitem>
-            <listitem>
-                <para>Raja Cholan</para>
-            </listitem>
-        </itemizedlist>
-    </para>
-
-</chapter>
+                <listitem>
+                    <para>Richard Esmond, CIMI WG co-chair</para>
+                </listitem>
+                <listitem>
+                    <para>Tim Williams</para>
+                </listitem>
+                <listitem>
+                    <para>Raja A. Cholan</para>
+                </listitem>
+                <listitem>
+                    <para>Ioana Singureanu, BookZurman</para>
+                </listitem>
+                <listitem>
+                    <para>Joey Coyle</para>
+                </listitem>
+                <listitem>
+                    <para>Walter Sujansky</para>
+                </listitem>
+                <listitem>
+                    <para>Werner Ceusters</para>
+                </listitem>
+                <listitem>
+                    <para>Kirsten Haake</para>
+                </listitem>
+                <listitem>
+                    <para>Andy Wang</para>
+                </listitem>
+                <listitem>
+                    <para>Benson Chang</para>
+                </listitem>
+            </itemizedlist></para>
+   </acknowledgements>

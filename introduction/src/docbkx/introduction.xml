@@ -2,481 +2,157 @@
 <?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Introduction<?oxy_comment_start author="kmaulden" timestamp="20190423T093902-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. 
 Re-using some of the work in the interoperability paper is probably wise. I think a distillation of key concepts should be part of the HL7 ballot document. We need to motivate why an ANF approch is necessary as opposed to the status quo.
 "?><?oxy_comment_end?></title>
+  <para>This document describes how information systems can to improve patient safety and outcomes
+    by increasing the precision of clinical information using a normal form to enhance support
+    accurate data retrieval and analysis.</para>
   <section>
-    <title>Acknowledgements </title>
-    <para>The project team would like to acknowledge the contributions and assistance received from
-      the following:<itemizedlist spacing="compact">
-        <listitem>
-          <para>Keith E. Campbell</para>
-        </listitem>
-        <listitem>
-          <para>Richard Esmond</para>
-        </listitem>
-        <listitem>
-          <para>Tim Williams</para>
-        </listitem>
-        <listitem>
-          <para>Raja A. Cholan</para>
-        </listitem>
-        <listitem>
-          <para>Ioana Singureanu</para>
-        </listitem>
-        <listitem>
-          <para>Joey Coyle</para>
-        </listitem>
-        <listitem>
-          <para>Walter Sujansky</para>
-        </listitem>
-        <listitem>
-          <para>Werner Ceusters</para>
-        </listitem>
-        <listitem>
-          <para>Kirsten Haake</para>
-        </listitem>
-        <listitem>
-          <para>Andy Wang</para>
-        </listitem>
-        <listitem>
-          <para>Benson Chang</para>
-        </listitem>
-      </itemizedlist></para>
-  </section>
-  <section>
-    <title>Motivation
-      <?oxy_comment_start author="rcholan" timestamp="20190529T090453-0400" comment="KC: 5/28/19: We want to try to introduce the concept of high reliability systems, and high reliability data management. One of things to emphasize, figuring out how to normalize the data in a high reliability framework in mind. They hire every terminology mapping provider who is out there, compare the results, and then abstract out generalized part of data to work off of. We are trying to set a higher bar. Then, reference that when we talk about transformations. Patient safety implications for the transforms…"?></title><?oxy_comment_end?>
-    <section>
-      <title>Context</title>
-       <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="What is the purpose of the Context
-       Section, and how is that different than the Representation of Clinical Statement section below. Context seems to state models are represented in every which way, and so do the following sections.  Also the clinical statement and the structured clinical imput section seem to have overlapping information."?><?oxy_comment_end?>
-      <para>Health care organizations are striving to become high reliability organizations (HROs),
-        characterized by high levels of safety under inherently risky, technologically-complex, and
-        demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
-        framework for assessing progress towards becoming a HRO and included the safe use of health
-        IT and review of quality measures, which are dependent on data from Electronic Health Record
-        (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
-        the US and there is increasing opportunity to leverage a substantial number of extant EHR
-        mapped data sets to improve population health through quality measures, case reporting, and
-        decision support. </para>
-      <para>Pragmatically, these electronic tools are implemented by manually mapping EHR clinical data to 
-        the appropriate clinical data stated in specifications to generate a
-        report. While there are published, standardized specifications of measures, reports, and
-        alerts with machine-readable, human-readable, and value set specifications, there is
-        currently vast variation seen in implementations of these tools across the healthcare system
-          .<citation>concepts</citation><citation>Cholan_specs</citation><citation>lookback</citation><citation>Hemler</citation><citation>Dorr</citation>
-        Some of this variation is due to discrepancies in how implementers of these reports
-        interpret the expression-logic of specifications. However, even if the implementations of
-        query logic were standardized there is still existing variation in the representation of how
-        clinical data within an EHR is organized, the clinical terminology that is applied, the
-        value range that is valid, which units of measurement may be used, and which data values are
-          required.<citation>DCM_Quality</citation>
-         <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I'm not following the flow here.
-          What do you mean my interpret the expression-logic of specifications, and how that jumps to query logic"?><?oxy_comment_end?>
-
-      </para>
-    </section>
-    <section>
-      <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="Started editing the following sections,
-      but realized we may need a different direction.  Would be better to clearly separate and present the fact that there are 
-      data structures with properties and there is terminology. Both can be be pre and post-coordinated. Clinical information can exist either at the data structure property level or the terminology level or a mix of both.  Then show the infinite
-      variations a modeler can choose"?><?oxy_comment_end?>
-      <title>Representation of Clinical Statements</title>
-      <para>To assist with these challenges, The Clinical Information Modeling Initiative (CIMI) is
-        an HL7 group that is defining a library of detailed clinical information models using a
-        common modeling formalism. CIMI was established to improve the interoperability of
-        healthcare information systems through shared implementable clinical information models that
-        can be used to generate platform-specific model specifications such as FHIR profiles,CDA
-        templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or Intermountain CEMs. These CIMI 
-        models are grouped into semantically equivalent (or ‘isosemantic’) families
-        of detailed clinical models, which capture the same clinical meaning using different
-        combinations of concept pre and post-coordination and corresponding information model structure. The
-        central focus of the CIMI Reference Model is the Clinical Statement. A Clinical Statement
-        represents structured electronic communication made about a patient typically documented as
-        an 'entry' in the patient record. For example, Clinical Statement can be used to represent
-        the following statements made about a patient. This can be the statement of a condition
-        being present, a request for a procedure to be done, the results of lab tests or the
-        patient’s family history of cancer.  
-        <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I think platform-specific is not really correct, maybe just be more generic and say something like other modeling specifications"?><?oxy_comment_end?>
-        <itemizedlist>
-          <listitem>
-            <para>Patient has a diagnosis of congestive heart failure</para>
-          </listitem>
-          <listitem>
-            <para>Patient has a family history of breast cancer</para>
-          </listitem>
-          <listitem>
-            <para>Patient has a goal of smoking cessation</para>
-          </listitem>
-          <listitem>
-            <para>Patient has an order for Physical Therapy</para>
-          </listitem>
-          <listitem>
-            <para>Patient had an appendectomy</para>
-          </listitem>
-        </itemizedlist>
-      </para>
-      <para>Let's consider the following example for blood pressure measurement and the clinical
-        statement that may be entered to represent this information.
-      </para>
-      <para>"Systolic blood pressure 120 mmHg, taken on the right brachial artery".</para>
-      <para>For the user, the easiest way to document the measurement is in narrative text. However,
-        the various parts of information about the artery, laterality, or measurement would require 
-        natural language processing and would be lost to any attempt of data retrieval. Another option to
-        document the measurement would be to choose various parts of information
-        pertinent to the blood pressure measurement and arrange them in various states of 
-        pre and post-coordination.
-      </para>
-      <para>"Systolic blood pressure taken on the right brachial artery" = 120 mmHG</para>
-      <para>"Systolic blood pressure" 'body location'='brachial artery' 
-        'body location laterality'='right' = 120 mmHG
-      </para>
-      <para>Because CIMI defines several different isosemantic detailed clinical models, there is
-        currently a decreased chance that modelers of clinical statements apply pre and post-coordinated
-        terminology concepts and models consistently. </para>
-      <para>Let's consider the same example with additional information about the blood pressure
-        cuff:</para>
-      <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
-        blood pressure cuff”. </para>
-      <para>One modeler may choose to structure this as one complex clinical statement (or a
-        compound clinical statement) with various concepts and consituent expressions included
-        within in it.  This is also referred to as 'compositionality' in which a complex statement
-        is determined by the meanings of its constituent expressions and rules used to combine them.
-        In other words, some compound clinical statements should in fact be broken down into a
-        number of simpler clinical statements to improve reproducibility of the detailed clinical
-        model. 
-      </para>
-      <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This is not a good example for this, as I don't think anyone would model this as a compound set of individual statements, as none of these extra elements can stand alone, and instead are clearly qualifiers."?><?oxy_comment_end?>
-    </section>
-    <section>
-      <title><?oxy_comment_start author="rcholan" timestamp="20190529T090042-0400" comment="Clinical Input Form is one that has value in preserving but per Joey, we should not confuse CIF with CIMI models. So how do we articulate these all in a coherent way?"?>Structured<?oxy_comment_end?>
-        Clinical Input</title>
-      <para>Not only is there a potential for a lack of consistency with representing clinical
-        statements with current detailed clinical modeling efforts, but there is also further
-        variation in how the data is entered into information systems by end-users. Clinicians
-        author clinical statements and enter them into their organization’s EHR systems as
-        "Structured Clinical Input". This concept describes any data entry mechanism used by
-        clinicians to record clinical statements. An instance of a clinical statement may be created
-        using one or more forms. Vendors compete on usability for seamless Structured Clinical Input
-        but, in some cases, structured clinical statement are based on standard-based models (e.g.
-        CIMI, openEHR archetypes, etc.) but they may also be based on proprietary models. For the
-        purposes of this document, the type or usability of data structure used for capture or
-        display of clinical statements is not in scope. We assume that <emphasis role="bold">any
-          suitably encoded</emphasis> structured clinical statement may be suitable for
-        normalization for analysis. </para>
-      <para>Therefore, clinical statements can be expressed and documented in many different ways in
-        EHR systems, where input forms provide different options to document the same clinical
-        statement. These differences pose challenges for how the data is modeled, how the data is
-        stored, and therefore has implications on data retrieval, data analysis,accuracy of clinical
-        analysis results. </para>
-      <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
-        that we call here structured clinical input, or the manner in which information is presented
-        to the clinicians and how they enter the data, such as by constraining the information to
-        allow only certain values to be entered, e.g. through a drop-down list or radio button, or
-        breaking up large chunks of related information into smaller parts.</para>
-      <para>For example, a EHR could display a text field for the result and lists of choices for
-        the body site:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Right brachial artery</para>
-        </listitem>
-        <listitem>
-          <para>Left brachial artery</para>
-        </listitem>
-      </itemizedlist>
-      <para>Or it could be diplayed with the site and allow further refinement to specify the
-        laterality:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Brachial artery</para>
-          <itemizedlist spacing="compact">
-            <listitem>
-              <para>Right</para>
-            </listitem>
-            <listitem>
-              <para>Left</para>
-            </listitem>
-          </itemizedlist>
-        </listitem>
-      </itemizedlist>
-      <para>In addition to specifiying the body site a list of choices for the blood pressure cuff
-        size used would also be selected, for example:</para>
-      <itemizedlist>
-        <listitem spacing="compact">
-          <para>Adult size Small</para>
-        </listitem>
-        <listitem>
-          <para>Adult size Medium</para>
-        </listitem>
-        <listitem>
-          <para>Adult size Large</para>
-        </listitem>
-      </itemizedlist>
-      <para>The same could be true for the display and documentation option for the patient position
-        (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could
-        differ between systems. There are different ways the measurement result could be entered
-        into a form in an EHR. Display options for the user could be, e.g. a text field to enter the
-        measurement result (e.g. 120 mmHg) with the label of the complete guideline. </para>
-      <para>The following is an example of two distinct user interfaces for capturing a set of
-        “clinical statements" related to Blood Pressure. </para>
-      <figure>
-        <title> Blood Pressure Statement recorded using structured clinical statement 1</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/BP data capture.svg" scalefit="1" width="100%" format="SVG"
-              contentdepth="100%"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <figure>
-        <title> Blood Pressure Statement recorded using structured clinical statement 2</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/EHR-2.svg" scalefit="1" width="100%" format="SVG"
-              contentdepth="100%"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <para>In the first wireframe, the structured clinical input has separate drop down constraints
-        to enter the artery and laterality as distinct concepts. In the second wireframe, the
-        structured clinical input has combined the artery and laterality into a compond concept.
-        This variation present in the structured clinical input may also have implications on the
-        how the clinical statement is modeled. </para>
-      <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
-        is a problem because there are many different use cases for clinical information with a wide
-        range of requirements. There is no single model that can be the most efficient model for all
-        the various use cases. Maximum efficiency for each use case necessitates that any particular
-        clinical information be available in multiple modeled forms. These models, although
-        different in form, semantically represent the same information, and are known as isosemantic
-        models. Any particular detailed clinical model exists within a family of isosemantic
-        siblings. </para>
-    </section>
-  </section>
-  <section>
-    <title> Purpose
+    <title> Background
       <?oxy_comment_start author="rcholan" timestamp="20190529T235034-0400" comment="RC Suggestion: We should probably mention that there is a goal to normalize data in a high reliability framework in mind. "?></title><?oxy_comment_end?>
-    <para>Here, we introduce a new isosemantic representation that is designed to aid in the
-      analysis of clinical information and will represent one member in each isosemantic family of
-      detailed clinical models. This representation is called Analysis Normal Form (ANF). A FHIR
-      implementation guide can eventually be developed. </para>
-    <para>ANF is not necessarily a physical structure, but is how a data analyst might see the data
-      when they are looking at it in a database, and not as clinicians would see it in the user
-      interface (i.e., structured data capture). </para>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Clinician collects data &#x21D2; Clinical Input Form</para>
-      </listitem>
-      <listitem>
-        <para>Data is normalized &#x21D2; Transformation process from Structured Clinical Input to
-          ANF &#x21D2; Representable/storable in multiple types of databases.</para>
-      </listitem>
-      <listitem>
-        <para>Data analyst who is using or querying the data (e.g., creating a CDS rule or working
-          on prevalence statistics) &#x21D2; ANF (it is how the data is represented or stored in the
-          database; must know enough about the data to know what is stored in the topic vs. what is
-          stored as a result or detail)</para>
-      </listitem>
-    </itemizedlist>
-    <para>The goal of ANF is to enable analysts to understand the data and how it is stored in lieu
-      of having to teach them about the thousands of ways data can be entered and ensure the data
-      that has to be expressed, can be expressed in an operable and scalable way. The more that data
-      is normalized, the simpler it will become to analyze, and the likelihood of analysis errors
-      will be reduced. Without the ANF, the probability of patient safety risks is increased.</para>
-    <para>ANF aims to allow highly postcoordinated compositional terminologies to provide greater
-      content coverage in a complete and consistent way than terminology content that is restricted
-      to relying on precoordinated concepts. While postcoordinated compositional terminologies can
-      be expressively powerful, they may generate expressions whose  equivalency cannot be easily
-      determined. ANF aims to assist by providing comparable data in a normalized manner with
-      respect to the content and semantics. Ideally, precoordinated experssions should retain the
-      same representational structure as postcoordinated expressions. What is required with
-      knowledge representation of postcoordinated compositional statements is the ability to
-      faithfully expand from a reduced form or compare to other statemetns with ease and no loss of
-      semantic integrity. Elkin wrote about what is needed in order for postcoordinated statements
-      to be comparable and captured one of ANF's key objectives: "to be a formal terminological
-      composition and decomposition mechanism for lossless information representation such that both
-      explicit and implicit information can be faithfully recovered, maintained, and modified with
-      ease." (Elkin, pg 14) </para>
-    <para>The <emphasis role="bold">purpose of ANF</emphasis> is suggested as follows:</para>
-    <para>The purpose of ANF is to provide precise semantic consistent data and terminology
-      specification that are comparable and sharable between multiple care providers, health
-      enterprises and standards-based Healthcare Information Technology (HIT).</para>
-    <para>ANF can be used for multiple objectives. Examples of such objectives are:</para>
+    <para><emphasis role="bold">Analysis Normal Form</emphasis> (ANF) is a logical model intended to
+      represent a <emphasis role="bold">normalized</emphasis> view of aggregate clinical statements
+      for analysis, research, clinical decision support, and other purposes. ANF can be used to
+      represent any isosemantic clinical statements irrespective of how the information was captured
+      at its source (i.e. information systems or medical devices). ANF could be used in conjunction
+      with other models intended to ensure that clinical information is structured and complete at
+      the time of entry (e.g. CIMI models, Detailed Clinical Models) or exchanged among systems
+      (e.g. HL7 CDA templates, HL7 V2 message profiles, FHIR profiles). </para>
+    <para>Clinicians, integrators , and researcher face different priorities, forcing trade-offs to
+      be made that optimize data entry brevity at the cost of computability. ANF represents a
+      collection of patterns and approaches to provide predictable transformations between sets of
+      models can be optimized for clinical input and models that are optimized for computability
+      through normalization. The more normalized the data is, the simpler it will become to analyze,
+      and errors will be reduced. Post-coordinated compositional statements using ANF introduce the
+      ability to faithfully expand from a reduced form or compare to other statements with ease and
+      no loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
+      statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
+        role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
+      lossless information representation such that both explicit and implicit information can be
+      faithfully recovered, maintained, and modified with ease." (Elkin, pg 14) </para>
+    <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
+      representation of clinical statements from heterogeneous source using an objective
+      quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
+      and magnitude of a specific finding, request or observation.</para>
+    <para> ANF requires an ability to classify topic expressions (and expressions that may go in
+      other locations) and thus it depends either on systems that on systems that can produce
+      structured information reducible to ANF. These systems may create normal data natively or
+      transform other representations of clinical statements (e.g. C-CDA templates, FHIR profiles)
+      to normal form - ANF.</para>
+    <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
+      multiple sources to better support a set of analysis </para>
     <itemizedlist>
       <listitem>
-        <para>clinical data collection and communication</para>
-      </listitem>
-      <listitem>
-        <para>clinical care</para>
-      </listitem>
-      <listitem>
-        <para>continuity of care</para>
-      </listitem>
-      <listitem>
-        <para>electronic exchange of information</para>
-      </listitem>
-      <listitem>
-        <para>lifetime storage and retrieval linked to the context in which this took place</para>
-      </listitem>
-      <listitem>
-        <para>quality measurement</para>
-      </listitem>
-      <listitem>
-        <para>research</para>
-      </listitem>
-      <listitem>
-        <para>management and policy making</para>
-      </listitem>
-      <listitem>
-        <para>aggregation of data for other purposes</para>
-      </listitem>
-      <listitem>
-        <para>among others.</para>
+        <para>Specify clinical content extracted from EHR systems using FHIR</para>
       </listitem>
     </itemizedlist>
-    <para>ANF is intended to be agnostic or neutral with respect to reference model and platform.
-      For ANF to be used in applications, it needs to be transformed into platform specific
-      artefacts, for example HL7 FHIR Resources.</para>
-    <section>
-      <title> Concrete Objectives </title>
-      <para>ANF specifies clinical information for one or more sets of clinical concepts and their
-        corresponding data elements and terminology. This with the goal of supporting the semantic
-        interoperability between standards and technologies by means of representing<itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Provide a common analysis form of data exchangeHL7 messages, FHIR and CDA</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Specify clinical content for User Interfaces</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Enhance information clinical content for use as </para>
+        <itemizedlist>
           <listitem>
-            <para>the topic,</para>
+            <para>Clinical Decision Support Systems</para>
           </listitem>
           <listitem>
-            <para>the circumstance,</para>
+            <para>Quality Measures and National Registries</para>
           </listitem>
           <listitem>
-            <para>the measure and result,</para>
+            <para>Healthcare Guidelines and Protocols </para>
           </listitem>
           <listitem>
-            <para>interpretation of values and ranges,</para>
+            <para>Epidemiological Research</para>
           </listitem>
-        </itemizedlist></para>
-    </section>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+
     <section>
-      <title> Usage</title>
-      <para>Overall, ANF supports the following functions:</para>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use in EHR</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use in HL7 messages, FHIR and CDA</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for User Interfaces</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use in Medical Devices</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use as Quality Measures and National Registries</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content and knowledge for use in Healthcare Guidelines and
-            Protocols</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use in Medical, Health Care and Epidemiological
-            Research</para>
-        </listitem>
-      </itemizedlist>
-      <itemizedlist>
-        <listitem>
-          <para>Specify clinical content for use in Clinical Decision Support Systems</para>
-        </listitem>
-      </itemizedlist>
-      <para>such that these specifications on the same concept are consistent for all these
-        functions that it tries to achieve.</para>
-    </section>
-  </section>
-  
-  <section>
-    <title>Background </title>
-    <section>
-      <title>HL7 Version 3 Clinical Statement </title>
-      <?oxy_comment_start author="rcholan" timestamp="20190530T120903-0400" comment=" Needs better transition from the previous section."?>
-      <para><?oxy_comment_end?>Starting with HL7 Version 3, the minimum requirements for the
-        interoperable clinical statement is: </para>
-      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
-        is:</para>
-      <para>An expression of a discrete item of clinical, clinically-related or public health
-        information that is recorded because of its relevance to the care of a patient or other
-        entities. Clinical or public health information can be expressed with different levels of
-        granularity and therefore the extent and detail conveyed in a single statement may vary. To
-        be regarded as a Clinical Statement, a concept must be associated with a patient or other
-        entity in a manner which makes clear:</para>
-      <itemizedlist>
-        <listitem>
-          <para>Its temporal context</para>
-        </listitem>
-        <listitem>
-          <para>Its relationship to the entity or entities</para>
-        </listitem>
-      </itemizedlist>
-      <para>In the case of an observation, its mood and presence, absence or value</para>
-      <para>In the case of a procedure, its mood and status</para>
-      <para>This clarity may be achieved by:</para>
-      <itemizedlist>
-        <listitem>
-          <para>Explicit representation; or</para>
-        </listitem>
-        <listitem>
-          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
-            appropriate defaults." </para>
-          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
-            1</para>
-        </listitem>
-      </itemizedlist>
-      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
-        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in Figure
-        1, the V3 Clinical Statement Model is a polymorphic model: it can represent observations,
-        procedures, encounters, public health reports, supply, medications, exposure, and
-        derivations of clinical acts. </para>
-    </section>
-    <section>
-      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD)
-        <?oxy_comment_start author="rcholan" timestamp="20190530T120829-0400" comment="Can we make this section more concise and more pertinent to ANF specifically? Can we reduce the number of aronyms we use?"?></title><?oxy_comment_end?>
-      <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
-        architecture to allow for a clear separation of concerns among interoperability models and
-        specification from the abstract or conceptual to the most precise, implementable, and
-        testable that ensures semantic interoperability.</para>
-      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
-        Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
-        Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
-        even though it reuses the same derivation. Therefore, the Implementable Perspective is
-        derived from the Logical Perspective and the Logical Perspective is derived from the
-        Conceptual Perspective. This approach ensures that any implementable artifacts (i.e. service
-        specifications, implementation guides) are traceable to business/clinical requirements and
-        logical models of knowledge.</para>
-      <figure>
-        <title>Model Derivation according to SAIF</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="100%"
-              contentdepth="65%"/>
-          </imageobject>
-        </mediaobject>
-      </figure>
-      <!-- <figure>
-        <title>Model Derivation according to
-          SAIF-<?oxy_comment_start author="rcholan" timestamp="20190522T180111-0400" comment="Need to fix SVG"?>CD<?oxy_comment_end?></title>
+      <title>Clinical Statement Representations </title>
+      <para>Clinical statement standardization has a long-standing concern for HL7 and reuse of
+        these content models across paradigms (e.g. messages, documents, services)l has relied on
+        model-driven approaches relying on separation of concerns along conceptual, logical, and
+        implementation perspectives.</para>
+      <section>
+        <title>HL7 Version 3 Clinical Statement </title>
+        <?oxy_comment_start author="rcholan" timestamp="20190530T120903-0400" comment=" Needs better transition from the previous section."?>
+        <para><?oxy_comment_end?>Starting with HL7 Version 3, the minimum requirements for the
+          interoperable clinical statement: </para>
+        <para>“Clinical Statement for the care of patients (persons, animals and other entities)
+          is:</para>
+        <para>An expression of a discrete item of clinical, clinically-related or public health
+          information that is recorded because of its relevance to the care of a patient or other
+          entities. Clinical or public health information can be expressed with different levels of
+          granularity and therefore the extent and detail conveyed in a single statement may vary.
+          To be regarded as a Clinical Statement, a concept must be associated with a patient or
+          other entity in a manner which makes clear:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Its temporal context</para>
+          </listitem>
+          <listitem>
+            <para>Its relationship to the entity or entities</para>
+          </listitem>
+        </itemizedlist>
+        <para>In the case of an observation, its mood and presence, absence or value</para>
+        <para>In the case of a procedure, its mood and status</para>
+        <para>This clarity may be achieved by:</para>
+        <itemizedlist>
+          <listitem>
+            <para>Explicit representation; or</para>
+          </listitem>
+          <listitem>
+            <para>Implicit application of defaults ONLY where explicitly modeled rules state the
+              appropriate defaults." </para>
+            <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs
+              Release 1</para>
+          </listitem>
+        </itemizedlist>
+        <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
+          the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in Figure
+          1, the V3 Clinical Statement Model is a polymorphic model: it can represent observations,
+          procedures, encounters, public health reports, supply, medications, exposure, and
+          derivations of clinical acts. </para>
+      </section>
+      <section>
+        <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD)
+          <?oxy_comment_start author="rcholan" timestamp="20190530T120829-0400" comment="Can we make this section more concise and more pertinent to ANF specifically? Can we reduce the number of aronyms we use?"?></title><?oxy_comment_end?>
+        <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
+          architecture to allow for a clear separation of concerns among interoperability models and
+          specification from the abstract or conceptual to the most precise, implementable, and
+          testable that ensures semantic interoperability.</para>
+        <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
+          Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
+          Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
+          even though it reuses the same derivation. Therefore, the Implementable Perspective is
+          derived from the Logical Perspective and the Logical Perspective is derived from the
+          Conceptual Perspective. This approach ensures that any implementable artifacts (i.e.
+          service specifications, implementation guides) are traceable to business/clinical
+          requirements and logical models of knowledge.</para>
+        <figure>
+          <title>Model Derivation according to SAIF</title>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="60%"
+                contentdepth="65%"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+        <!-- <figure>
+        <title>Model Derivation according to SAIF-CD</title>
         <mediaobject>
           <imageobject>
             <imagedata fileref="images/Perspectives.svg" scalefit="1" width="100%" format="SVG"
@@ -484,108 +160,262 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
           </imageobject>
         </mediaobject>
       </figure> -->
-      <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
-        of Computationally Independent Model (CIM), the Logical Perspective is not equivalent to the
-        MDA Platform Independent Model (PIM), nor is the Implementable Perspective equivalent to the
-        MDA Platform Specific Model although this Perspective is the SAIF Perspective that most
-        closely aligns with an MDA analogue.</para>
-      <section>
-        <title>Conceptual Perspective</title>
-        <para>The artifacts of the Conceptual Perspective are of interest to and readable by Domain
-          Experts (DEs) or Subject Matter Experts (SMEs). In the context of typically clinicians and
-          business analysts. These artifacts are most commonly focused on the “Problem-Space” rather
-          than the “Solution Space,” and contain explicit, unambiguous descriptions of the various
-          dimensions of the component (e.g. clinical statement) or system being specified. </para>
-        <para>Artifacts of the Conceptual Perspective are normally developed by “outward-facing
-          analysts” who have reasonable domain knowledge and can facilitate dialogues with DEs and
-          SMEs. These analysts also take the results of such dialogues and represent the content in
-          structured artifacts which remain understandable to DEs or SMEs. These sometimes formally
-          structured artifacts may include clearly-stated business rules, concept maps, and simple
-          UML class or activity diagrams. </para>
-        <para>A fully-specified Conceptual Perspective thus should be both readable and traceable by
-          DEs and SMEs and rigorous enough to serve as input into the development in the Logical
-          Perspective.</para>
-        <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs) and
-          business models that represent stakeholder requirements analyzed by SMEs and DEs. This
-          perspective that precede the development of either logical or implantable artifacts and
-          it’s a key to successful testing of implementations. </para>
+        <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA
+          concept of Computationally Independent Model (CIM), the Logical Perspective is not
+          equivalent to the MDA Platform Independent Model (PIM), nor is the Implementable
+          Perspective equivalent to the MDA Platform Specific Model although this Perspective is the
+          SAIF Perspective that most closely aligns with an MDA analogue.</para>
+        <section>
+          <title>Conceptual Perspective</title>
+          <para> These artifacts are most commonly focused on the “Problem-Space” rather than the
+            “Solution Space,” and contain explicit, unambiguous descriptions of the various
+            dimensions of the component (e.g. clinical statement) or system being specified. </para>
+          <para>A fully-specified Conceptual Perspective thus should be both readable and traceable
+            by Domain Experts and Subject Matter Experts and rigorous enough to serve as input into
+            the development in the Logical Perspective.</para>
+          <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs)
+            and business models that represent stakeholder requirements analyzed by SMEs and DEs.
+            This perspective that precede the development of either logical or implantable artifacts
+            and it’s a key to successful testing of implementations. </para>
+        </section>
+        <section>
+          <title>Logical Perspective</title>
+          <para>Artifacts in the Logical Perspective represent traceable translations of
+            Conceptual-level artifacts into a form and format, usable by and useful to architects
+            and “inward-facing analysts.” Also included are additional specification materials
+            required by architects preparing artifacts for consumption by developers. </para>
+          <para>There are no definite boundaries between the Logical and Implementable Perspectives.
+            Therefore, it’s important for organizations such as HL7 to standardize logical models
+            used to generate/create implementable artifacts (i.e. implementation guides, profiles,
+            and templates). CIMI clinical statements. Detailed Clinical Models, and ANF statements
+            all belong in this perspective.</para>
+        </section>
+        <section>
+          <title>Implementable Perspective</title>
+          <para>Artifacts in the Implementable Perspective are typically defined by developers or
+            standards implementers, often through discussion with software designers, architects, or
+            system integrators. Note that the artifacts in the Implementable Perspective are not
+            actual implementations, but rather implementable in a number of implementation
+            instances. Thus, all the necessary technical bindings, including data types, value sets,
+            class libraries, and interface specifications are part of the Implementable Perspective.
+            FHIR implementation requires a combination of profiles and test cases to ensure that
+            implementations meet the requirements used to derive the conceptual and logical
+            models.</para>
+        </section>
       </section>
       <section>
-        <title>Logical Perspective</title>
-        <para>Artifacts in the Logical Perspective represent traceable translations of
-          Conceptual-level artifacts into a form and format, usable by and useful to architects and
-          “inward-facing analysts.” Also included are additional specification materials required by
-          architects preparing artifacts for consumption by developers. </para>
-        <para>Note that there is no firm or fixed line that definitively and unambiguously
-          determines where the Conceptual Perspective ends and the Logical Perspective begins. The
-          same is true of the lack of definitive boundaries between the Logical and Implementable
-          Perspectives. Therefore, it’s important for organizations such as HL7 to standardize
-          logical models used to generate/create implementable artifacts (i.e. implementation
-          guides, profiles, and templates).</para>
-      </section>
-      <section>
-        <title>Implementable Perspective</title>
-        <para>Artifacts in the Implementable Perspective are typically defined by developers or
-          standards implementers, often through discussion with software designers, architects, or
-          system integrators. Note that the artifacts in the Implementable Perspective are not
-          actual implementations, but rather implementable in a number of implementation instances.
-          Thus, all the necessary technical bindings, including data types, value sets, class
-          libraries, and interface specifications are part of the Implementable Perspective. FHIR
-          implementation artifact include
-          <?oxy_comment_start author="rcholan" timestamp="20190522T173538-0400" comment="Check with Ioana to finish sentence. "?>xxx<?oxy_comment_end?></para>
+        <title>CIMI Models</title>
+        <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of detailed
+          clinical information models using a common modeling formalism. CIMI was established to
+          improve the interoperability of healthcare information systems through shared
+          implementable clinical information models that can be used to generate platform-specific
+          model specifications such as FHIR profiles,CDA templates, OpenEHR Archetypes, 13606
+          Archetypes, ISO DCMs, or Intermountain CEMs. These CIMI models are grouped into
+          semantically equivalent (or ‘isosemantic’) families of detailed clinical models, which
+          capture the same clinical meaning using different combinations of concept pre and
+          post-coordination and corresponding information model structure. The central focus of the
+          CIMI Reference Model is the Clinical Statement. A Clinical Statement represents structured
+          electronic communication made about a patient typically documented as an 'entry' in the
+          patient record. For example, Clinical Statement can be used to represent the following
+          statements made about a patient. This can be the statement of a condition being present, a
+          request for a procedure to be done, the results of lab tests or the patient’s family
+          history of cancer. <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I think platform-specific is not really correct, maybe just be more generic and say something like other modeling specifications"?><?oxy_comment_end?>
+          <itemizedlist>
+            <listitem>
+              <para>Patient has a diagnosis of congestive heart failure</para>
+            </listitem>
+            <listitem>
+              <para>Patient has a family history of breast cancer</para>
+            </listitem>
+            <listitem>
+              <para>Patient has a goal of smoking cessation</para>
+            </listitem>
+            <listitem>
+              <para>Patient has an order for Physical Therapy</para>
+            </listitem>
+            <listitem>
+              <para>Patient had an appendectomy</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        <para>Let's consider the following example for blood pressure measurement and the clinical
+          statement that may be entered to represent this information. </para>
+        <para>"Systolic blood pressure 120 mmHg, taken on the right brachial artery".</para>
+        <para>For the user, the easiest way to document the measurement is in narrative text.
+          However, the various parts of information about the artery, laterality, or measurement
+          would require natural language processing and would be lost to any attempt of data
+          retrieval. Another option to document the measurement would be to choose various parts of
+          information pertinent to the blood pressure measurement and arrange them in various states
+          of pre and post-coordination. </para>
+        <para>"Systolic blood pressure taken on the right brachial artery" = 120 mmHG</para>
+        <para>"Systolic blood pressure" 'body location'='brachial artery' 'body location
+          laterality'='right' = 120 mmHG </para>
+        <para>Because CIMI defines several different isosemantic detailed clinical models, there is
+          currently a decreased chance that modelers of clinical statements apply pre and
+          post-coordinated terminology concepts and models consistently. </para>
+        <para>Let's consider the same example with additional information about the blood pressure
+          cuff:</para>
+        <para>“Systolic blood pressure 120 mmHg, taken on right brachial artery, using adult size
+          blood pressure cuff”. </para>
+        <para>One modeler may choose to structure this as one complex clinical statement (or a
+          compound clinical statement) with various concepts and constituent expressions included
+          within in it. This is also referred to as 'compositionality' in which a complex statement
+          is determined by the meanings of its constituent expressions and rules used to combine
+          them. In other words, some compound clinical statements should in fact be broken down into
+          a number of simpler clinical statements to improve reproducibility of the detailed
+          clinical model. </para>
+        <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="This is not a good example for this, as I don&apos;t think anyone would model this as a compound set of individual statements, as none of these extra elements can stand alone, and instead are clearly qualifiers."?><?oxy_comment_end?>
+        <section>
+          <title/>
+        </section>
       </section>
     </section>
   </section>
   <section>
-    <title>Scope</title>
-    <para>Here, we define ANF, an isosemantic representation of detailed clinical models that is
-      designed to aid in the analysis of clinical information. Different isosemantic models can
-      support different purposes, such as clinical data input, clinical data storage, clinical data
-      querying, clinical data analysis, and modeler preference. ANF intends to assist with logical
-      modeling or within the "Logical Perspective" in the SAIF-CD Framework.
-      <?oxy_comment_start author="rcholan" timestamp="20190530T120752-0400" comment="RC: I am braindumping some ideas here. We may want to discuss this."?></para>
-    <para><inlinemediaobject>
-        <imageobject>
-          <imagedata fileref="../../../introduction/src/docbkx/clip_image002_-1458651199.jpg"/>
-        </imageobject>
-      </inlinemediaobject></para>
-    <para>
-      <itemizedlist>
-        <listitem>
-          <para>I think a figure inspired by this Goosen image showing where/how ANF fits in and
-            highlights the SAIF-CD Perspectives (Concept/Logical/Implementation) could help with the
-            transition back to DCM and ANF. </para>
-        </listitem>
-        <listitem>
-          <para>In some ways, the "columns" in the Goosen figure above are analagous to the SAIF-CD
-            Perspectives: </para>
-          <itemizedlist>
-            <listitem>
-              <para>Conceptual = DCM Repository + Entry and Presentation</para>
-              <para>Logical = Terminology/coding + Store/Process</para>
-              <para>Implementation =Medical Knowledge + Communication</para>
-            </listitem>
-          </itemizedlist>
-        </listitem>
-        <listitem>
-          <para>Highlight here at a high-level why ANF is better than alternative DCMs. What is the
-            higher bar that we are trying to achieve. <?oxy_comment_end?></para>
-        </listitem>
-      </itemizedlist>
-    </para>
-    <para>In order to define comparison functions for postcoordinated expressions, normalization of
-      both the contents and the semantics of the contents of the terminology needs to be
-      accomplished by an appropriate knowledge representation format (ANF) that facilitates the
-      process. In addition the representation format that permits such a functional comparison
-      requires a storage and messaging paradigm robust enough to represent completely the explicit
-      or implicit information contained within compound compositional clinical statements. ANF
-      presents a formalism for storing and representing postcooridnated compositional clinical
-      statements. </para>
-    <para>The following document will discuss the following specific aims:
-      <?oxy_comment_start author="rcholan" timestamp="20190530T121125-0400" comment="Specific Aims need editing/improvement"?></para><?oxy_comment_end?>
-    <para>(1) how the ANF Model provides the clinical data normalization capabilities to support
-      accurate data retrieval and analysis; </para>
-    <para>(2) how ANF is used to create detailed clinical models (DCMs); and, </para>
-    <para>(3) how it differs from CIMI's current standard modeling paradigm. </para>
+    <title>Problem</title>
+    <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="What is the purpose of the Context
+       Section, and how is that different than the Representation of Clinical Statement section below. Context seems to state models are represented in every which way, and so do the following sections.  Also the clinical statement and the structured clinical imput section seem to have overlapping information."?><?oxy_comment_end?>
+    <para>Health care organizations are striving to become high reliability organizations (HROs),
+      characterized by high levels of safety under inherently risky, technologically-complex, and
+      demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
+      framework for assessing progress towards becoming a HRO and included the safe use of health IT
+      and review of quality measures, which are dependent on data from Electronic Health Record
+      (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
+      the US and there is increasing opportunity to leverage a substantial number of extant EHR
+      mapped data sets to improve population health through quality measures, case reporting, and
+      decision support. </para>
+    <para>Information system record and manage clinical statement using a variety of standard or
+      ad-hoc models. However, both treatment and analysis of clinical statements require consistency
+      not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
+      of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
+      analysis, but even in the case of structured, semantically-clear information, inconsistency
+      across sources of information raises obstacles to analysis and research. Analysis of aggregate
+      information  managed by health information networks poses the greatest challenge today because
+      a meaningful use of data for patient outcomes or research requires a common format and level
+      of semantic clarity.</para>
   </section>
+  <section>
+    <title>Why ANF? </title>
+    <para>Not only is there a potential for a lack of consistency with representing clinical
+      statements with current detailed clinical modeling efforts, but there is also further
+      variation in how the data is entered into information systems by end-users. This reality has a
+      direct impact on patient safety if a clinical statement are recorded and displayed differently
+      across the continuum of care: Clinicians author clinical statements and enter them into their
+      organization’s EHR systems as "Structured Clinical Input". This concept describes any data
+      entry mechanism used by clinicians to record clinical statements. An instance of a clinical
+      statement may be created using one or more forms. Vendors compete on usability for seamless
+      Structured Clinical Input but, in some cases, structured clinical statement are based on
+      standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be based on
+      proprietary models. For the purposes of this document, the type or usability of data structure
+      used for capture or display of clinical statements is not in scope. We assume that <emphasis
+        role="bold">any suitably encoded</emphasis> structured clinical statement may be suitable
+      for normalization for analysis. </para>
+    <para>Therefore, clinical statements can be expressed and documented in many different ways in
+      EHR systems, where input forms provide different options to document the same clinical
+      statement. These differences pose challenges for how the data is modeled, how the data is
+      stored, and therefore has implications on data retrieval, data analysis,accuracy of clinical
+      analysis results. </para>
+    <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
+      that we call here structured clinical input, or the manner in which information is presented
+      to the clinicians and how they enter the data, such as by constraining the information to
+      allow only certain values to be entered, e.g. through a drop-down list or radio button, or
+      breaking up large chunks of related information into smaller parts.</para>
+    <para>For example, a EHR could display a text field for the result and lists of choices for the
+      body site:</para>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>Right brachial artery</para>
+      </listitem>
+      <listitem>
+        <para>Left brachial artery</para>
+      </listitem>
+    </itemizedlist>
+    <para>Or it could be displayed with the site and allow further refinement to specify the
+      laterality:</para>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>Brachial artery</para>
+        <itemizedlist spacing="compact">
+          <listitem>
+            <para>Right</para>
+          </listitem>
+          <listitem>
+            <para>Left</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+    <para>In addition to specifying the body site a list of choices for the blood pressure cuff size
+      used would also be selected, for example:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Adult size Small</para>
+      </listitem>
+      <listitem>
+        <para>Adult size Medium</para>
+      </listitem>
+      <listitem>
+        <para>Adult size Large</para>
+      </listitem>
+    </itemizedlist>
+    <para>The same could be true for the display and documentation option for the patient position
+      (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could differ
+      between systems. There are different ways the measurement result could be entered into a form
+      in an EHR. Display options for the user could be, e.g. a text field to enter the measurement
+      result (e.g. 120 mmHg) with the label of the complete guideline. </para>
+    <para>The following is an example of two distinct user interfaces for capturing a set of
+      “clinical statements" related to Blood Pressure. </para>
+    <figure>
+      <title> Blood Pressure Statement recorded using structured clinical statement 1</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/BP data capture.svg" scalefit="1" width="60%" format="SVG"
+            contentdepth="100%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <figure>
+      <title> Blood Pressure Statement recorded using structured clinical statement 2</title>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/EHR-2.svg" scalefit="1" width="60%" format="SVG"
+            contentdepth="100%"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+    <para>In the first wire frame, the structured clinical input has separate drop down constraints
+      to enter the artery and laterality as distinct concepts. In the second wire frame, the
+      structured clinical input has combined the artery and laterality into a compound concept. This
+      variation present in the structured clinical input may also have implications on the how the
+      clinical statement is modeled. </para>
+    <para>Ideally,clinical information is modeled in a manner that is most efficient for use. This
+      is a problem because there are many different use cases for clinical information with a wide
+      range of requirements. There is no single model that can be the most efficient model for all
+      the various use cases. Maximum efficiency for each use case necessitates that any particular
+      clinical information be available in multiple modeled forms. These models, although different
+      in form, semantically represent the same information, and are known as isosemantic models. Any
+      particular detailed clinical model exists within a family of isosemantic siblings. </para>
+    <section>
+      <title> Assumptions</title>
+      <para>ANF provide precise semantic consistent data and terminology specification that are
+        comparable and sharable between multiple care providers, health enterprises and
+        standards-based Healthcare Information Technology (HIT). Therefore ANF has to </para>
+      <para>ANF relies highly post-coordinated compositional terminologies to provide greater
+        content coverage in a complete and consistent way than terminology content that is
+        restricted to relying on pre-coordinated concepts. While post-coordinated compositional
+        terminologies can be expressively powerful, they may generate expressions whose equivalency
+        cannot be easily determined. ANF can help manage aggregate post-coordinated content in
+        normalized manner with respect to the content and semantics whole the same representational
+        structure as post-coordinated expressions used as input. </para>
+      <para>Successful analysis requires relatively high data quality that allows system to defined
+        a precise topic, category,  and clear measure or result of what was observed, requested, or
+        assessed during treatment.
+        <?oxy_comment_start author="Ioana" timestamp="20190612T011418-0400" comment="Could ANF evaluate the precision of data: detailed topic definition?"?>ANF
+        can be applied to any input model as long as that structure and terminology is precise to
+        define the elements mandatory for analysis.<?oxy_comment_end?>
+      </para>
+    </section>
+  </section>
+
+
 </chapter>
