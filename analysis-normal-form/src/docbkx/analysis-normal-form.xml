@@ -93,12 +93,13 @@ Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semanti
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
 Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
-"?><emphasis
-                                role="bold">Example: </emphasis>Laterality should be a concern of
-                            either the Terminology Knowledge or the Statement Model, but not both.
-                            We can relax this principle for the Clinical Input Form (CIF) but for
-                            ANF we need a clean and invariant separation of
-                            concerns.<?oxy_comment_end?></para>
+" flag="done"?><emphasis
+                                role="bold">Example: </emphasis>Laterality (used to designate one or
+                            both of paired, bilaterally symmetrical (or nearly symmetrical) body
+                            structures) should be a concern of either the Terminology Knowledge or
+                            the Statement Model, but not both. We can relax this principle for the
+                            Clinical Input Form (CIF) but for ANF we need a clean and invariant
+                            separation of concerns.<?oxy_comment_end?></para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -128,14 +129,12 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     into the composition abstraction.<?oxy_comment_end?></para>
             </listitem>
             <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T131315-0500" comment="Remove?
-"?><emphasis
-                        role="bold">Composition Over Inheritance: </emphasis>Composition over
-                    inheritance (or composite reuse principle) in object-oriented programming is the
-                    principle that classes should achieve polymorphic behavior and code reuse by
-                    their composition (by containing those instances of other classes that implement
-                    the desired functionality) rather than inheritance from a base or parent
-                    class.</para>
+                <para><emphasis role="bold">Composition Over Inheritance: </emphasis>Composition
+                    over inheritance (or composite reuse principle) in object-oriented programming
+                    is the principle that classes should achieve polymorphic behavior and code reuse
+                    by their composition (by containing those instances of other classes that
+                    implement the desired functionality) rather than inheritance from a base or
+                    parent class.</para>
                 <para>To favor composition over inheritance is a design principle that gives the
                     design higher flexibility. It is more natural to build business-domain classes
                     out of various components than trying to find commonality between them and
@@ -145,11 +144,11 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                     distribute behaviors among business-domain classes via inheritance. This
                     approach more easily accommodates future requirements changes that would
                     otherwise require a complete restructuring of business-domain classes in the
-                    inheritance model.<?oxy_comment_end?></para>
+                    inheritance model.</para>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="8"?><?oxy_comment_end mid="8"?>
+" parentID="ckd_fyv_lhb" mid="7"?><?oxy_comment_end mid="7"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
@@ -336,11 +335,11 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             stand-alone clinical statement</para>
                         <itemizedlist>
                             <listitem>
-                                <para>Example: Arterial blood pressure 120 mmHg, taken with patient
-                                    in sitting position. <emphasis role="italic">“Patient in sitting
-                                        position”</emphasis> is separable from the topic and exists
-                                    prior to the performance of the action and therefore constitutes
-                                    a prerequisite.</para>
+                                <para><emphasis role="underline">Example</emphasis>: Arterial blood
+                            pressure 120 mmHg, taken with patient in sitting position. <emphasis
+                                role="italic">“Patient in sitting position”</emphasis> is separable
+                            from the topic and exists prior to the performance of the action and
+                            therefore constitutes a prerequisite.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -381,12 +380,22 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             expressed as a stand-alone clinical statement.</para>
                         <itemizedlist>
                             <listitem>
-                                <para>Example: Arterial blood pressure 120 mmHg, taken on
-                                    right brachial artery. <emphasis role="italic">“Taken on
-                                        right brachial artery”</emphasis> is inseparable
-                                    from the topic and cannot be expressed as a stand-alone
-                                    clinical statement. It therefore constitutes a
-                                    technique.</para>
+                                <para><emphasis role="underline">Example: Systolic blood pressure
+                                        120 mmHg, taken on right brachial artery</emphasis>.
+                                        <emphasis role="italic">“Taken on right brachial
+                                        artery”</emphasis> is inseparable from the topic and cannot
+                                    be expressed as a stand-alone clinical statement. It therefore
+                                    constitutes a technique and will be modeled as part of the
+                                    topic.</para>
+                            </listitem>
+                            <listitem>
+                                <para><emphasis role="underline">Example: Seated systolic blood
+                                        pressure 120 mmHg</emphasis>.  Seated relates to how the
+                                    action was done and is an inseparable part of the topic.  For
+                                    the narrative "Systolic Blood Pressure 120 mmHg, taken on right
+                                    brachial artery, using BP cuff adult size, patient in sitting
+                                    position for at least 5 minutes, urinated not more than 30
+                                    minutes prior to measurement"</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -531,8 +540,13 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         approved terminology procedure attributes applied.</para>
                 </listitem>
             </itemizedlist>
-        <para><emphasis role="bold"> Status:</emphasis></para>
-        <para><emphasis role="bold"> healthRisk:</emphasis></para>
+        <para><emphasis role="bold">Status:</emphasis>If the narrative being evaluated has a status
+            (on hold, needed, rejected, etc) an InterventionResult will be used in order to record
+            the Status.</para>
+        <para><emphasis role="bold">healthRisk:</emphasis></para>
         <para><emphasis role="bold">normalRange:</emphasis></para>
+        <para><emphasis role="bold">Result:</emphasis>If a Result is intended to represent a numeric
+            result then the upperBound and lowerBound would be populated with the appropriate
+            values.   </para>
     </section>
 </chapter>
