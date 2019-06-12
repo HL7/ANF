@@ -419,14 +419,19 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             patterns.  For example:</para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis>Administration of Medication</emphasis>: XXXXX</para>
+                    <para><emphasis>Administration of Medication</emphasis>: For requesting the
+                    administration of medication, the Topic will be built using the Administration
+                    of substance concept.  If the narrative includes information about a refill,
+                    that information is currently represented as an Unstructure Circumstance.  All
+                    Administration of substance concepts will be refined with the substance and dose
+                    form and strength being requested.  If Route of administration exists, then it
+                    will also be added.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis>Imaging Procedure</emphasis>: For Requesting of Imaging
-                        procedures, the Topic will be built using an Imaging Procedure concept.
-                        These concepts will be further refined with a Method, Procedure site -
-                        Direct and (if appropriate) a laterality for those sites that are
-                        lateralizable.</para>
+                    <para><emphasis>Imaging Procedure</emphasis>: For requesting of imaging
+                    procedures, the Topic will be built using an Imaging procedure concept. These
+                    concepts will be further refined with a Method, Procedure site - Direct and (if
+                    appropriate) a laterality for those sites that are lateralizable.</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
@@ -495,9 +500,15 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             is to be represented in ANF the Timing will be XXXX.  Otherwise the Timing will be
             represented by XXXXX.</para>
         <para><emphasis role="bold">Topic</emphasis></para>
-        <para>The topic follows a variety of possible patterns:<itemizedlist>
+        <para>The topic follows a variety of possible patterns:</para>
+        <itemizedlist>
                 <listitem>
-                    <para><emphasis>Administration of Medication</emphasis>:  XXXXX</para>
+                    <para><emphasis>Administration of Medication</emphasis>: To represent the
+                        performance of an administration of medication, the Topic will be built
+                        using the Administration of substance concept.  All Administration of
+                        substance concepts will be refined with the substance and dose form and
+                        strength being requested.  If Route of administration exists, then it will
+                        also be added.</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
@@ -519,6 +530,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         performed would be represented by a Procedure concept with any of the
                         approved terminology procedure attributes applied.</para>
                 </listitem>
-            </itemizedlist></para>
+            </itemizedlist>
+        <para><emphasis role="bold"> Status:</emphasis></para>
+        <para><emphasis role="bold"> healthRisk:</emphasis></para>
+        <para><emphasis role="bold">normalRange:</emphasis></para>
     </section>
 </chapter>
