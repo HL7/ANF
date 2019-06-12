@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -382,7 +381,7 @@ Here might be situations under which the limitations of terminology models may c
                             minutes</para>
                     </listitem>
                 </itemizedlist>
-                <para>Intervals and Measures are described in more detail in the <link
+                <para>Measures are described in more detail in the <link
                         xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             </section>
             <section>

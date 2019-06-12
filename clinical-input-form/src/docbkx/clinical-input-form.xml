@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="CSS/docbook.xml.css"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -34,9 +33,8 @@
     <section>
         <title>Introduction to CIMI Clinical Statements </title>
         <para>The central focus of the CIMI Reference Model is the Clinical Statement. Clinical
-            Statement, shown in the figure below, has a ‘key’, ‘topic’, ‘context’, and ‘metadata’.
-            The ‘key’ is the terminology meaning binding for the entire Clinical Statement. The
-            ‘topic’ is the clinical entity being described. The ‘context’ describes the
+            Statement, shown in the figure below, has a ‘topic’, ‘context’, and ‘metadata’.
+             The ‘topic’ is the clinical entity being described. The ‘context’ describes the
             circumstances that form the setting in which the ‘topic’ should be evaluated. Finally,
             ‘metadata’ is the collection of metadata that is associated with the clinical statement:
             the who, where, why and when information. </para>
@@ -44,7 +42,7 @@
             <title>Clinical Statement</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/cif_clinical_statement.svg" format="SVG" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/clinical_statement.jpg" format="jpg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -57,8 +55,12 @@
                         procedures. For each of these topics the information described is quite
                         different. Therefore, CIMI describes topic types that contain the
                         appropriate attributes to describe the required information for the given
-                        topic. The number of topic types will change as CIMI progresses. Currently
-                        the allowable topic types are listed here. </para>
+                        topic. To build the various kinds of Clinical Statements, CIMI adopts a 
+                        compositional approach rather than inheritance, and thus a ClinicalStatement model
+                        for an Evalualtion Result would use a topic of EvaluationResultTopic. Currently
+                        the allowable topic types are listed here. 
+                    </para>
+
                     <itemizedlist mark="bullet" spacing="compact">
                         <listitem>
                             <para>ProcedureTopic</para>
@@ -84,7 +86,9 @@
                         the ‘topic’ should be evaluated. CIMI describes context types that contain
                         the appropriate attributes to describe the required information for the
                         given context. The number of context types will change as CIMI progresses.
-                        Currently the allowable context types are listed here. </para>
+                        Currently the allowable context types are listed here. 
+                    </para>
+
                     <itemizedlist mark="bullet" spacing="compact">
                         <listitem>
                             <para>ActionContext</para>
@@ -243,7 +247,7 @@ Example obscure: why would the specified request topic be needed in the query fo
         <para>
             <inlinemediaobject>
                 <imageobject>
-                    <imagedata fileref="images/Topic%20Hierarchy.svg" scalefit="1" width="100%" format="SVG" contentdepth="100%"/>
+                    <imagedata fileref="images/topic_hierarchy.jpg" scalefit="1" width="100%" format="jpg" contentdepth="100%"/>
                 </imageobject>
             </inlinemediaobject></para>
         <section>
