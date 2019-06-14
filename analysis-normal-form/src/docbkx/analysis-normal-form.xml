@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>ANF Modeling Principles</title>
@@ -300,24 +301,29 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             <title>Shared Modeling Guideline Decision Tree</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                    <imagedata fileref="images/common_modeling_guidelines.svg" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
+        <?oxy_comment_start author="timowilliams" timestamp="20190613T105849-0500" comment="&quot;X-Ray of cervical spine anteroposterior (AP) and lateral&quot;  One statement or two? How do we handle combination concepts?  What would the rule be for deciding when to create two associated statements vs allowing combination concepts in a topic?"?>
         <para>All ANF statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
             a single statement or a statement that has multiple associated statements. For the
             purposes of ANF, a statement is a request or performance of an action that has to be
             able to exist on its own. Therefore a narrative would be separated into multiple
             clinical statements if it contains multiple requests or performance of actions that
-            could exist on their own.</para>
-        <para><emphasis role="bold">Prerequisite</emphasis>: A prerequisite is a <emphasis
-                role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
-            something else can happen or be done. Pre-requisite are part of the details under which
-            a procedure is being performed. The state must exist can prior to the performance of the
-            action</para>
-        <itemizedlist>
+            could exist on their own.<?oxy_comment_end?></para>
+        
+        <editorial-rule>
+            <title>Prerequisite</title>
+            <mathphrase>
+                 A prerequisite is a <emphasis
+                    role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
+                something else can happen or be done. Pre-requisite are part of the details under which
+                a procedure is being performed. The state must exist can prior to the performance of the
+                action
+                <itemizedlist>
                     <listitem>
                         <para>The state that must exist pertains to</para>
                         <itemizedlist>
@@ -325,8 +331,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                                 <para>the subject of record (e.g. patient)</para>
                             </listitem>
                             <listitem>
-                                <para>the environment (e.g. necessary room temperature, required
-                                    time of day)</para>
+                                <para>the environment (e.g. necessary room temperature, required time of
+                                    day)</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -335,74 +341,90 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             stand-alone clinical statement</para>
                         <itemizedlist>
                             <listitem>
-                                <para><emphasis role="underline">Example</emphasis>: Arterial blood
-                            pressure 120 mmHg, taken with patient in sitting position. <emphasis
-                                role="italic">“Patient in sitting position”</emphasis> is separable
-                            from the topic and exists prior to the performance of the action and
-                            therefore constitutes a prerequisite.</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-        </itemizedlist>
-        <para><emphasis role="bold">subjectOfInformation</emphasis>: The subjectOfInformation is used
-            to represent who the statement it about.  This is normally the patient unless explicitly
-            stated otherwise.</para>
-        <para><emphasis role="bold">Purpose</emphasis>: The purpose is why an action was
-            requested</para>
-        <itemizedlist>
-            <listitem>
-                <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
-                    attribute describing the purpose</para>
-            </listitem>
-        </itemizedlist>
-        <para><emphasis role="bold">Technique:</emphasis></para>
-        <itemizedlist>
-            <listitem>
-                <para><emphasis role="italic">Definition</emphasis> : A device used, a
-                    method applied, or a temporary state in which the patient was <emphasis
-                        role="bold">actively</emphasis> placed <emphasis role="bold"
-                            >during</emphasis> performance of the action.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para>Actions can be performed by various techniques. As opposed to
-                            the action itself, which is <emphasis role="italic"><emphasis
-                                role="underline">what</emphasis></emphasis> is carried
-                            out, the technique defines <emphasis role="italic"><emphasis
-                                role="underline">how</emphasis></emphasis> the action is
-                            done in general or in a particular instance.</para>
-                    </listitem>
-                    <listitem>
-                        <para>The use of the device or the method that is applied must start
-                            during the performance of the action.</para>
-                    </listitem>
-                    <listitem>
-                        <para>A technique is inseparable from the topic and cannot be
-                            expressed as a stand-alone clinical statement.</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para><emphasis role="underline">Example: Systolic blood pressure
-                                        120 mmHg, taken on right brachial artery</emphasis>.
-                                        <emphasis role="italic">“Taken on right brachial
-                                        artery”</emphasis> is inseparable from the topic and cannot
-                                    be expressed as a stand-alone clinical statement. It therefore
-                                    constitutes a technique and will be modeled as part of the
-                                    topic.</para>
-                            </listitem>
-                            <listitem>
-                                <para><emphasis role="underline">Example: Seated systolic blood
-                                        pressure 120 mmHg</emphasis>.  Seated relates to how the
-                                    action was done and is an inseparable part of the topic.  For
-                                    the narrative "Systolic Blood Pressure 120 mmHg, taken on right
-                                    brachial artery, using BP cuff adult size, patient in sitting
-                                    position for at least 5 minutes, urinated not more than 30
-                                    minutes prior to measurement"</para>
+                                <para><emphasis role="underline">Example</emphasis>: Arterial blood pressure
+                                    120 mmHg, taken with patient in sitting position. <emphasis
+                                        role="italic">“Patient in sitting position”</emphasis> is separable
+                                    from the topic and exists prior to the performance of the action and
+                                    therefore constitutes a prerequisite.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
                 </itemizedlist>
-            </listitem>
-        </itemizedlist>
-        
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>subjectOfInformation</title>
+            <mathphrase>The subjectOfInformation is used to represent who the statement it about. This is normally the patient unless
+            explicitly stated otherwise.</mathphrase>
+        </editorial-rule>
+
+        <editorial-rule>
+            <title>Purpose</title>
+            <mathphrase>The purpose is why an action was requested
+                <itemizedlist>
+                    <listitem>
+                        <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
+                            attribute describing the purpose</para>
+                    </listitem>
+                </itemizedlist>
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Technique</title>
+            <mathphrase>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="italic">Definition</emphasis> : A device used, a method
+                            applied, or a temporary state in which the patient was <emphasis role="bold"
+                                >actively</emphasis> placed <emphasis role="bold">during</emphasis>
+                            performance of the action.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Actions can be performed by various techniques. As opposed to the
+                                    action itself, which is <emphasis role="italic"><emphasis
+                                            role="underline">what</emphasis></emphasis> is carried out, the
+                                    technique defines <emphasis role="italic"><emphasis role="underline"
+                                            >how</emphasis></emphasis> the action is done in general or in a
+                                    particular instance.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The use of the device or the method that is applied must start during
+                                    the performance of the action.</para>
+                            </listitem>
+                            <listitem>
+                                <para>A technique is inseparable from the topic and cannot be expressed as a
+                                    stand-alone clinical statement.</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para><emphasis role="underline">Example: Systolic blood pressure
+                                                120 mmHg, taken on right brachial artery</emphasis>.
+                                                <emphasis role="italic">“Taken on right brachial
+                                                artery”</emphasis> is inseparable from the topic and cannot
+                                            be expressed as a stand-alone clinical statement. It therefore
+                                            constitutes a technique and will be modeled as part of the
+                                            topic.</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para><emphasis role="underline">Example: Seated systolic blood
+                                                pressure 120 mmHg</emphasis>. Seated relates to how the
+                                            action was done and is an inseparable part of the topic. For the
+                                            narrative "Systolic Blood Pressure 120 mmHg, taken on right
+                                            brachial artery, using BP cuff adult size, patient in sitting
+                                            position for at least 5 minutes, urinated not more than 30
+                                            minutes prior to measurement" while seated is not explicitly
+                                            stated as the technique it is implied that the blood pressure
+                                            was taken in the seated position and therefore would be
+                                            represented in the topic in addition to a separate statement
+                                            representing that the patient was in the seated position for at
+                                            least 5 minutes.</para>
+                                    </listitem>
+                                </itemizedlist>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                </itemizedlist>
+            </mathphrase>
+        </editorial-rule>
     </section>
     
     <section>
@@ -416,81 +438,95 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <para><emphasis role="bold">Timing</emphasis>: The Timing will always represent a future
-            time  in a Request for Action ANF Statement.  Therefor, the Measure used in the Timing
-            will be for a future time.</para>
-        <para><emphasis role="bold">Requested Participant: </emphasis> If the Request for Action
-            specifies a Requested Participant the requestedParticipant will be populated.</para>
-        <para><emphasis role="bold">Priority:</emphasis> Priority is used to represent the priority
-            for which the request is to be carried out.  By default a Request will be considered
-            "routine" unless otherwise specified</para>
-        <para><emphasis role="bold">Topic</emphasis>: The topic follows a variety of possible
-            patterns.  For example:</para>
-            <itemizedlist>
-                <listitem>
-                    <para><emphasis>Administration of Medication</emphasis>: For requesting the
-                    administration of medication, the Topic will be built using the Administration
-                    of substance concept.  If the narrative includes information about a refill,
-                    that information is currently represented as an Unstructure Circumstance.  All
-                    Administration of substance concepts will be refined with the substance and dose
-                    form and strength being requested.  If Route of administration exists, then it
-                    will also be added.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Imaging Procedure</emphasis>: For requesting of imaging
-                    procedures, the Topic will be built using an Imaging procedure concept. These
-                    concepts will be further refined with a Method, Procedure site - Direct and (if
-                    appropriate) a laterality for those sites that are lateralizable.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
-                        is an observation would begin with an Observation procedure. The Observation
-                        procedure with then have a Has focus attribute linking it to the Clinical
-                        Finding or Disorder that it is being observed. The observation procedure can
-                        also be further refined by adding the Method, Procedure site - Direct, (if
-                        appropriate) laterality, and Using device.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
-                        would be represented by a Procedure concept with any of the approved
-                        terminology procedure attributes applied.</para>
-                </listitem>
+        <editorial-rule>
+            <title>Timing</title>
+            <mathphrase>The Timing will always represent a future time in a Request for Action ANF Statement. Therefore, the Measure used in the Timing will be for a future time.
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>RequestedParticipant</title>
+            <mathphrase>If the Request for Action specifies a Requested Participant the requestedParticipant will be populated.</mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Priority</title>
+            <mathphrase>Priority is used to represent the priority for which the request is to be carried out.  By default a Request will be considered "routine" unless otherwise specified</mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Topic</title>
+            <mathphrase>The topic follows a variety of possible patterns.  For example:
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis>Administration of Medication</emphasis>: For requesting the
+                        administration of medication, the Topic will be built using the Administration
+                        of substance concept.  If the narrative includes information about a refill,
+                        that information is currently represented as an Unstructure Circumstance.  All
+                        Administration of substance concepts will be refined with the substance and dose
+                        form and strength being requested.  If Route of administration exists, then it
+                        will also be added.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>Imaging Procedure</emphasis>: For requesting of imaging
+                        procedures, the Topic will be built using an Imaging procedure concept. These
+                        concepts will be further refined with a Method, Procedure site - Direct and (if
+                        appropriate) a laterality for those sites that are lateralizable.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
+                            is an observation would begin with an Observation procedure. The Observation
+                            procedure with then have a Has focus attribute linking it to the Clinical
+                            Finding or Disorder that it is being observed. The observation procedure can
+                            also be further refined by adding the Method, Procedure site - Direct, (if
+                            appropriate) laterality, and Using device.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
+                            would be represented by a Procedure concept with any of the approved
+                            terminology procedure attributes applied.</para>
+                    </listitem>
             </itemizedlist>
-            <para><emphasis role="bold">Repetition:</emphasis> Repetition is used to
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Repetition</title>
+            <mathphrase>Repetition is used to
                 represent when an action is requested for more than a single occurrence. Repetition
                 is an optional component for a RequestCircumstance. A Request Component contains
-                five Measures that are used to further define the parameters of the Repetition:</para>
-            <itemizedlist>
-                    <listitem>
-                        <para><emphasis>periodDuration:</emphasis>This required field is used to
-                            represent how long a repetition should persist. If it is not specified,
-                            a default value of [0,inf] will be used. e.g. for 3 weeks</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>periodStart:</emphasis> This required field is used to
-                            represent when a repeated action should begin. If it is not specified, a
-                            default value of [0,inf] will be used. e.g. NOW</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>eventSeparation:</emphasis>This required field is used to
-                            represent how long between actions. If it is not specified, a default
-                            value of [0,inf] will be used. e.g. for 2 weeks</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>eventFrequency:</emphasis>This required field is used to
-                            represent how often the action should occur. If it is not specified, a
-                            default value of [0,inf] will be used. e.g. 3 times per week</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>eventDuration:</emphasis>This is an optional field that is
-                            used to represent how long every action should last. </para>
-                    </listitem>
-                </itemizedlist>
-        <para><emphasis role="bold">conditionalTrigger:</emphasis>conditionalTriggers differ from
+                five Measures that are used to further define the parameters of the Repetition:
+                <itemizedlist>
+                        <listitem>
+                            <para><emphasis>periodDuration:</emphasis>This required field is used to
+                                represent how long a repetition should persist. If it is not specified,
+                                a default value of [0,inf] will be used. e.g. for 3 weeks</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis>periodStart:</emphasis> This required field is used to
+                                represent when a repeated action should begin. If it is not specified, a
+                                default value of [0,inf] will be used. e.g. NOW</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis>eventSeparation:</emphasis>This required field is used to
+                                represent how long between actions. If it is not specified, a default
+                                value of [0,inf] will be used. e.g. for 2 weeks</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis>eventFrequency:</emphasis>This required field is used to
+                                represent how often the action should occur. If it is not specified, a
+                                default value of [0,inf] will be used. e.g. 3 times per week</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis>eventDuration:</emphasis>This is an optional field that is
+                                used to represent how long every action should last. </para>
+                        </listitem>
+                    </itemizedlist>
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>conditionalTrigger</title>
+            <mathphrase>conditionalTriggers differ from
             prerequisites in that they cause the action to be performed. conditionalTriggers
             contribute to the timing of when the request will be performed and not necessarily to
-            the purpose of performing.  conditionalTriggers are optional</para>
-        
+            the purpose of performing. conditionalTriggers are optional.</mathphrase>
+        </editorial-rule>
     </section>
     
     <section>
@@ -504,49 +540,74 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <para><emphasis role="bold">Timing</emphasis>: For a Performance of Action, the Timing can
-            represent a time in the past or a current time.  If a history of a performance of action
-            is to be represented in ANF the Timing will be XXXX.  Otherwise the Timing will be
-            represented by XXXXX.</para>
-        <para><emphasis role="bold">Topic</emphasis></para>
-        <para>The topic follows a variety of possible patterns:</para>
-        <itemizedlist>
-                <listitem>
-                    <para><emphasis>Administration of Medication</emphasis>: To represent the
-                        performance of an administration of medication, the Topic will be built
-                        using the Administration of substance concept.  All Administration of
-                        substance concepts will be refined with the substance and dose form and
-                        strength being requested.  If Route of administration exists, then it will
-                        also be added.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
-                        procedures, the Topic will be built using an Imaging Procedure concept.
-                        These concepts will be further refined with a Method, Procedure site -
-                        Direct and (if appropriate) a laterality for those sites that are
-                        lateralizable.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
-                        that is an observation would begin with an Observation procedure.  The
-                        Observation procedure with then have a Has focus attribute linking it to the
-                        Clinical Finding or Disorder that it is being observed.  The observation
-                        procedure can also be further refined by adding the Method, Procedure site -
-                        Direct, (if appropriate) laterality, and Using device.</para>
-                </listitem>
-                <listitem>
-                    <para><emphasis>All Other Procedures</emphasis>: Any other action that was
-                        performed would be represented by a Procedure concept with any of the
-                        approved terminology procedure attributes applied.</para>
-                </listitem>
-            </itemizedlist>
-        <para><emphasis role="bold">Status:</emphasis>If the narrative being evaluated has a status
+        <editorial-rule>
+            <title>Timing</title>
+            <mathphrase>For a Performance of Action, the Timing can represent a time in the past or
+                a current time. If a history of a performance of action is to be represented in ANF
+                the Timing will be for a time in the past prior to the statement. Otherwise the
+                Timing will be represented by with the current time as of the statement.
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Topic</title>
+            <mathphrase>The topic follows a variety of possible patterns:
+            <itemizedlist>
+                    <listitem>
+                        <para><emphasis>Administration of Medication</emphasis>: To represent the
+                            performance of an administration of medication, the Topic will be built
+                            using the Administration of substance concept.  All Administration of
+                            substance concepts will be refined with the substance and dose form and
+                            strength being requested.  If Route of administration exists, then it will
+                            also be added.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
+                            procedures, the Topic will be built using an Imaging Procedure concept.
+                            These concepts will be further refined with a Method, Procedure site -
+                            Direct and (if appropriate) a laterality for those sites that are
+                            lateralizable.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
+                            that is an observation would begin with an Observation procedure.  The
+                            Observation procedure with then have a Has focus attribute linking it to the
+                            Clinical Finding or Disorder that it is being observed.  The observation
+                            procedure can also be further refined by adding the Method, Procedure site -
+                            Direct, (if appropriate) laterality, and Using device.</para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis>All Other Procedures</emphasis>: Any other action that was
+                            performed would be represented by a Procedure concept with any of the
+                            approved terminology procedure attributes applied.</para>
+                    </listitem>
+                </itemizedlist>
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Status</title>
+            <mathphrase>If the narrative being evaluated has a status
             (on hold, needed, rejected, etc) an InterventionResult will be used in order to record
-            the Status.</para>
-        <para><emphasis role="bold">healthRisk:</emphasis></para>
-        <para><emphasis role="bold">normalRange:</emphasis></para>
-        <para><emphasis role="bold">Result:</emphasis>If a Result is intended to represent a numeric
-            result then the upperBound and lowerBound would be populated with the appropriate
-            values.   </para>
+            the Status.
+            </mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>healthRisk</title>
+            <mathphrase>healthRisk is used to flag a result with coded values such as 'low',
+                'normal', high', and 'critical'.</mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>normalRange</title>
+            <mathphrase>normalRange is used to represent the interval of values that are
+                normal.</mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>Result</title>
+            <mathphrase>If a Result is intended to represent a numeric
+                result then the upperBound and lowerBound would be populated with the appropriate
+                values.
+                If a Result is intended to represent the presence of a Phenomenon, the Result will be represented with an upperBound and lowerBound of 1 and a MeasureSemantic of ISO 8601 current to statement time.
+                If a Result is intended to represent the absence of a Phenomenon, the Result will be represented with an upperBound and lowerBound of 0 and a MeasureSemantic of ISO 8601 prior to statement time.
+            </mathphrase>
+        </editorial-rule>
     </section>
 </chapter>
