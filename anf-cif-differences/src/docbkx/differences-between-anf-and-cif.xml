@@ -25,8 +25,7 @@
             </tbody>
         </tgroup>
     </informaltable>
-    <para>There are two fundamental differences between the ANF and CIF approach. The first is the
-        representation of topic, and the second is the representation of results.</para>
+    <para>There are two fundamental differences between the ANF and CIF approach. </para>
     <orderedlist>
         <listitem>
             <para>The representation of topic.</para>
@@ -51,13 +50,17 @@
                 </mediaobject>
             </figure>
         </para>
-        <para> As we can see in the Pulse Rate examples below, the ANF topic is represented 
-            as a post-coordinated expression while the CIMI Representation is represented with a
-            single concept in the topic and associated properties representing the pulse oximeter device.<figure>
+        <para>As we can see in the Pulse Rate examples below, the ANF topic is represented as a
+            post-coordinated expression while the CIMI Representation is represented with a single
+            concept in the topic and associated properties representing the pulse oximeter device.
+            Since the ANF Statement will always be either the request for an action or the
+            performance of an action, the post-coordinated expression will always be a procedure
+            that is further refined providing a conistent representation.<figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -67,7 +70,9 @@
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
                         <?oxy_comment_start author="timowilliams" timestamp="20190520T161717-0500" comment=" JCoyle - I&apos;m not sure what you are saying here.  What do you mean by a separate entity?  Are you saying to redo this same instance leaving out the device information? " mid="1"?>
-                        <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?><?oxy_comment_end mid="1"?>
+                        <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1"
+                            width="100%" contentdepth="100%"
+                        /><?oxy_comment_end?><?oxy_comment_end mid="1"?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -77,13 +82,14 @@
             model and constraints such as HL7's StructureDefinition syntax or OpenEHR's BMM/ADL
             syntax. Second, it uses SNOMED's syntax for post-coordinated SNOMED expressions. Tools
             for authoring and analysis would be required to parse and process both syntaxes.</para>
-        <para>The CIF model, on the other hand, would be fully represented using the formalism that
-            represents the CIF reference model and constraints such as HL7's StructureDefinition
-            syntax or OpenEHR's BMM/ADL syntax.
+        <para>The CIF model in this example, on the other hand, would be fully represented using the
+            formalism that represents the CIF reference model and constraints such as HL7's
+            StructureDefinition syntax or OpenEHR's BMM/ADL syntax.
             <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="I believe we can use one of the examples below to highlight this by representing the bodysite with and without the laterality.
 "?>This
-            model however allows for the possibility of multiple modeling style representations of the same data that are then not easily
-            queried for equivalence. <?oxy_comment_end?></para>
+            model however allows for the possibility of multiple modeling style representations of
+            the same data that are then not easily queried for equivalence.
+            <?oxy_comment_end?></para>
     </section>
     <section>
         <title>The Representation of Results</title>
