@@ -85,7 +85,7 @@
             <title>Clinical Statement</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement.jpg" format="jpg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/clinical_statement.png" format="png" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -200,7 +200,7 @@
             <title>Patient has diagnosis of congestive heart failure.</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement_chf.jpg" align="center" format="jpg" width="60%"/>
+                    <imagedata fileref="images/clinical_statement_chf.png" align="center" format="png" width="60%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -209,7 +209,7 @@
             <title>Patient has an order for Physical Therapy.</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement_order.jpg" align="center" format="jpg" width="60%"/>
+                    <imagedata fileref="images/clinical_statement_order.png" align="center" format="png" width="60%"/>
                 </imageobject>
             </mediaobject>
         </figure>
