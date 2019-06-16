@@ -73,8 +73,7 @@ A Clinical Statement is a complete description about a particular aspect, charac
         <itemizedlist>
             <listitem>
                 <para><emphasis role="bold">Request: </emphasis></para>
-                <para>Requests for future goals, consultation with
-                    other providers, or active interventions.</para>
+                <para>Requests for clinical testing, active interventions, future goals, or consultation with other providers.</para>
             </listitem>
         </itemizedlist>
         <section>
@@ -88,6 +87,9 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 if applicable - the result that
                 corresponds to the topic.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
                 below, this can range from documenting that a subject of record:</para>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the 'if possible', I believe the result will always exist."?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the 'subject of record', maybe say subject of information, because it could be the father, uncle, donor that is being described."?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement"?><?oxy_comment_end?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -104,6 +106,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 </mediaobject>
                             </figure>
                         </listitem>
+                        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn't this be a count of 1,1 ?"?><?oxy_comment_end?>
                         <listitem>
                             <para>Diabetes mellitus is not present</para>
                             <figure>
@@ -160,6 +163,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                     </imageobject>
                                 </mediaobject>
                             </figure>
+                            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="On main systolic diagram, add blue box for statementAssociations and off that, add 2 peach colored boxes for associated statements 1 and 2"?><?oxy_comment_end?>
                             <figure>
                                 <title>Systolic Blood Pressure Associated Clinical Statement 1
                                     Example</title>
@@ -303,6 +307,9 @@ Doing family history, donor statements using subject of information is now the n
             <itemizedlist>
                 <listitem>
                     <para>Request for Rheumatoid factor 1 time routine</para>
+
+                    <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time"?><?oxy_comment_end?>
+
                     <figure>
                         <title>Lab Request Clinical Statement Example</title>
                         <mediaobject>
