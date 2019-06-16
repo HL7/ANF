@@ -3,9 +3,9 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Clinical Statement</title>
+    <title>ANF Statement</title>
     <figure>
-        <title>Clinical Statement</title>
+        <title>ANF Statement</title>
         
         <mediaobject>
             <imageobject>
@@ -13,8 +13,7 @@
             </imageobject>
         </mediaobject>
     </figure>
-    <para>Clinical Statement is the main class which describes an entry of clinical information into
-        the patient record. Most importantly it contains the 'topic' which describes what this
+    <para>ANFStatement is the main class which describes a clinical statement. Most importantly it contains the 'topic' which describes what this
         statement is about, and the 'circumstance' which will contain either request or result
         information regarding the 'topic'.</para>
     <section>
@@ -77,8 +76,10 @@
         <title>topic</title>
         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111914-0400" comment="Comment from WC:
 This comment is written after I made other comments on assertions in section 1.6.10. Although I get, I think, the gist, this entire section – and actually the entire larger section 1.6 – is unclear because of insufficient distinction between what is description and what the description is about. Section 1.6’s title is ‘clinical statement components’ and the impression is given that the components are listed one by one in the subsections. The main problem I have is that there is not explicit enough distinction between what is on the side of the patient – e.g. a tumor – and what is on the side of documentation thereof, i.e. what a clinical statement should be, f.i. ‘observation of tumor’, ‘removal of tumor’, … Now are ‘clinical statement components’ strictly components of descriptions or does it include components of the patient itself? If it is only on the side of the description, is it to be taken as a literal part of the description, does it include implicit components that are identified in certain linguistic theories about term formation (e.g. case grammar, case theory, …). Most essential to get clear is what ‘topic’ exactly stands for. 
-"?>Topic
-            is the expression of <emphasis role="bold">WHAT </emphasis>is being requested or what
+"?>
+
+            Topic is the expression of <emphasis role="bold">WHAT </emphasis>is 
+            being requested or what
             was performed.<?oxy_comment_end?> For both clinical statement types (request or
             performance) a pre-coordinated or post-coordinated “procedure” concept as a logical
             expression is required to sufficiently capture the action, which is either requested or
@@ -109,7 +110,7 @@ But that the mother of the patient had colon cancer is both about the mother, th
         <para><emphasis role="bold"><emphasis role="italic">Requests for actions
                 </emphasis></emphasis>can be requests for actions such as procedures or
             interventions:</para>
-        <itemizedlist>
+        <itemizedlist spacing="compact">
             <listitem>
                 <para>Request
                     for<?oxy_comment_start author="kmaulden" timestamp="20190418T111925-0400" comment="Comment from WC:
@@ -124,6 +125,10 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
                 <para>Request for systolic blood pressure measurement</para>
             </listitem>
         </itemizedlist>
+
+        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="For the following examples, I have found better results using the docbook programlisting element rather than tables, because things line up the way you want them with docbook making the decsions.  Look in the CIF chapter for examples."?><?oxy_comment_end?>
+
+
         <table>
             <title><emphasis>Example Request for Action Topic: <emphasis role="bold">Request for
                 administration of Ibuprofen 400 mg tablet oral</emphasis></emphasis></title>
@@ -144,7 +149,7 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
             also be observational procedures, describing the absence or presence of clinical
             findings or disorders. In these cases, the observation action of the clinical findings
             and disorders is performed:</para>
-        <itemizedlist>
+        <itemizedlist spacing="compact">
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111940-0400" comment="Comment from WC:
 But surely you should disambiguate between the phenomena themselves and the observations thereof. Plus be more precise about what ‘observation’ exactly is, otherwise you get trapped in HL7-nonsense. Clearly, you can only observe phenomena that are there: you can only observe congestive heart failure in a patient when it is there. But you can state in a record that the patient has CHF without he having it. In such case, the clinician might believe he observed an instance of CHF, but he did not observe it. Furthermore, ‘observe’ should not be overloaded with ‘deduce’. You can’t observe ‘psychosis’, only deduce it on the basis of … 
@@ -214,7 +219,7 @@ Lack of distinction between the observation as an action and that what is observ
             <para><emphasis role="bold">WHEN </emphasis>a requested action should be performed or
                     <emphasis role="bold">WHEN </emphasis>an observed finding or disorder was
                 present or absent. Timing is used to capture a time or time range for</para>
-            <itemizedlist>
+            <itemizedlist spacing="compact">
                 <listitem>
                     <para>Requests for action at a future time</para>
                 </listitem>
@@ -231,7 +236,7 @@ Lack of distinction between the observation as an action and that what is observ
             <para>Timing is described in more detail in the <link
                     xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             <para><emphasis>Examples:</emphasis></para>
-            <itemizedlist>
+            <itemizedlist spacing="compact">
                 <listitem>
                     <para>Cardiology Consult in 2 weeks</para>
                 </listitem>
@@ -245,7 +250,7 @@ Lack of distinction between the observation as an action and that what is observ
             <para><emphasis role="bold">WHY</emphasis> an action was performed or requested. The
                 “purpose” field is used to capture WHY a procedure was requested or performed in a
                 post-coordinated expression, based on two possible procedures:<itemizedlist>
-                    <listitem>
+                    <listitem spacing="compact">
                         <para>386053000 |Evaluation procedure (procedure)|</para>
                     </listitem>
                     <listitem>
@@ -323,7 +328,7 @@ Lack of distinction between the observation as an action and that what is observ
                     </mediaobject>
                 </figure>
                 <para><emphasis>Examples:</emphasis></para>
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
 Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
@@ -361,7 +366,7 @@ Here might be situations under which the limitations of terminology models may c
                 </figure>
                 <para>Repetition is used to describe when an action is requested for more than a
                     single occurrence:</para>
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>When the repeated action should begin (periodStart), e.g. NOW</para>
                     </listitem>
@@ -396,7 +401,7 @@ Would it not be better to call this then ‘request goal’?
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>Narrative:Administration of Metoprolol tartrate 50 mg oral <emphasis
                                 role="underline">daily2 times</emphasis> to lower systolic blood
@@ -433,7 +438,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>Narrative: Systolic blood pressure <emphasis role="underline">120
                                 mmHg</emphasis></para>

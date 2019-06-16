@@ -20,9 +20,9 @@
     <para>This approach reduces data retrieval difficulties by eliminating the potential for
         multiple differing representations of the same clinical statement. For example, with coded
         results there are multiple potential methods to represent eye color that complicate data
-        retrieval. The Topic couple be a Finding refined by an Observable (Iris finding->Interprets
+        retrieval. The Topic could be a Finding refined by an Observable (Iris finding->Interprets
         = Color of iris) or a Finding with no refinement (Finding of color of iris). In both of
-        these cases the Result would be a qualifier of Blue color. The ANF would represent Eye color
+        these cases the Result would be a qualifier of Blue color. The ANF Statement would represent Eye color
         using the Blue iris Finding as the Topic and the Result would be Present, represented as
         Lower bound =1, Upper bound=inf. <figure>
             <title>Blue Eye Example - Observable Refinement </title>

@@ -27,7 +27,7 @@
     <para>The ANF Reference Model is a small static model that can easily be described with UML,
         OpenEHR BMM, or FHIR StructureDefintion. Detailed Clinical Models are then described as
         constraints of this reference model. The core of the model is the class
-        ClinicalStatement.</para>
+        ANFStatement.</para>
     
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
