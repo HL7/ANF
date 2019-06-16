@@ -26,7 +26,7 @@
         </tgroup>
     </informaltable>
     <para>There are two fundamental differences between the ANF and CIMI Statement approach. </para>
-    <orderedlist>
+    <orderedlist spacing="compact">
         <listitem>
             <para>The representation of topic.</para>
         </listitem>
@@ -44,7 +44,7 @@
                 <title>Topic Comparison for a Complex Topic</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/cif_anf_topic.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/anf-cif-topic.png" align="center" format="png" scale="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
