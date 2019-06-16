@@ -25,7 +25,7 @@
             </tbody>
         </tgroup>
     </informaltable>
-    <para>There are two fundamental differences between the ANF and CIF approach. </para>
+    <para>There are two fundamental differences between the ANF and CIMI Statement approach. </para>
     <orderedlist>
         <listitem>
             <para>The representation of topic.</para>
@@ -36,10 +36,9 @@
     </orderedlist>
     <section>
         <title>The Representation of Topic</title>
-        <para>In the ANF model, the topic is represented by a single field containing a simple to
-            complex post-coordinated SNOMED expression, whereas in the CIF model, all the pieces of
-            information that make up the topic can be broken out and structured as needed into
-            a complex tree of objects with multiple properties and appropriate datatypes.</para>
+        <para>
+            In the ANF Statement model, the topic is represented by a single field containing a simple to complex post-coordinated SNOMED expression, whereas in the CIMI Statement model, all the pieces of information that make up the topic can be broken out and structured as needed into a complex tree of objects with multiple properties and appropriate datatypes.
+        </para>
         <para>
             <figure>
                 <title>Topic Comparison for a Complex Topic</title>
@@ -50,12 +49,15 @@
                 </mediaobject>
             </figure>
         </para>
-        <para>As we can see in the Pulse Rate examples below, the ANF topic is represented as a
-            post-coordinated expression while the CIMI Representation is represented with a single
-            concept in the topic and associated properties representing the pulse oximeter device.
+        <para>
+            As we can see in the Pulse Rate examples below, the ANF topic is represented as a
+            post-coordinated expression while the CIMI topic is represented with a topic containing a single concept along with associated structural properties representing the pulse oximeter device.
             Since the ANF Statement will always be either the request for an action or the
             performance of an action, the post-coordinated expression will always be a procedure
-            that is further refined providing a conistent representation.<figure>
+            that is further refined providing a conistent representation.
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I'm questioning whether everything is a procedure"?><?oxy_comment_end?>
+
+            <figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
@@ -69,7 +71,7 @@
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190520T161717-0500" comment=" JCoyle - I&apos;m not sure what you are saying here.  What do you mean by a separate entity?  Are you saying to redo this same instance leaving out the device information? " mid="1"?>
+                        <?oxy_comment_start author="jcoyle" timestamp="20190520T161717-0500" comment="I think you mean, could the device be pre-coordinated into the main concept, and the answer is yes in general, but a constraint model could disallow this by forcing the topicCode to not include the device" mid="1"?>
                         <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"
                         /><?oxy_comment_end?><?oxy_comment_end mid="1"?>
@@ -77,28 +79,29 @@
                 </mediaobject>
             </figure>
         </para>  
-        <para>One implication of this is that the ANF is using two formalisms to represent the
-            detailed clinical model. First it uses the formalism that represents the ANF reference
-            model and constraints such as HL7's StructureDefinition syntax or OpenEHR's BMM/ADL
-            syntax. Second, it uses SNOMED's syntax for post-coordinated SNOMED expressions. Tools
-            for authoring and analysis would be required to parse and process both syntaxes.</para>
-        <para>The CIF model in this example, on the other hand, would be fully represented using the
-            formalism that represents the CIF reference model and constraints such as HL7's
-            StructureDefinition syntax or OpenEHR's BMM/ADL syntax.
+        <para>
+            One implication of this is that the ANF is using two formalisms to represent the
+            clinical statement. First it uses the formalism that represents the ANF reference
+            model. Second, it uses SNOMED's syntax for post-coordinated SNOMED expressions. Tools
+            for authoring and analysis would be required to parse and process both syntaxes.
+        </para>
+        <para>
+            The CIMI Statement model in this example, on the other hand, would be fully represented using the formalism that represents the CIMI reference model.
             <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="I believe we can use one of the examples below to highlight this by representing the bodysite with and without the laterality.
 "?>This
             model however allows for the possibility of multiple modeling style representations of
             the same data that are then not easily queried for equivalence.
-            <?oxy_comment_end?></para>
+            <?oxy_comment_end?>
+        </para>
     </section>
     <section>
         <title>The Representation of Results</title>
         <para>In the CIMI model, EvaluationResult and Assertion models are used to represent
-            observations. EvaluationResult has a topic representing what is being observed, and a result represented by a choice of datatypes. An Assertion on the other hand, has simply a topic with a value of 'assertion', and a coded result stated what is being asserted.</para>
+            observations. EvaluationResult has a topic representing what is being observed, and a result represented by a choice of datatypes.  EvaluationResult can be thought of as a question and an answer.  An Assertion on the other hand, has simply a topic stating what is observed, and a coded result stating presence or absence.</para>
         <para>In the ANF model, the topic represents what is being observed and the result may only
             be a range of either a count or quantity. No coded results are allowed. Not allowing
-            coded results forces more of the semantics to be representing in the terminology model
-            and constrains the ability to allow multiple different representations of the same data.
+            coded results forces more of the semantics to be represented in the terminology model
+            and limits the ability to allow multiple different representations of the same data.
             In the example below we see Dot blot hemorrhage represented in ANF as either present or
             with the number of hemorrhages that exist.</para>
         <figure>
@@ -117,9 +120,9 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>In the CIF model, when creating a model with a numeric result, the choice is quite
+        <para>In the CIMI Statement model, when creating a model with a numeric result, the choice is quite
             clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic Blood
-            Pressure' and result with a numeric quantity. In this case, the CIF and ANF model are
+            Pressure' and result with a numeric quantity. In this case, the CIMI and ANF model are
             very aligned, except for the fact that the ANF model will always use a range of that
             quantity.</para>
         <figure>
@@ -130,7 +133,7 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>But when a CIF model has a potential coded result, the choice between EvaluationResult
+        <para>But when a CIMI model has a potential coded result, the choice between EvaluationResult
             and Assertion becomes muddied. For example, a model for Breath Sound could be an
             EvaluationResult with a topic of 'breath sound' and a coded result with the following
             valueset. Thus, any of the breath sounds within the valueset can act as a result for
@@ -237,9 +240,10 @@
             </mediaobject>
         </figure>
         <para>The other option, is that each of the breath sounds in the valueset is modeled as an
-            Assertion with a topic of 'assertion', and a result of each particular code. To decided
+            Assertion with a topic of indicated the breath sound, and a result indicating presence or absence. To decide
             which model is better, usually we ponder how the clinician thinks about the data, or how
             it will be collected, or how it will be queried.</para>
+        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!."?><?oxy_comment_end?>
         <figure>
             <title>Breath Sound - CIMI Assertion Representation</title>
             <mediaobject>
@@ -251,7 +255,7 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>The ANF model cannot do an EvaluationResult style model as it doesn't allow coded
+        <para>In this example, the ANF model cannot do an EvaluationResult style model as it doesn't allow coded
             results. Thus, ANF is forced to make one and only one choice, which is an assertion
             style where the particular breath sound is the topic, and the result will be numeric
             count indicating presence or absence.</para>
@@ -339,6 +343,7 @@
                     <imageobject>
                         <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?  I think this could be an example of the same CIMI example being represented in multipe ways that would require multiple different queries to determine equivalence."?>
                         <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, this is possible, but  the detailed clinical model (the constraint model) could disallow this or even mandate it."?><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -346,7 +351,7 @@
          
         <section>
             <title>Diabetes Mellitus Statement</title>
-            <para>The Diabetes Mellitus example highlights the main difference between ANF and CIF
+            <para>The Diabetes Mellitus example highlights the main difference between ANF and CIMI
                 in the case of stating that a condition is present.  In the case of ANF, since
                 Result is not allowed to use a coded value it represents the presence as a
                 lowerBound of 1 and an upperBound of infinite.  Representing absence would be done
