@@ -80,16 +80,16 @@ A Clinical Statement is a complete description about a particular aspect, charac
             <title><anchor xml:id="_Toc1824813"/>Performance Clinical Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
 As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
-" id="xfp_jyf_nhb"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
+" id="xfp_jyf_nhb" mid="1"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
 As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
-" parentID="xfp_jyf_nhb" mid="3"?>A 
-                performance statement describes a topic that has previously been performed, and –
-                if applicable - the result that
-                corresponds to the topic.<?oxy_comment_end mid="3"?><?oxy_comment_end?> As shown in the examples
-                below, this can range from documenting that a subject of record:</para>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the 'if possible', I believe the result will always exist."?><?oxy_comment_end?>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the 'subject of record', maybe say subject of information, because it could be the father, uncle, donor that is being described."?><?oxy_comment_end?>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement"?><?oxy_comment_end?>
+" parentID="xfp_jyf_nhb"?>A
+                performance statement describes a topic that has previously been performed, and – if
+                applicable - the result that corresponds to the
+                topic.<?oxy_comment_end?><?oxy_comment_end mid="1"?> As shown in the examples below,
+                this can range from documenting that a subject of information:</para>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist."?><?oxy_comment_end?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="3"?><?oxy_comment_end mid="3"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="4"?><?oxy_comment_end mid="4"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -101,19 +101,21 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Diabetes Mellitus Present Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/dm_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
-                        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn't this be a count of 1,1 ?"?><?oxy_comment_end?>
+                        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ?"?><?oxy_comment_end?>
                         <listitem>
                             <para>Diabetes mellitus is not present</para>
                             <figure>
                                 <title>Diabetes Mellitus Absent Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/dm_absent_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/dm_absent_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -125,13 +127,13 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                     Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/dbh_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/dbh_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
                     </itemizedlist>
-                    
                 </listitem>
                 <listitem>
                     <para>Underwent a specific test/screening or procedure, and its resultant value,
@@ -143,42 +145,44 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Pulse Rate Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/pulse_rate_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
                         <listitem>
-                            <para>Systolic blood pressure 120 mmHg, taken on right
-                                brachial artery, using BP cuff adult size, patient in sitting
-                                position for at least 5 minutes, urinated not more than 30 minutes
-                                prior to measurement</para>
+                            <para>Systolic blood pressure 120 mmHg, taken on right brachial artery,
+                                using BP cuff adult size, patient in sitting position for at least 5
+                                minutes, urinated not more than 30 minutes prior to
+                                measurement</para>
                             <figure>
                                 <title>Systolic Blood Pressure Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata
-                                            fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
-                                        
+                                        <imagedata fileref="images/bp_complex_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
-                            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="On main systolic diagram, add blue box for statementAssociations and off that, add 2 peach colored boxes for associated statements 1 and 2"?><?oxy_comment_end?>
+                            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="On main systolic diagram, add blue box for statementAssociations and off that, add 2 peach colored boxes for associated statements 1 and 2" flag="done"?><?oxy_comment_end?>
                             <figure>
-                                <title>Systolic Blood Pressure Associated Clinical Statement 1
+                                <title>Systolic Blood Pressure Associated Statement 1
                                     Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/bp_complex2_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/bp_complex2_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                             <figure>
-                                <title>Systolic Blood Pressure Associated Clinical Statement 2
+                                <title>Systolic Blood Pressure Associated Statement 2
                                     Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/bp_complex3_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/bp_complex3_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -189,7 +193,8 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Three Dot Blot Hemorrhages Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/three_dbh_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/three_dbh_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -197,10 +202,13 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                         <listitem>
                             <para>Positive screen for fall risk</para>
                             <figure>
-                                <title>Positive Screen for Fall Risk Clinical Statement Example</title>
+                                <title>Positive Screen for Fall Risk Clinical Statement
+                                    Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/pos_scree_fall_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/pos_scree_fall_anf.svg"
+                                            format="SVG" scalefit="1" width="100%"
+                                            contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
@@ -211,23 +219,23 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Negative Screen for PTSD Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/ptsd_neg_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/ptsd_neg_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                             <figure>
-                                <title>Negative Screen for Depression Clinical Statement Example</title>
+                                <title>Negative Screen for Depression Clinical Statement
+                                    Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/depress_neg_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/depress_neg_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
-                        
                     </itemizedlist>
-                    
-                        
                 </listitem>
                 <listitem>
                     <para>Was administered a medication or other substance</para>
@@ -239,13 +247,13 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Medication Administered Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/meds_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/meds_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
                     </itemizedlist>
-                    
                 </listitem>
                 <listitem>
                     <para>Was provided educational materials</para>
@@ -256,13 +264,13 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Education Provided Clinical Statement Example</title>
                                 <mediaobject>
                                     <imageobject>
-                                        <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                        <imagedata fileref="images/educ_perf_anf.svg" format="SVG"
+                                            scalefit="1" width="100%" contentdepth="100%"/>
                                     </imageobject>
                                 </mediaobject>
                             </figure>
                         </listitem>
                     </itemizedlist>
-                    
                 </listitem>
                 <listitem>
                     <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
@@ -275,16 +283,17 @@ For instance that a test is ordered?
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb" mid="6"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+" id="ppm_nyf_nhb" mid="9"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
-" parentID="ppm_nyf_nhb" mid="7"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
+" parentID="ppm_nyf_nhb" mid="10"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
                                     history of breast
-                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="7"?><?oxy_comment_end mid="6"?></para>
+                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?></para>
                                 <figure>
                                     <title>Family History Clinical Statement Example</title>
                                     <mediaobject>
                                         <imageobject>
-                                            <imagedata fileref="images/fh_ca_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                                            <imagedata fileref="images/fh_ca_anf.svg" format="SVG"
+                                                scalefit="1" width="100%" contentdepth="100%"/>
                                         </imageobject>
                                     </mediaobject>
                                 </figure>
