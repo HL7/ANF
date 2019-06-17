@@ -50,13 +50,14 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
             patient, made by healthcare provider, e.g. a nurse or a physician. This can be the
             statement of a condition being present, a request for a procedure to be done, the
             results of lab tests or the patient’s family history of cancer. There are a number of
-            implementations which fit this description, e.g. the current normative definition of
+            implementations which fit this description, e.g. the current normative definition
+            of<?oxy_comment_start author="Ioana" timestamp="20190617T140910-0400" comment="Add referece/hyperlink to Introduction."?>
             Clinical Statements in HL7 V3 describes principles and constraints for Clinical
-            Statements. <footnote>
+            <?oxy_comment_start author="Ioana" timestamp="20190617T140934-0400" comment="Footnote should be replaced by a reference." mid="3"?>Statements. <?oxy_comment_end?><footnote>
                 <para>
                     <link
                         xmlns:xlink="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
-                        >http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40</link>
+                        >http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40<?oxy_comment_end mid="3"?></link>
                 </para>
             </footnote></para>
         <para>Clinical Statements are used to model all “entries” in a Clinical Document
@@ -252,7 +253,7 @@ Structured Coded Form
                 <para>Data is normalized → Transformation process from CIF to Analysis Normal Form
                     (ANF) → Representable/storable in multiple types of databases, which <emphasis
                         role="underline">could</emphasis> include
-                    <?oxy_comment_start author="timowilliams" timestamp="20190502T125824-0500" comment="Should we mention VistA here or just change it to EMR?"?>VistA<?oxy_comment_end?>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190502T125824-0500" comment="Should we mention VistA here or just change it to EMR?" id="h42_3dr_c3b"?><?oxy_comment_start author="Ioana" timestamp="20190617T140755-0400" comment="We should &quot;EHR System&quot; - EMR is outdated and VistA is too specific." parentID="h42_3dr_c3b" mid="8"?>VistA<?oxy_comment_end mid="8"?><?oxy_comment_end?>
                     but a separate process would need to be performed to make that happen.</para>
             </listitem>
             <listitem>
