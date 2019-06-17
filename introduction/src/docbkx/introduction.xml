@@ -289,7 +289,7 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
       of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
       analysis, but even in the case of structured, semantically-clear information, inconsistency
       across sources of information raises obstacles to analysis and research. Analysis of aggregate
-      information  managed by health information networks poses the greatest challenge today because
+      information managed by health information networks poses the greatest challenge today because
       a meaningful use of data for patient outcomes or research requires a common format and level
       of semantic clarity.</para>
   </section>
@@ -407,12 +407,17 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
         normalized manner with respect to the content and semantics whole the same representational
         structure as post-coordinated expressions used as input. </para>
       <para>Successful analysis requires relatively high data quality that allows system to defined
-        a precise topic, category,  and clear measure or result of what was observed, requested, or
-        assessed during treatment.
-        <?oxy_comment_start author="Ioana" timestamp="20190612T011418-0400" comment="Could ANF evaluate the precision of data: detailed topic definition?"?>ANF
-        can be applied to any input model as long as that structure and terminology is precise to
-        define the elements mandatory for analysis.<?oxy_comment_end?>
-      </para>
+        a precise topic, category, and clear measure or result of what was observed, requested, or
+        assessed during treatment. ANF can be applied to any input data, any formalism as long as
+        that data semantics and terminology are sufficiently precise to define the elements
+        mandatory for analysis. </para>
+    </section>
+    <section>
+      <title>Intended Audience</title>
+      <para> ANF is intended to support projects that aggregate clinical statements from a variety of
+        sources, independent of formalism or approach used by the source system. The users of this
+        specification and subsequent implementation guidance are developing solutions that support
+        clinical decision support, patient safety, and research. </para>
     </section>
   </section>
 
