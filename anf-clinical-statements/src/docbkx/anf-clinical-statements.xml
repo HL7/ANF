@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>ANF Clinical Statements </title>
@@ -76,6 +75,14 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 applicable - the result that corresponds to the
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="1"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
+            <editorial-rule>
+                <title>Timing</title>
+                <mathphrase>For a Performance of Action, the Timing can represent a time in the past or
+                    a current time. If a history of a performance of action is to be represented in ANF
+                    the Timing will be for a time in the past prior to the statement. Otherwise the
+                    Timing will be represented by with the current time as of the statement.
+                </mathphrase>
+            </editorial-rule>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist."?><?oxy_comment_end?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="3"?><?oxy_comment_end mid="3"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="4"?><?oxy_comment_end mid="4"?>
@@ -156,10 +163,10 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Topic with a Result Value</title>
                                 <mathphrase>Any Topic that states a Result that has a value will be
                                     specified with the correct upperBound, lowerBound, and
-                                    measureSemantic.</mathphrase> If the Result is a single value,
+                                    measureSemantic.If the Result is a single value,
                                 the upperBound and lowerBound will be the same value.  If the Result
                                 is a range, the upperBound and lowerBound will be specifed as
-                                such.</editorial-rule>
+                                such.</mathphrase> </editorial-rule>
                             <editorial-rule>
                                 <title>Technique</title>
                                 <mathphrase>
@@ -209,6 +216,15 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                                                 representing that the patient was in the seated position for at
                                                                 least 5 minutes.</para>
                                                         </listitem>
+                                                  <listitem>
+                                                  <para><emphasis role="underline">Example: Pulse
+                                                  Rate 68 bpm, taken by pulse oximeter</emphasis>.
+                                                  <emphasis role="italic">“Taken by pulse
+                                                  oximeter”</emphasis> is inseparable from the topic
+                                                  and cannot be expressed as a stand-alone clinical
+                                                  statement. It therefore constitutes a technique
+                                                  and will be modeled as part of the topic.</para>
+                                                  </listitem>
                                                     </itemizedlist>
                                                 </listitem>
                                             </itemizedlist>
@@ -231,6 +247,45 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 using BP cuff adult size, patient in sitting position for at least 5
                                 minutes, urinated not more than 30 minutes prior to
                                 measurement</para>
+                            <editorial-rule>
+                                <title>Prerequisite</title>
+                                <mathphrase>
+                                    A prerequisite is a <emphasis
+                                        role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
+                                    something else can happen or be done. Pre-requisite are part of the details under which
+                                    a procedure is being performed. The state must exist can prior to the performance of the
+                                    action
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>The state that must exist pertains to:</para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                    <para>the subject of record (e.g. patient)</para>
+                                                </listitem>
+                                                <listitem>
+                                                    <para>the environment (e.g. necessary room temperature, required time of
+                                                        day)</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                        <listitem>
+                                            <para>A prerequisite is separable from the topic and can be expressed as a
+                                                stand-alone clinical statement</para>
+                                            <itemizedlist>
+                                                <listitem>
+                                                    <para><emphasis role="underline"
+                                                  >Example</emphasis>: Systolic blood pressure 120
+                                                  mmHg, taken with patient in sitting position.
+                                                  <emphasis role="italic">“Patient in sitting
+                                                  position”</emphasis> is separable from the topic
+                                                  and exists prior to the performance of the action
+                                                  and therefore constitutes a prerequisite.</para>
+                                                </listitem>
+                                            </itemizedlist>
+                                        </listitem>
+                                    </itemizedlist>
+                                </mathphrase>
+                            </editorial-rule>
                             
                             <figure>
                                 <title>Systolic Blood Pressure Clinical Statement Example</title>
@@ -321,6 +376,21 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                         <listitem>
                             <para>Patient took one Acetaminophen 500 mg tablet by mouth for
                                 pain</para>
+                            <editorial-rule>
+                                <title>Purpose</title>
+                                <mathphrase>The purpose is why an action was requested
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
+                                                attribute describing the purpose</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </mathphrase>
+                            </editorial-rule>
+                            <editorial-rule>
+                                <title>Administration of Medication Topic</title>
+                                <mathphrase>To represent the performance of an administration of medication, the Topic will be built using the Administration of substance concept. All Administration of substance concepts will be refined with the substance and dose form and strength being requested. If Route of administration exists, then it will also be added.</mathphrase>
+                            </editorial-rule>
                             <figure>
                                 <title>Medication Administered Clinical Statement Example</title>
                                 <mediaobject>
@@ -366,6 +436,12 @@ Doing family history, donor statements using subject of information is now the n
 " parentID="ppm_nyf_nhb" mid="10"?><?oxy_comment_start author="timowilliams" timestamp="20190506T153833-0500" comment="Since this presents the issue of representing history, should we keep this in here?"?>Family
                                     history of breast
                                     cancer<?oxy_comment_end?><?oxy_comment_end mid="10"?><?oxy_comment_end mid="9"?></para>
+                                <editorial-rule>
+                                    <title>subjectOfInformation</title>
+                                    <mathphrase>The subjectOfInformation is used to represent who
+                                        the statement is about. This is normally the patient unless
+                                        explicitly stated otherwise.</mathphrase>
+                                </editorial-rule>
                                 <figure>
                                     <title>Family History Clinical Statement Example</title>
                                     <mediaobject>
@@ -393,7 +469,17 @@ Doing family history, donor statements using subject of information is now the n
             <para>Examples of Request clinical statements:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Request for Rheumatoid factor 1 time routine</para>
+                    <para>Request for Rheumatoid factor 1 time routine <editorial-rule>
+                            <title>Laboratory Procedure Topic</title>
+                            <mathphrase>For Laboratory procedures, the Topic will be built using an
+                                Laboratory Procedure concept. These concepts can be further
+                                refined.</mathphrase>
+                        </editorial-rule><editorial-rule>
+                            <title>Priority</title>
+                            <mathphrase>Priority is used to represent the priority for which the
+                                request is to be carried out. By default a Request will be
+                                considered "routine" unless otherwise specified.</mathphrase>
+                        </editorial-rule></para>
 
                     <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time"?><?oxy_comment_end?>
 
@@ -408,6 +494,10 @@ Doing family history, donor statements using subject of information is now the n
                 </listitem>
                 <listitem>
                     <para>Request for X-ray chest to evaluate for heart failure</para>
+                    <editorial-rule>
+                        <title>Imaging Procedure Topic</title>
+                        <mathphrase>For Imaging procedures, the Topic will be built using an Imaging Procedure concept. These concepts will be further refined with a Method, Procedure site - Direct and (if appropriate) a laterality for those sites that are lateralizable.</mathphrase>
+                    </editorial-rule>
                     <figure>
                         <title>X-Ray Request Clinical Statement Example</title>
                         <mediaobject>
@@ -430,6 +520,16 @@ Doing family history, donor statements using subject of information is now the n
                 </listitem>
                 <listitem>
                     <para>Ribavirin 200 mg capsule oral, take 2 capsules every morning</para>
+                    <editorial-rule>
+                        <title>Administration of Medication Request Topic</title>
+                        <mathphrase>For requesting the
+                            administration of medication, the Topic will be built using the
+                            Administration of substance concept. If the narrative includes information
+                            about a refill, that information is currently represented as an Unstructure
+                            Circumstance. All Administration of substance concepts will be refined with
+                            the substance and dose form and strength being requested. If Route of
+                            administration exists, then it will also be added.</mathphrase>
+                    </editorial-rule>
                     <figure>
                         <title>Medication Request Clinical Statement Example</title>
                         <mediaobject>
