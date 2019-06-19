@@ -1,7 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
+﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Introduction<?oxy_comment_start author="kmaulden" timestamp="20190423T093902-0400" comment="Note from Keith: For the ANF document, we should somewhere describe assumptions about what an ANF implementation requires. For example, ANF requires an ability to classify topic expressions (and expressions that may go in other locations). Maybe a section that describes the requirements of a &quot;mapping&quot; based system with a plethora of statement models, and then what ANF requires above and beyond a mapping system, and what the benefits are. 
@@ -414,10 +411,12 @@ Re-using some of the work in the interoperability paper is probably wise. I thin
     </section>
     <section>
       <title>Intended Audience</title>
-      <para> ANF is intended to support projects that aggregate clinical statements from a variety of
-        sources, independent of formalism or approach used by the source system. The users of this
-        specification and subsequent implementation guidance are developing solutions that support
-        clinical decision support, patient safety, and research. </para>
+      <para> ANF is intended to support projects that aggregate clinical statements from a variety
+        of sources, independent of formalism or approach used by the source system. The users of
+        this specification and subsequent implementation guidance are developing solutions that
+        support clinical decision support, patient safety, and research. </para>
+      <para>The Learning EHR, 21st Century Cures, Patient-Centerd Outcomes Researh, and other
+        national initiatives are all relying on inteoperable, reusable, analysis-ready information that can improve outcomes, produce new therapies, and put into practice "precision medicine"..</para>
     </section>
   </section>
 
