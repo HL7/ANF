@@ -22,6 +22,7 @@
 
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <docbkx-maven-plugin.version>2.0.17</docbkx-maven-plugin.version>
    </properties>
    <build>
       <pluginManagement>
@@ -34,7 +35,7 @@
             <plugin>
                <groupId>com.agilejava.docbkx</groupId>
                <artifactId>docbkx-maven-plugin</artifactId>
-               <version>2.0.15</version>
+               <version>${docbkx-maven-plugin.version}</version>
                <dependencies>
                   <dependency>
                      <groupId>net.sf.offo</groupId>
@@ -187,4 +188,43 @@
       <module>citation-editor-plugin</module>
       <module>bibliography-db</module>
    </modules>
+   <profiles>
+      <profile>
+         <id>xep-profile</id>
+         <activation>
+            <file>
+               <exists>/Applications/XEP/xep</exists>
+            </file>
+         </activation>
+         <build>
+            <plugins>
+               <plugin>
+                  <groupId>org.codehaus.mojo</groupId>
+                  <artifactId>exec-maven-plugin</artifactId>
+                  <version>1.6.0</version>
+                  <executions>
+                     <execution>
+                        <phase>process-classes</phase>
+                        <goals>
+                           <goal>exec</goal>
+                        </goals>
+                     </execution>
+                  </executions>
+                  <configuration>
+                     <executable>/Applications/XEP/xep</executable>
+                     <workingDirectory>${project.basedir}/src/docbkx</workingDirectory>
+                     <successCodes>0,1</successCodes>
+                     <arguments>
+                        <argument>-fo</argument>
+                        <argument>${project.build.directory}/site/docbook/${project.artifactId}.fo</argument>
+                        <argument>-pdf</argument>
+                        <argument>${project.build.directory}/site/docbook/${project.artifactId}.xep.pdf</argument>
+                     </arguments>
+                  </configuration>
+               </plugin>
+            </plugins>
+         </build>
+      </profile>
+      
+   </profiles>
 </project>
