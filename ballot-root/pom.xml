@@ -13,7 +13,7 @@
    <packaging>pom</packaging>
 
    <properties>
-      <docbook.root>hl7-anf-ballot-root.xml</docbook.root>
+      <docbook.root>${project.artifactId}.xml</docbook.root>
    </properties>
    <dependencies>
       <dependency>
@@ -125,22 +125,6 @@
                   <phase>package</phase>
                </execution>
             </executions>
-         </plugin>
-         <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>1.6.0</version>
-            <configuration>
-               <executable>/Applications/XEP/xep</executable>
-               <workingDirectory>${project.basedir}/src/docbkx</workingDirectory>
-               <successCodes>0,1</successCodes>
-               <arguments>
-                  <argument>-fo</argument>
-                  <argument>${project.build.directory}/site/docbook/symbolic-information-analytics.fo</argument>
-                  <argument>-pdf</argument>
-                  <argument>${project.build.directory}/site/docbook/symbolic-information-analytics.xep.pdf</argument>
-               </arguments>
-            </configuration>
          </plugin>
       </plugins>
    </build>
