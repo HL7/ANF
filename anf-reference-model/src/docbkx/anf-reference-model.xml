@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>ANF Reference Model</title>
@@ -26,8 +25,7 @@
     
     <para>The ANF Reference Model is a small static model that can easily be described with UML,
         OpenEHR BMM, or FHIR StructureDefintion. Detailed Clinical Models are then described as
-        constraints of this reference model. The core of the model is the class
-        <?oxy_comment_start author="Ioana" timestamp="20190617T141346-0400" comment="We have a problem because the &quot;Measure&quot; is used only for &quot;time&quot; : in Circumstance.timing and ClinicalStatement.statementtime. In the examples, the &quot;Measure&quot; is used for &quot;results&quot; as well. We need to refactor the refernce model based on how we understand the examples to be instantiated."?>ANFStatement<?oxy_comment_end?>.</para>
+        constraints of this reference model. The core of the model is the class ANFStatement.</para>
     
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

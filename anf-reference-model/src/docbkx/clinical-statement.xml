@@ -5,8 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>ANF Statement</title>
     <figure>
-        <title>ANF Statement</title>
-        
+        <title>ANF Statement</title>        
         <mediaobject>
             <imageobject>
                 <imagedata fileref="images/clinical_statement.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
@@ -250,7 +249,7 @@ Lack of distinction between the observation as an action and that what is observ
             <para><emphasis role="bold">WHY</emphasis> an action was performed or requested. The
                 “purpose” field is used to capture WHY a procedure was requested or performed in a
                 post-coordinated expression, based on two possible procedures:<itemizedlist>
-                    <listitem spacing="compact">
+                    <listitem>
                         <para>386053000 |Evaluation procedure (procedure)|</para>
                     </listitem>
                     <listitem>
