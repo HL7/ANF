@@ -1,70 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Implications &amp; Discussion</title>
-    <section>
-        <title>
-            <?oxy_comment_start author="kmaulden" timestamp="20190418T110521-0400" comment="From Ioana:
-I think it would be valuable if we could show how ANF can improve the precision of “clinical statements”.
-Both C-CDA and FHIR US core specify profiles intended to represent data captured by EHRs. If we could show how an EHR-produced “result” could be represented in ANF.
-We could propose this improvement to Orders&amp;Observations, Patient Care, and Clinical Decision Support work groups.
-" id="c2z_fxv_lhb" mid="1"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110533-0400" comment="KH: Ioana, could you elaborate on this, please?" parentID="c2z_fxv_lhb" mid="2"?><?oxy_comment_start author="kmaulden" timestamp="20190418T110613-0400" comment="&quot;the precision of &apos;clinical statements&apos;&quot; Keith: Probably is about reproducibility." parentID="c2z_fxv_lhb"?>Precisio<?oxy_comment_end?><?oxy_comment_end mid="2"?><?oxy_comment_end mid="1"?>n
-            of Clinical Statements Using ANF (*DRAFT*)</title>
-        <example>
-            <title>Example 1</title>
-            <para>This is example 1 test</para>
-        </example>
-        <editorial-rule>
-            <title>Editorial Rule </title>
-            <mathphrase>This is editorial rule test</mathphrase>
-        </editorial-rule>
-        <example>
-            <title>Example 2</title>
-            <para>This is example 2 test</para>
-        </example>
-        <para>The representation of clinical data across disparate healthcare organizations is
-            highly variable; due to the various networks, communication channels, set of
-            transformations, and different organizations of clinical data that currently exist.
-            Despite the fact that there are mandated and widely implemented clinical terminology
-            standards, standardized representation of clinical data is non-trivial because each
-            standard has different semantics models, and use different formalisms and tools for
-            their representation, have separate release cycles, and different versioning mechanisms.
-            These terminologies are often used in an inconsistent way across implementations of the
-            same underlying systems, and the minimal integration of systems such as SNOMED CT and
-            LOINC and RxNorm is an area requiring considerable attention if we want to support safe
-            and effective portability of software components and the ability to reuse code across
-            healthcare organizations. </para>
-        <para>One implementation of a decision support alert of quality measure query at the
-            Veterans Health Administration, for instance, is not completely transferrable to another
-            institution; analysts at each organization will have to modify the underlying query
-            which might be in Structured Query Language (SQL) for instance so that it is computable
-            against their respective clinical database structure. Furthermore, all of the
-            standards-based encoded concepts are not recorded in the same way in different EHR
-            implementations; what may be structured in one system and represented by LOINC may be
-            represented in another system by SNOMED CT, and yet another system may represent the
-            concepts using free text.</para>
-        <para>The standardization of clinical observations in a manner that supports automated
-            processing requires a formal terminology model. The most important requirements of such
-            a terminology model are that (1) it can represent any clinician-specified observation
-            accurately and precisely and (2) it can support automated query and retrieval operations
-            correctly and efficiently.</para>
-        <para>Importantly, ANF use of SOLOR supports the ability to express new medical concepts by
-            combining pre-existing ones. This process, called post-coordination, enables clinicians
-            who use SCT to express observations that do not appear as pre-defined concepts in the
-            terminology, thereby vastly increasing the expressive power of clinical terminologies.
-            For example, a clinician could document that a patient has “bacterial pneumonia caused
-            by methicillin-resistant Staph. Aureus” by combining the pre-existing concept “bacterial
-            pneumonia” with the pre-existing concept “Methicillin Resistant Staph. Aureus” and
-            specifying that the latter is the “causative agent” of the former. The patient’s medical
-            record would then contain an entry consisting of the following expression: </para>
-        <para>Bacterial Pneumonia (ConceptID = 53084003) : Causative Agent (ConceptID=246075003) =
-            Methicillin Resistant Staph. Aureus (ConceptID=115329001)</para>
-        <para>If specified correctly, post-coordinated expressions also support subsumption testing.
-            Hence, the patient whose record contains the expression above would also be identified
-            by the query “find all patients with a diagnosis of any infectious disease (Infectious
-            Disease : ConceptID = 40733004) in their
-            record.”<?oxy_comment_start author="rcholan" timestamp="20190607T180609-0400" comment="RC: adding comment to test email notification"?></para><?oxy_comment_end?>
-        <para>RC: Test</para>
-    </section>
+    <title>Implications</title>
+    <para>A 2012 Literature Review commissioned by The Agency for Healthcare Research and Quality
+        (AHRQ) found evidence showing that CDS had positive impact on process measures and
+        increasing user knowledge relevant to a medical condition. (Lobach et al., 2012)
+            <citation>CDSOptimize</citation></para>
+    <para>Additional studies show that well-executed CDS can
+        <citation>CDSOptimize</citation>:</para>
+    <itemizedlist>
+        <listitem>
+            <para>reduce adverse drug-drug interaction events and medication errors (Smithburger et
+                al., 2011; Sonnichsen et al., 2016) (Fritz et al., 2012); </para>
+        </listitem>
+        <listitem>
+            <para>decrease unnecessary lab testing (Felcher et al., 2017);</para>
+        </listitem>
+        <listitem>
+            <para>reduce cardiovascular risk in patients with type 2 diabetes (Cleveringa et al.,
+                2008); </para>
+        </listitem>
+        <listitem>
+            <para>improve practitioner performance (Garg et al., 2005); </para>
+        </listitem>
+        <listitem>
+            <para>increase cardiovascular disease risk assessment in routine primary care practice
+                (Wells et al., 2008); </para>
+        </listitem>
+        <listitem>
+            <para>improve public health outcomes associated with outbreaks of foodborne illness (Wu
+                et al., 2012); </para>
+        </listitem>
+        <listitem>
+            <para>and, produce cost savings associated with hospital-based pharmacy interventions
+                (Calloway et al., 2013).</para>
+        </listitem>
+    </itemizedlist>
+    <para>Taken together, the available evidence shows that CDS —when implemented in the right
+        context, and when governed with formal management—can reduce errors, improve the quality of
+        care, reduce cost, and ease the cognitive burden on health care providers.
+            <citation>CDSOptimize</citation> As a result, the impetus for achieving standardized,
+        widespread adoption of CDS across health systems is clear.</para>
+    <para>A report entitled “<emphasis role="italic">Optimizing Strategies for Clinical Decision
+            Support: Summary of a Meeting Series</emphasis>” was produced out of the collaboration
+        between the ONC and the National Academy of Medicine (NAM). The report states that there are
+        at least four important technical challenges to sharing and therefore standardizing
+        implementations of CDS content: <citation>CDSOptimize</citation></para>
+    <para>
+        <emphasis role="bold">(1) insufficient standardization of patient data representation;
+        </emphasis></para>
+    <para>(2) insufficient standardization of CDS knowledge representation; </para>
+    <para>(3) insufficient standardization of CDS integration mechanisms; </para>
+    <para>(4) a need to align with broader standardization initiatives. </para>
+    <para>One of the reasons that CDS interventions are difficult to implement between health care
+        systems is because disparate EHR systems and health care systems utilize different
+        underlying patient data models and clinical statement representation mechanisms. Even
+        distinct instantiations of use of the same EHR systems differ in how they encode patient
+        data and in how they represent clinical statements. The ONC and NAM report states that
+        "[b]ecause CDS relies on inferencing using patient data, this heterogeneity in patient data
+        representation poses an immense obstacle to sharing CDS."
+        <citation>CDSOptimize</citation></para>
+    <para>ANF aims to reduce the variability of how clinical data within the value sets and CDS
+        rules are inputted into EHR systems and modeled/stored in data repositories. The
+        standardization of clinical observations in a manner that supports automated processing
+        requires a formal clinical statement model, such as ANF. The most important requirements of
+        such a statement model are that (1) it can represent any clinician-specified observation
+        accurately and precisely and (2) it can support automated query and retrieval operations
+        correctly and efficiently.</para>
+    <para><?oxy_comment_start author="rcholan" timestamp="20190619T182046-0400" comment="Needs to be reviewed/updated."?>Importantly,
+        ANF supports the ability to enable clinicians who use SCT to express observations that do
+        not appear as pre-defined concepts in the terminology, thereby vastly increasing the
+        expressive power of clinical terminologies. For example, a clinician could document that a
+        patient has “bacterial pneumonia caused by methicillin-resistant Staph. Aureus” by combining
+        the pre-existing concept “bacterial pneumonia” with the pre-existing concept “Methicillin
+        Resistant Staph. Aureus” and specifying that the latter is the “causative agent” of the
+        former. The patient’s medical record would then contain an entry consisting of the following
+        expression: </para>
+    <para>Bacterial Pneumonia (ConceptID = 53084003) : Causative Agent (ConceptID=246075003) =
+        Methicillin Resistant Staph. Aureus (ConceptID=115329001)</para>
+    <para>If specified correctly, post-coordinated expressions also support subsumption testing.
+        Hence, the patient whose record contains the expression above would also be identified by
+        the query “find all patients with a diagnosis of any infectious disease (Infectious Disease
+        : ConceptID = 40733004) in their record.”<?oxy_comment_end?></para>
+    <para>If specified correctly, shareable CDS and Quality Measure implementations can have a
+        positive <emphasis role="italic">Impact on population health.</emphasis></para>
 </chapter>
