@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
@@ -341,11 +339,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             stand-alone clinical statement</para>
                         <itemizedlist>
                             <listitem>
-                                <para><emphasis role="underline">Example</emphasis>: Arterial blood pressure
-                                    120 mmHg, taken with patient in sitting position. <emphasis
-                                        role="italic">“Patient in sitting position”</emphasis> is separable
-                                    from the topic and exists prior to the performance of the action and
-                                    therefore constitutes a prerequisite.</para>
+                                <para><emphasis role="underline">Example</emphasis>: Systolic blood
+                                    pressure 120 mmHg, taken with patient in sitting position.
+                                        <emphasis role="italic">“Patient in sitting
+                                        position”</emphasis> is separable from the topic and exists
+                                    prior to the performance of the action and therefore constitutes
+                                    a prerequisite.</para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -354,8 +353,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </editorial-rule>
         <editorial-rule>
             <title>subjectOfInformation</title>
-            <mathphrase>The subjectOfInformation is used to represent who the statement it about. This is normally the patient unless
-            explicitly stated otherwise.</mathphrase>
+            <mathphrase>The subjectOfInformation is used to represent who the statement is about.
+                This is normally the patient unless explicitly stated otherwise.</mathphrase>
         </editorial-rule>
 
         <editorial-rule>
