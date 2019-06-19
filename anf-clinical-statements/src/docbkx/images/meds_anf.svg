@@ -17,13 +17,13 @@
    color-interpolation-filters="sRGB"
    class="st11"
    version="1.1"
-   id="svg210"
+   id="svg138"
    sodipodi:docname="meds_anf.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
-   id="metadata216"><rdf:RDF><cc:Work
+   id="metadata144"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-   id="defs214" /><sodipodi:namedview
+   id="defs142" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -34,15 +34,15 @@
    inkscape:pageshadow="2"
    inkscape:window-width="640"
    inkscape:window-height="480"
-   id="namedview212"
+   id="namedview140"
    showgrid="false"
-   inkscape:zoom="0.28921569"
+   inkscape:zoom="0.26893939"
    inkscape:cx="528"
    inkscape:cy="408"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="0"
-   inkscape:current-layer="svg210" />
+   inkscape:current-layer="svg138" />
 	<v:documentProperties
    v:langID="1033"
    v:viewMarkup="false">
@@ -73,12 +73,12 @@
 
 	<g
    v:mID="25"
-   v:index="5"
+   v:index="6"
    v:groupContext="foregroundPage"
-   id="g208"
-   transform="matrix(1.0076183,0,0,1.2429021,-0.45017841,-13.102418)">
+   id="g136"
+   transform="matrix(1.0124772,0,0,1.2344222,-0.74654645,-12.644645)">
 		<title
-   id="title4">med_anf</title>
+   id="title4">med_perform_anf</title>
 		<v:pageProperties
    v:drawingScale="1"
    v:pageScale="1"
@@ -229,7 +229,7 @@
    id="shape3-8"
    v:mID="3"
    v:groupContext="shape"
-   transform="translate(222.763,-336.068)">
+   transform="translate(268.984,-318.963)">
 			<title
    id="title26">Round Corner Rectangle.3</title>
 			<desc
@@ -332,7 +332,7 @@
    id="shape4-12"
    v:mID="4"
    v:groupContext="shape"
-   transform="translate(257.04,-246.068)">
+   transform="translate(351.102,-246.068)">
 			<title
    id="title37">Round Corner Rectangle.4</title>
 			<desc
@@ -434,7 +434,7 @@
 			<title
    id="title46">Round Corner Rectangle.5</title>
 			<desc
-   id="desc48">[71388002|Procedure]- (260686004|Method) [129445006|Administr...</desc>
+   id="desc48">[Procedure]- (Method) [Administration - action] - (Direct sub...</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -521,32 +521,32 @@
    v:langID="1033"
    id="text62"
    style="font-style:italic;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:bulletSize="0.166667" /><v:tabList />[71388002|Procedure]-<v:newlineChar /><tspan
+   v:bulletSize="0.166667" /><v:tabList />[Procedure]-<v:newlineChar /><tspan
    x="4"
    dy="1.2em"
    class="st6"
    id="tspan52"
-   style="font-size:12.00012016px">(260686004|Method) [129445006|Administration </tspan>- <tspan
+   style="font-size:12.00012016px">(Method) [Administration </tspan>- action] -<v:newlineChar /><tspan
    x="4"
    dy="1.2em"
    class="st6"
    id="tspan54"
-   style="font-size:12.00012016px">action] (363701004|Direct substance) [322236009 </tspan><tspan
+   style="font-size:12.00012016px">(Direct substance) [Product containing precisely </tspan><tspan
    x="4"
    dy="1.2em"
    class="st6"
    id="tspan56"
-   style="font-size:12.00012016px">|Product containing precisely paracetamol 500 milligram/</tspan><tspan
+   style="font-size:12.00012016px">paracetamol 500 milligram/1 each conventional release </tspan><tspan
    x="4"
    dy="1.2em"
    class="st6"
    id="tspan58"
-   style="font-size:12.00012016px">1 each conventional release oral tablet]<v:newlineChar /></tspan><tspan
+   style="font-size:12.00012016px">oral tablet]</tspan>-<v:newlineChar /><tspan
    x="4"
    dy="1.2em"
    class="st6"
    id="tspan60"
-   style="font-size:12.00012016px">(410675002|Route of administration) [260548002|Oral]</tspan></text>
+   style="font-size:12.00012016px">(Route of administration) [Oral]</tspan></text>
 		</g>
 		<g
    id="shape6-23"
@@ -728,7 +728,7 @@
    id="shape7-26"
    v:mID="7"
    v:groupContext="shape"
-   transform="rotate(-125.493,85.790436,385.59676)">
+   transform="rotate(-159.341,180.75357,430.27152)">
 			<title
    id="title70">Multi-Line.8</title>
 			<v:userDefs>
@@ -839,86 +839,62 @@
 				<v:ud
    v:nameU="LastAngle"
    v:prompt=""
-   v:val="VT0(4.240322813624E-07):32" />
+   v:val="VT0(2.852484724239E-07):32" />
 				<v:ud
    v:nameU="CtrlAngle"
    v:prompt=""
-   v:val="VT0(-1.6526104302037):32" />
+   v:val="VT0(-1.6920897186053):32" />
 				<v:ud
    v:nameU="ArrowFeatherAngle"
    v:prompt=""
-   v:val="VT0(7.9357965854478):32" />
+   v:val="VT0(7.9752755962819):32" />
 				<v:ud
    v:nameU="ArrowFeatherDist"
    v:prompt=""
-   v:val="VT0(0.2006712266628):0" />
+   v:val="VT0(0.2014802815333):0" />
 				<v:ud
    v:nameU="Joint1_2Pcnt"
    v:prompt=""
-   v:val="VT0(0.35714301374083):26" />
+   v:val="VT0(0.35714303250202):26" />
 				<v:ud
    v:nameU="Joint1_2Angle"
    v:prompt=""
-   v:val="VT0(1.5707961995855):32" />
+   v:val="VT0(1.5707962412205):32" />
 				<v:ud
    v:nameU="Joint2_3Pcnt"
    v:prompt=""
-   v:val="VT0(0.78571461490289):26" />
+   v:val="VT0(0.78571465617753):26" />
 				<v:ud
    v:nameU="Joint2_3Angle"
    v:prompt=""
-   v:val="VT0(1.570796538811):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707964694191):32" />
 				<v:ud
    v:nameU="Joint3_4Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707966120434):32" />
 				<v:ud
    v:nameU="Joint4_5Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707966120434):32" />
 				<v:ud
    v:nameU="Joint5_6Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707966120434):32" />
 				<v:ud
    v:nameU="Joint6_7Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707966120434):32" />
 				<v:ud
    v:nameU="Joint7_8Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999996844893):26" />
+   v:val="VT0(1.5707966120434):32" />
 				<v:ud
    v:nameU="Joint8_9Angle"
    v:prompt=""
-   v:val="VT0(1.5707967508272):32" />
+   v:val="VT0(1.5707966120434):32" />
 			</v:userDefs>
 			<path
-   d="M 0,612 H 21.08 46.39 59.04"
+   d="m 0,612 h 31.34 37.62 18.8"
    class="st9"
    id="path72"
    inkscape:connector-curvature="0"
@@ -932,7 +908,7 @@
 			<title
    id="title75">Round Corner Rectangle.8</title>
 			<desc
-   id="desc77">ANF Performance Clinical Statement</desc>
+   id="desc77">ANF Statement</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -1013,27 +989,22 @@
    inkscape:connector-curvature="0"
    style="fill:#fbd7bb;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="19"
-   y="576.95001"
+   x="25.02"
+   y="584.15002"
    class="st2"
    v:langID="1033"
-   id="text83"
+   id="text81"
    style="font-weight:bold;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
    v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />ANF Performance <tspan
-   x="17.6"
-   dy="1.2em"
-   class="st6"
-   id="tspan81"
-   style="font-size:12.00012016px">Clinical Statement</tspan></text>
+   v:bulletSize="0.166667" /><v:tabList />ANF Statement</text>
 		</g>
 		<g
-   id="shape9-33"
+   id="shape9-32"
    v:mID="9"
    v:groupContext="shape"
    transform="rotate(149.759,193.73271,429.09916)">
 			<title
-   id="title86">Multi-Line.11</title>
+   id="title84">Multi-Line.11</title>
 			<v:userDefs>
 				<v:ud
    v:nameU="VertexCount"
@@ -1223,17 +1194,17 @@
 			<path
    d="M 0,612 H 30.27 66.59 84.75"
    class="st9"
-   id="path88"
+   id="path86"
    inkscape:connector-curvature="0"
    style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 		</g>
 		<g
-   id="shape10-36"
+   id="shape10-35"
    v:mID="10"
    v:groupContext="shape"
-   transform="rotate(-124.86,18.17349,375.3282)">
+   transform="rotate(-142.657,77.055933,396.58701)">
 			<title
-   id="title91">Multi-Line.12</title>
+   id="title89">Multi-Line.12</title>
 			<v:userDefs>
 				<v:ud
    v:nameU="VertexCount"
@@ -1342,76 +1313,76 @@
 				<v:ud
    v:nameU="LastAngle"
    v:prompt=""
-   v:val="VT0(5.2995334937103E-07):32" />
+   v:val="VT0(2.7181403158144E-07):32" />
 				<v:ud
    v:nameU="CtrlAngle"
    v:prompt=""
-   v:val="VT0(-1.636310910251):32" />
+   v:val="VT0(-1.6980216710523):32" />
 				<v:ud
    v:nameU="ArrowFeatherAngle"
    v:prompt=""
-   v:val="VT0(7.9194972773373):32" />
+   v:val="VT0(7.9812075218599):32" />
 				<v:ud
    v:nameU="ArrowFeatherDist"
    v:prompt=""
-   v:val="VT0(0.20042998501685):0" />
+   v:val="VT0(0.20162961765077):0" />
 				<v:ud
    v:nameU="Joint1_2Pcnt"
    v:prompt=""
-   v:val="VT0(0.35714302560545):26" />
+   v:val="VT0(0.35714302683516):26" />
 				<v:ud
    v:nameU="Joint1_2Angle"
    v:prompt=""
-   v:val="VT0(1.5707961678092):32" />
+   v:val="VT0(1.5707962452509):32" />
 				<v:ud
    v:nameU="Joint2_3Pcnt"
    v:prompt=""
-   v:val="VT0(0.78571464100507):26" />
+   v:val="VT0(0.78571464371042):26" />
 				<v:ud
    v:nameU="Joint2_3Angle"
    v:prompt=""
-   v:val="VT0(1.5707965917716):32" />
+   v:val="VT0(1.5707964627019):32" />
 				<v:ud
    v:nameU="Joint3_4Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 				<v:ud
    v:nameU="Joint4_5Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 				<v:ud
    v:nameU="Joint5_6Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 				<v:ud
    v:nameU="Joint6_7Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 				<v:ud
    v:nameU="Joint7_8Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 				<v:ud
    v:nameU="Joint8_9Angle"
    v:prompt=""
-   v:val="VT0(1.5707968567482):32" />
+   v:val="VT0(1.5707965986089):32" />
 			</v:userDefs>
 			<path
-   d="M 0,612 H 16.87 37.12 47.24"
+   d="M 0,612 H 32.89 72.36 92.1"
    class="st9"
-   id="path93"
+   id="path91"
    inkscape:connector-curvature="0"
    style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 		</g>
 		<g
-   id="shape16-39"
+   id="shape16-38"
    v:mID="16"
    v:groupContext="shape"
-   transform="translate(583.619,-318.068)">
+   transform="translate(574.837,-246.068)">
 			<title
-   id="title96">Round Corner Rectangle.7</title>
+   id="title94">Round Corner Rectangle.7</title>
 			<desc
-   id="desc98">1</desc>
+   id="desc96">[1,1] Tablet</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -1488,1089 +1459,26 @@
 			<path
    d="m 15.44,612 h 123.5 a 15.4378,15.4378 -180 0 0 15.44,-15.44 V 585.51 A 15.4378,15.4378 -180 0 0 138.94,570.07 H 15.44 A 15.4378,15.4378 -180 0 0 0,585.51 v 11.05 A 15.4378,15.4378 -180 0 0 15.44,612 Z"
    class="st7"
-   id="path100"
+   id="path98"
    inkscape:connector-curvature="0"
    style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="74.150002"
+   x="49.23"
    y="594.63"
    class="st8"
    v:langID="1033"
-   id="text102"
+   id="text100"
    style="font-style:italic;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
    v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />1</text>
+   v:bulletSize="0.166667" /><v:tabList />[1,1] Tablet</text>
 		</g>
 		<g
-   id="shape17-42"
-   v:mID="17"
-   v:groupContext="shape"
-   transform="rotate(123.684,306.14762,557.78172)">
-			<title
-   id="title105">Multi-Line.13</title>
-			<v:userDefs>
-				<v:ud
-   v:nameU="VertexCount"
-   v:prompt=""
-   v:val="VT0(4):26" />
-				<v:ud
-   v:nameU="SegmentType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="DrawType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="StartWidth"
-   v:prompt=""
-   v:val="VT0(0.15):0" />
-				<v:ud
-   v:nameU="EndWidth"
-   v:prompt=""
-   v:val="VT0(0.1):0" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(0.31445460881394):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6821373411359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(8.5942318659433):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20124611797498):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.36115492854311):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.4583288317516):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.737773973763):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.4437657331855):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(2.8932074687308E-07):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6903988271962):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(7.9735847130173):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20143905178578):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.35714302689406):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.5707962399989):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.78571464384001):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.5707964714553):32" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.5707966161156):32" />
-			</v:userDefs>
-			<path
-   d="M 0,612 H 30.9 67.99 86.53"
-   class="st9"
-   id="path107"
-   inkscape:connector-curvature="0"
-   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-		</g>
-		<g
-   id="shape18-45"
-   v:mID="18"
-   v:groupContext="shape"
-   transform="translate(430.824,-318.068)">
-			<title
-   id="title110">Round Corner Rectangle.15</title>
-			<desc
-   id="desc112">upperBound</desc>
-			<v:userDefs>
-				<v:ud
-   v:nameU="CTypeTopLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeTopRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockHoriz"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockVert"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockDiag"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-			</v:userDefs>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   cx="62.8977"
-   cy="591.034"
-   width="125.8"
-   height="41.9318" />
-			<path
-   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
-   class="st4"
-   id="path114"
-   inkscape:connector-curvature="0"
-   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-			<text
-   x="32.48"
-   y="594.63"
-   class="st5"
-   v:langID="1033"
-   id="text116"
-   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:horizAlign="1" /><v:tabList />upperBound</text>
-		</g>
-		<g
-   id="shape19-48"
-   v:mID="19"
-   v:groupContext="shape"
-   transform="translate(430.824,-261.102)">
-			<title
-   id="title119">Round Corner Rectangle.16</title>
-			<desc
-   id="desc121">lowerBound</desc>
-			<v:userDefs>
-				<v:ud
-   v:nameU="CTypeTopLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeTopRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockHoriz"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockVert"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockDiag"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-			</v:userDefs>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   cx="62.8977"
-   cy="591.034"
-   width="125.8"
-   height="41.9318" />
-			<path
-   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
-   class="st4"
-   id="path123"
-   inkscape:connector-curvature="0"
-   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-			<text
-   x="33.110001"
-   y="594.63"
-   class="st5"
-   v:langID="1033"
-   id="text125"
-   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:horizAlign="1" /><v:tabList />lowerBound</text>
-		</g>
-		<g
-   id="shape20-51"
-   v:mID="20"
-   v:groupContext="shape"
-   transform="translate(430.824,-204.136)">
-			<title
-   id="title128">Round Corner Rectangle.17</title>
-			<desc
-   id="desc130">measure.semantic</desc>
-			<v:userDefs>
-				<v:ud
-   v:nameU="CTypeTopLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeTopRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockHoriz"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockVert"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockDiag"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.17471590464537):1" />
-			</v:userDefs>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   cx="62.8977"
-   cy="591.034"
-   width="125.8"
-   height="41.9318" />
-			<path
-   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
-   class="st4"
-   id="path132"
-   inkscape:connector-curvature="0"
-   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-			<text
-   x="18.08"
-   y="594.63"
-   class="st5"
-   v:langID="1033"
-   id="text134"
-   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:horizAlign="1" /><v:tabList />measure.semantic</text>
-		</g>
-		<g
-   id="shape21-54"
-   v:mID="21"
-   v:groupContext="shape"
-   transform="translate(583.619,-261.102)">
-			<title
-   id="title137">Round Corner Rectangle.21</title>
-			<desc
-   id="desc139">1</desc>
-			<v:userDefs>
-				<v:ud
-   v:nameU="CTypeTopLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeTopRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockHoriz"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockVert"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockDiag"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-			</v:userDefs>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   cx="77.1903"
-   cy="591.034"
-   width="154.39"
-   height="41.9318" />
-			<path
-   d="m 15.44,612 h 123.5 a 15.4378,15.4378 -180 0 0 15.44,-15.44 V 585.51 A 15.4378,15.4378 -180 0 0 138.94,570.07 H 15.44 A 15.4378,15.4378 -180 0 0 0,585.51 v 11.05 A 15.4378,15.4378 -180 0 0 15.44,612 Z"
-   class="st7"
-   id="path141"
-   inkscape:connector-curvature="0"
-   style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-			<text
-   x="74.150002"
-   y="594.63"
-   class="st8"
-   v:langID="1033"
-   id="text143"
-   style="font-style:italic;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />1</text>
-		</g>
-		<g
-   id="shape22-57"
-   v:mID="22"
-   v:groupContext="shape"
-   transform="translate(583.619,-204.136)">
-			<title
-   id="title146">Round Corner Rectangle.19</title>
-			<desc
-   id="desc148">385055001 |Tablet|</desc>
-			<v:userDefs>
-				<v:ud
-   v:nameU="CTypeTopLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeTopRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotLeftSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CTypeBotRightSnip"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockHoriz"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockVert"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="CornerLockDiag"
-   v:prompt=""
-   v:val="VT0(0):5" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.15):1" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="TopLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="TopRightOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="BotLeftOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-				<v:ud
-   v:nameU="BotRightOffset"
-   v:prompt=""
-   v:val="VT0(0.2144176023649):1" />
-			</v:userDefs>
-			<v:textBlock
-   v:margins="rect(4,4,4,4)" />
-			<v:textRect
-   cx="77.1903"
-   cy="591.034"
-   width="154.39"
-   height="41.9318" />
-			<path
-   d="m 15.44,612 h 123.5 a 15.4378,15.4378 -180 0 0 15.44,-15.44 V 585.51 A 15.4378,15.4378 -180 0 0 138.94,570.07 H 15.44 A 15.4378,15.4378 -180 0 0 0,585.51 v 11.05 A 15.4378,15.4378 -180 0 0 15.44,612 Z"
-   class="st7"
-   id="path150"
-   inkscape:connector-curvature="0"
-   style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-			<text
-   x="27.620001"
-   y="594.63"
-   class="st5"
-   v:langID="1033"
-   id="text152"
-   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
-   v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />385055001 |Tablet|</text>
-		</g>
-		<g
-   id="shape23-60"
-   v:mID="23"
-   v:groupContext="shape"
-   transform="rotate(162.605,236.98694,503.91902)">
-			<title
-   id="title155">Multi-Line.23</title>
-			<v:userDefs>
-				<v:ud
-   v:nameU="VertexCount"
-   v:prompt=""
-   v:val="VT0(4):26" />
-				<v:ud
-   v:nameU="SegmentType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="DrawType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="StartWidth"
-   v:prompt=""
-   v:val="VT0(0.15):0" />
-				<v:ud
-   v:nameU="EndWidth"
-   v:prompt=""
-   v:val="VT0(0.1):0" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(0.31445460881394):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6821373411359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(8.5942318659433):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20124611797498):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.36115492854311):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.4583288317516):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.737773973763):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.4437657331855):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(4.9780969305319E-07):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6405279116314):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(7.9237142144304):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.2004872365046):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.35714301580218):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.5707961774523):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.78571461943787):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.5707965756997):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(0.99999997422071):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.5707968246046):32" />
-			</v:userDefs>
-			<path
-   d="M 0,612 H 17.96 39.51 50.29"
-   class="st9"
-   id="path157"
-   inkscape:connector-curvature="0"
-   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-		</g>
-		<g
-   id="shape24-63"
-   v:mID="24"
-   v:groupContext="shape"
-   transform="rotate(41.1467,547.13667,988.46177)">
-			<title
-   id="title160">Multi-Line.39</title>
-			<v:userDefs>
-				<v:ud
-   v:nameU="VertexCount"
-   v:prompt=""
-   v:val="VT0(4):26" />
-				<v:ud
-   v:nameU="SegmentType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="DrawType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="StartWidth"
-   v:prompt=""
-   v:val="VT0(0.15):0" />
-				<v:ud
-   v:nameU="EndWidth"
-   v:prompt=""
-   v:val="VT0(0.1):0" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(0.31445460881394):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6821373411359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(8.5942318659433):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20124611797498):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.36115492854311):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.4583288317516):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.737773973763):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.4437657331855):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(3.9282997580626E-07):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6590764071447):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(7.9422624999843):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20078187599863):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.35714302046489):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.5707962089462):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.78571462969583):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.5707965232099):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(0.9999999872763):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967196249):32" />
-			</v:userDefs>
-			<path
-   d="M 0,612 H 22.76 50.07 63.73"
-   class="st9"
-   id="path162"
-   inkscape:connector-curvature="0"
-   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-		</g>
-		<g
-   id="shape25-66"
+   id="shape25-41"
    v:mID="25"
    v:groupContext="shape"
-   transform="rotate(180,291.8095,442.483)">
+   transform="rotate(180,287.4185,478.483)">
 			<title
-   id="title165">Multi-Line.40</title>
+   id="title103">Multi-Line.40</title>
 			<v:userDefs>
 				<v:ud
    v:nameU="VertexCount"
@@ -2679,428 +1587,76 @@
 				<v:ud
    v:nameU="LastAngle"
    v:prompt=""
-   v:val="VT0(9.2718486680844E-07):32" />
+   v:val="VT0(2.5560820516186E-07):32" />
 				<v:ud
    v:nameU="CtrlAngle"
    v:prompt=""
-   v:val="VT0(-1.6082787634866):32" />
+   v:val="VT0(-1.7059928251083):32" />
 				<v:ud
    v:nameU="ArrowFeatherAngle"
    v:prompt=""
-   v:val="VT0(7.8914659250359):32" />
+   v:val="VT0(7.9891786435043):32" />
 				<v:ud
    v:nameU="ArrowFeatherDist"
    v:prompt=""
-   v:val="VT0(0.20014057559625):0" />
+   v:val="VT0(0.20184183392153):0" />
 				<v:ud
    v:nameU="Joint1_2Pcnt"
    v:prompt=""
-   v:val="VT0(0.35714302500907):26" />
+   v:val="VT0(0.3571430297069):26" />
 				<v:ud
    v:nameU="Joint1_2Angle"
    v:prompt=""
-   v:val="VT0(1.57079604864):32" />
+   v:val="VT0(1.5707962501126):32" />
 				<v:ud
    v:nameU="Joint2_3Pcnt"
    v:prompt=""
-   v:val="VT0(0.78571463969303):26" />
+   v:val="VT0(0.78571465002825):26" />
 				<v:ud
    v:nameU="Joint2_3Angle"
    v:prompt=""
-   v:val="VT0(1.5707967903873):32" />
+   v:val="VT0(1.570796454599):32" />
 				<v:ud
    v:nameU="Joint3_4Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 				<v:ud
    v:nameU="Joint4_5Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 				<v:ud
    v:nameU="Joint5_6Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 				<v:ud
    v:nameU="Joint6_7Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 				<v:ud
    v:nameU="Joint7_8Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 				<v:ud
    v:nameU="Joint8_9Angle"
    v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
+   v:val="VT0(1.5707965824031):32" />
 			</v:userDefs>
 			<path
-   d="M 0,612 H 9.64 21.21 27"
+   d="M 0,612 H 34.98 76.95 97.94"
    class="st9"
-   id="path167"
+   id="path105"
    inkscape:connector-curvature="0"
    style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 		</g>
 		<g
-   id="shape26-69"
-   v:mID="26"
-   v:groupContext="shape"
-   transform="translate(556.619,-282.068)">
-			<title
-   id="title170">Multi-Line.41</title>
-			<v:userDefs>
-				<v:ud
-   v:nameU="VertexCount"
-   v:prompt=""
-   v:val="VT0(4):26" />
-				<v:ud
-   v:nameU="SegmentType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="DrawType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="StartWidth"
-   v:prompt=""
-   v:val="VT0(0.15):0" />
-				<v:ud
-   v:nameU="EndWidth"
-   v:prompt=""
-   v:val="VT0(0.1):0" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(0.31445460881394):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6821373411359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(8.5942318659433):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20124611797498):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.36115492854311):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.4583288317516):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.737773973763):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.4437657331855):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(9.2718486680844E-07):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6082787634866):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(7.8914659250359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20014057559625):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.35714302500907):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.57079604864):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.78571463969303):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967903873):32" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-			</v:userDefs>
-			<path
-   d="M 0,612 H 9.64 21.21 27"
-   class="st9"
-   id="path172"
-   inkscape:connector-curvature="0"
-   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-		</g>
-		<g
-   id="shape27-72"
-   v:mID="27"
-   v:groupContext="shape"
-   transform="translate(556.619,-225.102)">
-			<title
-   id="title175">Multi-Line.42</title>
-			<v:userDefs>
-				<v:ud
-   v:nameU="VertexCount"
-   v:prompt=""
-   v:val="VT0(4):26" />
-				<v:ud
-   v:nameU="SegmentType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="DrawType"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="StartWidth"
-   v:prompt=""
-   v:val="VT0(0.15):0" />
-				<v:ud
-   v:nameU="EndWidth"
-   v:prompt=""
-   v:val="VT0(0.1):0" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(0.31445460881394):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6821373411359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(8.5942318659433):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20124611797498):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.36115492854311):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.4583288317516):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.737773973763):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.4437657331855):32" />
-				<v:ud
-   v:nameU="Joint3_4Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint4_5Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint5_6Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint6_7Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint7_8Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="Joint8_9Pcnt"
-   v:prompt=""
-   v:val="VT0(1):26" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.8852509356088):32" />
-				<v:ud
-   v:nameU="visVersion"
-   v:prompt=""
-   v:val="VT0(15):26" />
-				<v:ud
-   v:nameU="LastAngle"
-   v:prompt=""
-   v:val="VT0(9.2718486680844E-07):32" />
-				<v:ud
-   v:nameU="CtrlAngle"
-   v:prompt=""
-   v:val="VT0(-1.6082787634866):32" />
-				<v:ud
-   v:nameU="ArrowFeatherAngle"
-   v:prompt=""
-   v:val="VT0(7.8914659250359):32" />
-				<v:ud
-   v:nameU="ArrowFeatherDist"
-   v:prompt=""
-   v:val="VT0(0.20014057559625):0" />
-				<v:ud
-   v:nameU="Joint1_2Pcnt"
-   v:prompt=""
-   v:val="VT0(0.35714302500907):26" />
-				<v:ud
-   v:nameU="Joint1_2Angle"
-   v:prompt=""
-   v:val="VT0(1.57079604864):32" />
-				<v:ud
-   v:nameU="Joint2_3Pcnt"
-   v:prompt=""
-   v:val="VT0(0.78571463969303):26" />
-				<v:ud
-   v:nameU="Joint2_3Angle"
-   v:prompt=""
-   v:val="VT0(1.5707967903873):32" />
-				<v:ud
-   v:nameU="Joint3_4Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint4_5Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint5_6Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint6_7Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint7_8Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-				<v:ud
-   v:nameU="Joint8_9Angle"
-   v:prompt=""
-   v:val="VT0(1.5707972539798):32" />
-			</v:userDefs>
-			<path
-   d="M 0,612 H 9.64 21.21 27"
-   class="st9"
-   id="path177"
-   inkscape:connector-curvature="0"
-   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
-		</g>
-		<g
-   id="shape28-75"
+   id="shape28-44"
    v:mID="28"
    v:groupContext="shape"
-   transform="translate(144,-141.754)">
+   transform="translate(270.205,-141.754)">
 			<title
-   id="title180">Round Corner Rectangle.28</title>
+   id="title108">Round Corner Rectangle.28</title>
 			<desc
-   id="desc182">Purpose</desc>
+   id="desc110">Purpose</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -3177,7 +1733,7 @@
 			<path
    d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
    class="st4"
-   id="path184"
+   id="path112"
    inkscape:connector-curvature="0"
    style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
@@ -3185,20 +1741,20 @@
    y="594.63"
    class="st5"
    v:langID="1033"
-   id="text186"
+   id="text114"
    style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
    v:horizAlign="1"
    v:bulletSize="0.166667" /><v:tabList />Purpose</text>
 		</g>
 		<g
-   id="shape29-78"
+   id="shape29-47"
    v:mID="29"
    v:groupContext="shape"
-   transform="translate(324,-141.754)">
+   transform="translate(574.837,-141.754)">
 			<title
-   id="title189">Round Corner Rectangle.29</title>
+   id="title117">Round Corner Rectangle.29</title>
 			<desc
-   id="desc191">22253000 |Pain|</desc>
+   id="desc119">Pain</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -3275,26 +1831,26 @@
 			<path
    d="m 15.44,612 h 123.5 a 15.4378,15.4378 -180 0 0 15.44,-15.44 V 585.51 A 15.4378,15.4378 -180 0 0 138.94,570.07 H 15.44 A 15.4378,15.4378 -180 0 0 0,585.51 v 11.05 A 15.4378,15.4378 -180 0 0 15.44,612 Z"
    class="st7"
-   id="path193"
+   id="path121"
    inkscape:connector-curvature="0"
    style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="35.48"
+   x="66.690002"
    y="594.63"
    class="st5"
    v:langID="1033"
-   id="text195"
+   id="text123"
    style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
    v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />22253000 |Pain|</text>
+   v:bulletSize="0.166667" /><v:tabList />Pain</text>
 		</g>
 		<g
-   id="shape30-81"
+   id="shape30-50"
    v:mID="30"
    v:groupContext="shape"
-   transform="translate(269.795,-162.72)">
+   transform="translate(396,-162.72)">
 			<title
-   id="title198">Multi-Line.30</title>
+   id="title126">Multi-Line.30</title>
 			<v:userDefs>
 				<v:ud
    v:nameU="VertexCount"
@@ -3403,98 +1959,98 @@
 				<v:ud
    v:nameU="LastAngle"
    v:prompt=""
-   v:val="VT0(4.6184294221856E-07):32" />
+   v:val="VT0(1.3998244819137E-07):32" />
 				<v:ud
    v:nameU="CtrlAngle"
    v:prompt=""
-   v:val="VT0(-1.6459386842525):32" />
+   v:val="VT0(-1.814253687331):32" />
 				<v:ud
    v:nameU="ArrowFeatherAngle"
    v:prompt=""
-   v:val="VT0(7.929124915118):32" />
+   v:val="VT0(8.0974392744755):32" />
 				<v:ud
    v:nameU="ArrowFeatherDist"
    v:prompt=""
-   v:val="VT0(0.2005659688431):0" />
+   v:val="VT0(0.20607714335656):0" />
 				<v:ud
    v:nameU="Joint1_2Pcnt"
    v:prompt=""
-   v:val="VT0(0.35714302193526):26" />
+   v:val="VT0(0.35714301347805):26" />
 				<v:ud
    v:nameU="Joint1_2Angle"
    v:prompt=""
-   v:val="VT0(1.5707961882423):32" />
+   v:val="VT0(1.5707962848003):32" />
 				<v:ud
    v:nameU="Joint2_3Pcnt"
    v:prompt=""
-   v:val="VT0(0.78571463293065):26" />
+   v:val="VT0(0.78571461432479):26" />
 				<v:ud
    v:nameU="Joint2_3Angle"
    v:prompt=""
-   v:val="VT0(1.5707965577164):32" />
+   v:val="VT0(1.5707963967861):32" />
 				<v:ud
    v:nameU="Joint3_4Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint3_4Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 				<v:ud
    v:nameU="Joint4_5Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint4_5Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 				<v:ud
    v:nameU="Joint5_6Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint5_6Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 				<v:ud
    v:nameU="Joint6_7Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint6_7Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 				<v:ud
    v:nameU="Joint7_8Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint7_8Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 				<v:ud
    v:nameU="Joint8_9Pcnt"
    v:prompt=""
-   v:val="VT0(0.99999999139334):26" />
+   v:val="VT0(0.99999996771317):26" />
 				<v:ud
    v:nameU="Joint8_9Angle"
    v:prompt=""
-   v:val="VT0(1.5707967886378):32" />
+   v:val="VT0(1.5707964667773):32" />
 			</v:userDefs>
 			<path
-   d="M 0,612 H 19.36 42.59 54.2"
+   d="m 0,612 h 63.87 76.64 38.33"
    class="st9"
-   id="path200"
+   id="path128"
    inkscape:connector-curvature="0"
    style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 		</g>
 		<g
-   id="shape31-84"
-   v:mID="31"
+   id="shape32-53"
+   v:mID="32"
    v:groupContext="shape"
-   transform="rotate(-62.6666,-47.408189,350.23607)">
+   transform="rotate(-90.5171,75.533071,355.10222)">
 			<title
-   id="title203">Multi-Line.31</title>
+   id="title131">Multi-Line.32</title>
 			<v:userDefs>
 				<v:ud
    v:nameU="VertexCount"
@@ -3603,64 +2159,88 @@
 				<v:ud
    v:nameU="LastAngle"
    v:prompt=""
-   v:val="VT0(-0.73793259288163):32" />
+   v:val="VT0(1.850494904519E-07):32" />
 				<v:ud
    v:nameU="CtrlAngle"
    v:prompt=""
-   v:val="VT0(-1.8046781894799):32" />
+   v:val="VT0(-1.7565235298717):32" />
 				<v:ud
    v:nameU="ArrowFeatherAngle"
    v:prompt=""
-   v:val="VT0(6.6119983108963):32" />
+   v:val="VT0(8.0397092071503):32" />
 				<v:ud
    v:nameU="ArrowFeatherDist"
    v:prompt=""
-   v:val="VT0(0.20559758255875):0" />
+   v:val="VT0(0.20349974294297):0" />
 				<v:ud
    v:nameU="Joint1_2Pcnt"
    v:prompt=""
-   v:val="VT0(0.26807598436072):26" />
+   v:val="VT0(0.35714302185319):26" />
 				<v:ud
    v:nameU="Joint1_2Angle"
    v:prompt=""
-   v:val="VT0(2.0638820676979):32" />
+   v:val="VT0(1.5707962712802):32" />
 				<v:ud
    v:nameU="Joint2_3Pcnt"
    v:prompt=""
-   v:val="VT0(0.58634584412072):26" />
+   v:val="VT0(0.7857146327501):26" />
 				<v:ud
    v:nameU="Joint2_3Angle"
    v:prompt=""
-   v:val="VT0(1.4573012516254):32" />
+   v:val="VT0(1.5707964193196):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint3_4Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint4_5Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint5_6Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint6_7Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint7_8Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999999116355):26" />
 				<v:ud
    v:nameU="Joint8_9Angle"
    v:prompt=""
-   v:val="VT0(0.83286373391327):32" />
+   v:val="VT0(1.5707965118444):32" />
 			</v:userDefs>
 			<path
-   d="M 0,612 49.74,586.41 107.67,553.93 171.53,612"
+   d="m 0,612 h 48.32 57.97 28.99"
    class="st9"
-   id="path205"
+   id="path133"
    inkscape:connector-curvature="0"
    style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 		</g>
