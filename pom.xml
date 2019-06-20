@@ -187,6 +187,7 @@
       <module>conclusion</module>
       <module>citation-editor-plugin</module>
       <module>bibliography-db</module>
+      <module>precision</module>
    </modules>
    <profiles>
       <profile>

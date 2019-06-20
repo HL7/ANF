@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<acknowledgements xmlns="http://docbook.org/ns/docbook">
+<section>
+    <!--<para>test</para>-->
+    <!--<acknowledgements>-->
         <para>The project team would like to acknowledge the contributions and assistance received from
             the following:
             <itemizedlist spacing="compact">
@@ -40,4 +42,5 @@
                     <para>Benson Chang</para>
                 </listitem>
             </itemizedlist></para>
-   </acknowledgements>
+   <!--</acknowledgements>-->
+</section>
