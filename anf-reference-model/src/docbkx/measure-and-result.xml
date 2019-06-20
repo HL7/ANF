@@ -28,9 +28,8 @@
             <title>Blue Eye Example - Observable Refinement </title>
             <mediaobject>
                 <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190502T102042-0500" comment="Convert these images to svg.  Need to move powerpoint to Visio and store in Confluence"?>
-                    <imagedata fileref="images/BlueEye_invalid1.svg" format="SVG" scalefit="1" width="100%"
-                        contentdepth="100%"/><?oxy_comment_end?>
+                    <imagedata fileref="images/BlueEye_invalid1.svg" format="SVG" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -97,8 +96,8 @@
                     <thead>
                         <row>
                             <entry>Topic</entry>
-                            <entry>Current Value</entry>
-                            <entry>Interval</entry>
+                            <entry>Non-Interval Value</entry>
+                            <entry>Interval Value</entry>
                             <entry>Definition</entry>
                         </row>
                     </thead>
