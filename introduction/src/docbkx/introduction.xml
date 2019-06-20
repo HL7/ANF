@@ -2,9 +2,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Introduction</title>
-  <para>This document describes how information systems can to improve patient safety and outcomes
-    by increasing the precision of clinical information using a normal form to enhance support
-    accurate data retrieval and analysis.</para>
+  <para>This document describes how information systems can improve patient safety and outcomes by
+    increasing the precision of clinical information using a normal form to enhance support accurate
+    data retrieval and analysis.</para>
   <section>
     <title> Background </title>
     <para><emphasis role="bold">Analysis Normal Form</emphasis> (ANF) is a logical model intended to
@@ -28,7 +28,7 @@
       lossless information representation such that both explicit and implicit information can be
       faithfully recovered, maintained, and modified with ease." (Elkin, pg 14) </para>
     <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
-      representation of clinical statements from heterogeneous source using an objective
+      representation of clinical statements from a heterogeneous source using an objective
       quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
       and magnitude of a specific finding, request or observation.</para>
     <para>ANF requires an ability to classify topic expressions (and expressions that may go in
@@ -45,17 +45,17 @@
     </itemizedlist>
     <itemizedlist>
       <listitem>
-        <para>Provide a common analysis form of data exchangeHL7 messages, FHIR and CDA</para>
+        <para>Providing a common analysis form of data exchangeHL7 messages, FHIR and CDA</para>
       </listitem>
     </itemizedlist>
     <itemizedlist>
       <listitem>
-        <para>Specify clinical content for User Interfaces</para>
+        <para>Specifying clinical content for User Interfaces</para>
       </listitem>
     </itemizedlist>
     <itemizedlist>
       <listitem>
-        <para>Enhance information clinical content for use as </para>
+        <para>Enhancing information clinical content for use as </para>
         <itemizedlist>
           <listitem>
             <para>Clinical Decision Support Systems</para>
@@ -75,9 +75,9 @@
     <section>
       <title>Clinical Statement Representations </title>
       <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
-        these content models across paradigms (e.g. messages, documents, services). This has relied
-        on model-driven approaches requiring a separation of concerns along with conceptual,
-        logical, and implementation perspectives.</para>
+        these content models across paradigms (e.g. messages, documents, services). Standarization
+        has relied on model-driven approaches requiring a separation of concerns along with
+        conceptual, logical, and implementation perspectives.</para>
       <section>
         <title>HL7 Version 3 Clinical Statement </title>
         <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
@@ -202,7 +202,7 @@
           such as FHIR profiles,CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
           Intermountain CEMs. CIMI models are grouped into semantically equivalent (or
           ‘isosemantic’) families of detailed clinical models, which capture the same clinical
-          meaning using different combinations of concept pre and post-coordination and
+          meaning using different combinations of pre and post-coordinated concepts and
           corresponding information model structure. The central focus of the CIMI Reference Model
           is the Clinical Statement. A Clinical Statement represents structured electronic
           communication made about a patient typically documented as an 'entry' in the patient
@@ -218,7 +218,7 @@
   </section>
   <section>
     <title>Problem</title>
-    <para>Health care organizations are striving to become high reliability organizations (HROs),
+    <para>Healthcare organizations are striving to become high reliability organizations (HROs),
       characterized by high levels of safety under inherently risky, technologically-complex, and
       demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
       framework for assessing progress towards becoming a HRO and included the safe use of health IT
@@ -227,7 +227,7 @@
       the US and there is increasing opportunity to leverage a substantial number of extant EHR
       mapped data sets to improve population health through quality measures, case reporting, and
       decision support. </para>
-    <para>Information system record and manage clinical statement using a variety of standard or
+    <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models. However, both treatment and analysis of clinical statements require consistency
       not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
       of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
@@ -256,14 +256,14 @@
     <para>Therefore, clinical statements can be expressed and documented in many different ways in
       EHR systems, where input forms provide different options to document the same clinical
       statement. These differences pose challenges for how the data is modeled, how the data is
-      stored, and therefore has implications on data retrieval, data analysis,accuracy of clinical
+      stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
       analysis results. </para>
     <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
       that we call here structured clinical input, or the manner in which information is presented
       to the clinicians and how they enter the data, such as by constraining the information to
-      allow only certain values to be entered, e.g. through a drop-down list or radio button, or
+      allow only certain values to be entered, e.g. through a drop-down list, radio buttons, or
       breaking up large chunks of related information into smaller parts.</para>
-    <para>For example, a EHR could display a text field for the result and lists of choices for the
+    <para>For example, an EHR could display a text field for the result and lists of choices for the
       body site:</para>
     <itemizedlist spacing="compact">
       <listitem>
@@ -326,7 +326,7 @@
         </imageobject>
       </mediaobject>
     </figure>
-    <para>In the first wire frame, the structured clinical input has separate drop down constraints
+    <para>In the first wire frame, the structured clinical input has separate drop-down constraints
       to enter the artery and laterality as distinct concepts. In the second wire frame, the
       structured clinical input has combined the artery and laterality into a compound concept. This
       variation present in the structured clinical input may also have implications on the how the
@@ -340,34 +340,34 @@
       particular detailed clinical model exists within a family of isosemantic siblings. </para>
     <section>
       <title> Assumptions</title>
-      <para>ANF provides a precise, consistent semantic data and terminology specification that are
+      <para>ANF provides a precise, consistent semantic data and terminology specification that is
         comparable and sharable between multiple care providers, health enterprises, and
-        standards-based Healthcare Information Technology (HIT). Therefore ANF has to </para>
+        standards-based Healthcare Information Technology (HIT). </para>
       <para>ANF relies on highly post-coordinated compositional terminologies to provide greater
         content coverage in a complete and more consistent way than terminology content that is
         restricted to relying on pre-coordinated concepts. While post-coordinated compositional
         terminologies can be expressively powerful, they may generate expressions whose equivalency
-        cannot be easily determined. ANF can help manage aggregate post-coordinated content in
-        normalized manner with respect to the content and semantics whole the same representational
+        cannot be easily determined. ANF can help manage aggregate post-coordinated content in  a
+        normalized manner with respect to the content and semantics with the same representational
         structure as post-coordinated expressions used as input. </para>
       <para>Successful analysis requires relatively high data quality that allows systems to define
         a precise topic, category, and clear measure or result of what was observed, requested, or
-        assessed during treatment. ANF can be applied to any input data, and any formalism as long
-        as the data semantics and terminology are sufficiently precise to define the elements
-        mandatory for analysis. </para>
+        assessed during treatment. ANF can be applied to any input data and any formalism as long as
+        the data semantics and terminology are sufficiently precise to define the elements mandatory
+        for analysis. </para>
     </section>
     <section>
       <title>Approach: Separation of Concerns</title>
-      <para> Increased reliance on computerized health records including Electronic Health Records
-        Systems require standardized medical terminology to encode health information consistently
+      <para> Increased reliance on computerized health records, including Electronic Health Records
+        Systems, require standardized medical terminology to encode health information consistently
         across systems and enterprises. Clinicians require not only objective quantitative
         measurements (e.g. 90 beats per minute for a patient's pulse) but also contextual or
-        procedural context (e.g. pulseoximetry, manual) about past observations or requests for
+        procedural context (e.g. pulse oximetry, manual) about past observations or requests for
         future interventions. While two quantitative measurements may be the same, the procedural
         information could indicated meaningful differences. As information is exchanged across
         systems, the solution requires a common understanding of data and a method to support
-        knowledge representation and clinical decision rules based common terminology and
-        statements. Each component must address an aspect and, together, they need to address the
+        knowledge representation and clinical decision rules based on a common terminology and
+        statements. Each component must address an aspect and, together they need to address the
         requirements of clinicians.</para>
       <para>Breaking up the solution a across components or section with a specific purpose is a
         foundational design principle for software development: Separation of Concerns. It allows a
@@ -376,10 +376,11 @@
         be able to be reused, as well as worked on and updated independently to address new
         requirements and use cases. This is especially useful and important in a medical context
         given how many different health information and clinical terminology projects are ongoing at
-        any given time, efforts that are often uncoordinated and led by disparate and unrelated
+        any given time. Efforts that are often uncoordinated and led by disparate and unrelated
         standards development organizations. </para>
       <para>The following diagram shows how the concept of Separation of Concerns can be applied to
         the problem of systematically:</para>
+      <para/>
       <figure>
         <title>Separation of Concerns: Knowledge Architecture</title>
         <mediaobject>
@@ -388,11 +389,11 @@
           </imageobject>
         </mediaobject>
       </figure>
-      <para><emphasis role="bold">Architectural Foundation</emphasis> – Provides an
-        interoperable, integrated common terminology model which concerns (a) the foundation and
-        building blocks of the common model; (b) how the repeatable transformation process of
-        disparate standards into the common model promotes interoperability with other environments;
-        and, (c) how the modules of the architecture are tightly version controlled over time. </para>
+      <para><emphasis role="bold">Architectural Foundation</emphasis> – Provides an interoperable,
+        integrated common terminology model which concerns (a) the foundation and building blocks of
+        the common model; (b) how the repeatable transformation process of disparate standards into
+        the common model promotes interoperability with other environments; and (c) how the modules
+        of the architecture are tightly version controlled over time. </para>
       <para>
         <emphasis role="bold">Terminology Knowledge</emphasis> – Structured sets of medical terms
         and codes that define concepts of interest, including descriptions, dialects, language, and
@@ -459,7 +460,7 @@
         of sources, independent of formalism or approach used by the source system. The users of
         this specification and subsequent implementation guidance are developing solutions that
         support clinical decision support, patient safety, and research. </para>
-      <para>The Learning EHR, 21st Century Cures, Patient-Centred Outcomes Rehears, and other
+      <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Rehears, and other
         national initiatives are all relying on interoperable, reusable, analysis-ready information
         that can improve outcomes, produce new therapies, and put into practice "precision
         medicine".</para>
