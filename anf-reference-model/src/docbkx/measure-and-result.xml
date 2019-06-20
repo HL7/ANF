@@ -53,6 +53,130 @@
             </mediaobject>
         </figure></para>
     <section>
+        <title>Interval</title>
+        <para>An interval value data type (or “interval value”) formally represents a numeric
+            interval between two nonnegative real numbers. The interval can be open or closed.
+            Examples of interval values are:</para>
+        <para><emphasis>[5,5], [0,10), (0,inf], [0,0]</emphasis></para>
+        <para>The formal syntax of interval values is represented by the following grammar:</para>
+        <para><emphasis>Interval :: [ ‘[‘ | ‘(‘ ] N1 ‘,’ N2 [ ‘]’ | ‘)’ ]</emphasis></para>
+        <para><emphasis>N1 :: Non-Negative Real Number</emphasis></para>
+        <para><emphasis>N2 :: [ Non-Negative Real Number | inf ]</emphasis></para>
+        <para>The semantics of this grammar are as follows:</para>
+        <para><emphasis>‘[‘ and ‘]’ : Inclusive boundary (i.e. >= and &lt;= )</emphasis></para>
+        <para><emphasis>‘(‘ and ‘)’ : Exclusive boundary (i.e., > and &lt; )</emphasis></para>
+        <para><emphasis>inf: infinity, is > every Non-Negative Real Number</emphasis></para>
+        <para><emphasis>N1 &lt;= N2</emphasis></para>
+        <para>The interval value data type provides a single way to represent both “presence” values
+            and numeric values for a phenomenon. In general, the interval value represents the numeric range within
+            which the observed value of a phenomenon occurs. Note that this formalism allows both exact values and
+            ranges of values to be expressed.</para>
+        <para>In the special case that the beginning and end point of an interval are the same
+            number, n, the meaning is that the value of the phenomenon is exactly n.</para>
+        <para><emphasis>[5,5] : exactly 5 ; [0,0] : exactly 0</emphasis></para>
+        <para>In the special case that the beginning of the interval is a number, n, and the end
+            point is ∞, the meaning is that the value of the phenomenon is > n or >=n, depending on
+            whether the interval is open or closed.</para>
+        <para><emphasis>(0,inf] : > 0 ; [10,inf] : >= 10</emphasis></para>
+        <para>The interval value also represents whether a phenomenon is “present”, “absent”, or
+            “indeterminate”. Specifically, any interval value that includes only numbers that are >
+            0 also denotes the value “present”.  Any interval value that includes only the number 0,
+            itself, denotes the value “absent”. Any interval value that includes both the number 0
+            and at least one number > 0 denotes the value “indeterminate”. Lastly, there are two
+            interval values that explicitly denote “present” and “absent,” respectively. These value
+            may be assigned to phenomena that would not otherwise take on a numeric value (such as
+            “nausea”):</para>
+        <para><emphasis>Nausea value = (0,inf] : present</emphasis></para>
+        <para><emphasis>Nausea value = [0,0] : absent</emphasis><table frame="all">
+                <title>Interval value examples</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1*"/>
+                    <colspec colname="c4" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Topic</entry>
+                            <entry>Current Value</entry>
+                            <entry>Interval</entry>
+                            <entry>Definition</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Pressure Ulcer(s)</entry>
+                            <entry>5</entry>
+                            <entry>[5,5]</entry>
+                            <entry>Present, Exactly 5</entry>
+                        </row>
+                        <row>
+                            <entry>Pressure Ulcer(s)</entry>
+                            <entry>Present</entry>
+                            <entry>[1,inf]</entry>
+                            <entry>Present, > 0</entry>
+                        </row>
+                        <row>
+                            <entry>Pressure Ulcer(s)</entry>
+                            <entry>Absent</entry>
+                            <entry>[0,0]</entry>
+                            <entry>Absent, Exactly 0</entry>
+                        </row>
+                        <row>
+                            <entry>Serum Potassium</entry>
+                            <entry>4.5</entry>
+                            <entry>[4.5,4.5]</entry>
+                            <entry>Present, Exactly 4.5</entry>
+                        </row>
+                        <row>
+                            <entry>Blood Alcohol</entry>
+                            <entry>0.8</entry>
+                            <entry>[0.8,0.8]</entry>
+                            <entry>Present, Exacly 0.8</entry>
+                        </row>
+                        <row>
+                            <entry>Nausea</entry>
+                            <entry>Present</entry>
+                            <entry>[1,inf]</entry>
+                            <entry>Present, > 0</entry>
+                        </row>
+                        <row>
+                            <entry>Nausea</entry>
+                            <entry>Absent</entry>
+                            <entry>[0,0]</entry>
+                            <entry>Absent, Exactly 0</entry>
+                        </row>
+                        <row>
+                            <entry>Nausea</entry>
+                            <entry>Indeterminate</entry>
+                            <entry>[0,inf)</entry>
+                            <entry>Indeterminate, >=0</entry>
+                        </row>
+                        <row>
+                            <entry>Daily Cigarette Use</entry>
+                            <entry>n/a</entry>
+                            <entry>[10,30]</entry>
+                            <entry>Present, >-10, &lt;=30</entry>
+                        </row>
+                        <row>
+                            <entry>n/a</entry>
+                            <entry>n/a</entry>
+                            <entry>[10,5)</entry>
+                            <entry>NOT ALLOWED</entry>
+                        </row>
+                        <row>
+                            <entry>n/a</entry>
+                            <entry>-3</entry>
+                            <entry>[-3,-3]</entry>
+                            <entry>NOT ALLOWED</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></para>
+        <para>The table above, "Interval values examples.” lists a number of potential Topics and
+            how their current values (as “Findings” or “Observable Entities”) would be represented
+            instead as interval values under the model proposed here.</para>
+    </section>
+    <section>
         <title><?oxy_comment_start author="kmaulden" timestamp="20190418T112454-0400" comment="Comment from WC:
 Don’t use names for statements or building blocks thereof that are synonymous with what such statements or building blocks describe. That is typical OOD and HL7-style nonsense. What is depicted in Figure 1 is surely not a measure but a building block to document a measure.
 "?>Measure<?oxy_comment_end?>
