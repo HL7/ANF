@@ -495,5 +495,78 @@
             </section>
         </section>
 
+        <section>
+            <!-- MDMI  -->
+
+            <title>Model Driven Message Interoperability (MDMI)</title>
+
+            <para>
+                MDMI is an Object Management Group Standard for the transformation of data in one format to data in another format. MDMI Standard is not a language. The MDMI Standard is a specification for addressing this problem and was developed by multiple domain experts. The specification contains two major sections; the MDMI Transformation Metamodel and the Semantic Element Exchange Repository (SEER). 
+            </para>
+
+            <para>
+                The MDMI Transformation Metamodel is composed of a syntax model and a semantic model. The syntax model contains the syntactical representation of each data element in a format and the semantic model contains the semantic concept represented by the data element. The syntax model is used in two different use cases, to either compose a collection of semantic representations into a target file format or to decompose a file into its semantic representations.  The syntax model allows MDMI to address in both use cases.  XML, JSON, HL7 V.2, CVS, various EDI payment, and proprietary formats have been used.
+            </para>
+
+            <para>
+                The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example is an overloaded field which can have multiple semantics based on values contained in other fields. 
+            </para>
+
+            <para>
+                The MDMI SEER is a repository for the semantically unique concepts, called Business Elements, that are exchanged in healthcare transformations. One can view the MDMI SEER as a bag of unique, atomic semantic concepts exchanged primarily driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange information.  If there is a new semantic concept that does not exist in the SEER, then a new Business Element is simply added. Each MDMI Transformation Model uses the MDMI SEER to create an iso-semantic relationship with its own semantic concepts and a Business Element.  
+            </para>
+
+            <para>
+                There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are pre-coordinated semantic concepts represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism. 
+            </para>
+
+            <para>
+                An open source implementation of MDMI started in the Open Healthcare Tools organization which built an MDMI compliant tooling for healthcare. The MDMI Open Source Project continues today in GITHUB and has been and is being used in HL7 projects as well as in commercial implementations.
+            </para>
+
+
+        </section>
+
+        <section>
+            <title>Advantages and Limitations</title>
+
+            <para>
+                MDMI is a model driven approach. Having a formal model, the open source project has been able to develop tooling based on the MDMI model as well as leverage other modeling efforts. Examples are Information Models such as FHIR and the FHIM using the model driven MDHT tooling and Ontological Models such as ANF / SOLOR.
+            </para>
+
+            <para><emphasis role="bold">Advantages</emphasis></para>
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>Any to Any transformations versus point to point language mappings allow reuse of transformation models for different use cases.</para>
+                    </listitem>
+                    <listitem>
+                        <para>It minimizes change. If on MDMI Model changes (e.g. FHIR 4 to FHIR 5), this does not require changes to other existing MDMI Models such as CCDA 2.1, HL7 V2.8, or a proprietary model.</para>
+                    </listitem>
+                    <listitem>
+                        <para>It simplifies development.  Tooling exists to develop and maintain individual MDMI Models by SMEs who do not need to be developers. The scope of expertise is further reduced because the knowledge one needs to create a MDMI Model is primary to know what the data in their format means. </para>
+                    </listitem>
+                    <listitem>
+                        <para>It enables automation tooling for creating MDMI models, for creating computable artifacts, and generating reports.</para>
+                    </listitem>
+                    <listitem>
+                        <para>There are Open Source Models for HL7 formats as well as the MDMI tooling.</para>
+                    </listitem>
+                </itemizedlist>
+                <para><emphasis role="bold">Limitations</emphasis></para>
+                <itemizedlist spacing="compact">
+                    <listitem>
+                        <para>MDMI has limited experience with transformations of detailed clinical models.</para>
+                    </listitem>
+                    <listitem>
+                        <para>User Documentation of MDMI is lacking.</para>
+                    </listitem>
+                    <listitem>
+                        <para>The MDMI runtime tool is complex.</para>
+                    </listitem>
+                    
+                </itemizedlist>
+
+        </section>
+
     </section>
 </chapter>
