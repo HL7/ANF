@@ -351,12 +351,10 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             stated otherwise. </para>
 
         <para>
-            <emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested. <itemizedlist>
-                <listitem>
-                    <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
-                        attribute describing the purpose</para>
-                </listitem>
-            </itemizedlist></para>
+            <emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested. The purpose of the topic is represented with either an Evaluation
+                    procedure or Therapuetic procedure with a hasFocus attribute describing the
+                    purpose.
+        </para>
         <para>
             <emphasis role="bold">Technique: </emphasis>
             <itemizedlist>
@@ -409,8 +407,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         </listitem>
                     </itemizedlist>
                 </listitem>
-            </itemizedlist>
-        </para>
+            </itemizedlist></para>
     </section>
     
     <section>
@@ -435,78 +432,84 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             <emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority for which the request is to be carried out.  By default a Request will be considered "routine" unless otherwise specified
         </para>
         <editorial-rule>
-            <title>Topic</title>
-            <mathphrase>The topic follows a variety of possible patterns.  For example:
-                <itemizedlist>
+            <title>Request for Action Topics</title>
+            <mathphrase>The topic follows a variety of possible patterns. For example: <itemizedlist>
                     <listitem>
                         <para><emphasis>Administration of Medication</emphasis>: For requesting the
-                        administration of medication, the Topic will be built using the Administration
-                        of substance concept.  If the narrative includes information about a refill,
-                        that information is currently represented as an Unstructure Circumstance.  All
-                        Administration of substance concepts will be refined with the substance and dose
-                        form and strength being requested.  If Route of administration exists, then it
-                        will also be added.</para>
+                            administration of medication, the Topic will be built using the
+                            Administration of substance concept. If the narrative includes
+                            information about a refill, that information is currently represented as
+                            an Unstructure Circumstance. All Administration of substance concepts
+                            will be refined with the substance and dose form and strength being
+                            requested. If Route of administration exists, then it will also be
+                            added.</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>Imaging Procedure</emphasis>: For requesting of imaging
-                        procedures, the Topic will be built using an Imaging procedure concept. These
-                        concepts will be further refined with a Method, Procedure site - Direct and (if
-                        appropriate) a laterality for those sites that are lateralizable.</para>
+                            procedures, the Topic will be built using an Imaging procedure concept.
+                            These concepts will be further refined with a Method, Procedure site -
+                            Direct and (if appropriate) a laterality for those sites that are
+                            lateralizable.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
-                            is an observation would begin with an Observation procedure. The Observation
-                            procedure with then have a Has focus attribute linking it to the Clinical
-                            Finding or Disorder that it is being observed. The observation procedure can
-                            also be further refined by adding the Method, Procedure site - Direct, (if
-                            appropriate) laterality, and Using device.</para>
+                        <para><emphasis>Observation Procedure</emphasis>: Any request for an action
+                            that is an observation would begin with an Observation procedure. The
+                            Observation procedure with then have a Has focus attribute linking it to
+                            the Clinical Finding or Disorder that it is being observed. The
+                            observation procedure can also be further refined by adding the Method,
+                            Procedure site - Direct, (if appropriate) laterality, and Using
+                            device.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
-                            would be represented by a Procedure concept with any of the approved
-                            terminology procedure attributes applied.</para>
+                        <para><emphasis>All Other Procedures</emphasis>: Any other request for an
+                            action would be represented by a Procedure concept with any of the
+                            approved terminology procedure attributes applied.</para>
                     </listitem>
-            </itemizedlist>
-            </mathphrase>
+                </itemizedlist></mathphrase>
         </editorial-rule>
         <para>
-            <emphasis role="bold">Repetition: </emphasis> Repetition is used to
-                represent when an action is requested for more than a single occurrence. Repetition
-                is an optional component for a RequestCircumstance. A Request Component contains
-                five Measures that are used to further define the parameters of the Repetition:
-                <itemizedlist>
-                        <listitem>
-                            <para><emphasis>periodDuration:</emphasis>This required field is used to
-                                represent how long a repetition should persist. If it is not specified,
-                                a default value of [0,inf] will be used. e.g. for 3 weeks</para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis>periodStart:</emphasis> This required field is used to
-                                represent when a repeated action should begin. If it is not specified, a
-                                default value of [0,inf] will be used. e.g. NOW</para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis>eventSeparation:</emphasis>This required field is used to
-                                represent how long between actions. If it is not specified, a default
-                                value of [0,inf] will be used. e.g. for 2 weeks</para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis>eventFrequency:</emphasis>This required field is used to
-                                represent how often the action should occur. If it is not specified, a
-                                default value of [0,inf] will be used. e.g. 3 times per week</para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis>eventDuration:</emphasis>This is an optional field that is
-                                used to represent how long every action should last. </para>
-                        </listitem>
-                    </itemizedlist>
-        </para>
+            <emphasis role="bold">Repetition: </emphasis> Repetition is used to represent when an
+            action is requested for more than a single occurrence. Repetition is an optional
+            component for a RequestCircumstance. A Request Component contains five Measures that are
+            used to further define the parameters of the Repetition: <itemizedlist>
+                <listitem>
+                    <para><emphasis>periodDuration:</emphasis>This required field is used to
+                        represent how long a repetition should persist. If it is not specified, a
+                        default value of [0,inf] will be used. e.g. for 3 weeks</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>periodStart:</emphasis> This required field is used to represent
+                        when a repeated action should begin. If it is not specified, a default value
+                        of [0,inf] will be used. e.g. NOW</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>eventSeparation:</emphasis>This required field is used to
+                        represent how long between actions. If it is not specified, a default value
+                        of [0,inf] will be used. e.g. for 2 weeks</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>eventFrequency:</emphasis>This required field is used to
+                        represent how often the action should occur. If it is not specified, a
+                        default value of [0,inf] will be used. e.g. 3 times per week</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>eventDuration:</emphasis>This is an optional field that is used
+                        to represent how long every action should last. </para>
+                </listitem>
+            </itemizedlist></para>
         <editorial-rule>
             <title>conditionalTrigger</title>
             <mathphrase>conditionalTriggers differ from
             prerequisites in that they cause the action to be performed. conditionalTriggers
             contribute to the timing of when the request will be performed and not necessarily to
             the purpose of performing. conditionalTriggers are optional.</mathphrase>
+        </editorial-rule>
+        <editorial-rule>
+            <title>requestedResult</title>
+            <mathphrase>If a requestedResult is not specified in the request, an upperBound and
+                lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement time.  If
+                a requestedResult is specified, the appropriate upperBound and lowerBound is
+                specified with the correct MeasureSemantic.</mathphrase>
         </editorial-rule>
     </section>
     
@@ -528,7 +531,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 Timing will be represented by with the current time as of the statement.
         </para>
         <editorial-rule>
-            <title>Topic</title>
+            <title>Performance of Action Topics</title>
             <mathphrase>The topic follows a variety of possible patterns:
             <itemizedlist>
                     <listitem>
