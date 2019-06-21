@@ -313,117 +313,104 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             clinical statements if it contains multiple requests or performance of actions that
             could exist on their own.<?oxy_comment_end?></para>
         
-        <editorial-rule>
-            <title>Prerequisite</title>
-            <mathphrase>
-                 A prerequisite is a <emphasis
-                    role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
-                something else can happen or be done. Pre-requisite are part of the details under which
-                a procedure is being performed. The state must exist can prior to the performance of the
-                action
-                <itemizedlist>
-                    <listitem>
-                        <para>The state that must exist pertains to</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>the subject of record (e.g. patient)</para>
-                            </listitem>
-                            <listitem>
-                                <para>the environment (e.g. necessary room temperature, required time of
-                                    day)</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>A prerequisite is separable from the topic and can be expressed as a
-                            stand-alone clinical statement</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para><emphasis role="underline">Example</emphasis>: Systolic blood
-                                    pressure 120 mmHg, taken with patient in sitting position.
-                                        <emphasis role="italic">“Patient in sitting
-                                        position”</emphasis> is separable from the topic and exists
-                                    prior to the performance of the action and therefore constitutes
-                                    a prerequisite.</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-            </mathphrase>
-        </editorial-rule>
-        <editorial-rule>
-            <title>subjectOfInformation</title>
-            <mathphrase>The subjectOfInformation is used to represent who the statement is about.
-                This is normally the patient unless explicitly stated otherwise.</mathphrase>
-        </editorial-rule>
+        <para>
+            <emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis role="bold"
+                >state</emphasis> that <emphasis role="bold">must</emphasis> exist before something
+            else can happen or be done. Pre-requisite are part of the details under which a
+            procedure is being performed. The state must exist can prior to the performance of the
+            action <itemizedlist>
+                <listitem>
+                    <para>The state that must exist pertains to</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>the subject of record (e.g. patient)</para>
+                        </listitem>
+                        <listitem>
+                            <para>the environment (e.g. necessary room temperature, required time of
+                                day)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>A prerequisite is separable from the topic and can be expressed as a
+                        stand-alone clinical statement</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="underline">Example</emphasis>: Systolic blood
+                                pressure 120 mmHg, taken with patient in sitting position. <emphasis
+                                    role="italic">“Patient in sitting position”</emphasis> is
+                                separable from the topic and exists prior to the performance of the
+                                action and therefore constitutes a prerequisite.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist></para>
+        <para>
+            <emphasis role="bold">subjectOfInformation:</emphasis> The subjectOfInformation is used
+            to represent who the statement is about. This is normally the patient unless explicitly
+            stated otherwise. </para>
 
-        <editorial-rule>
-            <title>Purpose</title>
-            <mathphrase>The purpose is why an action was requested
-                <itemizedlist>
-                    <listitem>
-                        <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
-                            attribute describing the purpose</para>
-                    </listitem>
-                </itemizedlist>
-            </mathphrase>
-        </editorial-rule>
-        <editorial-rule>
-            <title>Technique</title>
-            <mathphrase>
-                <itemizedlist>
-                    <listitem>
-                        <para><emphasis role="italic">Definition</emphasis> : A device used, a method
-                            applied, or a temporary state in which the patient was <emphasis role="bold"
-                                >actively</emphasis> placed <emphasis role="bold">during</emphasis>
-                            performance of the action.</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Actions can be performed by various techniques. As opposed to the
-                                    action itself, which is <emphasis role="italic"><emphasis
-                                            role="underline">what</emphasis></emphasis> is carried out, the
-                                    technique defines <emphasis role="italic"><emphasis role="underline"
-                                            >how</emphasis></emphasis> the action is done in general or in a
-                                    particular instance.</para>
-                            </listitem>
-                            <listitem>
-                                <para>The use of the device or the method that is applied must start during
-                                    the performance of the action.</para>
-                            </listitem>
-                            <listitem>
-                                <para>A technique is inseparable from the topic and cannot be expressed as a
-                                    stand-alone clinical statement.</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para><emphasis role="underline">Example: Systolic blood pressure
-                                                120 mmHg, taken on right brachial artery</emphasis>.
-                                                <emphasis role="italic">“Taken on right brachial
-                                                artery”</emphasis> is inseparable from the topic and cannot
-                                            be expressed as a stand-alone clinical statement. It therefore
-                                            constitutes a technique and will be modeled as part of the
-                                            topic.</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para><emphasis role="underline">Example: Seated systolic blood
-                                                pressure 120 mmHg</emphasis>. Seated relates to how the
-                                            action was done and is an inseparable part of the topic. For the
-                                            narrative "Systolic Blood Pressure 120 mmHg, taken on right
-                                            brachial artery, using BP cuff adult size, patient in sitting
-                                            position for at least 5 minutes, urinated not more than 30
-                                            minutes prior to measurement" while seated is not explicitly
-                                            stated as the technique it is implied that the blood pressure
-                                            was taken in the seated position and therefore would be
-                                            represented in the topic in addition to a separate statement
-                                            representing that the patient was in the seated position for at
-                                            least 5 minutes.</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-            </mathphrase>
-        </editorial-rule>
+        <para>
+            <emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested. <itemizedlist>
+                <listitem>
+                    <para>Either an Evaluation procedure or Therapuetic procedure with a hasFocus
+                        attribute describing the purpose</para>
+                </listitem>
+            </itemizedlist></para>
+        <para>
+            <emphasis role="bold">Technique: </emphasis>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis role="italic">Definition</emphasis> : A device used, a method
+                        applied, or a temporary state in which the patient was <emphasis role="bold"
+                            >actively</emphasis> placed <emphasis role="bold">during</emphasis>
+                        performance of the action.</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Actions can be performed by various techniques. As opposed to the
+                                action itself, which is <emphasis role="italic"><emphasis
+                                        role="underline">what</emphasis></emphasis> is carried out,
+                                the technique defines <emphasis role="italic"><emphasis
+                                        role="underline">how</emphasis></emphasis> the action is
+                                done in general or in a particular instance.</para>
+                        </listitem>
+                        <listitem>
+                            <para>The use of the device or the method that is applied must start
+                                during the performance of the action.</para>
+                        </listitem>
+                        <listitem>
+                            <para>A technique is inseparable from the topic and cannot be expressed
+                                as a stand-alone clinical statement.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis role="underline">Example: Systolic blood
+                                            pressure 120 mmHg, taken on right brachial
+                                            artery</emphasis>. <emphasis role="italic">“Taken on
+                                            right brachial artery”</emphasis> is inseparable from
+                                        the topic and cannot be expressed as a stand-alone clinical
+                                        statement. It therefore constitutes a technique and will be
+                                        modeled as part of the topic.</para>
+                                </listitem>
+                                <listitem>
+                                    <para><emphasis role="underline">Example: Seated systolic blood
+                                            pressure 120 mmHg</emphasis>. Seated relates to how the
+                                        action was done and is an inseparable part of the topic. For
+                                        the narrative "Systolic Blood Pressure 120 mmHg, taken on
+                                        right brachial artery, using BP cuff adult size, patient in
+                                        sitting position for at least 5 minutes, urinated not more
+                                        than 30 minutes prior to measurement" while seated is not
+                                        explicitly stated as the technique it is implied that the
+                                        blood pressure was taken in the seated position and
+                                        therefore would be represented in the topic in addition to a
+                                        separate statement representing that the patient was in the
+                                        seated position for at least 5 minutes.</para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+        </para>
     </section>
     
     <section>
@@ -437,19 +424,16 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <editorial-rule>
-            <title>Timing</title>
-            <mathphrase>The Timing will always represent a future time in a Request for Action ANF Statement. Therefore, the Measure used in the Timing will be for a future time.
-            </mathphrase>
-        </editorial-rule>
+        <para>
+            <emphasis role="bold">Timing: </emphasis>The Timing will always represent a future time in a Request for Action ANF Statement. Therefore, the Measure used in the Timing will be for a future time.
+        </para>
         <editorial-rule>
             <title>RequestedParticipant</title>
             <mathphrase>If the Request for Action specifies a Requested Participant the requestedParticipant will be populated.</mathphrase>
         </editorial-rule>
-        <editorial-rule>
-            <title>Priority</title>
-            <mathphrase>Priority is used to represent the priority for which the request is to be carried out.  By default a Request will be considered "routine" unless otherwise specified</mathphrase>
-        </editorial-rule>
+        <para>
+            <emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority for which the request is to be carried out.  By default a Request will be considered "routine" unless otherwise specified
+        </para>
         <editorial-rule>
             <title>Topic</title>
             <mathphrase>The topic follows a variety of possible patterns.  For example:
@@ -485,9 +469,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </itemizedlist>
             </mathphrase>
         </editorial-rule>
-        <editorial-rule>
-            <title>Repetition</title>
-            <mathphrase>Repetition is used to
+        <para>
+            <emphasis role="bold">Repetition: </emphasis> Repetition is used to
                 represent when an action is requested for more than a single occurrence. Repetition
                 is an optional component for a RequestCircumstance. A Request Component contains
                 five Measures that are used to further define the parameters of the Repetition:
@@ -517,8 +500,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                                 used to represent how long every action should last. </para>
                         </listitem>
                     </itemizedlist>
-            </mathphrase>
-        </editorial-rule>
+        </para>
         <editorial-rule>
             <title>conditionalTrigger</title>
             <mathphrase>conditionalTriggers differ from
@@ -539,14 +521,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <editorial-rule>
-            <title>Timing</title>
-            <mathphrase>For a Performance of Action, the Timing can represent a time in the past or
+        <para>
+            <emphasis role="bold">Timing - Performance of Action:</emphasis> For a Performance of Action, the Timing can represent a time in the past or
                 a current time. If a history of a performance of action is to be represented in ANF
                 the Timing will be for a time in the past prior to the statement. Otherwise the
                 Timing will be represented by with the current time as of the statement.
-            </mathphrase>
-        </editorial-rule>
+        </para>
         <editorial-rule>
             <title>Topic</title>
             <mathphrase>The topic follows a variety of possible patterns:
