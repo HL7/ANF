@@ -76,7 +76,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="1"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <editorial-rule>
-                <title>Timing</title>
+                <title>Timing - Performance of Action</title>
                 <mathphrase>For a Performance of Action, the Timing can represent a time in the past or
                     a current time. If a history of a performance of action is to be represented in ANF
                     the Timing will be for a time in the past prior to the statement. Otherwise the
@@ -388,7 +388,8 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 </mathphrase>
                             </editorial-rule>
                             <editorial-rule>
-                                <title>Administration of Medication Topic</title>
+                                <title>Administration of Medication Topic - Performance of
+                                    Action</title>
                                 <mathphrase>To represent the performance of an administration of medication, the Topic will be built using the Administration of substance concept. All Administration of substance concepts will be refined with the substance and dose form and strength being requested. If Route of administration exists, then it will also be added.</mathphrase>
                             </editorial-rule>
                             <figure>
@@ -466,6 +467,12 @@ Doing family history, donor statements using subject of information is now the n
                 will be documented in this clinical statement, including information about details
                 relating to the request, such as patient must fast for 12 hours before having a
                 lipids blood test.</para>
+            <para><editorial-rule>
+                    <title>Timing</title>
+                    <mathphrase>The Timing will always represent a future time in a Request for
+                        Action ANF Statement. Therefore, the Measure used in the Timing will be for
+                        a future time. </mathphrase>
+                </editorial-rule></para>
             <para>Examples of Request clinical statements:</para>
             <itemizedlist>
                 <listitem>
@@ -529,6 +536,40 @@ Doing family history, donor statements using subject of information is now the n
                             Circumstance. All Administration of substance concepts will be refined with
                             the substance and dose form and strength being requested. If Route of
                             administration exists, then it will also be added.</mathphrase>
+                    </editorial-rule>
+                    <editorial-rule>
+                        <title>Repetition</title>
+                        <mathphrase>Repetition is used to
+                            represent when an action is requested for more than a single occurrence. Repetition
+                            is an optional component for a RequestCircumstance. A Request Component contains
+                            five Measures that are used to further define the parameters of the Repetition:
+                            <itemizedlist>
+                                <listitem>
+                                    <para><emphasis>periodDuration:</emphasis>This required field is used to
+                                        represent how long a repetition should persist. If it is not specified,
+                                        a default value of [0,inf] will be used. e.g. for 3 weeks</para>
+                                </listitem>
+                                <listitem>
+                                    <para><emphasis>periodStart:</emphasis> This required field is used to
+                                        represent when a repeated action should begin. If it is not specified, a
+                                        default value of [0,inf] will be used. e.g. NOW</para>
+                                </listitem>
+                                <listitem>
+                                    <para><emphasis>eventSeparation:</emphasis>This required field is used to
+                                        represent how long between actions. If it is not specified, a default
+                                        value of [0,inf] will be used. e.g. for 2 weeks</para>
+                                </listitem>
+                                <listitem>
+                                    <para><emphasis>eventFrequency:</emphasis>This required field is used to
+                                        represent how often the action should occur. If it is not specified, a
+                                        default value of [0,inf] will be used. e.g. 3 times per week</para>
+                                </listitem>
+                                <listitem>
+                                    <para><emphasis>eventDuration:</emphasis>This is an optional field that is
+                                        used to represent how long every action should last. </para>
+                                </listitem>
+                            </itemizedlist>
+                        </mathphrase>
                     </editorial-rule>
                     <figure>
                         <title>Medication Request Clinical Statement Example</title>
