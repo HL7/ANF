@@ -42,7 +42,7 @@
   <xi:include href="../../../transformation/src/docbkx/transformation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
  
   <!-- Precision -->
-  <xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <!--<xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
  
   <!-- Conclusion -->
    <xi:include href="../../../conclusion/src/docbkx/conclusion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
