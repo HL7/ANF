@@ -15,15 +15,7 @@
                         <para><emphasis role="bold">Purpose of this section:</emphasis></para>
                         <itemizedlist>
                             <listitem>
-                                <para>To further illustrate, how the different ways of recording
-                                    data are perfectly normal and acceptable for users and explain
-                                    how this poses issues for data retrieval</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Provide examples where those issues can be patient
-                                            safety risks</para>
-                                    </listitem>
-                                </itemizedlist>
+                                <para>To illustrate a more traditional method of modeling using CIMI's structured data tree approach which can then be compared with the Analysis Normal Form approach.</para>
                             </listitem>
                         </itemizedlist>
                         <para> </para>
@@ -34,6 +26,10 @@
     </informaltable>
     <section>
         <title>Introduction to CIMI Clinical Statements </title>
+
+        <para>
+            The CIMI Clinical Statement Model is described in this chapter, because it is a more traditional structured data tree approach which can then be compared and constrasted with the ANF model.
+        </para>
 
         <para>
             The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic communication made about a patient typically documented as an 'entry' in the patient record. For example, a CIMI Clinical Statement can be used to represent the following statements made about a patient.
@@ -359,6 +355,24 @@
                 </programlisting>
             </example>
 
+        <figure xml:id="cimi_diabetes_assertion_0135">
+            <title>Diabetes Mellitus Assertion</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/dm_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
+        <figure xml:id="cimi_tubular_bsounds_assertion_0135">
+            <title>Tubular Breath Sounds Assertion</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/breath_assertion_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
 
             <para>
                 Note, in the CIMI alignment with the SNOMED CT concept model, the AssertionTopic pattern corresponds to the Finding hierarchy as inflected by the Situation hierarchy. 
@@ -555,6 +569,33 @@
             unitsOfMeasure: Millimeter of mercury (qualifier value)
                 </programlisting>
             </example>
+
+        <figure xml:id="cimi_breath_sounds_evaluation_0135">
+            <title>Tubular Breath Sounds Evaluation</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/breath_evaluation_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
+        <figure xml:id="cimi_blood_pressure_eval_0135">
+            <title>Sytolic Blood Pressure Evaluation</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/blood_pressure_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+
+        <figure xml:id="cimi_blood_pressure_complex_0135">
+            <title>Systolic Blood Pressure Evaluation with complex topic</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/bp_complex_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
 
             
         </section>
