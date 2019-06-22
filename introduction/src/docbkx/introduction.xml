@@ -75,7 +75,7 @@
     <section>
       <title>Clinical Statement Representations </title>
       <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
-        these content models across paradigms (e.g. messages, documents, services). Standarization
+        these content models across paradigms (e.g. messages, documents, services). Standardization
         has relied on model-driven approaches requiring a separation of concerns along with
         conceptual, logical, and implementation perspectives.</para>
       <section>
@@ -263,53 +263,45 @@
       to the clinicians and how they enter the data, such as by constraining the information to
       allow only certain values to be entered, e.g. through a drop-down list, radio buttons, or
       breaking up large chunks of related information into smaller parts.</para>
-    <para>For example, an EHR could display a text field for the result and lists of choices for the
-      body site:</para>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Right brachial artery</para>
-      </listitem>
-      <listitem>
-        <para>Left brachial artery</para>
-      </listitem>
-    </itemizedlist>
-    <para>Or it could be displayed with the site and allow further refinement to specify the
-      laterality:</para>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Brachial artery</para>
-        <itemizedlist spacing="compact">
-          <listitem>
-            <para>Right</para>
-          </listitem>
-          <listitem>
-            <para>Left</para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-    </itemizedlist>
-    <para>In addition to specifying the body site a list of choices for the blood pressure cuff size
-      used would also be selected, for example:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Adult size Small</para>
-      </listitem>
-      <listitem>
-        <para>Adult size Medium</para>
-      </listitem>
-      <listitem>
-        <para>Adult size Large</para>
-      </listitem>
-    </itemizedlist>
-    <para>The same could be true for the display and documentation option for the patient position
-      (sitting yes/no, how long, urinated yes/no, how long prior to measurement), which could differ
-      between systems. There are different ways the measurement result could be entered into a form
-      in an EHR. Display options for the user could be, e.g. a text field to enter the measurement
-      result (e.g. 120 mmHg) with the label of the complete guideline. </para>
-    <para>The following is an example of two distinct user interfaces for capturing a set of
-      “clinical statements" related to Blood Pressure. </para>
-    <figure>
-      <title> Blood Pressure Statement recorded using structured clinical statement 1</title>
+    <para><?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems."?>For
+      example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines information
+      reported by devices with findings and interpretation: <orderedlist>
+        <listitem>
+          <para>A vital signs monitor transmits the systolic and diastolic blood pressure including
+            date/time and the id of the device, </para>
+        </listitem>
+        <listitem>
+          <para>The nurse marks the measurement as "verified". </para>
+        </listitem>
+        <listitem>
+          <para> Next, the nurse documents how the measurement what performed: </para>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>using an adult cuff size</para>
+              </listitem>
+              <listitem>
+                <para>in prone position</para>
+              </listitem>
+              <listitem>
+                <para>brachial artery</para>
+              </listitem>
+              <listitem>
+                <para>on the left size</para>
+              </listitem>
+              <listitem>
+                <para>the micturition context is left empty/unknown/</para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </listitem>
+        <listitem>
+          <para>Next, the physician adds an interpretation. </para>
+        </listitem>
+      </orderedlist>
+    </para>
+    <figure xml:id="CIF_EHR_1">
+      <title> Blood Pressure Statement recorded by an EHR systems</title>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/BP data capture.svg" scalefit="1" width="60%" format="SVG"
@@ -317,20 +309,34 @@
         </imageobject>
       </mediaobject>
     </figure>
-    <figure>
-      <title> Blood Pressure Statement recorded using structured clinical statement 2</title>
+    <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset of
+      information about the blood pressure measurement - omitting "micturition context" and
+      pre-coordinates site and laterality as:</para>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>Right brachial artery</para>
+      </listitem>
+      <listitem>
+        <para>Left brachial artery</para>
+        <para/>
+      </listitem>
+    </itemizedlist>
+    <para> Another distinct user interfaces for capturing a set of “clinical statements" related to
+      Blood Pressure. </para>
+    <figure xml:id="Display_EHR_2">
+      <title> Alternative Blood Pressure representation in a second EHR system</title>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/EHR-2.svg" scalefit="1" width="60%" format="SVG"
             contentdepth="100%"/>
         </imageobject>
       </mediaobject>
-    </figure>
-    <para>In the first wire frame, the structured clinical input has separate drop-down constraints
-      to enter the artery and laterality as distinct concepts. In the second wire frame, the
-      structured clinical input has combined the artery and laterality into a compound concept. This
-      variation present in the structured clinical input may also have implications on the how the
-      clinical statement is modeled. </para>
+    </figure><?oxy_comment_end?>
+    <para>In the first case, the structured clinical input has separate drop-down constraints to
+      enter the artery and laterality as distinct concepts. In the second wire frame, the structured
+      clinical input has combined the artery and laterality into a compound concept. This variation
+      present in the structured clinical input may also have implications on the how the clinical
+      statement is modeled. </para>
     <para>Ideally, clinical information is modeled in a manner that is most efficient for use. This
       is a problem because there are many different use cases for clinical information with a wide
       range of requirements. There is no single model that can be the most efficient model for all
@@ -347,7 +353,7 @@
         content coverage in a complete and more consistent way than terminology content that is
         restricted to relying on pre-coordinated concepts. While post-coordinated compositional
         terminologies can be expressively powerful, they may generate expressions whose equivalency
-        cannot be easily determined. ANF can help manage aggregate post-coordinated content in  a
+        cannot be easily determined. ANF can help manage aggregate post-coordinated content in a
         normalized manner with respect to the content and semantics with the same representational
         structure as post-coordinated expressions used as input. </para>
       <para>Successful analysis requires relatively high data quality that allows systems to define
@@ -364,11 +370,11 @@
         measurements (e.g. 90 beats per minute for a patient's pulse) but also contextual or
         procedural context (e.g. pulse oximetry, manual) about past observations or requests for
         future interventions. While two quantitative measurements may be the same, the procedural
-        information could indicated meaningful differences. As information is exchanged across
-        systems, the solution requires a common understanding of data and a method to support
-        knowledge representation and clinical decision rules based on a common terminology and
-        statements. Each component must address an aspect and, together they need to address the
-        requirements of clinicians.</para>
+        information could indicated meaningful semantic differences and lead to different clinical
+        interpretation and treatment. As information is exchanged across systems, the solution
+        requires a common understanding of data and a method to support knowledge representation and
+        clinical decision rules based on a common terminology and statements. Each component must
+        address an aspect and, together they need to address the requirements of clinicians.</para>
       <para>Breaking up the solution a across components or section with a specific purpose is a
         foundational design principle for software development: Separation of Concerns. It allows a
         complete system to be subdivided into distinct sections or components with well-defined
