@@ -2,6 +2,9 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+<?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space."?><?oxy_comment_end?>
+
     <title>ANF Clinical Statements </title>
     <para> </para>
     <informaltable>
@@ -75,12 +78,16 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 applicable - the result that corresponds to the
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="1"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
+
+                <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn't seem to make sense when reading."?><?oxy_comment_end?>
+
+
             <editorial-rule>
                 <title>Timing - Performance of Action</title>
                 <mathphrase>For a Performance of Action, the Timing can represent a time in the past or
                     a current time. If a history of a performance of action is to be represented in ANF
                     the Timing will be for a time in the past prior to the statement. Otherwise the
-                    Timing will be represented by with the current time as of the statement.
+                    Timing will be represented with the current time  of the statement.
                 </mathphrase>
             </editorial-rule>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist."?><?oxy_comment_end?>
@@ -97,7 +104,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 <title>Observation Topic</title>
                                 <mathphrase>Any performance of an action that is an observation
                                     would begin with an Observation procedure. The Observation
-                                    procedure with then have a Has focus attribute linking it to the
+                                    procedure would then have a Has focus attribute linking it to the
                                     Clinical Finding or Disorder that it is being observed. The
                                     observation procedure can also be further refined by adding the
                                     Method, Procedure site - Direct, (if appropriate) laterality,
@@ -109,6 +116,10 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                     have a Result with an upperBound of infinite (inf), lowerBound
                                     of 1, and measureSemantic of "Unit of time".</mathphrase>
                             </editorial-rule>
+
+                            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="A topic doesn't have a notion of presence, as the circumstance gives the presence, so what do you mean here.  Maybe just needs to be reworded to something like...  To state the presence of what is described in the topic..."?><?oxy_comment_end?>
+
+
                             <figure>
                                 <title>Diabetes Mellitus Present Clinical Statement Example</title>
                                 <mediaobject>
@@ -120,6 +131,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                             </figure>
                         </listitem>
                         <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ?"?><?oxy_comment_end?>
+                        <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The listitem below seems out of nowhere.  With all the additional material added, the reader will not join these in their mind.  I think this would be better accomplished with 'sections' rather than bulleted listitems."?><?oxy_comment_end?>
                         <listitem>
                             <para>Diabetes mellitus is not present</para>
                             <editorial-rule>
@@ -128,6 +140,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                     have a Result with an upperBound of 0, lowerBound of 0, and
                                     measureSemantic of "Unit of time".</mathphrase>
                             </editorial-rule>
+                            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating absence issue."?><?oxy_comment_end?>
                             <figure>
                                 <title>Diabetes Mellitus Absent Clinical Statement Example</title>
                                 <mediaobject>
@@ -159,6 +172,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     <itemizedlist>
                         <listitem>
                             <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
+                            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating result."?><?oxy_comment_end?>
                             <editorial-rule>
                                 <title>Topic with a Result Value</title>
                                 <mathphrase>Any Topic that states a Result that has a value will be
