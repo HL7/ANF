@@ -92,7 +92,7 @@
 
         <para>
             Analysis Normal Form can act as a transformation target to normalize
-            these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
+            these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135" xrefstyle="select: label"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
         </para>
 
         <figure xml:id="transformationToANF_0135">
@@ -244,9 +244,11 @@
         <title>Transformation Languages</title>
         
         <para> A number of options exist for expressing transformation logic and for executing the
-            transformation on specific instances of clinical data for normalization into ANF. This section discusses several 
-            transformation language options and the trade-offs among them. It should be noted that the suitability of the chosen
-            language also highly depends on the format of the source data.
+            transformation on specific instances of clinical data for normalization into ANF. This section discusses several transformation language options and the trade-offs among them. It should be noted that the suitability of the chosen language also highly depends on the format of the source data. 
+        </para>
+
+        <para>
+            The first three of these, XSLT, FML, and QVT, are transformation languages that can be used directly, but the quality and accuracy of the transformation is left to the transformation author.  The last option described is MDMI, which is not a language, but an architecture for transformation.  This architecture assists in producing semantically accurate transformations.
         </para>
 
         <section>
@@ -500,20 +502,39 @@
             <title>Model Driven Message Interoperability (MDMI)</title>
 
             <para>
-                MDMI is an Object Management Group Standard for the transformation of data in one format to data in another format. MDMI Standard is not a language. The MDMI Standard is a specification for addressing this problem and was developed by multiple domain experts. The specification contains two major sections; the MDMI Transformation Metamodel and the Semantic Element Exchange Repository (SEER). 
+                MDMI is an Object Management Group Standard for the transformation of data in one format to data in another format. MDMI Standard is not a language. The MDMI Standard is a specification for addressing this problem and was developed by multiple domain experts. The specification contains two major sections; the MDMI Transformation Metamodel and the MDMI Semantic Element Exchange Repository (SEER). 
+            </para>
+
+            <figure xml:id="transformation_mdmi_standard_0135">
+                <title>MDMI Standard</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+
+            <para>
+                The MDMI Transformation Metamodel is composed of a syntax model and a semantic model. The syntax model contains the syntactical representation of each data element in a format and the semantic model contains the semantic concept represented by the data element. The syntax model is used to compose a collection of semantic representations into a target file format or to decompose a source file into its semantic representations.  The syntax model can be used for any format.  XML, JSON, HL7 V.2, CVS, various EDI payment, and proprietary formats have been used.
             </para>
 
             <para>
-                The MDMI Transformation Metamodel is composed of a syntax model and a semantic model. The syntax model contains the syntactical representation of each data element in a format and the semantic model contains the semantic concept represented by the data element. The syntax model is used in two different use cases, to either compose a collection of semantic representations into a target file format or to decompose a file into its semantic representations.  The syntax model allows MDMI to address in both use cases.  XML, JSON, HL7 V.2, CVS, various EDI payment, and proprietary formats have been used.
+                The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts in a format. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example of this is a data element that can have multiple semantics concepts that must be disambiguated based on other values contained in format.  
             </para>
 
             <para>
-                The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example is an overloaded field which can have multiple semantics based on values contained in other fields. 
+                The MDMI SEER is a repository for the semantically unique concepts, called Business Elements, that are exchanged in healthcare transformations. One can view the MDMI SEER as a bag of unique, atomic semantic concepts exchanged primarily driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange information.  If there is a new semantic concept that does not exist in the SEER, then a new Business Element is simply added. Each MDMI Transformation Model uses the MDMI SEER to create an iso-semantic relationship with its own semantic concepts and a Business Element.    
             </para>
 
-            <para>
-                The MDMI SEER is a repository for the semantically unique concepts, called Business Elements, that are exchanged in healthcare transformations. One can view the MDMI SEER as a bag of unique, atomic semantic concepts exchanged primarily driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange information.  If there is a new semantic concept that does not exist in the SEER, then a new Business Element is simply added. Each MDMI Transformation Model uses the MDMI SEER to create an iso-semantic relationship with its own semantic concepts and a Business Element.  
-            </para>
+            <figure xml:id="transformation_mdmi_process_0135">
+                <title>MDMI Transformation Process</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+
 
             <para>
                 There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are pre-coordinated semantic concepts represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism. 
@@ -539,7 +560,7 @@
                         <para>Any to Any transformations versus point to point language mappings allow reuse of transformation models for different use cases.</para>
                     </listitem>
                     <listitem>
-                        <para>It minimizes change. If on MDMI Model changes (e.g. FHIR 4 to FHIR 5), this does not require changes to other existing MDMI Models such as CCDA 2.1, HL7 V2.8, or a proprietary model.</para>
+                        <para>It minimizes change. If one MDMI Model changes (e.g. FHIR 4 to FHIR 5), this does not require changes to other existing MDMI Models such as CCDA 2.1, HL7 V2.8, or a proprietary model.</para>
                     </listitem>
                     <listitem>
                         <para>It simplifies development.  Tooling exists to develop and maintain individual MDMI Models by SMEs who do not need to be developers. The scope of expertise is further reduced because the knowledge one needs to create a MDMI Model is primary to know what the data in their format means. </para>
