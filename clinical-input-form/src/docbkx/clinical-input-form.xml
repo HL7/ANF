@@ -28,7 +28,7 @@
         <title>Introduction to CIMI Clinical Statements </title>
 
         <para>
-            The CIMI Clinical Statement Model is described in this chapter, because it is a more traditional structured data tree approach which can then be compared and constrasted with the ANF model.
+            The CIMI Clinical Statement Model is described in this chapter. This model uses a traditional structured data tree approach which can then be compared and constrasted with the ANF model.
         </para>
 
         <para>
@@ -69,7 +69,7 @@
         </itemizedlist>
 
         <para>
-            CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135"/>, has a ‘topic’, ‘context’, and ‘metadata’.  The ‘topic’ is the clinical entity being described.  The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated.  Finally, ‘metadata’ is the collection of metadata that is associated with the clinical statement: the who, where, why and when information.
+            CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135" xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘metadata’.  The ‘topic’ is the clinical entity being described.  The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated.  Finally, ‘metadata’ which is not a proptery, but is only meant for illustrative purposes to represent the collection of metadata that is associated with the clinical statement: the who, where, why and when information.
         </para>
 
         <para>
@@ -80,7 +80,7 @@
             <title>Clinical Statement</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement.png" format="png" align="center" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/clinical_statement.png" format="png" align="center"  width="150%" />
                 </imageobject>
             </mediaobject>
         </figure>
@@ -184,11 +184,11 @@
         <title>Examples Using Topic and Context</title>
 
         <para>     
-          Earlier, descriptive examples of textual examples of clinical statements were given.  Here we will represent a few of these examples using the CIMI Clinical Statement ‘topic - context’ paradigm.  In <xref linkend="cimi_msg_cstatement_chf_0135"/>, the example for “Patient has diagnosis of congestive heart failure” is illustrated. The topic has been declared to be of type AssertionTopic stating “assertion of congestive heart failure”, and the context has been declared to be of type PresenceAbsenceContext stating “Known Present”. What may not be apparent in the figure is that when the topic is declared to be of type AssertionTopic then all the attributes of AssertionTopic are available for use. However, in the figure only the attribute named 'topicCode' is shown for clarity.  
+          Earlier, descriptive examples of textual examples of clinical statements were given.  Here we will represent a few of these examples using the CIMI Clinical Statement ‘topic - context’ paradigm.  In <xref linkend="cimi_msg_cstatement_chf_0135" xrefstyle="select: label"/>, the example for “Patient has diagnosis of congestive heart failure” is illustrated. The topic has been declared to be of type AssertionTopic stating “assertion of congestive heart failure”, and the context has been declared to be of type PresenceAbsenceContext stating “Known Present”. What may not be apparent in the figure is that when the topic is declared to be of type AssertionTopic then all the attributes of AssertionTopic are available for use. However, in the figure only the attribute named 'topicCode' is shown for clarity.  
         </para>
 
         <para>
-          In <xref linkend="cimi_msg_cstatement_order_0135"/>, the example for “Patient has an order for Physical Therapy.” is shown. The topic has been declared to be of type ProcedureTopic stating “procedure of type physical therapy”, and the context has been declared to be of type OrderContext. Again, the majority of attributes for ProcedureTopic and OrderContext are not shown for clarity.
+          In <xref linkend="cimi_msg_cstatement_order_0135" xrefstyle="select: label"/>, the example for “Patient has an order for Physical Therapy.” is shown. The topic has been declared to be of type ProcedureTopic stating “procedure of type physical therapy”, and the context has been declared to be of type OrderContext. Again, the majority of attributes for ProcedureTopic and OrderContext are not shown for clarity.
         </para>
 
         <figure xml:id="cimi_msg_cstatement_chf_0135">
@@ -234,7 +234,7 @@
         <title>CIMI Topic Patterns</title>
 
     <para>
-        Topic Patterns include all the attributes required to fully describe a clinical entity. The topic patterns CIMI has developed to date include FindingTopic, ProcedureTopic, with FindingTopic having children of AssertionTopic and EvaluationResultTopic. They are shown in <xref linkend="cimi_msg_topic_hierarchy_0135"/> and are described in the following sections. Each of these topic subtypes contain a collection of attributes that describe the given pattern.  These patterns provide the foundational structure for detailed clinical model (DCM) archetype instances that can be visualized at <ulink url="http://models.opencimi.org"><citetitle>http://models.opencimi.org</citetitle></ulink> 
+        Topic Patterns include all the attributes required to fully describe a clinical entity. The topic patterns CIMI has developed to date include FindingTopic, ProcedureTopic, with FindingTopic having children of AssertionTopic and EvaluationResultTopic. They are shown in <xref linkend="cimi_msg_topic_hierarchy_0135" xrefstyle="select: label"/> and are described in the following sections. Each of these topic subtypes contain a collection of attributes that describe the given pattern.  These patterns provide the foundational structure for detailed clinical model (DCM) archetype instances that can be visualized at <ulink url="http://models.opencimi.org"><citetitle>http://models.opencimi.org</citetitle></ulink> 
     </para>
 
     <para>
@@ -254,7 +254,7 @@
         <title>AssertionTopic</title>
 
         <para>
-            The first CIMI topic type described here is the AssertionTopic pattern with its included attributes, as shown in <xref linkend="cimi_msg_assertion_0135"/>. Not shown in the previous diagram is that AssertionTopic has been further refined with subtypes.  ConditionTopic, shown in <xref linkend="cimi_msg_condition_0135"/> is a child of AssertionTopic which is used to represent clinical findings such as the presence (or absence) of a condition in a patient. For example:
+            The first CIMI topic type described here is the AssertionTopic pattern with its included attributes, as shown in <xref linkend="cimi_msg_assertion_0135" xrefstyle="select: label"/>. Not shown in the previous diagram is that AssertionTopic has been further refined with subtypes.  ConditionTopic, shown in <xref linkend="cimi_msg_condition_0135" xrefstyle="select: label"/> is a child of AssertionTopic which is used to represent clinical findings such as the presence (or absence) of a condition in a patient. For example:
         </para>
 
         <itemizedlist mark='bullet' spacing='compact'>
@@ -315,7 +315,7 @@
             <title>Assertion Hierarchy</title>
 
             <para>
-                The full hierarchy for AssertionTopic is shown in <xref linkend="cimi_msg_assertion_hierarchy_0135"/>.  AssertionTopic serves the following purposes: (1) it provides the core set of assertion attributes that are relevant in assertion of presence and absence; and (2) it is the parent type for the more specific assertions such as ConditionTopic and FindingSiteAssertionTopic. If additional attributes are identified as required to properly model assertions, they would either be added to one of the existing assertion types or a new type could be created with these attributes. This modeling decision would be based on whether adding these attributes make sense for existing assertions or only for a new subset of assertions. Typically an attribute is added to the parent class if that attribute is relevant in all the subclasses derived from the parent class. If an attribute is only relevant in some of the subclasses then the attribute is introduced in these subclasses. This ensures that a class does not have an attribute that is incongruent and thus requires that attribute to be frequently constrained out. As an analogy, CIMI wants to minimize the design practice that would create an Animal class that contains arms, legs, and wings and then create an instance of a dog that constrains out wings since dogs do not have wings.
+                The full hierarchy for AssertionTopic is shown in <xref linkend="cimi_msg_assertion_hierarchy_0135" xrefstyle="select: label"/>.  AssertionTopic serves the following purposes: (1) it provides the core set of assertion attributes that are relevant in assertion of presence and absence; and (2) it is the parent type for the more specific assertions such as ConditionTopic and FindingSiteAssertionTopic. If additional attributes are identified as required to properly model assertions, they would either be added to one of the existing assertion types or a new type could be created with these attributes. This modeling decision would be based on whether adding these attributes make sense for existing assertions or only for a new subset of assertions. Typically an attribute is added to the parent class if that attribute is relevant in all the subclasses derived from the parent class. If an attribute is only relevant in some of the subclasses then the attribute is introduced in these subclasses. This ensures that a class does not have an attribute that is incongruent and thus requires that attribute to be frequently constrained out. As an analogy, CIMI wants to minimize the design practice that would create an Animal class that contains arms, legs, and wings and then create an instance of a dog that constrains out wings since dogs do not have wings.
             </para>
 
             <figure xml:id="cimi_msg_assertion_hierarchy_0135">
@@ -333,13 +333,13 @@
             <title>Assertions</title>
 
             <para>
-                Assertions affirm or deny the existence of clinical conditions, diseases, symptoms, etc., in the patient.  As just described, different varieties of assertion may extend an existing AssertionTopic class with any additional attributes necessary to fully represent this new group of assertions. Table 1 shows examples of clinical statements using the AssertionTopic class for the topic, and Table 2 shows examples of clinical statement using FindingSiteAssertionTopic for the topic.  These examples show the ‘topic.topicCode’, ‘topic.result’, and ‘context.contextCode’ for each, with the addition of any extra attributes from the chosen topic needed to describe the clinical statement.  Context will be discussed in depth later in this document. For now, be aware the chosen context is a full class with many attributes but here we are only showing the context code attribute that is common to all context types.
+                Assertions affirm or deny the existence of clinical conditions, diseases, symptoms, etc., in the patient.  As just described, different varieties of assertion may extend an existing AssertionTopic class with any additional attributes necessary to fully represent this new group of assertions. Example 1 shows examples of clinical statements using the AssertionTopic class for the topic, and Table 2 shows examples of clinical statement using FindingSiteAssertionTopic for the topic.  These examples show the ‘topic.topicCode’, ‘topic.result’, and ‘context.contextCode’ for each, with the addition of any extra attributes from the chosen topic needed to describe the clinical statement.  Context will be discussed in depth later in this document. For now, be aware the chosen context is a full class with many attributes but here we are only showing the context code attribute that is common to all context types.
             </para>
 
             <example xml:id="cimi_example_1_0135">
                 <title>The patient has diabetes mellitus type 1 which was diagnosed at age 24</title>
                 <programlisting>
-    Diabetes Mellitus Assertion Instance
+    Diabetes Mellitus (Assertion Instance)
         topic.topicCode: Diabetes mellitus type 1 (disorder)
         topic.ageAtOnset: 24 years
         context.contextCode: Confirmed present (qualifier value)
@@ -349,7 +349,7 @@
             <example xml:id="cimi_example_2_0135">
                 <title>The patient does not have diabetes mellitus type 1</title>
                 <programlisting>
-    Diabetes Mellitus Absent Assertion Instance
+    Diabetes Mellitus Absent (Assertion Instance)
         topic.topicCode: Diabetes mellitus type 1 (disorder)
         context.contextCode: Known absent (qualifier value)
                 </programlisting>
@@ -400,7 +400,7 @@
             <example xml:id="cimi_example_3_0135">
                 <title>The patient has a femur fracture in the right leg</title>
                 <programlisting>
-    FractureAssert
+    FractureAssert (Finding Site Assertion Instance)
         topic.topicCode: Fracture of bone (disorder)
         topic.findingSite.code: Bone structure of femur
         topic.findingSite.laterality: Right (qualifier value)
@@ -411,7 +411,7 @@
             <example xml:id="cimi_example_4_0135">
                 <title>The patient has a stage two pressure injury on the right ischial tuberosity</title>
                 <programlisting>
-    WoundAssert
+    WoundAssert (Finding Site Assertion Instance)
         topic.topicCode: Pressure ulcer stage 2 (disorder)
         topic.findingSite.code: Skin structure of ischial tuberosity
         topic.findingSite.laterality: Right (qualifier value)
@@ -579,6 +579,10 @@
             </mediaobject>
         </figure>
 
+        <para>
+             <xref linkend="cimi_blood_pressure_eval_0135" xrefstyle="select: label"/> and <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/> are both Evaluation Result style representations of a systolic blood pressure.  In the first, where CIMI has a simple topic, the style is very similar to how it would be modeled in ANF.  But in the 2nd figure, which has a complex topic, CIMI represents this with named properties in a tree structure.  ANF, on the other hand, would put all this structured topic complexity into a post-coordinated Snomed expression.
+        </para>
+
         <figure xml:id="cimi_blood_pressure_eval_0135">
             <title>Sytolic Blood Pressure Evaluation</title>
             <mediaobject>
@@ -629,7 +633,7 @@
         <title>ProcedureTopic</title>
 
         <para>
-            Procedure models are used to represent actions taken related to the care of a patient such as a cholecystectomy, peripheral IV placement, delivery of a warm blanket, dressing change, ambulation, patient education, etc.  The CIMI ProcedureTopic, as shown in <xref linkend="cimi_msg_procedure_hierarchy_0135"/>,  is a base class for a number of specializations such as surgical, imaging, and laboratory procedures. The CIMI Procedure Model is aligned with the SNOMED CT Procedure Concept Model when such an alignment exists. 
+            Procedure models are used to represent actions taken related to the care of a patient such as a cholecystectomy, peripheral IV placement, delivery of a warm blanket, dressing change, ambulation, patient education, etc.  The CIMI ProcedureTopic, as shown in <xref linkend="cimi_msg_procedure_hierarchy_0135" xrefstyle="select: label"/>,  is a base class for a number of specializations such as surgical, imaging, and laboratory procedures. The CIMI Procedure Model is aligned with the SNOMED CT Procedure Concept Model when such an alignment exists. 
  
         </para>
 
@@ -651,7 +655,7 @@
         <title>Context Patterns</title>
 
           <para>
-            When a Clinical Statement is defined it will be modeled as a combination of a topic and a context. The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated. Specializations within the context hierarchy, shown in <xref linkend="cimi_msg_context_hierarchy_0135"/>, add important attribution information for the situation being described.
+            When a Clinical Statement is defined it will be modeled as a combination of a topic and a context. The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated. Specializations within the context hierarchy, shown in <xref linkend="cimi_msg_context_hierarchy_0135" xrefstyle="select: label"/>, add important attribution information for the situation being described.
           </para>
 
                     <figure xml:id="cimi_msg_context_hierarchy_0135">
@@ -680,7 +684,7 @@
                         <term><emphasis role='bold'>ActionContext</emphasis></term>
                         <listitem>
                             <para>
-                                The ActionContext class aligns with the SNOMED Situation with Explicit Context for procedures and provides the context for the topic of a clinical statement. For instance, a statement about a procedure may specify the procedure has been proposed, ordered, planned, performed, or not performed. Each action context, in turn, has its own lifecycle. An example of the PerformanceContext class is shown in <xref linkend="cimi_msg_performance_0135"/>.
+                                The ActionContext class aligns with the SNOMED Situation with Explicit Context for procedures and provides the context for the topic of a clinical statement. For instance, a statement about a procedure may specify the procedure has been proposed, ordered, planned, performed, or not performed. Each action context, in turn, has its own lifecycle. An example of the PerformanceContext class is shown in <xref linkend="cimi_msg_performance_0135" xrefstyle="select: label"/>.
          
                             </para>
                         </listitem>
