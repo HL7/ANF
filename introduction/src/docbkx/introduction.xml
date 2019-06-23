@@ -13,7 +13,7 @@
       represent any isosemantic clinical statements irrespective of how the information was captured
       at its source (i.e. information systems or medical devices). ANF could be used in conjunction
       with other models intended to ensure that clinical information is structured and complete at
-      the time of entry (e.g. CIMI models, Detailed Clinical Models) or exchanged among systems
+      the time of entry (e.g. CIMI models, ISO Detailed Clinical Models) or exchanged among systems
       (e.g. HL7 CDA templates, HL7 V2 message profiles, FHIR profiles). </para>
     <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to
       be made that optimize data entry brevity at the cost of computability. ANF represents a
@@ -32,13 +32,13 @@
       quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
       and magnitude of a specific finding, request or observation.</para>
     <para>ANF requires an ability to classify topic expressions (and expressions that may go in
-      other locations) and thus it depends either on systems that can produce structured information
+      other locations) and thus it depends on systems that can produce structured information
       reducible to ANF. These systems may create normal data natively or transform other
       representations of clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form -
       ANF.</para>
     <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
       multiple sources to better support a set of analysis.</para>
-    <itemizedlist>
+    <itemizedlist spacing="compact">
       <listitem>
         <para>Specify clinical content extracted from EHR systems using FHIR</para>
       </listitem>
@@ -53,10 +53,10 @@
         <para>Specifying clinical content for User Interfaces</para>
       </listitem>
     </itemizedlist>
-    <itemizedlist>
+    <itemizedlist spacing="compact">
       <listitem>
         <para>Enhancing information clinical content for use as </para>
-        <itemizedlist>
+        <itemizedlist spacing="compact">
           <listitem>
             <para>Clinical Decision Support Systems</para>
           </listitem>
@@ -90,7 +90,7 @@
           granularity and therefore the extent and detail conveyed in a single statement may vary.
           To be regarded as a Clinical Statement, a concept must be associated with a patient or
           other entity in a manner which makes clear:</para>
-        <itemizedlist>
+        <itemizedlist spacing="compact">
           <listitem>
             <para>Its temporal context</para>
           </listitem>
@@ -101,7 +101,7 @@
         <para>In the case of an observation, its mood and presence, absence or value</para>
         <para>In the case of a procedure, its mood and status</para>
         <para>This clarity may be achieved by:</para>
-        <itemizedlist>
+        <itemizedlist spacing="compact">
           <listitem>
             <para>Explicit representation; or</para>
           </listitem>
@@ -177,7 +177,7 @@
           <para>There are no definite boundaries between the Logical and Implementable Perspectives.
             Therefore, it’s important for organizations such as HL7 to standardize logical models
             used to generate/create implementable artifacts (i.e. implementation guides, profiles,
-            and templates). CIMI clinical statements. Detailed Clinical Models, and ANF statements
+            and templates). CIMI Clinical Statements, ISO Detailed Clinical Models, and ANF statements
             all belong in this perspective.</para>
         </section>
         <section>
@@ -199,17 +199,14 @@
           clinical information models using a common modeling formalism. CIMI intends to improve the
           interoperability of healthcare information systems through shared detailed clinical
           information models that can be used to generate platform-specific model specifications
-          such as FHIR profiles,CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
+          such as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
           Intermountain CEMs. CIMI models are grouped into semantically equivalent (or
           ‘isosemantic’) families of detailed clinical models, which capture the same clinical
           meaning using different combinations of pre and post-coordinated concepts and
           corresponding information model structure. The central focus of the CIMI Reference Model
-          is the Clinical Statement. A Clinical Statement represents structured electronic
+          is the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic
           communication made about a patient typically documented as an 'entry' in the patient
-          record. For example, Clinical Statement can be used to represent the following statements
-          made about a patient. This can be the statement of a condition being present, a request
-          for a procedure to be done, the results of lab tests or the patient’s family history of
-          cancer. </para>
+          record. For example, CIMI Clinical Statement can be used to represent the following statements made about a patient. This can be the statement of a condition being present, a request for a procedure to be done, the results of lab tests or the patient’s family history of cancer. </para>
       </section>
       <section>
         <title/>
@@ -230,7 +227,7 @@
     <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models. However, both treatment and analysis of clinical statements require consistency
       not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
-      of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
+      of an ISO DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
       analysis, but even in the case of structured, semantically-clear information, inconsistency
       across sources of information raises obstacles to analysis and research. Analysis of aggregate
       information managed by health information networks poses the greatest challenge today because
@@ -276,7 +273,7 @@
         <listitem>
           <para> Next, the nurse documents how the measurement what performed: </para>
           <para>
-            <itemizedlist>
+            <itemizedlist spacing="compact">
               <listitem>
                 <para>using an adult cuff size</para>
               </listitem>
@@ -370,12 +367,12 @@
         measurements (e.g. 90 beats per minute for a patient's pulse) but also contextual or
         procedural context (e.g. pulse oximetry, manual) about past observations or requests for
         future interventions. While two quantitative measurements may be the same, the procedural
-        information could indicated meaningful semantic differences and lead to different clinical
+        information could indicate meaningful semantic differences and lead to different clinical
         interpretation and treatment. As information is exchanged across systems, the solution
         requires a common understanding of data and a method to support knowledge representation and
         clinical decision rules based on a common terminology and statements. Each component must
         address an aspect and, together they need to address the requirements of clinicians.</para>
-      <para>Breaking up the solution a across components or section with a specific purpose is a
+      <para>Breaking up the solution across components or sections with a specific purpose is a
         foundational design principle for software development: Separation of Concerns. It allows a
         complete system to be subdivided into distinct sections or components with well-defined
         functionality and dependencies. If successful, this approach allows individual sections to
@@ -385,7 +382,7 @@
         any given time. Efforts that are often uncoordinated and led by disparate and unrelated
         standards development organizations. </para>
       <para>The following diagram shows how the concept of Separation of Concerns can be applied to
-        the problem of systematically:</para>
+        the problem systematically:</para>
       <para/>
       <figure>
         <title>Separation of Concerns: Knowledge Architecture</title>
@@ -444,7 +441,7 @@
         layers).</para>
       <para>ANF is intended to achieve a clean separation of concerns, especially in regard to an
         isosemantic representation in the Statement Model layer. ANF can help the modeling of
-        Clinical Statements achieve the following design features: </para>
+        clinical statements achieve the following design features: </para>
       <itemizedlist>
         <listitem>
           <para>Understandable: The meaning of a clinical statement can be understood, without
@@ -466,7 +463,7 @@
         of sources, independent of formalism or approach used by the source system. The users of
         this specification and subsequent implementation guidance are developing solutions that
         support clinical decision support, patient safety, and research. </para>
-      <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Rehears, and other
+      <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other
         national initiatives are all relying on interoperable, reusable, analysis-ready information
         that can improve outcomes, produce new therapies, and put into practice "precision
         medicine".</para>
