@@ -37,12 +37,14 @@
     <para>In the context of the ANF Model, a clinical statement represents an entry in the patient
         record that documents, in a structured/computable manner, clinical information related to
         the patient that is asserted by a particular source, recorded, and potentially verified.  </para>
-    <para>As seen in the Clinical Statements section, clinical information related to the patient
-        can be entered and stored in an EMR structured in multiple different ways. ANF strives to
-        standardize the structure of clinical statements to eliminate the disparity of clinical
-        information by limiting the design choices a clinical modeler must make.
-        ANF can then act as a consistent transformation target for the multiple differing clinical information representations that currently exist, making this clinical information
-        more easily computable and eliminates the need to create multiple ways to analyze the same data.</para>
+    <para>As seen in the CIMI Clinical Statements section, clinical information related to the
+        patient can be entered and stored in an EMR structured in multiple different ways. ANF
+        strives to standardize the structure of clinical statements to eliminate the disparity of
+        clinical information by limiting the design choices a clinical modeler must make. ANF can
+        then act as a consistent transformation target for the multiple differing clinical
+        information representations that currently exist, making this clinical information more
+        easily computable and eliminates the need to create multiple ways to analyze the same
+        data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Statements</title>
         <para>There are two types of ANF Statements:</para>

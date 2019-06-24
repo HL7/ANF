@@ -23,7 +23,7 @@
     </section>
     <section>
         <title>statementId</title>
-        <para>statementId is a unique identifier for the statement represented by a UUID.</para>
+        <para>statementId is a unique identifier for the statement represented by a uuid.</para>
         <para><emphasis>Example: </emphasis>a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
     </section>
     <section>
@@ -48,7 +48,7 @@
             its subclass IdentifiedParticipant can be used. Participant includes a coded <emphasis
                 role="italic">participantRole </emphasis>for values such as 'Healthcare
             professional', 'Nurse', or 'Requestor'. IdentifiedParticipant adds the additional
-            attribute <emphasis role="italic">participantId </emphasis>which is a UUID to uniquely
+            attribute <emphasis role="italic">participantId </emphasis>which is a uuid to uniquely
             identify the participant.</para>
     </section>
     <section>
@@ -144,10 +144,10 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
             </tgroup>
         </table>
         
-        <para><emphasis role="bold"><emphasis role="italic">Performances of actions</emphasis></emphasis>
-            also be observational procedures, describing the absence or presence of clinical
-            findings or disorders. In these cases, the observation action of the clinical findings
-            and disorders is performed:</para>
+        <para><emphasis role="bold"><emphasis role="italic">Performances of
+                actions</emphasis></emphasis> can also be observational procedures, describing the
+            absence or presence of clinical findings or disorders. In these cases, the observation
+            action of the clinical findings and disorders is performed:</para>
         <itemizedlist spacing="compact">
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111940-0400" comment="Comment from WC:
@@ -172,7 +172,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
             </listitem>
         </itemizedlist>
         <table>
-            <title><emphasis>Example Performance for Action Topic: <emphasis role="bold">Systolic
+            <title><emphasis>Example Performance of Action Topic: <emphasis role="bold">Systolic
                         blood pressure 120 mmHg; taken on right brachial artery using adult blood
                         pressure cuff</emphasis></emphasis></title>
             <tgroup cols="1">
@@ -342,14 +342,21 @@ Here might be situations under which the limitations of terminology models may c
             </section>
             <section>
                 <title>Priortity</title>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" flag="done" mid="15"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" flag="done" mid="16"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb" flag="done"?>
                 <para>Priority expresses the priority with which a requested action has to be
                     carried out, e.g. “routine” or
-                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="15"?>  By default a Request
-                    will be considered "routine" unless otherwise specified.</para>
+                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="16"?> By default a Request will
+                    be considered "routine" unless otherwise specified.</para>
                 <para><emphasis>Examples:</emphasis></para>
-                <para/>
+                <itemizedlist>
+                    <listitem>
+                        <para>X-ray Knee-right to evaluate for psoriatic arthritis, routine</para>
+                    </listitem>
+                    <listitem>
+                        <para>X-ray chest to evaluate for heart failure now</para>
+                    </listitem>
+                </itemizedlist>
             </section>
             <section>
                 <title>Repetition</title>
@@ -459,7 +466,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
 Brings in another level of confusion: I thought this entire discussion was about documenting what is on the side of the patient, here you include documenting how clinical statements are configured. That might be valid too, and I would even recommend it for quality control purposes, but then an extra meta-level needs to be included.
 "?>
             <para>Unstructured Circumstance is used to document additional parts of clinical
-                statements that have not been coded and are narrative in nature. This unstructred
+                statements that have not been coded and are narrative in nature. Unstructred
                 circumstances are not necessary for accurate data coding or retrieval.
                 <?oxy_comment_end?></para>
             <figure>
@@ -499,8 +506,8 @@ Brings in another level of confusion: I thought this entire discussion was about
         </section>
         <section>
             <title>associatedStatementId</title>
-            <para>AssociatedStatement Id is a UUID to identify associated statements. This UUID
-                is the statementId of the target ClinicalStatement</para>
+            <para>AssociatedStatement Id is a uuid to identify associated statements. This uuid is
+                the statementId of the target ClinicalStatement</para>
         </section>
     </section>
     
