@@ -1,114 +1,1945 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612" width="792" height="612">
-  <defs>
-    <font-face font-family="Courier" font-size="12" units-per-em="1000" underline-position="-144.04297" underline-thickness="91.79688" slope="0" x-height="456.54297" cap-height="586.91406" ascent="753.90625" descent="-246.09375" font-weight="700">
-      <font-face-src>
-        <font-face-name name="Courier-Bold"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Courier" font-size="12" units-per-em="1000" underline-position="-178.22266" underline-thickness="57.61719" slope="0" x-height="456.54297" cap-height="586.91406" ascent="753.90625" descent="-246.09375" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Courier"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Courier" font-size="8" units-per-em="1000" underline-position="-178.22266" underline-thickness="57.61719" slope="0" x-height="456.54297" cap-height="586.91406" ascent="753.90625" descent="-246.09375" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Courier"/>
-      </font-face-src>
-    </font-face>
-    <font-face font-family="Courier" font-size="12" units-per-em="1000" underline-position="-178.22266" underline-thickness="57.61719" slope="-1e3" x-height="456.54297" cap-height="586.91406" ascent="753.90625" descent="-246.09375" font-style="italic" font-weight="400">
-      <font-face-src>
-        <font-face-name name="Courier-Oblique"/>
-      </font-face-src>
-    </font-face>
-  </defs>
-  <metadata> Produced by OmniGraffle 7.10.2 
-    <dc:date>2019-06-22 18:29:06 +0000</dc:date>
-  </metadata>
-  <g id="Breath_Assert_CIMI" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
-    <title>Breath_Assert_CIMI</title>
-    <g id="Breath_Assert_CIMI: Layer 1">
-      <title>Layer 1</title>
-      <g id="Graphic_2">
-        <rect x="51.75001" y="54.00002" width="668.25" height="41.93182" fill="#f2f2f2"/>
-        <rect x="51.75001" y="54.00002" width="668.25" height="41.93182" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(55.75001 67.96593)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="700" fill="black" x="139.29394" y="11">Clinical Statement: </tspan>
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" y="11">Tubular breath sounds - Assertion</tspan>
-        </text>
-      </g>
-      <g id="Graphic_3">
-        <path d="M 246.57955 196.54262 L 347.2159 196.54262 L 347.2159 196.54262 C 354.1633 196.54273 359.79533 190.91086 359.79545 183.96349 C 359.79545 183.96335 359.79545 183.9632 359.79545 183.96307 L 359.79545 167.19035 C 359.79556 160.24297 354.1637 154.61092 347.21632 154.6108 C 347.2162 154.6108 347.21604 154.6108 347.2159 154.6108 L 347.2159 154.6108 L 246.57955 154.6108 L 246.57955 154.6108 C 239.63217 154.61069 234.0001 160.24256 234 167.18994 C 234 167.19008 234 167.19021 234 167.19035 L 234 183.96307 C 233.9999 190.91045 239.63176 196.5425 246.57914 196.54262 C 246.57928 196.54262 246.5794 196.54262 246.57955 196.54262 L 246.57955 196.54262 Z" fill="#b7dde8"/>
-        <path d="M 246.57955 196.54262 L 347.2159 196.54262 L 347.2159 196.54262 C 354.1633 196.54273 359.79533 190.91086 359.79545 183.96349 C 359.79545 183.96335 359.79545 183.9632 359.79545 183.96307 L 359.79545 167.19035 C 359.79556 160.24297 354.1637 154.61092 347.21632 154.6108 C 347.2162 154.6108 347.21604 154.6108 347.2159 154.6108 L 347.2159 154.6108 L 246.57955 154.6108 L 246.57955 154.6108 C 239.63217 154.61069 234.0001 160.24256 234 167.18994 C 234 167.19008 234 167.19021 234 167.19035 L 234 183.96307 C 233.9999 190.91045 239.63176 196.5425 246.57914 196.54262 C 246.57928 196.54262 246.5794 196.54262 246.57955 196.54262 L 246.57955 196.54262 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(238 163.57671)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" x="40.894795" y="11">topic</tspan>
-          <tspan font-family="Courier" font-size="8" font-weight="400" fill="black" x="20.491475" y="22">(ConditionTopic)</tspan>
-        </text>
-      </g>
-      <g id="Graphic_4">
-        <path d="M 73.32955 207 L 173.9659 207 L 173.9659 207 C 180.91328 207.00011 186.54533 201.36824 186.54545 194.42087 C 186.54545 194.42073 186.54545 194.4206 186.54545 194.42045 L 186.54545 156.7074 C 186.54556 149.76003 180.9137 144.12797 173.96632 144.12785 C 173.96618 144.12785 173.96604 144.12785 173.9659 144.12785 L 173.9659 144.12785 L 73.32955 144.12785 L 73.32955 144.12785 C 66.38217 144.12774 60.75011 149.75961 60.75 156.707 C 60.75 156.70713 60.75 156.70727 60.75 156.7074 L 60.75 194.42045 C 60.74989 201.36783 66.38176 206.99989 73.32914 207 C 73.329276 207 73.32941 207 73.32955 207 L 73.32955 207 Z" fill="#fbd7bb"/>
-        <path d="M 73.32955 207 L 173.9659 207 L 173.9659 207 C 180.91328 207.00011 186.54533 201.36824 186.54545 194.42087 C 186.54545 194.42073 186.54545 194.4206 186.54545 194.42045 L 186.54545 156.7074 C 186.54556 149.76003 180.9137 144.12797 173.96632 144.12785 C 173.96618 144.12785 173.96604 144.12785 173.9659 144.12785 L 173.9659 144.12785 L 73.32955 144.12785 L 73.32955 144.12785 C 66.38217 144.12774 60.75011 149.75961 60.75 156.707 C 60.75 156.70713 60.75 156.70727 60.75 156.7074 L 60.75 194.42045 C 60.74989 201.36783 66.38176 206.99989 73.32914 207 C 73.329276 207 73.32941 207 73.32955 207 L 73.32955 207 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(64.75 154.56393)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="700" fill="black" x="44.49538" y="11">CIMI</tspan>
-          <tspan font-family="Courier" font-size="12" font-weight="700" fill="black" x="30.093038" y="25">Clinical </tspan>
-          <tspan font-family="Courier" font-size="12" font-weight="700" fill="black" x="26.49245" y="39">Statement</tspan>
-        </text>
-      </g>
-      <g id="Line_5">
-        <path d="M 234 175.5767 L 186.54546 175.56392 L 186.54545 175.56393" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-      </g>
-      <g id="Graphic_6">
-        <path d="M 591.6426 194.80397 L 705.73805 194.80397 L 705.73805 194.80397 C 713.6146 194.8041 719.99985 188.41903 720 180.5425 C 720 180.54235 720 180.5422 720 180.54204 L 720 167.13408 C 720.0001 159.25756 713.615 152.87228 705.7385 152.87215 C 705.7384 152.87215 705.7382 152.87215 705.73805 152.87215 L 705.73805 152.87215 L 591.6426 152.87215 L 591.6426 152.87215 C 583.7661 152.87202 577.3808 159.2571 577.3807 167.1336 C 577.3807 167.13377 577.3807 167.13392 577.3807 167.13408 L 577.3807 180.54204 C 577.38054 188.41856 583.7656 194.80384 591.6421 194.80397 C 591.6423 194.80397 591.64244 194.80397 591.6426 194.80397 L 591.6426 194.80397 Z" fill="#d7e3bf"/>
-        <path d="M 591.6426 194.80397 L 705.73805 194.80397 L 705.73805 194.80397 C 713.6146 194.8041 719.99985 188.41903 720 180.5425 C 720 180.54235 720 180.5422 720 180.54204 L 720 167.13408 C 720.0001 159.25756 713.615 152.87228 705.7385 152.87215 C 705.7384 152.87215 705.7382 152.87215 705.73805 152.87215 L 705.73805 152.87215 L 591.6426 152.87215 L 591.6426 152.87215 C 583.7661 152.87202 577.3808 159.2571 577.3807 167.1336 C 577.3807 167.13377 577.3807 167.13392 577.3807 167.13408 L 577.3807 180.54204 C 577.38054 188.41856 583.7656 194.80384 591.6421 194.80397 C 591.6423 194.80397 591.64244 194.80397 591.6426 194.80397 L 591.6426 194.80397 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(581.3807 166.83806)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" x="6.099694" y="11">Tubular breathing</tspan>
-        </text>
-      </g>
-      <g id="Line_7">
-        <path d="M 234 256.47442 L 186.54546 175.56393 L 186.54545 175.56393" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-      </g>
-      <g id="Graphic_8">
-        <path d="M 417.57955 194.80397 L 518.2159 194.80397 L 518.2159 194.80397 C 525.1633 194.80408 530.79533 189.17221 530.79545 182.22484 C 530.79545 182.2247 530.79545 182.22456 530.79545 182.22442 L 530.79545 165.4517 C 530.79556 158.50432 525.1637 152.87227 518.2163 152.87215 C 518.2162 152.87215 518.21604 152.87215 518.2159 152.87215 L 518.2159 152.87215 L 417.57955 152.87215 L 417.57955 152.87215 C 410.63217 152.87204 405.0001 158.5039 405 165.45129 C 405 165.45143 405 165.45156 405 165.4517 L 405 182.22442 C 404.9999 189.1718 410.63176 194.80386 417.57914 194.80397 C 417.5793 194.80397 417.5794 194.80397 417.57955 194.80397 L 417.57955 194.80397 Z" fill="#b7dde8"/>
-        <path d="M 417.57955 194.80397 L 518.2159 194.80397 L 518.2159 194.80397 C 525.1633 194.80408 530.79533 189.17221 530.79545 182.22484 C 530.79545 182.2247 530.79545 182.22456 530.79545 182.22442 L 530.79545 165.4517 C 530.79556 158.50432 525.1637 152.87227 518.2163 152.87215 C 518.2162 152.87215 518.21604 152.87215 518.2159 152.87215 L 518.2159 152.87215 L 417.57955 152.87215 L 417.57955 152.87215 C 410.63217 152.87204 405.0001 158.5039 405 165.45129 C 405 165.45143 405 165.45156 405 165.4517 L 405 182.22442 C 404.9999 189.1718 410.63176 194.80386 417.57914 194.80397 C 417.5793 194.80397 417.5794 194.80397 417.57955 194.80397 L 417.57955 194.80397 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(409 166.83806)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" x="26.49245" y="11">topicCode</tspan>
-        </text>
-      </g>
-      <g id="Graphic_9">
-        <path d="M 591.6426 277.44033 L 705.73805 277.44033 L 705.73805 277.44033 C 713.6146 277.44046 719.99985 271.0554 720 263.17887 C 720 263.1787 720 263.17856 720 263.1784 L 720 249.77044 C 720.0001 241.89392 713.615 235.50864 705.7385 235.5085 C 705.7384 235.5085 705.7382 235.5085 705.73805 235.5085 L 705.73805 235.5085 L 591.6426 235.5085 L 591.6426 235.5085 C 583.7661 235.50838 577.3808 241.89345 577.3807 249.76997 C 577.3807 249.77013 577.3807 249.77028 577.3807 249.77044 L 577.3807 263.1784 C 577.38054 271.05492 583.7656 277.4402 591.6421 277.44033 C 591.6423 277.44033 591.64244 277.44033 591.6426 277.44033 L 591.6426 277.44033 Z" fill="#d7e3bf"/>
-        <path d="M 591.6426 277.44033 L 705.73805 277.44033 L 705.73805 277.44033 C 713.6146 277.44046 719.99985 271.0554 720 263.17887 C 720 263.1787 720 263.17856 720 263.1784 L 720 249.77044 C 720.0001 241.89392 713.615 235.50864 705.7385 235.5085 C 705.7384 235.5085 705.7382 235.5085 705.73805 235.5085 L 705.73805 235.5085 L 591.6426 235.5085 L 591.6426 235.5085 C 583.7661 235.50838 577.3808 241.89345 577.3807 249.76997 C 577.3807 249.77013 577.3807 249.77028 577.3807 249.77044 L 577.3807 263.1784 C 577.38054 271.05492 583.7656 277.4402 591.6421 277.44033 C 591.6423 277.44033 591.64244 277.44033 591.6426 277.44033 L 591.6426 277.44033 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(581.3807 249.47442)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-style="italic" font-weight="400" fill="black" x="42.105553" y="11">Present</tspan>
-        </text>
-      </g>
-      <g id="Line_10">
-        <line x1="405" y1="173.83806" x2="359.79546" y2="175.57672" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-      </g>
-      <g id="Line_11">
-        <path d="M 577.3807 173.83806 L 530.79545 173.83806 L 530.79545 173.83806" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-      </g>
-      <g id="Graphic_12">
-        <path d="M 246.57955 277.44033 L 347.2159 277.44033 L 347.2159 277.44033 C 354.1633 277.44044 359.79533 271.80857 359.79545 264.8612 C 359.79545 264.86106 359.79545 264.86092 359.79545 264.86078 L 359.79545 248.08806 C 359.79556 241.14068 354.1637 235.50863 347.21632 235.5085 C 347.2162 235.5085 347.21604 235.5085 347.2159 235.5085 L 347.2159 235.5085 L 246.57955 235.5085 L 246.57955 235.5085 C 239.63217 235.5084 234.0001 241.14027 234 248.08765 C 234 248.0878 234 248.08792 234 248.08806 L 234 264.86078 C 233.9999 271.80816 239.63176 277.4402 246.57914 277.44033 C 246.57928 277.44033 246.5794 277.44033 246.57955 277.44033 L 246.57955 277.44033 Z" fill="#b7dde8"/>
-        <path d="M 246.57955 277.44033 L 347.2159 277.44033 L 347.2159 277.44033 C 354.1633 277.44044 359.79533 271.80857 359.79545 264.8612 C 359.79545 264.86106 359.79545 264.86092 359.79545 264.86078 L 359.79545 248.08806 C 359.79556 241.14068 354.1637 235.50863 347.21632 235.5085 C 347.2162 235.5085 347.21604 235.5085 347.2159 235.5085 L 347.2159 235.5085 L 246.57955 235.5085 L 246.57955 235.5085 C 239.63217 235.5084 234.0001 241.14027 234 248.08765 C 234 248.0878 234 248.08792 234 248.08806 L 234 264.86078 C 233.9999 271.80816 239.63176 277.4402 246.57914 277.44033 C 246.57928 277.44033 246.5794 277.44033 246.57955 277.44033 L 246.57955 277.44033 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(238 244.47442)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" x="33.693623" y="11">context</tspan>
-          <tspan font-family="Courier" font-size="8" font-weight="400" fill="black" x="18.091084" y="22">(PresenceContext)</tspan>
-        </text>
-      </g>
-      <g id="Graphic_13">
-        <path d="M 424.32955 277.44033 L 524.9659 277.44033 L 524.9659 277.44033 C 531.9133 277.44044 537.54533 271.80857 537.54545 264.8612 C 537.54545 264.86106 537.54545 264.86092 537.54545 264.86078 L 537.54545 248.08806 C 537.54556 241.14068 531.9137 235.50863 524.9663 235.5085 C 524.9662 235.5085 524.96604 235.5085 524.9659 235.5085 L 524.9659 235.5085 L 424.32955 235.5085 L 424.32955 235.5085 C 417.38217 235.5084 411.7501 241.14027 411.75 248.08765 C 411.75 248.0878 411.75 248.08792 411.75 248.08806 L 411.75 264.86078 C 411.7499 271.80816 417.38176 277.4402 424.32914 277.44033 C 424.3293 277.44033 424.3294 277.44033 424.32955 277.44033 L 424.32955 277.44033 Z" fill="#b7dde8"/>
-        <path d="M 424.32955 277.44033 L 524.9659 277.44033 L 524.9659 277.44033 C 531.9133 277.44044 537.54533 271.80857 537.54545 264.8612 C 537.54545 264.86106 537.54545 264.86092 537.54545 264.86078 L 537.54545 248.08806 C 537.54556 241.14068 531.9137 235.50863 524.9663 235.5085 C 524.9662 235.5085 524.96604 235.5085 524.9659 235.5085 L 524.9659 235.5085 L 424.32955 235.5085 L 424.32955 235.5085 C 417.38217 235.5084 411.7501 241.14027 411.75 248.08765 C 411.75 248.0878 411.75 248.08792 411.75 248.08806 L 411.75 264.86078 C 411.7499 271.80816 417.38176 277.4402 424.32914 277.44033 C 424.3293 277.44033 424.3294 277.44033 424.32955 277.44033 L 424.32955 277.44033 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="miter" stroke-width=".24"/>
-        <text transform="translate(415.75 249.47442)" fill="black">
-          <tspan font-family="Courier" font-size="12" font-weight="400" fill="black" x="19.29128" y="11">contextCode</tspan>
-        </text>
-      </g>
-      <g id="Line_20">
-        <line x1="359.79545" y1="256.47442" x2="411.75" y2="256.47442" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".24"/>
-      </g>
-      <g id="Line_23">
-        <line x1="537.54545" y1="256.47442" x2="577.3807" y2="256.47442" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".24"/>
-      </g>
-    </g>
-  </g>
+<!-- Generated by Microsoft Visio, SVG Export breath_assertion_cimi.svg Breath Sound Present_CIMI -->
+
+<svg
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="11in"
+   height="8.5in"
+   viewBox="0 0 792 612"
+   xml:space="preserve"
+   color-interpolation-filters="sRGB"
+   class="st12"
+   version="1.1"
+   id="svg124"
+   sodipodi:docname="breath_assertion_cimi.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata130"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs128" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview126"
+   showgrid="false"
+   inkscape:zoom="0.26893939"
+   inkscape:cx="528"
+   inkscape:cy="408"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg124" />
+	<v:documentProperties
+   v:langID="1033"
+   v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud
+   v:nameU="msvNoAutoConnect"
+   v:val="VT0(1):26" />
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style
+   type="text/css"
+   id="style2">
+	<![CDATA[
+		.st1 {fill:#f2f2f2;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#000000;font-family:Calibri;font-size:1.00001em;font-weight:bold}
+		.st3 {font-size:1em;font-weight:normal}
+		.st4 {fill:#b7dde8;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st5 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st6 {font-size:0.666659em}
+		.st7 {fill:#fbd7bb;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st8 {font-size:1em}
+		.st9 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st10 {fill:#d7e3bf;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st11 {fill:#000000;font-family:Calibri;font-size:1.00001em;font-style:italic}
+		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g
+   v:mID="28"
+   v:index="5"
+   v:groupContext="foregroundPage"
+   id="g122"
+   transform="matrix(1.045712,0,0,2.2599938,-2.3011206,-67.975179)">
+		<title
+   id="title4">Breath_Assert_CIMI</title>
+		<v:pageProperties
+   v:drawingScale="1"
+   v:pageScale="1"
+   v:drawingUnits="19"
+   v:shadowOffsetX="9"
+   v:shadowOffsetY="-9" />
+		<g
+   id="shape1-1"
+   v:mID="1"
+   v:groupContext="shape"
+   transform="translate(51.75,-516.068)">
+			<title
+   id="title6">Rectangle</title>
+			<desc
+   id="desc8">Clinical Statement: Tubular breath sounds - Assertion</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="visVersion"
+   v:val="VT0(15):26" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="334.125"
+   cy="591.034"
+   width="668.25"
+   height="41.9318" />
+			<rect
+   x="0"
+   y="570.06799"
+   width="668.25"
+   height="41.931801"
+   class="st1"
+   id="rect10"
+   style="fill:#f2f2f2;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="203.3"
+   y="594.63"
+   class="st2"
+   v:langID="1033"
+   id="text20"
+   style="font-weight:bold;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />Clinical Statement: <tspan
+   class="st3"
+   id="tspan12"
+   style="font-weight:normal;font-size:12.00012016px">Tubular breath sounds </tspan><tspan
+   class="st3"
+   id="tspan14"
+   style="font-weight:normal;font-size:12.00012016px">-</tspan><tspan
+   class="st3"
+   id="tspan16"
+   style="font-weight:normal;font-size:12.00012016px"> </tspan><tspan
+   class="st3"
+   id="tspan18"
+   style="font-weight:normal;font-size:12.00012016px">Assertion</tspan></text>
+		</g>
+		<g
+   id="shape2-8"
+   v:mID="2"
+   v:groupContext="shape"
+   transform="translate(234,-415.457)">
+			<title
+   id="title23">Round Corner Rectangle</title>
+			<desc
+   id="desc25">topic (ConditionTopic)</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="62.8977"
+   cy="591.034"
+   width="125.8"
+   height="41.9318" />
+			<path
+   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
+   class="st4"
+   id="path27"
+   inkscape:connector-curvature="0"
+   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="50.66"
+   y="589.83002"
+   class="st5"
+   v:langID="1033"
+   id="text31"
+   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />topic<v:newlineChar /><tspan
+   x="35.869999"
+   dy="1.35em"
+   class="st6"
+   id="tspan29"
+   style="font-size:7.99998808px">(ConditionTopic)</tspan></text>
+		</g>
+		<g
+   id="shape8-12"
+   v:mID="8"
+   v:groupContext="shape"
+   transform="translate(60.75,-405)">
+			<title
+   id="title34">Round Corner Rectangle.8</title>
+			<desc
+   id="desc36">CIMI Clinical Statement</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="62.8977"
+   cy="580.564"
+   width="125.8"
+   height="62.8721" />
+			<path
+   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 561.71 A 12.5793,12.5793 -180 0 0 113.22,549.13 H 12.58 A 12.5793,12.5793 -180 0 0 0,561.71 v 37.71 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
+   class="st7"
+   id="path38"
+   inkscape:connector-curvature="0"
+   style="fill:#fbd7bb;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="51.279999"
+   y="576.96002"
+   class="st2"
+   v:langID="1033"
+   id="text42"
+   style="font-weight:bold;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />CIMI<v:newlineChar /><tspan
+   x="17.6"
+   dy="1.2em"
+   class="st8"
+   id="tspan40"
+   style="font-size:12.00012016px">Clinical Statement</tspan></text>
+		</g>
+		<g
+   id="shape9-16"
+   v:mID="9"
+   v:groupContext="shape"
+   transform="rotate(-179.985,116.96905,393.7732)">
+			<title
+   id="title45">Multi-Line.11</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(5.2753623070739E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6366102274708):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9197965897228):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20043393006615):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714303356438):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.5707961685344):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571465851471):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.570796590563):32" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968543311):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 16.95 37.29 47.45"
+   class="st9"
+   id="path47"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+		<g
+   id="shape11-19"
+   v:mID="11"
+   v:groupContext="shape"
+   transform="translate(577.381,-334.56)">
+			<title
+   id="title50">Round Corner Rectangle.18</title>
+			<desc
+   id="desc52">Present</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="71.3097"
+   cy="591.034"
+   width="142.62"
+   height="41.9318" />
+			<path
+   d="m 14.26,612 h 114.1 a 14.2617,14.2617 -180 0 0 14.26,-14.26 V 584.33 A 14.2617,14.2617 -180 0 0 128.36,570.07 H 14.26 A 14.2617,14.2617 -180 0 0 0,584.33 v 13.41 A 14.2617,14.2617 -180 0 0 14.26,612 Z"
+   class="st10"
+   id="path54"
+   inkscape:connector-curvature="0"
+   style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="52.639999"
+   y="594.63"
+   class="st5"
+   v:langID="1033"
+   id="text56"
+   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />Present</text>
+		</g>
+		<g
+   id="shape22-22"
+   v:mID="22"
+   v:groupContext="shape"
+   transform="rotate(-120.392,15.177502,367.21976)">
+			<title
+   id="title59">Multi-Line.22</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(2.6688687080551E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.7003444974411):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9835303383945):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20169008932966):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714303692413):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.570796246729):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571466590616):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.5707964602383):32" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965936818):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 33.5 73.7 93.8"
+   class="st9"
+   id="path61"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+		<g
+   id="shape24-25"
+   v:mID="24"
+   v:groupContext="shape"
+   transform="translate(405,-415.457)">
+			<title
+   id="title64">Round Corner Rectangle.24</title>
+			<desc
+   id="desc66">topicCode</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="62.8977"
+   cy="591.034"
+   width="125.8"
+   height="41.9318" />
+			<path
+   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
+   class="st4"
+   id="path68"
+   inkscape:connector-curvature="0"
+   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="38.16"
+   y="594.63"
+   class="st5"
+   v:langID="1033"
+   id="text70"
+   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />topicCode</text>
+		</g>
+		<g
+   id="shape25-28"
+   v:mID="25"
+   v:groupContext="shape"
+   transform="translate(577.381,-415.457)">
+			<title
+   id="title73">Round Corner Rectangle.25</title>
+			<desc
+   id="desc75">Tubular breathing</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.19808237596069):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="71.3097"
+   cy="591.034"
+   width="142.62"
+   height="41.9318" />
+			<path
+   d="m 14.26,612 h 114.1 a 14.2617,14.2617 -180 0 0 14.26,-14.26 V 584.33 A 14.2617,14.2617 -180 0 0 128.36,570.07 H 14.26 A 14.2617,14.2617 -180 0 0 0,584.33 v 13.41 A 14.2617,14.2617 -180 0 0 14.26,612 Z"
+   class="st10"
+   id="path77"
+   inkscape:connector-curvature="0"
+   style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="27.52"
+   y="594.63"
+   class="st11"
+   v:langID="1033"
+   id="text79"
+   style="font-style:italic;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />Tubular breathing</text>
+		</g>
+		<g
+   id="shape26-31"
+   v:mID="26"
+   v:groupContext="shape"
+   transform="rotate(180,202.5,393.7885)">
+			<title
+   id="title82">Multi-Line.26</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(5.5379363689051E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6334981217034):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9166845364703):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.2003937965736):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714303488555):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.5707961606572):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571466142129):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.5707966036917):32" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 16.14 35.52 45.2"
+   class="st9"
+   id="path84"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+		<g
+   id="shape27-34"
+   v:mID="27"
+   v:groupContext="shape"
+   transform="rotate(180,288.6905,393.7885)">
+			<title
+   id="title87">Multi-Line.27</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(5.3738052834473E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6354079635057):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9185943454464):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20041819375374):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714301125893):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.5707961655811):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571460944272):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965954852):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 16.64 36.6 46.59"
+   class="st9"
+   id="path89"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+		<g
+   id="shape28-37"
+   v:mID="28"
+   v:groupContext="shape"
+   transform="translate(234,-334.56)">
+			<title
+   id="title92">Round Corner Rectangle.3</title>
+			<desc
+   id="desc94">context (PresenceContext)</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="62.8977"
+   cy="591.034"
+   width="125.8"
+   height="41.9318" />
+			<path
+   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
+   class="st4"
+   id="path96"
+   inkscape:connector-curvature="0"
+   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="44.439999"
+   y="589.83002"
+   class="st5"
+   v:langID="1033"
+   id="text100"
+   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
+   v:bulletSize="0.166667" /><v:tabList />context<v:newlineChar /><tspan
+   x="32.939999"
+   dy="1.35em"
+   class="st6"
+   id="tspan98"
+   style="font-size:7.99998808px">(PresenceContext)</tspan></text>
+		</g>
+		<g
+   id="shape31-41"
+   v:mID="31"
+   v:groupContext="shape"
+   transform="translate(405,-334.56)">
+			<title
+   id="title103">Round Corner Rectangle.14</title>
+			<desc
+   id="desc105">contextCode</desc>
+			<v:userDefs>
+				<v:ud
+   v:nameU="CTypeTopLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeTopRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotLeftSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CTypeBotRightSnip"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockHoriz"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockVert"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="CornerLockDiag"
+   v:prompt=""
+   v:val="VT0(0):5" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.15):1" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="TopLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="TopRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotLeftOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+				<v:ud
+   v:nameU="BotRightOffset"
+   v:prompt=""
+   v:val="VT0(0.17471590464537):1" />
+			</v:userDefs>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)" />
+			<v:textRect
+   cx="62.8977"
+   cy="591.034"
+   width="125.8"
+   height="41.9318" />
+			<path
+   d="M 12.58,612 H 113.22 A 12.5793,12.5793 -180 0 0 125.8,599.42 V 582.65 A 12.5793,12.5793 -180 0 0 113.22,570.07 H 12.58 A 12.5793,12.5793 -180 0 0 0,582.65 v 16.77 A 12.5793,12.5793 -180 0 0 12.58,612 Z"
+   class="st4"
+   id="path107"
+   inkscape:connector-curvature="0"
+   style="fill:#b7dde8;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+			<text
+   x="31.940001"
+   y="594.63"
+   class="st5"
+   v:langID="1033"
+   id="text109"
+   style="font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1" /><v:tabList />contextCode</text>
+		</g>
+		<g
+   id="shape34-44"
+   v:mID="34"
+   v:groupContext="shape"
+   transform="rotate(180,202.5,434.237)">
+			<title
+   id="title112">Multi-Line.34</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(5.5379363689051E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6334981217034):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9166845364703):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.2003937965736):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714303488555):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.5707961606572):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571466142129):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.5707966036917):32" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968805885):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 16.14 35.52 45.2"
+   class="st9"
+   id="path114"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+		<g
+   id="shape35-47"
+   v:mID="35"
+   v:groupContext="shape"
+   transform="rotate(180,288.6905,434.237)">
+			<title
+   id="title117">Multi-Line.35</title>
+			<v:userDefs>
+				<v:ud
+   v:nameU="VertexCount"
+   v:prompt=""
+   v:val="VT0(4):26" />
+				<v:ud
+   v:nameU="SegmentType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="DrawType"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="StartWidth"
+   v:prompt=""
+   v:val="VT0(0.15):0" />
+				<v:ud
+   v:nameU="EndWidth"
+   v:prompt=""
+   v:val="VT0(0.1):0" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(0.31445460881394):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6821373411359):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(8.5942318659433):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20124611797498):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.36115492854311):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.4583288317516):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.737773973763):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.4437657331855):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(1):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.8852509356088):32" />
+				<v:ud
+   v:nameU="visVersion"
+   v:prompt=""
+   v:val="VT0(15):26" />
+				<v:ud
+   v:nameU="LastAngle"
+   v:prompt=""
+   v:val="VT0(5.3738052834473E-07):32" />
+				<v:ud
+   v:nameU="CtrlAngle"
+   v:prompt=""
+   v:val="VT0(-1.6354079635057):32" />
+				<v:ud
+   v:nameU="ArrowFeatherAngle"
+   v:prompt=""
+   v:val="VT0(7.9185943454464):32" />
+				<v:ud
+   v:nameU="ArrowFeatherDist"
+   v:prompt=""
+   v:val="VT0(0.20041819375374):0" />
+				<v:ud
+   v:nameU="Joint1_2Pcnt"
+   v:prompt=""
+   v:val="VT0(0.35714301125893):26" />
+				<v:ud
+   v:nameU="Joint1_2Angle"
+   v:prompt=""
+   v:val="VT0(1.5707961655811):32" />
+				<v:ud
+   v:nameU="Joint2_3Pcnt"
+   v:prompt=""
+   v:val="VT0(0.78571460944272):26" />
+				<v:ud
+   v:nameU="Joint2_3Angle"
+   v:prompt=""
+   v:val="VT0(1.5707965954852):32" />
+				<v:ud
+   v:nameU="Joint3_4Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint3_4Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint4_5Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint4_5Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint5_6Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint5_6Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint6_7Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint6_7Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint7_8Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint7_8Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+				<v:ud
+   v:nameU="Joint8_9Pcnt"
+   v:prompt=""
+   v:val="VT0(0.99999996149963):26" />
+				<v:ud
+   v:nameU="Joint8_9Angle"
+   v:prompt=""
+   v:val="VT0(1.5707968641754):32" />
+			</v:userDefs>
+			<path
+   d="M 0,612 H 16.64 36.6 46.59"
+   class="st9"
+   id="path119"
+   inkscape:connector-curvature="0"
+   style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+		</g>
+	</g>
 </svg>
