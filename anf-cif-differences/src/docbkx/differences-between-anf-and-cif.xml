@@ -119,6 +119,9 @@
                 </imageobject>
             </mediaobject>
         </figure>
+
+        <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other."?><?oxy_comment_end?>
+
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice is quite
             clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic Blood
             Pressure' and result with a numeric quantity. In this case, the CIMI and ANF model are
@@ -242,7 +245,8 @@
             Assertion with a topic of indicated the breath sound, and a result indicating presence or absence. To decide
             which model is better, usually we ponder how the clinician thinks about the data, or how
             it will be collected, or how it will be queried.</para>
-        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!."?><?oxy_comment_end?>
+        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!.
+        I fixed this diagram for use in the CIF chapter, so you can grab it from there."?><?oxy_comment_end?>
         <figure>
             <title>Breath Sound - CIMI Assertion Representation</title>
             <mediaobject>
