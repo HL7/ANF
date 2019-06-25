@@ -10,14 +10,14 @@
       ad-hoc models. However, both treatment and analysis of clinical statements require consistency
       not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
       of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
-      analysis. Analysis Normal aims to minimize data quality challenges and provide common format
+      analysis. Analysis Normal aims to minimize data quality challenges and provide a common format
       with semantic clarity to allow for a meaningful secondary use of clinical data. </para>
     <para>ANF has beneficial implications on the following data quality categories based on a
       harmonized data quality framework by Khan et al: (Khan)</para>
     <para>
       <itemizedlist>
         <listitem>
-          <para><emphasis role="bold">Conformance</emphasis>: focuses on data quality features that
+          <para><emphasis role="bold">Conformance</emphasis>: Conformance focuses on data quality features that
             describe the compliance of the representation of data against internal or external
             formatting, relational, or computational definitions. ANF has explicit design structures
             for syntactic and structural constraints of clinical data, with specific formats and
@@ -37,6 +37,9 @@
                 recorded data elements are in agreement with additional structural constraints
                 imposed by the physical database structures that store data values. </para>
             </listitem>
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="ANF is abstracted above a relational database, in fact no relational database is required.  Any kind of datastore will work."?><?oxy_comment_end?>
+
             <listitem>
               <para>Computational Conformance: Computational conformance seeks to determine if
                 computations used to create derived values from existing variables yield the
@@ -70,6 +73,9 @@
                 that contain overlapping objects are combined. Data extraction errors, such as
                 incomplete relational join conditions, can also generate duplicate records.</para>
             </listitem>
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="Can we change database to data repository or something more generic"?><?oxy_comment_end?>
+
             <listitem>
               <para>Atemporal Plausibility: Atemporal Plausibility seeks to determine if observed
                 data values, distributions, or densities agree with local or “common” knowledge
@@ -153,6 +159,10 @@
       such a statement model are that (1) it can represent any clinician-specified observation
       accurately and precisely and (2) it can support automated query and retrieval operations
       correctly and efficiently.</para>
+
+<?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="This could be worded more clearly -> ANF aims to reduce the variability of how clinical data within the value sets and CDS rules are inputted into EHR systems and modeled/stored in data repositories."?><?oxy_comment_end?>
+
+
     <para>Importantly, ANF supports the ability to enable clinicians who use SCT to express
       observations that do not appear as pre-defined concepts in the terminology, thereby vastly
       increasing the expressive power of clinical terminologies. For example, a clinician could
@@ -210,12 +220,11 @@
   </section>
   <section>
     <title>Summary</title>
-    <para>In conclusion, Analysis Normal Form (ANF) presents a simple reusable way to approach
-      clinical statements specifically for data analysis. It reduces clinical statements to two
+    <para>In conclusion, Analysis Normal Form (ANF) presents a simple reproducible approach
+      to modeling clinical statements specifically for data analysis. It reduces clinical statements to two
       types, Performance of Action and Request for Action, both clinical statement types with
       topics. ANF is compatible with other work in statement representation models such as the CIMI
-      approach of CIF, which focuses more on how clinicians represent and enter data into electronic
-      health record systems, whereas ANF focuses on structuring that data in a way for CDS systems
+      Clinical Statement approach, with it's focus on more traditional complex structured trees, whereas ANF focuses on structuring that data in a way for CDS systems
       can extract that data in an unambiguous way.</para>
     <para><?oxy_comment_start author="bechang" timestamp="20190426T225012-0600" comment="Need Ioana to expand upon what would be next after successful balloting of this whitepaper in September 2019"?>We
       believe that ANF represents an approach to statement representation that needs to next be
