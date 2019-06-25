@@ -41,7 +41,7 @@
             for the parts of each data structure tree and other formalisms such as BMM/ADL and CEML 
             use a form of key-value pairing to genericise the property naming of the data structure tree. 
             But in all these cases, the fact remains that the resulting structure of the tree still remains different 
-            for different domains of clinical statements. Thus, computation and analysis requires a 
+            for different domains of clinical statements. Thus, computation and analysis of data instances, that conform to these models, requires a 
             prior understanding of the tree structure for each domain.
         </para>
         <para>
@@ -64,7 +64,7 @@
         <title>Modeling Style</title>
 
         <para>
-            Another variation that currently exists are the allowed design choices which can be made by model authors.
+            Another variation that currently exists is the allowed design choices which can be made by model authors.
             For example, a modeler may choose to model breath sounds, as 'breath sounds' with a coded result of 'rales',
             or as 'rales' with a result of 'present'.
             Currently, organiztions try to minimize this type of variation by
@@ -93,6 +93,10 @@
         <para>
             Analysis Normal Form can act as a transformation target to normalize
             these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135" xrefstyle="select: label"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
+        </para>
+
+        <para>
+            To be clear, the transformation discussed is a data instance to data instance transformation.  An example could be John Doe's Systolic Blood Pressure measurement taken on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to an ANF instance representing this same data.  This is not to be confused with a detailed clinical model transformation between two formalisms, such as an ISO DCM for Systolic Blood Pressure transformed to a FHIR profile for Systolic Blood Pressure.
         </para>
 
         <figure xml:id="transformationToANF_0135">
