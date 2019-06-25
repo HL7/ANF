@@ -13,7 +13,7 @@
    <description>Extensions to DocBook 5.1 to support structured requirements and editorial rules.</description>
    <dependencies>
       <dependency>
-         <groupId>${project.groupId}</groupId>
+         <groupId>org.hl7.anf-ballot-submission</groupId>
          <artifactId>doc-logging</artifactId>
          <version>${project.version}</version>
       </dependency>

@@ -51,7 +51,7 @@
                   </dependency>
                   <dependency>
                      <artifactId>doc-logging</artifactId>
-                     <groupId>${project.groupId}</groupId>
+                     <groupId>org.hl7.anf-ballot-submission</groupId>
                      <version>${project.version}</version>
                   </dependency>
                </dependencies>
