@@ -10,7 +10,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
  
   <!-- Introduction -->
-  <xi:include href="../../../introduction/src/docbkx/introduction.xml"
+  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
  <!-- Clinical Input Form -->

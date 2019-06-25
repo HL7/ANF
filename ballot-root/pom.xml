@@ -28,6 +28,12 @@
          <version>${project.version}</version>
          <type>pom</type>
       </dependency>
+      <dependency>
+         <groupId>org.hl7.anf-ballot-submission</groupId>
+         <artifactId>introduction</artifactId>
+         <version>${project.version}</version>
+         <type>pom</type>
+      </dependency>   
    </dependencies>
    <build>
       <plugins>
