@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>org.hl7.anf-ballot-submission</groupId>
             <artifactId>docbook-customization</artifactId>
             <classifier>docbook-customization</classifier>
             <version>${project.version}</version>
@@ -68,10 +68,10 @@
                             <includes>${docbook.root}</includes>
                             <draftMode>yes</draftMode>
                             <externalFOPConfiguration>
-                                ${project.build.directory}/extracted-dependencies/${project.groupId}/docbook-customization/fo/fop.xconf
+                                ${project.build.directory}/extracted-dependencies/org.hl7.anf-ballot-submission/docbook-customization/fo/fop.xconf
                             </externalFOPConfiguration>
                             <draftWatermarkImage>
-                                ${project.build.directory}/extracted-dependencies/${project.groupId}/docbook-customization/images/draft.svg
+                                ${project.build.directory}/extracted-dependencies/org.hl7.anf-ballot-submission/docbook-customization/images/draft.svg
                             </draftWatermarkImage>
                             <targetDirectory>${project.build.directory}/site/docbook</targetDirectory>
                         </configuration>
@@ -84,7 +84,7 @@
                     <paperType>USletter</paperType>
                     <fop1Extensions>1</fop1Extensions>
                     <foCustomization>
-                        ${project.build.directory}/extracted-dependencies/${project.groupId}/docbook-customization/fo/docbook.xsl
+                        ${project.build.directory}/extracted-dependencies/org.hl7.anf-ballot-submission/docbook-customization/fo/docbook.xsl
                     </foCustomization>
                     <customizationParameters>
                         <!-- additional XSLT parameters-->
