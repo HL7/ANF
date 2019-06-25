@@ -3,11 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.hl7.anf-ballot-submission</groupId>
+    <parent>
+        <groupId>org.hl7</groupId>
+        <artifactId>anf-ballot-submission</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <artifactId>references</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    
     <packaging>pom</packaging>
     <dependencies>
         <dependency>
@@ -81,11 +83,9 @@
                     <xincludeSupported>true</xincludeSupported>
                     <paperType>USletter</paperType>
                     <fop1Extensions>1</fop1Extensions>
-
                     <foCustomization>
                         ${project.build.directory}/extracted-dependencies/${project.groupId}/docbook-customization/fo/docbook.xsl
                     </foCustomization>
-
                     <customizationParameters>
                         <!-- additional XSLT parameters-->
                         <parameter>
