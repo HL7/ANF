@@ -36,10 +36,11 @@
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para><emphasis role="bold">Separation of Concerns: </emphasis>As defined by
-                    Wikipedia [1]: Separation of Concerns (SoC) is a design principle for separating
-                    a computer program into distinct sections, such that each section addresses a
-                    separate concern.
+                <para><emphasis role="bold"
+                        ><?oxy_comment_start author="Ioana" timestamp="20190626T124501-0400" comment="Replace this with a reference to to the intoduction.xml --&gt; Separation of Concerns "?>Separation
+                        of Concerns: </emphasis>As defined by Wikipedia [1]: Separation of Concerns
+                    (SoC) is a design principle for separating a computer program into distinct
+                    sections, such that each section addresses a separate concern.
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:
 &quot;Clearly, explained this way, this design principle is flawed because of regress to each individual symbol in the code.
 "?>A
@@ -61,7 +62,7 @@ With the drawback of hiding also certain assumptions that a potential re-user sh
                     be reused, as well as developed and updated independently. Of special value is
                     the ability to later improve or modify one section of code without having to
                     know the details of the other sections, and without having to make corresponding
-                    changes to those sections.</para>
+                    changes to those sections.</para><?oxy_comment_end?>
                 <para>The use of immutable objects (see principle B Immutability below) is a
                     technique that fulfills the Separation of Concerns principle.</para>
                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111123-0400" comment="Comment from WC:
@@ -433,11 +434,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </para>
         <editorial-rule>
             <title>Request for Action Topics</title>
-            <mathphrase>The topic follows a variety of possible patterns. For example: <itemizedlist>
+            <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?"?>The
+                topic follows a variety of possible patterns. For example: <itemizedlist>
                     <listitem>
-                        <para><emphasis>Administration of Medication</emphasis>: For requesting the
-                            administration of medication, the Topic will be built using the
-                            Administration of substance concept. If the narrative includes
+                        <para><emphasis>Administration of Medication</emphasis>:<?oxy_comment_end?>
+                            For requesting the administration of medication, the Topic will be built
+                            using the Administration of substance concept. If the narrative includes
                             information about a refill, that information is currently represented as
                             an Unstructure Circumstance. All Administration of substance concepts
                             will be refined with the substance and dose form and strength being
