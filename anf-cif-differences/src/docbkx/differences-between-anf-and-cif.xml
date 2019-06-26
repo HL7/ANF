@@ -69,29 +69,20 @@
                 <title>Pulse Rate - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115045-0500" comment="Could this one be represented without the device as a separate entity and contained in the topicCode?  Could be another example of multiple representations."?>
-                        <?oxy_comment_start author="jcoyle" timestamp="20190520T161717-0500" comment="I think you mean, could the device be pre-coordinated into the main concept, and the answer is yes in general, but a constraint model could disallow this by forcing the topicCode to not include the device" mid="1"?>
                         <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1"
-                            width="100%" contentdepth="100%"
-                        /><?oxy_comment_end?><?oxy_comment_end mid="1"?>
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
         </para>  
-        <para>
-            One implication of this is that the ANF is using two formalisms to represent the
-            clinical statement. First it uses the formalism that represents the ANF reference
-            model. Second, it uses SNOMED's syntax for post-coordinated SNOMED expressions. Tools
-            for authoring and analysis would be required to parse and process both syntaxes.
-        </para>
-        <para>
-            The CIMI Statement model in this example, on the other hand, would be fully represented using the formalism that represents the CIMI reference model.
-            <?oxy_comment_start author="timowilliams" timestamp="20190507T180110-0500" comment="I believe we can use one of the examples below to highlight this by representing the bodysite with and without the laterality.
-"?>This
-            model however allows for the possibility of multiple modeling style representations of
-            the same data that are then not easily queried for equivalence.
-            <?oxy_comment_end?>
-        </para>
+        <para>One implication of this is that the ANF is using two formalisms to represent the
+            clinical statement. First it uses the formalism that represents the ANF reference model.
+            Second, it uses SNOMED's syntax for post-coordinated SNOMED expressions. Tools for
+            authoring and analysis would be required to parse and process both syntaxes. </para>
+        <para>The CIMI Statement model in this example, on the other hand, would be fully
+            represented using the formalism that represents the CIMI reference model. This model
+            however allows for the possibility of multiple modeling style representations of the
+            same data that are then not easily queried for equivalence.  </para>
     </section>
     <section>
         <title>The Representation of Results</title>
@@ -313,14 +304,14 @@
             <title>Complex Systolic Blood Pressure Statement</title>
             <para>In this systolic blood pressure example the ANF model requires multiple statements
                 to accurately capture all parts of the narrative clinical statement. The ANF model
-                requires a clinical statement to be separated if  the clinical statement could stand
-                on its own.  For example, in the clinical statement "Systolic Blood Pressure 120
+                requires a clinical statement to be separated if the clinical statement could stand
+                on its own. For example, in the clinical statement "Systolic Blood Pressure 120
                 mmHg, taken on right brachial artery, using BP cuff adult size, patient in sitting
                 position for at least 5 minutes, urinated not more than 30 minutes prior to
                 measurement" The patient sitting position and urination parts of the statement are
-                recorded as separate associated clincal statements since they could both be recorded as
-                clincial statements on their own if they were not associated with the blood pressure
-                clinical statement.</para>
+                recorded as separate associated clinical statements since they could both be
+                recorded as clinical statements on their own if they were not associated with the
+                blood pressure clinical statement.</para>
             <para>The ANF model is much more expressive and is able to capture the timing
                 information for the position and urination that requires a separate precondition code to be created in the CIMI model.</para>
 
@@ -352,9 +343,8 @@
                 <title>Complex Systolic Blood Pressure - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190508T115144-0500" comment="Can this one have the device merged into the topicCode?  Can the Laterality be merged into the code by just using the right brachial artery concept? Or via a post-coordinated expression?  I think this could be an example of the same CIMI example being represented in multipe ways that would require multiple different queries to determine equivalence."?>
-                        <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
-                        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, this is possible, but  the detailed clinical model (the constraint model) could disallow this or even mandate it."?><?oxy_comment_end?>
+                        <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
