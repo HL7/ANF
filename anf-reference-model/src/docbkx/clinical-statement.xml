@@ -145,7 +145,8 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
         </table>
         
         <para><emphasis role="bold"><emphasis role="italic">Performances of
-                actions</emphasis></emphasis> can also be observational procedures, describing the
+                actions</emphasis></emphasis> are the results of the performance of Requests for
+            action as described above.  They can also be observational procedures, describing the
             absence or presence of clinical findings or disorders. In these cases, the observation
             action of the clinical findings and disorders is performed:</para>
         <itemizedlist spacing="compact">
@@ -212,7 +213,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112050-0400" comment="Comment from WC:
 Lack of distinction between the observation as an action and that what is observed leads to ambiguity about whether an absent observed finding is an assertion about whether, for example, a requested observation was not done, or whether it was done but there was nothing to observe.
 " id="t5z_trt_vhb"?>
-        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="9"?>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="10"?>
         <section>
             <title>Timing</title>
             <para><emphasis role="bold">WHEN </emphasis>a requested action should be performed or
@@ -229,9 +230,10 @@ Lack of distinction between the observation as an action and that what is observ
                         X….)</para>
                 </listitem>
                 <listitem>
-                    <para>Performance of action that hasn't taken place</para>
+                    <para>Performance of action that hasn't taken place (for example Requests that
+                        have been put on hold)</para>
                 </listitem>
-            </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="9"?>
+            </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="10"?>
             <para>Timing is described in more detail in the <link
                     xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             <para><emphasis>Examples:</emphasis></para>
@@ -331,12 +333,12 @@ Lack of distinction between the observation as an action and that what is observ
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
 Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
-" id="wsg_ttt_vhb"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb" mid="13"?>Cardiology
+" id="wsg_ttt_vhb" mid="14"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb"?>Cardiology
                             consultation with Chief Cardiologist</para>
                     </listitem>
                     <listitem>
                         <para>Smoking cessation education with patient and patient’s
-                            spouse<?oxy_comment_end mid="13"?><?oxy_comment_end?></para>
+                            spouse<?oxy_comment_end?><?oxy_comment_end mid="14"?></para>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -399,11 +401,11 @@ Here might be situations under which the limitations of terminology models may c
                 <title>requestedResult</title>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
 Would it not be better to call this then ‘request goal’?
-" id="dz2_qyn_thb" mid="18"?>
+" id="dz2_qyn_thb" mid="19"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb"?>
                 <para>A requested result is a patient goal to be achieved. It can include specified
                     or quantified details of an action that is to be performed, such as '3 times
-                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="18"?>requestedResults are
+                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="19"?>requestedResults are
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
@@ -417,10 +419,10 @@ Would it not be better to call this then ‘request goal’?
                         <?oxy_comment_start author="kmaulden" timestamp="20190418T112144-0400" comment="Comment from WC:
 This is an example of having an unclear topic. Is it the (implicit) request that such tablets are taken, or is it such tablets?
 " id="wy1_p5t_vhb"?>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="20"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="21"?>
                         <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one
                                 tablet</emphasis> oral daily 4
-                        times</para><?oxy_comment_end?><?oxy_comment_end mid="20"?>
+                        times</para><?oxy_comment_end?><?oxy_comment_end mid="21"?>
                     </listitem>
                 </itemizedlist>
             </section>

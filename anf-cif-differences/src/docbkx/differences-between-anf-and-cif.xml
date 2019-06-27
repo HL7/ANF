@@ -308,7 +308,7 @@
                 on its own. For example, in the clinical statement "Systolic Blood Pressure 120
                 mmHg, taken on right brachial artery, using BP cuff adult size, patient in sitting
                 position for at least 5 minutes, urinated not more than 30 minutes prior to
-                measurement" The patient sitting position and urination parts of the statement are
+                measurement", the patient sitting position and urination parts of the statement are
                 recorded as separate associated clinical statements since they could both be
                 recorded as clinical statements on their own if they were not associated with the
                 blood pressure clinical statement.</para>

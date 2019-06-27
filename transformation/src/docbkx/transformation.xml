@@ -554,9 +554,10 @@
         <section>
             <title>Advantages and Limitations</title>
 
-            <para>
-                MDMI is a model driven approach. Having a formal model, the open source project has been able to develop tooling based on the MDMI model as well as leverage other modeling efforts. Examples are Information Models such as FHIR and the FHIM using the model driven MDHT tooling and Ontological Models such as ANF / SOLOR.
-            </para>
+            <para> MDMI is a model driven approach. Having a formal model, the open source project
+                has been able to develop tooling based on the MDMI model as well as leverage other
+                modeling efforts. Examples are Information Models such as FHIR and the FHIM using
+                the model driven MDHT tooling and Ontological Models such as ANF / Solor. </para>
 
             <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
