@@ -2,7 +2,7 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space."?><?oxy_comment_end?>
+    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
     <title>ANF Clinical Statements </title>
     <para> </para>
     <informaltable>
@@ -70,9 +70,9 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="2"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="4"?><?oxy_comment_end mid="4"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="5"?><?oxy_comment_end mid="5"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="6"?><?oxy_comment_end mid="6"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="4"?><?oxy_comment_end mid="4"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="5"?><?oxy_comment_end mid="5"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -372,7 +372,7 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
                     using a adult sized cuff, but also includes two pre-requistes that are
-                    represented as separate associated ANF Statements.  In the Associated Statements
+                    represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
                     lowerBound.</para>
                 <figure>
@@ -487,7 +487,8 @@ Doing family history, donor statements using subject of information is now the n
             <section>
                 <title>Normal range information or Health risk specified</title>
                 <figure>
-                    <title>Systolic Blood Pressure Observation Result Clinical Statement Example</title>
+                    <title>Systolic Blood Pressure Observation Result Clinical Statement
+                        Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/bp_nr_hr_anf.svg" format="SVG" scalefit="1"
@@ -515,22 +516,18 @@ Doing family history, donor statements using subject of information is now the n
                 </listitem>
                 <listitem>
                     <para>Request for X-ray chest to evaluate for heart failure</para>
-                    
                 </listitem>
                 <listitem>
                     <para>Cardiology referral</para>
-                    
                 </listitem>
                 <listitem>
                     <para>Ribavirin 200 mg capsule oral, take 2 capsules every morning</para>
-                    
                 </listitem>
                 <listitem>
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T110448-0400" comment="Comment from WC:
 The distinction with a performance clinical statement concerning giving him educational materials is tiny.
 "?>
                     <para>Advised to participate in tobacco cessation counseling once a week.</para>
-                    
                 </listitem><?oxy_comment_end?>
             </itemizedlist>
             <section>
@@ -542,17 +539,18 @@ The distinction with a performance clinical statement concerning giving him educ
                         Action ANF Statement. Therefore, the Measure used in the Timing will be for
                         a future time. </mathphrase>
                 </editorial-rule>
-                <para></para>
+                <para/>
                 <editorial-rule>
                     <title>Laboratory Procedure Topic</title>
                     <mathphrase>For Laboratory procedures, the Topic will be built using an
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
-                </editorial-rule><editorial-rule>
+                </editorial-rule>
+                <editorial-rule>
                     <title>Priority</title>
-                    <mathphrase>Priority is used to represent the priority for which the
-                        request is to be carried out. By default a Request will be
-                        considered "routine" unless otherwise specified.</mathphrase>
+                    <mathphrase>Priority is used to represent the priority for which the request is
+                        to be carried out. By default a Request will be considered "routine" unless
+                        otherwise specified.</mathphrase>
                 </editorial-rule>
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time"?><?oxy_comment_end?>
                 <figure>
@@ -564,13 +562,13 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para></para>
+                <para/>
                 <editorial-rule>
                     <title>Imaging Procedure Topic</title>
                     <mathphrase>For Imaging procedures, the Topic will be built using an Imaging
                         Procedure concept. These concepts will be further refined with a Method,
-                        Procedure site - Direct and (if appropriate) a laterality for those
-                        sites that are lateralizable.</mathphrase>
+                        Procedure site - Direct and (if appropriate) a laterality for those sites
+                        that are lateralizable.</mathphrase>
                 </editorial-rule>
                 <figure>
                     <title>X-Ray Request Clinical Statement Example</title>
@@ -581,61 +579,61 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para></para>
+                <para/>
                 <figure>
                     <title>Referral Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/referral_anf.svg" format="SVG"
-                                scalefit="1" width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/referral_anf.svg" format="SVG" scalefit="1"
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para></para>
+                <para/>
                 <editorial-rule>
                     <title>Administration of Medication Topic - Request for Action</title>
-                    <mathphrase>For requesting the administration of medication, the Topic will
-                        be built using the Administration of substance concept. If the narrative
+                    <mathphrase>For requesting the administration of medication, the Topic will be
+                        built using the Administration of substance concept. If the narrative
                         includes information about a refill, that information is currently
-                        represented as an Unstructure Circumstance. All Administration of
-                        substance concepts will be refined with the substance and dose form and
-                        strength being requested. If Route of administration exists, then it
-                        will also be added.</mathphrase>
+                        represented as an Unstructure Circumstance. All Administration of substance
+                        concepts will be refined with the substance and dose form and strength being
+                        requested. If Route of administration exists, then it will also be
+                        added.</mathphrase>
                 </editorial-rule>
                 <editorial-rule>
                     <title>Repetition</title>
-                    <mathphrase>Repetition is used to represent when an action is requested for
-                        more than a single occurrence. Repetition is an optional component for a
+                    <mathphrase>Repetition is used to represent when an action is requested for more
+                        than a single occurrence. Repetition is an optional component for a
                         RequestCircumstance. A Request Component contains five Measures that are
                         used to further define the parameters of the Repetition: <itemizedlist>
                             <listitem>
                                 <para><emphasis>periodDuration:</emphasis>This required field is
-                                    used to represent how long a repetition should persist. If
-                                    it is not specified, a default value of [0,inf] will be
-                                    used. e.g. for 3 weeks</para>
+                                    used to represent how long a repetition should persist. If it is
+                                    not specified, a default value of [0,inf] will be used. e.g. for
+                                    3 weeks</para>
                             </listitem>
                             <listitem>
-                                <para><emphasis>periodStart:</emphasis> This required field is
-                                    used to represent when a repeated action should begin. If it
-                                    is not specified, a default value of [0,inf] will be used.
-                                    e.g. NOW</para>
+                                <para><emphasis>periodStart:</emphasis> This required field is used
+                                    to represent when a repeated action should begin. If it is not
+                                    specified, a default value of [0,inf] will be used. e.g.
+                                    NOW</para>
                             </listitem>
                             <listitem>
-                                <para><emphasis>eventSeparation:</emphasis>This required field
-                                    is used to represent how long between actions. If it is not
-                                    specified, a default value of [0,inf] will be used. e.g. for
-                                    2 weeks</para>
+                                <para><emphasis>eventSeparation:</emphasis>This required field is
+                                    used to represent how long between actions. If it is not
+                                    specified, a default value of [0,inf] will be used. e.g. for 2
+                                    weeks</para>
                             </listitem>
                             <listitem>
                                 <para><emphasis>eventFrequency:</emphasis>This required field is
-                                    used to represent how often the action should occur. If it
-                                    is not specified, a default value of [0,inf] will be used.
-                                    e.g. 3 times per week</para>
+                                    used to represent how often the action should occur. If it is
+                                    not specified, a default value of [0,inf] will be used. e.g. 3
+                                    times per week</para>
                             </listitem>
                             <listitem>
-                                <para><emphasis>eventDuration:</emphasis>This is an optional
-                                    field that is used to represent how long every action should
-                                    last. </para>
+                                <para><emphasis>eventDuration:</emphasis>This is an optional field
+                                    that is used to represent how long every action should last.
+                                </para>
                             </listitem>
                         </itemizedlist>
                     </mathphrase>
@@ -646,8 +644,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T164552-0500" comment="Verify Repetition"?>
                             <imagedata fileref="images/meds_request_anf.svg" format="SVG"
-                                scalefit="1" width="100%" contentdepth="100%"
-                            /><?oxy_comment_end?>
+                                scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -663,8 +660,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para></para>
-                
+                <para/>
             </section>
         </section>
     </section>
