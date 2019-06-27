@@ -75,10 +75,10 @@
 
 	<g
    v:mID="13"
-   v:index="26"
+   v:index="25"
    v:groupContext="foregroundPage"
    id="g110"
-   transform="matrix(1.0249316,0,0,1.6464314,-1.3104216,-34.871409)">
+   transform="matrix(1.0291102,0,0,1.6015361,-1.5378946,-32.448888)">
 		<title
    id="title4">systolic_bp_anf2</title>
 		<v:pageProperties
@@ -528,14 +528,15 @@
    inkscape:connector-curvature="0"
    style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="4"
+   x="65.379997"
    y="571.81"
    class="st9"
    v:langID="1033"
    id="text60"
    style="font-style:italic;font-size:12.00012016px;font-family:Calibri;fill:#000000"><v:paragraph
+   v:horizAlign="1"
    v:bulletSize="0.166667" /><v:tabList />[Observation procedure]-<v:newlineChar /><tspan
-   x="4"
+   x="39.77"
    dy="1.2em"
    class="st7"
    id="tspan58"
