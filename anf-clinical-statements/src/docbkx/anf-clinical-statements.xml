@@ -450,9 +450,17 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
+                <para>In the medication example above a purpose is specified using Pain control
+                    which has a focus of pain.  The Topic is built using Administration of substance
+                    with a Direct substance specifying the pharmaceutical product and a Route of
+                    Administration specifying Oral.</para>
             </section>
             <section>
                 <title>Provision of educational materials</title>
+                <editorial-rule>
+                    <title>Topic for All Other Procedures</title>
+                    <mathphrase>Any other action that was performed would be represented by a Procedure concept with any of the approved terminology procedure attributes applied.</mathphrase>
+                </editorial-rule>
                 <figure>
                     <title>Education Provided Clinical Statement Example</title>
                     <mediaobject>
@@ -462,6 +470,8 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
+                <para>In this example, the concept Provision of educational material is used with a
+                    Has focus of Diabetes mellitus.  </para>
             </section>
             <section>
                 <title>Other states or specific characteristics that are clinically relevant</title>
@@ -496,8 +506,9 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>Systolic Blood Pressure for adults has a normal range of 90-120. Systolic
-                    Blood pressure above 180 would represent a critical health risk.</para>
+                <para>Systolic Blood Pressure for adults has a normal range of 90-120 and is
+                    represented in the normalRange. Systolic Blood pressure above 180 would
+                    represent a critical health risk and is represented in the healthRisk.</para>
             </section>
         </section>
         <section>
@@ -532,14 +543,12 @@ The distinction with a performance clinical statement concerning giving him educ
             </itemizedlist>
             <section>
                 <title>Request Examples</title>
-                <para/>
                 <editorial-rule>
                     <title>Timing - Request for Action</title>
                     <mathphrase>The Timing will always represent a future time in a Request for
                         Action ANF Statement. Therefore, the Measure used in the Timing will be for
                         a future time. </mathphrase>
                 </editorial-rule>
-                <para/>
                 <editorial-rule>
                     <title>Laboratory Procedure Topic</title>
                     <mathphrase>For Laboratory procedures, the Topic will be built using an
@@ -562,7 +571,9 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para/>
+                <para>The Laboratory Request example above show how the topic is built using a
+                    laboratory procedure concept, with no refinements in this case.  It also has a
+                    Priority of Routine as stated in the narrative description.</para>
                 <editorial-rule>
                     <title>Imaging Procedure Topic</title>
                     <mathphrase>For Imaging procedures, the Topic will be built using an Imaging
@@ -579,7 +590,8 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para/>
+                <para>The Imaging Request example above is built using a subtype of image procedure
+                    concept and includes a Purpose to record why the procedure is being done.</para>
                 <figure>
                     <title>Referral Clinical Statement Example</title>
                     <mediaobject>
@@ -660,7 +672,8 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para/>
+                <para>In this example we see Repetition used only to define the eventFrequency while
+                    the other Repetition information is defaulted to [0,inf] Unit of time.</para>
             </section>
         </section>
     </section>
