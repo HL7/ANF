@@ -4,11 +4,14 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Measure and Result</title>
-    <para>A unique aspect of the ANF Model is that all measures and results are numeric ranges. The
-        hierarchy of classes to represent these is shown in the below, “Result Hierarchy”.
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  " flag="done"?>An
+    <para><?oxy_comment_start author="Ioana" timestamp="20190628T172945-0400" comment="Suggestion: &quot;A defining aspect&quot;"?>A
+        unique aspect<?oxy_comment_end?> of the ANF Model is that all measures and results
+        <?oxy_comment_start author="Ioana" timestamp="20190628T121024-0400" comment="&quot;are&quot; --&gt; &quot;could be either discrete values or ranges&quot;"?>are<?oxy_comment_end?>
+        numeric ranges. The hierarchy of classes to represent these is shown in the below, “Result
+        Hierarchy”.
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T112441-0400" comment="KC: Need to explain this more. User would say, if can’t have coded results, so what good is it. In fact we can have coded results, but we put them in the topic and otherwise indicate “present”. Use some examples, where the result is “present”. Possibly the eye color example. If in ANF we allow more then one representation of e.g. eye color, we will have data retrieval problems. Users can still enter the eye color in the usual way, e.g. picking blue from a dropdown, but the data has to be transformed. Other examples could be cardiac rhythms.  " flag="done"?><?oxy_comment_start author="Ioana" timestamp="20190628T121211-0400" comment="This is a little misleading: we&apos;re at this point describing &quot;interval&quot; and it does not have any units or semantic meaning."?>An
         important point to notice in this class diagram is that the ANF Model does not allow coded
-        results, only a numeric interval is possible. <?oxy_comment_end?></para>
+        results, only a numeric interval is possible<?oxy_comment_end?>. <?oxy_comment_end?></para>
     <figure>
         <title>Result Hierarchy</title>
         <mediaobject>
@@ -56,7 +59,8 @@
         <para>An interval value data type (or “interval value”) formally represents a numeric
             interval between two nonnegative real numbers. The interval can be open or closed.
             Examples of interval values are:</para>
-        <para><emphasis>[5,5], [0,10), (0,inf], [0,0]</emphasis></para>
+        <para><?oxy_comment_start author="Ioana" timestamp="20190628T121330-0400" comment="Interval has both a structure and a grammar. Should we pick one?"?><emphasis>[5,5],
+                [0,10), (0,inf], [0,0]</emphasis></para>
         <para>The formal syntax of interval values is represented by the following grammar:</para>
         <para><emphasis>Interval :: [ ‘[‘ | ‘(‘ ] N1 ‘,’ N2 [ ‘]’ | ‘)’ ]</emphasis></para>
         <para><emphasis>N1 :: Non-Negative Real Number</emphasis></para>
@@ -65,11 +69,11 @@
         <para><emphasis>‘[‘ and ‘]’ : Inclusive boundary (i.e. >= and &lt;= )</emphasis></para>
         <para><emphasis>‘(‘ and ‘)’ : Exclusive boundary (i.e., > and &lt; )</emphasis></para>
         <para><emphasis>inf: infinity, is > every Non-Negative Real Number</emphasis></para>
-        <para><emphasis>N1 &lt;= N2</emphasis></para>
+        <para><emphasis>N1 &lt;= N2</emphasis><?oxy_comment_end?></para>
         <para>The interval value data type provides a single way to represent both “presence” values
-            and numeric values for a phenomenon. In general, the interval value represents the numeric range within
-            which the observed value of a phenomenon occurs. Note that this formalism allows both exact values and
-            ranges of values to be expressed.</para>
+            and numeric values for a phenomenon. In general, the interval value represents the
+            numeric range within which the observed value of a phenomenon occurs. Note that this
+            formalism allows both exact values and ranges of values to be expressed.</para>
         <para>In the special case that the beginning and end point of an interval are the same
             number, n, the meaning is that the value of the phenomenon is exactly n.</para>
         <para><emphasis>[5,5] : exactly 5 ; [0,0] : exactly 0</emphasis></para>
@@ -79,7 +83,7 @@
         <para><emphasis>(0,inf] : > 0 ; [10,inf] : >= 10</emphasis></para>
         <para>The interval value also represents whether a phenomenon is “present”, “absent”, or
             “indeterminate”. Specifically, any interval value that includes only numbers that are >
-            0 also denotes the value “present”.  Any interval value that includes only the number 0,
+            0 also denotes the value “present”. Any interval value that includes only the number 0,
             itself, denotes the value “absent”. Any interval value that includes both the number 0
             and at least one number > 0 denotes the value “indeterminate”. Lastly, there are two
             interval values that explicitly denote “present” and “absent,” respectively. These value
@@ -96,8 +100,9 @@
                     <thead>
                         <row>
                             <entry>Topic</entry>
+                            <?oxy_comment_start author="Ioana" timestamp="20190628T121502-0400" comment="Is this table supposed to tell us how to normalize the resutls of clinical statements to ANF? If yes, I would recommend moving this to the &quot;Normalization/Transformation&quot;  chapter."?>
                             <entry>Non-Interval Value</entry>
-                            <entry>Interval Value</entry>
+                            <entry>Interval Value</entry><?oxy_comment_end?>
                             <entry>Definition</entry>
                         </row>
                     </thead>
@@ -153,8 +158,9 @@
                         <row>
                             <entry>Daily Cigarette Use</entry>
                             <entry>n/a</entry>
+                            <?oxy_comment_start author="Ioana" timestamp="20190628T174122-0400" comment="The “Interval value examples” table seems to provide guidance to normalize “discrete”  or “intervals” results” to “interval”"?>
                             <entry>[10,30]</entry>
-                            <entry>Present, >-10, &lt;=30</entry>
+                            <entry>Present, >-10, &lt;=30</entry><?oxy_comment_end?>
                         </row>
                         <row>
                             <entry>n/a</entry>
@@ -178,7 +184,8 @@
     <section>
         <title><?oxy_comment_start author="kmaulden" timestamp="20190418T112454-0400" comment="Comment from WC:
 Don’t use names for statements or building blocks thereof that are synonymous with what such statements or building blocks describe. That is typical OOD and HL7-style nonsense. What is depicted in Figure 1 is surely not a measure but a building block to document a measure.
-"?>Measure<?oxy_comment_end?>
+"?><?oxy_comment_start author="Ioana" timestamp="20190628T122103-0400" comment="Recommendation: refactor Measure to use &quot;interval&quot;
+(Measure.interval.lowerBound) rather than inheriting. Inheritance implies a &quot;is a&quot; generalization.  This encapsulated Interval and even allows us to show examples of &quot;timing&quot; interval, &quot;measurement&quot; interval, &quot;assessment&quot;, &quot;question&quot;, etc." mid="8"?>Measure<?oxy_comment_end?><?oxy_comment_end mid="8"?>
         </title>
         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112507-0400" comment="Comment from WC:
 Also HL7-ese. A measurable element of a clinical statement would be its length, the language it is written in, etc. That is for sure not what is meant here. Rename perhaps as ‘Measure BB’?
@@ -187,79 +194,76 @@ Also HL7-ese. A measurable element of a clinical statement would be its length, 
             results of test procedures, time periods, frequencies of repetitions for procedures or
             medication administrations. Note that the inherited attributes from the Interval class
             will be discussed here.</para>
-        
-        
         <figure>
             <title>Measure Hierarchy</title>
             <mediaobject>
                 <imageobject>
-                    
-                    <imagedata fileref="images/measure_hierarchy.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/measure_hierarchy.svg" format="SVG" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
-    
-    <section>
-        <title>lowerBound</title>
-        <para>lowerBound represents the lower bound of a
-                <?oxy_comment_start author="kmaulden" timestamp="20190418T112522-0400" comment="Comment from WC:
-This BB lets me believe that ‘measurable’ is perhaps not the best description. Quantity? Some quantities are not measurable. Does counting counts as measuring, as in ‘5 to 10 tablets’?
-"?>measurable
-                element<?oxy_comment_end?>. This can be the lower bound of a range: For the “Tumor
-                greater than 1 cm but less than 4 cm” the lower bound is 1. For a test result, which
-                is not a range, lower and upper bound are the same. Example: systolic blood pressure
-                110 mmHg. The lower and upper bound are both 110 mmHg.</para>
+        <section>
+            <title>lowerBound</title>
+            <para>lowerBound represents the lower bound of a measurable element. This can be the
+                lower bound of a range: For the “Tumor greater than 1 cm but less than 4 cm” the
+                lower bound is 1. For a test result, which is not a range, lower and upper bound are
+                the same. Example: systolic blood pressure 110 mmHg. The lower and upper bound are
+                both 110 mmHg.</para>
+        </section>
+        <section>
+            <title>upperBound</title>
+            <para>upperBound represents the upper bound of a measurable element. This can be the
+                upper boundary of a range: For the “Tumor greater than 1 cm but less than 4 cm” the
+                upper bound is 4. In cases, where the measurable element does not represent a range,
+                upper and lower bound have the same value.</para>
+        </section>
+        <section>
+            <title>includeLowerBound</title>
+            <para>includeLowerBound states whether the lower bound in the interval is included in
+                the interval. In the tumor size example above, the lower bound would not be
+                included. The lower range size of 1cm is not included.</para>
+            <para>The inclusion or exclusion of lower bound is needed to express measurable elements
+                which include relative properties, such as “greater than”, “less than” and others.
+                Example: “Persistent cough for more than 10 days”. If a lower bound of “10” is
+                chosen, it would not be included, because the example states: <emphasis
+                    role="underline">more</emphasis> than 10 days. Choosing “11” would require to
+                include the lower bound.</para>
+        </section>
+        <section>
+            <title>includeUpperBound</title>
+            <para>includeUpperBound states whether the upper bound in the interval is included in
+                the interval. Similar to lower bound, where the measurable element has relative
+                properties, the same rules apply. If the upper bound of a measure is not defined,
+                e.g. “blood glucose measurement daily for at least 2 weeks”, the upper bound will be
+                captured as “inf” (infinite). Infinite as an upper bound is never included.</para>
+        </section>
+        <section>
+            <title>Resolution</title>
+            <para>The Resolution within a measure defines the possible or allowed increments in
+                which the measured “thing” can be counted. In the example of the systolic blood
+                pressure of 120 mmHg, the resolution is “1”, because the blood pressure measurement
+                result can be counted in 1 mmHg increments. The Resolution is not always defined or
+                known. Example: a clinical statement like “History of breast cancer” implies an
+                undefined amount of time in the past and it is not stated, if it is years, months,
+                etc.</para>
+        </section>
+        <section>
+            <title>measureSemantic</title>
+            <para>Measure semantic represents
+                <?oxy_comment_start author="Ioana" timestamp="20190628T122432-0400" comment="Is that the only meaning? If &apos;yes&apos;, let&apos;s call it &quot;unit of measure&quot;. Otherwise if it may be &quot;patient refused to answer&quot; for a &quot;null&quot; questionnaire answer."?>the
+                unit of measure<?oxy_comment_end?>. It is described using a logical expression. In
+                systolic blood pressure, the unit of measure is millimeters of mercury, and thus the
+                measure semantic is a SNOMED CT concept: 259018001 |Millimeter of mercury (qualifier
+                value). For blood glucose measurement daily for 2 weeks, the measure semantic would
+                be “258705008 |week (qualifier value)”. In cases where the measure pertains to
+                something relative to the statement time, as in the example above of “History of
+                breast cancer” the standardized time/date format ISO 8601 is used for the measure
+                semantic: ISO 8601 prior to statement time.</para>
+        </section>
     </section>
     <section>
-        <title>upperBound</title>
-        <para>upperBound represents the upper bound of a measurable element. This can be the upper
-                boundary of a range: For the “Tumor greater than 1 cm but less than 4 cm” the upper
-                bound is 4. In cases, where the measurable element does not represent a range, upper
-                and lower bound have the same value.</para>
-    </section>
-    <section>
-        <title>includeLowerBound</title>
-        <para>includeLowerBound states whether the lower bound in the interval is included in the
-                interval. In the tumor size example above, the lower bound would not be included.
-                The lower range size of 1cm is not included.</para>
-        <para>The inclusion or exclusion of lower bound is needed to express measurable elements
-            which include relative properties, such as “greater than”, “less than” and others.
-            Example: “Persistent cough for more than 10 days”. If a lower bound of “10” is chosen,
-            it would not be included, because the example states: <emphasis role="underline"
-                >more</emphasis> than 10 days. Choosing “11” would require to include the lower
-            bound.</para>
-    </section>
-    <section>
-        <title>includeUpperBound</title>
-        <para>includeUpperBound states whether the upper bound in the interval is included in the
-            interval. Similar to lower bound, where the measurable element has relative properties,
-            the same rules apply. If the upper bound of a measure is not defined, e.g. “blood
-            glucose measurement daily for at least 2 weeks”, the upper bound will be captured as
-            “inf” (infinite). Infinite as an upper bound is never included.</para>
-    </section>
-    <section>
-        <title>Resolution</title>
-        <para>The Resolution within a measure defines the possible or allowed increments in which
-            the measured “thing” can be counted. In the example of the systolic blood pressure of
-            120 mmHg, the resolution is “1”, because the blood pressure measurement result can be
-            counted in 1 mmHg increments. The Resolution is not always defined or known. Example: a
-            clinical statement like “History of breast cancer” implies an undefined amount of time
-            in the past and it is not stated, if it is years, months, etc.</para>
-    </section>
-    <section>
-        <title>measureSemantic</title>
-        <para>Measure semantic represents the unit of measure. It is described using a logical
-            expression. In systolic blood pressure, the unit of measure is millimeters of mercury,
-            and thus the measure semantic is a SNOMED CT concept: 259018001 |Millimeter of mercury
-            (qualifier value). For blood glucose measurement daily for 2 weeks, the measure semantic
-            would be “258705008 |week (qualifier value)”. In cases where the measure pertains to
-            something relative to the statement time, as in the example above of “History of breast
-            cancer” the standardized time/date format ISO 8601 is used for the measure semantic: ISO
-            8601 prior to statement time.</para>
-    </section>
-    </section>
-    <section>
-        <title>InterventionResult</title>
+        <title><?oxy_comment_start author="Ioana" timestamp="20190628T122712-0400" comment="Recommendation: Use composition to create the InterventionResult similar ot the ObservationResult."?>InterventionResult<?oxy_comment_end?></title>
         <?oxy_comment_start author="timowilliams" timestamp="20190502T170054-0500" comment="Would this be used to represent the values for procedure context (scheduled, done, did not attend, etc)?" id="kr1_kty_thb" flag="done" mid="6"?>
         <?oxy_comment_start author="timowilliams" timestamp="20190517T095907-0500" comment="yes" parentID="kr1_kty_thb" flag="done"?>
         <para>InterventionResult is a result, thus inheriting all the attributes of Result, and adds
@@ -289,7 +293,9 @@ This BB lets me believe that ‘measurable’ is perhaps not the best descriptio
             <title>Observation Result</title>         
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/observation_result.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                    <?oxy_comment_start author="Ioana" timestamp="20190628T123202-0400" comment="Question: should the &quot;normalRange&quot; be a Measure as well - to specify a unit of measure? We assume that the normal range refers to the same units as the measure but can we be sure in all instances?"?>
+                    <imagedata fileref="images/observation_result.svg" format="SVG" scalefit="1"
+                        width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>

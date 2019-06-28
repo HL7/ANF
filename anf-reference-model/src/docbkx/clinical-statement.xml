@@ -17,21 +17,25 @@
         information regarding the 'topic'.</para>
     <section>
         <title>statementTime</title>
-        <para>statementTime describes when the statement was documented in ISO 8601 Date/Time
-            Standard Format</para>
-        <para><emphasis>Example: </emphasis>[2007-04-05T14:30Z, 2007-04-05T15:00Z]±P5M</para>
+        <para><?oxy_comment_start author="Ioana" timestamp="20190627T173703-0400" comment="If the statement time is of type &quot;Measure&quot;, then the example should not be an ISO 8601 formatted string but an instance of Measure."?>statementTime
+            describes when the statement was documented in ISO 8601 Date/Time Standard Format</para>
+        <para><emphasis>Example: </emphasis>[2007-04-05T14:30Z,
+        2007-04-05T15:00Z]±P5M</para><?oxy_comment_end?>
     </section>
     <section>
         <title>statementId</title>
+        <?oxy_comment_start author="Ioana" timestamp="20190628T114439-0400" comment="Logical identifiers have an issuing authority/namespace. For a logical model, the a uuid may be too specific. "?>
         <para>statementId is a unique identifier for the statement represented by a uuid.</para>
-        <para><emphasis>Example: </emphasis>a3b46565- f8cd-4354-b4b6-3dff42d33496</para>
+        <para><emphasis>Example: </emphasis>a3b46565-
+        f8cd-4354-b4b6-3dff42d33496</para><?oxy_comment_end?>
     </section>
     <section>
         <title>subjectOfRecordId</title>
-        <para>A patient's clinical record will contain many statements. The subjectOfRecordId is a
-            uuid which identifies the patient clinical record in which this statement is contained.
-            If this statement is in John Doe's patient record, then John Doe is the subject of
-            record and the subjectOfRecordId is a uuid that identifies John Doe. </para>
+        <para><?oxy_comment_start author="Ioana" timestamp="20190627T173802-0400" comment="A &quot;reference&quot; may not be a uuid. For a logical model, it&apos;s better to avoid specifying a primitive type."?>A
+            patient's clinical record will contain many statements. The subjectOfRecordId is a uuid
+            which identifies the patient clinical record in which this statement is contained. If
+            this statement is in John Doe's patient record, then John Doe is the subject of record
+            and the subjectOfRecordId is a uuid that identifies John Doe. </para><?oxy_comment_end?>
     </section>
     <section>
         <title>statementAuthor</title>
@@ -44,50 +48,54 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>statementAuthor is an optional list of authoring participants. Either a Participant or
-            its subclass IdentifiedParticipant can be used. Participant includes a coded <emphasis
-                role="italic">participantRole </emphasis>for values such as 'Healthcare
-            professional', 'Nurse', or 'Requestor'. IdentifiedParticipant adds the additional
-            attribute <emphasis role="italic">participantId </emphasis>which is a uuid to uniquely
-            identify the participant.</para>
+        <para><?oxy_comment_start author="Ioana" timestamp="20190627T173847-0400" comment="We can simplify this by specifying the &quot;reference&quot; - similar to the referene to the subject of the record."?>statementAuthor
+            is an optional list of authoring participants. Either a Participant or its subclass
+            IdentifiedParticipant can be used. Participant includes a coded <emphasis role="italic"
+                >participantRole </emphasis>for values such as 'Healthcare professional', 'Nurse',
+            or 'Requestor'. IdentifiedParticipant adds the additional attribute <emphasis
+                role="italic">participantId </emphasis>which is a uuid to uniquely identify the
+            participant.<?oxy_comment_end?></para>
     </section>
     <section>
         <title>subjectOfInformation</title>
+        <?oxy_comment_start author="Ioana" timestamp="20190627T174126-0400" comment="We need to clarify how we refer to &quot;who&quot; by a code. For example if the &quot;subjectOfInformation&quot; is &quot;grandmother&quot; or another next-of-kin then the statement may be describing a family history of cancer. We are describe the &quot;who&quot; as &quot;something coded&quot; .
+I would replace &quot;WHO&quot; with &quot;FOCUS&quot; or &quot;SUBJECT&quot;."?>
         <para>subjectOfInformation is a coded field used to express <emphasis role="bold">WHO
             </emphasis>the clinical statement is about. A patient's clinical record may contain
             statements not only about the patient, but also statements about children, relatives and
             donors. Thus, some possible values for subjectOfInformation, would include codes for
             'subject of record' (the patient), 'family member', or 'donor'. The majority of
             statements will have a subjectOfInformation with a value of 'subject of record', since
-            most statements in a patient record will be about the patient.</para>
+            most statements in a patient record will be about the patient.<?oxy_comment_end?></para>
     </section>
     <section>
         <title>statementType</title>
-        <para>statementType distinguishes between a performance ('performed') and a request
-            ('requested'). Performances may be observational performances, e.g. the observation of a
-            clinical finding or disorder being present or absent. They can also be a procedure or
+        <para><?oxy_comment_start author="Ioana" timestamp="20190628T114626-0400" comment="Could this element be retired if we provide a choice of &apos;request&apos; or &apos;performance&apos; circumstance? "?>statementType
+            distinguishes between a performance ('performed') and a request ('requested').
+            Performances may be observational performances, e.g. the observation of a clinical
+            finding or disorder being present or absent. They can also be a procedure or
             intervention which has been performed on the subject of record in the past, e.g. “a
             procedure using a 12-lead electrocardiogram”. Performances can – but do not have to –
             include quantitative or qualitative results, e.g. “3 dot blot hemorrhages” or “Hepatitis
-            A antibody positive”.</para>
+            A antibody positive”.<?oxy_comment_end?></para>
     </section>
     <section>
         <title>topic</title>
         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111914-0400" comment="Comment from WC:
 This comment is written after I made other comments on assertions in section 1.6.10. Although I get, I think, the gist, this entire section – and actually the entire larger section 1.6 – is unclear because of insufficient distinction between what is description and what the description is about. Section 1.6’s title is ‘clinical statement components’ and the impression is given that the components are listed one by one in the subsections. The main problem I have is that there is not explicit enough distinction between what is on the side of the patient – e.g. a tumor – and what is on the side of documentation thereof, i.e. what a clinical statement should be, f.i. ‘observation of tumor’, ‘removal of tumor’, … Now are ‘clinical statement components’ strictly components of descriptions or does it include components of the patient itself? If it is only on the side of the description, is it to be taken as a literal part of the description, does it include implicit components that are identified in certain linguistic theories about term formation (e.g. case grammar, case theory, …). Most essential to get clear is what ‘topic’ exactly stands for. 
 "?>
-
-            Topic is the expression of <emphasis role="bold">WHAT </emphasis>is 
-            being requested or what
+            <?oxy_comment_start author="Ioana" timestamp="20190627T174220-0400" comment="Is this a logical expression - ECL expression? Should we clarify? Does it matter at this level or should it be an implementation detail?" mid="7"?>Topic
+            is the expression of <emphasis role="bold">WHAT </emphasis>is being requested or what
             was performed.<?oxy_comment_end?> For both clinical statement types (request or
             performance) a pre-coordinated or post-coordinated “procedure” concept as a logical
             expression is required to sufficiently capture the action, which is either requested or
-            performed.</para>
+            performed.</para><?oxy_comment_end mid="7"?>
         <para> </para>
         <para>The topic is the central component of clinical statements. The following are proposed
             principles for the topic of a clinical statement.</para>
-        <para><emphasis role="bold">Principle 1: </emphasis>The topic defines the action being
-            performed or requested.</para>
+        <para><emphasis role="bold">Principle 1:
+            </emphasis><?oxy_comment_start author="Ioana" timestamp="20190627T174423-0400" comment="These principles appear to deacribe a &quot;minimum content&quot; for a SCL expressoin. It would be useful if we could provide a clear &apos;formula&apos; for constructing a topic."?>The
+            topic defines the action being performed or requested.</para>
         <para><emphasis role="bold">Principle 2:
             </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T112000-0400" comment="Comment from WC:
 This is unclear. Is the topic part of the assertion, or is it that what (part of) the assertion is about? If it is what the assertion is about, it cannot have clarity of meaning. If the topic is the patient’s CHF, what would be the clarity of meaning of his disease? Is it the assertion, then do you mean that instances of the specified type must exist (perhaps not in this patient), or that it must be able to exist in the patient (thus accounting for mistakes, misdiagnosis, …)?
@@ -104,7 +112,7 @@ This is unclear. Is the topic part of the assertion, or is it that what (part of
 But that the mother of the patient had colon cancer is both about the mother, the cancer and the patient. So ‘aboutness’ of observations/measurement must be much better characterized.
 "?>Each
             clinical statement may only have one topic.<?oxy_comment_end?>
-        </para>
+        </para><?oxy_comment_end?>
         <para/>
         <para><emphasis role="bold"><emphasis role="italic">Requests for actions
                 </emphasis></emphasis>can be requests for actions such as procedures or
@@ -124,36 +132,36 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
                 <para>Request for systolic blood pressure measurement</para>
             </listitem>
         </itemizedlist>
-
         <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="For the following examples, I have found better results using the docbook programlisting element rather than tables, because things line up the way you want them with docbook making the decsions.  Look in the CIF chapter for examples."?><?oxy_comment_end?>
-
-
         <table>
             <title><emphasis>Example Request for Action Topic: <emphasis role="bold">Request for
-                administration of Ibuprofen 400 mg tablet oral</emphasis></emphasis></title>
+                        administration of Ibuprofen 400 mg tablet oral</emphasis></emphasis></title>
             <tgroup cols="1">
                 <tbody>
                     <row>
-                        <entry><para>[71388002|Procedure]-</para>
+                        <entry>
+                            <para>[71388002|Procedure]-</para>
                             <para>(260686004|Method) [129445006|Administration - action]
-                                (363701004|Direct substance) [197805|Ibuprofen 400 MG Oral Tablet]</para>
-                            <para>(410675002|Route of administration)
-                                [260548002|Oral]</para></entry>
+                                (363701004|Direct substance) [197805|Ibuprofen 400 MG Oral
+                                Tablet]</para>
+                            <para>(410675002|Route of administration) [260548002|Oral]</para>
+                        </entry>
                     </row>
                 </tbody>
             </tgroup>
         </table>
-        
-        <para><emphasis role="bold"><emphasis role="italic">Performances of
-                actions</emphasis></emphasis> are the results of the performance of Requests for
-            action as described above.  They can also be observational procedures, describing the
-            absence or presence of clinical findings or disorders. In these cases, the observation
-            action of the clinical findings and disorders is performed:</para>
+        <para><emphasis role="bold"><emphasis role="italic"
+                    ><?oxy_comment_start author="Ioana" timestamp="20190628T114802-0400" comment="Is there a top-level concept that corresponds to &quot;action&quot; in SNOMED CT? It would be helpful for &apos;normalization&apos; if we could provide some guidance for implementers to assemble useful topic expressons"?>Performances
+                    of actions<?oxy_comment_end?></emphasis></emphasis> are the results of the
+            performance of Requests for action as described above. They can also be observational
+            procedures, describing the absence or presence of clinical findings or disorders. In
+            these cases, the observation action of the clinical findings and disorders is
+            performed:</para>
         <itemizedlist spacing="compact">
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111940-0400" comment="Comment from WC:
 But surely you should disambiguate between the phenomena themselves and the observations thereof. Plus be more precise about what ‘observation’ exactly is, otherwise you get trapped in HL7-nonsense. Clearly, you can only observe phenomena that are there: you can only observe congestive heart failure in a patient when it is there. But you can state in a record that the patient has CHF without he having it. In such case, the clinician might believe he observed an instance of CHF, but he did not observe it. Furthermore, ‘observe’ should not be overloaded with ‘deduce’. You can’t observe ‘psychosis’, only deduce it on the basis of … 
-" id="dd3_dm2_thb" mid="6"?>
+" id="dd3_dm2_thb" mid="16"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190514T150323-0500" comment="Changed CHF and numbness to observation of.  Should the history also be observation?  Not sure if this is right.  does this fix this issue." parentID="dd3_dm2_thb"?>
                 <para>Observation of Congestive heart failure</para>
             </listitem>
@@ -165,7 +173,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
             </listitem>
             <listitem>
                 <para>History of cognitive behavioral
-                    therapy<?oxy_comment_end?><?oxy_comment_end mid="6"?></para>
+                    therapy<?oxy_comment_end?><?oxy_comment_end mid="16"?></para>
             </listitem>
             <listitem>
                 <para>Systolic blood pressure 120 mmHg; taken on right brachial artery using adult
@@ -195,7 +203,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
         </table>
     </section>
     <section>
-        <title>Circumstance</title>
+        <title><?oxy_comment_start author="Ioana" timestamp="20190628T135847-0400" comment="We need to explain the choice of &quot;request&quot;, &quot;performance&quot;, and &quot;narrative&quot; circumstance. "?>Circumstance</title><?oxy_comment_end?>
         <figure>
             <title>Circumstance and Subtypes</title>
             <mediaobject>
@@ -213,9 +221,10 @@ But surely you should disambiguate between the phenomena themselves and the obse
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112050-0400" comment="Comment from WC:
 Lack of distinction between the observation as an action and that what is observed leads to ambiguity about whether an absent observed finding is an assertion about whether, for example, a requested observation was not done, or whether it was done but there was nothing to observe.
 " id="t5z_trt_vhb"?>
-        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="10"?>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="20"?>
         <section>
-            <title>Timing</title>
+            <?oxy_comment_start author="Ioana" timestamp="20190627T174619-0400" comment="Timing is of type &quot;Measure&quot; so we should show how to instantiate it speciy &quot;WHEN&quot; ... "?>
+            <title>Timing<?oxy_comment_end?></title>
             <para><emphasis role="bold">WHEN </emphasis>a requested action should be performed or
                     <emphasis role="bold">WHEN </emphasis>an observed finding or disorder was
                 present or absent. Timing is used to capture a time or time range for</para>
@@ -233,16 +242,17 @@ Lack of distinction between the observation as an action and that what is observ
                     <para>Performance of action that hasn't taken place (for example Requests that
                         have been put on hold)</para>
                 </listitem>
-            </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="10"?>
+            </itemizedlist><?oxy_comment_end?><?oxy_comment_end mid="20"?>
             <para>Timing is described in more detail in the <link
                     xlink:href="measure-and-result.xml">Measure and result</link>section.</para>
             <para><emphasis>Examples:</emphasis></para>
             <itemizedlist spacing="compact">
                 <listitem>
-                    <para>Cardiology Consult in 2 weeks</para>
+                    <para><?oxy_comment_start author="Ioana" timestamp="20190628T114928-0400" comment="The &quot;timing&quot; would be &quot;2 weeks&quot; instatiated as &quot;Measure&quot; or &quot;3 months ago&quot; instatiated as a Measure"?>Cardiology
+                        Consult in 2 weeks</para>
                 </listitem>
                 <listitem>
-                    <para>Breast cancer screening 3 months ago</para>
+                    <para>Breast cancer screening 3 months ago<?oxy_comment_end?></para>
                 </listitem>
             </itemizedlist>
         </section>
@@ -264,6 +274,8 @@ Lack of distinction between the observation as an action and that what is observ
             <para><emphasis>Examples:</emphasis></para>
             <table>
                 <title>Resting 12-lead electrocardiogram to evaluate for arrhythmia</title>
+                <?oxy_comment_start author="Ioana" timestamp="20190628T115541-0400" comment="Is there a convention/syntax recommende to document &quot;purpose&quot; as an expresson? (procedure|diagnosis|...)--&gt; Has Focus --&gt; (finding)?
+"?>
                 <tgroup cols="1">
                     <tbody>
                         <row>
@@ -291,7 +303,7 @@ Lack of distinction between the observation as an action and that what is observ
                     </tbody>
                 </tgroup>
             </table>
-        </section>
+        </section><?oxy_comment_end?>
         <section>
             <title>RequestCircumstance</title>
             <para>Request circumstance further specifies <emphasis role="bold">HOW </emphasis>a
@@ -315,10 +327,10 @@ Lack of distinction between the observation as an action and that what is observ
                     conditional on the presence of back pain.</para>
             </section>
             <section>
-                <title>requestedParticipant</title>
+                <title><?oxy_comment_start author="Ioana" timestamp="20190628T141756-0400" comment="Do we mean an array of references to either practitioners aor roles?"?>requestedParticipant</title>
                 <para>Requested participants is an optional list of either specific persons or roles
                     who perform an action, assist in performing an action or are targets of an
-                    action.</para>
+                    action.<?oxy_comment_end?></para>
                 <figure>
                     <title>Participant</title>
                     <mediaobject>
@@ -333,30 +345,35 @@ Lack of distinction between the observation as an action and that what is observ
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
 Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
-" id="wsg_ttt_vhb" mid="14"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb"?>Cardiology
-                            consultation with Chief Cardiologist</para>
+" id="wsg_ttt_vhb" mid="28"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb"?>Cardiology
+                            consultation with
+                            <?oxy_comment_start author="Ioana" timestamp="20190628T115920-0400" comment="In this example, the &quot;participant&quot; is presumably the &quot;chief cardiologist&quot; but the example includes the opic as well so it could  be confusing."?>Chief
+                            Cardiologist<?oxy_comment_end?></para>
                     </listitem>
                     <listitem>
-                        <para>Smoking cessation education with patient and patient’s
-                            spouse<?oxy_comment_end?><?oxy_comment_end mid="14"?></para>
+                        <para><?oxy_comment_start author="Ioana" timestamp="20190628T160011-0400" comment="Are the patient and the spouse &quot;requestedParticipants&quot;? " mid="30"?>Smoking
+                            cessation education with patient and patient’s
+                            spouse<?oxy_comment_end mid="30"?><?oxy_comment_end?><?oxy_comment_end mid="28"?></para>
                     </listitem>
                 </itemizedlist>
             </section>
             <section>
-                <title>Priortity</title>
-                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" flag="done" mid="16"?>
+                <title>Priority</title>
+                <?oxy_comment_start author="timowilliams" timestamp="20190515T164827-0500" comment="Does this have a default of &quot;Routine&quot;?" id="klk_rry_thb" flag="done" mid="32"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190517T094603-0500" comment="If this isn&apos;t required we should change the image above to be 0..1" parentID="klk_rry_thb" flag="done"?>
                 <para>Priority expresses the priority with which a requested action has to be
                     carried out, e.g. “routine” or
-                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="16"?> By default a Request will
+                    “stat”.<?oxy_comment_end?><?oxy_comment_end mid="32"?> By default a Request will
                     be considered "routine" unless otherwise specified.</para>
                 <para><emphasis>Examples:</emphasis></para>
                 <itemizedlist>
                     <listitem>
+                        <?oxy_comment_start author="Ioana" timestamp="20190628T120153-0400" comment="which part of these examples is actually a &quot;priority&quot;. I think the &quot;purpose&quot; describes how to assemble a expression that is used to describe the purpose. in these examples I would assume the priority is expressed by &quot;routine&quot; or &quot;now&quot;?"?>
                         <para>X-ray Knee-right to evaluate for psoriatic arthritis, routine</para>
                     </listitem>
                     <listitem>
-                        <para>X-ray chest to evaluate for heart failure now</para>
+                        <para>X-ray chest to evaluate for heart failure
+                        now</para><?oxy_comment_end?>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -366,9 +383,8 @@ Here might be situations under which the limitations of terminology models may c
                     <title>Repetition</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190517T095656-0500" comment="eventFrequency needs to be a Measure instead of an Interval" flag="done"?>
                             <imagedata fileref="images/repetition.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -401,16 +417,17 @@ Here might be situations under which the limitations of terminology models may c
                 <title>requestedResult</title>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T112133-0400" comment="Comment from WC:
 Would it not be better to call this then ‘request goal’?
-" id="dz2_qyn_thb" mid="19"?>
+" id="dz2_qyn_thb" mid="35"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190515T222045-0500" comment="Should we change this?  We would need to change the Image(s) above." parentID="dz2_qyn_thb"?>
                 <para>A requested result is a patient goal to be achieved. It can include specified
                     or quantified details of an action that is to be performed, such as '3 times
-                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="19"?>requestedResults are
+                    daily'. <?oxy_comment_end?><?oxy_comment_end mid="35"?>requestedResults are
                     described in more detail in the <link xlink:href="measure-and-result.xml"
                         >Measure and result</link>section.</para>
                 <para>Examples:</para>
                 <itemizedlist spacing="compact">
                     <listitem>
+                        <?oxy_comment_start author="Ioana" timestamp="20190628T094916-0400" comment="We need to add that &quot;the requested result may be an intervention or an observation&quot; - it&apos;s basically a choice."?>
                         <para>Narrative:Administration of Metoprolol tartrate 50 mg oral <emphasis
                                 role="underline">daily2 times</emphasis> to lower systolic blood
                             pressure to &lt;130 mmHg</para>
@@ -418,11 +435,11 @@ Would it not be better to call this then ‘request goal’?
                     <listitem>
                         <?oxy_comment_start author="kmaulden" timestamp="20190418T112144-0400" comment="Comment from WC:
 This is an example of having an unclear topic. Is it the (implicit) request that such tablets are taken, or is it such tablets?
-" id="wy1_p5t_vhb"?>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="21"?>
+" id="wy1_p5t_vhb" mid="37"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="38"?>
                         <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one
                                 tablet</emphasis> oral daily 4
-                        times</para><?oxy_comment_end?><?oxy_comment_end mid="21"?>
+                        times</para><?oxy_comment_end?><?oxy_comment_end mid="37"?><?oxy_comment_end mid="38"?>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -440,6 +457,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 </mediaobject>
             </figure>
             <section>
+                <?oxy_comment_start author="Ioana" timestamp="20190628T095023-0400" comment="This is the type/class associated with &quot;requestedResults&quot; - they should be described together. "?>
                 <title>Result</title>
                 <para>Result is used to record the values of diagnostic or observational procedures.
                     It is also used to record the presence or absence of an Observation. Results are
@@ -453,7 +471,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                     </listitem>
                     <listitem>
                         <para>Narrative: Body weight <emphasis role="underline">165
-                                pounds</emphasis></para>
+                                pounds</emphasis><?oxy_comment_end?></para>
                     </listitem>
                 </itemizedlist>
             </section>
@@ -462,8 +480,9 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 <para>Participants involved in performing the action, e.g. technician, nurse</para>
             </section>
         </section>
+        <?oxy_comment_start author="Ioana" timestamp="20190628T095308-0400" comment="This should be part of a section about &quot;Circumstance&quot; - I would also recommend renaming it &quot;NarrativeCircumstance&quot; . This  class describes the circumstance as text rather than coded data but it&apos;s still a structure/structured."?>
         <section>
-            <title>UnstructuredCircumstance</title>
+            <title>UnstructuredCircumstance</title><?oxy_comment_end?>
             <?oxy_comment_start author="kmaulden" timestamp="20190418T112339-0400" comment="Comment from WC:
 Brings in another level of confusion: I thought this entire discussion was about documenting what is on the side of the patient, here you include documenting how clinical statements are configured. That might be valid too, and I would even recommend it for quality control purposes, but then an extra meta-level needs to be included.
 "?>
@@ -475,36 +494,39 @@ Brings in another level of confusion: I thought this entire discussion was about
                 <title>UnstructuredCircumstance</title>
                 <mediaobject>
                     <imageobject>
+                        <?oxy_comment_start author="Ioana" timestamp="20190628T095425-0400" comment="This diagram is incorrect: NarrativeCircumstance inherits &quot;timing&quot; and &quot;purpose&quot; from the base &quot;Circumstance&quot;."?>
                         <imagedata fileref="images/unstructured_circumstance.svg" format="SVG"
-                            scalefit="1" width="100%" contentdepth="100%"/>
+                            scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
             <section>
-                <title>unstructuredText</title>
+                <title><?oxy_comment_start author="Ioana" timestamp="20190628T120853-0400" comment="This is just text, right?"?>unstructuredText<?oxy_comment_end?></title>
                 <para>Text field to document unstructured circumstances.</para>
             </section>
         </section>
     </section>
     <section>
+        <?oxy_comment_start author="Ioana" timestamp="20190628T095636-0400" comment="The focus  should be o the data element ANFstatement.associatedStatement  rather than the type used. It&apos;s out of context here."?>
         <title>statementAssociation</title>
         <para>statementAssociation enables the clinical statement to link to other clinical
             statements. They are part of the narrative but are not considered part of the topic.
             They can further specify, e.g. instructions that apply to the performance of an action.
             If the topic is a laboratory result panel, each association would point to another
-            statement which is a laboratory result.</para>
+            statement which is a laboratory result.</para><?oxy_comment_end?>
         <figure>
             <title>statmentAssociation</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/statement_association.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="images/statement_association.svg" format="SVG" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
         <section>
             <title>associationSemantic</title>
-            <para>Association semantic is a logical expression to capture how the target
-                statement is associated.</para>
+            <para>Association semantic is a logical expression to capture how the target statement
+                is associated.</para>
         </section>
         <section>
             <title>associatedStatementId</title>
