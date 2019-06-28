@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Glossary</title>
     <para><emphasis role="bold">ANF – Analysis Normal Form</emphasis>, an approach to clinical
         statements that ensures the statement representation is reproducible and scalable, with the
@@ -41,4 +41,4 @@
         software to produce Solor content. For more information please see <link
             xlink:href="http://solor.io">http://solor.io</link></para>
 
-</section>
+</chapter>
