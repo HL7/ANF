@@ -245,15 +245,12 @@
     -->
     
     <section>
-        <title>Transformation Languages</title>
+        <title>Transformation</title>
         
         <para> A number of options exist for expressing transformation logic and for executing the
-            transformation on specific instances of clinical data for normalization into ANF. This section discusses several transformation language options and the trade-offs among them. It should be noted that the suitability of the chosen language also highly depends on the format of the source data. 
+            transformation on specific instances of clinical data for normalization into ANF.  These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author.  One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
         </para>
 
-        <para>
-            The first three of these, XSLT, FML, and QVT, are transformation languages that can be used directly, but the quality and accuracy of the transformation is left to the transformation author.  The last option described is MDMI, which is not a language, but an architecture for transformation.  This architecture assists in producing semantically accurate transformations.
-        </para>
 
         <section>
             <title>XSLT</title>
