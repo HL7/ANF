@@ -77,7 +77,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
                         phenomenon</para>
-                    <itemizedlist>
+                    <itemizedlist spacing="compact">
                         <listitem>
                             <para>Diabetes mellitus is present</para>
                         </listitem>
@@ -92,7 +92,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 <listitem>
                     <para>Underwent a specific test/screening or procedure, and its resultant value,
                         if any</para>
-                    <itemizedlist>
+                    <itemizedlist spacing="compact">
                         <listitem>
                             <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
                         </listitem>
@@ -176,7 +176,7 @@ Doing family history, donor statements using subject of information is now the n
                         Topic will have a Result with an upperBound of infinite (inf), lowerBound of
                         1, and measureSemantic of "Unit of time".</mathphrase>
                 </editorial-rule>
-                <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="A topic doesn&apos;t have a notion of presence, as the circumstance gives the presence, so what do you mean here.  Maybe just needs to be reworded to something like...  To state the presence of what is described in the topic..." flag="done"?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn't seem any better than other's using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Present Clinical Statement Example</title>
                     <mediaobject>
@@ -186,7 +186,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ?"?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem"?><?oxy_comment_end?>
                 <para>In the Diabetes Mellitus type 2 example above, the Topic is an Observation
                     procedure with a Has focus of Diabetes mellitus type 2. To represent that it is
                     present, the Result is a lowerBound of 1, an upperBound of infinite (inf), and a
@@ -228,7 +228,7 @@ Doing family history, donor statements using subject of information is now the n
                 <editorial-rule>
                     <title>Statement with a Result Value</title>
                     <mathphrase>Any Topic that states a Result that has a value will be specified
-                        with the correct upperBound, lowerBound, and measureSemantic.If the Result
+                        with the correct upperBound, lowerBound, and measureSemantic. If the Result
                         is a single value, the upperBound and lowerBound will be the same value. If
                         the Result is a range, the upperBound and lowerBound will be specifed as
                         such.</mathphrase>
@@ -313,7 +313,7 @@ Doing family history, donor statements using subject of information is now the n
                         performance of the action <itemizedlist>
                             <listitem>
                                 <para>The state that must exist pertains to:</para>
-                                <itemizedlist>
+                                <itemizedlist spacing="compact">
                                     <listitem>
                                         <para>the subject of record (e.g. patient)</para>
                                     </listitem>
@@ -521,7 +521,7 @@ Doing family history, donor statements using subject of information is now the n
                 relating to the request, such as patient must fast for 12 hours before having a
                 lipids blood test.</para>
             <para>Examples of Request clinical statements:</para>
-            <itemizedlist>
+            <itemizedlist spacing="compact">
                 <listitem>
                     <para>Request for Rheumatoid factor 1 time routine </para>
                 </listitem>
