@@ -50,16 +50,16 @@
         </figure>
         <para><?oxy_comment_start author="Ioana" timestamp="20190627T173847-0400" comment="We can simplify this by specifying the &quot;reference&quot; - similar to the referene to the subject of the record."?>statementAuthor
             is an optional list of authoring participants. Either a Participant or its subclass
-            IdentifiedParticipant can be used. Participant includes a coded <emphasis role="italic"
-                >participantRole </emphasis>for values such as 'Healthcare professional', 'Nurse',
-            or 'Requestor'. IdentifiedParticipant adds the additional attribute <emphasis
-                role="italic">participantId </emphasis>which is a uuid to uniquely identify the
-            participant.<?oxy_comment_end?></para>
+            IdentifiedParticipant can be used. Participant includes a
+            c<?oxy_comment_start author="Ioana" timestamp="20190630T223449-0400" comment="The author must an identified practitioner or it should be omitted  because it&apos;s optional."?>oded
+                <emphasis role="italic">participantRole <?oxy_comment_end?></emphasis>for values
+            such as 'Healthcare professional', 'Nurse', or 'Requestor'. IdentifiedParticipant adds
+            the additional attribute <emphasis role="italic">participantId </emphasis>which is a
+            uuid to uniquely identify the participant.<?oxy_comment_end?></para>
     </section>
     <section>
         <title>subjectOfInformation</title>
-        <?oxy_comment_start author="Ioana" timestamp="20190627T174126-0400" comment="We need to clarify how we refer to &quot;who&quot; by a code. For example if the &quot;subjectOfInformation&quot; is &quot;grandmother&quot; or another next-of-kin then the statement may be describing a family history of cancer. We are describe the &quot;who&quot; as &quot;something coded&quot; .
-I would replace &quot;WHO&quot; with &quot;FOCUS&quot; or &quot;SUBJECT&quot;."?>
+        <?oxy_comment_start author="Ioana" timestamp="20190627T174126-0400" comment="We need to clarify how we refer to &quot;who&quot; or what? using a logical expression. For example if the &quot;subjectOfInformation&quot; is &quot;grandmother&quot; or another next-of-kin then the statement may be describing a family history of cancer. We are describe the &quot;who&quot; as &quot;something coded&quot; . I would replace &quot;WHO&quot; with &quot;FOCUS&quot; or &quot;SUBJECT&quot; ."?>
         <para>subjectOfInformation is a coded field used to express <emphasis role="bold">WHO
             </emphasis>the clinical statement is about. A patient's clinical record may contain
             statements not only about the patient, but also statements about children, relatives and
@@ -320,7 +320,7 @@ Lack of distinction between the observation as an action and that what is observ
                 </mediaobject>
             </figure>
             <section>
-                <title>conditionalTrigger</title>
+                <title><?oxy_comment_start author="Ioana" timestamp="20190630T225616-0400" comment="Question: do we need a conditional predicate instead of a logical expression?"?>conditionalTrigger<?oxy_comment_end?></title>
                 <para>conditionalTrigger is used to represent a condition, or set of conditions that
                     must exist in order for a Request to be executed. For example, Ibuprofen 400 mg
                     tablet oral every 6 hours as needed for back pain, the use of Ibuprofen is
@@ -345,9 +345,9 @@ Lack of distinction between the observation as an action and that what is observ
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T112116-0400" comment="Comment from WC:
 Here might be situations under which the limitations of terminology models may come in play: the ANF principles should allow that specific persons can be asked for, e.g. not just any ‘attending cardiologist,, but ‘Dr. XYZ’.
-" id="wsg_ttt_vhb" mid="28"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb"?>Cardiology
+" id="wsg_ttt_vhb" mid="30"?><?oxy_comment_start author="timowilliams" timestamp="20190523T210854-0500" comment="Should we add an optional free text field?" parentID="wsg_ttt_vhb"?>Cardiology
                             consultation with
-                            <?oxy_comment_start author="Ioana" timestamp="20190628T115920-0400" comment="In this example, the &quot;participant&quot; is presumably the &quot;chief cardiologist&quot; but the example includes the opic as well so it could  be confusing."?>Chief
+                            <?oxy_comment_start author="Ioana" timestamp="20190628T115920-0400" comment="In this example, the &quot;participant&quot; is presumably the &quot;chief cardiologist&quot; but the example includes the topic as well so it could  be confusing."?>Chief
                             Cardiologist<?oxy_comment_end?></para>
                     </listitem>
                     <listitem>
