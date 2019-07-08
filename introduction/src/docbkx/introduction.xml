@@ -1,147 +1,148 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Introduction</title>
+  <title>A Normal Form for Clinical Data</title>
+  <para>A normal form is a standard way of representing something that can be </para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
+  <para><emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
+    logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
+    aggregate clinical statements for analysis, research, clinical decision support, and other
+    purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
+    the information was captured at its source (i.e. information systems or medical devices). ANF
+    could be used in conjunction with other models intended to ensure that clinical information is
+    structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, ISO
+    Detailed Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message
+    profiles, <glossterm>FHIR</glossterm> profiles). </para>
+  <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to be
+    made that optimize data entry brevity at the cost of computability. ANF represents a collection
+    of patterns and approaches to provide predictable transformations between sets of models and can
+    be optimized for clinical input and models - thereby improving computability through
+    normalization. The more normalized the data is, the simpler it will become to analyze, and
+    errors will be reduced. Post-coordinated compositional statements using ANF introduce the
+    ability to faithfully expand from a reduced form or compare to other statements with ease and no
+    loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
+    statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
+      role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
+    lossless information representation such that both explicit and implicit information can be
+    faithfully recovered, maintained, and modified with ease." (Elkin, pg 14) </para>
+  <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
+    representation of clinical statements from a heterogeneous source using an objective
+    quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence, and
+    magnitude of a specific finding, request or observation.</para>
+  <para>ANF requires an ability to classify topic expressions (and expressions that may go in other
+    locations) and thus it depends on systems that can produce structured information reducible to
+    ANF. These systems may create normal data natively or transform other representations of
+    clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form - ANF.</para>
+  <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
+    multiple sources to better support a set of analysis.</para>
+  <itemizedlist spacing="compact">
+    <listitem>
+      <para>Specify clinical content extracted from EHR systems using FHIR</para>
+    </listitem>
+  </itemizedlist>
+  <itemizedlist>
+    <listitem>
+      <para>Providing a common analysis form of data exchangeHL7 messages, FHIR and CDA</para>
+    </listitem>
+  </itemizedlist>
+  <itemizedlist>
+    <listitem>
+      <para>Specifying clinical content for User Interfaces</para>
+    </listitem>
+  </itemizedlist>
+  <itemizedlist spacing="compact">
+    <listitem>
+      <para>Enhancing information clinical content for use as </para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>Clinical Decision Support Systems</para>
+        </listitem>
+        <listitem>
+          <para>Quality Measures and National Registries</para>
+        </listitem>
+        <listitem>
+          <para>Healthcare Guidelines and Protocols </para>
+        </listitem>
+        <listitem>
+          <para>Epidemiological Research</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+  </itemizedlist>
   <section>
-    <title>Background</title>
-    <para><emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a logical model intended to
-      represent a <emphasis role="bold">normalized</emphasis> view of aggregate clinical statements
-      for analysis, research, clinical decision support, and other purposes. ANF can be used to
-      represent any isosemantic clinical statements irrespective of how the information was captured
-      at its source (i.e. information systems or medical devices). ANF could be used in conjunction
-      with other models intended to ensure that clinical information is structured and complete at
-      the time of entry (e.g. <glossterm>CIMI</glossterm> models, ISO Detailed Clinical Models) or exchanged among systems
-      (e.g. HL7 CDA templates, HL7 V2 message profiles, <glossterm>FHIR</glossterm> profiles). </para>
-    <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to
-      be made that optimize data entry brevity at the cost of computability. ANF represents a
-      collection of patterns and approaches to provide predictable transformations between sets of
-      models and can be optimized for clinical input and models - thereby improving computability
-      through normalization. The more normalized the data is, the simpler it will become to analyze,
-      and errors will be reduced. Post-coordinated compositional statements using ANF introduce the
-      ability to faithfully expand from a reduced form or compare to other statements with ease and
-      no loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
-      statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
-        role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
-      lossless information representation such that both explicit and implicit information can be
-      faithfully recovered, maintained, and modified with ease." (Elkin, pg 14) </para>
-    <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
-      representation of clinical statements from a heterogeneous source using an objective
-      quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
-      and magnitude of a specific finding, request or observation.</para>
-    <para>ANF requires an ability to classify topic expressions (and expressions that may go in
-      other locations) and thus it depends on systems that can produce structured information
-      reducible to ANF. These systems may create normal data natively or transform other
-      representations of clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form -
-      ANF.</para>
-    <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
-      multiple sources to better support a set of analysis.</para>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Specify clinical content extracted from EHR systems using FHIR</para>
-      </listitem>
-    </itemizedlist>
-    <itemizedlist>
-      <listitem>
-        <para>Providing a common analysis form of data exchangeHL7 messages, FHIR and CDA</para>
-      </listitem>
-    </itemizedlist>
-    <itemizedlist>
-      <listitem>
-        <para>Specifying clinical content for User Interfaces</para>
-      </listitem>
-    </itemizedlist>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>Enhancing information clinical content for use as </para>
-        <itemizedlist spacing="compact">
-          <listitem>
-            <para>Clinical Decision Support Systems</para>
-          </listitem>
-          <listitem>
-            <para>Quality Measures and National Registries</para>
-          </listitem>
-          <listitem>
-            <para>Healthcare Guidelines and Protocols </para>
-          </listitem>
-          <listitem>
-            <para>Epidemiological Research</para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-    </itemizedlist>
+    <title>Clinical Statement Representations </title>
+    <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
+      these content models across paradigms (e.g. messages, documents, services). Standardization
+      has relied on model-driven approaches requiring a separation of concerns along with
+      conceptual, logical, and implementation perspectives.</para>
     <section>
-      <title>Clinical Statement Representations </title>
-      <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
-        these content models across paradigms (e.g. messages, documents, services). Standardization
-        has relied on model-driven approaches requiring a separation of concerns along with
-        conceptual, logical, and implementation perspectives.</para>
-      <section>
-        <title>HL7 Version 3 Clinical Statement </title>
-        <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
-          statement: </para>
-        <para>“Clinical Statement for the care of patients (persons, animals and other entities)
-          is:</para>
-        <para>An expression of a discrete item of clinical, clinically-related or public health
-          information that is recorded because of its relevance to the care of a patient or other
-          entities. Clinical or public health information can be expressed with different levels of
-          granularity and therefore the extent and detail conveyed in a single statement may vary.
-          To be regarded as a Clinical Statement, a concept must be associated with a patient or
-          other entity in a manner which makes clear:</para>
-        <itemizedlist spacing="compact">
-          <listitem>
-            <para>Its temporal context</para>
-          </listitem>
-          <listitem>
-            <para>Its relationship to the entity or entities</para>
-          </listitem>
-        </itemizedlist>
-        <para>In the case of an observation, its mood and presence, absence or value</para>
-        <para>In the case of a procedure, its mood and status</para>
-        <para>This clarity may be achieved by:</para>
-        <itemizedlist spacing="compact">
-          <listitem>
-            <para>Explicit representation; or</para>
-          </listitem>
-          <listitem>
-            <para>Implicit application of defaults ONLY where explicitly modeled rules state the
-              appropriate defaults." </para>
-            <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs
-              Release 1</para>
-          </listitem>
-        </itemizedlist>
-        <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
-          the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in Figure
-          1, the V3 Clinical Statement Model is a polymorphic model: it can represent observations,
-          procedures, encounters, public health reports, supply, medications, exposure, and
-          derivations of clinical acts. </para>
-      </section>
-      <section>
-        <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD) </title>
-        <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
-          architecture to allow for a clear separation of concerns among interoperability models and
-          specification from the abstract or conceptual to the most precise, implementable, and
-          testable that ensures semantic interoperability.</para>
-        <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
-          Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
-          Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
-          even though it reuses the same derivation. Therefore, the Implementable Perspective is
-          derived from the Logical Perspective and the Logical Perspective is derived from the
-          Conceptual Perspective. This approach ensures that any implementable artifacts (i.e.
-          service specifications, implementation guides) are traceable to business/clinical
-          requirements and logical models of knowledge.</para>
-        <figure>
-          <title>Model Derivation according to SAIF</title>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="60%"
-                contentdepth="65%"/>
-            </imageobject>
-          </mediaobject>
-        </figure>
-        <!-- <figure>
+      <title>HL7 Version 3 Clinical Statement </title>
+      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
+        statement: </para>
+      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
+        is:</para>
+      <para>An expression of a discrete item of clinical, clinically-related or public health
+        information that is recorded because of its relevance to the care of a patient or other
+        entities. Clinical or public health information can be expressed with different levels of
+        granularity and therefore the extent and detail conveyed in a single statement may vary. To
+        be regarded as a Clinical Statement, a concept must be associated with a patient or other
+        entity in a manner which makes clear:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>Its temporal context</para>
+        </listitem>
+        <listitem>
+          <para>Its relationship to the entity or entities</para>
+        </listitem>
+      </itemizedlist>
+      <para>In the case of an observation, its
+        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?>mood<?oxy_comment_end?>
+        and presence, absence or value</para>
+      <para>In the case of a procedure, its mood and status</para>
+      <para>This clarity may be achieved by:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>Explicit representation; or</para>
+        </listitem>
+        <listitem>
+          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
+            appropriate defaults." </para>
+          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
+            1</para>
+        </listitem>
+      </itemizedlist>
+      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
+        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in Figure
+        1, the V3 Clinical Statement Model is a polymorphic model: it can represent observations,
+        procedures, encounters, public health reports, supply, medications, exposure, and
+        derivations of clinical acts. </para>
+    </section>
+    <section>
+      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD) </title>
+      <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
+        architecture to allow for a clear separation of concerns among interoperability models and
+        specification from the abstract or conceptual to the most precise, implementable, and
+        testable that ensures semantic interoperability.</para>
+      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
+        Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
+        Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
+        even though it reuses the same derivation. Therefore, the Implementable Perspective is
+        derived from the Logical Perspective and the Logical Perspective is derived from the
+        Conceptual Perspective. This approach ensures that any implementable artifacts (i.e. service
+        specifications, implementation guides) are traceable to business/clinical requirements and
+        logical models of knowledge.</para>
+      <figure>
+        <title>Model Derivation according to SAIF</title>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="60%"
+              contentdepth="65%"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+      <!-- <figure>
         <title>Model Derivation according to SAIF-CD</title>
         <mediaobject>
           <imageobject>
@@ -150,67 +151,65 @@
           </imageobject>
         </mediaobject>
       </figure> -->
-        <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA
-          concept of Computationally Independent Model (CIM), the Logical Perspective is not
-          equivalent to the MDA Platform Independent Model (PIM), nor is the Implementable
-          Perspective equivalent to the MDA Platform Specific Model although this Perspective is the
-          SAIF Perspective that most closely aligns with an MDA analogue.</para>
-        <section>
-          <title>Conceptual Perspective</title>
-          <para> These artifacts are most commonly focused on the “Problem-Space” rather than the
-            “Solution Space,” and contain explicit, unambiguous descriptions of the various
-            dimensions of the component (e.g. clinical statement) or system being specified. </para>
-          <para>A fully-specified Conceptual Perspective thus should be both readable and traceable
-            by Domain Experts and Subject Matter Experts and rigorous enough to serve as input into
-            the development in the Logical Perspective.</para>
-          <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs)
-            and business models that represent stakeholder requirements analyzed by SMEs and DEs.
-            This perspective that precede the development of either logical or implantable artifacts
-            and it’s a key to successful testing of implementations. </para>
-        </section>
-        <section>
-          <title>Logical Perspective</title>
-          <para>Artifacts in the Logical Perspective represent traceable translations of
-            Conceptual-level artifacts into a form and format, usable by and useful to architects
-            and “inward-facing analysts.” Also included are additional specification materials
-            required by architects preparing artifacts for consumption by developers. </para>
-          <para>There are no definite boundaries between the Logical and Implementable Perspectives.
-            Therefore, it’s important for organizations such as HL7 to standardize logical models
-            used to generate/create implementable artifacts (i.e. implementation guides, profiles,
-            and templates). CIMI Clinical Statements, ISO Detailed Clinical Models, and ANF statements
-            all belong in this perspective.</para>
-        </section>
-        <section>
-          <title>Implementable Perspective</title>
-          <para>Artifacts in the Implementable Perspective are typically defined by developers or
-            standards implementers, often through discussion with software designers, architects, or
-            system integrators. Note that the artifacts in the Implementable Perspective are not
-            actual implementations, but rather implementable in a number of implementation
-            instances. Thus, all the necessary technical bindings, including data types, value sets,
-            class libraries, and interface specifications are part of the Implementable Perspective.
-            FHIR implementation requires a combination of profiles and test cases to ensure that
-            implementations meet the requirements used to derive the conceptual and logical
-            models.</para>
-        </section>
+      <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
+        of Computationally Independent Model (CIM), the Logical Perspective is not equivalent to the
+        MDA Platform Independent Model (PIM), nor is the Implementable Perspective equivalent to the
+        MDA Platform Specific Model although this Perspective is the SAIF Perspective that most
+        closely aligns with an MDA analogue.</para>
+      <section>
+        <title>Conceptual Perspective</title>
+        <para> These artifacts are most commonly focused on the “Problem-Space” rather than the
+          “Solution Space,” and contain explicit, unambiguous descriptions of the various dimensions
+          of the component (e.g. clinical statement) or system being specified. </para>
+        <para>A fully-specified Conceptual Perspective thus should be both readable and traceable by
+          Domain Experts and Subject Matter Experts and rigorous enough to serve as input into the
+          development in the Logical Perspective.</para>
+        <para>In HL7, the Conceptual Perspective is represented by Domain Analysis Models (DAMs) and
+          business models that represent stakeholder requirements analyzed by SMEs and DEs. This
+          perspective that precede the development of either logical or implantable artifacts and
+          it’s a key to successful testing of implementations. </para>
       </section>
       <section>
-        <title>CIMI Models</title>
-        <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of logical
-          clinical information models using a common modeling formalism. CIMI intends to improve the
-          interoperability of healthcare information systems through shared detailed clinical
-          information models that can be used to generate platform-specific model specifications
-          such as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
-          Intermountain CEMs. CIMI models are grouped into semantically equivalent (or
-          ‘isosemantic’) families of detailed clinical models, which capture the same clinical
-          meaning using different combinations of pre and post-coordinated concepts and
-          corresponding information model structure. The central focus of the CIMI Reference Model
-          is the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic
-          communication made about a patient typically documented as an 'entry' in the patient
-          record. For example, CIMI Clinical Statement can be used to represent the following statements made about a patient. This can be the statement of a condition being present, a request for a procedure to be done, the results of lab tests or the patient’s family history of cancer. </para>
+        <title>Logical Perspective</title>
+        <para>Artifacts in the Logical Perspective represent traceable translations of
+          Conceptual-level artifacts into a form and format, usable by and useful to architects and
+          “inward-facing analysts.” Also included are additional specification materials required by
+          architects preparing artifacts for consumption by developers. </para>
+        <para>There are no definite boundaries between the Logical and Implementable Perspectives.
+          Therefore, it’s important for organizations such as HL7 to standardize logical models used
+          to generate/create implementable artifacts (i.e. implementation guides, profiles, and
+          templates). CIMI Clinical Statements, ISO Detailed Clinical Models, and ANF statements all
+          belong in this perspective.</para>
       </section>
       <section>
-        <title/>
+        <title>Implementable Perspective</title>
+        <para>Artifacts in the Implementable Perspective are typically defined by developers or
+          standards implementers, often through discussion with software designers, architects, or
+          system integrators. Note that the artifacts in the Implementable Perspective are not
+          actual implementations, but rather implementable in a number of implementation instances.
+          Thus, all the necessary technical bindings, including data types, value sets, class
+          libraries, and interface specifications are part of the Implementable Perspective. FHIR
+          implementation requires a combination of profiles and test cases to ensure that
+          implementations meet the requirements used to derive the conceptual and logical
+          models.</para>
       </section>
+    </section>
+    <section>
+      <title>CIMI Models</title>
+      <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of logical
+        clinical information models using a common modeling formalism. CIMI intends to improve the
+        interoperability of healthcare information systems through shared detailed clinical
+        information models that can be used to generate platform-specific model specifications such
+        as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
+        Intermountain CEMs. CIMI models are grouped into semantically equivalent (or ‘isosemantic’)
+        families of detailed clinical models, which capture the same clinical meaning using
+        different combinations of pre and post-coordinated concepts and corresponding information
+        model structure. The central focus of the CIMI Reference Model is the CIMI Clinical
+        Statement. A CIMI Clinical Statement represents structured electronic communication made
+        about a patient typically documented as an 'entry' in the patient record. For example, CIMI
+        Clinical Statement can be used to represent the following statements made about a patient.
+        This can be the statement of a condition being present, a request for a procedure to be
+        done, the results of lab tests or the patient’s family history of cancer. </para>
     </section>
   </section>
   <section>

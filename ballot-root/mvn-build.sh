@@ -1,4 +1,4 @@
 #!/bin/sh
 source ~/.bash_profile
-mvn -e clean install
+mvn -e install
 osascript openpdf.scpt
