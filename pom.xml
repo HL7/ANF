@@ -56,7 +56,7 @@
                   </dependency>
                </dependencies>
                <configuration>
-                  <glossentryShowAcronym>default</glossentryShowAcronym>
+                  <glossentryShowAcronym>primary</glossentryShowAcronym>
                   <glosstermAutoLink>true</glosstermAutoLink>
                </configuration>
             </plugin>
