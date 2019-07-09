@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Abbreviated Glossary</title>
     <glossentry>
         <glossterm>Analysis Normal Form</glossterm>
@@ -16,69 +16,75 @@
         <glossterm>Clinical Decision Support</glossterm>
         <acronym>CDS</acronym>
         <glossdef>
-            <para>A function for
-                electronic health records systems designed to help sift through large amounts of electronic
-                health data to suggest next steps for treatments, alert providers to available information
-                they may not have seen, or catch potential problems, such as dangerous medication
-                interaction.</para>
+            <para>A function for electronic health records systems designed to help sift through
+                large amounts of electronic health data to suggest next steps for treatments, alert
+                providers to available information they may not have seen, or catch potential
+                problems, such as dangerous medication interaction.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>HL7 Clinical Decision Support Workgroup</glossterm>
         <acronym>CDS Workgroup</acronym>
         <glossdef>
-            <para>A
-                workgroup of Health Level 7 (HL7) that focuses on development of standards to support
-                system-agnostic implementations of clinical decision support, including messages, services,
-                information models, and knowledge representation formalisms. For more information please see
-                <link 
-                    xlink:href="http://www.hl7.org/Special/committees/dss/index.cfm" >
-                    http://www.hl7.org/Special/committees/dss/index.cfm</link>.
-            </para>
+            <para>A workgroup of Health Level 7 (HL7) that focuses on development of standards to
+                support system-agnostic implementations of clinical decision support, including
+                messages, services, information models, and knowledge representation formalisms. For
+                more information please see <link
+                    xlink:href="http://www.hl7.org/Special/committees/dss/index.cfm">
+                    http://www.hl7.org/Special/committees/dss/index.cfm</link>. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Clinical Input Form</glossterm>
         <acronym>CIF</acronym>
         <glossdef>
-            <para>The manner by which clinicians
-                author clinical statements and enter them into their organizations’ electronic health record
-                (EHR). CIF has an impact as to how information is presented to the clinicians and how they
-                enter the data, such as by constraining the information to allow only certain values to be
-                entered, such as through a drop-down list or radio button, or breaking up large chunks of
-                related information into smaller parts. </para>
+            <para>The manner by which clinicians author clinical statements and enter them into
+                their organizations’ electronic health record (EHR). CIF has an impact as to how
+                information is presented to the clinicians and how they enter the data, such as by
+                constraining the information to allow only certain values to be entered, such as
+                through a drop-down list or radio button, or breaking up large chunks of related
+                information into smaller parts. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Clinical Information Modeling Initiative</glossterm>
         <acronym>CIMI</acronym>
         <glossdef>
-            <para>A workgroup of Health Level 7 (HL7) focused on improving the interoperability of healthcare
-                systems through shared implementable clinical information models, and a sponsor of this
-                whitepaper. For more information please see <link
-                    xlink:href="http://www.hl7.org/Special/Committees/cimi/index.cfm">http://www.hl7.org/Special/Committees/cimi/index.cfm</link></para>
+            <para>A workgroup of Health Level 7 (HL7) focused on improving the interoperability of
+                healthcare systems through shared implementable clinical information models, and a
+                sponsor of this whitepaper. For more information please see <link
+                    xlink:href="http://www.hl7.org/Special/Committees/cimi/index.cfm"
+                    >http://www.hl7.org/Special/Committees/cimi/index.cfm</link></para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Fast Healthcare Interoperability Resource</glossterm>
         <acronym>FHIR</acronym>
         <glossdef>
-            <para>The newest standard for exchanging healthcare information electronically from Health Level 7
-                (HL7). For more information please see <link
+            <para>The newest standard for exchanging healthcare information electronically from
+                Health Level 7 (HL7). For more information please see <link
                     xlink:href="https://www.hl7.org/fhir/overview.html"
                     >https://www.hl7.org/fhir/overview.html</link></para>
-        </glossdef>    </glossentry>
+        </glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Normal Form</glossterm>
+        <glossdef>
+            <para>Normalization is a design technique that transforms (or reduces) data into a
+                standard fundamental form of a statement. The standard fundamental form is referred
+                to as a normal form. </para>
+        </glossdef>
+    </glossentry>
     
     <glossentry>
         <glossterm>Solor</glossterm>
-         <glossdef>
-            <para>A project sponsored by the Department of
-                Veteran’s Affairs that represents and brings together different terminology standards by
-                using a single model that can encompass any customized content. Solor allows informaticists
-                and developers to convert user-supplied terminologies into a single model using open source
-                software to produce Solor content. For more information please see <link
+        <glossdef>
+            <para>A project sponsored by the Department of Veteran’s Affairs that represents and
+                brings together different terminology standards by using a single model that can
+                encompass any customized content. Solor allows informaticists and developers to
+                convert user-supplied terminologies into a single model using open source software
+                to produce Solor content. For more information please see <link
                     xlink:href="http://solor.io">http://solor.io</link></para>
         </glossdef>
     </glossentry>
 </glossary>
-

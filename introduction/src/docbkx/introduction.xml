@@ -2,7 +2,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Data</title>
-  <para>A normal form is a standard way of representing something that can be </para>
+  <para>A <glossterm>Normal Form</glossterm> is a standard way of representing data as standard
+    fundamental form of a statement. There can be many views on what constitues a normal form, based
+    on differing requirements.  </para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
@@ -138,19 +140,10 @@
         <mediaobject>
           <imageobject>
             <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="60%"
-              contentdepth="65%"/>
+              contentdepth="65%" align="center"/>
           </imageobject>
         </mediaobject>
       </figure>
-      <!-- <figure>
-        <title>Model Derivation according to SAIF-CD</title>
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="images/Perspectives.svg" scalefit="1" width="100%" format="SVG"
-              contentdepth="100%"/>
-          </imageobject>
-        </mediaobject>
-      </figure> -->
       <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
         of Computationally Independent Model (CIM), the Logical Perspective is not equivalent to the
         MDA Platform Independent Model (PIM), nor is the Implementable Perspective equivalent to the
