@@ -57,7 +57,7 @@
                     <entry><emphasis role="bold"><code>(0, INF)</code></emphasis></entry>
                     <entry><emphasis role="bold"><code>0</code></emphasis></entry>
                     <entry><emphasis role="bold"><code>false</code></emphasis></entry>
-                    <entry><emphasis role="bold"><code>null</code></emphasis></entry>
+                    <entry><emphasis role="bold"><code>INF</code></emphasis></entry>
                     <entry><emphasis role="bold"><code>false</code></emphasis></entry>
                 </row>
                 <row>
