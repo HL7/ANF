@@ -122,12 +122,13 @@
         derivations of clinical acts. </para>
     </section>
     <section>
-      <title>HL7 Service-Aware Interoperability Framework Canonical Definition (SAIF-CD) </title>
+      <title>HL7 Service-Aware Interoperability Framework </title>
       <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
-        testable that ensures semantic interoperability.</para>
-      <para>SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
+        testable that ensures semantic interoperability. This architecture, the HL7 Service-Aware
+        Interoperability Framework Canonical Definition (SAIF-CD). </para>
+      <para>The SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
         Conceptual, Logical, and Implementable. These perspective are not formally equivalent with
         Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
         even though it reuses the same derivation. Therefore, the Implementable Perspective is
