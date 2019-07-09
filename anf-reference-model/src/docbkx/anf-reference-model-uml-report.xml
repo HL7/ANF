@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<section xmlns="http://docbook.org/ns/docbook" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title/>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>ANF Reference Model</title>
     <para/>
     <section>
-        <title>ANF Reference Model </title>
-        <para> </para>
-        <para> </para>
-        <para> </para>
-        <para>
+        <title>ANF Reference Model</title>
+        <para>The ANF Reference Model is logical model and uses UML 2.0 notation to describe the
+            structure of normalized clinical statement that uses ANFStatement to describe clinical
+            statements for computational analysis. This logical model may be implemented using any
+            programming language, database technology, or interoperability specification (e.g. FHIR)
+            suitable for analysis. It normalizes the diverse approaches and methodologies that in
+            use across the industry and provides a uniform representation of data needed for
+            analysis. </para>
+        <figure>
+            <title>Overview: ANF Reference Model</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clip_image002_-145014558.png" depth="487" width="624"/>
+                    <imagedata fileref="images/clip_image002_-145014558.png" scalefit="1"
+                        width="100%" contentdepth="100%" />
                 </imageobject>
             </mediaobject>
-        </para>
-        <para>Figure ANFStatement</para>
+        </figure>
+        <para>ANFStatement</para>
         <section>
             <title>ANFStatement </title>
             <para>This is the main class which describes a clinical statement. Most importantly it
-                contains the <emphasis role="bold">'topic' </emphasis>which describes what this
+                contains the <emphasis role="bold">'topic'</emphasis>which describes what this
                 statement is about, and the <emphasis role="bold">'circumstance' </emphasis>which
                 will contain either request or result information regarding the <emphasis
                     role="bold">'topic'</emphasis>.</para>
-            <para> </para>
-            <para> </para>
             <informaltable>
                 <tgroup cols="3">
-                    <colspec colnum="1" colname="col1"/>
-                    <colspec colnum="2" colname="col2"/>
-                    <colspec colnum="3" colname="col3"/>
+                    <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                    <colspec colnum="2" colname="col2" colwidth="1*"/>
+                    <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                     <thead>
                         <row>
                             <entry/>
@@ -43,39 +46,28 @@
                         <row>
                             <entry>
                                 <para><emphasis role="bold">id</emphasis> Identifier</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>Unique Identifier of the statement.</para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
                                 <para><emphasis role="bold">time</emphasis> Measure</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>This data element describes when the statement was documented.
                                     Is its expressed as a <emphasis role="bold"><emphasis
-                                            role="underline"><link
-                                                linkend="BKM_5B475D35_8377_4A27_AD25_C1593B17BE54"
-                                                >Measure</link></emphasis></emphasis>. </para>
+                                            role="underline">Measure</emphasis></emphasis>. </para>
                                 <para>For example the date of 2019-07-09T00:12:31+00:00 would be
                                     represented as Unix Epoch time as 1562631151 seconds :</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>interval.lowerBound = 1562631151</para>
@@ -93,10 +85,6 @@
                                         <para>semantic = Seconds | 257997001</para>
                                     </listitem>
                                 </itemizedlist>
-                                <para> </para>
-                                <para> </para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -104,37 +92,27 @@
                             <entry>
                                 <para><emphasis role="bold">subjectOfRecord</emphasis>
                                     Participant</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>A patient's clinical record will contain many statements. The
                                     subjectOfRecordId is reference to the patient clinical record in
                                     which this statement is contained. </para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
                                 <para><emphasis role="bold">author</emphasis> Practitioner</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[0...*]</para>
                             </entry>
                             <entry>
                                 <para>Optional reference(s) list of identified authoring
                                     practitioners.</para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -142,11 +120,8 @@
                             <entry>
                                 <para><emphasis role="bold">subjectOfInformation</emphasis>
                                     LogicalExpression</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
@@ -165,14 +140,11 @@
                                     statement is about. This is normally the patient</para>
                                 <para>unless explicitly stated otherwise.</para>
                                 <para>Example values:</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>...</para>
                                     </listitem>
                                 </itemizedlist>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -180,11 +152,8 @@
                             <entry>
                                 <para><emphasis role="bold">associatedStatement</emphasis>
                                     ANFStatement</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[0...*]</para>
                             </entry>
                             <entry>
@@ -192,7 +161,6 @@
                                     is a laboratory result panel, each association would point to
                                     another statement which is a laboratory result.</para>
                                 <para>It may include:</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>a precondition</para>
@@ -201,8 +169,6 @@
                                         <para>an interpretatoin</para>
                                     </listitem>
                                 </itemizedlist>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -210,11 +176,8 @@
                             <entry>
                                 <para><emphasis role="bold">topic</emphasis>
                                     LogicalExpression</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
@@ -237,19 +200,14 @@
                                     includes what is being requested, measured or observed.</para>
                                 <para><emphasis role="bold">Principle 4: </emphasis>Each clinical
                                     statement may only have one topic.</para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
                                 <para><emphasis role="bold">type</emphasis> LogicalExpression</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
@@ -263,8 +221,6 @@
                                     12-lead electrocardiogram”. Performances can – but do not have
                                     to – include quantitative or qualitative results, e.g. “3 dot
                                     blot hemorrhages” or “Hepatitis A antibody positive”.</para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -272,18 +228,13 @@
                             <entry>
                                 <para><emphasis role="bold">circumstance</emphasis>
                                     CircumstanceChoice</para>
-                                <para> </para>
-                                <para> </para>
                             </entry>
                             <entry>
-                                <para> </para>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>A choice of circumstance appropriate to the type of clinical
                                     statement.</para>
-                                <para> </para>
-                                <para> </para>
                                 <para/>
                             </entry>
                         </row>
@@ -293,56 +244,50 @@
         </section>
         <section>
             <title> Circumstance </title>
-            <para> </para>
+
             <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis
                     role="bold">WHY </emphasis>and <emphasis role="bold">WHEN </emphasis>a requested
                 or performed action will be or was carried out. </para>
-            <para> </para>
-            <para> </para>
-            <para>
+            <figure>
+                <title>Circumstance</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/clip_image004_2117157160.png" depth="361" width="625"/>
+                        <imagedata fileref="images/clip_image004_2117157160.png" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-            </para>
-            <para>Figure Circumstance</para>
+            </figure>
             <section>
                 <title>CircumstanceChoice </title>
                 <para>This class provides a exclusive choice of circumstances that may chosen when
                     an ANFStatement is instantiated:</para>
-                <para> </para>
+
                 <itemizedlist>
                     <listitem>
-                        <emphasis role="underline"><link
-                                linkend="BKM_6BE28636_3423_4961_A302_4A7FD5F4484E"
-                                >PerformanceCircumstance</link></emphasis>
+                        <para>
+                            <emphasis role="underline">PerformanceCircumstance</emphasis></para>
                     </listitem>
                     <listitem>
-                        <emphasis role="underline"><link
-                                linkend="BKM_9E0005D5_94DD_4CED_9759_C9499BCA13C8"
-                                >RequestCircumstance</link></emphasis>
+                        <para>
+                            <emphasis role="underline">equestCircumstance</emphasis></para>
                     </listitem>
                     <listitem>
-                        <emphasis role="underline"><link
-                                linkend="BKM_07322E81_6206_4DF9_A177_6F35DD55A268"
-                                >NarrativeCircumstance</link></emphasis>
+                        <para>
+                            <emphasis role="underline">NarrativeCircumstance</emphasis></para>
                     </listitem>
                 </itemizedlist>
-                <para> </para>
+
             </section>
             <section>
                 <title>Circumstance </title>
                 <para>This abstract class is used to describe the default data needed describe any
                     circumstances associated with a clinical statement.</para>
-                <para> </para>
-                <para> </para>
-                <para> </para>
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -354,11 +299,8 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">timing</emphasis> Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -372,8 +314,6 @@
                                     <para>• Performance of action, which has taken place in the past
                                         (including “History of X….)</para>
                                     <para>• Performance of action that hasn't taken place</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -381,19 +321,14 @@
                                 <entry>
                                     <para><emphasis role="bold">purpose</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...*]</para>
                                 </entry>
                                 <entry>
                                     <para>This data element describes WHY a procedure was requested
                                         or performed in a post-coordinated expression, based on two
                                         possible procedures:</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -413,7 +348,7 @@
                     information about details relating to the request, such as patient must fast for
                     12 hours before having a lipids blood test.</para>
                 <para>Examples of Request clinical statements:</para>
-                <para> </para>
+
                 <itemizedlist>
                     <listitem>
                         <para>Request for Rheumatoid factor 1 time routine</para>
@@ -432,12 +367,12 @@
                             week.</para>
                     </listitem>
                 </itemizedlist>
-                <para> </para>
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -450,11 +385,8 @@
                                 <entry>
                                     <para><emphasis role="bold">conditionalTrigger</emphasis>
                                         ANFStatement</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...*]</para>
                                 </entry>
                                 <entry>
@@ -467,8 +399,6 @@
                                     <para><emphasis role="bold">Question</emphasis>: do we need a
                                         conditional predicate instead of a logical
                                         expression?</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -476,19 +406,14 @@
                                 <entry>
                                     <para><emphasis role="bold">requestedParticipant</emphasis>
                                         Reference</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...*]</para>
                                 </entry>
                                 <entry>
                                     <para>This data element is an optional list of either specific
                                         persons or roles who perform an action, assist in performing
                                         an action or are targets of an action.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -496,11 +421,8 @@
                                 <entry>
                                     <para><emphasis role="bold">priority</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -509,8 +431,6 @@
                                         or</para>
                                     <para>“stat”. By default a Request will be considered "routine"
                                         unless otherwise specified.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -518,19 +438,15 @@
                                 <entry>
                                     <para><emphasis role="bold">repetition</emphasis>
                                         Repetition</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>This data element Repetitiondescribes when an action is
                                         requested for more than a single occurrence using the
-                                            <emphasis role="underline"><link
-                                                linkend="BKM_5B475D35_8377_4A27_AD25_C1593B17BE54">Measure</link></emphasis> data structure:</para>
-                                    <para> </para>
+                                            <emphasis role="underline">>Measure</emphasis> data
+                                        structure:</para>
                                     <itemizedlist>
                                         <listitem>
                                             <para>When the repeated action should begin
@@ -549,16 +465,12 @@
                                                 for 2 weeks</para>
                                         </listitem>
                                     </itemizedlist>
-                                    <para> </para>
-                                    <para> </para>
                                     <itemizedlist>
                                         <listitem>
                                             <para>How long every action should last (eventDuration),
                                                 e.g. for 5 minutes</para>
                                         </listitem>
                                     </itemizedlist>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -566,16 +478,11 @@
                                 <entry>
                                     <para><emphasis role="bold">requestedResult</emphasis>
                                         ResultChoice</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -587,13 +494,13 @@
                 <title>PerformanceCircumstance </title>
                 <para>This class describe the circumstances associate with a treatment service. It
                     is used when a clinical statement describes a performing treatment services. </para>
-                <para> </para>
-                <para> </para>
+
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -606,16 +513,11 @@
                                 <entry>
                                     <para><emphasis role="bold">participant</emphasis>
                                         Reference</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...*]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -623,16 +525,11 @@
                                 <entry>
                                     <para><emphasis role="bold">result</emphasis>
                                         ResultChoice</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -646,13 +543,13 @@
                     natural language/text rather than a structure.</para>
                 <para>This class may be used to specify either a performance or request
                     circumstance.</para>
-                <para> </para>
-                <para> </para>
+
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -665,17 +562,12 @@
                                 <entry>
                                     <para><emphasis role="bold">text</emphasis>
                                         string-primitive</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>Text description of circumstances.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -686,7 +578,7 @@
         </section>
         <section>
             <title> Result </title>
-            <para> </para>
+
             <para>A unique aspect of the ANF Model is that all measures and results are numeric
                 ranges. The hierarchy of classes to represent these is shown in the below, “Result
                 Hierarchy”. An important point to notice in this class diagram is that the ANF Model
@@ -700,24 +592,23 @@
                 color. The ANF Statement would represent Eye color using the Blue iris Finding as
                 the Topic and the Result would be Present, represented as interval.lowerBound =1,
                 interval.upperBound=INF.</para>
-            <para> </para>
-            <para> </para>
-            <para>
+
+
+            <figure>
+                <title>Result Choices</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/clip_image006_-698701192.png" depth="375" width="626"/>
+                        <imagedata fileref="images/clip_image006_-698701192.png" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-            </para>
-            <para>Figure Result</para>
+            </figure>
             <section>
                 <title>ResultChoice </title>
-                <para>This class specifies a choice of <emphasis role="underline"><link
-                            linkend="BKM_BA8AC209_6E94_4CEA_8383_3EC4B8574F93"
-                            >ObservationResult</link></emphasis> or <emphasis role="underline"><link
-                            linkend="BKM_C3CE84C9_9BD5_4F8F_B230_D84BCD188F57"
-                            >InterventionResult</link></emphasis>. </para>
-                <para> </para>
+                <para>This class specifies a choice of <emphasis role="underline"
+                        >ObservationResult</emphasis> or <emphasis role="underline">
+                        InterventionResult</emphasis>. </para>
+
             </section>
             <section>
                 <title>InterventionResult </title>
@@ -727,9 +618,9 @@
                     have a status of "On hold". </para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -742,35 +633,25 @@
                                 <entry>
                                     <para><emphasis role="bold">status</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>This is a coded value representing the current status of
                                         the intervention.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">measure</emphasis> Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>Intervention result as a measure. </para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -781,12 +662,12 @@
             <section>
                 <title>ObservationResult </title>
                 <para>This class is represents an observation result. </para>
-                <para> </para>
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -799,19 +680,14 @@
                                 <entry>
                                     <para><emphasis role="bold">healthRisk</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>Health Risk is used to flag a result with coded values
                                         such as 'low', 'normal', high', and</para>
                                     <para>'critical'. </para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -819,42 +695,31 @@
                                 <entry>
                                     <para><emphasis role="bold">normalRange</emphasis>
                                         Interval</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>Normal Range is the interval of values that are
                                         normal.</para>
-                                    <para> </para>
                                     <itemizedlist>
                                         <listitem>
                                             <para>refers to "normal" for the patient with these
                                                 conditions.</para>
                                         </listitem>
                                     </itemizedlist>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">measure</emphasis> Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>It species the measurable result.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -865,22 +730,22 @@
         </section>
         <section>
             <title> Data Structures </title>
-            <para> </para>
+
             <para>The following are data structures used to represent an <emphasis role="underline"
-                        ><link linkend="BKM_77CD49AF_23EB_4FB3_98A7_C1AF1B95D725"
-                        >ANFStatement</link></emphasis>. This section describes the data structures
-                specific to ANF. This model references a set of logical structures to represent
-                unique identifiers (i.e. Identifie, Expresson) and primitive types (boolean, float). </para>
-            <para> </para>
-            <para> </para>
-            <para>
+                    >ANFStatement</emphasis>. This section describes the data structures specific to
+                ANF. This model references a set of logical structures to represent unique
+                identifiers (i.e. Identifie, Expresson) and primitive types (boolean, float). </para>
+
+
+            <figure>
+                <title>Data Structures used to represent an ANFStatement</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/clip_image008_1193487896.png" depth="290" width="624"/>
+                        <imagedata fileref="images/clip_image008_1193487896.png" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-            </para>
-            <para>Figure Data Structures</para>
+            </figure>
             <section>
                 <title>Interval </title>
                 <para>An interval value data type (or “interval value”) formally represents a
@@ -924,13 +789,13 @@
                     (such as “nausea”):</para>
                 <para><emphasis role="italic">Nausea value = (0,INF] : present</emphasis></para>
                 <para><emphasis role="italic">Nausea value = [0,0] : absent</emphasis></para>
-                <para> </para>
-                <para> </para>
+
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -942,11 +807,8 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">lowerBound</emphasis> float</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -957,8 +819,6 @@
                                     <para>a range, lower and upper bound are the same. Example:
                                         systolic blood pressure 110 mmHg. The lower</para>
                                     <para>and upper bound are both 110 mmHg.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -966,11 +826,8 @@
                                 <entry>
                                     <para><emphasis role="bold">includeLowerBound</emphasis>
                                         boolean</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -987,19 +844,14 @@
                                     <para>10 days. Choosing “11” would require to include the lower
                                         bound</para>
                                     <para>If "true" the lower bound is part of the interval.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">upperBound</emphasis> float</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1011,8 +863,6 @@
                                         lower bound have the same value.</para>
                                     <para><emphasis role="bold">Invariant</emphasis>: it must be
                                         greater than or equal to the lower bound.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1020,11 +870,8 @@
                                 <entry>
                                     <para><emphasis role="bold">includeUpperBound</emphasis>
                                         boolean</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1037,8 +884,6 @@
                                     <para>bound will be captured as “inf” (infinite). Infinite as an
                                         upper bound is never included.</para>
                                     <para>If "true" the upper bound is part of the interval.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1051,17 +896,15 @@
                 <para>This class captures measurable elements of clinical statements , e.g. the
                     results of test procedures, time</para>
                 <para>periods, frequencies of repetitions for procedures or medication
-                    administrations. It builds on <emphasis role="underline"><link
-                            linkend="BKM_AD289544_EBB0_48A7_ACE6_34FBE8DF8D6C"
-                        >Interval</link></emphasis> and specifies the semantics of the interval and
-                    resolution/precision. </para>
-                <para> </para>
-                <para> </para>
+                    administrations. It builds on <emphasis role="underline">Interval</emphasis> and
+                    specifies the semantics of the interval and resolution/precision. </para>
+
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -1073,17 +916,12 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">interval</emphasis> Interval</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>The measure value represented as an interval.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1091,11 +929,8 @@
                                 <entry>
                                     <para><emphasis role="bold">semantic</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1120,8 +955,6 @@
                                     <para>Time</para>
                                     <para>Time interval</para>
                                     <para>Duration</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1129,11 +962,8 @@
                                 <entry>
                                     <para><emphasis role="bold">resolution</emphasis>
                                         decimal-primitive</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...1]</para>
                                 </entry>
                                 <entry>
@@ -1147,8 +977,6 @@
                                         “History of breast cancer” implies an undefined</para>
                                     <para>amount of time in the past and it is not stated, if it is
                                         years, months, etc.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1158,21 +986,17 @@
             </section>
             <section>
                 <title>Repetition </title>
-                <para>This class builds on <emphasis role="underline"><link
-                            linkend="BKM_AD289544_EBB0_48A7_ACE6_34FBE8DF8D6C"
-                        >Interval</link></emphasis> and <emphasis role="underline"><link
-                            linkend="BKM_5B475D35_8377_4A27_AD25_C1593B17BE54"
-                        >Measure</link></emphasis>. Repetition is used to represent when an action
-                    is requested for more than a single occurrence. Repetition is an optional
-                    component for a RequestCircumstance. A Request Component contains five Measures
-                    that are used to further define the parameters of the Repetition:</para>
-                <para> </para>
-                <para> </para>
+                <para>This class builds on <emphasis role="underline">Interval</emphasis> and
+                        <emphasis role="underline">Measure</emphasis>. Repetition is used to
+                    represent when an action is requested for more than a single occurrence.
+                    Repetition is an optional component for a RequestCircumstance. A Request
+                    Component contains five Measures that are used to further define the parameters
+                    of the Repetition:</para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -1185,11 +1009,8 @@
                                 <entry>
                                     <para><emphasis role="bold">periodStart</emphasis>
                                         Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1197,8 +1018,6 @@
                                         action should begin. If</para>
                                     <para>it is not specified, a default value of [0,inf] will be
                                         used. e.g. NOW</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1206,16 +1025,11 @@
                                 <entry>
                                     <para><emphasis role="bold">periodDuration</emphasis>
                                         Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1223,11 +1037,8 @@
                                 <entry>
                                     <para><emphasis role="bold">eventSeparation</emphasis>
                                         Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1235,8 +1046,6 @@
                                         actions. If it is</para>
                                     <para>not specified, a default value of [0,inf] will be used.
                                         e.g. for 2 weeks</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1244,11 +1053,8 @@
                                 <entry>
                                     <para><emphasis role="bold">eventDuration</emphasis>
                                         Measure</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...1]</para>
                                 </entry>
                                 <entry>
@@ -1256,8 +1062,6 @@
                                         repetition should persist.</para>
                                     <para>If it is not specified, a default value of [0,inf] will be
                                         used. e.g. for 3 week</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1265,11 +1069,8 @@
                                 <entry>
                                     <para><emphasis role="bold">eventFrequency</emphasis>
                                         Interval</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
@@ -1277,8 +1078,6 @@
                                         action should occur.</para>
                                     <para>If it is not specified, a default value of [0,inf] will be
                                         used. e.g. 3 times per week</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1289,13 +1088,13 @@
             <section>
                 <title>LogicalExpression </title>
                 <para>This class represents is a wrapper for logical expression.</para>
-                <para> </para>
-                <para> </para>
+
+
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -1308,27 +1107,16 @@
                                 <entry>
                                     <para><emphasis role="bold">expression</emphasis>
                                         Expression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para>Logical expression could be represented using <emphasis
-                                            role="underline"><link
-                                                xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
-                                                >FHIR </link><link
-                                                xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
-                                                >Expresssion</link></emphasis> structure or a
-                                        similar standard-based syntax ((e.g. SNOMED Expression
-                                        Constrain Language - ECL).</para>
-                                    <para> </para>
+                                    <para>Logical expression could be represented using FHIR
+                                        Expresssion structure or a similar standard-based syntax
+                                        ((e.g. SNOMED Expression Constrain Language - ECL).</para>
                                     <para><emphasis role="bold">References: </emphasis></para>
                                     <para>https://confluence.ihtsdotools.org/display/DOCECL</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1339,9 +1127,7 @@
         </section>
         <section>
             <title> References </title>
-            <para> </para>
             <para>A clinical statement references other information manage by a system:</para>
-            <para> </para>
             <itemizedlist>
                 <listitem>
                     <para>references to patient/records</para>
@@ -1350,27 +1136,23 @@
                     <para>references to health practitioners</para>
                 </listitem>
             </itemizedlist>
-            <para> </para>
             <para>ANF statements may also reference other related statements</para>
-            <para> </para>
-            <para> </para>
-            <para>
+            <figure>
+                <title>References to other information</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/clip_image010_-1662622226.png" depth="90" width="437"/>
+                        <imagedata fileref="images/clip_image010_-1662622226.png" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-            </para>
-            <para>Figure References</para>
+            </figure>
             <section>
                 <title>AssociatedStatement </title>
-                <para> </para>
-                <para> </para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -1382,17 +1164,12 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">id</emphasis> Reference</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>A reference to the associated statement. </para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1400,18 +1177,13 @@
                                 <entry>
                                     <para><emphasis role="bold">semantic</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
                                     <para>A logical expression to capture how the target statement
                                         is associated.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1423,7 +1195,6 @@
                 <title>Participant </title>
                 <para>This class specifies the role/specialties/services that a practitioner may
                     perform relative to the ANFStatement:</para>
-                <para> </para>
                 <itemizedlist>
                     <listitem>
                         <para>the author</para>
@@ -1435,13 +1206,11 @@
                         <para>performance participant</para>
                     </listitem>
                 </itemizedlist>
-                <para> </para>
-                <para> </para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1"/>
-                        <colspec colnum="2" colname="col2"/>
-                        <colspec colnum="3" colname="col3"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="2" colname="col2" colwidth="1*"/>
+                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
                             <row>
                                 <entry/>
@@ -1453,16 +1222,11 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">id</emphasis> Identifier</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1470,16 +1234,11 @@
                                 <entry>
                                     <para><emphasis role="bold">practitioner</emphasis>
                                         Reference</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
@@ -1487,25 +1246,20 @@
                                 <entry>
                                     <para><emphasis role="bold">code</emphasis>
                                         LogicalExpression</para>
-                                    <para> </para>
-                                    <para> </para>
                                 </entry>
                                 <entry>
-                                    <para> </para>
                                     <para>[0...1]</para>
                                 </entry>
                                 <entry>
                                     <para>Role(s) which this practitioner is authorized to perform
                                         for the organization.</para>
-                                    <para> </para>
-                                    <para> </para>
                                     <para/>
                                 </entry>
                             </row>
                         </tbody>
                     </tgroup>
                 </informaltable>
-                <para> </para>
+
             </section>
         </section>
     </section>

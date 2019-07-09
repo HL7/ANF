@@ -22,16 +22,25 @@
             </tbody>
         </tgroup>
     </informaltable>
-    
-    <para>The ANF Reference Model is a small static model that can easily be described with UML,
-        OpenEHR BMM, or FHIR StructureDefintion. Detailed Clinical Models are then described as
-        constraints of this reference model. The core of the model is the class ANFStatement.</para>
-    
+
+    <para>The ANF Reference Model is a logical information model describing the format of a
+        normalized clinical statement that may have originated from an information system data
+        store, a standard-based message (e.g. HL7 Version 2), a standard-document (e.g. HL7 CDA), or a
+        standard-based resource (e.g. HL7 FHIR), or an instance of a CIMI model (e.g. FHIR-based profile, openEHR archetype) .</para>
+    <!-- These sections are replaced by the autho-generated RM 
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    -->
+    <xi:include href="anf-reference-model-uml-report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+    <!-- examples-of-performance.xml is used in a previous chapter. -->
+<!--    
+    <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      -->
     <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="examples-of-modeling-request.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="examples-of-modeling-CCDA.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="examples-of-modeling-KNARTS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    
+  
+
 </chapter>
