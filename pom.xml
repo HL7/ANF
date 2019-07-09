@@ -58,6 +58,14 @@
                <configuration>
                   <glossentryShowAcronym>primary</glossentryShowAcronym>
                   <glosstermAutoLink>true</glosstermAutoLink>
+                  <formalTitlePlacement>
+                     figure after
+                     example before
+                     equation before
+                     table after
+                     procedure before
+                     task before
+                  </formalTitlePlacement>
                </configuration>
             </plugin>
          </plugins>
