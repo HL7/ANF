@@ -67,7 +67,7 @@
                      task before
                   </formalTitlePlacement>
                   <processEmptySourceToc>true</processEmptySourceToc>
-                  <generateToc>book title</generateToc>
+                  <!--<generateToc>Analysis Normal Form</generateToc>-->
                </configuration>
             </plugin>
          </plugins>
