@@ -417,21 +417,24 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             <title>Request for Action Modeling Guideline Decision Tree</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/request_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                    <imagedata fileref="images/request_modeling_guidelines.svg" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
         <para>
-            <emphasis role="bold">Timing: </emphasis>The Timing will always represent a future time in a Request for Action ANF Statement. Therefore, the Measure used in the Timing will be for a future time.
-        </para>
+            <emphasis role="bold">Timing: </emphasis>The Timing will always represent a future time
+            in a Request for Action ANF Statement. Therefore, the Measure used in the Timing will be
+            for a future time. </para>
         <editorial-rule>
             <title>RequestedParticipant</title>
-            <mathphrase>If the Request for Action specifies a Requested Participant the requestedParticipant will be populated.</mathphrase>
+            <mathphrase>If the Request for Action specifies a Requested Participant the
+                requestedParticipant will be populated.</mathphrase>
         </editorial-rule>
         <para>
-            <emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority for which the request is to be carried out.  By default a Request will be considered "routine" unless otherwise specified
-        </para>
+            <emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority
+            for which the request is to be carried out. By default a Request will be considered
+            "routine" unless otherwise specified </para>
         <editorial-rule>
             <title>Request for Action Topics</title>
             <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?"?>The
@@ -500,16 +503,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </listitem>
             </itemizedlist></para>
         <editorial-rule>
-            <title>conditionalTrigger</title>
-            <mathphrase>conditionalTriggers differ from
-            prerequisites in that they cause the action to be performed. conditionalTriggers
-            contribute to the timing of when the request will be performed and not necessarily to
-            the purpose of performing. conditionalTriggers are optional.</mathphrase>
-        </editorial-rule>
-        <editorial-rule>
             <title>requestedResult</title>
             <mathphrase>If a requestedResult is not specified in the request, an upperBound and
-                lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement time.  If
+                lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement time. If
                 a requestedResult is specified, the appropriate upperBound and lowerBound is
                 specified with the correct MeasureSemantic.</mathphrase>
         </editorial-rule>

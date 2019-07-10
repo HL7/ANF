@@ -61,10 +61,6 @@ The problem with this approach is that expressions of this sort are restricted t
                                             |Backache]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>conditionalTrigger: <emphasis>if (backache present
-                                            statement)</emphasis></para>
-                                </listitem>
-                                <listitem>
                                     <para>requestedParticipant: <emphasis role="italic">[410604004
                                             |Subject of record]</emphasis></para>
                                 </listitem>
