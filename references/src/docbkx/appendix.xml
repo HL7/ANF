@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Appendix</title>
+    <section>
+        <title>Narratives</title>
+        <section>
+            <title>Request for Action Narratives</title>
+            <para>
+                <example>
+                    <title>Radiology Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>X-ray chest to evaluate for heart failure now</para>
+                        </listitem>
+                        <listitem>
+                            <para>X-ray Knee-right to evaluate for psoriatic arthritis, routine</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Pharmacy Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Ibuprofen 400 mg tablet oral every 6 hours as needed for back
+                                pain; may increase dose frequency to one tablet every 4 hours 100
+                                tablets 2 refills</para>
+                        </listitem>
+                        <listitem>
+                            <para>Ribavirin 200 mg capsule oral, take 2 capsules every morning and 3
+                                capsules every evening</para>
+                        </listitem>
+                        <listitem>
+                            <para>Ribavirin 200 mg capsule oral, take 2 capsules every morning</para>
+                        </listitem>
+                        <listitem>
+                            <para>Ribavirin 200 mg capsule oral, 3 capsules every evening</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Education Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Advised to participate in tobacco cessation counseling once a week</para>
+                        </listitem>
+                        <listitem>
+                            <para>Food cross-reactivity education (routine)</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Laboratory Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Rheumatoid factor 1 time routine</para>
+                        </listitem>
+                        <listitem>
+                            <para>Brain natriuretic peptide STAT</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Observation Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Breast Screening Appointment on X Date</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Cardiology Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Cardiology referral</para>
+                        </listitem>
+                        <listitem>
+                            <para>Resting 12-lead electrocardiogram to evaluate for arrhythmia now</para>
+                        </listitem>
+                        <listitem>
+                            <para>Referral to cardiology to evaluate supraventricular tachycardia</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+                <example>
+                    <title>Other Request for Action Narratives</title>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Hold insulin per Cardiac Catheterization Guidelines ( just need an X start and stop time in relation to procedure )</para>
+                        </listitem>
+                    </itemizedlist>
+                </example>
+            </para>
+        </section>
+        <section>
+            <title>Performance of Action Narratives</title>
+            <example>
+                <title>Radiology Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para>Lumbar/Thoracic Spine CT</para>
+                    </listitem>
+                    <listitem>
+                        <para>Lumbar/Thoracic Spine CT Myelogram Interpretation</para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Pharmacy Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para>Patient took one Acetaminophen 500 mg tablet by mouth for pain</para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Education Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para>Patient was provided with education on diabetes</para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Laboratory Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para></para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Observation Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para>History of Cocaine Use</para>
+                    </listitem>
+                    <listitem>
+                        <para>First degree relatives with ovarian cancer</para>
+                    </listitem>
+                    <listitem>
+                        <para>Blue Eye Color</para>
+                    </listitem>
+                    <listitem>
+                        <para>Dot blot hemorrhage Present</para>
+                    </listitem>
+                    <listitem>
+                        <para>Family history of breast cancer</para>
+                    </listitem>
+                    <listitem>
+                        <para>Systolic Blood Pressure 120 mmHg</para>
+                    </listitem>
+                    <listitem>
+                        <para>Systolic Blood Pressure 180 mmHg, normalRange (90-120), health risk critical</para>
+                    </listitem>
+                    <listitem>
+                        <para>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP
+                            cuff adult size, patient in sitting position for at least 5 minutes,
+                            urinated not more than 30 minutes prior to measurement</para>
+                    </listitem>
+                    <listitem>
+                        <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
+                    </listitem>
+                    <listitem>
+                        <para>Diabetes mellitus type 2</para>
+                    </listitem>
+                    <listitem>
+                        <para>Diabetes mellitus type 2 Absent</para>
+                    </listitem>
+                    <listitem>
+                        <para>Had an appendectomy 3-4 years ago</para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Cardiology Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para></para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+            <example>
+                <title>Other Performance of Action Narratives</title>
+                <itemizedlist>
+                    <listitem>
+                        <para>Insulin placed on hold 24 hours prior to catheterization</para>
+                    </listitem>
+                    <listitem>
+                        <para>Columbia-Suicide Severity Rating Scale (C-SSRS) Screen Negative
+                            Result</para>
+                    </listitem>
+                    <listitem>
+                        <para>Candidate for Osteoporosis Screening</para>
+                    </listitem>
+                    <listitem>
+                        <para>Positive screen for fall risk</para>
+                    </listitem>
+                    <listitem>
+                        <para>Negative screen for PTSD and Depression</para>
+                    </listitem>
+                </itemizedlist>
+            </example>
+        </section>
+    </section>
+</appendix>
