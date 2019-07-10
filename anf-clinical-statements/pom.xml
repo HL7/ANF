@@ -54,7 +54,7 @@
                     </execution>
                 </executions>
             </plugin>
-<!--            <plugin>
+            <plugin>
                 <groupId>com.agilejava.docbkx</groupId>
                 <artifactId>docbkx-maven-plugin</artifactId>
                 <executions>
@@ -66,7 +66,7 @@
                             <goal>generate-html</goal>
                         </goals>
                         <configuration>
-                            <!-\- per execution configuration -\->
+                            <!-- per execution configuration -->
                             <includes>${docbook.root}</includes>
                             <draftMode>yes</draftMode>
                             <externalFOPConfiguration>
@@ -80,7 +80,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!-\- shared configuration -\->
+                    <!-- shared configuration -->
                     <generatedSourceDirectory>${project.build.directory}/docbkx/generated</generatedSourceDirectory>
                     <xincludeSupported>true</xincludeSupported>
                     <paperType>USletter</paperType>
@@ -91,7 +91,7 @@
                     </foCustomization>
 
                     <customizationParameters>
-                        <!-\- additional XSLT parameters-\->
+                        <!-- additional XSLT parameters-->
                         <parameter>
                             <name>key</name>
                             <value>value</value>
@@ -99,7 +99,7 @@
                     </customizationParameters>
                 </configuration>
             </plugin>
--->            <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
