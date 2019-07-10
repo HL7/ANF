@@ -35,8 +35,9 @@
         </glossdef>
     </glossentry>
     <glossentry>
+        <?oxy_comment_start author="timowilliams" timestamp="20190710T095254-0500" comment="Should this be Structured Input Form?"?>
         <glossterm>Clinical Input Form</glossterm>
-        <acronym>CIF</acronym>
+        <acronym>CIF</acronym><?oxy_comment_end?>
         <glossdef>
             <para>The manner by which clinicians author clinical statements and enter them into
                 their organizations’ electronic health record (EHR). CIF has an impact as to how
@@ -79,7 +80,7 @@
     <glossentry>
         <glossterm>Solor</glossterm>
         <glossdef>
-            <para>A project sponsored by the Department of Veteran’s Affairs that represents and
+            <para>A project sponsored by the Department of Veterans Affairs that represents and
                 brings together different terminology standards by using a single model that can
                 encompass any customized content. Solor allows informaticists and developers to
                 convert user-supplied terminologies into a single model using open source software
