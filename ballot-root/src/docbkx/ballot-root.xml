@@ -2,9 +2,21 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
       xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>HL7 ANF Ballot</title>
-  <subtitle>Submission Document</subtitle>
+  <title> Analysis Normal Form</title>
+  <subtitle>HL7 Ballot Submission Document</subtitle>
  
+ <preface>
+   <title>Intended Audience</title>
+   <para> ANF is intended to support projects that aggregate clinical statements from a variety of
+      sources, independent of formalism or approach used by the source system. The users of this
+      specification and subsequent implementation guidance are developing solutions that support
+      clinical decision support, patient safety, and research. </para>
+    <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other
+      national initiatives are all relying on interoperable, reusable, analysis-ready information
+      that can improve outcomes, produce new therapies, and put into practice "precision
+      medicine".</para>
+ </preface>
+  <toc/>
   <!-- Outline -->
 <!-- <xi:include href="../../../introduction/src/docbkx/outline.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/> -->

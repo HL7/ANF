@@ -66,6 +66,8 @@
                      procedure before
                      task before
                   </formalTitlePlacement>
+                  <processEmptySourceToc>true</processEmptySourceToc>
+                  <generateToc>book title</generateToc>
                </configuration>
             </plugin>
          </plugins>

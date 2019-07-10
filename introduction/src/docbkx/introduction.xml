@@ -2,9 +2,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Data</title>
-  <para>A <glossterm>Normal Form</glossterm> is a standard way of representing data as standard
-    fundamental form of a statement. There can be many views on what constitues a normal form, based
-    on differing requirements.  </para>
+  <para>A <glossterm>Normal Form</glossterm> is a represention of data as standard fundamental form
+    of a statement. There can be many views on what constitues a normal form, based on differing
+    requirements. </para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
@@ -75,6 +75,24 @@
       </itemizedlist>
     </listitem>
   </itemizedlist>
+  <para>Healthcare organizations are striving to become high reliability organizations (HROs),
+    characterized by high levels of safety under inherently risky, technologically-complex, and
+    demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
+    framework for assessing progress towards becoming a HRO and included the safe use of health IT
+    and review of quality measures, which are dependent on data from Electronic Health Record (EHR)
+      systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in the US
+    and there is increasing opportunity to leverage a substantial number of extant EHR mapped data
+    sets to improve population health through quality measures, case reporting, and decision
+    support. </para>
+  <para>Information systems record and manage clinical statements using a variety of standard or
+    ad-hoc models. However, both treatment and analysis of clinical statements require consistency
+    not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
+    of an ISO DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
+    analysis, but even in the case of structured, semantically-clear information, inconsistency
+    across sources of information raises obstacles to analysis and research. Analysis of aggregate
+    information managed by health information networks poses the greatest challenge today because a
+    meaningful use of data for patient outcomes or research requires a common format and level of
+    semantic clarity.</para>
   <section>
     <title>Clinical Statement Representations </title>
     <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
@@ -212,27 +230,6 @@
         This can be the statement of a condition being present, a request for a procedure to be
         done, the results of lab tests or the patient’s family history of cancer. </para>
     </section>
-  </section>
-  <section>
-    <title>Problem</title>
-    <para>Healthcare organizations are striving to become high reliability organizations (HROs),
-      characterized by high levels of safety under inherently risky, technologically-complex, and
-      demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
-      framework for assessing progress towards becoming a HRO and included the safe use of health IT
-      and review of quality measures, which are dependent on data from Electronic Health Record
-      (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
-      the US and there is increasing opportunity to leverage a substantial number of extant EHR
-      mapped data sets to improve population health through quality measures, case reporting, and
-      decision support. </para>
-    <para>Information systems record and manage clinical statements using a variety of standard or
-      ad-hoc models. However, both treatment and analysis of clinical statements require consistency
-      not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
-      of an ISO DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
-      analysis, but even in the case of structured, semantically-clear information, inconsistency
-      across sources of information raises obstacles to analysis and research. Analysis of aggregate
-      information managed by health information networks poses the greatest challenge today because
-      a meaningful use of data for patient outcomes or research requires a common format and level
-      of semantic clarity.</para>
   </section>
   <section>
     <title>Why ANF? </title>
@@ -460,17 +457,6 @@
             or can be readily explained.</para>
         </listitem>
       </itemizedlist>
-    </section>
-    <section>
-      <title>Intended Audience</title>
-      <para> ANF is intended to support projects that aggregate clinical statements from a variety
-        of sources, independent of formalism or approach used by the source system. The users of
-        this specification and subsequent implementation guidance are developing solutions that
-        support clinical decision support, patient safety, and research. </para>
-      <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other
-        national initiatives are all relying on interoperable, reusable, analysis-ready information
-        that can improve outcomes, produce new therapies, and put into practice "precision
-        medicine".</para>
     </section>
   </section>
 </chapter>
