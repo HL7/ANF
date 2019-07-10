@@ -752,10 +752,10 @@
                     numeric interval between two nonnegative real numbers. The interval can be open
                     or closed.</para>
                 <para>The interval value data type provides a single way to represent both
-                    “presence” values and numeric values for a phenomenon. In general, the interval
-                    value represents the numeric range within which the observed value of a
-                    phenomenon occurs. Note that this formalism allows both exact values and ranges
-                    of values to be expressed. In case that the beginning and end point of an
+                    “presence” or "absence" values and numeric values for a phenomenon. In general,
+                    the interval value represents the numeric range within which the observed value
+                    of a phenomenon occurs. Note that this formalism allows both exact values and
+                    ranges of values to be expressed. In case that the beginning and end point of an
                     interval are the same value,, the meaning is that the value of the phenomenon is
                         <emphasis role="underline">exactly </emphasis>that value.</para>
                 <para>The interval value data type provides a single way to represent both
@@ -784,10 +784,10 @@
                 <para>that includes both the number 0 and at least one number > 0 denotes the value
                     “indeterminate”. Lastly,</para>
                 <para>there are two interval values that explicitly denote “present” and “absent,”
-                    respectively. These value may</para>
+                    respectively. These values may</para>
                 <para>be assigned to phenomena that would not otherwise take on a numeric value
                     (such as “nausea”):</para>
-                <para><emphasis role="italic">Nausea value = (0,INF] : present</emphasis></para>
+                <para><emphasis role="italic">Nausea value = [1,INF] : present</emphasis></para>
                 <para><emphasis role="italic">Nausea value = [0,0] : absent</emphasis></para>
 
 

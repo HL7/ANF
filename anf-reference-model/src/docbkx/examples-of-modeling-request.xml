@@ -26,23 +26,22 @@
                             <para>Subject of info:<emphasis role="italic"
                                     ><?oxy_comment_start author="kmaulden" timestamp="20190418T113928-0400" comment="Comment from WC:
 I would expect here the unique identifier for the person who is the Subject of record, and not the concept Subject of Record
-" id="sxp_fxr_thb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112208-0500" comment="Nope.  That is the Subject of Record ID" parentID="sxp_fxr_thb" flag="done" mid="1"?>[410604004
-                                    |Subject of record]
-                                    <?oxy_comment_end mid="1"?><?oxy_comment_end?></emphasis>
+" id="sxp_fxr_thb" flag="done" mid="1"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112208-0500" comment="Nope.  That is the Subject of Record ID" parentID="sxp_fxr_thb" flag="done"?>[Subject
+                                    of record]
+                                    <?oxy_comment_end?><?oxy_comment_end mid="1"?></emphasis>
                             </para>
                             <para/>
-                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
-                                    professional] </emphasis></para>
+                            <para>Authors: <emphasis role="italic">[Healthcare professional]
+                                </emphasis></para>
                             <para/>
                             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T113944-0400" comment="Comment from WC:
 The problem with this approach is that expressions of this sort are restricted to generic entities (concepts) and that the specific entities involved are not represented. As an example, you don’t specify here to whom the substance is administered: it might very well be the subject of record administering it to somebody else. Even if you would add “(370131001 | Recipient category) [410604004 |Subject of record] ”, you still are not saying who precisely it is. I also don’t see the ‘every 6 hours’ represented here.
 " id="wtw_dyr_thb"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112914-0500" comment="Isn&apos;t who it applies to covered by the subjectOfRecordId?" parentID="wtw_dyr_thb" mid="3"?>Topic:
-                                    <emphasis role="italic">[71388002|Procedure]-</emphasis></para>
-                            <para><emphasis role="italic">(260686004|Method)
-                                    [129445006|Administration - action] (363701004|Direct substance)
-                                    [197805|Ibuprofen 400 MG Oral Tablet]</emphasis></para>
-                            <para><emphasis role="italic">(410675002|Route of administration)
-                                    [260548002|Oral]</emphasis><?oxy_comment_end?><?oxy_comment_end mid="3"?></para>
+                                    <emphasis role="italic">[Procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(Method) [Administration - action] (Direct
+                                    substance) [Ibuprofen 400 MG Oral Tablet]</emphasis></para>
+                            <para><emphasis role="italic">(Route of administration)
+                                    [Oral]</emphasis><?oxy_comment_end?><?oxy_comment_end mid="3"?></para>
                         </entry>
                 </row>
                 <row>
@@ -57,16 +56,16 @@ The problem with this approach is that expressions of this sort are restricted t
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>purpose: <emphasis role="italic">[161891005
-                                            |Backache]</emphasis></para>
+                                    <para>purpose: <emphasis role="italic"
+                                        >[Backache]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>requestedParticipant: <emphasis role="italic">[410604004
-                                            |Subject of record]</emphasis></para>
+                                    <para>requestedParticipant: <emphasis role="italic">[ Subject of
+                                            record]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>priority: <emphasis role="italic">[50811001
-                                            |Routine]</emphasis></para>
+                                    <para>priority: <emphasis role="italic"
+                                        >[Routine]</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -78,16 +77,7 @@ The problem with this approach is that expressions of this sort are restricted t
                                     <para>repetition:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>eventFrequency.lowerBound:
-                                                <emphasis>4</emphasis></para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>eventFrequency.upperBound:
-                                                <emphasis>6</emphasis></para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>eventFrequency.measureSemantic: <emphasis
-                                                  role="italic">[258702006 |hour]</emphasis></para>
+                                            <para>eventFrequency: [4,6] hour</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -139,15 +129,15 @@ The problem with this approach is that expressions of this sort are restricted t
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Request]</emphasis></emphasis></para>
                             <para/>
-                            <para>Subject of info:<emphasis role="italic">[410604004 |Subject of
-                                    record] </emphasis>
+                            <para>Subject of info:<emphasis role="italic">[Subject of record]
+                                </emphasis>
                             </para>
                             <para/>
-                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
-                                    professional] </emphasis></para>
+                            <para>Authors: <emphasis role="italic">[Healthcare professional]
+                                </emphasis></para>
                             <para/>
-                            <para>Topic: <emphasis role="italic">[399208008 |Plain chest
-                                    X-ray]</emphasis></para>
+                            <para>Topic: <emphasis role="italic">[Plain chest
+                                X-ray]</emphasis></para>
                         </entry>
                     </row>
                     <row>
@@ -162,16 +152,16 @@ The problem with this approach is that expressions of this sort are restricted t
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>purpose: <emphasis role="italic">[444821009 |Assessment of
-                                            chest pain]</emphasis></para>
+                                    <para>purpose: <emphasis role="italic">[Assessment of chest
+                                            pain]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>requestedParticipant: <emphasis role="italic">[410604004
-                                            |Subject of record]</emphasis></para>
+                                    <para>requestedParticipant: <emphasis role="italic">[Subject of
+                                            record]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>priority: <emphasis role="italic">[50811001
-                                            |Routine]</emphasis></para>
+                                    <para>priority: <emphasis role="italic"
+                                        >[Routine]</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -221,28 +211,26 @@ The problem with this approach is that expressions of this sort are restricted t
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Request]</emphasis></emphasis></para>
                             <para/>
-                            <para>Subject of info:<emphasis role="italic">[410604004 |Subject of
-                                    record] </emphasis>
+                            <para>Subject of info:<emphasis role="italic">[Subject of record]
+                                </emphasis>
                             </para>
                             <para/>
-                            <para>Authors: <emphasis role="italic">[223366009|Healthcare
-                                    professional] </emphasis></para>
+                            <para>Authors: <emphasis role="italic">[Healthcare professional]
+                                </emphasis></para>
                             <para/>
                             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T113944-0400" comment="Comment from WC:
 The problem with this approach is that expressions of this sort are restricted to generic entities (concepts) and that the specific entities involved are not represented. As an example, you don’t specify here to whom the substance is administered: it might very well be the subject of record administering it to somebody else. Even if you would add “(370131001 | Recipient category) [410604004 |Subject of record] ”, you still are not saying who precisely it is. I also don’t see the ‘every 6 hours’ represented here.
 "?>Topic:
-                                    <emphasis role="italic">[71388002|Procedure]-</emphasis></para>
-                            <para><emphasis role="italic">(260686004|Method)
-                                    [129445006|Administration - action] (363701004|Direct substance)
-                                    [375631002 |Nitroglycerin 400micrograms
+                                    <emphasis role="italic">[Procedure]-</emphasis></para>
+                            <para><emphasis role="italic">(Method) [Administration - action] (Direct
+                                    substance) [Nitroglycerin 400micrograms
                                 tablet]</emphasis></para>
-                            <para><emphasis role="italic">(410675002|Route of administration)
-                                    [260548002|Oral]</emphasis></para>
-                            <para><emphasis role="italic">(260686004|Method)
-                                    [129445006|Administration - action] (363701004|Direct substance)
-                                    [197805|Ibuprofen 400 MG Oral Tablet]</emphasis></para>
-                            <para><emphasis role="italic">(410675002|Route of administration)
-                                    [260548002|Oral]</emphasis><?oxy_comment_end?></para>
+                            <para><emphasis role="italic">(Route of administration)
+                                    [Oral]</emphasis></para>
+                            <para><emphasis role="italic">(Method) [Administration - action] (Direct
+                                    substance) [Ibuprofen 400 MG Oral Tablet]</emphasis></para>
+                            <para><emphasis role="italic">(Route of administration)
+                                    [Oral]</emphasis><?oxy_comment_end?></para>
                         </entry>
                     </row>
                     <row>
@@ -257,39 +245,31 @@ The problem with this approach is that expressions of this sort are restricted t
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purpose: <emphasis>[29857009 |Chest
-                                        pain]</emphasis></para>
+                                    <para>Purpose: <emphasis>[Chest pain]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Priority: <emphasis>[50811001 |Routine]</emphasis></para>
+                                    <para>Priority: <emphasis>[Routine]</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para><emphasis role="bold"><emphasis role="italic"
                                     >Frequency</emphasis></emphasis></para>
-                            <para>eventFrequency.lowerBound: <emphasis>5</emphasis></para>
-                            <para>eventFrequency.upperBound:<emphasis> 15</emphasis></para>
-                            <para>eventFrequency.resolution: <emphasis>5</emphasis></para>
-                            <para>eventFrequency.measureSemantic: <emphasis>[258701004
-                                    |min]</emphasis></para>
+                            <para>eventFrequency: <emphasis>[5,15] min</emphasis></para>
+                            <para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>resolution: <emphasis>5</emphasis></para>
+                                    </listitem>
+                                </itemizedlist>
+                            </para>
                         </entry>
                     </row>
                     <row>
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para>requestedResult</para>
+                                    <para>requestedResult: <emphasis>[1,1] Conventional release
+                                            sublingual tablet</emphasis></para>
                                     <itemizedlist>
-                                        <listitem>
-                                            <para>lowerBound:<emphasis> 1</emphasis></para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>upperBound: <emphasis>1</emphasis></para>
-                                        </listitem>
-                                        <listitem>
-                                            <para>measureSemantic: <emphasis>[385084005
-                                                  |Conventional release sublingual
-                                                  tablet]</emphasis></para>
-                                        </listitem>
                                         <listitem>
                                             <para>resolution: <emphasis>1</emphasis></para>
                                         </listitem>

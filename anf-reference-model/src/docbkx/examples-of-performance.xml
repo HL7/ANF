@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Examples of Performance Clinical Statments</title>
+    <title>Examples of Performance Clinical Statements</title>
     <para> </para>
     <para>For the examples in the following chapters, the focus has been to illustrate the ANF
         Model, using easy and intuitive examples, rather than focus on the correctness of the
