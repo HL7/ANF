@@ -355,7 +355,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="9" cy="803.333" width="40" height="17.6036"/>
 			<path d="M9 792 L9 814.67" class="st6"/>
-			<rect v:rectContext="textBkgnd" x="4.30862" y="798.534" width="9.38287" height="9.59985" class="st7"/>
+			<rect v:rectContext="textBkgnd" x="4.30862" y="798.534" width="9.38287" height="9.59985" class="st8"/>
 			<text x="4.31" y="805.73" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
 		<g id="shape24-88" v:mID="24" v:groupContext="shape" v:layerMember="0" transform="translate(153,-247.667)">
 			<title>Process.24</title>
@@ -425,7 +425,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="22.5" cy="783" width="40" height="17.6036"/>
 			<path d="M0 783 L45 783" class="st6"/>
-			<rect v:rectContext="textBkgnd" x="16.9962" y="778.2" width="11.0078" height="9.59985" class="st8"/>
+			<rect v:rectContext="textBkgnd" x="16.9962" y="778.2" width="11.0078" height="9.59985" class="st7"/>
 			<text x="17" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
 		<g id="shape29-106" v:mID="29" v:groupContext="shape" v:layerMember="1" transform="translate(54,-173.25)">
 			<title>Dynamic connector.29</title>
@@ -522,7 +522,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="9" cy="803.25" width="40" height="17.6036"/>
 			<path d="M9 792 L9 814.5" class="st6"/>
-			<rect v:rectContext="textBkgnd" x="3.49619" y="798.45" width="11.0078" height="9.59985" class="st7"/>
+			<rect v:rectContext="textBkgnd" x="3.49619" y="798.45" width="11.0078" height="9.59985" class="st8"/>
 			<text x="3.5" y="805.65" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
 		<g id="shape45-153" v:mID="45" v:groupContext="shape" v:layerMember="0" transform="translate(126,-513)">
 			<title>Process.101</title>
@@ -597,7 +597,7 @@
 			<text x="-18.19" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
 		<g id="shape49-170" v:mID="49" v:groupContext="shape" v:layerMember="0" transform="translate(229.5,-513)">
 			<title>Process.105</title>
-			<desc>Build topic with radiographic imaging procedure</desc>
+			<desc>Build topic with Radiographic imaging procedure</desc>
 			<v:custProps>
 				<v:cp v:nameU="Cost" v:lbl="Cost" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
 						v:langID="1033" v:cal="0"/>
@@ -625,7 +625,7 @@
 			<v:textRect cx="36" cy="765" width="72" height="54"/>
 			<rect x="0" y="738" width="72" height="54" class="st1"/>
 			<text x="10.6" y="757.8" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Build topic with <tspan
-						x="15.55" dy="1.2em" class="st3">radiographic </tspan><tspan x="5.41" dy="1.2em" class="st3">imaging procedure</tspan></text>		</g>
+						x="14.78" dy="1.2em" class="st3">Radiographic </tspan><tspan x="5.41" dy="1.2em" class="st3">imaging procedure</tspan></text>		</g>
 		<g id="shape50-175" v:mID="50" v:groupContext="shape" v:layerMember="1" transform="translate(256.5,-513)">
 			<title>Dynamic connector.107</title>
 			<path d="M9 792 L9 811.23" class="st4"/>
@@ -636,7 +636,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="-16.875" cy="783" width="40" height="17.6036"/>
 			<path d="M0 783 L-33.75 783" class="st11"/>
-			<rect v:rectContext="textBkgnd" x="-21.5664" y="778.2" width="9.38287" height="9.59985" class="st8"/>
+			<rect v:rectContext="textBkgnd" x="-21.5664" y="778.2" width="9.38287" height="9.59985" class="st7"/>
 			<text x="-21.57" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
 		<g id="shape52-187" v:mID="52" v:groupContext="shape" v:layerMember="0" transform="translate(450,-531)">
 			<title>Process.109</title>
@@ -703,7 +703,7 @@
 						x="17.27" dy="1.2em" class="st3">procedure?</tspan></text>		</g>
 		<g id="shape54-198" v:mID="54" v:groupContext="shape" v:layerMember="0" transform="translate(339.75,-513)">
 			<title>Process.111</title>
-			<desc>Build topic with Observation procedure including</desc>
+			<desc>Build topic with Observation procedure</desc>
 			<v:custProps>
 				<v:cp v:nameU="Cost" v:lbl="Cost" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
 						v:langID="1033" v:cal="0"/>
@@ -731,14 +731,14 @@
 			<v:textRect cx="36" cy="765" width="72" height="54"/>
 			<rect x="0" y="738" width="72" height="54" class="st1"/>
 			<text x="10.6" y="757.8" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Build topic with <tspan
-						x="16.11" dy="1.2em" class="st3">Observation </tspan><tspan x="3.49" dy="1.2em" class="st3">procedure including </tspan> </text>		</g>
+						x="16.11" dy="1.2em" class="st3">Observation </tspan><tspan x="19.12" dy="1.2em" class="st3">procedure</tspan></text>		</g>
 		<g id="shape55-203" v:mID="55" v:groupContext="shape" v:layerMember="1" transform="translate(382.5,-567)">
 			<title>Dynamic connector.112</title>
 			<desc>Yes</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="-11.25" cy="783" width="40" height="17.6036"/>
 			<path d="M-6.75 792 L-6.75 785.25 L-11.25 785.25 L-11.25 769.5" class="st11"/>
-			<rect v:rectContext="textBkgnd" x="-16.7538" y="778.2" width="11.0078" height="9.59985" class="st7"/>
+			<rect v:rectContext="textBkgnd" x="-16.7538" y="778.2" width="11.0078" height="9.59985" class="st8"/>
 			<text x="-16.75" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
 		<g id="shape56-210" v:mID="56" v:groupContext="shape" v:layerMember="1" transform="translate(366.75,-513)">
 			<title>Dynamic connector.113</title>
@@ -915,7 +915,7 @@
 						x="27.23" dy="1.2em" class="st3">Topic</tspan></text>		</g>
 		<g id="shape71-255" v:mID="71" v:groupContext="shape" v:layerMember="0" transform="translate(339.75,-360)">
 			<title>Process.134</title>
-			<desc>Add Method, Procedure site-Direct, Using device</desc>
+			<desc>Add Method, Procedure site-Direct, Laterality, Using device</desc>
 			<v:custProps>
 				<v:cp v:nameU="Cost" v:lbl="Cost" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
 						v:langID="1033" v:cal="0"/>
@@ -942,33 +942,34 @@
 			<v:textBlock v:margins="rect(2,2,2,2)"/>
 			<v:textRect cx="36" cy="765" width="72" height="54"/>
 			<rect x="0" y="738" width="72" height="54" class="st1"/>
-			<text x="15.42" y="757.8" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add Method, <tspan
-						x="11.22" dy="1.2em" class="st3">Procedure site</tspan>-<tspan x="3.87" dy="1.2em" class="st3">Direct, Using device</tspan></text>		</g>
-		<g id="shape73-260" v:mID="73" v:groupContext="shape" v:layerMember="1" transform="translate(486,-585)">
+			<text x="15.42" y="753" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add Method, <tspan
+						x="11.22" dy="1.2em" class="st3">Procedure site</tspan>-<tspan x="8.08" dy="1.2em" class="st3">Direct, Laterality, </tspan><tspan
+						x="15.56" dy="1.2em" class="st3">Using device</tspan></text>		</g>
+		<g id="shape73-261" v:mID="73" v:groupContext="shape" v:layerMember="1" transform="translate(486,-585)">
 			<title>Dynamic connector.138</title>
 			<desc>No</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="-23.625" cy="760.5" width="40" height="17.6036"/>
 			<path d="M0 792 L0 760.5 L-78.75 760.5" class="st11"/>
-			<rect v:rectContext="textBkgnd" x="-28.3164" y="755.7" width="9.38287" height="9.59985" class="st7"/>
+			<rect v:rectContext="textBkgnd" x="-28.3164" y="755.7" width="9.38287" height="9.59985" class="st8"/>
 			<text x="-28.32" y="762.9" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
-		<g id="shape76-267" v:mID="76" v:groupContext="shape" v:layerMember="1" transform="translate(162,-359)">
+		<g id="shape76-268" v:mID="76" v:groupContext="shape" v:layerMember="1" transform="translate(162,-359)">
 			<title>Dynamic connector.76</title>
 			<path d="M0 792 L0 826.83 L-99 826.83 L-99 837.06" class="st4"/>
 		</g>
-		<g id="shape77-272" v:mID="77" v:groupContext="shape" v:layerMember="1" transform="translate(265.5,-360)">
+		<g id="shape77-273" v:mID="77" v:groupContext="shape" v:layerMember="1" transform="translate(265.5,-360)">
 			<title>Dynamic connector.77</title>
 			<path d="M0 792 L0 805.5 L-100.5 805.5 A3 3 -180 0 0 -106.5 805.5 L-202.5 805.5 L-202.5 838.06" class="st4"/>
 		</g>
-		<g id="shape78-277" v:mID="78" v:groupContext="shape" v:layerMember="1" transform="translate(375.75,-360)">
+		<g id="shape78-278" v:mID="78" v:groupContext="shape" v:layerMember="1" transform="translate(375.75,-360)">
 			<title>Dynamic connector.78</title>
 			<path d="M0 792 L0 805.5 L-210.75 805.5 A3 3 -180 0 0 -216.75 805.5 L-312.75 805.5 L-312.75 838.06" class="st4"/>
 		</g>
-		<g id="shape79-282" v:mID="79" v:groupContext="shape" v:layerMember="1" transform="translate(486,-531)">
+		<g id="shape79-283" v:mID="79" v:groupContext="shape" v:layerMember="1" transform="translate(486,-531)">
 			<title>Dynamic connector.79</title>
 			<path d="M0 792 L0 999 L-423 999 L-423 1009.06" class="st4"/>
 		</g>
-		<g id="shape81-287" v:mID="81" v:groupContext="shape" v:layerMember="0" transform="translate(117,-707.625)">
+		<g id="shape81-288" v:mID="81" v:groupContext="shape" v:layerMember="0" transform="translate(117,-707.625)">
 			<title>Decision.84</title>
 			<desc>Past time?</desc>
 			<v:custProps>
@@ -998,7 +999,7 @@
 			<v:textRect cx="36" cy="765" width="60" height="40.5"/>
 			<path d="M0 765 L36 738 L72 765 L36 792 L0 765 Z" class="st1"/>
 			<text x="18.91" y="767.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Past time?</text>		</g>
-		<g id="shape82-290" v:mID="82" v:groupContext="shape" v:layerMember="0" transform="translate(247.739,-714.938)">
+		<g id="shape82-291" v:mID="82" v:groupContext="shape" v:layerMember="0" transform="translate(247.739,-714.938)">
 			<title>Process.86</title>
 			<desc>Add Measure with Current Time to Timing</desc>
 			<v:custProps>
@@ -1029,11 +1030,11 @@
 			<rect x="0" y="752.25" width="72" height="39.75" class="st1"/>
 			<text x="6.08" y="764.92" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add Measure with <tspan
 						x="10.23" dy="1.2em" class="st3">Current Time to </tspan><tspan x="25.04" dy="1.2em" class="st3">Timing</tspan></text>		</g>
-		<g id="shape83-295" v:mID="83" v:groupContext="shape" v:layerMember="1" transform="translate(283.739,-714.938)">
+		<g id="shape83-296" v:mID="83" v:groupContext="shape" v:layerMember="1" transform="translate(283.739,-714.938)">
 			<title>Dynamic connector.83</title>
 			<path d="M0 792 L0 849.94 L-121.74 849.94 L-121.74 860.17" class="st4"/>
 		</g>
-		<g id="shape84-300" v:mID="84" v:groupContext="shape" v:layerMember="0" transform="translate(175.333,-669.75)">
+		<g id="shape84-301" v:mID="84" v:groupContext="shape" v:layerMember="0" transform="translate(175.333,-669.75)">
 			<title>Process.138</title>
 			<desc>Add Measure with Past Time to Timing</desc>
 			<v:custProps>
@@ -1064,7 +1065,7 @@
 			<rect x="0" y="750.75" width="72" height="41.25" class="st1"/>
 			<text x="6.08" y="768.97" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add Measure with <tspan
 						x="3.93" dy="1.2em" class="st3">Past Time to Timing</tspan></text>		</g>
-		<g id="shape87-304" v:mID="87" v:groupContext="shape" v:layerMember="1" transform="translate(175.333,-690)">
+		<g id="shape87-305" v:mID="87" v:groupContext="shape" v:layerMember="1" transform="translate(175.333,-690)">
 			<title>Dynamic connector.142</title>
 			<desc>Yes</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1072,7 +1073,7 @@
 			<path d="M0 791.62 L-22.33 791.62 L-22.33 774.38" class="st11"/>
 			<rect v:rectContext="textBkgnd" x="-25.2955" y="786.825" width="11.0078" height="9.59985" class="st8"/>
 			<text x="-25.3" y="794.03" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
-		<g id="shape89-311" v:mID="89" v:groupContext="shape" v:layerMember="1" transform="translate(247.739,-743.719)">
+		<g id="shape89-312" v:mID="89" v:groupContext="shape" v:layerMember="1" transform="translate(247.739,-743.719)">
 			<title>Dynamic connector.145</title>
 			<desc>No</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1080,15 +1081,15 @@
 			<path d="M0 800.91 L-13.5 800.91 L-13.5 801.09 L-58.74 801.09" class="st11"/>
 			<rect v:rectContext="textBkgnd" x="-33.9671" y="796.294" width="9.38287" height="9.59985" class="st8"/>
 			<text x="-33.97" y="803.49" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
-		<g id="shape91-318" v:mID="91" v:groupContext="shape" v:layerMember="1" transform="translate(211.333,-669.75)">
+		<g id="shape91-319" v:mID="91" v:groupContext="shape" v:layerMember="1" transform="translate(211.333,-669.75)">
 			<title>Dynamic connector.147</title>
 			<path d="M0 792 L0 805.5 L-49.33 805.5 L-49.33 814.98" class="st4"/>
 		</g>
-		<g id="shape94-323" v:mID="94" v:groupContext="shape" v:layerMember="1" transform="translate(225,-274.667)">
+		<g id="shape94-324" v:mID="94" v:groupContext="shape" v:layerMember="1" transform="translate(225,-274.667)">
 			<title>Dynamic connector.94</title>
 			<path d="M0 792 L76.5 792 L76.5 847.4" class="st4"/>
 		</g>
-		<g id="shape97-328" v:mID="97" v:groupContext="shape" v:layerMember="0" transform="translate(22.5,-76.5)">
+		<g id="shape97-329" v:mID="97" v:groupContext="shape" v:layerMember="0" transform="translate(22.5,-76.5)">
 			<title>Decision.97</title>
 			<desc>Does the Statement contain a healthRisk?</desc>
 			<v:custProps>
@@ -1119,7 +1120,7 @@
 			<path d="M0 751.5 L40.5 711 L81 751.5 L40.5 792 L0 751.5 Z" class="st1"/>
 			<text x="26.04" y="744.3" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Does the <tspan
 						x="10.37" dy="1.2em" class="st3">Statement contain </tspan><tspan x="18.99" dy="1.2em" class="st3">a healthRisk?</tspan></text>		</g>
-		<g id="shape98-333" v:mID="98" v:groupContext="shape" v:layerMember="0" transform="translate(135,-72)">
+		<g id="shape98-334" v:mID="98" v:groupContext="shape" v:layerMember="0" transform="translate(135,-72)">
 			<title>Decision.98</title>
 			<desc>Does the Statement contain a normalRange?</desc>
 			<v:custProps>
@@ -1150,7 +1151,7 @@
 			<path d="M0 747 L45 702 L90 747 L45 792 L0 747 Z" class="st1"/>
 			<text x="12.58" y="739.8" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Does the Statement <tspan
 						x="30" dy="1.2em" class="st3">contain a </tspan><tspan x="21.45" dy="1.2em" class="st3">normalRange?</tspan></text>		</g>
-		<g id="shape99-338" v:mID="99" v:groupContext="shape" v:layerMember="1" transform="translate(103.5,-108)">
+		<g id="shape99-339" v:mID="99" v:groupContext="shape" v:layerMember="1" transform="translate(103.5,-108)">
 			<title>Dynamic connector.99</title>
 			<desc>No</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1158,7 +1159,7 @@
 			<path d="M0 783 L31.5 783" class="st6"/>
 			<rect v:rectContext="textBkgnd" x="11.0586" y="778.2" width="9.38287" height="9.59985" class="st8"/>
 			<text x="11.06" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
-		<g id="shape100-345" v:mID="100" v:groupContext="shape" v:layerMember="1" transform="translate(225,-117)">
+		<g id="shape100-346" v:mID="100" v:groupContext="shape" v:layerMember="1" transform="translate(225,-117)">
 			<title>Dynamic connector.100</title>
 			<desc>No</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1166,7 +1167,7 @@
 			<path d="M0 792 L13.5 792 L13.5 738 L27 738" class="st6"/>
 			<rect v:rectContext="textBkgnd" x="8.80863" y="760.2" width="9.38287" height="9.59985" class="st8"/>
 			<text x="8.81" y="767.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
-		<g id="shape101-352" v:mID="101" v:groupContext="shape" v:layerMember="0" transform="translate(27,-9)">
+		<g id="shape101-353" v:mID="101" v:groupContext="shape" v:layerMember="0" transform="translate(27,-9)">
 			<title>Process.101</title>
 			<desc>Add healthRisk</desc>
 			<v:custProps>
@@ -1196,7 +1197,7 @@
 			<v:textRect cx="36" cy="769.5" width="72" height="45"/>
 			<rect x="0" y="747" width="72" height="45" class="st9"/>
 			<text x="11.74" y="771.9" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add healthRisk</text>		</g>
-		<g id="shape102-356" v:mID="102" v:groupContext="shape" v:layerMember="1" transform="translate(72,-76.5)">
+		<g id="shape102-357" v:mID="102" v:groupContext="shape" v:layerMember="1" transform="translate(72,-76.5)">
 			<title>Dynamic connector.102</title>
 			<desc>Yes</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1204,7 +1205,7 @@
 			<path d="M-9 792 L-9 814.5" class="st6"/>
 			<rect v:rectContext="textBkgnd" x="-14.5038" y="798.45" width="11.0078" height="9.59985" class="st8"/>
 			<text x="-14.5" y="805.65" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
-		<g id="shape103-363" v:mID="103" v:groupContext="shape" v:layerMember="1" transform="translate(171,-72)">
+		<g id="shape103-364" v:mID="103" v:groupContext="shape" v:layerMember="1" transform="translate(171,-72)">
 			<title>Dynamic connector.103</title>
 			<desc>Yes</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
@@ -1212,7 +1213,7 @@
 			<path d="M9 792 L9 810" class="st6"/>
 			<rect v:rectContext="textBkgnd" x="3.49619" y="796.2" width="11.0078" height="9.59985" class="st8"/>
 			<text x="3.5" y="803.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
-		<g id="shape104-370" v:mID="104" v:groupContext="shape" v:layerMember="0" transform="translate(144,-9)">
+		<g id="shape104-371" v:mID="104" v:groupContext="shape" v:layerMember="0" transform="translate(144,-9)">
 			<title>Process.104</title>
 			<desc>Add normalRange</desc>
 			<v:custProps>
@@ -1242,11 +1243,11 @@
 			<v:textRect cx="36" cy="769.5" width="72" height="45"/>
 			<rect x="0" y="747" width="72" height="45" class="st9"/>
 			<text x="6.88" y="771.9" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Add normalRange</text>		</g>
-		<g id="shape105-374" v:mID="105" v:groupContext="shape" v:layerMember="1" transform="translate(99,-31.5)">
+		<g id="shape105-375" v:mID="105" v:groupContext="shape" v:layerMember="1" transform="translate(99,-31.5)">
 			<title>Dynamic connector.105</title>
 			<path d="M0 792 L13.5 792 L13.5 706.5 L32.73 706.5" class="st4"/>
 		</g>
-		<g id="shape106-379" v:mID="106" v:groupContext="shape" v:layerMember="1" transform="translate(216,-31.5)">
+		<g id="shape106-380" v:mID="106" v:groupContext="shape" v:layerMember="1" transform="translate(216,-31.5)">
 			<title>Dynamic connector.106</title>
 			<path d="M0 792 L22.67 792 L22.67 652.5 L32.73 652.5" class="st4"/>
 		</g>

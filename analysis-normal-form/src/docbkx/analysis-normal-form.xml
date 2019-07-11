@@ -36,7 +36,8 @@
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para><emphasis role="bold"
+                <para><?oxy_comment_start author="timowilliams" timestamp="20190711T120851-0500" comment="Since this exists in Introduction, should we remove it from here?"?><emphasis
+                        role="bold"
                         ><?oxy_comment_start author="Ioana" timestamp="20190626T124501-0400" comment="Replace this with a reference to to the intoduction.xml --&gt; Separation of Concerns "?>Separation
                         of Concerns: </emphasis>As defined by Wikipedia [1]: Separation of Concerns
                     (SoC) is a design principle for separating a computer program into distinct
@@ -93,13 +94,14 @@ Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semanti
                     <listitem>
                         <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
 Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
-" flag="done"?><emphasis
+" flag="done" mid="5"?><emphasis
                                 role="bold">Example: </emphasis>Laterality (used to designate one or
                             both of paired, bilaterally symmetrical (or nearly symmetrical) body
                             structures) should be a concern of either the Terminology Knowledge or
                             the Statement Model, but not both. We can relax this principle for the
                             Structured Input Form but for ANF we need a clean and invariant
-                            separation of concerns.<?oxy_comment_end?></para>
+                            separation of
+                            concerns.<?oxy_comment_end?><?oxy_comment_end mid="5"?></para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -260,7 +262,7 @@ They never learn, do they? (Or rather their victims never learn).
                 <para><?oxy_comment_start author="timowilliams" timestamp="20190611T140507-0500" comment="Remove?"?><emphasis
                         role="bold">Convention Over Configuration: </emphasis>Convention over
                     configuration (also known as coding by convention) is a software design paradigm
-                    used by software frameworks that attempt to decrease the number of decisions
+                    used by software frameworks that attempts to decrease the number of decisions
                     that a developer using the framework is required to make without necessarily
                     losing flexibility<?oxy_comment_end?>.</para>
             </listitem>
@@ -296,6 +298,14 @@ I don’t see why, or what the ‘symmetry’ would apply to.
     </section>
     <section>
         <title>Shared Modeling Guidelines</title>
+        <?oxy_comment_start author="timowilliams" timestamp="20190613T105849-0500" comment="&quot;X-Ray of cervical spine anteroposterior (AP) and lateral&quot;  One statement or two? How do we handle combination concepts?  What would the rule be for deciding when to create two associated statements vs allowing combination concepts in a topic?"?>
+        <para>All ANF statements share some common model components. The following modeling
+            guidelines can be used to properly model a narrative into the appropriate components of
+            a single statement or a statement that has multiple associated statements. For the
+            purposes of ANF, a statement is a request or performance of an action that has to be
+            able to exist on its own. Therefore a narrative would be separated into multiple
+            clinical statements if it contains multiple requests or performance of actions that
+            could exist on their own.</para><?oxy_comment_end?>
         <figure>
             <title>Shared Modeling Guideline Decision Tree</title>
             <mediaobject>
@@ -305,62 +315,11 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
-        <?oxy_comment_start author="timowilliams" timestamp="20190613T105849-0500" comment="&quot;X-Ray of cervical spine anteroposterior (AP) and lateral&quot;  One statement or two? How do we handle combination concepts?  What would the rule be for deciding when to create two associated statements vs allowing combination concepts in a topic?"?>
-        <para>All ANF statements share some common model components. The following modeling
-            guidelines can be used to properly model a narrative into the appropriate components of
-            a single statement or a statement that has multiple associated statements. For the
-            purposes of ANF, a statement is a request or performance of an action that has to be
-            able to exist on its own. Therefore a narrative would be separated into multiple
-            clinical statements if it contains multiple requests or performance of actions that
-            could exist on their own.<?oxy_comment_end?></para>
-        
-        <para>
-            <emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis role="bold"
-                >state</emphasis> that <emphasis role="bold">must</emphasis> exist before something
-            else can happen or be done. Pre-requisite are part of the details under which a
-            procedure is being performed. The state must exist can prior to the performance of the
-            action <itemizedlist>
-                <listitem>
-                    <para>The state that must exist pertains to</para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>the subject of record (e.g. patient)</para>
-                        </listitem>
-                        <listitem>
-                            <para>the environment (e.g. necessary room temperature, required time of
-                                day)</para>
-                        </listitem>
-                    </itemizedlist>
-                </listitem>
-                <listitem>
-                    <para>A prerequisite is separable from the topic and can be expressed as a
-                        stand-alone clinical statement</para>
-                    <itemizedlist>
-                        <listitem>
-                            <para><emphasis role="underline">Example</emphasis>: Systolic blood
-                                pressure 120 mmHg, taken with patient in sitting position. <emphasis
-                                    role="italic">“Patient in sitting position”</emphasis> is
-                                separable from the topic and exists prior to the performance of the
-                                action and therefore constitutes a prerequisite.</para>
-                        </listitem>
-                    </itemizedlist>
-                </listitem>
-            </itemizedlist></para>
-        <para>
-            <emphasis role="bold">subjectOfInformation:</emphasis> The subjectOfInformation is used
-            to represent who the statement is about. This is normally the patient unless explicitly
-            stated otherwise. </para>
-
-        <para>
-            <emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested. The purpose of the topic is represented with either an Evaluation
-                    procedure or Therapuetic procedure with a hasFocus attribute describing the
-                    purpose.
-        </para>
         <para>
             <emphasis role="bold">Technique: </emphasis>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="italic">Definition</emphasis> : A device used, a method
+                    <para><emphasis role="italic">Definition</emphasis>: A device used, a method
                         applied, or a temporary state in which the patient was <emphasis role="bold"
                             >actively</emphasis> placed <emphasis role="bold">during</emphasis>
                         performance of the action.</para>
@@ -409,6 +368,48 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     </itemizedlist>
                 </listitem>
             </itemizedlist></para>
+        <para>
+            <emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis role="bold"
+                >state</emphasis> that <emphasis role="bold">must</emphasis> exist before something
+            else can happen or be done. Prerequisite are part of the details under which a procedure
+            is being performed. The state must exist prior to the performance of the action. <itemizedlist>
+                <listitem>
+                    <para>The state that must exist pertains to</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>the subject of record (e.g. patient)</para>
+                        </listitem>
+                        <listitem>
+                            <para>the environment (e.g. necessary room temperature, required time of
+                                day)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>A prerequisite is separable from the topic and can be expressed as a
+                        stand-alone clinical statement</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para><emphasis role="underline">Example</emphasis>: Systolic blood
+                                pressure 120 mmHg, taken with patient in sitting position for 5
+                                minutes. <emphasis role="italic">“Patient in sitting position for 5
+                                    minutes”</emphasis> is separable from the topic and exists prior
+                                to the performance of the action and therefore constitutes a
+                                prerequisite.  The "sitting position" portion of the prerequisite
+                                also specifies a technique for performing the blood pressure
+                                measurement and therefore would be included in the topic.</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist></para>
+        <para>
+            <emphasis role="bold">subjectOfInformation:</emphasis> The subjectOfInformation is used
+            to represent who the statement is about. This is normally the patient unless explicitly
+            stated otherwise. </para>
+        <para>
+            <emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested.
+            The purpose of the topic is represented with either an Evaluation procedure or
+            Therapeutic procedure with a hasFocus attribute describing the purpose. </para>
     </section>
     
     <section>
@@ -444,17 +445,17 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             For requesting the administration of medication, the Topic will be built
                             using the Administration of substance concept. If the narrative includes
                             information about a refill, that information is currently represented as
-                            an Unstructure Circumstance. All Administration of substance concepts
-                            will be refined with the substance and dose form and strength being
+                            an Narrative Circumstance. All Administration of substance concepts will
+                            be refined with the substance and dose form and strength being
                             requested. If Route of administration exists, then it will also be
                             added.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis>Imaging Procedure</emphasis>: For requesting of imaging
-                            procedures, the Topic will be built using an Imaging procedure concept.
-                            These concepts will be further refined with a Method, Procedure site -
-                            Direct and (if appropriate) a laterality for those sites that are
-                            lateralizable.</para>
+                        <para><emphasis>Radiographic Imaging Procedure</emphasis>: For requesting of
+                            imaging procedures, the Topic will be built using an Radiographic
+                            imaging procedure concept. These concepts will be further refined with a
+                            Method, Procedure site - Direct and (if appropriate) a laterality for
+                            those sites that are lateralizable.</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>Observation Procedure</emphasis>: Any request for an action
@@ -462,7 +463,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             Observation procedure with then have a Has focus attribute linking it to
                             the Clinical Finding or Disorder that it is being observed. The
                             observation procedure can also be further refined by adding the Method,
-                            Procedure site - Direct, (if appropriate) laterality, and Using
+                            Procedure site - Direct, (if appropriate) Laterality, and Using
                             device.</para>
                     </listitem>
                     <listitem>
@@ -541,11 +542,11 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             also be added.</para>
                     </listitem>
                     <listitem>
-                        <para><emphasis>Imaging Procedure</emphasis>: For Performance of Imaging
-                            procedures, the Topic will be built using an Imaging Procedure concept.
-                            These concepts will be further refined with a Method, Procedure site -
-                            Direct and (if appropriate) a laterality for those sites that are
-                            lateralizable.</para>
+                        <para><emphasis>Radiographic Imaging Procedure</emphasis>: For Performance
+                            of Imaging procedures, the Topic will be built using an Radiographic
+                            imaging procedure concept. These concepts will be further refined with a
+                            Method, Procedure site - Direct and (if appropriate) a laterality for
+                            those sites that are lateralizable.</para>
                     </listitem>
                     <listitem>
                         <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
@@ -571,9 +572,14 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </mathphrase>
         </editorial-rule>
         <editorial-rule>
+            <?oxy_comment_start author="timowilliams" timestamp="20190711T143006-0500" comment="From Stephanie K.
+
+I&apos;m confused.  Previously and also on the next page it was said that ANF doesn&apos;t allow coded values for Result.  See section 6.3.3.  Thus, why are they allowed here?" id="tts_5bk_j3b"?>
+            <?oxy_comment_start author="timowilliams" timestamp="20190711T143022-0500" comment="This isn&apos;t used to represent the result, that is only represented as the upper and lower bounds.  This is just used to describe that result." parentID="tts_5bk_j3b" mid="27"?>
             <title>healthRisk</title>
             <mathphrase>healthRisk is used to flag a result with coded values such as 'low',
-                'normal', high', and 'critical'.</mathphrase>
+                'normal', high', and
+            'critical'.</mathphrase><?oxy_comment_end?><?oxy_comment_end mid="27"?>
         </editorial-rule>
         <editorial-rule>
             <title>normalRange</title>
