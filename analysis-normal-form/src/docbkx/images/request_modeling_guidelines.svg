@@ -614,7 +614,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="9" cy="778.5" width="40" height="17.6036"/>
 			<path d="M9 792 L9 765" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="3.49619" y="773.7" width="11.0078" height="9.59985" class="st11"/>
+			<rect v:rectContext="textBkgnd" x="3.49619" y="773.7" width="11.0078" height="9.59985" class="st6"/>
 			<text x="3.5" y="780.9" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Yes</text>		</g>
 		<g id="shape83-169" v:mID="83" v:groupContext="shape" v:layerMember="1" transform="translate(96.75,-261)">
 			<title>Dynamic connector.31</title>
@@ -712,7 +712,7 @@
 						x="8.5" dy="1.2em" class="st3">narrative include </tspan><tspan x="19.53" dy="1.2em" class="st3">refill info?</tspan></text>		</g>
 		<g id="shape91-209" v:mID="91" v:groupContext="shape" v:layerMember="0" transform="translate(195.75,-288)">
 			<title>Process</title>
-			<desc>Create Statement with Unstructured Circumstance</desc>
+			<desc>Create Statement with Narrative Circumstance</desc>
 			<v:custProps>
 				<v:cp v:nameU="Cost" v:lbl="Cost" v:prompt="" v:type="7" v:format="@" v:sortKey="" v:invis="false" v:ask="false"
 						v:langID="1033" v:cal="0"/>
@@ -740,7 +740,7 @@
 			<v:textRect cx="36" cy="765" width="72" height="54"/>
 			<rect x="0" y="738" width="72" height="54" class="st1"/>
 			<text x="7.28" y="757.8" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Create Statement <tspan
-						x="6.19" dy="1.2em" class="st3">with Unstructured </tspan><tspan x="13.96" dy="1.2em" class="st3">Circumstance</tspan></text>		</g>
+						x="12.62" dy="1.2em" class="st3">with Narrative </tspan><tspan x="13.96" dy="1.2em" class="st3">Circumstance</tspan></text>		</g>
 		<g id="shape93-214" v:mID="93" v:groupContext="shape" v:layerMember="1" transform="translate(96.75,-302.625)">
 			<title>Dynamic connector.93</title>
 			<desc>Yes</desc>
@@ -818,7 +818,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="-97.875" cy="783" width="40" height="17.6036"/>
 			<path d="M0 783 L-195.75 783" class="st10"/>
-			<rect v:rectContext="textBkgnd" x="-102.566" y="778.2" width="9.38287" height="9.59985" class="st6"/>
+			<rect v:rectContext="textBkgnd" x="-102.566" y="778.2" width="9.38287" height="9.59985" class="st11"/>
 			<text x="-102.57" y="785.4" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>No</text>		</g>
 		<g id="shape104-238" v:mID="104" v:groupContext="shape" v:layerMember="0" transform="translate(195.75,-153)">
 			<title>Process.104</title>
