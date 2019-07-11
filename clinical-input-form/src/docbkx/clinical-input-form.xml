@@ -28,7 +28,7 @@
         <title>Introduction to CIMI Clinical Statements </title>
 
         <para>
-            The CIMI Clinical Statement Model is described in this chapter. This model uses a traditional structured data tree approach which can then be compared and constrasted with the ANF model.
+            The CIMI Clinical Statement Model is described in this chapter. This model uses a traditional structured data tree approach which can then be compared and contrasted with the ANF model.
         </para>
 
         <para>
@@ -93,24 +93,17 @@
             <varlistentry>
                 <term><emphasis role="bold">Topic</emphasis></term>
                 <listitem>
-                    <para> The ‘topic’ is the clinical entity described by the Clinical Statement. A
+                    <para> 
+                        The ‘topic’ is the clinical entity described by the Clinical Statement. A
                         few examples of topic include clinical assertions, evaluation results, and
                         procedures. For each of these topics the information described is quite
                         different. Therefore, CIMI describes topic types that contain the
                         appropriate attributes to describe the required information for the given
-                        topic. The number of topic types will change as CIMI progresses. Currently
-                        the allowable topic types are
-                        <?oxy_comment_start author="timowilliams" timestamp="20190710T125720-0500" comment="Should we add Event Topic below?"?>EventTopic<?oxy_comment_end?>,
-                        ProcedureTopic and FindingTopic which has suptypes of EvaluationResultTopic
-                        and AssertionTopic. </para>
-                    <para> In ANF, these various structured trees representing the topic will all be
-                        represented with Snomed post-coordinated expressions. Some CIMI uses of
-                        topic will be illegal in ANF. For example, if CIMI modeled using
-                        EvaluationResultTopic with a coded result in the Context, this would not be
-                        possible in ANF because ANF does not allow coded results. Instead, this
-                        would need to be modeled in an AssertionTopic style with the result moved
-                        into the topic to be representable by ANF. </para>
-                    <para><?oxy_comment_start author="timowilliams" timestamp="20190710T125821-0500" comment="Should we move this before the paragraph above?"?></para>
+                        topic. The number of topic types will change as CIMI progresses. Currently the allowable topic types are ProcedureTopic and FindingTopic which has suptypes of EvaluationResultTopic
+                        and AssertionTopic. 
+                    </para>
+
+                    <para></para>
                     <!-- DO NOT REMOVE - Adds a space between above text and list below -->
                     <itemizedlist mark="bullet" spacing="compact">
                         <listitem>
@@ -123,11 +116,22 @@
                                     <para>EvaluationResultTopic</para>
                                 </listitem>
                                 <listitem>
-                                    <para>AssertionTopic<?oxy_comment_end?></para>
+                                    <para>AssertionTopic</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
                     </itemizedlist>
+
+                    <para> 
+                        In ANF, these various structured trees representing the topic will all be
+                        represented with SNOMED post-coordinated expressions. Some CIMI uses of
+                        topic will be illegal in ANF. For example, if CIMI modeled using
+                        EvaluationResultTopic with a coded result in the Context, this would not be
+                        possible in ANF because ANF does not allow coded results. Instead, this
+                        would need to be modeled in an AssertionTopic style with the result moved
+                        into the topic to be representable by ANF. 
+                    </para>
+                    
                 </listitem>
 
             </varlistentry>
@@ -135,28 +139,20 @@
             <varlistentry>
                 <term><emphasis role="bold">Context</emphasis></term>
                 <listitem>
-                    <para> The ‘context’ describes the circumstances that form the setting in which
+                    <para> 
+                        The ‘context’ describes the circumstances that form the setting in which
                         the ‘topic’ should be evaluated.
-                        <?oxy_comment_start author="timowilliams" timestamp="20190710T130824-0500" comment="From Stephanie K:
-
-The second sentence starting with &quot;CIMI describes&quot; is worded awkwardly.  Recommend revising it, such as to &quot;The various CIMI context types contain the appropriate attributes required for the given context.&quot;"?>CIMI
-                        describes context types that contain the appropriate attributes to describe
-                        the required information for the given context<?oxy_comment_end?>. The
-                        number of context types will change as CIMI progresses. Currently the
+                        The various CIMI context types contain the appropriate attributes 
+                        required for the given context.
+                        The number of context types will change as CIMI progresses. Currently the
                         allowable context types are
-                        <?oxy_comment_start author="timowilliams" timestamp="20190710T124326-0500" comment="From Stephanie K, &quot;The EventTopic type needs to be added to the bulleted list below.&quot;"?>EventContext<?oxy_comment_end?>,
                         ActionContext, and FindingContext. ActionContext has subtypes with examples
                         including RequestContext, OrderContext and PerformanceContext.
                         FindingContext has subtypes with examples such as PresenceContext,
-                        AbsenceContext, and GoalContext. </para>
-                    <para> ANF has alternatively named 'context' to be 'circumstance' but it serves
-                        the same function in both models. A major difference is that ANF only allows
-                        quantitative results whereas CIMI also allows coded results. Another
-                        difference is that ANF describes all quantitative results as a range. This
-                        allows ANF to describe presence and absence using this quantitative range,
-                        thus eliminating the need for many of the CIMI contexts describing presence
-                        and absence </para>
-                    <para><?oxy_comment_start author="timowilliams" timestamp="20190710T124533-0500" comment="Should we move this before the paragraph above?"?></para>
+                        AbsenceContext, and GoalContext. 
+                    </para>
+
+                    <para></para>
                     <!-- DO NOT REMOVE - Adds a space between above text and list below -->
                     <itemizedlist mark="bullet" spacing="compact">
                         <listitem>
@@ -183,11 +179,22 @@ The second sentence starting with &quot;CIMI describes&quot; is worded awkwardly
                                     <para>AbsenceContext</para>
                                 </listitem>
                                 <listitem>
-                                    <para>GoalContext</para><?oxy_comment_end?>
+                                    <para>GoalContext</para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
                     </itemizedlist>
+
+                    <para> 
+                        ANF has alternatively named 'context' to be 'circumstance' but it serves
+                        the same function in both models. A major difference is that ANF only allows
+                        quantitative results whereas CIMI also allows coded results. Another
+                        difference is that ANF describes all quantitative results as a range. This
+                        allows ANF to describe presence and absence using this quantitative range,
+                        thus eliminating the need for many of the CIMI contexts describing presence
+                        and absence 
+                    </para>
+                    
                 </listitem>
             </varlistentry>
 
@@ -205,7 +212,8 @@ The second sentence starting with &quot;CIMI describes&quot; is worded awkwardly
 
     <section>
         <title>Examples Using Topic and Context</title>
-        <para> Earlier, descriptive examples of textual examples of clinical statements were given.
+        <para> 
+            Earlier, descriptive examples of textual examples of clinical statements were given.
             Here we will represent a few of these examples using the CIMI Clinical Statement ‘topic
             - context’ paradigm. In <xref linkend="cimi_msg_cstatement_chf_0135"
                 xrefstyle="select: label"/>, the example for “Patient has diagnosis of congestive
@@ -214,16 +222,9 @@ The second sentence starting with &quot;CIMI describes&quot; is worded awkwardly
             of type PresenceAbsenceContext stating “Known Present”. What may not be apparent in the
             figure is that when the topic is declared to be of type AssertionTopic then all the
             attributes of AssertionTopic are available for use. However, in the figure only the
-            attribute named 'topicCode' is shown for clarity. </para>
-        <?oxy_comment_start author="timowilliams" timestamp="20190710T132257-0500" comment="From Stephanie K:
+            attribute named 'topicCode' is shown for clarity.
+        </para>
 
-Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
-        <para> In <xref linkend="cimi_msg_cstatement_order_0135" xrefstyle="select: label"/>, the
-            example for “Patient has an order for Physical Therapy.” is shown. The topic has been
-            declared to be of type ProcedureTopic stating “procedure of type physical therapy”, and
-            the context has been declared to be of type OrderContext. Again, the majority of
-            attributes for ProcedureTopic and OrderContext are not shown for clarity.
-            <?oxy_comment_end?></para>
         <figure xml:id="cimi_msg_cstatement_chf_0135">
             <title>Patient has diagnosis of congestive heart failure.</title>
             <mediaobject>
@@ -233,6 +234,15 @@ Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
                 </imageobject>
             </mediaobject>
         </figure>
+        
+        <para> 
+            In <xref linkend="cimi_msg_cstatement_order_0135" xrefstyle="select: label"/>, the
+            example for “Patient has an order for Physical Therapy.” is shown. The topic has been
+            declared to be of type ProcedureTopic stating “procedure of type physical therapy”, and
+            the context has been declared to be of type OrderContext. Again, the majority of
+            attributes for ProcedureTopic and OrderContext are not shown for clarity.
+        </para>
+
         <figure xml:id="cimi_msg_cstatement_order_0135">
             <title>Patient has an order for Physical Therapy.</title>
             <mediaobject>
@@ -242,8 +252,12 @@ Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
                 </imageobject>
             </mediaobject>
         </figure>
-        <para> StatementTopic and StatementContext are both collections of attributes and have the
-            following characteristics: </para>
+
+        <para> 
+            StatementTopic and StatementContext are both collections of attributes and have the
+            following characteristics: 
+        </para>
+
         <orderedlist numeration="arabic">
             <listitem>
                 <para>They are reusable components that can be assembled to form clinical
@@ -276,7 +290,7 @@ Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
     </para>
 
     <para>
-        ANF does not create its own topic patterns, and instead relies on Snomed post-coordinated expressions to represent the topic.  ANF operates under the principle of separation of concerns, and believes that terminology should be a separate concern from the ANF Statement data structure and it's properties.
+        ANF does not create its own topic patterns, and instead relies on SNOMED post-coordinated expressions to represent the topic.  ANF operates under the principle of separation of concerns, and believes that terminology should be a separate concern from the ANF Statement data structure and it's properties.
     </para>
 
     <figure xml:id="cimi_msg_topic_hierarchy_0135">
@@ -372,14 +386,17 @@ Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
             <para> Assertions affirm or deny the existence of clinical conditions, diseases,
                     symptoms, etc., in the patient. As just described, different varieties of
                     assertion may extend an existing AssertionTopic class with any additional
-                    attributes necessary to fully represent this new group of assertions. Example 1
-                    shows examples of clinical statements using the AssertionTopic class for the
-                    topic, and
-                    <?oxy_comment_start author="timowilliams" timestamp="20190710T133738-0500" comment="What does Table 2 refer to?"?>Table
-                    2<?oxy_comment_end?> shows examples of clinical statement using
+                    attributes necessary to fully represent this new group of assertions. In the following sections, 
+                    <xref linkend="cimi_example_1_0135" xrefstyle="select: label"/> and 
+                    <xref linkend="cimi_example_2_0135" xrefstyle="select: label"/>
+
+                    show examples of clinical statements using the AssertionTopic class for the
+                    topic, and later, 
+                    <xref linkend="cimi_example_3_0135" xrefstyle="select: label"/> and
+                    <xref linkend="cimi_example_4_0135" xrefstyle="select: label"/>
+                     show examples of clinical statement using
                     FindingSiteAssertionTopic for the topic. These examples show the
-                    ‘topic.topicCode’,
-                    <?oxy_comment_start author="timowilliams" timestamp="20190710T133833-0500" comment="Where is topic.result?"?>‘topic.result’<?oxy_comment_end?>,
+                    ‘topic.topicCode’
                     and ‘context.contextCode’ for each, with the addition of any extra attributes
                     from the chosen topic needed to describe the clinical statement. Context will be
                     discussed in depth later in this document. For now, be aware the chosen context
@@ -614,9 +631,6 @@ Recommend moving this paragraph after Figure 3.2 and before Figure 3.3."?>
                 <programlisting>
     SystolicBloodPressureEval
         topic.topicCode: Systolic arterial pressure (observable entity)
-        topic.evaluationProcedure: <?oxy_comment_start author="timowilliams" timestamp="20190710T134603-0500" comment="From Stephanie K:
-
-Is this part of the statement supposed to be included in the narrative shown in the figure title?"?>Auscultation (procedure)<?oxy_comment_end?>
         context.result: 120
             unitsOfMeasure: Millimeter of mercury (qualifier value)
                 </programlisting>
@@ -632,7 +646,7 @@ Is this part of the statement supposed to be included in the narrative shown in 
         </figure>
 
         <para>
-            <xref linkend="cimi_blood_pressure_eval_0135" xrefstyle="select: label"/> and <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/> are both Evaluation Result style representations of a systolic blood pressure.  In the first, where CIMI has a simple topic, the style is very similar to how it would be modeled in ANF.  But in <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/>, which has a complex topic, CIMI represents this with named properties in a tree structure.  ANF, on the other hand, would put all this structured topic complexity into a post-coordinated Snomed expression.
+            <xref linkend="cimi_blood_pressure_eval_0135" xrefstyle="select: label"/> and <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/> are both Evaluation Result style representations of a systolic blood pressure.  In the first, where CIMI has a simple topic, the style is very similar to how it would be modeled in ANF.  But in <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/>, which has a complex topic, CIMI represents this with named properties in a tree structure.  ANF, on the other hand, would put all this structured topic complexity into a post-coordinated SNOMED expression.
         </para>
 
         <figure xml:id="cimi_blood_pressure_eval_0135">
@@ -708,6 +722,7 @@ Is this part of the statement supposed to be included in the narrative shown in 
 
           <para>
             When a Clinical Statement is defined it will be modeled as a combination of a topic and a context. The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated. Specializations within the context hierarchy, shown in <xref linkend="cimi_msg_context_hierarchy_0135" xrefstyle="select: label"/>, add important attribution information for the situation being described.
+            This is partial view of the context hierarchy for illustration purpose, but it should be clear that more context classes exist, and more will be modeled in the future as necessary.
           </para>
 
                     <figure xml:id="cimi_msg_context_hierarchy_0135">
@@ -735,17 +750,16 @@ Is this part of the statement supposed to be included in the narrative shown in 
                     <varlistentry>
                         <term><emphasis role='bold'>ActionContext</emphasis></term>
                         <listitem>
-                            <para> The ActionContext class aligns with the SNOMED Situation with
+                            <para> 
+                                The ActionContext class aligns with the SNOMED Situation with
                             Explicit Context for procedures and provides the context for the topic
                             of a clinical statement. For instance, a statement about a procedure may
                             specify the procedure has been proposed, ordered, planned, performed, or
-                            not performed. Each action context, in turn, has its own lifecycle. An
-                            example of
-                            the<?oxy_comment_start author="timowilliams" timestamp="20190710T135347-0500" comment="From Stephanie K:
-
-Why is this example for PerformanceContext?  There isn&apos;t such a context shown in Figure 3.15.  Shouldn&apos;t it be for ActionContext?"?>
-                            PerformanceContext<?oxy_comment_end?> class is shown in <xref
-                                linkend="cimi_msg_performance_0135" xrefstyle="select: label"/>. </para>
+                            not performed. Each action context, in turn, has its own lifecycle. Another
+                            child of ActionContext, not shown in <xref linkend="cimi_msg_context_hierarchy_0135" xrefstyle="select: label"/> is
+                            PerformanceContext  shown in <xref
+                                linkend="cimi_msg_performance_0135" xrefstyle="select: label"/>. 
+                            </para>
                         </listitem>
                     </varlistentry>
                     
