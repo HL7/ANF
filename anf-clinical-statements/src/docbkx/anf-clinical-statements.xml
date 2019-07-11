@@ -41,7 +41,7 @@
         information by limiting the design choices a clinical modeler must make. ANF can then act as
         a consistent transformation target for the multiple differing clinical information
         representations that currently exist, making this clinical information more easily
-        computable and eliminates the need to create multiple ways to analyze the same data.</para>
+        computable and eliminating the need to create multiple ways to analyze the same data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of ANF Statements</title>
         <para>There are two types of ANF Statements:</para>
@@ -126,7 +126,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     <para>Was provided educational materials</para>
                     <itemizedlist>
                         <listitem>
-                            <para>Patient was provided with educational on diabetes</para>
+                            <para>Patient was provided with educational materials on diabetes</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -193,7 +193,7 @@ Doing family history, donor statements using subject of information is now the n
                     measureSemantic of Unit of time.</para>
                 <editorial-rule>
                     <title>Statement of absence of a Topic</title>
-                    <mathphrase>Any statement that represence absence of a Topic will have a Result
+                    <mathphrase>Any statement that represents absence of a Topic will have a Result
                         with an upperBound of 0, lowerBound of 0, and measureSemantic of "Unit of
                         time".</mathphrase>
                 </editorial-rule>
@@ -230,7 +230,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mathphrase>Any Topic that states a Result that has a value will be specified
                         with the correct upperBound, lowerBound, and measureSemantic. If the Result
                         is a single value, the upperBound and lowerBound will be the same value. If
-                        the Result is a range, the upperBound and lowerBound will be specifed as
+                        the Result is a range, the upperBound and lowerBound will be specified as
                         such.</mathphrase>
                 </editorial-rule>
                 <editorial-rule>
@@ -330,10 +330,14 @@ Doing family history, donor statements using subject of information is now the n
                                     <listitem>
                                         <para><emphasis role="underline">Example</emphasis>:
                                             Systolic blood pressure 120 mmHg, taken with patient in
-                                            sitting position. <emphasis role="italic">“Patient in
-                                                sitting position”</emphasis> is separable from the
+                                            sitting position for at least 5 minutes. <emphasis
+                                                role="italic">“Patient in sitting position for at
+                                                least 5 minutes”</emphasis> is separable from the
                                             topic and exists prior to the performance of the action
-                                            and therefore constitutes a prerequisite.</para>
+                                            and therefore constitutes a prerequisite.  The "sitting
+                                            position" portion of the prerequisite also specifies a
+                                            technique for performing the blood pressure measurement
+                                            and therefore would be included in the topic.</para>
                                     </listitem>
                                 </itemizedlist>
                             </listitem>
@@ -371,7 +375,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
-                    using a adult sized cuff, but also includes two pre-requistes that are
+                    using a adult sized cuff, but also includes two prerequisites that are
                     represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
                     lowerBound.</para>
@@ -397,7 +401,8 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para><editorial-rule>
-                        <title>Multiple Topics</title>
+                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?"?>Multiple
+                            Topics<?oxy_comment_end?></title>
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
                             narrative would be separated into multiple clinical statements if it
@@ -430,7 +435,7 @@ Doing family history, donor statements using subject of information is now the n
                 <editorial-rule>
                     <title>Purpose</title>
                     <mathphrase>The purpose is why an action was requested. The purpose of the topic
-                        is represented with either an Evaluation procedure or Therapuetic procedure
+                        is represented with either an Evaluation procedure or Therapeutic procedure
                         with a hasFocus attribute describing the purpose.</mathphrase>
                 </editorial-rule>
                 <editorial-rule>
@@ -465,8 +470,10 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Education Provided Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190711T102702-0500" comment="From Stephanie:
+Why is the quantity shown this way instead of just [1,1]?  I guess if this is something documented that happened in the past because you may not know quantity and for that I understand but what if it happened today?"?>
                             <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -607,7 +614,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <mathphrase>For requesting the administration of medication, the Topic will be
                         built using the Administration of substance concept. If the narrative
                         includes information about a refill, that information is currently
-                        represented as an Unstructure Circumstance. All Administration of substance
+                        represented as an Narrative Circumstance. All Administration of substance
                         concepts will be refined with the substance and dose form and strength being
                         requested. If Route of administration exists, then it will also be
                         added.</mathphrase>
