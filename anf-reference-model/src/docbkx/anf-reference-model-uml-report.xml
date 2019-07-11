@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" 
+    type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
     <title>ANF Reference Model</title>
@@ -18,11 +19,10 @@
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/clip_image002_-145014558.png" scalefit="1"
-                        width="100%" contentdepth="100%" />
+                        width="100%" />
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>ANFStatement</para>
         <section>
             <title>ANFStatement </title>
             <para>This is the main class which describes a clinical statement. Most importantly it
@@ -32,7 +32,7 @@
                     role="bold">'topic'</emphasis>.</para>
             <informaltable>
                 <tgroup cols="3">
-                    <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                    <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                     <colspec colnum="2" colname="col2" colwidth="1*"/>
                     <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                     <thead>
@@ -45,7 +45,7 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">id</emphasis> Identifier</para>
+                                <para><emphasis role="bold">id</emphasis> </para><para> Identifier</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -57,7 +57,7 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">time</emphasis> Measure</para>
+                                <para><emphasis role="bold">time</emphasis> </para><para> Measure</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -91,21 +91,23 @@
                         <row>
                             <entry>
                                 <para><emphasis role="bold">subjectOfRecord</emphasis>
-                                    Participant</para>
+                                    </para><para>Participant</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>A patient's clinical record will contain many statements. The
-                                    subjectOfRecordId is reference to the patient clinical record in
+                                    subjectOfRecord is a reference to the patient clinical record in
                                     which this statement is contained. </para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">author</emphasis> Practitioner</para>
+                                <para><emphasis role="bold">author</emphasis>
+                                </para>
+                                <para>Practitioner</para>
                             </entry>
                             <entry>
                                 <para>[0...*]</para>
@@ -137,14 +139,8 @@
                                     most statements in a patient record will be about the
                                     patient.</para>
                                 <para>The subjectOfInformation is used to represent who the
-                                    statement is about. This is normally the patient</para>
-                                <para>unless explicitly stated otherwise.</para>
-                                <para>Example values:</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>...</para>
-                                    </listitem>
-                                </itemizedlist>
+                                    statement is about. This is normally the patient unless
+                                    explicitly stated otherwise.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -285,7 +281,7 @@
 
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -370,7 +366,7 @@
 
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -498,7 +494,7 @@
 
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -543,11 +539,9 @@
                     natural language/text rather than a structure.</para>
                 <para>This class may be used to specify either a performance or request
                     circumstance.</para>
-
-
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -578,10 +572,8 @@
         </section>
         <section>
             <title> Result </title>
-
             <para>A unique aspect of the ANF Model is that all measures and results are numeric
-                ranges. The hierarchy of classes to represent these is shown in the below, “Result
-                Hierarchy”. An important point to notice in this class diagram is that the ANF Model
+                ranges. An important point to notice in this class diagram is that the ANF Model
                 promotes a normalized representation of observation or intervention results. </para>
             <para>This approach reduces data retrieval difficulties by eliminating the potential for
                 multiple differing representations of the same clinical statement. For example, with
@@ -592,8 +584,6 @@
                 color. The ANF Statement would represent Eye color using the Blue iris Finding as
                 the Topic and the Result would be Present, represented as interval.lowerBound =1,
                 interval.upperBound=INF.</para>
-
-
             <figure>
                 <title>Result Choices</title>
                 <mediaobject>
@@ -608,7 +598,6 @@
                 <para>This class specifies a choice of <emphasis role="underline"
                         >ObservationResult</emphasis> or <emphasis role="underline">
                         InterventionResult</emphasis>. </para>
-
             </section>
             <section>
                 <title>InterventionResult </title>
@@ -618,7 +607,7 @@
                     have a status of "On hold". </para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -662,10 +651,9 @@
             <section>
                 <title>ObservationResult </title>
                 <para>This class is represents an observation result. </para>
-
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -730,13 +718,10 @@
         </section>
         <section>
             <title> Data Structures </title>
-
             <para>The following are data structures used to represent an <emphasis role="underline"
                     >ANFStatement</emphasis>. This section describes the data structures specific to
                 ANF. This model references a set of logical structures to represent unique
                 identifiers (i.e. Identifie, Expresson) and primitive types (boolean, float). </para>
-
-
             <figure>
                 <title>Data Structures used to represent an ANFStatement</title>
                 <mediaobject>
@@ -757,139 +742,145 @@
                     of a phenomenon occurs. Note that this formalism allows both exact values and
                     ranges of values to be expressed. In case that the beginning and end point of an
                     interval are the same value,, the meaning is that the value of the phenomenon is
-                        <emphasis role="underline">exactly </emphasis>that value.</para>
+                        <emphasis role="underline">exactly </emphasis>that value. </para>
+
                 <para>The interval value data type provides a single way to represent both
-                    “presence” values and numeric values</para>
-                <para>for a phenomenon. In general, the interval value represents the numeric range
-                    within which the observed</para>
-                <para>value of a phenomenon occurs. Note that this formalism allows both exact
-                    values and ranges of values</para>
-                <para>to be expressed.</para>
+                        “<emphasis role="bold">presence</emphasis>” values and numeric values for a
+                    phenomenon. In general, the interval value represents the numeric range within
+                    which the observed value of a phenomenon occurs. Note that this formalism allows
+                    both exact values and ranges of values to be expressed.</para>
                 <para>In the special case that the beginning and end point of an interval are the
-                    same number, n, the meaning</para>
-                <para>is that the value of the phenomenon is exactly n.</para>
+                    same number, n, the meaning is that the value of the phenomenon is exactly
+                    n.</para>
                 <para><emphasis role="italic">[5,5] : exactly 5 ; [0,0] : exactly
                     0</emphasis></para>
                 <para>In the special case that the beginning of the interval is a number, n, and the
-                    end point is 8, the meaning is</para>
-                <para>that the value of the phenomenon is > n or >=n, depending on whether the
-                    interval is open or closed.</para>
+                    end point is 8, the meaning is that the value of the phenomenon is > n or >=n,
+                    depending on whether the interval is open or closed.</para>
                 <para><emphasis role="italic">(0,inf] : > 0 ; [10,INF] : >= 10</emphasis></para>
-                <para>The interval value also represents whether a phenomenon is “present”,
-                    “absent”, or “indeterminate”.</para>
-                <para>Specifically, any interval value that includes only numbers that are > 0 also
-                    denotes the value “present”.</para>
-                <para>Any interval value that includes only the number 0, itself, denotes the value
-                    “absent”. Any interval value</para>
-                <para>that includes both the number 0 and at least one number > 0 denotes the value
-                    “indeterminate”. Lastly,</para>
-                <para>there are two interval values that explicitly denote “present” and “absent,”
-                    respectively. These values may</para>
-                <para>be assigned to phenomena that would not otherwise take on a numeric value
+                <para>The interval value also represents whether a phenomenon is “<emphasis
+                        role="bold">present</emphasis>”, “<emphasis role="bold">absent</emphasis>”,
+                    or “<emphasis role="bold">indeterminate</emphasis>”. Specifically, any interval
+                    value that includes only numbers that are > 0 also denotes the value “present”.
+                    Any interval value that includes only the number 0, itself, denotes the value
+                    “absent”. Any interval value that includes both the number 0 and at least one
+                    number > 0 denotes the value “indeterminate”. Lastly, there are two interval
+                    values that explicitly denote “present” and “absent,” respectively. These values
+                    may be assigned to phenomena that would not otherwise take on a numeric value
                     (such as “nausea”):</para>
                 <para><emphasis role="italic">Nausea value = [1,INF] : present</emphasis></para>
                 <para><emphasis role="italic">Nausea value = [0,0] : absent</emphasis></para>
-
-
-                <informaltable>
-                    <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
-                        <colspec colnum="2" colname="col2" colwidth="1*"/>
-                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
-                        <thead>
-                            <row>
-                                <entry/>
-                                <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold">Notes</emphasis></entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">lowerBound</emphasis> float</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>It specifies the lower bound of a measurable element. This
-                                        can be the lower bound of a range:</para>
-                                    <para>For the “Tumor greater than 1 cm but less than 4 cm” the
-                                        lower bound is 1. For a test result, which is not</para>
-                                    <para>a range, lower and upper bound are the same. Example:
-                                        systolic blood pressure 110 mmHg. The lower</para>
-                                    <para>and upper bound are both 110 mmHg.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">includeLowerBound</emphasis>
-                                        boolean</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>It states whether the lower bound in the interval is
-                                        included in the interval. In the tumor</para>
-                                    <para>size example above, the lower bound would not be included.
-                                        The lower range size of 1cm is not included.</para>
-                                    <para>The inclusion or exclusion of lower bound is needed to
-                                        express measurable elements which include relative</para>
-                                    <para>properties, such as “greater than”, “less than” and
-                                        others. Example: “Persistent cough for more than 10</para>
-                                    <para>days”. If a lower bound of “10” is chosen, it would not be
-                                        included, because the example states: more than</para>
-                                    <para>10 days. Choosing “11” would require to include the lower
-                                        bound</para>
-                                    <para>If "true" the lower bound is part of the interval.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">upperBound</emphasis> float</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>represents the upper bound of a measurable element. This
-                                        can be the upper boundary of a</para>
-                                    <para>range: For the “Tumor greater than 1 cm but less than 4
-                                        cm” the upper bound is 4. In cases, where the</para>
-                                    <para>measurable element does not represent a range, upper and
-                                        lower bound have the same value.</para>
-                                    <para><emphasis role="bold">Invariant</emphasis>: it must be
-                                        greater than or equal to the lower bound.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">includeUpperBound</emphasis>
-                                        boolean</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>It states whether the upper bound in the interval is
-                                        included in the interval. Similar to</para>
-                                    <para>lower bound, where the measurable element has relative
-                                        properties, the same rules apply. If the upper</para>
-                                    <para>bound of a measure is not defined, e.g. “blood glucose
-                                        measurement daily for at least 2 weeks”, the upper</para>
-                                    <para>bound will be captured as “inf” (infinite). Infinite as an
-                                        upper bound is never included.</para>
-                                    <para>If "true" the upper bound is part of the interval.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </informaltable>
+                <para>
+                    <informaltable>
+                        <tgroup cols="3">
+                            <colspec colnum="1" colname="col1" colwidth="1.3*"/>
+                            <colspec colnum="2" colname="col2" colwidth="1*"/>
+                            <colspec colnum="3" colname="col3" colwidth="3.85*"/>
+                            <thead>
+                                <row>
+                                    <entry/>
+                                    <entry><emphasis role="bold">Multiplicity</emphasis></entry>
+                                    <entry><emphasis role="bold">Notes</emphasis></entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">lowerBound</emphasis>
+                                            float</para>
+                                    </entry>
+                                    <entry>
+                                        <para>[1...1]</para>
+                                    </entry>
+                                    <entry>
+                                        <para>It specifies the lower bound of a measurable element.
+                                            This can be the lower bound of a range:</para>
+                                        <para>For the “Tumor greater than 1 cm but less than 4 cm”
+                                            the lower bound is 1. For a test result, which is
+                                            not</para>
+                                        <para>a range, lower and upper bound are the same. Example:
+                                            systolic blood pressure 110 mmHg. The lower</para>
+                                        <para>and upper bound are both 110 mmHg.</para>
+                                        <para/>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">includeLowerBound</emphasis>
+                                            boolean</para>
+                                    </entry>
+                                    <entry>
+                                        <para>[1...1]</para>
+                                    </entry>
+                                    <entry>
+                                        <para>It states whether the lower bound in the interval is
+                                            included in the interval. In the tumor</para>
+                                        <para>size example above, the lower bound would not be
+                                            included. The lower range size of 1cm is not
+                                            included.</para>
+                                        <para>The inclusion or exclusion of lower bound is needed to
+                                            express measurable elements which include
+                                            relative</para>
+                                        <para>properties, such as “greater than”, “less than” and
+                                            others. Example: “Persistent cough for more than
+                                            10</para>
+                                        <para>days”. If a lower bound of “10” is chosen, it would
+                                            not be included, because the example states: more
+                                            than</para>
+                                        <para>10 days. Choosing “11” would require to include the
+                                            lower bound</para>
+                                        <para>If "true" the lower bound is part of the
+                                            interval.</para>
+                                        <para/>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">upperBound</emphasis>
+                                            float</para>
+                                    </entry>
+                                    <entry>
+                                        <para>[1...1]</para>
+                                    </entry>
+                                    <entry>
+                                        <para>represents the upper bound of a measurable element.
+                                            This can be the upper boundary of a</para>
+                                        <para>range: For the “Tumor greater than 1 cm but less than
+                                            4 cm” the upper bound is 4. In cases, where the</para>
+                                        <para>measurable element does not represent a range, upper
+                                            and lower bound have the same value.</para>
+                                        <para><emphasis role="bold">Invariant</emphasis>: it must be
+                                            greater than or equal to the lower bound.</para>
+                                        <para/>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <para><emphasis role="bold">includeUpperBound</emphasis>
+                                            boolean</para>
+                                    </entry>
+                                    <entry>
+                                        <para>[1...1]</para>
+                                    </entry>
+                                    <entry>
+                                        <para>It states whether the upper bound in the interval is
+                                            included in the interval. Similar to</para>
+                                        <para>lower bound, where the measurable element has relative
+                                            properties, the same rules apply. If the upper</para>
+                                        <para>bound of a measure is not defined, e.g. “blood glucose
+                                            measurement daily for at least 2 weeks”, the
+                                            upper</para>
+                                        <para>bound will be captured as “inf” (infinite). Infinite
+                                            as an upper bound is never included.</para>
+                                        <para>If "true" the upper bound is part of the
+                                            interval.</para>
+                                        <para/>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </informaltable>
+                </para>
             </section>
             <section>
                 <title>Measure </title>
@@ -902,7 +893,7 @@
 
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -952,9 +943,10 @@
                                         express a number of findings or phenomena described in the
                                         ANFStatement.topic "3 dot-and-blot hemorrhages " would be
                                         "30766002 | Quantitative".</para>
-                                    <para>Time</para>
+                                    <para/>
+                                    <para><?oxy_comment_start author="Ioana" timestamp="20190711T020716-0400" comment="Additional examples in progress"?>Time</para>
                                     <para>Time interval</para>
-                                    <para>Duration</para>
+                                    <para>Duration<?oxy_comment_end?></para>
                                     <para/>
                                 </entry>
                             </row>
@@ -994,7 +986,7 @@
                     of the Repetition:</para>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -1092,7 +1084,7 @@
 
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -1150,7 +1142,7 @@
                 <title>AssociatedStatement </title>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -1208,7 +1200,7 @@
                 </itemizedlist>
                 <informaltable>
                     <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.04*"/>
+                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
                         <colspec colnum="2" colname="col2" colwidth="1*"/>
                         <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                         <thead>
@@ -1259,7 +1251,6 @@
                         </tbody>
                     </tgroup>
                 </informaltable>
-
             </section>
         </section>
     </section>
