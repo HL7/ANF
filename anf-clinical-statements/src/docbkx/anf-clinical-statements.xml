@@ -174,9 +174,9 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Statement of Presence of a Topic</title>
                     <mathphrase>Any statement that represents the Presence or implies Presence of a
                         Topic will have a Result with an upperBound of infinite (inf), lowerBound of
-                        1, and measureSemantic of "Unit of time".</mathphrase>
+                        1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
-                <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn't seem any better than other's using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Present Clinical Statement Example</title>
                     <mediaobject>
@@ -190,12 +190,12 @@ Doing family history, donor statements using subject of information is now the n
                 <para>In the Diabetes Mellitus type 2 example above, the Topic is an Observation
                     procedure with a Has focus of Diabetes mellitus type 2. To represent that it is
                     present, the Result is a lowerBound of 1, an upperBound of infinite (inf), and a
-                    measureSemantic of Unit of time.</para>
+                    measureSemantic of "Countable quantity".</para>
                 <editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
-                        with an upperBound of 0, lowerBound of 0, and measureSemantic of "Unit of
-                        time".</mathphrase>
+                        with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable
+                        quantity".</mathphrase>
                 </editorial-rule>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating absence issue." flag="done"?><?oxy_comment_end?>
                 <figure>
@@ -215,7 +215,7 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Dot Blot Hemorrhage Present Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190625T161253-0500" comment="How do the measureSemantic for this example match up with the 3 dot blot example below?"?>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190625T161253-0500" comment="How do the measureSemantic for this example match up with the 3 dot blot example below?" flag="done"?>
                             <imagedata fileref="images/dbh_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
