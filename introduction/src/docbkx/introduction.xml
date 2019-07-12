@@ -2,9 +2,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Data</title>
-  <para>A <glossterm>Normal Form</glossterm> is a represention of data as standard fundamental form
-    of a statement. There can be many views on what constitues a normal form, based on differing
-    requirements. </para>
+  <para>A <glossterm>Normal Form</glossterm> is a representation of data as a standard fundamental
+    form of a statement. There can be many views on what constitutes a normal form, based on
+    differing requirements. </para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
