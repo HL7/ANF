@@ -83,9 +83,9 @@ Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semanti
                     </mediaobject>
                 </figure>
                 <para>“Architectural Separation of Concerns” shows the Statement layer is separate
-                    from Terminology layers, yet most CIF statement models mix terminology concerns
-                    into the structural attributes of the statement model. ANF attempts to maintain
-                    a cleaner separation between these layers. </para>
+                    from Terminology layers, yet most statement models mix terminology concerns into
+                    the structural attributes of the statement model. ANF attempts to maintain a
+                    cleaner separation between these layers. </para>
                 <para>The Terminology Knowledge layer is used to define what is being measured, such
                     as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
                 <para>Analysis Normal Form (ANF) classes must cleanly separate the concerns of
@@ -316,13 +316,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </mediaobject>
         </figure>
         <para>
-            <emphasis role="bold">Technique: </emphasis>
-            <itemizedlist>
-                <listitem>
-                    <para><emphasis role="italic">Definition</emphasis>: A device used, a method
-                        applied, or a temporary state in which the patient was <emphasis role="bold"
-                            >actively</emphasis> placed <emphasis role="bold">during</emphasis>
-                        performance of the action.</para>
+            <emphasis role="bold">Technique: </emphasis> : A device used, a method applied, or a
+            temporary state in which the patient was <emphasis role="bold">actively</emphasis>
+            placed <emphasis role="bold">during</emphasis> performance of the action.
                     <itemizedlist>
                         <listitem>
                             <para>Actions can be performed by various techniques. As opposed to the
@@ -366,8 +362,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             </itemizedlist>
                         </listitem>
                     </itemizedlist>
-                </listitem>
-            </itemizedlist></para>
+                </para>
         <para>
             <emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis role="bold"
                 >state</emphasis> that <emphasis role="bold">must</emphasis> exist before something
@@ -438,40 +433,39 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             "routine" unless otherwise specified </para>
         <editorial-rule>
             <title>Request for Action Topics</title>
-            <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?"?>The
-                topic follows a variety of possible patterns. For example: <itemizedlist>
-                    <listitem>
-                        <para><emphasis>Administration of Medication</emphasis>:<?oxy_comment_end?>
-                            For requesting the administration of medication, the Topic will be built
-                            using the Administration of substance concept. If the narrative includes
-                            information about a refill, that information is currently represented as
-                            an Narrative Circumstance. All Administration of substance concepts will
-                            be refined with the substance and dose form and strength being
-                            requested. If Route of administration exists, then it will also be
-                            added.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>Radiographic Imaging Procedure</emphasis>: For requesting of
-                            imaging procedures, the Topic will be built using an Radiographic
-                            imaging procedure concept. These concepts will be further refined with a
-                            Method, Procedure site - Direct and (if appropriate) a laterality for
-                            those sites that are lateralizable.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>Observation Procedure</emphasis>: Any request for an action
-                            that is an observation would begin with an Observation procedure. The
-                            Observation procedure with then have a Has focus attribute linking it to
-                            the Clinical Finding or Disorder that it is being observed. The
-                            observation procedure can also be further refined by adding the Method,
-                            Procedure site - Direct, (if appropriate) Laterality, and Using
-                            device.</para>
-                    </listitem>
-                    <listitem>
-                        <para><emphasis>All Other Procedures</emphasis>: Any other request for an
-                            action would be represented by a Procedure concept with any of the
-                            approved terminology procedure attributes applied.</para>
-                    </listitem>
-                </itemizedlist></mathphrase>
+            <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?" flag="done"?>The
+                topic follows a variety of possible patterns. For example: </mathphrase>
+            <itemizedlist>
+                <listitem>
+                    <para><emphasis>Administration of Medication</emphasis>:<?oxy_comment_end?> For
+                        requesting the administration of medication, the Topic will be built using
+                        the Administration of substance concept. If the narrative includes
+                        information about a refill, that information is currently represented as an
+                        Narrative Circumstance. All Administration of substance concepts will be
+                        refined with the substance and dose form and strength being requested. If
+                        Route of administration exists, then it will also be added.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Radiographic Imaging Procedure</emphasis>: For requesting of
+                        imaging procedures, the Topic will be built using an Radiographic imaging
+                        procedure concept. These concepts will be further refined with a Method,
+                        Procedure site - Direct and (if appropriate) a laterality for those sites
+                        that are lateralizable.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>Observation Procedure</emphasis>: Any request for an action that
+                        is an observation would begin with an Observation procedure. The Observation
+                        procedure with then have a Has focus attribute linking it to the Clinical
+                        Finding or Disorder that it is being observed. The observation procedure can
+                        also be further refined by adding the Method, Procedure site - Direct, (if
+                        appropriate) Laterality, and Using device.</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis>All Other Procedures</emphasis>: Any other request for an action
+                        would be represented by a Procedure concept with any of the approved
+                        terminology procedure attributes applied.</para>
+                </listitem>
+            </itemizedlist>
         </editorial-rule>
         <para>
             <emphasis role="bold">Repetition: </emphasis> Repetition is used to represent when an
@@ -531,7 +525,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </para>
         <editorial-rule>
             <title>Performance of Action Topics</title>
-            <mathphrase>The topic follows a variety of possible patterns:
+            <mathphrase>The topic follows a variety of possible patterns:</mathphrase>
             <itemizedlist>
                     <listitem>
                         <para><emphasis>Administration of Medication</emphasis>: To represent the
@@ -562,7 +556,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                             approved terminology procedure attributes applied.</para>
                     </listitem>
                 </itemizedlist>
-            </mathphrase>
+            
         </editorial-rule>
         <editorial-rule>
             <title>Status</title>
