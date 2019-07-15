@@ -93,15 +93,14 @@
             <varlistentry>
                 <term><emphasis role="bold">Topic</emphasis></term>
                 <listitem>
-                    <para> 
-                        The ‘topic’ is the clinical entity described by the Clinical Statement. A
+                    <para> The ‘topic’ is the clinical entity described by the Clinical Statement. A
                         few examples of topic include clinical assertions, evaluation results, and
                         procedures. For each of these topics the information described is quite
                         different. Therefore, CIMI describes topic types that contain the
                         appropriate attributes to describe the required information for the given
-                        topic. The number of topic types will change as CIMI progresses. Currently the allowable topic types are ProcedureTopic and FindingTopic which has suptypes of EvaluationResultTopic
-                        and AssertionTopic. 
-                    </para>
+                        topic. The number of topic types will change as CIMI progresses. Currently
+                        the allowable topic types are ProcedureTopic and FindingTopic which has
+                        subtypes of EvaluationResultTopic and AssertionTopic. </para>
 
                     <para></para>
                     <!-- DO NOT REMOVE - Adds a space between above text and list below -->
@@ -201,9 +200,13 @@
             <varlistentry>
                 <term><emphasis role="bold">Metadata</emphasis></term>
                 <listitem>
-                    <para>
-                        ‘metadata’ is not actually an attribute of CIMI ClinicalStatement, but is intended here to represent the various attributes in clinical statement that represent metadata about the clinical statement. This includes attribution information relating to the statement itself such as who authored, verified, recorded, or signed the statement or more informally, the who, where, why, and when information. Other attributes of this nature are recordStatus and encounter. 
-                    </para>
+                    <para> ‘metadata’ is not actually an attribute of CIMI Clinical Statement, but
+                        is intended here to represent the various attributes in clinical statement
+                        that represent metadata about the clinical statement. This includes
+                        attribution information relating to the statement itself such as who
+                        authored, verified, recorded, or signed the statement or more informally,
+                        the who, where, why, and when information. Other attributes of this nature
+                        are recordStatus and encounter. </para>
                 </listitem>
             </varlistentry>
         </variablelist>
