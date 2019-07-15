@@ -1,79 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-      xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title> Analysis Normal Form</title>
   <subtitle>HL7 Ballot Submission Document</subtitle>
- 
- <preface>
-   <title>Intended Audience</title>
-   <para> ANF is intended to support projects that aggregate clinical statements from a variety of
-      sources, independent of formalism or approach used by the source system. The users of this
-      specification and subsequent implementation guidance are developing solutions that support
-      clinical decision support, patient safety, and research. </para>
+
+  <preface>
+    <title>Intended Audience</title>
+    <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
+      intended for projects that aggregate clinical statements from a variety of sources,
+      independent of formalism or approach used by the source system. The users of ANF—and
+      subsequent implementation guidance—are devloping applications that require determiniation if a
+      clinical fact or situation was observed to exist or happen, and they wish to ensure that this
+      determination is reliable and performed in accordance with the principles of patient safety
+      and high-reliability organizations. These applications may include clinical decision support,
+      reimbursement, public health reporting, outcomes research, and other types of data analysis. </para>
     <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other
-      national initiatives are all relying on interoperable, reusable, analysis-ready information
-      that can improve outcomes, produce new therapies, and put into practice "precision
-      medicine".</para>
- </preface>
+      national initiatives all examples of efforts that can benefit from ANF as they all depend on
+      interoperable, reusable, and analysis-ready information that can improve outcomes, produce new
+      therapies, and put into practice "precision medicine."</para>
+  </preface>
   <toc/>
   <!-- Outline -->
-<!-- <xi:include href="../../../introduction/src/docbkx/outline.xml"
+  <!-- <xi:include href="../../../introduction/src/docbkx/outline.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
-  
-    <!-- Glossary -->
-    <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/glossary.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Glossary -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/glossary.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 
-    <!-- Introduction -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <!-- Introduction -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
- <!-- Clinical Input Form -->
- <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
- 
- 
- <!-- Introduction to Clinical Statements -->
- <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
+  <!-- Clinical Input Form -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+
+  <!-- Introduction to Clinical Statements -->
+  <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
-    <!-- ANF Reference Model -->
-    <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <!-- ANF Reference Model -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-reference-model/anf-reference-model.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- ANF Clinical Statements -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Differences between ANF and CIF -->
-   <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 
- 
- <!-- Analysis Normal Form -->
- <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
+  <!-- Analysis Normal Form -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Transformation -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
- 
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Precision -->
   <!--<xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
- 
+
   <!-- Conclusion -->
-   <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Acknowledgements -->
- <!-- <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   -->
-  
+  <!-- <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   -->
+
   <!-- Bibliography -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Appendix -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Introduction -->
   <!--<xi:include href="../../../introduction/src/docbkx/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   -->

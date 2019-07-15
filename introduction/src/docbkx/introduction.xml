@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>A Normal Form for Clinical Data</title>
-  <para>A <glossterm>Normal Form</glossterm> is a representation of data as a standard fundamental
-    form of a statement. There can be many views on what constitutes a normal form, based on
-    differing requirements. </para>
+  <title>A Normal Form for Clinical Statements</title>
+  <para>We care about clinical statements because... Encounters here... </para>
+  <para>A clinical <glossterm>statement</glossterm>is a definite and clear representation of a
+    clinically-significant fact or situation that was observed to exist or happen. A clinical
+    statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
+    provides a written account that can be naturally read by humans, as well as a <glossterm
+      baseform="Normal Form">normal form</glossterm> which is a machine processable  representation
+    of the statement's data as a standardized and encoded fundamental form. There can be many views
+    on what constitutes a normal form, based on differing requirements. </para>
+  <para>In this document, we present several different necessary normal forms, and focus on
+      <glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm></para>
+  <para>An example of a clinical statement can be "example here"… </para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>

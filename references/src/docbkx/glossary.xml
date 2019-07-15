@@ -68,6 +68,7 @@
                     >https://www.hl7.org/fhir/overview.html</link></para>
         </glossdef>
     </glossentry>
+
     <glossentry>
         <glossterm>Normal Form</glossterm>
         <glossdef>
@@ -76,7 +77,7 @@
                 to as a normal form. </para>
         </glossdef>
     </glossentry>
-    
+
     <glossentry>
         <glossterm>Solor</glossterm>
         <glossdef>
@@ -86,6 +87,21 @@
                 convert user-supplied terminologies into a single model using open source software
                 to produce Solor content. For more information please see <link
                     xlink:href="http://solor.io">http://solor.io</link></para>
+        </glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Statement</glossterm>
+        <glossdef>
+            <para>A representation of a fact or situation was observed to exist or happen.</para>
+            <glossseealso>Statement Narrative</glossseealso>
+        </glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Statement Narrative</glossterm>
+        <glossdef>
+            <para>A written account of a fact or situation was observed to exist or happen,
+                corresponding to one or more statements.</para>
+            <glossseealso>Statement</glossseealso>
         </glossdef>
     </glossentry>
 </glossary>
