@@ -427,7 +427,8 @@ so these templates do nothing-->
         <!--<fo:page-number/>-->
       <!--</xsl:when>-->
       <xsl:when test="$position='left'">
-        © 2019 Health Level Seven International.  All rights reserved.
+        <fo:block>Page <fo:page-number/></fo:block>
+        <fo:block>© 2019 Health Level Seven International.  All rights reserved.</fo:block>
       </xsl:when>
       <xsl:when test="$position='right'">HL7_CIMI_LM_ANF_R1_I1_2019SEP
         September 2019 Ballot</xsl:when>
