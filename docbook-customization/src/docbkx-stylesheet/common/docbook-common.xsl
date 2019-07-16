@@ -15,9 +15,11 @@
 <!--==============================================================-->
 <xsl:param name="section.autolabel" select="1"/>
 <xsl:param name="section.label.includes.component.label" select="1"/>
+  <xsl:param name="footer.column.widths">3 0 2</xsl:param>
 
-<!-- This parameter places the element's title either before
-(above) or after (below) the content -->
+
+  <!-- This parameter places the element's title either before
+  (above) or after (below) the content -->
 <!-- Add new elements requirement and editorial-rule -->
 <xsl:param name="formal.title.placement">
 requirement before
