@@ -10,15 +10,15 @@
     <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
       intended for projects that aggregate clinical statements from a variety of sources,
       independent of formalism or approach used by the source system. The users of ANF—and
-      subsequent implementation guidance—are devloping applications that require determiniation if a
+      subsequent implementation guidance—are developing applications that require determination if a
       clinical fact or situation was observed to exist or happen, and they wish to ensure that this
       determination is reliable and performed in accordance with the principles of patient safety
       and high-reliability organizations. These applications may include clinical decision support,
       reimbursement, public health reporting, outcomes research, and other types of data analysis. </para>
-    <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other
-      national initiatives all examples of efforts that can benefit from ANF as they all depend on
-      interoperable, reusable, and analysis-ready information that can improve outcomes, produce new
-      therapies, and put into practice "precision medicine."</para>
+    <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other US
+      national, or international initiatives all examples of efforts that can benefit from ANF as
+      they all depend on interoperable, reusable, and analysis-ready information that can improve
+      outcomes, produce new therapies, and put into practice "precision medicine."</para>
   </preface>
   <toc/>
   <!-- Outline -->

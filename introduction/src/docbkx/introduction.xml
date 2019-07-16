@@ -9,7 +9,8 @@
     provides a written account that can be naturally read by humans, as well as a <glossterm
       baseform="Normal Form">normal form</glossterm> which is a machine processable  representation
     of the statement's data as a standardized and encoded fundamental form. There can be many views
-    on what constitutes a normal form, based on differing requirements. </para>
+    on what constitutes a normal form, based on differing use cases. </para>
+  <para/>
   <para>In this document, we present several different necessary normal forms, and focus on
       <glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm></para>
   <para>An example of a clinical statement can be "example here"… </para>
@@ -115,7 +116,7 @@
       standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be based on
       proprietary models. For the purposes of this document, the type or usability of data
       structures used for capture or display of clinical statements is not in scope. We assume that
-      <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
+        <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
       suitable for normalization for analysis. </para>
     <para>Therefore, clinical statements can be expressed and documented in many different ways in
       EHR systems, where input forms provide different options to document the same clinical
@@ -163,16 +164,26 @@
           <para>Next, the physician adds an interpretation. </para>
         </listitem>
       </orderedlist>
-    </para>
-    <figure xml:id="CIF_EHR_1">
-      <title> Blood Pressure Statement recorded by an EHR systems</title>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/BP data capture.svg" scalefit="1" width="60%" format="SVG"
-            contentdepth="100%"/>
-        </imageobject>
-      </mediaobject>
-    </figure>
+      <informaltable frame="all">
+        <tgroup cols="1" align="center">
+          <colspec colname="c1" colnum="1" colwidth="1*" align="center"/>
+          <tbody>
+            <row>
+              <entry>
+                <figure xml:id="CIF_EHR_1">
+                  <title> Blood Pressure Statement recorded by an EHR systems</title>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/BP data capture.svg" scalefit="1" width="60%"
+                        format="SVG" contentdepth="100%"/>
+                    </imageobject>
+                  </mediaobject>
+                </figure>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable></para>
     <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset of
       information about the blood pressure measurement - omitting "micturition context" and
       pre-coordinates site and laterality as:</para>
@@ -246,8 +257,8 @@
         be able to be reused, as well as worked on and updated independently to address new
         requirements and use cases. This is especially useful and important in a medical context
         given how many different health information and clinical terminology projects are ongoing at
-        any given time. Efforts  are often uncoordinated and led by disparate and unrelated
-        standards development organizations. </para>
+        any given time. Efforts are often uncoordinated and led by disparate and unrelated standards
+        development organizations. </para>
       <para>The following diagram shows how the concept of Separation of Concerns can be applied to
         the problem systematically:</para>
       <para/>
