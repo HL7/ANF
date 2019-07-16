@@ -177,7 +177,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[5,inf] minute</para>
+                                            <para>[5,inf) minute</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -421,7 +421,7 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para>Timing Value: [1, inf] ISO 8601 prior to statement
+                                    <para>Timing Value: [1, inf) ISO 8601 prior to statement
                                         time</para>
                                 </listitem>
                                 <listitem>
@@ -447,7 +447,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1,inf] Unit of time</para>
+                                            <para>[1,inf) Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -534,7 +534,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1,inf] Unit of time</para>
+                                            <para>[1,inf) Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -796,7 +796,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1,inf] Unit of time</para>
+                                            <para>[1,inf) Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -857,7 +857,7 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para>Timing: [1, inf] ISO 8601 prior to statement time</para>
+                                    <para>Timing: [1, inf) ISO 8601 prior to statement time</para>
                                 </listitem>
                                 <listitem>
                                     <para>Purposes: Ø</para>
@@ -879,10 +879,10 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para><?oxy_comment_start author="timowilliams" timestamp="20190531T162722-0500" comment="Is this correct for history of?"?>Result:<?oxy_comment_end?></para>
+                                    <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1,inf] Unit of time</para>
+                                            <para>[1,inf) Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
