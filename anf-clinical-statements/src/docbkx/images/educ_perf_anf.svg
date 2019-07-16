@@ -76,7 +76,7 @@
    v:index="7"
    v:groupContext="foregroundPage"
    id="g100"
-   transform="matrix(1.0124,0,0,1.7550042,-0.71603897,-40.730268)">
+   transform="matrix(1.0165669,0,0,1.7937221,-0.96799884,-42.818947)">
 		<title
    id="title4">education_perf_anf</title>
 		<v:pageProperties
@@ -1411,7 +1411,7 @@
 			<title
    id="title86">Round Corner Rectangle.7</title>
 			<desc
-   id="desc88">[1,inf] Unit of time</desc>
+   id="desc88">[1,inf) Countable quantity</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -1492,14 +1492,14 @@
    inkscape:connector-curvature="0"
    style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="30.5"
+   x="10.48"
    y="594.63"
    class="st8"
    v:langID="1033"
    id="text92"
    style="font-style:italic;font-size:12.00012016px;font-family:Arial;fill:#000000"><v:paragraph
    v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />[1,inf] Unit of time</text>
+   v:bulletSize="0.166667" /><v:tabList />[1,inf) Countable quantity</text>
 		</g>
 		<g
    id="shape25-37"

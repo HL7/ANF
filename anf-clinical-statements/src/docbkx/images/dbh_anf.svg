@@ -76,7 +76,7 @@
    v:index="2"
    v:groupContext="foregroundPage"
    id="g100"
-   transform="matrix(1.033261,0,0,1.7549928,-1.9862407,-40.728014)">
+   transform="matrix(1.0290835,0,0,1.7937152,-1.7301071,-42.81758)">
 		<title
    id="title4">Dot_Blot_present_ANF</title>
 		<v:pageProperties
@@ -1411,7 +1411,7 @@
 			<title
    id="title86">Round Corner Rectangle.7</title>
 			<desc
-   id="desc88">[1,inf] Countable quantity</desc>
+   id="desc88">[1,inf) Countable quantity</desc>
 			<v:userDefs>
 				<v:ud
    v:nameU="CTypeTopLeftSnip"
@@ -1492,14 +1492,14 @@
    inkscape:connector-curvature="0"
    style="fill:#d7e3bf;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
 			<text
-   x="10.81"
+   x="10.48"
    y="594.63"
    class="st8"
    v:langID="1033"
    id="text92"
    style="font-style:italic;font-size:12.00012016px;font-family:Arial;fill:#000000"><v:paragraph
    v:horizAlign="1"
-   v:bulletSize="0.166667" /><v:tabList />[1,inf] Countable quantity</text>
+   v:bulletSize="0.166667" /><v:tabList />[1,inf) Countable quantity</text>
 		</g>
 		<g
    id="shape25-37"

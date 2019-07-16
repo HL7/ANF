@@ -3,7 +3,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
-    <title>ANF Clinical Statements </title>
+    <title>ANF Clinical Statements</title>
     <para> </para>
     <informaltable>
         <tgroup cols="1">
@@ -70,9 +70,9 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="2"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="4"?><?oxy_comment_end mid="4"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="4"?><?oxy_comment_end mid="4"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="5"?><?oxy_comment_end mid="5"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="6"?><?oxy_comment_end mid="6"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -167,8 +167,8 @@ Doing family history, donor statements using subject of information is now the n
                         an Observation procedure. The Observation procedure will also specify a Has
                         focus attribute linking it to the Clinical Finding or Disorder that it is
                         being observed. The observation procedure can also be further refined by
-                        adding the Method, Procedure site - Direct, (if appropriate) Laterality, and
-                        Using device</mathphrase>
+                        adding attributes in the terminology model, including Method, Procedure site
+                        - Direct, (if appropriate) Laterality, and Using device</mathphrase>
                 </editorial-rule>
                 <editorial-rule>
                     <title>Statement of Presence of a Topic</title>
@@ -309,8 +309,8 @@ Doing family history, donor statements using subject of information is now the n
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
                             <emphasis role="bold">must</emphasis> exist before something else can
                         happen or be done. Pre-requisite are part of the details under which a
-                        procedure is being performed. The state must exist can prior to the
-                        performance of the action <itemizedlist>
+                        procedure is being performed. The state must exist prior to the performance
+                        of the action <itemizedlist>
                             <listitem>
                                 <para>The state that must exist pertains to:</para>
                                 <itemizedlist spacing="compact">
@@ -334,7 +334,7 @@ Doing family history, donor statements using subject of information is now the n
                                                 role="italic">“Patient in sitting position for at
                                                 least 5 minutes”</emphasis> is separable from the
                                             topic and exists prior to the performance of the action
-                                            and therefore constitutes a prerequisite.  The "sitting
+                                            and therefore constitutes a prerequisite. The "sitting
                                             position" portion of the prerequisite also specifies a
                                             technique for performing the blood pressure measurement
                                             and therefore would be included in the topic.</para>
@@ -384,7 +384,7 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T210341-0500" comment="How does Three reconcile with Present above?  They both use different measure semantics?
-"?>
+" flag="done"?>
                             <imagedata fileref="images/three_dbh_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
@@ -456,7 +456,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para>In the medication example above a purpose is specified using Pain control
-                    which has a focus of pain.  The Topic is built using Administration of substance
+                    which has a focus of pain. The Topic is built using Administration of substance
                     with a Direct substance specifying the pharmaceutical product and a Route of
                     Administration specifying Oral.</para>
             </section>
@@ -464,7 +464,9 @@ Doing family history, donor statements using subject of information is now the n
                 <title>Provision of educational materials</title>
                 <editorial-rule>
                     <title>Topic for All Other Procedures</title>
-                    <mathphrase>Any other action that was performed would be represented by a Procedure concept with any of the approved terminology procedure attributes applied.</mathphrase>
+                    <mathphrase>Any other action that was performed would be represented by a
+                        Procedure concept with any of the approved terminology procedure attributes
+                        applied.</mathphrase>
                 </editorial-rule>
                 <figure>
                     <title>Education Provided Clinical Statement Example</title>
@@ -478,15 +480,15 @@ Why is the quantity shown this way instead of just [1,1]?  I guess if this is so
                     </mediaobject>
                 </figure>
                 <para>In this example, the concept Provision of educational material is used with a
-                    Has focus of Diabetes mellitus.  </para>
+                    Has focus of Diabetes mellitus. </para>
             </section>
             <section>
                 <title>Other states or specific characteristics that are clinically relevant</title>
                 <editorial-rule>
                     <title>subjectOfInformation</title>
                     <mathphrase>The subjectOfInformation is used to represent who the statement is
-                        about. This is normally the patient unless explicitly stated
-                        otherwise.</mathphrase>
+                        about. This is normally the patient (Subject of record) unless explicitly
+                        stated otherwise, for example Mother, Sibling, Donor, etc.</mathphrase>
                 </editorial-rule>
                 <figure>
                     <title>Family History Clinical Statement Example</title>
@@ -579,7 +581,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                 </figure>
                 <para>The Laboratory Request example above show how the topic is built using a
-                    laboratory procedure concept, with no refinements in this case.  It also has a
+                    laboratory procedure concept, with no refinements in this case. It also has a
                     Priority of Routine as stated in the narrative description.</para>
                 <editorial-rule>
                     <title>Imaging Procedure Topic</title>
@@ -628,31 +630,32 @@ The distinction with a performance clinical statement concerning giving him educ
                             <listitem>
                                 <para><emphasis>periodDuration:</emphasis>This required field is
                                     used to represent how long a repetition should persist. If it is
-                                    not specified, a default value of [0,inf] will be used. e.g. for
-                                    3 weeks</para>
+                                    not specified, a default value of [0,inf) will be used. An
+                                    example of periodDuration would be "Take for 3 weeks".</para>
                             </listitem>
                             <listitem>
                                 <para><emphasis>periodStart:</emphasis> This required field is used
                                     to represent when a repeated action should begin. If it is not
-                                    specified, a default value of [0,inf] will be used. e.g.
-                                    NOW</para>
+                                    specified, a default value of [0,inf) will be used. An example
+                                    of periodStart would be "NOW".</para>
                             </listitem>
                             <listitem>
                                 <para><emphasis>eventSeparation:</emphasis>This required field is
                                     used to represent how long between actions. If it is not
-                                    specified, a default value of [0,inf] will be used. e.g. for 2
-                                    weeks</para>
+                                    specified, a default value of [0,inf) will be used. An example
+                                    of eventSeparation would be "Every 2 weeks".</para>
                             </listitem>
                             <listitem>
                                 <para><emphasis>eventFrequency:</emphasis>This required field is
                                     used to represent how often the action should occur. If it is
-                                    not specified, a default value of [0,inf] will be used. e.g. 3
-                                    times per week</para>
+                                    not specified, a default value of [0,inf) will be used. An
+                                    example of eventFrequency would be "Use 3 times per
+                                    week".</para>
                             </listitem>
                             <listitem>
                                 <para><emphasis>eventDuration:</emphasis>This is an optional field
-                                    that is used to represent how long every action should last.
-                                </para>
+                                    that is used to represent how long every action should last "Use
+                                    for 2 weeks". </para>
                             </listitem>
                         </itemizedlist>
                     </mathphrase>
@@ -680,7 +683,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                 </figure>
                 <para>In this example we see Repetition used only to define the eventFrequency while
-                    the other Repetition information is defaulted to [0,inf] Unit of time.</para>
+                    the other Repetition information is defaulted to [0,inf) Unit of time.</para>
             </section>
         </section>
     </section>

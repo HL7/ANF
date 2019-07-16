@@ -475,22 +475,22 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 <listitem>
                     <para><emphasis>periodDuration:</emphasis>This required field is used to
                         represent how long a repetition should persist. If it is not specified, a
-                        default value of [0,inf] will be used. e.g. for 3 weeks</para>
+                        default value of [0,inf) will be used. e.g. for 3 weeks</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>periodStart:</emphasis> This required field is used to represent
                         when a repeated action should begin. If it is not specified, a default value
-                        of [0,inf] will be used. e.g. NOW</para>
+                        of [0,inf) will be used. e.g. NOW</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>eventSeparation:</emphasis>This required field is used to
                         represent how long between actions. If it is not specified, a default value
-                        of [0,inf] will be used. e.g. for 2 weeks</para>
+                        of [0,inf) will be used. e.g. for 2 weeks</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>eventFrequency:</emphasis>This required field is used to
                         represent how often the action should occur. If it is not specified, a
-                        default value of [0,inf] will be used. e.g. 3 times per week</para>
+                        default value of [0,inf) will be used. e.g. 3 times per week</para>
                 </listitem>
                 <listitem>
                     <para><emphasis>eventDuration:</emphasis>This is an optional field that is used

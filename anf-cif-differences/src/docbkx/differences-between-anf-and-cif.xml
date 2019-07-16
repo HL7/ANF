@@ -92,11 +92,11 @@
             question and an answer. An Assertion on the other hand, has simply a topic stating what
             is observed, and a coded result stating presence or absence.</para>
         <para>In the ANF model, the topic represents what is being observed and the result may only
-            be a range of either a count or quantity. No coded results are allowed. Not allowing
-            coded results forces more of the semantics to be represented in the terminology model
-            and limits the ability to allow multiple different representations of the same data. In
-            the example below we see Dot blot hemorrhage represented in ANF as either present or
-            with the number of hemorrhages that exist.</para>
+            be a range of a quantity. No coded results are allowed. Not allowing coded results
+            forces more of the semantics to be represented in the terminology model and limits the
+            ability to allow multiple different representations of the same data. In the example
+            below we see Dot blot hemorrhage represented in ANF as either present or with the number
+            of hemorrhages that exist.</para>
         <figure>
             <title>Dot Blot Hemorrhage Present - ANF</title>
             <mediaobject>
@@ -259,8 +259,8 @@
         </figure>
         <para>In this example, the ANF model cannot do an EvaluationResult style model as it doesn't
             allow coded results. Thus, ANF is forced to make one and only one choice, which is an
-            assertion style where the particular breath sound is the topic, and the result will be
-            numeric count indicating presence or absence.</para>
+            assertion style where the particular breath sound is the topic, and the result will be a
+            countable quantity indicating presence or absence.</para>
         <para>When querying instance data, the Assertion or ANF style can be more difficult to
             represent as it requires concepts to be pre-coordinated in the terminology or having
             sufficient semantics available in the concept model to allow for representation of a
