@@ -2,18 +2,20 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Statements</title>
-  <para>We care about clinical statements because... Encounters here... </para>
+  <para><?oxy_comment_start author="Ioana" timestamp="20190716T003230-0400" comment="We address this elsewhere - &quot;Why ANF...&quot;"?>We
+    care about clinical statements because... Encounters here... <?oxy_comment_end?></para>
   <para>A clinical <glossterm>statement</glossterm>is a definite and clear representation of a
     clinically-significant fact or situation that was observed to exist or happen. A clinical
     statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
     provides a written account that can be naturally read by humans, as well as a <glossterm
-      baseform="Normal Form">normal form</glossterm> which is a machine processable  representation
+      baseform="Normal Form">normal form</glossterm> which is a machine processable representation
     of the statement's data as a standardized and encoded fundamental form. There can be many views
     on what constitutes a normal form, based on differing use cases. </para>
   <para/>
   <para>In this document, we present several different necessary normal forms, and focus on
       <glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm></para>
-  <para>An example of a clinical statement can be "example here"… </para>
+  <?oxy_comment_start author="Ioana" timestamp="20190716T003308-0400" comment="We have an abundance of examples later in the document."?>
+  <para>An example of a clinical statement can be "example here"… <?oxy_comment_end?></para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
@@ -23,9 +25,10 @@
     purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
     the information was captured at its source (i.e. information systems or medical devices). ANF
     could be used in conjunction with other models intended to ensure that clinical information is
-    structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, ISO
-    Detailed Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message
-    profiles, <glossterm>FHIR</glossterm> profiles). </para>
+    structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
+      xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> Detailed
+    Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
+      <glossterm>FHIR</glossterm> profiles). </para>
   <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to be
     made that optimize data entry brevity at the cost of computability. ANF represents a collection
     of patterns and approaches to provide predictable transformations between sets of models and can
@@ -96,12 +99,13 @@
   <para>Information systems record and manage clinical statements using a variety of standard or
     ad-hoc models. However, both treatment and analysis of clinical statements require consistency
     not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
-    of an ISO DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
-    analysis, but even in the case of structured, semantically-clear information, inconsistency
-    across sources of information raises obstacles to analysis and research. Analysis of aggregate
-    information managed by health information networks poses the greatest challenge today because a
-    meaningful use of data for patient outcomes or research requires a common format and level of
-    semantic clarity.</para>
+    of an <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> DCMs,
+    CIMI model, etc.). In most cases the data quality is the greatest obstacle to analysis, but even
+    in the case of structured, semantically-clear information, inconsistency across sources of
+    information raises obstacles to analysis and research. Analysis of aggregate information managed
+    by health information networks poses the greatest challenge today because a meaningful use of
+    data for patient outcomes or research requires a common format and level of semantic
+    clarity.</para>
   <section>
     <title>Analysis Normal Form </title>
     <para>Not only is there a potential for a lack of consistency with representing clinical
@@ -340,7 +344,6 @@
       </itemizedlist>
     </section>
   </section>
-  
   <section>
     <title>Other HL7 Statement Representations </title>
     <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
@@ -445,8 +448,9 @@
         <para>There are no definite boundaries between the Logical and Implementable Perspectives.
           Therefore, it’s important for organizations such as HL7 to standardize logical models used
           to generate/create implementable artifacts (i.e. implementation guides, profiles, and
-          templates). CIMI Clinical Statements, ISO Detailed Clinical Models, and ANF statements all
-          belong in this perspective.</para>
+          templates). CIMI Clinical Statements, <link
+            xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> Detailed
+          Clinical Models, and ANF statements all belong in this perspective.</para>
       </section>
       <section>
         <title>Implementable Perspective</title>
