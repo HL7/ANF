@@ -2,9 +2,6 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title> Analysis Normal Form</title>
-  <subtitle>HL7 Ballot Submission Document</subtitle>
-
   <preface>
     <title>Intended Audience</title>
     <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
