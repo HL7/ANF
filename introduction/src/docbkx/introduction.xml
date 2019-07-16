@@ -371,7 +371,7 @@
         </listitem>
       </itemizedlist>
       <para>In the case of an observation, its
-        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?>mood<?oxy_comment_end?>
+        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="6"?>mood<?oxy_comment_end?><?oxy_comment_end mid="6"?>
         and presence, absence or value</para>
       <para>In the case of a procedure, its mood and status</para>
       <para>This clarity may be achieved by:</para>
@@ -387,15 +387,10 @@
         </listitem>
       </itemizedlist>
       <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
-        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. As seen in
-        <?oxy_comment_start author="timowilliams" timestamp="20190710T093243-0500" comment="Is there a missing figure here?  Per Stephanie:
-
-1) Is this the correct figure reference?  Is it referring to the figure on the next page?  It seems like it&apos;s not the correct figure.
-
-2) Will the figure numbers that are referenced be fixed with the final version of the document?  This reference should include the section number (i.e., 2.1).  Other figures in the document have the correct number and are hyperlinked.  Shouldn&apos;t this one be as well?"?>Figure
-        1<?oxy_comment_end?>, the V3 Clinical Statement Model is a polymorphic model: it can
-        represent observations, procedures, encounters, public health reports, supply, medications,
-        exposure, and derivations of clinical acts. </para>
+        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
+        Statement Model is a polymorphic model: it can represent observations, procedures,
+        encounters, public health reports, supply, medications, exposure, and derivations of
+        clinical acts. I</para>
     </section>
     <section>
       <title>HL7 Service-Aware Interoperability Framework </title>
