@@ -423,10 +423,14 @@ so these templates do nothing-->
         <!-- nop; no footer on title pages -->
       </xsl:when>
 
-      <xsl:when test="$position='center'">
-        <fo:page-number/>
+      <!--<xsl:when test="$position='center'">-->
+        <!--<fo:page-number/>-->
+      <!--</xsl:when>-->
+      <xsl:when test="$position='left'">
+        © 2019 Health Level Seven International.  All rights reserved.
       </xsl:when>
-
+      <xsl:when test="$position='right'">HL7_CIMI_LM_ANF_R1_I1_2019SEP
+        September 2019 Ballot</xsl:when>
       <xsl:otherwise>
         <!-- nop -->
       </xsl:otherwise>
