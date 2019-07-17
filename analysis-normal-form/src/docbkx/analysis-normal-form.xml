@@ -360,8 +360,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </itemizedlist></para>
         <para><emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis
                 role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
-            something else can happen or be done. Prerequisite are part of the details under which a
-            procedure is being performed. The state must exist prior to the performance of the
+            something else can happen or be done. Prerequisites are part of the details under which
+            a procedure is being performed. The state must exist prior to the performance of the
             action. <itemizedlist>
                 <listitem>
                     <para>The state that must exist pertains to</para>
@@ -421,7 +421,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </editorial-rule>
         <para><emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority
             for which the request is to be carried out. By default a Request will be considered
-            "routine" unless otherwise specified </para>
+            "routine" unless otherwise specified.</para>
         <editorial-rule>
             <title>Request for Action Topics</title>
             <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?" flag="done"?>The

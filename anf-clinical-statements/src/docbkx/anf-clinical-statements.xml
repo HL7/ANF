@@ -310,9 +310,9 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Prerequisite</title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
                             <emphasis role="bold">must</emphasis> exist before something else can
-                        happen or be done. Pre-requisite are part of the details under which a
+                        happen or be done. Prerequisites are part of the details under which a
                         procedure is being performed. The state must exist prior to the performance
-                        of the action <itemizedlist>
+                        of the action. <itemizedlist>
                             <listitem>
                                 <para>The state that must exist pertains to:</para>
                                 <itemizedlist spacing="compact">
@@ -377,7 +377,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
-                    using a adult sized cuff, but also includes two prerequisites that are
+                    using an adult sized cuff, but also includes two prerequisites that are
                     represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
                     lowerBound.</para>
@@ -488,10 +488,8 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Education Provided Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190711T102702-0500" comment="From Stephanie:
-Why is the quantity shown this way instead of just [1,1]?  I guess if this is something documented that happened in the past because you may not know quantity and for that I understand but what if it happened today?"?>
                             <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -576,7 +574,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 </editorial-rule>
                 <editorial-rule>
                     <title>Laboratory Procedure Topic</title>
-                    <mathphrase>For Laboratory procedures, the Topic will be built using an
+                    <mathphrase>For Laboratory procedures, the Topic will be built using a
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
                 </editorial-rule>
@@ -596,7 +594,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>The Laboratory Request example above show how the topic is built using a
+                <para>The Laboratory Request example above shows how the topic is built using a
                     laboratory procedure concept, with no refinements in this case. It also has a
                     Priority of Routine as stated in the narrative description.</para>
                 <editorial-rule>

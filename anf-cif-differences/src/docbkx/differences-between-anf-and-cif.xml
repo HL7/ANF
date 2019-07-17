@@ -53,7 +53,7 @@
             a single concept along with associated structural properties representing the pulse
             oximeter device. Since the ANF Statement will always be either the request for an action
             or the performance of an action, the post-coordinated expression will always be a
-            procedure that is further refined providing a conistent representation. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
+            procedure that is further refined providing a consistent representation. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
@@ -237,8 +237,8 @@
             </mediaobject>
         </figure>
         <para>The other option, is that each of the breath sounds in the valueset is modeled as an
-            Assertion with a topic of indicated the breath sound, and a result indicating presence
-            or absence. To decide which model is better, usually we ponder how the clinician thinks
+            Assertion with a topic of Tubular breathing and a contextCode indicating presence or
+            absence. To decide which model is better, usually we ponder how the clinician thinks
             about the data, or how it will be collected, or how it will be queried.</para>
         <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!.
         I fixed this diagram for use in the CIF chapter, so you can grab it from there." flag="done"?><?oxy_comment_end?>
@@ -255,10 +255,10 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <para>In this example, the ANF model cannot do an EvaluationResult style model as it doesn't
-            allow coded results. Thus, ANF is forced to make one and only one choice, which is an
-            assertion style where the particular breath sound is the topic, and the result will be a
-            countable quantity indicating presence or absence.</para>
+        <para>In this example, the ANF model doesn't support an EvaluationResult style model as it
+            doesn't allow coded results. Thus, ANF is forced to make one and only one choice, which
+            is an assertion style where the particular breath sound is the topic, and the result
+            will be a countable quantity indicating presence or absence.</para>
         <para>When querying instance data, the Assertion or ANF style can be more difficult to
             represent as it requires concepts to be pre-coordinated in the terminology or having
             sufficient semantics available in the concept model to allow for representation of a
