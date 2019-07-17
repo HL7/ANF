@@ -406,11 +406,25 @@ Doing family history, donor statements using subject of information is now the n
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
                             narrative would be separated into multiple clinical statements if it
-                            contains multiple requests or performance of actions that could exist on
-                            their own.</mathphrase>
+                            contains multiple requests or performance of actions that could exist
+                            independently of each other. For the narrative "Negative screen for PTSD
+                            and depression", two separate ANF Statements would need to be created
+                            and associated to each other. However, if the narrative represents two
+                            or more actions that are performed as a single activity at the same time
+                            without the need for stopping the action then a single topic would be
+                            used. For example, "Lumbar/Thoracic Spine CT" would be represented with
+                            a single topic as it represents a single activity that is performed at
+                            the same time even though a Lumbar CT and a Thoracic CT could be done
+                            separately.</mathphrase>
+                    </editorial-rule><editorial-rule>
+                        <title>Associated Statements</title>
+                        <mathphrase>Use an associated statement when it is important for the
+                            interpretation of one statement that the others were observed,
+                            performed, or requested. Also, if there is some implicitness that the
+                            two statements are related (pleural empyema with fistula) or that they
+                            are unrelated (Akinetic seizure without atonia) then the two statements
+                            should be associated. </mathphrase>
                     </editorial-rule></para>
-                <para>For the narrative "Negative screen for PTSD and depression", two separate ANF
-                    Statements would need to be created and associated to each other. </para>
                 <figure>
                     <title>Negative Screen for PTSD Clinical Statement Example</title>
                     <mediaobject>
