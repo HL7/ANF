@@ -48,14 +48,12 @@
                 </mediaobject>
             </figure>
         </para>
-        <para>
-            As we can see in the Pulse Rate examples below, the ANF topic is represented as a
-            post-coordinated expression while the CIMI topic is represented with a topic containing a single concept along with associated structural properties representing the pulse oximeter device.
-            Since the ANF Statement will always be either the request for an action or the
-            performance of an action, the post-coordinated expression will always be a procedure
-            that is further refined providing a conistent representation.
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I'm questioning whether everything is a procedure"?><?oxy_comment_end?>
-
+        <para> As we can see in the Pulse Rate examples below, the ANF topic is represented as a
+            post-coordinated expression while the CIMI topic is represented with a topic containing
+            a single concept along with associated structural properties representing the pulse
+            oximeter device. Since the ANF Statement will always be either the request for an action
+            or the performance of an action, the post-coordinated expression will always be a
+            procedure that is further refined providing a conistent representation. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
@@ -115,7 +113,7 @@
                 </imageobject>
             </mediaobject>
         </figure>
-        <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other."?><?oxy_comment_end?>
+        <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other." flag="done"?><?oxy_comment_end?>
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice
             is quite clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic
             Blood Pressure' and result with a numeric quantity. In this case, the CIMI and ANF model
@@ -231,10 +229,10 @@
 
                     Also, I would either choose a result from the valueset, or add your result to the valueset 
 
-                    " flag="done" mid="6"?>
+                    " flag="done" mid="3"?>
                     <imagedata fileref="images/breath_evalutation_cimi.svg" format="SVG"
                         scalefit="1" width="100%" contentdepth="100%"
-                    /><?oxy_comment_end?><?oxy_comment_end mid="6"?>
+                    /><?oxy_comment_end?><?oxy_comment_end mid="3"?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -250,10 +248,10 @@
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
 " flag="done"?>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" flag="done" mid="9"?>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" flag="done" mid="6"?>
                     <imagedata fileref="images/breath_assertion_cimi.svg" format="SVG" scalefit="1"
                         width="100%" contentdepth="100%"
-                    /><?oxy_comment_end?><?oxy_comment_end mid="9"?>
+                    /><?oxy_comment_end?><?oxy_comment_end mid="6"?>
                 </imageobject>
             </mediaobject>
         </figure>

@@ -186,11 +186,12 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem"?><?oxy_comment_end?>
-                <para>In the Diabetes Mellitus type 2 example above, the Topic is an Observation
-                    procedure with a Has focus of Diabetes mellitus type 2. To represent that it is
-                    present, the Result is a lowerBound of 1, an upperBound of infinite (inf), and a
-                    measureSemantic of "Countable quantity".</para>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done"?><?oxy_comment_end?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done" mid="12"?>
+                <para><?oxy_comment_end mid="12"?>In the Diabetes Mellitus type 2 example above, the
+                    Topic is an Observation procedure with a Has focus of Diabetes mellitus type 2.
+                    To represent that it is present, the Result is a lowerBound of 1, an upperBound
+                    of infinite (inf), and a measureSemantic of "Countable quantity".</para>
                 <editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
@@ -252,7 +253,8 @@ Doing family history, donor statements using subject of information is now the n
                             </listitem>
                             <listitem>
                                 <para>A technique is inseparable from the topic and cannot be
-                                    expressed as a stand-alone clinical statement.</para>
+                                    expressed as a stand-alone clinical statement and will be
+                                    repreented as a part of the topic.</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para><emphasis role="underline">Example: Systolic blood
@@ -401,7 +403,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para><editorial-rule>
-                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?"?>Multiple
+                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
@@ -584,7 +586,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         to be carried out. By default a Request will be considered "routine" unless
                         otherwise specified.</mathphrase>
                 </editorial-rule>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time"?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time" flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Lab Request Clinical Statement Example</title>
                     <mediaobject>
