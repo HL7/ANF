@@ -112,6 +112,12 @@
          <version>${project.version}</version>
          <type>pom</type>
       </dependency>
+      <dependency>
+         <groupId>org.hl7.anf-ballot-submission</groupId>
+         <artifactId>document-prepend</artifactId>
+         <version>${project.version}</version>
+         <type>pom</type>
+      </dependency>
    </dependencies>
    <build>
       <plugins>
@@ -207,6 +213,24 @@
                      <goal>single</goal>
                   </goals>
                   <phase>package</phase>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.hl7.anf-ballot-submission</groupId>
+            <artifactId>document-prepend</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <executions>
+               <execution>
+                  <id>PrependDocument</id>
+                  <phase>install</phase>
+                  <configuration>
+                     <sourcePath>${project.build.directory}\site\docbook\ballot-root.pdf</sourcePath>
+                     <coverPath>${project.build.directory}\..\..\document-storage\HL7_CIMI_LM_ANF_R1_I1_2019SEP_coverpages.pdf</coverPath>
+                  </configuration>
+                  <goals>
+                     <goal>prependdocument</goal>
+                  </goals>
                </execution>
             </executions>
          </plugin>
