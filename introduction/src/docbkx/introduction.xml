@@ -2,112 +2,112 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Statements</title>
-  <para><?oxy_comment_start author="Ioana" timestamp="20190716T003230-0400" comment="We address this elsewhere - &quot;Why ANF...&quot;"?>We
-    care about clinical statements because... Encounters here... <?oxy_comment_end?></para>
   <para>A clinical <glossterm>statement</glossterm>is a definite and clear representation of a
     clinically-significant fact or situation that was observed to exist or happen. A clinical
     statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
     provides a written account that can be naturally read by humans, as well as a <glossterm
       baseform="Normal Form">normal form</glossterm> which is a machine processable representation
     of the statement's data as a standardized and encoded fundamental form. There can be many views
-    on what constitutes a normal form, based on differing use cases. </para>
-  <para/>
-  <para>In this document, we present several different necessary normal forms, and focus on
-      <glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm></para>
-  <?oxy_comment_start author="Ioana" timestamp="20190716T003308-0400" comment="We have an abundance of examples later in the document."?>
-  <para>An example of a clinical statement can be "example here"… <?oxy_comment_end?></para>
+    on what constitutes a normal form, based on differing use cases. Today, clinical statements are
+    often represented in unpredictable and denormalized forms, which makes reliable and safe
+    decision support challenging, and reduces the quality of other types of data processing.  </para>
+  <para>In this document, we present several different normal forms as background, and focus on the
+    need for—and logical specification of—an <glossterm baseform="Analysis Normal Form">Analysis
+      Normal Form (ANF)</glossterm>. ANF is a normal form intended to safely and reliably support
+    data analysis.</para>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
-  <para><emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
-    logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
-    aggregate clinical statements for analysis, research, clinical decision support, and other
-    purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
-    the information was captured at its source (i.e. information systems or medical devices). ANF
-    could be used in conjunction with other models intended to ensure that clinical information is
-    structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
-      xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> Detailed
-    Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
-      <glossterm>FHIR</glossterm> profiles). </para>
-  <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to be
-    made that optimize data entry brevity at the cost of computability. ANF represents a collection
-    of patterns and approaches to provide predictable transformations between sets of models and can
-    be optimized for clinical input and models - thereby improving computability through
-    normalization. The more normalized the data is, the simpler it will become to analyze, and
-    errors will be reduced. Post-coordinated compositional statements using ANF introduce the
-    ability to faithfully expand from a reduced form or compare to other statements with ease and no
-    loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
-    statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
-      role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
-    lossless information representation such that both explicit and implicit information can be
-    faithfully recovered, maintained, and modified with ease."
-    <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?"?>(Elkin,
-    pg 14) <?oxy_comment_end?></para>
-  <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
-    representation of clinical statements from a heterogeneous source using an objective
-    quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence, and
-    magnitude of a specific finding, request or observation.</para>
-  <para>ANF requires an ability to classify topic expressions (and expressions that may go in other
-    locations) and thus it depends on systems that can produce structured information reducible to
-    ANF. These systems may create normal data natively or transform other representations of
-    clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form - ANF.</para>
-  <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
-    multiple sources to better support a set of analysis.</para>
-  <itemizedlist spacing="compact">
-    <listitem>
-      <para>Specify clinical content extracted from EHR systems using FHIR</para>
-    </listitem>
-  </itemizedlist>
-  <itemizedlist>
-    <listitem>
-      <para>Providing a common analysis form of data exchange, HL7 messages, FHIR and CDA</para>
-    </listitem>
-  </itemizedlist>
-  <itemizedlist>
-    <listitem>
-      <para>Specifying clinical content for User Interfaces</para>
-    </listitem>
-  </itemizedlist>
-  <itemizedlist spacing="compact">
-    <listitem>
-      <para>Enhancing information clinical content for use as </para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Clinical Decision Support Systems</para>
-        </listitem>
-        <listitem>
-          <para>Quality Measures and National Registries</para>
-        </listitem>
-        <listitem>
-          <para>Healthcare Guidelines and Protocols </para>
-        </listitem>
-        <listitem>
-          <para>Epidemiological Research</para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-  </itemizedlist>
-  <para>Healthcare organizations are striving to become high reliability organizations (HROs),
-    characterized by high levels of safety under inherently risky, technologically-complex, and
-    demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
-    framework for assessing progress towards becoming a HRO and included the safe use of health IT
-    and review of quality measures, which are dependent on data from Electronic Health Record (EHR)
-      systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in the US
-    and there is increasing opportunity to leverage a substantial number of extant EHR mapped data
-    sets to improve population health through quality measures, case reporting, and decision
-    support. </para>
-  <para>Information systems record and manage clinical statements using a variety of standard or
-    ad-hoc models. However, both treatment and analysis of clinical statements require consistency
-    not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
-    of an <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> DCMs,
-    CIMI model, etc.). In most cases the data quality is the greatest obstacle to analysis, but even
-    in the case of structured, semantically-clear information, inconsistency across sources of
-    information raises obstacles to analysis and research. Analysis of aggregate information managed
-    by health information networks poses the greatest challenge today because a meaningful use of
-    data for patient outcomes or research requires a common format and level of semantic
-    clarity.</para>
   <section>
     <title>Analysis Normal Form </title>
+    <para><emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
+      logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
+      aggregate clinical statements for analysis, research, clinical decision support, and other
+      purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
+      the information was captured at its source (i.e. information systems or medical devices). ANF
+      could be used in conjunction with other models intended to ensure that clinical information is
+      structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
+        xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> Detailed
+      Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
+        <glossterm>FHIR</glossterm> profiles). </para>
+    <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to
+      be made that optimize data entry brevity at the cost of computability. ANF represents a
+      collection of patterns and approaches to provide predictable transformations between sets of
+      models and can be optimized for clinical input and models - thereby improving computability
+      through normalization. The more normalized the data is, the simpler it will become to analyze,
+      and errors will be reduced. Post-coordinated compositional statements using ANF introduce the
+      ability to faithfully expand from a reduced form or compare to other statements with ease and
+      no loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
+      statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
+        role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
+      lossless information representation such that both explicit and implicit information can be
+      faithfully recovered, maintained, and modified with ease."
+      <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?"?>(Elkin,
+      pg 14) <?oxy_comment_end?></para>
+    <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
+      representation of clinical statements from a heterogeneous source using an objective
+      quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
+      and magnitude of a specific finding, request or observation.</para>
+    <para>ANF requires an ability to classify topic expressions (and expressions that may go in
+      other locations) and thus it depends on systems that can produce structured information
+      reducible to ANF. These systems may create normal data natively or transform other
+      representations of clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form -
+      ANF.</para>
+    <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
+      multiple sources to better support a set of analysis.</para>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>Specify clinical content extracted from EHR systems using FHIR</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Providing a common analysis form of data exchange, HL7 messages, FHIR and CDA</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist>
+      <listitem>
+        <para>Specifying clinical content for User Interfaces</para>
+      </listitem>
+    </itemizedlist>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>Enhancing information clinical content for use as </para>
+        <itemizedlist spacing="compact">
+          <listitem>
+            <para>Clinical Decision Support Systems</para>
+          </listitem>
+          <listitem>
+            <para>Quality Measures and National Registries</para>
+          </listitem>
+          <listitem>
+            <para>Healthcare Guidelines and Protocols </para>
+          </listitem>
+          <listitem>
+            <para>Epidemiological Research</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+    <para>Healthcare organizations are striving to become high reliability organizations (HROs),
+      characterized by high levels of safety under inherently risky, technologically-complex, and
+      demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
+      framework for assessing progress towards becoming a HRO and included the safe use of health IT
+      and review of quality measures, which are dependent on data from Electronic Health Record
+      (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
+      the US and there is increasing opportunity to leverage a substantial number of extant EHR
+      mapped data sets to improve population health through quality measures, case reporting, and
+      decision support. </para>
+    <para>Information systems record and manage clinical statements using a variety of standard or
+      ad-hoc models. However, both treatment and analysis of clinical statements require consistency
+      not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
+      of an <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link>
+      DCMs, CIMI model, etc.). In most cases the data quality is the greatest obstacle to analysis,
+      but even in the case of structured, semantically-clear information, inconsistency across
+      sources of information raises obstacles to analysis and research. Analysis of aggregate
+      information managed by health information networks poses the greatest challenge today because
+      a meaningful use of data for patient outcomes or research requires a common format and level
+      of semantic clarity.</para>
     <para>Not only is there a potential for a lack of consistency with representing clinical
       statements with current detailed clinical modeling efforts, but there is also further
       variation in how the data is entered into information systems by end-users. This reality has a
@@ -345,7 +345,7 @@
     </section>
   </section>
   <section>
-    <title>Other HL7 Statement Representations </title>
+    <title>Other HL7 Statement Normal Forms </title>
     <para>Clinical statement standardization has been a long-standing concern for HL7 and reuse of
       these content models across paradigms (e.g. messages, documents, services). Standardization
       has relied on model-driven approaches requiring a separation of concerns along with
@@ -371,7 +371,7 @@
         </listitem>
       </itemizedlist>
       <para>In the case of an observation, its
-        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="6"?>mood<?oxy_comment_end?><?oxy_comment_end mid="6"?>
+        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="4"?>mood<?oxy_comment_end?><?oxy_comment_end mid="4"?>
         and presence, absence or value</para>
       <para>In the case of a procedure, its mood and status</para>
       <para>This clarity may be achieved by:</para>

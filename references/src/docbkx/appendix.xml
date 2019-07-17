@@ -16,6 +16,9 @@
                         <listitem>
                             <para>X-ray Knee-right to evaluate for psoriatic arthritis, routine</para>
                         </listitem>
+                        <listitem>
+                            <para>Lumbar/Thoracic Spine CT with and without contrast</para>
+                        </listitem>
                     </itemizedlist>
                 </example>
                 <example>
@@ -85,6 +88,9 @@
                 <example>
                     <title>Other Request for Action Narratives</title>
                     <itemizedlist>
+                        <listitem>
+                            <para>Proctoscopy with biopsy</para>
+                        </listitem>
                         <listitem>
                             <para>Hold insulin per Cardiac Catheterization Guidelines ( just need an X start and stop time in relation to procedure )</para>
                         </listitem>
@@ -169,6 +175,27 @@
                     </listitem>
                     <listitem>
                         <para>Had an appendectomy 3-4 years ago</para>
+                    </listitem>
+                    <listitem>
+                        <para>Nausea and vomiting</para>
+                    </listitem>
+                    <listitem>
+                        <para>Ischemic stroke without coma</para>
+                    </listitem>
+                    <listitem>
+                        <para>Akinetic seizure without atonia</para>
+                    </listitem>
+                    <listitem>
+                        <para>Incontinence without sensory awareness</para>
+                    </listitem>
+                    <listitem>
+                        <para>Blister with infection</para>
+                    </listitem>
+                    <listitem>
+                        <para>Patient reports experiencing anxiety and fear</para>
+                    </listitem>
+                    <listitem>
+                        <para>Pleural empyema with fistula</para>
                     </listitem>
                 </itemizedlist>
             </example>
