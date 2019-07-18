@@ -225,7 +225,8 @@
                   <id>PrependDocument</id>
                   <phase>install</phase>
                   <configuration>
-                     <sourcePath>${project.build.directory}/site/docbook/ballot-root.xep.pdf</sourcePath>
+                     <sourcePath>${project.build.directory}/site/docbook/ballot-root.pdf</sourcePath>
+                     <sourceXEPPath>${project.build.directory}/site/docbook/ballot-root.xep.pdf</sourceXEPPath>
                      <coverPath>${project.build.directory}/../../document-storage/HL7_CIMI_LM_ANF_R1_I1_2019SEP_coverpages.pdf</coverPath>
                   </configuration>
                   <goals>

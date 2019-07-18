@@ -22,6 +22,9 @@ public class DocumentPrepend extends AbstractMojo {
     @Parameter(property = "prependdocument.coverPath")
     private String coverPath;
 
+    @Parameter(property = "prependdocument.sourceXEPPath")
+    private String sourceXEPPath;
+
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
 
@@ -32,6 +35,13 @@ public class DocumentPrepend extends AbstractMojo {
             ut.setDestinationFileName(this.sourcePath);
 
             ut.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
+
+            PDFMergerUtility ut1 = new PDFMergerUtility();
+            ut1.addSource(this.coverPath);
+            ut1.addSource(this.sourceXEPPath);
+            ut1.setDestinationFileName(this.sourceXEPPath);
+
+            ut1.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
 
         } catch (Exception e) {
             e.printStackTrace();
