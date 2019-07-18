@@ -263,6 +263,36 @@
         given how many different health information and clinical terminology projects are ongoing at
         any given time. Efforts are often uncoordinated and led by disparate and unrelated standards
         development organizations. </para>
+      <para><?oxy_comment_start author="timowilliams" timestamp="20190718T170533-0500" comment="Moved from Modeling Guidelines.  Please feel free to keep or remove as much as needed."?><emphasis
+          role="bold"/>As defined by Wikipedia [1]: Separation of Concerns (SoC) is a design
+        principle for separating a computer program into distinct sections, such that each section
+        addresses a separate concern.
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:
+&quot;Clearly, explained this way, this design principle is flawed because of regress to each individual symbol in the code.
+"?>A
+        concern is a set of information that affects the code of a computer program. A concern can
+        be as general as the details of the hardware the code is being optimized for, or as specific
+        as the name of a class to instantiate.<?oxy_comment_end?> A program that embodies SoC well
+        is called a modular program. Modularity, and hence separation of concerns, is achieved by
+        encapsulating information inside a section of code that has a well-defined interface.
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T111108-0400" comment="Comment from WC:
+With the drawback of hiding also certain assumptions that a potential re-user should be aware of to assess whether the module really does what it suggests it does.
+"?>Encapsulation
+        is a means of information hiding.<?oxy_comment_end?> Layered designs in information systems
+        are another embodiment of separation of concerns (e.g., presentation layer, business logic
+        layer, data access layer, persistence layer). The value of separation of concerns is
+        simplifying development and maintenance of computer programs. When concerns are
+        well-separated, individual sections can be reused, as well as developed and updated
+        independently. Of special value is the ability to later improve or modify one section of
+        code without having to know the details of the other sections, and without having to make
+        corresponding changes to those sections.</para>
+      <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111123-0400" comment="Comment from WC:
+Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semantic concept’, and ‘class’.
+"?>Attributes
+        that describe specific semantic concepts should be grouped together into a single class and
+        not be spread across a number of classes .<?oxy_comment_end?> Doing the latter leads to
+        tight coupling between classes. Doing the former leads to better decomposition of a
+        potentially complex domain.<?oxy_comment_end?></para>
       <para>The following diagram shows how the concept of Separation of Concerns can be applied to
         the problem systematically:</para>
       <para/>
@@ -299,32 +329,40 @@
         measurement, and supports patient safety. This layer integrates the architectural and
         terminology layers, incorporates the statement model for information retrieval, and uses the
         assertional layer to apply rules.</para>
-      <?oxy_comment_start author="timowilliams" timestamp="20190710T105523-0500" comment="From Stephanie:
-
-1.  I think this would be easier to read if you bulleted each layer&apos;s description for the example.
-2.  I recommend you be consistent when referring to the layers.  For example in one case, you referred to &quot;Foundational layer&quot; and in another you referred to it as &quot;Architectural Foundation layer.&quot;  Also, in some cases, you are referring to them as &quot;layers&quot; and in others, as &quot;levels&quot;.  Again, recommend consistency."?>
       <para>Examining a clinical procedure for controlling hypertension illustrates each of the
-        layers of the informatics architectural separation of concerns. At the Terminology Knowledge
-        layer, there may be various codes and terms from disparate source terminologies to define
-        the hypertension concept. For example, the concept “essential hypertension” is defined by
-        the ICD-10 CM code I10 and 59621000 in SNOMED CT. Ideally, these overlapping codes and terms
-        would be oriented to the same parent concept during the transformation and integration
-        process at the Foundational layer (e.g., Solor). Furthermore, any updates over time to code
-        sets or value sets that define hypertension (in the NLM’s Value Set Authority Center for
-        instance) would be maintained by continuous integration at the Architectural Foundation
-        layer. Moving to the Statement Model layer, blood pressure measurement values may be
-        packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data
-        (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard data
-        structure to facilitate information exchange or retrieval, such as within a FHIR Observation
-        Resource. At the Assertional Knowledge layer, guidelines such as the recommendation to
-        control hypertension to under 140/90 mmHg might be translated into a clinical workflow
-        facilitated by Health Information Technology (HIT). If HIT is involved with programmed
-        Clinical Decision Support, there may be additional rules to suggest hypertension medications
-        (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid medication
-        contraindications. Finally, at the Procedural Knowledge layer, there may be a treatment
-        protocol for different kinds of hypertension, including the considerations of, e.g. patient
-        age, co-morbidities etc., which can be generated by an electronic clinical decision support
-        system (Statement + Assertional layers).<?oxy_comment_end?></para>
+        layers of the informatics architectural separation of concerns. <itemizedlist>
+          <listitem>
+            <para>At the Terminology Knowledge layer, there may be various codes and terms from
+              disparate source terminologies to define the hypertension concept. For example, the
+              concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in
+              SNOMED CT. Ideally, these overlapping codes and terms would be oriented to the same
+              parent concept during the transformation and integration process at the Foundational
+              layer (e.g., Solor). Furthermore, any updates over time to code sets or value sets
+              that define hypertension (in the NLM’s Value Set Authority Center for instance) would
+              be maintained by continuous integration at the Architectural Foundation layer.</para>
+          </listitem>
+          <listitem>
+            <para>Moving to the Statement Model layer, blood pressure measurement values may be
+              packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical
+              data (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard
+              data structure to facilitate information exchange or retrieval, such as within a FHIR
+              Observation Resource. </para>
+          </listitem>
+          <listitem>
+            <para>At the Assertional Knowledge layer, guidelines such as the recommendation to
+              control hypertension to under 140/90 mmHg might be translated into a clinical workflow
+              facilitated by Health Information Technology (HIT). If HIT is involved with programmed
+              Clinical Decision Support, there may be additional rules to suggest hypertension
+              medications (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid
+              medication contraindications. </para>
+          </listitem>
+          <listitem>
+            <para>Finally, at the Procedural Knowledge layer, there may be a treatment protocol for
+              different kinds of hypertension, including the considerations of, e.g. patient age,
+              co-morbidities etc., which can be generated by an electronic clinical decision support
+              system (Statement + Assertional layers).</para>
+          </listitem>
+        </itemizedlist></para>
       <para>ANF is intended to achieve a clean separation of concerns, especially in regard to an
         isosemantic representation in the Statement Model layer. ANF can help the modeling of
         clinical statements achieve the following design features: </para>
