@@ -18,10 +18,6 @@
                                         <para>Describe principles</para>
                                     </listitem>
                                     <listitem>
-                                        <para>Describe and explain architectural separation of
-                                            concerns and why this matters</para>
-                                    </listitem>
-                                    <listitem>
                                         <para>Describe benefits of ANF Modeling principles</para>
                                     </listitem>
                                 </itemizedlist>
@@ -35,6 +31,71 @@
     <section>
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
+            <listitem>
+                <para>As an overarching principle we favor the simpler, consistent model over more
+                    complex models that allow for multiple inconsistent representations. As such,
+                    the following principles have been used when designing the ANF model:<itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Overall Model Simplicity:
+                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
+1) How do you quantify simplicity?
+2) Why not design the principles so they don’t collide?
+"?>In
+                                cases where different principles collide, we shall favor the
+                                enhancement of simplicity of the entire system over simplicity in
+                                one area of the system.<?oxy_comment_end?></para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Convention Over Configuration:
+                                </emphasis>Convention over configuration (also known as coding by
+                                convention) is a software design paradigm used by software
+                                frameworks that attempts to decrease the number of decisions that a
+                                developer using the framework is required to make without
+                                necessarily losing flexibility.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Model Consistency:
+                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
+Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
+"?>Patterns
+                                should allow the consistent representation of information that is
+                                commonly shared across models. For instance, attribution and
+                                participation information should be captured consistently. Failure
+                                to do so forces implementers to develop heuristics to capture and
+                                normalize attribution information that is represented or extended
+                                differently in different classes (e.g., FHIR).</para>
+                        </listitem><?oxy_comment_end?>
+                        <listitem>
+                            <para><emphasis role="bold">Model Should Avoid Semantic Overloading
+                                    (semantic precision): </emphasis>Semantic overloading occurs
+                                when a model attribute’s meaning changes entirely, depending on
+                                context. While the refinement of the semantics of an attribute in a
+                                subclass is acceptable, a change of meaning is problematic. For
+                                instance, in FHIR, the Composition class defines an attribute called
+                                Subject. In some subclasses, the attribute may be the entity that
+                                this composition refers to (e.g., the patient in a medical record).
+                                In other cases, it is the topic being discussed by the composition
+                                (e.g., a medication orderable catalog).</para>
+                        </listitem>
+                        <listitem><para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
+                            surfaced explicitly in the model.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
+Incomplete and partially ambiguous.
+Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
+‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
+" flag="done"?><emphasis
+                                            role="bold">Example:</emphasis>Some things implicit in
+                                        the statement, “I ordered a book from Amazon” are: paying
+                                        for the book, delivery of the book to some location, and the
+                                        transfer of ownership of the book from the vendor to the
+                                        client.<?oxy_comment_end?></para>
+                            </listitem>
+                        </itemizedlist>
+                        </listitem>
+                    </itemizedlist></para>
+            </listitem>
             <listitem>
                 <para><emphasis role="bold">Composition Over Inheritance: </emphasis>Composition
                     over inheritance (or composite reuse principle) in object-oriented programming
@@ -55,7 +116,7 @@
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="7"?><?oxy_comment_end mid="7"?>
+" parentID="ckd_fyv_lhb" mid="3"?><?oxy_comment_end mid="3"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
@@ -88,16 +149,6 @@ What does that mean for the table example I gave? Clearly it changes, which of t
                     in an object that represents a clinical statement. </para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Overall Model Simplicity:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
-1) How do you quantify simplicity?
-2) Why not design the principles so they don’t collide?
-"?>In
-                    cases where different principles collide, we shall favor the enhancement of
-                    simplicity of the entire system over simplicity in one area of the
-                    system.<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
                 <para><emphasis role="bold">Reusability:</emphasis>Architectural patterns should
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
 But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
@@ -105,23 +156,7 @@ But in line with previous principle, you have then to drag with you the entire m
                     class reusability where possible.<?oxy_comment_end?> Reusability may further
                     refine encapsulation when composition is considered.</para>
             </listitem>
-            <listitem>
-                <para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
-                    surfaced explicitly in the model.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
-Incomplete and partially ambiguous.
-Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
-‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
-"?><emphasis
-                                role="bold">Example:</emphasis>Implicit in the statement, “I ordered
-                            a book from Amazon” are: paying for the book, delivery of the book to
-                            some location, and the transfer of ownership of the book from the vendor
-                            to the client.<?oxy_comment_end?></para>
-                    </listitem>
-                </itemizedlist>
-            </listitem>
+            
             <listitem>
                 <para><emphasis role="bold"
                         ><?oxy_comment_start author="timowilliams" timestamp="20190611T135415-0500" comment="Remove?"?>Design
@@ -148,32 +183,7 @@ Examples needed, although I would favor such an approach, one can’t argue that
                     classification rules and result in ambiguity based on different assumptions
                     about the domain. These must be avoided.</para>
             </listitem><?oxy_comment_end?>
-            <listitem>
-                <para><emphasis role="bold">Model Should Avoid Semantic Overloading (semantic
-                        precision): </emphasis>Semantic overloading occurs when a model attribute’s
-                    meaning changes entirely, depending on context. While the refinement of the
-                    semantics of an attribute in a subclass is acceptable, a change of meaning is
-                    problematic.
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111712-0400" comment="Comment from WC:
-They never learn, do they? (Or rather their victims never learn).
-" flag="done"?>For
-                    instance, in FHIR, the Composition class defines an attribute called Subject. In
-                    some subclasses, the attribute may be the entity that this composition refers to
-                    (e.g., the patient in a medical record). In other cases, it is the topic being
-                    discussed by the composition (e.g., a medication orderable
-                    catalog).<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Model Consistency:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
-Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
-"?>Patterns
-                    should allow the consistent representation of information that is commonly
-                    shared across models. For instance, attribution and participation information
-                    should be captured consistently. Failure to do so forces implementers to develop
-                    heuristics to capture and normalize attribution information that is represented
-                    or extended differently in different classes (e.g., FHIR).</para>
-            </listitem><?oxy_comment_end?>
+            
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
 "?>
@@ -185,10 +195,10 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     it.<?oxy_comment_end?></para><?oxy_comment_end?>
             </listitem>
             <listitem>
-                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111808-0400" comment="What should we do with this here? Joey?
-"?><emphasis
-                        role="bold">Iterative development and validation of model using use cases:
-                        TBD</emphasis><?oxy_comment_end?></para>
+                <para><emphasis role="bold">Iterative development and validation of model using use
+                        cases: </emphasis>ANF has been developed using an iterative approach
+                    evaluating the model with narrative use cases.  Examples of narratives used to
+                    evaluate the model can be found in the Appendix.</para>
             </listitem>
         </orderedlist>
 
