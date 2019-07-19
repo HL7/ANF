@@ -90,10 +90,11 @@
             The previous sections have described the variation that can exist in the data structure and modeling style of a single standard.  Moreover, this variation is significantly compounded when simultaneously using data from multiple standards, such as when receiving data from mulitple institutions.
         </para>
 
-        <para>
-            Analysis Normal Form can act as a transformation target to normalize
-            these disparate representaions of clinical statements, shown in <xref linkend="transformationToANF_0135" xrefstyle="select: label"/>.  Normalization implies the ability to recognize all representations that express the same meaning as being algorithimically equivalent.
-        </para>
+        <para> Analysis Normal Form can act as a transformation target to normalize these disparate
+            representations of clinical statements, shown in <xref
+                linkend="transformationToANF_0135" xrefstyle="select: label"/>. Normalization
+            implies the ability to recognize all representations that express the same meaning as
+            being algorithmically equivalent. </para>
 
         <para>
             To be clear, the transformation discussed is a data instance to data instance transformation.  An example could be John Doe's Systolic Blood Pressure measurement taken on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to an ANF instance representing this same data.  This is not to be confused with a detailed clinical model transformation between two formalisms, such as an ISO DCM for Systolic Blood Pressure transformed to a FHIR profile for Systolic Blood Pressure.
@@ -108,9 +109,13 @@
             </mediaobject>
         </figure>
 
-        <para>
-           Transformation, in this case, is not a simple endeavor that one can hope to automate across domains of clinical statements or even within a single domain of clinical statements. As presented, it will involve navigating disparate data structure trees and include variable representations to then generate a well-formed post-coordinated snomed expression.  It is most likely possible to target subdomains for consistent transformation, such as all quantitative laboratory results, but in some cases, it may be that each detailed clinical model needs it's own unique transformation.
-        </para>
+        <para> Transformation, in this case, is not a simple endeavor that one can hope to automate
+            across domains of clinical statements or even within a single domain of clinical
+            statements. As presented, it will involve navigating disparate data structure trees and
+            include variable representations to then generate a well-formed post-coordinated snomed
+            expression. It is most likely possible to target subdomains for consistent
+            transformation, such as all quantitative laboratory results, but in some cases, it may
+            be that each detailed clinical model needs its own unique transformation. </para>
 
         <para>
             Potential areas of difficulty during transformation
@@ -126,14 +131,12 @@
             </itemizedlist>
 
 
-        <para>
-            Currently, there are three basic categories of errors that
-            might be associated with attempts at normalizing clinical statement represenation. The
-            first is error associated with normalization of content of the terminology; the second
-            is error associated with normalization of the semantics of the terminology; and, third
-            is errors that result from ambiguous or misleading interaction between the structured
-            clinical input and presentation of compound terminology to clinician end-users. 
-        </para>
+        <para> Currently, there are three basic categories of errors that might be associated with
+            attempts at normalizing clinical statement represenation. The first is error associated
+            with normalization of content of the terminology; the second is error associated with
+            normalization of the semantics of the terminology; and, third are errors that result
+            from ambiguous or misleading interaction between the structured clinical input and
+            presentation of compound terminology to clinician end-users. </para>
 
     </section>
 
@@ -266,7 +269,7 @@
                 languages, free text, etc.). The XSLT language specifies transformations through
                 declarative, rule-based commands (see below). </para>
             <para> XSLT is widely used in modern information processing, including in health care
-                applications. Numerous XLST transformation engines exist, including commercial and
+                applications. Numerous XSLT transformation engines exist, including commercial and
                 open-source versions. These implementations are mature, stable, and
                 high-performance, and are available as runtime libraries or embedded in XLST
                 authoring/editing applications. Excellent documentation and training are available
@@ -290,7 +293,7 @@
                     match specified criteria. For example, the XPath query </para>
                 <para> The actual transformation logic in XLST scripts is specified as a series of
                     “templates”. Each template matches to a specified sub-part of the source tree
-                    and specifies what output will be generated for that sub-part. Template are
+                    and specifies what output will be generated for that sub-part. Templates are
                     generally called from within other templates via a declarative template-matching
                     process, and a recursive traversal and transformation of the input tree occurs
                     through this template-invocation model. The transformation logic within
@@ -359,7 +362,7 @@
                 </footnote> resources to alternative representations, including different FHIR
                 resources, C/CDE documents, etc. The mapping language was created by Graham Grieve
                 as a specification of the QVT framework for model-transformation languages (see
-                Section <xref linkend="_Ref494462079"/>). </para>
+                    <xref linkend="_Ref494462079"/>). </para>
             <section>
                 <title>Overview of Language and Data Model</title>
                 <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
@@ -413,7 +416,7 @@
                             rendered in a variety of syntaxes.</para>
                     </listitem>
                     <listitem>
-                        <para>The mapping specifications are more concise and easy to
+                        <para>The mapping specifications are more concise and easier to
                             read/understand than XLST</para>
                     </listitem>
                 </itemizedlist>
@@ -502,9 +505,11 @@
 
             <title>Model Driven Message Interoperability (MDMI)</title>
 
-            <para>
-                MDMI is an Object Management Group Standard for the transformation of data in one format to data in another format. MDMI Standard is not a language. The MDMI Standard is a specification for addressing this problem and was developed by multiple domain experts. The specification contains two major sections; the MDMI Transformation Metamodel and the MDMI Semantic Element Exchange Repository (SEER). 
-            </para>
+            <para> MDMI is an Object Management Group Standard for the transformation of data in one
+                format to data in another format. MDMI Standard is not a language. The MDMI Standard
+                is a specification for addressing this problem and was developed by multiple domain
+                experts. The specification contains two major sections: the MDMI Transformation
+                Metamodel and the MDMI Semantic Element Exchange Repository (SEER). </para>
 
             <figure xml:id="transformation_mdmi_standard_0135">
                 <title>MDMI Standard</title>
@@ -523,9 +528,14 @@
                 The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts in a format. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example of this is a data element that can have multiple semantics concepts that must be disambiguated based on other values contained in format.  
             </para>
 
-            <para>
-                The MDMI SEER is a repository for the semantically unique concepts, called Business Elements, that are exchanged in healthcare transformations. One can view the MDMI SEER as a bag of unique, atomic semantic concepts exchanged primarily driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange information.  If there is a new semantic concept that does not exist in the SEER, then a new Business Element is simply added. Each MDMI Transformation Model uses the MDMI SEER to create an iso-semantic relationship with its own semantic concepts and a Business Element.    
-            </para>
+            <para> The MDMI SEER is a repository for the semantically unique concepts, called
+                Business Elements, that are exchanged in healthcare transformations. One can view
+                the MDMI SEER as a bag of unique, atomic semantic concepts exchanged, primarily
+                driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange
+                information. If there is a new semantic concept that does not exist in the SEER,
+                then a new Business Element is simply added. Each MDMI Transformation Model uses the
+                MDMI SEER to create an iso-semantic relationship with its own semantic concepts and
+                a Business Element. </para>
 
             <figure xml:id="transformation_mdmi_process_0135">
                 <title>MDMI Transformation Process</title>
@@ -541,9 +551,10 @@
                 There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are pre-coordinated semantic concepts represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism. 
             </para>
 
-            <para>
-                An open source implementation of MDMI started in the Open Healthcare Tools organization which built an MDMI compliant tooling for healthcare. The MDMI Open Source Project continues today in GITHUB and has been and is being used in HL7 projects as well as in commercial implementations.
-            </para>
+            <para> An open source implementation of MDMI started in the Open Healthcare Tools
+                organization which built an MDMI compliant tooling for healthcare. The MDMI Open
+                Source Project continues today in GitHub and has been and is being used in HL7
+                projects as well as in commercial implementations. </para>
 
 
         </section>
@@ -553,8 +564,11 @@
 
             <para> MDMI is a model driven approach. Having a formal model, the open source project
                 has been able to develop tooling based on the MDMI model as well as leverage other
-                modeling efforts. Examples are Information Models such as FHIR and the FHIM using
-                the model driven MDHT tooling and Ontological Models such as ANF / Solor. </para>
+                modeling efforts. Examples are Information Models such as FHIR and the
+                <?oxy_comment_start author="timowilliams" timestamp="20190717T182730-0500" comment="From Stephanie K:
+
+Probably should define FHIM since it hasn&apos;t been used previously in the document and/or include in the glossary."?>FHIM<?oxy_comment_end?>
+                using the model driven MDHT tooling and Ontological Models such as ANF / Solor. </para>
 
             <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">

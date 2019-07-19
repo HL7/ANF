@@ -186,11 +186,12 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem"?><?oxy_comment_end?>
-                <para>In the Diabetes Mellitus type 2 example above, the Topic is an Observation
-                    procedure with a Has focus of Diabetes mellitus type 2. To represent that it is
-                    present, the Result is a lowerBound of 1, an upperBound of infinite (inf), and a
-                    measureSemantic of "Countable quantity".</para>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done"?><?oxy_comment_end?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done" mid="12"?>
+                <para><?oxy_comment_end mid="12"?>In the Diabetes Mellitus type 2 example above, the
+                    Topic is an Observation procedure with a Has focus of Diabetes mellitus type 2.
+                    To represent that it is present, the Result is a lowerBound of 1, an upperBound
+                    of infinite (inf), and a measureSemantic of "Countable quantity".</para>
                 <editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
@@ -252,7 +253,8 @@ Doing family history, donor statements using subject of information is now the n
                             </listitem>
                             <listitem>
                                 <para>A technique is inseparable from the topic and cannot be
-                                    expressed as a stand-alone clinical statement.</para>
+                                    expressed as a stand-alone clinical statement and will be
+                                    repreented as a part of the topic.</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para><emphasis role="underline">Example: Systolic blood
@@ -308,9 +310,9 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Prerequisite</title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
                             <emphasis role="bold">must</emphasis> exist before something else can
-                        happen or be done. Pre-requisite are part of the details under which a
+                        happen or be done. Prerequisites are part of the details under which a
                         procedure is being performed. The state must exist prior to the performance
-                        of the action <itemizedlist>
+                        of the action. <itemizedlist>
                             <listitem>
                                 <para>The state that must exist pertains to:</para>
                                 <itemizedlist spacing="compact">
@@ -375,7 +377,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
-                    using a adult sized cuff, but also includes two prerequisites that are
+                    using an adult sized cuff, but also includes two prerequisites that are
                     represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
                     lowerBound.</para>
@@ -401,16 +403,30 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para><editorial-rule>
-                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?"?>Multiple
+                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
                             narrative would be separated into multiple clinical statements if it
-                            contains multiple requests or performance of actions that could exist on
-                            their own.</mathphrase>
+                            contains multiple requests or performance of actions that could exist
+                            independently of each other. For the narrative "Negative screen for PTSD
+                            and depression", two separate ANF Statements would need to be created
+                            and associated to each other. However, if the narrative represents two
+                            or more actions that are performed as a single activity at the same time
+                            without the need for stopping the action then a single topic would be
+                            used. For example, "Lumbar/Thoracic Spine CT" would be represented with
+                            a single topic as it represents a single activity that is performed at
+                            the same time even though a Lumbar CT and a Thoracic CT could be done
+                            separately.</mathphrase>
+                    </editorial-rule><editorial-rule>
+                        <title>Associated Statements</title>
+                        <mathphrase>Use an associated statement when it is important for the
+                            interpretation of one statement that the others were observed,
+                            performed, or requested. Also, if there is some implicitness that the
+                            two statements are related (pleural empyema with fistula) or that they
+                            are unrelated (Akinetic seizure without atonia) then the two statements
+                            should be associated. </mathphrase>
                     </editorial-rule></para>
-                <para>For the narrative "Negative screen for PTSD and depression", two separate ANF
-                    Statements would need to be created and associated to each other. </para>
                 <figure>
                     <title>Negative Screen for PTSD Clinical Statement Example</title>
                     <mediaobject>
@@ -472,10 +488,8 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Education Provided Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190711T102702-0500" comment="From Stephanie:
-Why is the quantity shown this way instead of just [1,1]?  I guess if this is something documented that happened in the past because you may not know quantity and for that I understand but what if it happened today?"?>
                             <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -560,7 +574,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 </editorial-rule>
                 <editorial-rule>
                     <title>Laboratory Procedure Topic</title>
-                    <mathphrase>For Laboratory procedures, the Topic will be built using an
+                    <mathphrase>For Laboratory procedures, the Topic will be built using a
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
                 </editorial-rule>
@@ -570,7 +584,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         to be carried out. By default a Request will be considered "routine" unless
                         otherwise specified.</mathphrase>
                 </editorial-rule>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time"?><?oxy_comment_end?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time" flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Lab Request Clinical Statement Example</title>
                     <mediaobject>
@@ -580,7 +594,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>The Laboratory Request example above show how the topic is built using a
+                <para>The Laboratory Request example above shows how the topic is built using a
                     laboratory procedure concept, with no refinements in this case. It also has a
                     Priority of Routine as stated in the narrative description.</para>
                 <editorial-rule>

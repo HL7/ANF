@@ -2,28 +2,30 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Conclusion</title>
-  <para>ANF has implications on clinical data quality, clinical decision support, patient safety and
-    population health. </para>
+  <para>ANF has implications on
+    <?oxy_comment_start author="timowilliams" timestamp="20190717T183011-0500" comment="Comment from Stephanie K:
+There isn&apos;t a sub-section for patient safety.  There is one for population health.  Should it be renamed to include both?"?>clinical
+    data quality, clinical decision support, patient safety and population health. </para><?oxy_comment_end?>
   <section>
     <title> Implications for Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models. However, both treatment and analysis of clinical statements require consistency
       not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
       of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
-      analysis. Analysis Normal aims to minimize data quality challenges and provide a common format
-      with semantic clarity to allow for a meaningful secondary use of clinical data. </para>
+      analysis. Analysis Normal Form aims to minimize data quality challenges and provide a common
+      format with semantic clarity to allow for a meaningful secondary use of clinical data. </para>
     <para>ANF has beneficial implications on the following data quality categories based on a
       harmonized data quality framework by Khan et al: (Khan)</para>
     <para>
       <itemizedlist>
         <listitem>
-          <para><emphasis role="bold">Conformance</emphasis>: Conformance focuses on data quality features that
-            describe the compliance of the representation of data against internal or external
-            formatting, relational, or computational definitions. ANF has explicit design structures
-            for syntactic and structural constraints of clinical data, with specific formats and
-            allowed values for particular data elements. As described in this document, ANF focuses
-            on subcategories of Conformance data quality: value conformance, relational conformance,
-            and computational conformance. </para>
+          <para><emphasis role="bold">Conformance</emphasis>: Conformance focuses on data quality
+            features that describe the compliance of the representation of data against internal or
+            external formatting, relational, or computational definitions. ANF has explicit design
+            structures for syntactic and structural constraints of clinical data, with specific
+            formats and allowed values for particular data elements. As described in this document,
+            ANF focuses on subcategories of Conformance data quality: value conformance, relational
+            conformance, and computational conformance. </para>
           <itemizedlist>
             <listitem>
               <para>Value Conformance: Value conformance seeks to determine if recorded data
@@ -37,9 +39,7 @@
                 recorded data elements are in agreement with additional structural constraints
                 imposed by the physical database structures that store data values. </para>
             </listitem>
-
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="ANF is abstracted above a relational database, in fact no relational database is required.  Any kind of datastore will work."?><?oxy_comment_end?>
-
             <listitem>
               <para>Computational Conformance: Computational conformance seeks to determine if
                 computations used to create derived values from existing variables yield the
@@ -57,11 +57,11 @@
             time or when measured at multiple moments over time.</para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Plausbility:</emphasis> Plausibility focuses on features that
+          <para><emphasis role="bold">Plausibility:</emphasis> Plausibility focuses on features that
             describe the believability or truthfulness of data values. For this category,
             plausibility is determined by a variable’s value, when a value is placed within the
             context of another variable (i.e., two independent variables assessing the same
-            construct), or a temporal sequence or state transition (i.e., patient follow-up
+            construct), or a temporal sequence or state transition (e.g., patient follow-up
             treatment for a disease must be preceded by a corresponding diagnosis).</para>
           <itemizedlist>
             <listitem>
@@ -73,9 +73,7 @@
                 that contain overlapping objects are combined. Data extraction errors, such as
                 incomplete relational join conditions, can also generate duplicate records.</para>
             </listitem>
-
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="Can we change database to data repository or something more generic"?><?oxy_comment_end?>
-
             <listitem>
               <para>Atemporal Plausibility: Atemporal Plausibility seeks to determine if observed
                 data values, distributions, or densities agree with local or “common” knowledge
@@ -98,7 +96,7 @@
   </section>
   <section>
     <title>Implications on Clinical Decision Support</title>
-    <para>A 2012 Literature Review commissioned by The Agency for Healthcare Research and Quality
+    <para>A 2012 Literature Review commissioned by the Agency for Healthcare Research and Quality
       (AHRQ) found evidence showing that CDS had positive impact on process measures and increasing
       user knowledge relevant to a medical condition. (Lobach et al., 2012) </para>
     <para>Additional studies show that well-executed CDS can:</para>
@@ -159,10 +157,7 @@
       such a statement model are that (1) it can represent any clinician-specified observation
       accurately and precisely and (2) it can support automated query and retrieval operations
       correctly and efficiently.</para>
-
-<?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="This could be worded more clearly -> ANF aims to reduce the variability of how clinical data within the value sets and CDS rules are inputted into EHR systems and modeled/stored in data repositories."?><?oxy_comment_end?>
-
-
+    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="This could be worded more clearly -&gt; ANF aims to reduce the variability of how clinical data within the value sets and CDS rules are inputted into EHR systems and modeled/stored in data repositories."?><?oxy_comment_end?>
     <para>Importantly, ANF supports the ability to enable clinicians who use SCT to express
       observations that do not appear as pre-defined concepts in the terminology, thereby vastly
       increasing the expressive power of clinical terminologies. For example, a clinician could
@@ -193,7 +188,10 @@
       clinicians rely on inaccurate implementations of eCQMs and CDS, then they may have
       lists/alerts with patients intended to be excluded from a measure/alert, and may therefore,
       target inappropriate patients for therapies, such as recommending aspirin use for someone at
-      high-risk for a fatal bleeding event.</para>
+      high-risk for a fatal bleeding
+      event.<?oxy_comment_start author="timowilliams" timestamp="20190717T183701-0500" comment="From Stephanie K.
+
+Would you want to state that the opposite could be true as well, where patients who should have been on the list were incorrectly excluded?"?></para><?oxy_comment_end?>
     <para>Cholan et al showed that variations in implementations of eCQM specifications for
       cardiovascular event prevention could result in potential lives saved or harms avoided in
       quality improvement activities. For aspirin use for secondary prevention of heart attacks,
@@ -213,26 +211,24 @@
       have led to real harm. </para>
     <para>With eCQM implementation and QI infrastructure increasing, the problem of having, and
       using, inaccurate eCQM implementations or CDS implementations could have significant potential
-      negative impact on population health by not avoiding events, and avoiding harms for patients.
+      negative impact on population health by not avoiding events and avoiding harms for patients.
       ANF reduces these erroneous implementations. Without a precise logical model for clinical data
       like ANF, comparability of eCQMs for payment programs and utility of CQM data for targeted
       quality improvement may be limited.</para>
   </section>
   <section>
     <title>Summary</title>
-    <para>In conclusion, Analysis Normal Form (ANF) presents a simple reproducible approach
-      to modeling clinical statements specifically for data analysis. It reduces clinical statements to two
-      types, Performance of Action and Request for Action, both clinical statement types with
+    <para>In conclusion, Analysis Normal Form (ANF) presents a simple reproducible approach to
+      modeling clinical statements specifically for data analysis. It reduces clinical statements to
+      two types, Performance of Action and Request for Action, both clinical statement types with
       topics. ANF is compatible with other work in statement representation models such as the CIMI
-      Clinical Statement approach, with it's focus on more traditional complex structured trees, whereas ANF focuses on structuring that data in a way for CDS systems
-      can extract that data in an unambiguous way.</para>
+      Clinical Statement approach, with its focus on more traditional complex structured trees,
+      whereas ANF focuses on structuring data in a way CDS systems can extract data in an
+      unambiguous way.</para>
     <para><?oxy_comment_start author="bechang" timestamp="20190426T225012-0600" comment="Need Ioana to expand upon what would be next after successful balloting of this whitepaper in September 2019"?>We
-      believe that ANF represents an approach to statement representation that needs to next be
+      believe that ANF represents an approach to statement representation that next needs to be
       refined into a normative set of editorial guidelines that can eventually also be expanded upon
       into the latest standards, such as creating an HL7 FHIR Implementation
       Guide<?oxy_comment_end?>.</para>
   </section>
-  
-  
- 
 </chapter>

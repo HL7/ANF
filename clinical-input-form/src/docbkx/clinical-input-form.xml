@@ -78,7 +78,7 @@
             except for the following differences. CIMI defines the topic as a structured tree where
             ANF defines topic as a post-coordinated SNOMED expression. Both CIMI and ANF define
             context as a structured tree, but ANF has alternatively named 'context' to be
-            'circumstance' </para>
+            'circumstance'.</para>
 
         <figure xml:id="cimi_msg_cstatement_0135">
             <title>Clinical Statement</title>
@@ -138,18 +138,14 @@
             <varlistentry>
                 <term><emphasis role="bold">Context</emphasis></term>
                 <listitem>
-                    <para> 
-                        The ‘context’ describes the circumstances that form the setting in which
-                        the ‘topic’ should be evaluated.
-                        The various CIMI context types contain the appropriate attributes 
-                        required for the given context.
-                        The number of context types will change as CIMI progresses. Currently the
-                        allowable context types are
-                        ActionContext, and FindingContext. ActionContext has subtypes with examples
-                        including RequestContext, OrderContext and PerformanceContext.
+                    <para> The ‘context’ describes the circumstances that form the setting in which
+                        the ‘topic’ should be evaluated. The various CIMI context types contain the
+                        appropriate attributes required for the given context. The number of context
+                        types will change as CIMI progresses. Currently the allowable context types
+                        are ActionContext and FindingContext. ActionContext has subtypes with
+                        examples including RequestContext, OrderContext and PerformanceContext.
                         FindingContext has subtypes with examples such as PresenceContext,
-                        AbsenceContext, and GoalContext. 
-                    </para>
+                        AbsenceContext, and GoalContext. </para>
 
                     <para></para>
                     <!-- DO NOT REMOVE - Adds a space between above text and list below -->
@@ -201,12 +197,12 @@
                 <term><emphasis role="bold">Metadata</emphasis></term>
                 <listitem>
                     <para> ‘metadata’ is not actually an attribute of CIMI Clinical Statement, but
-                        is intended here to represent the various attributes in clinical statement
-                        that represent metadata about the clinical statement. This includes
-                        attribution information relating to the statement itself such as who
-                        authored, verified, recorded, or signed the statement or more informally,
-                        the who, where, why, and when information. Other attributes of this nature
-                        are recordStatus and encounter. </para>
+                        is intended to represent the various attributes in a clinical statement that
+                        represent metadata about the clinical statement. This includes attribution
+                        information relating to the statement itself such as who authored, verified,
+                        recorded, or signed the statement or more informally, the who, where, why,
+                        and when information. Other attributes of this nature are recordStatus and
+                        encounter. </para>
                 </listitem>
             </varlistentry>
         </variablelist>
@@ -288,13 +284,21 @@
 
         <title>CIMI Topic Patterns</title>
 
-    <para>
-        Topic Patterns include all the attributes required to fully describe a clinical entity. The topic patterns CIMI has developed to date include FindingTopic, ProcedureTopic, with FindingTopic having children of AssertionTopic and EvaluationResultTopic. They are shown in <xref linkend="cimi_msg_topic_hierarchy_0135" xrefstyle="select: label"/> and are described in the following sections. Each of these topic subtypes contain a collection of attributes that describe the given pattern.  These patterns provide the foundational structure for detailed clinical model (DCM) archetype instances that can be visualized at <ulink url="http://models.opencimi.org"><citetitle>http://models.opencimi.org</citetitle></ulink> 
-    </para>
+    <para> Topic Patterns include all the attributes required to fully describe a clinical entity.
+            The topic patterns CIMI has developed to date include FindingTopic and ProcedureTopic,
+            with FindingTopic having children of AssertionTopic and EvaluationResultTopic. They are
+            shown in <xref linkend="cimi_msg_topic_hierarchy_0135" xrefstyle="select: label"/> and
+            are described in the following sections. Each of these topic subtypes contain a
+            collection of attributes that describe the given pattern. These patterns provide the
+            foundational structure for detailed clinical model (DCM) archetype instances that can be
+            visualized at <ulink url="http://models.opencimi.org"
+                    ><citetitle>http://models.opencimi.org</citetitle></ulink>
+        </para>
 
-    <para>
-        ANF does not create its own topic patterns, and instead relies on SNOMED post-coordinated expressions to represent the topic.  ANF operates under the principle of separation of concerns, and believes that terminology should be a separate concern from the ANF Statement data structure and it's properties.
-    </para>
+    <para> ANF does not create its own topic patterns, and instead relies on SNOMED post-coordinated
+            expressions to represent the topic. ANF operates under the principle of separation of
+            concerns, and believes that terminology should be a separate concern from the ANF
+            Statement data structure and its properties. </para>
 
     <figure xml:id="cimi_msg_topic_hierarchy_0135">
         <title>Topic Hierarchy</title>
