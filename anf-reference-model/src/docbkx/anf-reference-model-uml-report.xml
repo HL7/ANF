@@ -29,7 +29,18 @@
                 contains the <emphasis role="bold">'topic'</emphasis>which describes what this
                 statement is about, and the <emphasis role="bold">'circumstance' </emphasis>which
                 will contain either request or result information regarding the <emphasis
-                    role="bold">'topic'</emphasis>.</para>
+                    role="bold">'topic'</emphasis>.
+            </para>
+
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="In table, add ‘Property’ header, maybe abbreviate ‘Multiplicity’ to gain some space for Property."?><?oxy_comment_end?>
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="subjectOfInformation too long for cell."?><?oxy_comment_end?>
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Property name and type inconsistent break point, maybe force break so they are all the same?"?><?oxy_comment_end?>
+
+             <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="In topic row, Principle 2 is not formatted correctly"?><?oxy_comment_end?>
+
             <informaltable>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1" colwidth="1.3*"/>
@@ -68,7 +79,7 @@
                                             role="underline">Measure</emphasis></emphasis>. </para>
                                 <para>For example the date of 2019-07-09T00:12:31+00:00 would be
                                     represented as Unix Epoch time as 1562631151 seconds :</para>
-                                <itemizedlist>
+                                <itemizedlist spacing="compact">
                                     <listitem>
                                         <para>interval.lowerBound = 1562631151</para>
                                     </listitem>
@@ -218,6 +229,8 @@
                                     to – include quantitative or qualitative results, e.g. “3 dot
                                     blot hemorrhages” or “Hepatitis A antibody positive”.</para>
                                 <para/>
+<?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="I don't think qualitative results are possible, and quantitative result is mandatory."?><?oxy_comment_end?>
+
                             </entry>
                         </row>
                         <row>
@@ -241,6 +254,8 @@
         <section>
             <title> Circumstance </title>
 
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Is the result a HOW, WHY, or WHEN, or is it something different."?><?oxy_comment_end?>
+
             <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis
                     role="bold">WHY </emphasis>and <emphasis role="bold">WHEN </emphasis>a requested
                 or performed action will be or was carried out. </para>
@@ -258,14 +273,14 @@
                 <para>This class provides a exclusive choice of circumstances that may chosen when
                     an ANFStatement is instantiated:</para>
 
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>
                             <emphasis role="underline">PerformanceCircumstance</emphasis></para>
                     </listitem>
                     <listitem>
                         <para>
-                            <emphasis role="underline">equestCircumstance</emphasis></para>
+                            <emphasis role="underline">RequestCircumstance</emphasis></para>
                     </listitem>
                     <listitem>
                         <para>
@@ -345,7 +360,7 @@
                     12 hours before having a lipids blood test.</para>
                 <para>Examples of Request clinical statements:</para>
 
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>Request for Rheumatoid factor 1 time routine</para>
                     </listitem>
@@ -471,6 +486,7 @@
                                 </entry>
                             </row>
                             <row>
+                                <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Should have some Notes text for all properties."?><?oxy_comment_end?>
                                 <entry>
                                     <para><emphasis role="bold">requestedResult</emphasis>
                                         ResultChoice</para>
@@ -572,6 +588,11 @@
         </section>
         <section>
             <title> Result </title>
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Instead of 'in this class diagram', use a figure reference."?><?oxy_comment_end?>
+
+            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Clearly state the unique nature of ANF that coded results are not allowed and explain why."?><?oxy_comment_end?>
+
+
             <para>A unique aspect of the ANF Model is that all measures and results are numeric
                 ranges. An important point to notice in this class diagram is that the ANF Model
                 promotes a normalized representation of observation or intervention results. </para>
@@ -584,6 +605,8 @@
                 color. The ANF Statement would represent Eye color using the Blue iris Finding as
                 the Topic and the Result would be Present, represented as interval.lowerBound =1,
                 interval.upperBound=INF.</para>
+
+                <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="The 3rd option is .. a topic of Blue Eye Color with a coded result of Present."?><?oxy_comment_end?>
             <figure>
                 <title>Result Choices</title>
                 <mediaobject>
@@ -650,7 +673,7 @@
             </section>
             <section>
                 <title>ObservationResult </title>
-                <para>This class is represents an observation result. </para>
+                <para>This class represents an observation result. </para>
                 <informaltable>
                     <tgroup cols="3">
                         <colspec colnum="1" colname="col1" colwidth="1.3*"/>
@@ -736,6 +759,9 @@
                 <para>An interval value data type (or “interval value”) formally represents a
                     numeric interval between two nonnegative real numbers. The interval can be open
                     or closed.</para>
+                    <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="If non-negative, how can one express temperatures below zero?"?><?oxy_comment_end?>
+
+
                 <para>The interval value data type provides a single way to represent both
                     “presence” or "absence" values and numeric values for a phenomenon. In general,
                     the interval value represents the numeric range within which the observed value
@@ -749,6 +775,9 @@
                     phenomenon. In general, the interval value represents the numeric range within
                     which the observed value of a phenomenon occurs. Note that this formalism allows
                     both exact values and ranges of values to be expressed.</para>
+
+                    <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Previous sentence was already used in the previous paragraph."?><?oxy_comment_end?>
+
                 <para>In the special case that the beginning and end point of an interval are the
                     same number, n, the meaning is that the value of the phenomenon is exactly
                     n.</para>
@@ -1079,7 +1108,7 @@
             </section>
             <section>
                 <title>LogicalExpression </title>
-                <para>This class represents is a wrapper for logical expression.</para>
+                <para>This class is a wrapper for logical expression.</para>
 
 
                 <informaltable>
@@ -1106,7 +1135,7 @@
                                 <entry>
                                     <para>Logical expression could be represented using FHIR
                                         Expresssion structure or a similar standard-based syntax
-                                        ((e.g. SNOMED Expression Constrain Language - ECL).</para>
+                                        ((e.g. SNOMED Expression Constraint Language - ECL).</para>
                                     <para><emphasis role="bold">References: </emphasis></para>
                                     <para>https://confluence.ihtsdotools.org/display/DOCECL</para>
                                     <para/>
@@ -1120,7 +1149,7 @@
         <section>
             <title> References </title>
             <para>A clinical statement references other information manage by a system:</para>
-            <itemizedlist>
+            <itemizedlist spacing="compact">
                 <listitem>
                     <para>references to patient/records</para>
                 </listitem>
@@ -1187,7 +1216,7 @@
                 <title>Participant </title>
                 <para>This class specifies the role/specialties/services that a practitioner may
                     perform relative to the ANFStatement:</para>
-                <itemizedlist>
+                <itemizedlist spacing="compact">
                     <listitem>
                         <para>the author</para>
                     </listitem>
