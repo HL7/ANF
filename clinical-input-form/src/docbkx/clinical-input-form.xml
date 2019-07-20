@@ -72,7 +72,7 @@
             CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135" xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘metadata’.  The ‘topic’ is the clinical entity being described.  The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated.  Finally, ‘metadata’ which is not an attribute, but is only meant for illustrative purposes to represent the collection of metadata that is associated with the clinical statement: the who, where, why and when information.
         </para>
 
-        <para> CIMI adopts a compositional approach rather than inheritance, where a particular
+        <para>CIMI adopts a compositional approach rather than inheritance, where a particular
             topic and context are added to a CIMI Clinical Statement. But topics and contexts
             themselves are defined with inheritance. This is the same general approach taken by ANF
             except for the following differences. CIMI defines the topic as a structured tree where
@@ -269,7 +269,7 @@
                 <para>They represent groupings of attributes aligned with the SNOMED Clinical Terms
                     (SNOMED CT) Concept Model. For instance, ProcedureTopic is aligned with the
                     SNOMED CT Procedure Concept Model. PerformanceContext aligns with the Situation
-                    with Explicit Context Concept (SWEC) Concept Model. </para>
+                    with Explicit Context (SWEC) Concept Model. </para>
             </listitem>
             <listitem>
                 <para>They provide for a mechanism to state presence or absence of a finding as well
@@ -295,7 +295,7 @@
                     ><citetitle>http://models.opencimi.org</citetitle></ulink>
         </para>
 
-    <para> ANF does not create its own topic patterns, and instead relies on SNOMED post-coordinated
+    <para> ANF, on the other hand, does not create its own topic patterns, and instead relies on SNOMED post-coordinated
             expressions to represent the topic. ANF operates under the principle of separation of
             concerns, and believes that terminology should be a separate concern from the ANF
             Statement data structure and its properties. </para>
@@ -373,7 +373,7 @@
             <title>Assertion Hierarchy</title>
 
             <para>
-                The full hierarchy for AssertionTopic is shown in <xref linkend="cimi_msg_assertion_hierarchy_0135" xrefstyle="select: label"/>.  AssertionTopic serves the following purposes: (1) it provides the core set of assertion attributes that are relevant in assertion of presence and absence; and (2) it is the parent type for the more specific assertions such as ConditionTopic and FindingSiteAssertionTopic. If additional attributes are identified as required to properly model assertions, they would either be added to one of the existing assertion types or a new type could be created with these attributes. This modeling decision would be based on whether adding these attributes make sense for existing assertions or only for a new subset of assertions. Typically an attribute is added to the parent class if that attribute is relevant in all the subclasses derived from the parent class. If an attribute is only relevant in some of the subclasses then the attribute is introduced in these subclasses. This ensures that a class does not have an attribute that is incongruent and thus requires that attribute to be frequently constrained out. As an analogy, CIMI wants to minimize the design practice that would create an Animal class that contains arms, legs, and wings and then create an instance of a dog that constrains out wings since dogs do not have wings.
+                The full hierarchy for AssertionTopic is shown in <xref linkend="cimi_msg_assertion_hierarchy_0135" xrefstyle="select: label"/>.  AssertionTopic serves the following purposes: (1) it provides the core set of assertion attributes that are relevant in assertion of presence and absence; and (2) it is the parent type for the more specific assertions such as ConditionTopic and FindingSiteAssertionTopic. If additional attributes are identified as required to properly model assertions, they would either be added to one of the existing assertion types or a new type could be created with these attributes. This modeling decision would be based on whether adding these attributes make sense for existing assertions or only for a new subset of assertions. Typically an attribute is added to the parent class if that attribute is relevant in all the subclasses derived from the parent class. If an attribute is only relevant in some of the subclasses, then the attribute is introduced in these subclasses. This ensures that a class does not have an attribute that is incongruent and thus requires that attribute to be frequently constrained out. As an analogy, CIMI wants to minimize the design practice that would create an Animal class that contains arms, legs, and wings and then create an instance of a dog that constrains out wings since dogs do not have wings.
             </para>
 
             <figure xml:id="cimi_msg_assertion_hierarchy_0135">
@@ -452,11 +452,6 @@
                 Note, in the CIMI alignment with the SNOMED CT concept model, the AssertionTopic pattern corresponds to the Finding hierarchy as inflected by the Situation hierarchy. 
             </para>
 
-                
-            <para>
-                Note AssertionStatement.topic.topicCode is not part of this construction. It is modeled with the fixed term “assertion” and is as semantically inert as we can manage.
-            </para>
-
             <para> Other attributes may also inflect the semantics; e.g., an
                     AssertionStatement.topic.findingMethod that would align with the concept model’s
                     Finding.findingMethod. </para>
@@ -468,7 +463,7 @@
             <title>Finding Site Assertions</title>
 
             <para>
-                A FindingSiteAssertionTopic is an assertion about a finding found on the body. This assertion is a “design by extension” assertion because it contains the additional attribute findingSite that is used to capture the body site affected by the condition. The FindingSiteAssertionTopic encourages post-coordination as shown in examples 3 and 4, and intentionally aligns with the SNOMED CT Clinical Findings concept model.
+                A FindingSiteAssertionTopic is an assertion about a finding found on the body. This assertion is a “design by extension” assertion because it contains the additional attribute findingSite that is used to capture the body site affected by the condition. The FindingSiteAssertionTopic encourages post-coordination as shown in <xref linkend="cimi_example_3_0135" xrefstyle="select: label"/> and <xref linkend="cimi_example_4_0135" xrefstyle="select: label"/>, and intentionally aligns with the SNOMED CT Clinical Findings concept model.
             </para>
 
             <example xml:id="cimi_example_3_0135">
@@ -594,7 +589,7 @@
             <title>Modeling in the Constraint Layer</title>
 
             <para>
-                This section will use LaboratoryTestResultTopic, which exists in the Reference Model Layer, to further describe modeling in the Constraint Layer. There are different categories of laboratory tests that differ in their resulting data type, such as quantitative labs and nominal labs, where the former would have a Quantitative result and the latter would have a Coded result. For the different lab categories there is not a need for new named attributes to be added in the reference model layer, but only a need to constrain the result to the appropriate datatype.  Since a new named attribute is not required, the style CIMI has adopted is to create subtypes in the constraint layer, where in this case an ADL Archetype would be created for both QuantitativeLaboratoryTestResult and NominalLaboratoryTestResult.
+                This section will use LaboratoryTestResultTopic, which exists in the Reference Model Layer, to further describe modeling in the Constraint Layer. There are different categories of laboratory tests that differ in their resulting data type, such as quantitative labs and nominal labs, where the former would have a Quantitative result and the latter would have a Coded result. For the different lab categories there is not a need for new named attributes to be added in the reference model layer, but only a need to constrain the result to the appropriate datatype.  Since a new named attribute is not required, the style CIMI has adopted is to create subtypes in the constraint layer, where in this case, an ADL Archetype would be created for both QuantitativeLaboratoryTestResult and NominalLaboratoryTestResult.
             </para>
        
 
@@ -626,7 +621,7 @@
         <example xml:id="cimi_example_5_0135">
                 <title>The patient’s skin turgor is friable</title>
                 <programlisting>
-    SkinTurgorEval
+    SkinTurgorEval (Physical Evaluation Result instance)
         topic.topicCode: Skin turgor (observable entity)
         topic.evaluationProcedure: Inspection (procedure)
         context.result: Fragile skin (finding)
@@ -636,7 +631,7 @@
             <example xml:id="cimi_example_6_0135">
                 <title>The patient's systolic blood pressure is 120 mmHg</title>
                 <programlisting>
-    SystolicBloodPressureEval
+    SystolicBloodPressureEval (Physical Evaluation Result instance)
         topic.topicCode: Systolic arterial pressure (observable entity)
         context.result: 120
             unitsOfMeasure: Millimeter of mercury (qualifier value)
@@ -695,7 +690,7 @@
             </para>
 
             <para>
-                It should be noted the Assertion vs. Evaluation topic is solely concerned with the structure and schema pattern used to capture clinical information. Choosing Assertion vs. Evaluation patterns has nothing to do with whether the information being captured is subjective vs. objective. 
+                It should be noted the Assertion vs. EvaluationResult topic is solely concerned with the structure and schema pattern used to capture clinical information. Choosing Assertion vs. EvaluationResult patterns has nothing to do with whether the information being captured is subjective vs. objective. 
             </para>
 
         </section>
@@ -729,7 +724,7 @@
 
           <para>
             When a Clinical Statement is defined it will be modeled as a combination of a topic and a context. The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated. Specializations within the context hierarchy, shown in <xref linkend="cimi_msg_context_hierarchy_0135" xrefstyle="select: label"/>, add important attribution information for the situation being described.
-            This is partial view of the context hierarchy for illustration purpose, but it should be clear that more context classes exist, and more will be modeled in the future as necessary.
+            This is a partial view of the context hierarchy for illustration purpose, but it should be clear that more context classes exist, and more will be modeled in the future as necessary.
           </para>
 
                     <figure xml:id="cimi_msg_context_hierarchy_0135">
