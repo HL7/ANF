@@ -47,6 +47,8 @@
         <para>There are two types of ANF Statements:</para>
         <editorial-rule>
             <title>Performance of Action</title>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words 'passive' & 'active'. I don't think it adds any extra information and this will keep people from argueing whether observations are really passive or active."?><?oxy_comment_end?>
+
             <mathphrase>A Performance may include the passive observation of a phenomenon related to
                 patients and their health status or family history, and may also include active
                 interventions, such as providing education or administering medications or
@@ -73,6 +75,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="4"?><?oxy_comment_end mid="4"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="5"?><?oxy_comment_end mid="5"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="6"?><?oxy_comment_end mid="6"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can't be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information."?><?oxy_comment_end?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -162,6 +165,7 @@ Doing family history, donor statements using subject of information is now the n
                         the statement. </mathphrase>
                 </editorial-rule>
                 <editorial-rule>
+                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="title is a bit confusing... maybe Topic describing an observation."?><?oxy_comment_end?>
                     <title>Observation Topic</title>
                     <mathphrase>Any performance of an action that is an observation would begin with
                         an Observation procedure. The Observation procedure will also specify a Has
@@ -228,6 +232,7 @@ Doing family history, donor statements using subject of information is now the n
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating result." flag="done"?><?oxy_comment_end?>
                 <editorial-rule>
                     <title>Statement with a Result Value</title>
+                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="could use better wording below, because a topic doesn't 'state' a result."?><?oxy_comment_end?>
                     <mathphrase>Any Topic that states a Result that has a value will be specified
                         with the correct upperBound, lowerBound, and measureSemantic. If the Result
                         is a single value, the upperBound and lowerBound will be the same value. If
@@ -252,9 +257,11 @@ Doing family history, donor statements using subject of information is now the n
                                     during the performance of the action.</para>
                             </listitem>
                             <listitem>
+                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="This below seems like the editorial rule, and could go first, right below the title. And then everything else explains what a technique is."?><?oxy_comment_end?>
+
                                 <para>A technique is inseparable from the topic and cannot be
                                     expressed as a stand-alone clinical statement and will be
-                                    repreented as a part of the topic.</para>
+                                    represented as a part of the topic.</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para><emphasis role="underline">Example: Systolic blood
@@ -326,6 +333,7 @@ Doing family history, donor statements using subject of information is now the n
                                 </itemizedlist>
                             </listitem>
                             <listitem>
+                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Again, I think this could go first.  And instead of the wording 'can be expressed', maybe stronger as 'should be expressed'."?><?oxy_comment_end?>
                                 <para>A prerequisite is separable from the topic and can be
                                     expressed as a stand-alone clinical statement</para>
                                 <itemizedlist>
@@ -405,6 +413,9 @@ Doing family history, donor statements using subject of information is now the n
                 <para><editorial-rule>
                         <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
+
+                            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I find this title confusing, as you can't have Mulitple Topics. Maybe something like Separation of Compound Topic??"?><?oxy_comment_end?>
+
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
                             narrative would be separated into multiple clinical statements if it
@@ -427,6 +438,22 @@ Doing family history, donor statements using subject of information is now the n
                             are unrelated (Akinetic seizure without atonia) then the two statements
                             should be associated. </mathphrase>
                     </editorial-rule></para>
+                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="
+                        At risk of possible firing squad, I wonder...
+                        Should we make the blue bubble text more consistent with capitalization
+                            1.) Use real attribute names
+
+                            2.) Use lowercase for first letter like attributes.
+
+                            3.) Retain capitilized as we do now, for Performance Circumstance, Request Circumestance, and Narrative Circumstance, as these are classes used in composition. 
+
+                            4.) In this figure, should be associatedStatement with properties of id and semantic.  The green value bubble of Negative screen for depression, could be pink, the same color of ANF Statement, indicating we are binding to another instance, and not a value within this model.
+
+                    "?><?oxy_comment_end?>
+
+
+
+
                 <figure>
                     <title>Negative Screen for PTSD Clinical Statement Example</title>
                     <mediaobject>
