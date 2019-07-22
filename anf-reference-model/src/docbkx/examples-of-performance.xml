@@ -12,7 +12,8 @@
     <section>
         <title><anchor xml:id="_Toc5884786"/>Blood Pressure Measurement </title>
         <table>
-            <title>Performance Clinical Statement</title>
+            <title><?oxy_comment_start author="kec" timestamp="20190721T191629-0700" comment="I thought these tables where going away and would be replaced by the graphical representation that Tim has been working on.  "?>Performance
+                Clinical Statement<?oxy_comment_end?></title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
