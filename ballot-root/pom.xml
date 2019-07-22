@@ -223,7 +223,7 @@
             <executions>
                <execution>
                   <id>PrependDocument</id>
-                  <phase>install</phase>
+                  <phase>prepare-package</phase>
                   <configuration>
                      <sourcePath>${project.build.directory}/site/docbook/ballot-root.pdf</sourcePath>
                      <sourceXEPPath>${project.build.directory}/site/docbook/ballot-root.xep.pdf</sourceXEPPath>
