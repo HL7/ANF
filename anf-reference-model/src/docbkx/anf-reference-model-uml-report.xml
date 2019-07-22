@@ -3,7 +3,8 @@
     type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-    <title>ANF Reference Model</title>
+    <title><?oxy_comment_start author="kec" timestamp="20190721T191135-0700" comment="Remove redundant enclosure, and promote child sections. "?>ANF
+        Reference Model<?oxy_comment_end?></title>
     <para/>
     <section>
         <title>ANF Reference Model</title>
@@ -47,11 +48,12 @@
                     <colspec colnum="2" colname="col2" colwidth="1*"/>
                     <colspec colnum="3" colname="col3" colwidth="3.85*"/>
                     <thead>
+                        <?oxy_comment_start author="kec" timestamp="20190721T191238-0700" comment="Do we need this table if we have the UML? If the intent is to explain the UML, I&apos;d recommend in prose, rather than in a table. "?>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
-                        </row>
+                        </row><?oxy_comment_end?>
                     </thead>
                     <tbody>
                         <row>
@@ -197,8 +199,9 @@
                                 <para>The topic is the central component of clinical statements. The
                                     following are proposed principles for the topic of an
                                     ANFStatement.</para>
-                                <para><emphasis role="bold">Principle 1: </emphasis>The topic
-                                    defines the action being performed or requested.</para>
+                                <para><?oxy_comment_start author="kec" timestamp="20190721T191425-0700" comment="Can these be moved out into stand-alone rules and body text? "?><emphasis
+                                        role="bold">Principle 1: </emphasis>The topic defines the
+                                    action being performed or requested.</para>
                                 <para><emphasis role="bold">Principle 2: </emphasis>The topic has to
                                     be able to exist on its own and still retain original intent and
                                     clarity of</para>
@@ -206,7 +209,7 @@
                                 <para><emphasis role="bold">Principle 3: </emphasis>The topic
                                     includes what is being requested, measured or observed.</para>
                                 <para><emphasis role="bold">Principle 4: </emphasis>Each clinical
-                                    statement may only have one topic.</para>
+                                    statement may only have one topic.</para><?oxy_comment_end?>
                                 <para/>
                             </entry>
                         </row>
@@ -302,8 +305,10 @@
                         <thead>
                             <row>
                                 <entry/>
+                                <?oxy_comment_start author="kec" timestamp="20190721T191337-0700" comment="Do we need this table if we have UML? Maybe some of the notes should be rules? "?>
                                 <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold">Notes</emphasis></entry>
+                                <entry><emphasis role="bold"
+                                >Notes</emphasis></entry><?oxy_comment_end?>
                             </row>
                         </thead>
                         <tbody>

@@ -2,7 +2,8 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>ANF Reference Model</title>
+    <title><?oxy_comment_start author="kec" timestamp="20190721T191027-0700" comment="Move  before CIMI chapter"?>ANF<?oxy_comment_end?>
+        Reference Model</title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
