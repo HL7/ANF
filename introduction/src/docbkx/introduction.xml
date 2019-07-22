@@ -2,7 +2,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>A Normal Form for Clinical Statements</title>
-  <para>A clinical <glossterm>statement</glossterm> is a definite and clear representation of a
+  <para>A clinical <glossterm>statement</glossterm>is a definite and clear representation of a
     clinically-significant fact or situation that was observed to exist or happen. A clinical
     statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
     provides a written account that can be naturally read by humans, as well as a <glossterm
@@ -15,8 +15,6 @@
     need for—and logical specification of—an <glossterm baseform="Analysis Normal Form">Analysis
       Normal Form (ANF)</glossterm>. ANF is a normal form intended to safely and reliably support
     data analysis.</para>
-  <?oxy_comment_start author="kec" timestamp="20190721T085644-0700" comment="Insert introduction of URU here (Understandable, Reproducible, and Useful. "?>
-  <para/><?oxy_comment_end?>
   <para>This document describes how information systems can improve patient safety and outcomes by
     increasing the precision of clinical information using a normal form to enhance and support
     accurate data retrieval and analysis.</para>
@@ -27,44 +25,34 @@
       aggregate clinical statements for analysis, research, clinical decision support, and other
       purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
       the information was captured at its source (i.e. information systems or medical devices). ANF
-      <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can"?>could<?oxy_comment_end?>
-      be used in conjunction with other models intended to ensure that clinical information is
+      could be used in conjunction with other models intended to ensure that clinical information is
       structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> Detailed
       Clinical Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
         <glossterm>FHIR</glossterm> profiles). </para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers"?>Clinicians,
-      integrators, and researchers<?oxy_comment_end?> face different priorities, forcing trade-offs
-      to be made that optimize data entry brevity at the cost of computability. ANF represents a
-      collection of patterns and approaches to provide
-      <?oxy_comment_start author="kec" timestamp="20190721T085955-0700" comment="ANF does not provide predictable transformations, it provides a predictable (URU) normal form that can be used by transformation developers. "?>predictable transformations<?oxy_comment_end?>
-      <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. "?>between
-      sets of models and can be optimized for clinical input and models<?oxy_comment_end?> - thereby
-      improving computability through normalization. The more normalized the data is, the simpler it
-      will become to analyze, and errors will be reduced. Post-coordinated compositional statements
-      using ANF introduce the ability to faithfully expand from a reduced form or compare to other
-      statements with ease and no loss of semantic integrity.
-      <?oxy_comment_start author="kec" timestamp="20190721T090456-0700" comment="Transform this to eliminate &quot;Elkin wrote&quot;, it is fine to reference his work with the right bibliography entry. 
-
-ANF is not &quot;a formal terminological composition and decomposition mechanism&quot;, Model transformations into and out of ANF depend on &quot;a formal terminological composition and decomposition mechanism&quot;. "?>Elkin
-      wrote<?oxy_comment_end?> about what is needed in order for post coordinated statements to be
-      comparable and captured one of ANF's key objectives: "to be <emphasis role="bold">a formal
-        terminological composition and decomposition mechanism</emphasis> for lossless information
-      representation such that both explicit and implicit information can be faithfully recovered,
-      maintained, and modified with ease."
+    <para>Clinicians, integrators, and researchers face different priorities, forcing trade-offs to
+      be made that optimize data entry brevity at the cost of computability. ANF represents a
+      collection of patterns and approaches to provide predictable transformations between sets of
+      models and can be optimized for clinical input and models - thereby improving computability
+      through normalization. The more normalized the data is, the simpler it will become to analyze,
+      and errors will be reduced. Post-coordinated compositional statements using ANF introduce the
+      ability to faithfully expand from a reduced form or compare to other statements with ease and
+      no loss of semantic integrity. Elkin wrote about what is needed in order for post coordinated
+      statements to be comparable and captured one of ANF's key objectives: "to be <emphasis
+        role="bold">a formal terminological composition and decomposition mechanism</emphasis> for
+      lossless information representation such that both explicit and implicit information can be
+      faithfully recovered, maintained, and modified with ease."
       <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?"?>(Elkin,
       pg 14) <?oxy_comment_end?></para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;"?>The
-        <emphasis role="bold">main purpose</emphasis> of ANF<?oxy_comment_end?> is providing a
-      normalized representation of clinical statements from a heterogeneous source using an
-      objective quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result,
-      presence, and magnitude of a specific finding, request or observation.</para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T102123-0700" comment="Tie this in with the &quot;formal terminological composition and decompositkion mechanism&quot;. Possibly reorder to keep the material in sequence. What else does ANF require? Clean seperation of concerns? Clear editorial rules? Unambiguous implementation guidance? Just brainstorming a few ideas. "?>ANF
-      requires<?oxy_comment_end?> an ability to classify topic expressions (and expressions that may
-      go in other locations) and thus it depends on systems that can produce structured information
+    <para>The <emphasis role="bold">main purpose</emphasis> of ANF is providing a normalized
+      representation of clinical statements from a heterogeneous source using an objective
+      quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result, presence,
+      and magnitude of a specific finding, request or observation.</para>
+    <para>ANF requires an ability to classify topic expressions (and expressions that may go in
+      other locations) and thus it depends on systems that can produce structured information
       reducible to ANF. These systems may create normal data natively or transform other
       representations of clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form -
-      ANF.<?oxy_comment_start author="kec" timestamp="20190721T102337-0700" comment="Add a link to where these items are presented discussed. Make use of the xreflabel to generate the linkage text. "?></para><?oxy_comment_end?>
+      ANF.</para>
     <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
       multiple sources to better support a set of analysis.</para>
     <itemizedlist spacing="compact">
@@ -84,8 +72,7 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
     </itemizedlist>
     <itemizedlist spacing="compact">
       <listitem>
-        <para><?oxy_comment_start author="kec" timestamp="20190721T122226-0700" comment="Don&apos;t put bulleted lists inside of bullited lists. Maybe put in a transition paragraph, then a new bullited list. "?>Enhancing
-          information clinical content for use as </para>
+        <para>Enhancing information clinical content for use as </para>
         <itemizedlist spacing="compact">
           <listitem>
             <para>Clinical Decision Support Systems</para>
@@ -97,39 +84,35 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
             <para>Healthcare Guidelines and Protocols </para>
           </listitem>
           <listitem>
-            <para>Epidemiological Research<?oxy_comment_end?></para>
+            <para>Epidemiological Research</para>
           </listitem>
         </itemizedlist>
       </listitem>
     </itemizedlist>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T122505-0700" comment="Move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. "?>Healthcare
-      organizations are striving to become high reliability organizations (HROs), characterized by
-      high levels of safety under inherently risky, technologically-complex, and demanding
-        conditions.<citation>HRO_HIT</citation>
-      <?oxy_comment_start author="kec" timestamp="20190721T101640-0700" comment="Same as Elkin. Call out why the conceptual framework is important, then properly reference. Academic writing is more vain and concerned with who wrote what. Technical writing is &quot;just the facts mam&quot;, but properly reference. "?>Chassin
-      and Loeb<?oxy_comment_end?> published a conceptual framework for assessing progress towards
-      becoming a HRO and included the safe use of health IT and review of quality measures, which
-      are dependent on data from Electronic Health Record (EHR) systems.<citation>Chassin</citation>
-      Deployment of EHR systems is nearly ubiquitous in the US and there is increasing opportunity
-      to leverage a substantial number of extant EHR mapped data sets to improve population health
-      through quality measures, case reporting, and decision support. <?oxy_comment_end?></para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T122636-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. "?>Information
-      systems record and manage clinical statements using a variety of standard or ad-hoc models.
-      However, both treatment and analysis of clinical statements require consistency not only at
-      the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance of an <link
-        xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> DCMs, CIMI
-      model, etc.). In most cases the data quality is the greatest obstacle to analysis, but even in
-      the case of structured, semantically-clear information, inconsistency across sources of
-      information raises obstacles to analysis and research. Analysis of aggregate information
-      managed by health information networks poses the greatest challenge today because a meaningful
-      use of data for patient outcomes or research requires a common format and level of semantic
-      clarity.<?oxy_comment_end?></para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. "?>Not
-      only is there a potential for a lack of consistency with representing clinical statements with
-      current detailed clinical modeling efforts, but there is also further variation in how the
-      data is entered into information systems by end-users. This reality has a direct impact on
-      patient safety if a clinical statement is recorded and displayed differently across the
-      continuum of care: Clinicians author clinical statements and enter them into their
+    <para>Healthcare organizations are striving to become high reliability organizations (HROs),
+      characterized by high levels of safety under inherently risky, technologically-complex, and
+      demanding conditions.<citation>HRO_HIT</citation> Chassin and Loeb published a conceptual
+      framework for assessing progress towards becoming a HRO and included the safe use of health IT
+      and review of quality measures, which are dependent on data from Electronic Health Record
+      (EHR) systems.<citation>Chassin</citation> Deployment of EHR systems is nearly ubiquitous in
+      the US and there is increasing opportunity to leverage a substantial number of extant EHR
+      mapped data sets to improve population health through quality measures, case reporting, and
+      decision support. </para>
+    <para>Information systems record and manage clinical statements using a variety of standard or
+      ad-hoc models. However, both treatment and analysis of clinical statements require consistency
+      not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
+      of an <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link>
+      DCMs, CIMI model, etc.). In most cases the data quality is the greatest obstacle to analysis,
+      but even in the case of structured, semantically-clear information, inconsistency across
+      sources of information raises obstacles to analysis and research. Analysis of aggregate
+      information managed by health information networks poses the greatest challenge today because
+      a meaningful use of data for patient outcomes or research requires a common format and level
+      of semantic clarity.</para>
+    <para>Not only is there a potential for a lack of consistency with representing clinical
+      statements with current detailed clinical modeling efforts, but there is also further
+      variation in how the data is entered into information systems by end-users. This reality has a
+      direct impact on patient safety if a clinical statement is recorded and displayed differently
+      across the continuum of care: Clinicians author clinical statements and enter them into their
       organization’s EHR systems as "Structured Clinical Input". This concept describes any data
       entry mechanism used by clinicians to record clinical statements. An instance of a clinical
       statement may be created using one or more forms. Vendors compete on usability for seamless
@@ -138,33 +121,19 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
       proprietary models. For the purposes of this document, the type or usability of data
       structures used for capture or display of clinical statements is not in scope. We assume that
         <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
-      suitable for normalization for analysis. <?oxy_comment_end?></para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T122708-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. "?>Therefore,
-      clinical statements can be expressed and documented in many different ways in EHR systems,
-      where input forms provide different options to document the same clinical statement. These
-      differences pose challenges for how the data is modeled, how the data is stored, and therefore
-      has implications on data retrieval, data analysis, accuracy of clinical analysis results. </para><?oxy_comment_end?>
+      suitable for normalization for analysis. </para>
+    <para>Therefore, clinical statements can be expressed and documented in many different ways in
+      EHR systems, where input forms provide different options to document the same clinical
+      statement. These differences pose challenges for how the data is modeled, how the data is
+      stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
+      analysis results. </para>
     <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
-<<<<<<< HEAD
       that we call here structured clinical input, or the manner in which information is presented
       to the clinicians and how they enter the data, such as by constraining the information to
       allow only certain values to be entered, e.g. through a drop-down list, radio buttons, or
       breaking up large chunks of related information into smaller parts.</para>
     <para>For example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines
       information reported by devices with findings and interpretation: <orderedlist>
-=======
-      that we call here
-      <?oxy_comment_start author="kec" timestamp="20190721T122744-0700" comment="a Clinical Input Form (CIF) and link to glossary. "?>structured
-      clinical input<?oxy_comment_end?>, or the manner in which
-      <?oxy_comment_start author="kec" timestamp="20190721T122821-0700" comment="A Clinical Presentation Form (CPF) and link to glossary. "?>information
-      is presented<?oxy_comment_end?> to the clinicians and how they enter the data, such as by
-      constraining the information to allow only certain values to be entered, e.g. through a
-      drop-down list, radio buttons, or breaking up large chunks of related information into smaller
-      parts.</para>
-    <para><?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems."?><?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="19"?>For
-      example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines information
-      reported by devices with findings and interpretation: <orderedlist>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
         <listitem>
           <para>A vital signs monitor transmits the systolic and diastolic blood pressure including
             date/time and the id of the device, </para>
@@ -240,20 +209,15 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
       the various use cases. Maximum efficiency for each use case necessitates that any particular
       clinical information be available in multiple modeled forms. These models, although different
       in form, semantically represent the same information, and are known as isosemantic models. Any
-      particular detailed clinical model exists within a family of isosemantic siblings.
-      <?oxy_comment_end mid="19"?></para>
+      particular detailed clinical model exists within a family of isosemantic siblings. </para>
     <section>
       <title> Assumptions</title>
       <para>ANF provides a precise, consistent semantic data and terminology specification that is
         comparable and sharable between multiple care providers, health enterprises, and
         standards-based Healthcare Information Technology (HIT). </para>
-      <para>ANF
-        <?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies"?>relies
-        on highly post-coordinated<?oxy_comment_end?> compositional terminologies to provide greater
-        content coverage
-        <?oxy_comment_start author="kec" timestamp="20190721T123231-0700" comment="than can be achieved by relying only on pre-coordinated concepts. "?>in
-        a complete and more consistent way than terminology content that is restricted to relying on
-        pre-coordinated concepts<?oxy_comment_end?>. While post-coordinated compositional
+      <para>ANF relies on highly post-coordinated compositional terminologies to provide greater
+        content coverage in a complete and more consistent way than terminology content that is
+        restricted to relying on pre-coordinated concepts. While post-coordinated compositional
         terminologies can be expressively powerful, they may generate expressions whose equivalency
         cannot be easily determined. ANF can help manage aggregate post-coordinated content in a
         normalized manner with respect to the content and semantics with the same representational
@@ -265,191 +229,100 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
         for analysis. </para>
     </section>
     <section>
-      <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. "?>Approach:
-        Separation of Concerns<?oxy_comment_end?></title>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T123625-0700" comment="Add a paragraph that describes current challenges lack of separation of concerns creates. Use FHIR observation resource as an example, with fields that overlap with SNOMED model. Then transition to Seperation of Concerns as a solution to the problem. "?>Increased<?oxy_comment_end?>
-        reliance on computerized health records, including Electronic Health Records Systems,
-        requires standardized medical terminology to encode health information consistently across
-        systems and enterprises.
-        <?oxy_comment_start author="kec" timestamp="20190721T123842-0700" comment="Add why simply mapping won&apos;t solve the problem, and we need to rely on a more comprehensive approach of statement to model transformation. Maybe anticipate the model transformation section. "?>Clinicians
-        require not only objective quantitative measurements (e.g. 90 beats per minute for a
-        patient's pulse) but also contextual or procedural context (e.g. pulse oximetry, manual)
-        about past observations or requests for future interventions. While two quantitative
-        measurements may be the same, the procedural information could indicate meaningful semantic
-        differences and lead to different clinical interpretation and treatment. As information is
-        exchanged across systems, the solution requires a common understanding of data and a method
-        to support knowledge representation and clinical decision rules based on a common
-        terminology and statements. Each component must address an aspect and, together they need to
-        address the requirements of clinicians.<?oxy_comment_end?></para>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T124118-0700" comment="&quot;Breaking up the solution&quot; is a bad phrase... Humpty Dumpty had a great fall.. All the [etc] could not put him back togehter again. There is a potential fear that this will make things more complicated, and make it difficult to fit all the pieces. 
-
-Try &quot;Separating concerns across architectural layers is a foundational...&quot;"?>Breaking
-        up the solution<?oxy_comment_end?> across components or sections with a specific purpose is
-        a foundational design principle for
-        <?oxy_comment_start author="kec" timestamp="20190721T124700-0700" comment="Not just software develop. &quot;complex system development&quot; "?>software
-        development<?oxy_comment_end?>: Separation of Concerns. It allows a complete system to be
-        subdivided into distinct sections or components with well-defined functionality and
-        dependencies. If successful, this approach allows individual sections to be able to be
-        reused, as well as worked on and updated independently to address new requirements and use
-        cases. This is especially useful and important in a medical context given how many different
-        health information and clinical terminology projects are ongoing at any given time. Efforts
-        are often uncoordinated and led by disparate and unrelated standards development
-        organizations. </para>
-      <para><?oxy_comment_start author="timowilliams" timestamp="20190718T170533-0500" comment="Moved from Modeling Guidelines.  Please feel free to keep or remove as much as needed."?><emphasis
-          role="bold"
-<<<<<<< HEAD
-        /><?oxy_comment_start author="Ioana" timestamp="20190721T222318-0400" comment="We should not be quoting Wikipedia since it can change. I would like to remove this section because it duplicates the paragraph above."?>As
-        defined by Wikipedia [1]:<?oxy_comment_end?> Separation of Concerns (SoC) is a design
-=======
-        /><?oxy_comment_start author="kec" timestamp="20190721T125217-0700" comment="Remove &quot;as defined by Wikipedia&quot;, just wordy, and nit active voice. Move the reference [1] to the end of the sentence, and use the bibliography feature. 
-"?>As
-        defined by Wikipedia<?oxy_comment_end?> [1]: Separation of Concerns (SoC) is a design
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
-        principle for separating a computer program into distinct sections, such that each section
-        addresses a separate concern.
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:
-&quot;Clearly, explained this way, this design principle is flawed because of regress to each individual symbol in the code.
-"?>A
-        concern is a set of information that affects the code of a computer program. A concern can
-        be as general as the details of the hardware the code is being optimized for, or as specific
-        as the name of a class to instantiate.<?oxy_comment_end?> A program that embodies SoC well
-        is called a modular program. Modularity, and hence separation of concerns, is achieved by
-        encapsulating information inside a section of code that has a well-defined interface.
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T111108-0400" comment="Comment from WC:
-With the drawback of hiding also certain assumptions that a potential re-user should be aware of to assess whether the module really does what it suggests it does.
-"?>Encapsulation
-        is a means of information hiding.<?oxy_comment_end?> Layered designs in information systems
-        are another embodiment of separation of concerns (e.g., presentation layer, business logic
-        layer, data access layer, persistence layer). The value of separation of concerns is
-        simplifying development and maintenance of computer programs. When concerns are
-        well-separated, individual sections can be reused, as well as developed and updated
-        independently.
-        <?oxy_comment_start author="kec" timestamp="20190721T125358-0700" comment="Wordy. &quot;Of special value&quot;, rephrase strting with the special value, and then say in a way that the reader understands that it is special, not just taking your word for it. 
-"?>Of
-        special value is the ability to later improve or modify one section of code without having
-        to know the details of the other sections, and without having to make corresponding changes
-        to those sections.<?oxy_comment_end?></para>
-      <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111123-0400" comment="Comment from WC:
-Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semantic concept’, and ‘class’.
-"?>Attributes
-        that describe specific semantic concepts should be grouped together into a single class and
-        not be spread across a number of classes .<?oxy_comment_end?>
-        <?oxy_comment_start author="kec" timestamp="20190721T125458-0700" comment="Explain tight coupling better if you choose to retain it. Consider eliminating if it does not add sufficient value to better explain it. "?>Doing
-        the latter leads to tight coupling between classes. Doing the former leads to better
-        decomposition of a potentially complex domain<?oxy_comment_end?>.<?oxy_comment_end?></para>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T131643-0700" comment="I edited this one directly to demonstrate the linking mechanism. "?><xref
-          linkend="SOC-KA"/> shows how a layered knowledge architecture can  enable a separation of
-        concerns.<?oxy_comment_end?></para>
+      <title>Approach: Separation of Concerns</title>
+      <para>Increased reliance on computerized health records, including Electronic Health Records
+        Systems, requires standardized medical terminology to encode health information consistently
+        across systems and enterprises. Clinicians require not only objective quantitative
+        measurements (e.g. 90 beats per minute for a patient's pulse) but also contextual or
+        procedural context (e.g. pulse oximetry, manual) about past observations or requests for
+        future interventions. While two quantitative measurements may be the same, the procedural
+        information could indicate meaningful semantic differences and lead to different clinical
+        interpretation and treatment. As information is exchanged across systems, the solution
+        requires a common understanding of data and a method to support knowledge representation and
+        clinical decision rules based on a common terminology and statements. Each component must
+        address an aspect and, together they need to address the requirements of clinicians.</para>
+      <para>Breaking up the solution across components or sections with a specific purpose is a
+        foundational design principle for software development: Separation of Concerns. It allows a
+        complete system to be subdivided into distinct sections or components with well-defined
+        functionality and dependencies. If successful, this approach allows individual sections to
+        be able to be reused, as well as worked on and updated independently to address new
+        requirements and use cases. This is especially useful and important in a medical context
+        given how many different health information and clinical terminology projects are ongoing at
+        any given time. Efforts are often uncoordinated and led by disparate and unrelated standards
+        development organizations. </para>
+      <para>The following diagram shows how the concept of Separation of Concerns can be applied to
+        the problem systematically:</para>
       <para/>
-      <figure xml:id="SOC-KA">
+      <figure>
         <title>Separation of Concerns: Knowledge Architecture</title>
-<<<<<<< HEAD
         <mediaobject role="bordered">
           <imageobject>
-            <imagedata fileref="images/SoC.png" scale="45" align="center" />
-=======
-        
-        
-        <mediaobject>
-          <imageobject>
-            <?oxy_comment_start author="kec" timestamp="20190721T130116-0700" comment="Move the &quot;Each architectural layer...&quot; to the caption (I demonstrated how to do it here)
-
-Not sure how ANF leads to agile improvement. Possibly just remove, and simplify diagram, 
-
-Add to the Shared Module System description: &quot;Shared version and module system&quot; &quot;Provides the structural foundation that supports change over time, modularity, and knowledge representation. &quot;
-
-Remove the definition from the figure, and link to glossary where appropriate. "?>
-            <imagedata fileref="images/SoC.png" scale="50"/><?oxy_comment_end?>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
+            <imagedata fileref="images/SoC.png" scale="45" align="center"/>
           </imageobject>
         </mediaobject>
-        <caption>
-          <para><emphasis>Separation of concerns is an architectural design principle, whereby a
-              system is divided into distinct sections, such that each section can address separate
-              concerns. In this case, each architectural layer addresses separate concerns that can
-              make use of the architecture layers below.</emphasis></para>          
-        </caption>
       </figure>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T130509-0700" comment="Change from using emphasis, to using glossary link. Start out active voice. &quot;The Architectural Foundation layer is responsible for defining how object identity, versioning, modularity, and symbolic knowledge is represented&quot;"?><emphasis
-          role="bold">Architectural Foundation</emphasis> – Provides an interoperable, integrated
-        common terminology model which concerns (a) the foundation and building blocks of the common
-        model; (b) how the repeatable transformation process of disparate standards into the common
-        model promotes interoperability with other environments; and (c) how the modules of the
-        architecture are tightly version controlled over time. <?oxy_comment_end?></para>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. "?>
+      <para><emphasis role="bold">Architectural Foundation</emphasis> – Provides an interoperable,
+        integrated common terminology model which concerns (a) the foundation and building blocks of
+        the common model; (b) how the repeatable transformation process of disparate standards into
+        the common model promotes interoperability with other environments; and (c) how the modules
+        of the architecture are tightly version controlled over time. </para>
+      <para>
         <emphasis role="bold">Terminology Knowledge</emphasis> – Structured sets of medical terms
         and codes that define concepts of interest, including descriptions, dialects, language, and
         semantic hierarchy. This layer also incorporates logical operators and description logic
-        such as ‘representation of absence’.<?oxy_comment_end?>
-      </para>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T130821-0700" comment="The Statement Model layer is responsible for defining how terminology concepts can be combined to create a statement. "?><emphasis
-          role="bold">Statement Model</emphasis> – Packaging of the terminology content in
-        standardized data structures so that they can be readily consumed by the information
+        such as ‘representation of absence’. </para>
+      <para><emphasis role="bold">Statement Model</emphasis> – Packaging of the terminology content
+        in standardized data structures so that they can be readily consumed by the information
         retrieval process for analysis. Within the data structures, additional detail to describe
         subject, numerical, and categorical information related to concepts can be added in this
-        layer. <?oxy_comment_end?></para>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T130846-0700" comment="The Assertional Knowledge layer is responsible for..."?><emphasis
-          role="bold">Assertional Knowledge</emphasis> – Translation of guidelines to assist
-        clinical decision making. This includes facts and knowledge upon which concepts and
+        layer. </para>
+      <para><emphasis role="bold">Assertional Knowledge</emphasis> – Translation of guidelines to
+        assist clinical decision making. This includes facts and knowledge upon which concepts and
         combinations of concepts can assimilate into protocols.</para>
-      <para><?oxy_comment_end?><emphasis role="bold"
-          ><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..."?>Procedural
-          Knowledge</emphasis> – Information about standard ways to carry out specific procedures as
-        well as other procedural guidelines, e.g. treatment protocols for diseases and order sets
-        focused on particular patient situations. Procedural knowledge, together with assertional
-        knowledge, enables clinical decision support, quality measurement, and supports patient
-        safety. This layer integrates the architectural and terminology layers, incorporates the
-        statement model for information retrieval, and uses the assertional layer to apply
-        rules.<?oxy_comment_end?></para>
+      <para><emphasis role="bold">Procedural Knowledge</emphasis> – Information about standard ways
+        to carry out specific procedures as well as other procedural guidelines, e.g. treatment
+        protocols for diseases and order sets focused on particular patient situations. Procedural
+        knowledge, together with assertional knowledge, enables clinical decision support, quality
+        measurement, and supports patient safety. This layer integrates the architectural and
+        terminology layers, incorporates the statement model for information retrieval, and uses the
+        assertional layer to apply rules.</para>
       <para>Examining a clinical procedure for controlling hypertension illustrates each of the
         layers of the informatics architectural separation of concerns. <itemizedlist>
           <listitem>
             <para>At the Terminology Knowledge layer, there may be various codes and terms from
-              disparate source terminologies to define the hypertension concept.
-              <?oxy_comment_start author="kec" timestamp="20190721T171437-0700" comment="Lets not mention ICD in the ANF ballot. ICD codes more complex, and generally require rules to represent, and are not directly represented in the terminology layer at this time. "?>For
-              example, the concept “essential hypertension” is defined by the ICD-10 CM code I10
-              <?oxy_comment_end?>and 59621000 in SNOMED CT. Ideally, these overlapping codes and
-              terms would be oriented to the same parent concept during the transformation and
-              integration process at
-              <?oxy_comment_start author="kec" timestamp="20190721T171552-0700" comment="The foundational layer is just data structures. Terminology integration happens at the terminology layer. "?>the
-              Foundational layer <?oxy_comment_end?>(e.g., Solor).
-              <?oxy_comment_start author="kec" timestamp="20190721T171649-0700" comment="Avoid value set authority center discussion. "?>Furthermore,
-              any updates over time to code sets or value sets that define hypertension (in the
-              NLM’s Value Set Authority Center for instance) would be maintained by continuous
-              integration at the Architectural Foundation layer.<?oxy_comment_end?></para>
+              disparate source terminologies to define the hypertension concept. For example, the
+              concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in
+              SNOMED CT. Ideally, these overlapping codes and terms would be oriented to the same
+              parent concept during the transformation and integration process at the Foundational
+              layer (e.g., Solor). Furthermore, any updates over time to code sets or value sets
+              that define hypertension (in the NLM’s Value Set Authority Center for instance) would
+              be maintained by continuous integration at the Architectural Foundation layer.</para>
           </listitem>
           <listitem>
-            <para><?oxy_comment_start author="kec" timestamp="20190721T171955-0700" comment="The FHIR observation resource is not ANF. Can be considered another CIF, and we would need a standard transform. For here, just say that the statement model layer provide a standard means for representing quantatative and existential measurement... Probably want to replace categorical data with existential measurement throughout. "?>Moving
-              to the Statement Model layer, blood pressure measurement values may be packaged as a
-              numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data (e.g.,
-              pregnancy induced hypertension vs. renal hypertension) within a standard data
-              structure to facilitate information exchange or retrieval, such as within a FHIR
-              Observation Resource. <?oxy_comment_end?></para>
+            <para>Moving to the Statement Model layer, blood pressure measurement values may be
+              packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical
+              data (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard
+              data structure to facilitate information exchange or retrieval, such as within a FHIR
+              Observation Resource. </para>
           </listitem>
           <listitem>
-            <para><?oxy_comment_start author="kec" timestamp="20190721T171053-0700" comment="Assertional knowledge can&apos;t contain conditional branches, so can&apos;t represent workflow (implied branching), and can&apos;t represent rules &quot;if-then-else&quot;"?>At
-              the Assertional Knowledge layer, guidelines such as the recommendation to control
-              hypertension to under 140/90 mmHg might be translated into a clinical workflow
+            <para>At the Assertional Knowledge layer, guidelines such as the recommendation to
+              control hypertension to under 140/90 mmHg might be translated into a clinical workflow
               facilitated by Health Information Technology (HIT). If HIT is involved with programmed
               Clinical Decision Support, there may be additional rules to suggest hypertension
               medications (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid
-              medication contraindications.<?oxy_comment_end?>
-            </para>
+              medication contraindications. </para>
           </listitem>
           <listitem>
-            <para><?oxy_comment_start author="kec" timestamp="20190721T171119-0700" comment="Procedural knowledge includes if-then-else. "?>Finally,
-              at the Procedural Knowledge layer, there may be a treatment protocol for different
-              kinds of hypertension, including the considerations of, e.g. patient age,
+            <para>Finally, at the Procedural Knowledge layer, there may be a treatment protocol for
+              different kinds of hypertension, including the considerations of, e.g. patient age,
               co-morbidities etc., which can be generated by an electronic clinical decision support
-              system (Statement + Assertional layers).<?oxy_comment_end?></para>
+              system (Statement + Assertional layers).</para>
           </listitem>
         </itemizedlist></para>
-      <para>ANF is intended to achieve a clean separation of concerns, especially
-        <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
-
-Yes, ANF is for URU..."?>in
-        regard to an isosemantic representation in the Statement Model layer<?oxy_comment_end?>. ANF
-        can help the modeling of clinical statements achieve the following design features: </para>
+      <para>ANF is intended to achieve a clean separation of concerns, especially in regard to an
+        isosemantic representation in the Statement Model layer. ANF can help the modeling of
+        clinical statements achieve the following design features: </para>
       <itemizedlist>
         <listitem>
           <para>Understandable: The meaning of a clinical statement can be understood, without
@@ -473,57 +346,7 @@ Yes, ANF is for URU..."?>in
       has relied on model-driven approaches requiring a separation of concerns along with
       conceptual, logical, and implementation perspectives.</para>
     <section>
-<<<<<<< HEAD
       <title>HL7 Service-Aware Interoperability Framework </title>
-=======
-      <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? "?>
-      <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
-      </title>
-      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
-        statement: </para>
-      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
-        is:</para>
-      <para>An expression of a discrete item of clinical, clinically-related or public health
-        information that is recorded because of its relevance to the care of a patient or other
-        entities. Clinical or public health information can be expressed with different levels of
-        granularity and therefore the extent and detail conveyed in a single statement may vary. To
-        be regarded as a Clinical Statement, a concept must be associated with a patient or other
-        entity in a manner which makes clear:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Its temporal context</para>
-        </listitem>
-        <listitem>
-          <para>Its relationship to the entity or entities</para>
-        </listitem>
-      </itemizedlist>
-      <para>In the case of an observation, its
-        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="50"?>mood<?oxy_comment_end?><?oxy_comment_end mid="50"?>
-        and presence, absence or value</para>
-      <para>In the case of a procedure, its mood and status</para>
-      <para>This clarity may be achieved by:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Explicit representation; or</para>
-        </listitem>
-        <listitem>
-          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
-            appropriate defaults." </para>
-          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
-            1</para>
-        </listitem>
-      </itemizedlist>
-      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
-        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
-        Statement Model is a polymorphic model: it can represent observations, procedures,
-        encounters, public health reports, supply, medications, exposure, and derivations of
-        clinical acts. I</para>
-    </section>
-    <section>
-      <title><?oxy_comment_start author="kec" timestamp="20190721T172505-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? "?>HL7
-        Service-Aware Interoperability Framework<?oxy_comment_end?>
-      </title>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
       <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
@@ -637,7 +460,6 @@ Yes, ANF is for URU..."?>in
         clinical information models using a common modeling formalism. CIMI intends to improve the
         interoperability of healthcare information systems through shared detailed clinical
         information models that can be used to generate platform-specific model specifications such
-<<<<<<< HEAD
         as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, <link
           xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> DCMs, or
         Intermountain CEMs. CIMI models are grouped into semantically equivalent (or ‘isosemantic’)
@@ -649,20 +471,6 @@ Yes, ANF is for URU..."?>in
         Clinical Statement can be used to represent the following statements made about a patient.
         This can be the statement of a condition being present, a request for a procedure to be
         done, the results of lab tests or the patient’s family history of cancer. </para>
-=======
-        as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
-        Intermountain CEMs.
-        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? "?>CIMI
-        models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
-        clinical models<?oxy_comment_end?>, which capture the same clinical meaning using different
-        combinations of pre and post-coordinated concepts and corresponding information model
-        structure. The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A
-        CIMI Clinical Statement represents structured electronic communication made about a patient
-        typically documented as an 'entry' in the patient record. For example, CIMI Clinical
-        Statement can be used to represent the following statements made about a patient. This can
-        be the statement of a condition being present, a request for a procedure to be done, the
-        results of lab tests or the patient’s family history of cancer. </para>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
     </section>
   </section>
 </chapter>
