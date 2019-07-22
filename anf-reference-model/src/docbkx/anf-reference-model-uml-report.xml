@@ -3,7 +3,6 @@
     type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
-<<<<<<< HEAD
         <title>ANF UML Model</title>
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
             </emphasis></emphasis>is logical model and uses  Object Management Group (OMG) Unified
@@ -19,20 +18,6 @@
             requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold"
                 >HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
             RESULT</emphasis>).</para>
-=======
-    <title><?oxy_comment_start author="kec" timestamp="20190721T191135-0700" comment="Remove redundant enclosure, and promote child sections. "?>ANF
-        Reference Model<?oxy_comment_end?></title>
-    <para/>
-    <section>
-        <title>ANF Reference Model</title>
-        <para>The ANF Reference Model is logical model and uses UML 2.0 notation to describe the
-            structure of normalized clinical statement that uses ANFStatement to describe clinical
-            statements for computational analysis. This logical model may be implemented using any
-            programming language, database technology, or interoperability specification (e.g. FHIR)
-            suitable for analysis. It normalizes the diverse approaches and methodologies that in
-            use across the industry and provides a uniform representation of data needed for
-            analysis. </para>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
         <figure>
             <title>ANFStatement Structure</title>
             <mediaobject role="bordered">
@@ -47,30 +32,18 @@
                 contains the <emphasis role="bold">'topic' </emphasis>which describes what this
                 statement is about, and the <emphasis role="bold">'circumstance' </emphasis>which
                 will contain either request or result information regarding the <emphasis
-                    role="bold">'topic'</emphasis>.
-            </para>
-
-
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="In table, add ‘Property’ header, maybe abbreviate ‘Multiplicity’ to gain some space for Property."?><?oxy_comment_end?>
-
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="subjectOfInformation too long for cell."?><?oxy_comment_end?>
-
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Property name and type inconsistent break point, maybe force break so they are all the same?"?><?oxy_comment_end?>
-
-             <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="In topic row, Principle 2 is not formatted correctly"?><?oxy_comment_end?>
-
+                    role="bold">'topic'</emphasis>.</para>
             <informaltable>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1" colwidth="1.89*"/>
                     <colspec colnum="2" colname="col2" colwidth="1*"/>
                     <colspec colnum="3" colname="col3" colwidth="4.4*"/>
                     <thead>
-                        <?oxy_comment_start author="kec" timestamp="20190721T191238-0700" comment="Do we need this table if we have the UML? If the intent is to explain the UML, I&apos;d recommend in prose, rather than in a table. "?>
                         <row>
                             <entry/>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
-                        </row><?oxy_comment_end?>
+                        </row>
                     </thead>
                     <tbody>
                         <row>
@@ -99,7 +72,7 @@
                                         <link linkend="measureClass">Measure</link></emphasis></emphasis>.</para>
                                 <para>For example the date of 2019-07-09T00:12:31+00:00 would be
                                     represented as Unix Epoch time as 1562631151 seconds :</para>
-                                <itemizedlist spacing="compact">
+                                <itemizedlist>
                                     <listitem>
                                         <para>interval.lowerBound = 1562631151</para>
                                     </listitem>
@@ -219,9 +192,8 @@
                                 <para>The topic is the central component of clinical statements. The
                                     following are proposed principles for the topic of an
                                     ANFStatement.</para>
-                                <para><?oxy_comment_start author="kec" timestamp="20190721T191425-0700" comment="Can these be moved out into stand-alone rules and body text? "?><emphasis
-                                        role="bold">Principle 1: </emphasis>The topic defines the
-                                    action being performed or requested.</para>
+                                <para><emphasis role="bold">Principle 1: </emphasis>The topic
+                                    defines the action being performed or requested.</para>
                                 <para><emphasis role="bold">Principle 2: </emphasis>The topic has to
                                     be able to exist on its own and still retain original intent and
                                     clarity of</para>
@@ -229,7 +201,7 @@
                                 <para><emphasis role="bold">Principle 3: </emphasis>The topic
                                     includes what is being requested, measured or observed.</para>
                                 <para><emphasis role="bold">Principle 4: </emphasis>Each clinical
-                                    statement may only have one topic.</para><?oxy_comment_end?>
+                                    statement may only have one topic.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -252,8 +224,6 @@
                                     to – include quantitative or qualitative results, e.g. “3 dot
                                     blot hemorrhages” or “Hepatitis A antibody positive”.</para>
                                 <para/>
-<?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="I don't think qualitative results are possible, and quantitative result is mandatory."?><?oxy_comment_end?>
-
                             </entry>
                         </row>
                         <row>
@@ -276,8 +246,6 @@
         </section>
         <section>
             <title> Circumstance </title>
-
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Is the result a HOW, WHY, or WHEN, or is it something different."?><?oxy_comment_end?>
 
             <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis
                     role="bold">WHY, WHEN, and with what RESULT </emphasis>a requested or performed
@@ -306,27 +274,17 @@
                 <title>CircumstanceChoice </title>
                 <para>This class provides a exclusive choice of circumstances that may chosen when
                     an ANFStatement is instantiated:</para>
-<<<<<<< HEAD
                 <itemizedlist>
-=======
-
-                <itemizedlist spacing="compact">
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                     <listitem>
                         <para role="underline"><link
                                 linkend="performanceClass"
                             >PerformanceCircumstance</link></para>
                     </listitem>
                     <listitem>
-<<<<<<< HEAD
                         
                         <para role="underline"><link
                                 linkend="requestClass"
                                 >RequestCircumstance</link></para>
-=======
-                        <para>
-                            <emphasis role="underline">RequestCircumstance</emphasis></para>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                     </listitem>
                     <listitem>
                         <para role="underline"><link
@@ -342,7 +300,6 @@
                     circumstances associated with a clinical statement.</para>
                 <informaltable>
                     <tgroup cols="3">
-<<<<<<< HEAD
                     <colspec colnum="1" colname="col1" colwidth="1.09*"/>
                     <colspec colnum="2" colname="col2" colwidth="1*"/>
                     <colspec colnum="3" colname="col3" colwidth="3.16*"/>
@@ -391,59 +348,6 @@
                         </row>
                     </tbody>
                 </tgroup>
-=======
-                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
-                        <colspec colnum="2" colname="col2" colwidth="1*"/>
-                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
-                        <thead>
-                            <row>
-                                <entry/>
-                                <?oxy_comment_start author="kec" timestamp="20190721T191337-0700" comment="Do we need this table if we have UML? Maybe some of the notes should be rules? "?>
-                                <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold"
-                                >Notes</emphasis></entry><?oxy_comment_end?>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">timing</emphasis> Measure</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para><emphasis role="bold">WHEN </emphasis>a requested action
-                                        should be performed or <emphasis role="bold">WHEN
-                                        </emphasis>an observed finding or disorder was
-                                        present</para>
-                                    <para>or absent. Timing is used to capture a time or time range
-                                        for</para>
-                                    <para>• Requests for action at a future time</para>
-                                    <para>• Performance of action, which has taken place in the past
-                                        (including “History of X….)</para>
-                                    <para>• Performance of action that hasn't taken place</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">purpose</emphasis>
-                                        LogicalExpression</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...*]</para>
-                                </entry>
-                                <entry>
-                                    <para>This data element describes WHY a procedure was requested
-                                        or performed in a post-coordinated expression, based on two
-                                        possible procedures:</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                 </informaltable>
             </section>
             <section xml:id="requestClass">                
@@ -457,15 +361,9 @@
                     about the request will be documented in this clinical statement, including
                     information about details relating to the request, such as patient must fast for
                     12 hours before having a lipids blood test.</para>
-<<<<<<< HEAD
                 <para><emphasis role="bold"><emphasis role="italic"
                     >Examples</emphasis></emphasis>:</para>
                 <itemizedlist>
-=======
-                <para>Examples of Request clinical statements:</para>
-
-                <itemizedlist spacing="compact">
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                     <listitem>
                         <para>Request for Rheumatoid factor 1 time routine</para>
                     </listitem>
@@ -688,7 +586,6 @@
                                 </entry>
                             </row>
                             <row>
-                                <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Should have some Notes text for all properties."?><?oxy_comment_end?>
                                 <entry>
                                     <para><emphasis role="bold">participant</emphasis>
                                         Reference</para>
@@ -742,7 +639,6 @@
             </section>
         </section>
         <section>
-<<<<<<< HEAD
             <title> Data Structures </title>
             <para>The following are data structures used to represent an <emphasis role="underline"
                         ><link linkend="ANFStatement"
@@ -750,28 +646,6 @@
                 specific to ANF. This model references a set of logical structures to represent
                 unique identifiers (i.e. Identifier, Expresson) and primitive types (boolean,
                 float). </para>
-=======
-            <title> Result </title>
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Instead of 'in this class diagram', use a figure reference."?><?oxy_comment_end?>
-
-            <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Clearly state the unique nature of ANF that coded results are not allowed and explain why."?><?oxy_comment_end?>
-
-
-            <para>A unique aspect of the ANF Model is that all measures and results are numeric
-                ranges. An important point to notice in this class diagram is that the ANF Model
-                promotes a normalized representation of observation or intervention results. </para>
-            <para>This approach reduces data retrieval difficulties by eliminating the potential for
-                multiple differing representations of the same clinical statement. For example, with
-                coded results there are multiple potential methods to represent eye color that
-                complicate data retrieval. The Topic could be a Finding refined by an Observable
-                (Iris finding->Interprets = Color of iris) or a Finding with no refinement (Finding
-                of color of iris). In both of these cases the Result would be a qualifier of Blue
-                color. The ANF Statement would represent Eye color using the Blue iris Finding as
-                the Topic and the Result would be Present, represented as interval.lowerBound =1,
-                interval.upperBound=INF.</para>
-
-                <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="The 3rd option is .. a topic of Blue Eye Color with a coded result of Present."?><?oxy_comment_end?>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
             <figure>
                 <title>Data Structures</title>
                 <mediaobject role="bordered">
@@ -780,7 +654,6 @@
                     </imageobject>
                 </mediaobject>
             </figure>
-<<<<<<< HEAD
             <section xml:id="measureClass">
                 <title>Measure </title>
                 <para>This class captures measurable elements of clinical statements , e.g. the
@@ -807,175 +680,6 @@
                     </listitem>
                 </itemizedlist>
 
-=======
-            <section>
-                <title>ResultChoice </title>
-                <para>This class specifies a choice of <emphasis role="underline"
-                        >ObservationResult</emphasis> or <emphasis role="underline">
-                        InterventionResult</emphasis>. </para>
-            </section>
-            <section>
-                <title>InterventionResult </title>
-                <para>This class specifies the result of intervention using both a measure and a
-                    coded <emphasis role="italic">status.</emphasis></para>
-                <para>For example, "Insulin placed on hold 24 hours prior to catheterization" would
-                    have a status of "On hold". </para>
-                <informaltable>
-                    <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
-                        <colspec colnum="2" colname="col2" colwidth="1*"/>
-                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
-                        <thead>
-                            <row>
-                                <entry/>
-                                <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold">Notes</emphasis></entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">status</emphasis>
-                                        LogicalExpression</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>This is a coded value representing the current status of
-                                        the intervention.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">measure</emphasis> Measure</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>Intervention result as a measure. </para>
-                                    <para/>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </informaltable>
-            </section>
-            <section>
-                <title>ObservationResult </title>
-                <para>This class represents an observation result. </para>
-                <informaltable>
-                    <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
-                        <colspec colnum="2" colname="col2" colwidth="1*"/>
-                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
-                        <thead>
-                            <row>
-                                <entry/>
-                                <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold">Notes</emphasis></entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">healthRisk</emphasis>
-                                        LogicalExpression</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>Health Risk is used to flag a result with coded values
-                                        such as 'low', 'normal', high', and</para>
-                                    <para>'critical'. </para>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">normalRange</emphasis>
-                                        Interval</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>Normal Range is the interval of values that are
-                                        normal.</para>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>refers to "normal" for the patient with these
-                                                conditions.</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                    <para/>
-                                </entry>
-                            </row>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">measure</emphasis> Measure</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>It species the measurable result.</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </informaltable>
-            </section>
-        </section>
-        <section>
-            <title> Data Structures </title>
-            <para>The following are data structures used to represent an <emphasis role="underline"
-                    >ANFStatement</emphasis>. This section describes the data structures specific to
-                ANF. This model references a set of logical structures to represent unique
-                identifiers (i.e. Identifie, Expresson) and primitive types (boolean, float). </para>
-            <figure>
-                <title>Data Structures used to represent an ANFStatement</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="images/clip_image008_1193487896.png" scalefit="1"
-                            width="100%" contentdepth="100%"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <section>
-                <title>Interval </title>
-                <para>An interval value data type (or “interval value”) formally represents a
-                    numeric interval between two nonnegative real numbers. The interval can be open
-                    or closed.</para>
-                    <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="If non-negative, how can one express temperatures below zero?"?><?oxy_comment_end?>
-
-
-                <para>The interval value data type provides a single way to represent both
-                    “presence” or "absence" values and numeric values for a phenomenon. In general,
-                    the interval value represents the numeric range within which the observed value
-                    of a phenomenon occurs. Note that this formalism allows both exact values and
-                    ranges of values to be expressed. In case that the beginning and end point of an
-                    interval are the same value,, the meaning is that the value of the phenomenon is
-                        <emphasis role="underline">exactly </emphasis>that value. </para>
-
-                <para>The interval value data type provides a single way to represent both
-                        “<emphasis role="bold">presence</emphasis>” values and numeric values for a
-                    phenomenon. In general, the interval value represents the numeric range within
-                    which the observed value of a phenomenon occurs. Note that this formalism allows
-                    both exact values and ranges of values to be expressed.</para>
-
-                    <?oxy_comment_start author="jcoyle" timestamp="20190720T100827-0400" comment="Previous sentence was already used in the previous paragraph."?><?oxy_comment_end?>
-
-                <para>In the special case that the beginning and end point of an interval are the
-                    same number, n, the meaning is that the value of the phenomenon is exactly
-                    n.</para>
-                <para><emphasis role="italic">[5,5] : exactly 5 ; [0,0] : exactly
-                    0</emphasis></para>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                 <para>In the special case that the beginning of the interval is a number, n, and the
                     end point is INF (infinity), the meaning is that the value of the phenomenon is
                     > n or >=n, depending on whether the interval is open or closed.</para>
@@ -1271,7 +975,6 @@
             </section>
             <section  xml:id="logicalExpressionClass">
                 <title>LogicalExpression </title>
-<<<<<<< HEAD
                 <para>This class represents is a wrapper for logical expression.</para>
                 <informaltable>
                     <tgroup cols="3">
@@ -1309,50 +1012,13 @@
                         </row>
                     </tbody>
                 </tgroup>
-=======
-                <para>This class is a wrapper for logical expression.</para>
-
-
-                <informaltable>
-                    <tgroup cols="3">
-                        <colspec colnum="1" colname="col1" colwidth="1.3*"/>
-                        <colspec colnum="2" colname="col2" colwidth="1*"/>
-                        <colspec colnum="3" colname="col3" colwidth="3.85*"/>
-                        <thead>
-                            <row>
-                                <entry/>
-                                <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                                <entry><emphasis role="bold">Notes</emphasis></entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>
-                                    <para><emphasis role="bold">expression</emphasis>
-                                        Expression</para>
-                                </entry>
-                                <entry>
-                                    <para>[1...1]</para>
-                                </entry>
-                                <entry>
-                                    <para>Logical expression could be represented using FHIR
-                                        Expresssion structure or a similar standard-based syntax
-                                        ((e.g. SNOMED Expression Constraint Language - ECL).</para>
-                                    <para><emphasis role="bold">References: </emphasis></para>
-                                    <para>https://confluence.ihtsdotools.org/display/DOCECL</para>
-                                    <para/>
-                                </entry>
-                            </row>
-                        </tbody>
-                    </tgroup>
->>>>>>> 43c72491058d8038b1f8537d8ae40f728bcc9f0b
                 </informaltable>
             </section>
         </section>
         <section>
             <title> References </title>
             <para>A clinical statement references other information manage by a system:</para>
-            <itemizedlist spacing="compact">
+            <itemizedlist>
                 <listitem>
                     <para>references to patient/records</para>
                 </listitem>
@@ -1373,7 +1039,7 @@
                 <title>Participant </title>
                 <para>This class specifies the role/specialties/services that a practitioner may
                     perform relative to the ANFStatement:</para>
-                <itemizedlist spacing="compact">
+                <itemizedlist>
                     <listitem>
                         <para>the author</para>
                     </listitem>
