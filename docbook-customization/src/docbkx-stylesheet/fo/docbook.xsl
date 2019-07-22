@@ -357,9 +357,13 @@ so these templates do nothing-->
 
 <!-- Border for media object/figure -->
   <xsl:template match="d:mediaobject">
-    <fo:block border="0.5pt solid black">
-      <xsl:apply-imports/>
-    </fo:block>
+    <xsl:choose>
+      <xsl:when test="@role='bordered'">
+        <fo:block border="0.5pt solid gray">
+          <xsl:apply-imports/>
+        </fo:block>
+      </xsl:when>
+    </xsl:choose>    
   </xsl:template>
 
 <!-- You can customize the header content with this template -->
