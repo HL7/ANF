@@ -397,39 +397,51 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         layers of the informatics architectural separation of concerns. <itemizedlist>
           <listitem>
             <para>At the Terminology Knowledge layer, there may be various codes and terms from
-              disparate source terminologies to define the hypertension concept. For example, the
-              concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in
-              SNOMED CT. Ideally, these overlapping codes and terms would be oriented to the same
-              parent concept during the transformation and integration process at the Foundational
-              layer (e.g., Solor). Furthermore, any updates over time to code sets or value sets
-              that define hypertension (in the NLM’s Value Set Authority Center for instance) would
-              be maintained by continuous integration at the Architectural Foundation layer.</para>
+              disparate source terminologies to define the hypertension concept.
+              <?oxy_comment_start author="kec" timestamp="20190721T171437-0700" comment="Lets not mention ICD in the ANF ballot. ICD codes more complex, and generally require rules to represent, and are not directly represented in the terminology layer at this time. "?>For
+              example, the concept “essential hypertension” is defined by the ICD-10 CM code I10
+              <?oxy_comment_end?>and 59621000 in SNOMED CT. Ideally, these overlapping codes and
+              terms would be oriented to the same parent concept during the transformation and
+              integration process at
+              <?oxy_comment_start author="kec" timestamp="20190721T171552-0700" comment="The foundational layer is just data structures. Terminology integration happens at the terminology layer. "?>the
+              Foundational layer <?oxy_comment_end?>(e.g., Solor).
+              <?oxy_comment_start author="kec" timestamp="20190721T171649-0700" comment="Avoid value set authority center discussion. "?>Furthermore,
+              any updates over time to code sets or value sets that define hypertension (in the
+              NLM’s Value Set Authority Center for instance) would be maintained by continuous
+              integration at the Architectural Foundation layer.<?oxy_comment_end?></para>
           </listitem>
           <listitem>
-            <para>Moving to the Statement Model layer, blood pressure measurement values may be
-              packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical
-              data (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard
-              data structure to facilitate information exchange or retrieval, such as within a FHIR
-              Observation Resource. </para>
+            <para><?oxy_comment_start author="kec" timestamp="20190721T171955-0700" comment="The FHIR observation resource is not ANF. Can be considered another CIF, and we would need a standard transform. For here, just say that the statement model layer provide a standard means for representing quantatative and existential measurement... Probably want to replace categorical data with existential measurement throughout. "?>Moving
+              to the Statement Model layer, blood pressure measurement values may be packaged as a
+              numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data (e.g.,
+              pregnancy induced hypertension vs. renal hypertension) within a standard data
+              structure to facilitate information exchange or retrieval, such as within a FHIR
+              Observation Resource. <?oxy_comment_end?></para>
           </listitem>
           <listitem>
-            <para>At the Assertional Knowledge layer, guidelines such as the recommendation to
-              control hypertension to under 140/90 mmHg might be translated into a clinical workflow
+            <para><?oxy_comment_start author="kec" timestamp="20190721T171053-0700" comment="Assertional knowledge can&apos;t contain conditional branches, so can&apos;t represent workflow (implied branching), and can&apos;t represent rules &quot;if-then-else&quot;"?>At
+              the Assertional Knowledge layer, guidelines such as the recommendation to control
+              hypertension to under 140/90 mmHg might be translated into a clinical workflow
               facilitated by Health Information Technology (HIT). If HIT is involved with programmed
               Clinical Decision Support, there may be additional rules to suggest hypertension
               medications (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid
-              medication contraindications. </para>
+              medication contraindications.<?oxy_comment_end?>
+            </para>
           </listitem>
           <listitem>
-            <para>Finally, at the Procedural Knowledge layer, there may be a treatment protocol for
-              different kinds of hypertension, including the considerations of, e.g. patient age,
+            <para><?oxy_comment_start author="kec" timestamp="20190721T171119-0700" comment="Procedural knowledge includes if-then-else. "?>Finally,
+              at the Procedural Knowledge layer, there may be a treatment protocol for different
+              kinds of hypertension, including the considerations of, e.g. patient age,
               co-morbidities etc., which can be generated by an electronic clinical decision support
-              system (Statement + Assertional layers).</para>
+              system (Statement + Assertional layers).<?oxy_comment_end?></para>
           </listitem>
         </itemizedlist></para>
-      <para>ANF is intended to achieve a clean separation of concerns, especially in regard to an
-        isosemantic representation in the Statement Model layer. ANF can help the modeling of
-        clinical statements achieve the following design features: </para>
+      <para>ANF is intended to achieve a clean separation of concerns, especially
+        <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
+
+Yes, ANF is for URU..."?>in
+        regard to an isosemantic representation in the Statement Model layer<?oxy_comment_end?>. ANF
+        can help the modeling of clinical statements achieve the following design features: </para>
       <itemizedlist>
         <listitem>
           <para>Understandable: The meaning of a clinical statement can be understood, without
@@ -453,7 +465,9 @@ Remove the definition from the figure, and link to glossary where appropriate. "
       has relied on model-driven approaches requiring a separation of concerns along with
       conceptual, logical, and implementation perspectives.</para>
     <section>
-      <title>HL7 Version 3 Clinical Statement </title>
+      <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? "?>
+      <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
+      </title>
       <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
         statement: </para>
       <para>“Clinical Statement for the care of patients (persons, animals and other entities)
@@ -473,7 +487,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         </listitem>
       </itemizedlist>
       <para>In the case of an observation, its
-        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="35"?>mood<?oxy_comment_end?><?oxy_comment_end mid="35"?>
+        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="50"?>mood<?oxy_comment_end?><?oxy_comment_end mid="50"?>
         and presence, absence or value</para>
       <para>In the case of a procedure, its mood and status</para>
       <para>This clarity may be achieved by:</para>
@@ -495,7 +509,9 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         clinical acts. I</para>
     </section>
     <section>
-      <title>HL7 Service-Aware Interoperability Framework </title>
+      <title><?oxy_comment_start author="kec" timestamp="20190721T172505-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? "?>HL7
+        Service-Aware Interoperability Framework<?oxy_comment_end?>
+      </title>
       <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
@@ -569,15 +585,17 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         interoperability of healthcare information systems through shared detailed clinical
         information models that can be used to generate platform-specific model specifications such
         as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
-        Intermountain CEMs. CIMI models are grouped into semantically equivalent (or ‘isosemantic’)
-        families of detailed clinical models, which capture the same clinical meaning using
-        different combinations of pre and post-coordinated concepts and corresponding information
-        model structure. The central focus of the CIMI Reference Model is the CIMI Clinical
-        Statement. A CIMI Clinical Statement represents structured electronic communication made
-        about a patient typically documented as an 'entry' in the patient record. For example, CIMI
-        Clinical Statement can be used to represent the following statements made about a patient.
-        This can be the statement of a condition being present, a request for a procedure to be
-        done, the results of lab tests or the patient’s family history of cancer. </para>
+        Intermountain CEMs.
+        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? "?>CIMI
+        models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
+        clinical models<?oxy_comment_end?>, which capture the same clinical meaning using different
+        combinations of pre and post-coordinated concepts and corresponding information model
+        structure. The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A
+        CIMI Clinical Statement represents structured electronic communication made about a patient
+        typically documented as an 'entry' in the patient record. For example, CIMI Clinical
+        Statement can be used to represent the following statements made about a patient. This can
+        be the statement of a condition being present, a request for a procedure to be done, the
+        results of lab tests or the patient’s family history of cancer. </para>
     </section>
   </section>
 </chapter>
