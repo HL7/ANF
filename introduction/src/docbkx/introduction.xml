@@ -10,7 +10,7 @@
     of the statement's data as a standardized and encoded fundamental form. There can be many views
     on what constitutes a normal form, based on differing use cases. Today, clinical statements are
     often represented in unpredictable and denormalized forms, which makes reliable and safe
-    decision support challenging, and reduces the quality of other types of data processing.  </para>
+    decision support challenging, and reduces the quality of other types of data processing. </para>
   <para>In this document, we present several different normal forms as background, and focus on the
     need for—and logical specification of—an <glossterm baseform="Analysis Normal Form">Analysis
       Normal Form (ANF)</glossterm>. ANF is a normal form intended to safely and reliably support
@@ -132,9 +132,8 @@
       to the clinicians and how they enter the data, such as by constraining the information to
       allow only certain values to be entered, e.g. through a drop-down list, radio buttons, or
       breaking up large chunks of related information into smaller parts.</para>
-    <para><?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems."?>For
-      example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines information
-      reported by devices with findings and interpretation: <orderedlist>
+    <para>For example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines
+      information reported by devices with findings and interpretation: <orderedlist>
         <listitem>
           <para>A vital signs monitor transmits the systolic and diastolic blood pressure including
             date/time and the id of the device, </para>
@@ -168,26 +167,15 @@
           <para>Next, the physician adds an interpretation. </para>
         </listitem>
       </orderedlist>
-      <informaltable frame="all">
-        <tgroup cols="1" align="center">
-          <colspec colname="c1" colnum="1" colwidth="1*" align="center"/>
-          <tbody>
-            <row>
-              <entry>
-                <figure xml:id="CIF_EHR_1">
-                  <title> Blood Pressure Statement recorded by an EHR systems</title>
-                  <mediaobject>
-                    <imageobject>
-                      <imagedata fileref="images/BP data capture.svg" scalefit="1" width="60%"
-                        format="SVG" contentdepth="100%"/>
-                    </imageobject>
-                  </mediaobject>
-                </figure>
-              </entry>
-            </row>
-          </tbody>
-        </tgroup>
-      </informaltable></para>
+      <figure xml:id="CIF_EHR_1">
+        <title> Blood Pressure Statement recorded by an EHR systems</title>
+        <mediaobject role="bordered">
+          <imageobject>
+            <imagedata fileref="images/BP data capture.svg" scale="60" align="center"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </para>
     <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset of
       information about the blood pressure measurement - omitting "micturition context" and
       pre-coordinates site and laterality as:</para>
@@ -204,13 +192,12 @@
       Blood Pressure. </para>
     <figure xml:id="Display_EHR_2">
       <title> Alternative Blood Pressure representation in a second EHR system</title>
-      <mediaobject>
+      <mediaobject role="bordered">
         <imageobject>
-          <imagedata fileref="images/EHR-2.svg" scalefit="1" width="60%" format="SVG"
-            contentdepth="100%"/>
+          <imagedata fileref="images/EHR-2.svg" scale="60" align="center"/>
         </imageobject>
       </mediaobject>
-    </figure><?oxy_comment_end?>
+    </figure>
     <para>In the first case, the structured clinical input has separate drop-down constraints to
       enter the artery and laterality as distinct concepts. In the second wire frame, the structured
       clinical input has combined the artery and laterality into a compound concept. This variation
@@ -268,9 +255,9 @@
       <para/>
       <figure>
         <title>Separation of Concerns: Knowledge Architecture</title>
-        <mediaobject>
+        <mediaobject role="bordered">
           <imageobject>
-            <imagedata fileref="images/SoC.png" scale="50"/>
+            <imagedata fileref="images/SoC.png" scale="45" align="center"/>
           </imageobject>
         </mediaobject>
       </figure>
@@ -299,32 +286,40 @@
         measurement, and supports patient safety. This layer integrates the architectural and
         terminology layers, incorporates the statement model for information retrieval, and uses the
         assertional layer to apply rules.</para>
-      <?oxy_comment_start author="timowilliams" timestamp="20190710T105523-0500" comment="From Stephanie:
-
-1.  I think this would be easier to read if you bulleted each layer&apos;s description for the example.
-2.  I recommend you be consistent when referring to the layers.  For example in one case, you referred to &quot;Foundational layer&quot; and in another you referred to it as &quot;Architectural Foundation layer.&quot;  Also, in some cases, you are referring to them as &quot;layers&quot; and in others, as &quot;levels&quot;.  Again, recommend consistency."?>
       <para>Examining a clinical procedure for controlling hypertension illustrates each of the
-        layers of the informatics architectural separation of concerns. At the Terminology Knowledge
-        layer, there may be various codes and terms from disparate source terminologies to define
-        the hypertension concept. For example, the concept “essential hypertension” is defined by
-        the ICD-10 CM code I10 and 59621000 in SNOMED CT. Ideally, these overlapping codes and terms
-        would be oriented to the same parent concept during the transformation and integration
-        process at the Foundational layer (e.g., Solor). Furthermore, any updates over time to code
-        sets or value sets that define hypertension (in the NLM’s Value Set Authority Center for
-        instance) would be maintained by continuous integration at the Architectural Foundation
-        layer. Moving to the Statement Model layer, blood pressure measurement values may be
-        packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data
-        (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard data
-        structure to facilitate information exchange or retrieval, such as within a FHIR Observation
-        Resource. At the Assertional Knowledge layer, guidelines such as the recommendation to
-        control hypertension to under 140/90 mmHg might be translated into a clinical workflow
-        facilitated by Health Information Technology (HIT). If HIT is involved with programmed
-        Clinical Decision Support, there may be additional rules to suggest hypertension medications
-        (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid medication
-        contraindications. Finally, at the Procedural Knowledge layer, there may be a treatment
-        protocol for different kinds of hypertension, including the considerations of, e.g. patient
-        age, co-morbidities etc., which can be generated by an electronic clinical decision support
-        system (Statement + Assertional layers).<?oxy_comment_end?></para>
+        layers of the informatics architectural separation of concerns. <itemizedlist>
+          <listitem>
+            <para>At the Terminology Knowledge layer, there may be various codes and terms from
+              disparate source terminologies to define the hypertension concept. For example, the
+              concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in
+              SNOMED CT. Ideally, these overlapping codes and terms would be oriented to the same
+              parent concept during the transformation and integration process at the Foundational
+              layer (e.g., Solor). Furthermore, any updates over time to code sets or value sets
+              that define hypertension (in the NLM’s Value Set Authority Center for instance) would
+              be maintained by continuous integration at the Architectural Foundation layer.</para>
+          </listitem>
+          <listitem>
+            <para>Moving to the Statement Model layer, blood pressure measurement values may be
+              packaged as a numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical
+              data (e.g., pregnancy induced hypertension vs. renal hypertension) within a standard
+              data structure to facilitate information exchange or retrieval, such as within a FHIR
+              Observation Resource. </para>
+          </listitem>
+          <listitem>
+            <para>At the Assertional Knowledge layer, guidelines such as the recommendation to
+              control hypertension to under 140/90 mmHg might be translated into a clinical workflow
+              facilitated by Health Information Technology (HIT). If HIT is involved with programmed
+              Clinical Decision Support, there may be additional rules to suggest hypertension
+              medications (e.g., beta-blockers, ACE inhibitors) while also including rules to avoid
+              medication contraindications. </para>
+          </listitem>
+          <listitem>
+            <para>Finally, at the Procedural Knowledge layer, there may be a treatment protocol for
+              different kinds of hypertension, including the considerations of, e.g. patient age,
+              co-morbidities etc., which can be generated by an electronic clinical decision support
+              system (Statement + Assertional layers).</para>
+          </listitem>
+        </itemizedlist></para>
       <para>ANF is intended to achieve a clean separation of concerns, especially in regard to an
         isosemantic representation in the Statement Model layer. ANF can help the modeling of
         clinical statements achieve the following design features: </para>
@@ -351,48 +346,6 @@
       has relied on model-driven approaches requiring a separation of concerns along with
       conceptual, logical, and implementation perspectives.</para>
     <section>
-      <title>HL7 Version 3 Clinical Statement </title>
-      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
-        statement: </para>
-      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
-        is:</para>
-      <para>An expression of a discrete item of clinical, clinically-related or public health
-        information that is recorded because of its relevance to the care of a patient or other
-        entities. Clinical or public health information can be expressed with different levels of
-        granularity and therefore the extent and detail conveyed in a single statement may vary. To
-        be regarded as a Clinical Statement, a concept must be associated with a patient or other
-        entity in a manner which makes clear:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Its temporal context</para>
-        </listitem>
-        <listitem>
-          <para>Its relationship to the entity or entities</para>
-        </listitem>
-      </itemizedlist>
-      <para>In the case of an observation, its
-        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="4"?>mood<?oxy_comment_end?><?oxy_comment_end mid="4"?>
-        and presence, absence or value</para>
-      <para>In the case of a procedure, its mood and status</para>
-      <para>This clarity may be achieved by:</para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>Explicit representation; or</para>
-        </listitem>
-        <listitem>
-          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
-            appropriate defaults." </para>
-          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
-            1</para>
-        </listitem>
-      </itemizedlist>
-      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
-        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
-        Statement Model is a polymorphic model: it can represent observations, procedures,
-        encounters, public health reports, supply, medications, exposure, and derivations of
-        clinical acts. I</para>
-    </section>
-    <section>
       <title>HL7 Service-Aware Interoperability Framework </title>
       <para>To augment the HL7 Version 2 and Version 3 representations, HL7 introduced an
         architecture to allow for a clear separation of concerns among interoperability models and
@@ -409,10 +362,9 @@
         logical models of knowledge.</para>
       <figure>
         <title>Model Derivation according to SAIF</title>
-        <mediaobject>
+        <mediaobject role="bordered">
           <imageobject>
-            <imagedata fileref="images/Perspectives.svg" format="SVG" scalefit="1" width="60%"
-              contentdepth="65%" align="center"/>
+            <imagedata fileref="images/Perspectives.svg" format="SVG" scale="60" align="center" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -461,12 +413,55 @@
       </section>
     </section>
     <section>
+      <title>HL7 Version 3 Clinical Statement </title>
+      <para>Starting with HL7 Version 3, the minimum requirements for the interoperable clinical
+        statement: </para>
+      <para>“Clinical Statement for the care of patients (persons, animals and other entities)
+        is:</para>
+      <para>An expression of a discrete item of clinical, clinically-related or public health
+        information that is recorded because of its relevance to the care of a patient or other
+        entities. Clinical or public health information can be expressed with different levels of
+        granularity and therefore the extent and detail conveyed in a single statement may vary. To
+        be regarded as a Clinical Statement, a concept must be associated with a patient or other
+        entity in a manner which makes clear:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>Its temporal context</para>
+        </listitem>
+        <listitem>
+          <para>Its relationship to the entity or entities</para>
+        </listitem>
+      </itemizedlist>
+      <para>In the case of an observation, its
+        <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." mid="4"?>mood<?oxy_comment_end?><?oxy_comment_end mid="4"?>
+        and presence, absence or value</para>
+      <para>In the case of a procedure, its mood and status</para>
+      <para>This clarity may be achieved by:</para>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>Explicit representation; or</para>
+        </listitem>
+        <listitem>
+          <para>Implicit application of defaults ONLY where explicitly modeled rules state the
+            appropriate defaults." </para>
+          <para><citation>HL7v3</citation> HL7 Version 3 Standard: Clinical Statement CMETs Release
+            1</para>
+        </listitem>
+      </itemizedlist>
+      <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
+        the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
+        Statement Model is a polymorphic model: it can represent observations, procedures,
+        encounters, public health reports, supply, medications, exposure, and derivations of
+        clinical acts. I</para>
+    </section>
+    <section>
       <title>CIMI Statements</title>
       <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of logical
         clinical information models using a common modeling formalism. CIMI intends to improve the
         interoperability of healthcare information systems through shared detailed clinical
         information models that can be used to generate platform-specific model specifications such
-        as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, ISO DCMs, or
+        as FHIR profiles, CDA templates, OpenEHR Archetypes, 13606 Archetypes, <link
+          xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972:2015</link> DCMs, or
         Intermountain CEMs. CIMI models are grouped into semantically equivalent (or ‘isosemantic’)
         families of detailed clinical models, which capture the same clinical meaning using
         different combinations of pre and post-coordinated concepts and corresponding information

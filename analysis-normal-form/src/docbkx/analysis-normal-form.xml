@@ -18,10 +18,6 @@
                                         <para>Describe principles</para>
                                     </listitem>
                                     <listitem>
-                                        <para>Describe and explain architectural separation of
-                                            concerns and why this matters</para>
-                                    </listitem>
-                                    <listitem>
                                         <para>Describe benefits of ANF Modeling principles</para>
                                     </listitem>
                                 </itemizedlist>
@@ -36,99 +32,69 @@
         <title>ANF Modeling Principles</title>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190711T120851-0500" comment="Since this exists in Introduction, should we remove it from here?"?><emphasis
-                        role="bold"
-                        ><?oxy_comment_start author="Ioana" timestamp="20190626T124501-0400" comment="Replace this with a reference to to the intoduction.xml --&gt; Separation of Concerns "?>Separation
-                        of Concerns: </emphasis>As defined by Wikipedia [1]: Separation of Concerns
-                    (SoC) is a design principle for separating a computer program into distinct
-                    sections, such that each section addresses a separate concern.
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111054-0400" comment="Comment from WC:
-&quot;Clearly, explained this way, this design principle is flawed because of regress to each individual symbol in the code.
-"?>A
-                    concern is a set of information that affects the code of a computer program. A
-                    concern can be as general as the details of the hardware the code is being
-                    optimized for, or as specific as the name of a class to
-                    instantiate.<?oxy_comment_end?> A program that embodies SoC well is called a
-                    modular program. Modularity, and hence separation of concerns, is achieved by
-                    encapsulating information inside a section of code that has a well-defined
-                    interface.
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111108-0400" comment="Comment from WC:
-With the drawback of hiding also certain assumptions that a potential re-user should be aware of to assess whether the module really does what it suggests it does.
-"?>Encapsulation
-                    is a means of information hiding.<?oxy_comment_end?> Layered designs in
-                    information systems are another embodiment of separation of concerns (e.g.,
-                    presentation layer, business logic layer, data access layer, persistence layer).
-                    The value of separation of concerns is simplifying development and maintenance
-                    of computer programs. When concerns are well-separated, individual sections can
-                    be reused, as well as developed and updated independently. Of special value is
-                    the ability to later improve or modify one section of code without having to
-                    know the details of the other sections, and without having to make corresponding
-                    changes to those sections.</para><?oxy_comment_end?>
-                <para>The use of immutable objects (see principle B Immutability below) is a
-                    technique that fulfills the Separation of Concerns principle.</para>
-                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111123-0400" comment="Comment from WC:
-Maybe, that is to say, depending on what you mean by ‘attribute’, ‘semantic concept’, and ‘class’.
-"?>Attributes
-                    that describe specific semantic concepts should be grouped together into a
-                    single class and not be spread across a number of classes .<?oxy_comment_end?>
-                    Doing the latter leads to tight coupling between classes. Doing the former leads
-                    to better decomposition of a potentially complex domain.</para>
-                <figure>
-                    <title>Architectural Separation of Concerns</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/PASTF2.svg" scalefit="1" width="100%"
-                                contentdepth="100%"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure>
-                <para>“Architectural Separation of Concerns” shows the Statement layer is separate
-                    from Terminology layers, yet most statement models mix terminology concerns into
-                    the structural attributes of the statement model. ANF attempts to maintain a
-                    cleaner separation between these layers. </para>
-                <para>The Terminology Knowledge layer is used to define what is being measured, such
-                    as Dot-blot hemorrhage of the retina or Type 1 diabetes.</para>
-                <para>Analysis Normal Form (ANF) classes must cleanly separate the concerns of
-                    Terminology Knowledge and the concerns of Statement Model.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111356-0400" comment="Comment from WC:
-Not sure I am following here as I am not sure about what ‘Laterality’ means here. I assume something with left side of the body and right side of the body. But to what extent? Limited to body parts that – in some meaning – come in pairs such as left thumbs and right thumbs? But no ‘laterality’ for heart (not even for patients with dextrocardia)? Is there a change in ‘laterality’ when somebody’s left kidney is transplanted to replace somebody else’s right kidney or a skin graft taken on the left put on a burn wound on the right? How does this interplay with ‘immutability’? Would ‘left kidney’ be an immutable class and would that prevent transplants of the sort just sketched?
-" flag="done" mid="5"?><emphasis
-                                role="bold">Example: </emphasis>Laterality (used to designate one or
-                            both of paired, bilaterally symmetrical (or nearly symmetrical) body
-                            structures) should be a concern of either the Terminology Knowledge or
-                            the Statement Model, but not both. We can relax this principle for the
-                            Structured Input Form but for ANF we need a clean and invariant
-                            separation of
-                            concerns.<?oxy_comment_end?><?oxy_comment_end mid="5"?></para>
-                    </listitem>
-                </itemizedlist>
-            </listitem>
-            <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T125100-0500" comment="Remove?"?><emphasis
-                        role="bold">Immutability:</emphasis>An Immutable Object as defined by
-                        Wikipedia<anchor xml:id="_ftnref2"/>[2]: Used in object-oriented and
-                    functional programming,
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111203-0400" comment="Comment from WC:
-Depends on what constitutes a ‘change’. Changing merely location, leaving everything else equal, does not change the object itself. If a database table is considered an object, it changes of course each time when some value in it is changed or a row added.
-"?>an
-                    immutable object is something that cannot be changed after it is created, in
-                    contrast to mutable objects that can be changed after they are
-                    created.<?oxy_comment_end?> There are multiple reasons for using immutable
-                    objects, including improved readability and runtime efficiency and higher
-                    security.</para>
-                <para>Although building immutable objects requires a bit more up-front complexity,
-                    the downstream simplification forced by this abstraction easily offsets the
-                    effort. One of the benefits of switching to a functional mindset is the
-                    realization that tests exist to check that changes occur successfully in code.
-                    In other words, testing’s real purpose is to validate mutation – and the more
-                    mutation you have, the more testing is required to make sure you get it right.
-                    If you isolate the places where changes occur by severely restricting mutation,
-                    you create a much smaller space for errors to occur and have few plates to
-                    test.</para>
-                <para>Finally,one of the best features of immutable classes is how well they fit
-                    into the composition abstraction.<?oxy_comment_end?></para>
+                <para>As an overarching principle we favor the simpler, consistent model over more
+                    complex models that allow for multiple inconsistent representations. As such,
+                    the following principles have been used when designing the ANF model:<itemizedlist>
+                        <listitem>
+                            <para><emphasis role="bold">Overall Model Simplicity:
+                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
+1) How do you quantify simplicity?
+2) Why not design the principles so they don’t collide?
+"?>In
+                                cases where different principles collide, we shall favor the
+                                enhancement of simplicity of the entire system over simplicity in
+                                one area of the system.<?oxy_comment_end?></para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Convention Over Configuration:
+                                </emphasis>Convention over configuration (also known as coding by
+                                convention) is a software design paradigm used by software
+                                frameworks that attempts to decrease the number of decisions that a
+                                developer using the framework is required to make without
+                                necessarily losing flexibility.</para>
+                        </listitem>
+                        <listitem>
+                            <para><emphasis role="bold">Model Consistency:
+                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
+Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
+"?>Patterns
+                                should allow the consistent representation of information that is
+                                commonly shared across models. For instance, attribution and
+                                participation information should be captured consistently. Failure
+                                to do so forces implementers to develop heuristics to capture and
+                                normalize attribution information that is represented or extended
+                                differently in different classes (e.g., FHIR).</para>
+                        </listitem><?oxy_comment_end?>
+                        <listitem>
+                            <para><emphasis role="bold">Model Should Avoid Semantic Overloading
+                                    (semantic precision): </emphasis>Semantic overloading occurs
+                                when a model attribute’s meaning changes entirely, depending on
+                                context. While the refinement of the semantics of an attribute in a
+                                subclass is acceptable, a change of meaning is problematic. For
+                                instance, in FHIR, the Composition class defines an attribute called
+                                Subject. In some subclasses, the attribute may be the entity that
+                                this composition refers to (e.g., the patient in a medical record).
+                                In other cases, it is the topic being discussed by the composition
+                                (e.g., a medication orderable catalog).</para>
+                        </listitem>
+                        <listitem><para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
+                            surfaced explicitly in the model.</para>
+                        <itemizedlist>
+                            <listitem>
+                                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
+Incomplete and partially ambiguous.
+Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
+‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
+" flag="done"?><emphasis
+                                            role="bold">Example:</emphasis>Some things implicit in
+                                        the statement, “I ordered a book from Amazon” are: paying
+                                        for the book, delivery of the book to some location, and the
+                                        transfer of ownership of the book from the vendor to the
+                                        client.<?oxy_comment_end?></para>
+                            </listitem>
+                        </itemizedlist>
+                        </listitem>
+                    </itemizedlist></para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Composition Over Inheritance: </emphasis>Composition
@@ -150,7 +116,7 @@ Depends on what constitutes a ‘change’. Changing merely location, leaving ev
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="7"?><?oxy_comment_end mid="7"?>
+" parentID="ckd_fyv_lhb" mid="3"?><?oxy_comment_end mid="3"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
@@ -183,16 +149,6 @@ What does that mean for the table example I gave? Clearly it changes, which of t
                     in an object that represents a clinical statement. </para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Overall Model Simplicity:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
-1) How do you quantify simplicity?
-2) Why not design the principles so they don’t collide?
-"?>In
-                    cases where different principles collide, we shall favor the enhancement of
-                    simplicity of the entire system over simplicity in one area of the
-                    system.<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
                 <para><emphasis role="bold">Reusability:</emphasis>Architectural patterns should
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
 But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
@@ -200,23 +156,7 @@ But in line with previous principle, you have then to drag with you the entire m
                     class reusability where possible.<?oxy_comment_end?> Reusability may further
                     refine encapsulation when composition is considered.</para>
             </listitem>
-            <listitem>
-                <para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
-                    surfaced explicitly in the model.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
-Incomplete and partially ambiguous.
-Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
-‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
-"?><emphasis
-                                role="bold">Example:</emphasis>Implicit in the statement, “I ordered
-                            a book from Amazon” are: paying for the book, delivery of the book to
-                            some location, and the transfer of ownership of the book from the vendor
-                            to the client.<?oxy_comment_end?></para>
-                    </listitem>
-                </itemizedlist>
-            </listitem>
+            
             <listitem>
                 <para><emphasis role="bold"
                         ><?oxy_comment_start author="timowilliams" timestamp="20190611T135415-0500" comment="Remove?"?>Design
@@ -243,40 +183,7 @@ Examples needed, although I would favor such an approach, one can’t argue that
                     classification rules and result in ambiguity based on different assumptions
                     about the domain. These must be avoided.</para>
             </listitem><?oxy_comment_end?>
-            <listitem>
-                <para><emphasis role="bold">Model Should Avoid Semantic Overloading (semantic
-                        precision): </emphasis>Semantic overloading occurs when a model attribute’s
-                    meaning changes entirely, depending on context. While the refinement of the
-                    semantics of an attribute in a subclass is acceptable, a change of meaning is
-                    problematic.
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111712-0400" comment="Comment from WC:
-They never learn, do they? (Or rather their victims never learn).
-" flag="done"?>For
-                    instance, in FHIR, the Composition class defines an attribute called Subject. In
-                    some subclasses, the attribute may be the entity that this composition refers to
-                    (e.g., the patient in a medical record). In other cases, it is the topic being
-                    discussed by the composition (e.g., a medication orderable
-                    catalog).<?oxy_comment_end?></para>
-            </listitem>
-            <listitem>
-                <para><?oxy_comment_start author="timowilliams" timestamp="20190611T140507-0500" comment="Remove?"?><emphasis
-                        role="bold">Convention Over Configuration: </emphasis>Convention over
-                    configuration (also known as coding by convention) is a software design paradigm
-                    used by software frameworks that attempts to decrease the number of decisions
-                    that a developer using the framework is required to make without necessarily
-                    losing flexibility<?oxy_comment_end?>.</para>
-            </listitem>
-            <listitem>
-                <para><emphasis role="bold">Model Consistency:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
-Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
-"?>Patterns
-                    should allow the consistent representation of information that is commonly
-                    shared across models. For instance, attribution and participation information
-                    should be captured consistently. Failure to do so forces implementers to develop
-                    heuristics to capture and normalize attribution information that is represented
-                    or extended differently in different classes (e.g., FHIR).</para>
-            </listitem><?oxy_comment_end?>
+            
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
 "?>
@@ -288,24 +195,23 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     it.<?oxy_comment_end?></para><?oxy_comment_end?>
             </listitem>
             <listitem>
-                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111808-0400" comment="What should we do with this here? Joey?
-"?><emphasis
-                        role="bold">Iterative development and validation of model using use cases:
-                        TBD</emphasis><?oxy_comment_end?></para>
+                <para><emphasis role="bold">Iterative development and validation of model using use
+                        cases: </emphasis>ANF has been developed using an iterative approach
+                    evaluating the model with narrative use cases.  Examples of narratives used to
+                    evaluate the model can be found in the Appendix.</para>
             </listitem>
         </orderedlist>
 
     </section>
     <section>
         <title>Shared Modeling Guidelines</title>
-        <?oxy_comment_start author="timowilliams" timestamp="20190613T105849-0500" comment="&quot;X-Ray of cervical spine anteroposterior (AP) and lateral&quot;  One statement or two? How do we handle combination concepts?  What would the rule be for deciding when to create two associated statements vs allowing combination concepts in a topic?"?>
         <para>All ANF statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
             a single statement or a statement that has multiple associated statements. For the
             purposes of ANF, a statement is a request or performance of an action that has to be
             able to exist on its own. Therefore a narrative would be separated into multiple
             clinical statements if it contains multiple requests or performance of actions that
-            could exist on their own.</para><?oxy_comment_end?>
+            could exist on their own.</para>
         <figure>
             <title>Shared Modeling Guideline Decision Tree</title>
             <mediaobject>

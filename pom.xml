@@ -66,6 +66,8 @@
                      procedure before
                      task before
                   </formalTitlePlacement>
+                  <columnCountBody>1</columnCountBody>
+                  <doubleSided>false</doubleSided>
                   <processEmptySourceToc>true</processEmptySourceToc>
                   <!--<generateToc>Analysis Normal Form</generateToc>-->
                </configuration>

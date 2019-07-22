@@ -334,11 +334,37 @@
     </xsl:call-template>
   </fo:block>
 </xsl:template>
+  
+<!-- Modified table and figure label format -->
+  <xsl:attribute-set name="formal.title.properties">
+    <xsl:attribute name="color">#696969</xsl:attribute>
+    <xsl:attribute name="font-size">10pt</xsl:attribute>    
+    <xsl:attribute name="text-align">center</xsl:attribute>
+   <!--   if needed add this conditional blcok for table/figure
+     <xsl:choose>
+        <xsl:when test="self::d:table">10pt</xsl:when>
+        <xsl:when test="self::d:figure">10pt</xsl:when>
+        <xsl:otherwise>inherit</xsl:otherwise>
+      </xsl:choose>
+      </xsl:attribute>
+    -->        
+  </xsl:attribute-set>
 
 <!-- These titles are handled by formal.object.heading template,
 so these templates do nothing-->
 <xsl:template match="d:requirement/d:title"/>
 <xsl:template match="d:editorial-rule/d:title"/>
+
+<!-- Border for media object/figure -->
+  <xsl:template match="d:mediaobject">
+    <xsl:choose>
+      <xsl:when test="@role='bordered'">
+        <fo:block border="0.5pt solid gray">
+          <xsl:apply-imports/>
+        </fo:block>
+      </xsl:when>
+    </xsl:choose>    
+  </xsl:template>
 
 <!-- You can customize the header content with this template -->
 <xsl:template name="header.content">
