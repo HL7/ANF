@@ -40,7 +40,7 @@
                     <colspec colnum="3" colname="col3" colwidth="4.4*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -305,7 +305,7 @@
                     <colspec colnum="3" colname="col3" colwidth="3.16*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -388,7 +388,7 @@
                     <colspec colnum="3" colname="col3" colwidth="3.61*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -518,7 +518,7 @@
                         <colspec colnum="3" colname="col3" colwidth="3.78*"/>
                         <thead>
                             <row>
-                                <entry/>
+                                <entry>Attribute</entry>
                                 <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                                 <entry><emphasis role="bold">Notes</emphasis></entry>
                             </row>
@@ -714,7 +714,7 @@
                     <colspec colnum="3" colname="col3" colwidth="3.14*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -892,7 +892,7 @@
                     <colspec colnum="3" colname="col3" colwidth="3.14*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -983,7 +983,7 @@
                     <colspec colnum="3" colname="col3" colwidth="3.04*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
@@ -1057,7 +1057,7 @@
                     <colspec colnum="3" colname="col3" colwidth="2.79*"/>
                     <thead>
                         <row>
-                            <entry/>
+                            <entry>Attribute</entry>
                             <entry><emphasis role="bold">Multiplicity</emphasis></entry>
                             <entry><emphasis role="bold">Notes</emphasis></entry>
                         </row>
