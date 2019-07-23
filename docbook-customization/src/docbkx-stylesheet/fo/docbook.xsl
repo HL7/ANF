@@ -356,15 +356,19 @@ so these templates do nothing-->
 <xsl:template match="d:editorial-rule/d:title"/>
 
 <!-- Border for media object/figure -->
-  <!--<xsl:template match="d:mediaobject">-->
-    <!--<xsl:choose>-->
-      <!--<xsl:when test="@role='bordered'">-->
-        <!--<fo:block border="0.5pt solid gray">-->
-          <!--<xsl:apply-imports/>-->
-        <!--</fo:block>-->
-      <!--</xsl:when>-->
-    <!--</xsl:choose>    -->
-  <!--</xsl:template>-->
+  <!-- Border for media object/figure -->
+  <xsl:template match="d:mediaobject">
+    <xsl:choose>
+      <xsl:when test="@role = 'bordered'">
+        <fo:block border="0.5pt solid gray">
+          <xsl:apply-imports/>
+        </fo:block>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-imports/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
 <!-- You can customize the header content with this template -->
 <xsl:template name="header.content">
