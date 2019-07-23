@@ -2,7 +2,20 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>ANF Modeling Principles</title>
+    <title><?oxy_comment_start author="kec" timestamp="20190722T174740-0700" comment="ANF modeling principles probably need to be consolidated into the preamble of the ANF Structure chapter, and then point out how the structure follows the principles. 
+
+We also need clearly differentiate modeling principles (how we evaluate our model to decide if we met our requirements) from what we are currently calling Editorial Rules (might be a better phrase than editorial rules), which is how we populate the ANF structure content... 
+
+Maybe: 
+
+Modeling Principles
+
+Editoral rules (creation of post-coordinated expressions)
+     ?Expression rules? 
+
+Statement rules (rules about how to create statements). 
+"?>ANF
+        Modeling Principles<?oxy_comment_end?></title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
