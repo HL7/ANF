@@ -2,7 +2,9 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Differences between ANF and CIF </title>
+    <title><?oxy_comment_start author="kec" timestamp="20190722T173003-0700" comment="This is really differences between ANF and CIMI. "?>Differences
+        between ANF and CIF<?oxy_comment_end?>
+    </title>
     <informaltable>
         <tgroup cols="1">
             <colspec colnum="1" colname="col1"/>
@@ -35,15 +37,22 @@
     </orderedlist>
     <section>
         <title>The Representation of Topic</title>
-        <para>
-            In the ANF Statement model, the topic is represented by a single field containing a simple to complex post-coordinated SNOMED expression, whereas in the CIMI Statement model, all the pieces of information that make up the topic can be broken out and structured as needed into a complex tree of objects with multiple properties and appropriate datatypes.
-        </para>
+        <para> In the ANF Statement model, the topic is represented by a single field containing a
+            simple to complex post-coordinated
+            <?oxy_comment_start author="kec" timestamp="20190722T173102-0700" comment="OWL EL++ expression. Not necessarily just SNOMED, Solor for example would potentially have extensions to SNOMED. "?>SNOMED<?oxy_comment_end?>
+            expression, whereas in the CIMI Statement model, all the pieces of information that make
+            up the topic can be broken out and structured as needed into a complex tree of objects
+            with multiple properties and appropriate datatypes. </para>
         <para>
             <figure>
                 <title>Topic Comparison for a Complex Topic</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/anf-cif-topic.png" align="center" format="png" scale="100"/>
+                        <?oxy_comment_start author="kec" timestamp="20190722T173233-0700" comment="Couple items here... OWL EL++ expression. 
+
+Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
+                        <imagedata fileref="images/anf-cif-topic.png" align="center" format="png"
+                            scale="100"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -53,7 +62,10 @@
             a single concept along with associated structural properties representing the pulse
             oximeter device. Since the ANF Statement will always be either the request for an action
             or the performance of an action, the post-coordinated expression will always be a
-            procedure that is further refined providing a consistent representation. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
+            procedure that is further refined providing a consistent
+            <?oxy_comment_start author="kec" timestamp="20190722T173538-0700" comment="Need a section of some sort discussing the benefits of a classifiable topic on aggregation, retrieval, etc. 
+
+Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure>
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
@@ -99,8 +111,9 @@
             <title>Dot Blot Hemorrhage Present - ANF</title>
             <mediaobject>
                 <imageobject>
+                    <?oxy_comment_start author="kec" timestamp="20190722T174123-0700" comment="Need CIMI statement for deep retinal hemorrhage. For all examples in this chapter, should have an ANF and CIMI for each example. Maybe present together in a table. "?>
                     <imagedata fileref="images/dbh_anf.svg" format="SVG" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                        contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -123,13 +136,15 @@
             <title>Simple Systolic Blood Pressure - CIMI Representation</title>
             <mediaobject>
                 <imageobject>
+                    <?oxy_comment_start author="kec" timestamp="20190722T173728-0700" comment="The CIMI statements and ANF statements are not visually distincitve, and easy to confuse. Several possible ways of improving. One would be to always present comparisons within a table that has ANF on the top ros, and CIMI on following row. This presents other benifits by havign the comparisons on the same page is the table does not get broken up. "?>
                     <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG" scalefit="1"
-                        width="100%" contentdepth="100%"/>
+                        width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
         </figure>
         <para>But when a CIMI model has a potential coded result, the choice between
-            EvaluationResult and Assertion becomes muddied. For example, a model for Breath Sound
+            <?oxy_comment_start author="kec" timestamp="20190722T173830-0700" comment="Is there potential for confusion betwen when to use evauation result, assertion, and other types of coded result? "?>EvaluationResult
+            and Assertion <?oxy_comment_end?>becomes muddied. For example, a model for Breath Sound
             could be an EvaluationResult with a topic of 'breath sound' and a coded result with the
             following valueset. Thus, any of the breath sounds within the valueset can act as a
             result for this model. </para>
@@ -293,7 +308,10 @@
                 <title>Simple Systolic Blood Pressure - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <?oxy_comment_start author="kec" timestamp="20190722T173926-0700" comment="Make cimi and anf visualy distinct and possibly present together in a table. 
+"?>
+                        <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG"
+                            scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
             </figure>

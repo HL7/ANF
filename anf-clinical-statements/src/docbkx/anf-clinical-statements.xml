@@ -186,8 +186,9 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Diabetes Mellitus Present Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
+                            <?oxy_comment_start author="kec" timestamp="20190722T172538-0700" comment="For topics where more than 1 is nonsensical, such as diabetes, maybe have the interval [1,1], and reserve the [1, inf) for situations where it is possible there is more than one, but we don&apos;t know how many there are... Dot, blot hemorrhage comes to mind: [1,inf), there is at least one dot blot hemorrhage. "?>
                             <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -233,7 +234,7 @@ Doing family history, donor statements using subject of information is now the n
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating result." flag="done"?><?oxy_comment_end?>
                 <editorial-rule>
                     <title>Statement with a Result Value</title>
-                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="could use better wording below, because a topic doesn't 'state' a result."?><?oxy_comment_end?>
+                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="could use better wording below, because a topic doesn&apos;t &apos;state&apos; a result."?><?oxy_comment_end?>
                     <mathphrase>Any Topic that states a Result that has a value will be specified
                         with the correct upperBound, lowerBound, and measureSemantic. If the Result
                         is a single value, the upperBound and lowerBound will be the same value. If
@@ -259,7 +260,6 @@ Doing family history, donor statements using subject of information is now the n
                             </listitem>
                             <listitem>
                                 <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="This below seems like the editorial rule, and could go first, right below the title. And then everything else explains what a technique is."?><?oxy_comment_end?>
-
                                 <para>A technique is inseparable from the topic and cannot be
                                     expressed as a stand-alone clinical statement and will be
                                     represented as a part of the topic.</para>
@@ -305,15 +305,17 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Pulse Rate Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
+                            <?oxy_comment_start author="kec" timestamp="20190722T172330-0700" comment="For a few of these, maybe have the range actually indicate an interval of certainty. Maybe [68,70], just because we can :-)"?>
                             <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
+                <?oxy_comment_start author="kec" timestamp="20190722T172654-0700" comment="Put in the narrative a discussion of the utility of being able to represent intervals of certainty. "?>
                 <para>The Pule Rate example above utilizes a technique, the pulse oximeter device,
                     and contains a resultant value of 68 beats/minute. Since a Result is represented
                     with an upperBound and lowerBound they are both represented as 68 in this
-                    case.</para>
+                    case.<?oxy_comment_end?></para>
                 <editorial-rule>
                     <title>Prerequisite</title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
@@ -334,7 +336,7 @@ Doing family history, donor statements using subject of information is now the n
                                 </itemizedlist>
                             </listitem>
                             <listitem>
-                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Again, I think this could go first.  And instead of the wording 'can be expressed', maybe stronger as 'should be expressed'."?><?oxy_comment_end?>
+                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Again, I think this could go first.  And instead of the wording &apos;can be expressed&apos;, maybe stronger as &apos;should be expressed&apos;."?><?oxy_comment_end?>
                                 <para>A prerequisite is separable from the topic and can be
                                     expressed as a stand-alone clinical statement</para>
                                 <itemizedlist>
@@ -358,8 +360,9 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Systolic Blood Pressure Clinical Statement Example</title>
                     <mediaobject>
                         <imageobject>
+                            <?oxy_comment_start author="kec" timestamp="20190722T172755-0700" comment="Maybe make result [120,122] to indicate a resolution/precision of 2 millimeter of mercury? "?>
                             <imagedata fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -378,10 +381,10 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T143741-0500" comment="From Joey, not sure how we should capture the “prior to measurement” here? We used “timing” in the TSRs with “ISO 8601 prior to statement time”, but that is not quite right, either…" id="eys_3pz_23b"?>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="17"?>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="29"?>
                             <imagedata fileref="images/bp_complex3_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"
-                            /><?oxy_comment_end?><?oxy_comment_end mid="17"?>
+                            /><?oxy_comment_end?><?oxy_comment_end mid="29"?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -414,9 +417,7 @@ Doing family history, donor statements using subject of information is now the n
                 <para><editorial-rule>
                         <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
-
-                            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I find this title confusing, as you can't have Mulitple Topics. Maybe something like Separation of Compound Topic??"?><?oxy_comment_end?>
-
+                        <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I find this title confusing, as you can&apos;t have Mulitple Topics. Maybe something like Separation of Compound Topic??"?><?oxy_comment_end?>
                         <mathphrase>For the purposes of ANF, a statement is a request or performance
                             of an action that has to be able to exist on its own. Therefore a
                             narrative would be separated into multiple clinical statements if it
@@ -439,7 +440,7 @@ Doing family history, donor statements using subject of information is now the n
                             are unrelated (Akinetic seizure without atonia) then the two statements
                             should be associated. </mathphrase>
                     </editorial-rule></para>
-                    <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="
+                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="
                         At risk of possible firing squad, I wonder...
                         Should we make the blue bubble text more consistent with capitalization
                             1.) Use real attribute names
@@ -451,10 +452,6 @@ Doing family history, donor statements using subject of information is now the n
                             4.) In this figure, should be associatedStatement with properties of id and semantic.  The green value bubble of Negative screen for depression, could be pink, the same color of ANF Statement, indicating we are binding to another instance, and not a value within this model.
 
                     "?><?oxy_comment_end?>
-
-
-
-
                 <figure>
                     <title>Negative Screen for PTSD Clinical Statement Example</title>
                     <mediaobject>

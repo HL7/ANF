@@ -10,22 +10,27 @@ There isn&apos;t a sub-section for patient safety.  There is one for population 
     <title> Implications for Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models. However, both treatment and analysis of clinical statements require consistency
-      not only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
-      of a DCM, CIMI model, etc.). In most cases the data quality is the greatest obstacle to
-      analysis. Analysis Normal Form aims to minimize data quality challenges and provide a common
-      format with semantic clarity to allow for a meaningful secondary use of clinical data. </para>
-    <para>ANF has beneficial implications on the following data quality categories based on a
-      harmonized data quality framework by Khan et al: (Khan)</para>
+      not only at the
+      <?oxy_comment_start author="kec" timestamp="20190722T175052-0700" comment="Should we add semantic consistency here as seperate from format consistency, content consistency, adn semantic consistency? 
+
+Or maybe reference back to the interoperability levels, of which semantic was the highest? "?>format
+      level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance of a DCM, CIMI model,
+      etc.)<?oxy_comment_end?>. In most cases the data quality is the greatest obstacle to analysis.
+      Analysis Normal Form aims to minimize data quality challenges and provide a common format with
+      semantic clarity to allow for a meaningful secondary use of clinical data. </para>
+    <para><?oxy_comment_start author="kec" timestamp="20190722T175226-0700" comment="As I read this, it is more restating Khan, that saying how ANF supports data quality in ways that Khan says are important. Need to redraft to be more of how ANF supports data quality, for each way we support data quality, pile on that Kahn thinks it important, and other references that we can point to as well..."?>ANF
+      has beneficial implications on the following data quality categories based on a harmonized
+      data quality framework by Khan et al: (Khan)</para>
     <para>
       <itemizedlist>
         <listitem>
-          <para><emphasis role="bold">Conformance</emphasis>: Conformance focuses on data quality
-            features that describe the compliance of the representation of data against internal or
-            external formatting, relational, or computational definitions. ANF has explicit design
-            structures for syntactic and structural constraints of clinical data, with specific
-            formats and allowed values for particular data elements. As described in this document,
-            ANF focuses on subcategories of Conformance data quality: value conformance, relational
-            conformance, and computational conformance. </para>
+          <para><?oxy_comment_end?><emphasis role="bold">Conformance</emphasis>: Conformance focuses
+            on data quality features that describe the compliance of the representation of data
+            against internal or external formatting, relational, or computational definitions. ANF
+            has explicit design structures for syntactic and structural constraints of clinical
+            data, with specific formats and allowed values for particular data elements. As
+            described in this document, ANF focuses on subcategories of Conformance data quality:
+            value conformance, relational conformance, and computational conformance. </para>
           <itemizedlist>
             <listitem>
               <para>Value Conformance: Value conformance seeks to determine if recorded data
