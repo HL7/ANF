@@ -7,19 +7,21 @@
     statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
     provides a written account that can be naturally read by humans, as well as a <glossterm
       baseform="Normal Form">normal form</glossterm> which is a machine processable representation
-    of the statement's data as a standardized and encoded fundamental form. There can be many views
-    on what constitutes a normal form, based on differing use cases. Today, clinical statements are
-    often represented in unpredictable and denormalized forms, which makes reliable and safe
-    decision support challenging, and reduces the quality of other types of data processing. </para>
+    of the statement's data as a standardized and encoded fundamental form.  Today, clinical
+    statements are often represented in unpredictable and denormalized forms, which makes reliable
+    and safe decision support challenging, and reduces the quality of other types of data
+    processing.  </para>
   <para>Healthcare organizations are striving to become high reliability organizations (HROs),
     characterized by high levels of safety under inherently risky, technologically-complex, and
     demanding conditions.<citation>HRO_HIT</citation>
-    <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography."?>Deployment
+    <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
-    standard-based clinical data <!--a substantial number of extant EHR mapped data sets--> to
+    standard-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
     improve population health through quality measures, case reporting, and decision support. The
-    ability to measure and improve outcomes relies on high-quality data aggregated from a variety of
-    systems.  <?oxy_comment_end?></para>
+    ability to measure and improve outcomes relies on consistent, high-quality data that was
+    aggregated from a variety of systems. Analysis using normal form allows HROs to
+    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. A
+      <emphasis>standard</emphasis> normal  form can help replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement."?>
     <!--normal forms--><?oxy_comment_end?> background on clinical statement representations
     introduced by HL7 and ISO clinical statement models, and focus on the need for—and logical
@@ -82,17 +84,18 @@
 
 ANF is not &quot;a formal terminological composition and decomposition mechanism&quot;, Model transformations into and out of ANF depend on &quot;a formal terminological composition and decomposition mechanism&quot;. "?>Elkin wrote<?oxy_comment_end?> about what is needed in order for post coordinated statements to be comparable and captured one of ANF's key objectives: "to be <emphasis role="bold">a formal terminological composition and decomposition mechanism</emphasis> for lossless information representation such that both explicit and implicit information can be faithfully recovered, maintained, and modified with ease." (Elkin, pg 14--><?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?>)
       <?oxy_comment_end?></para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;"?>The
-        <emphasis role="bold">main purpose</emphasis> of ANF<?oxy_comment_end?> is providing a
-      normalized representation of clinical statements from a heterogeneous source using an
-      objective quantitative <emphasis role="bold">measure</emphasis> to help evaluate the result,
-      presence, and magnitude of a specific finding, request or observation.</para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T102123-0700" comment="Tie this in with the &quot;formal terminological composition and decompositkion mechanism&quot;. Possibly reorder to keep the material in sequence. What else does ANF require? Clean seperation of concerns? Clear editorial rules? Unambiguous implementation guidance? Just brainstorming a few ideas. "?>ANF
-      requires<?oxy_comment_end?> an ability to classify topic expressions (and expressions that may
-      go in other locations) and thus it depends on systems that can produce structured information
-      reducible to ANF. These systems may create normal data natively or transform other
-      representations of clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form -
-      ANF.<?oxy_comment_start author="kec" timestamp="20190721T102337-0700" comment="Add a link to where these items are presented discussed. Make use of the xreflabel to generate the linkage text. "?></para><?oxy_comment_end?>
+    <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
+      purpose is to introduce standard-based, normalized representation of clinical statements from
+      a heterogeneous source using an objective quantitative <emphasis role="bold"
+        >measure</emphasis> to help evaluate the result, presence, and magnitude of a specific
+      finding, request or observation.
+      A<?oxy_comment_start author="kec" timestamp="20190721T102123-0700" comment="Tie this in with the &quot;formal terminological composition and decompositkion mechanism&quot;. Possibly reorder to keep the material in sequence. What else does ANF require? Clean seperation of concerns? Clear editorial rules? Unambiguous implementation guidance? Just brainstorming a few ideas. " flag="done"?>NF
+      requires<?oxy_comment_end?> an ability to classify the <emphasis role="bold">topic</emphasis>
+      of a statement as standard-based and thus it depends on structured input data information that
+      formal terminology. ANF disambiguates input data along a well-defined compositional layers
+      (see <link linkend="Intro_SoC_Section">Separation of Concerns</link>). In practice,
+      information systems may create normal data natively or transform other representations of
+      clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form - ANF.</para>
     <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
       multiple sources to better support a set of analysis.</para>
     <itemizedlist spacing="compact">
@@ -159,7 +162,7 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
       constraining the information to allow only certain values to be entered, e.g. through a
       drop-down list, radio buttons, or breaking up large chunks of related information into smaller
       parts.</para>
-    <para><?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems."?><?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="22"?>For
+    <para><?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems."?><?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="20"?>For
       example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines information
       reported by devices with findings and interpretation: <orderedlist>
         <listitem>
@@ -249,7 +252,7 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
       clinical information be available in multiple modeled forms. These models, although different
       in form, semantically represent the same information, and are known as isosemantic models. Any
       particular detailed clinical model exists within a family of isosemantic siblings.
-      <?oxy_comment_end mid="22"?></para>
+      <?oxy_comment_end mid="20"?></para>
     <section>
       <title> Assumptions</title>
       <para>ANF provides a precise, consistent semantic data and terminology specification that is
@@ -271,7 +274,7 @@ ANF is not &quot;a formal terminological composition and decomposition mechanism
         the data semantics and terminology are sufficiently precise to define the elements mandatory
         for analysis. </para>
     </section>
-    <section>
+    <section xml:id="Intro_SoC_Section">
       <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. "?>Approach:
         Separation of Concerns<?oxy_comment_end?></title>
       <para><?oxy_comment_start author="kec" timestamp="20190721T123625-0700" comment="Add a paragraph that describes current challenges lack of separation of concerns creates. Use FHIR observation resource as an example, with fields that overlap with SNOMED model. Then transition to Seperation of Concerns as a solution to the problem. "?>Increased<?oxy_comment_end?>
