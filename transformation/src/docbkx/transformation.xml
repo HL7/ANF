@@ -3,32 +3,12 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-    <title>Normalization</title>
-    
-    <informaltable>
-        <tgroup cols="1">
-            <colspec colnum="1" colname="col1"/>
-            <tbody>
-                <row>
-                    <entry>
-                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Explain that the ANF Model is a normalized representation of a clinical statement, and other representations can be transformed into this one view</para>
-                            </listitem>
-                        </itemizedlist>
-                    </entry>
-                </row>
-            </tbody>
-        </tgroup>
-    </informaltable>
+    <title>Putting it Together: Normalization and Transformation</title>
 
 
-    <para>
-            Normalization of clinical statements is defined by Elkin as "the ability to identify
-            every representational format that confers the same meaning as being equivalent (i.e.,
-            unambiguous representation). 
-    </para>
+    <para>Normalization of clinical statements is defined by Elkin as "the ability to identify every
+        representational format that confers the same meaning as being equivalent (i.e., unambiguous
+        representation). </para>
 
 
     <section>

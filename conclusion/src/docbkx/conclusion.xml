@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Conclusion</title>
+  <title>Implications - Improving Patient Safety and Outcomes</title>
   <para>ANF has implications on
     <?oxy_comment_start author="timowilliams" timestamp="20190717T183011-0500" comment="Comment from Stephanie K:
 There isn&apos;t a sub-section for patient safety.  There is one for population health.  Should it be renamed to include both?"?>clinical

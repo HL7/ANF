@@ -33,13 +33,7 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Clinical Input Form -->
-  <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-
-  <!-- Introduction to Clinical Statements -->
+   <!-- Introduction to Clinical Statements -->
   <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
@@ -53,14 +47,7 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Differences between ANF and CIF -->
-  <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-
-
-  <!-- Analysis Normal Form -->
+   <!-- Analysis Normal Form -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -70,13 +57,13 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Precision -->
-  <!--<xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
-
   <!-- Conclusion -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Precision -->
+  <xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
   <!-- <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   -->
@@ -85,6 +72,18 @@
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Clinical Input Form -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+  
+  <!-- Differences between ANF and CIF -->
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
 
   <!-- Appendix -->
   <xi:include

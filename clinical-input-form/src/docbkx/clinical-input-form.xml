@@ -3,28 +3,9 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-    <title><?oxy_comment_start author="kec" timestamp="20190721T184354-0700" comment="Move this chapter after ANF. Then use the same examples as in ANF to illustrate CIMI. "?>CIMI
+    <title>Current Modeling Efforts -
+        <?oxy_comment_start author="kec" timestamp="20190721T184354-0700" comment="Move this chapter after ANF. Then use the same examples as in ANF to illustrate CIMI. "?>CIMI
         Clinical Statements<?oxy_comment_end?></title>
-
-
-    <informaltable>
-        <tgroup cols="1">
-            <colspec colnum="1" colname="col1"/>
-            <tbody>
-                <row>
-                    <entry>
-                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>To illustrate a more traditional method of modeling using CIMI's structured data tree approach which can then be compared with the Analysis Normal Form approach.</para>
-                            </listitem>
-                        </itemizedlist>
-                        <para> </para>
-                    </entry>
-                </row>
-            </tbody>
-        </tgroup>
-    </informaltable>
     <section>
         <title><?oxy_comment_start author="kec" timestamp="20190721T183853-0700" comment="Remove this as a standalone section, and put all the content immediately following the chapter"?>Introduction
             to CIMI Clinical Statements<?oxy_comment_end?>

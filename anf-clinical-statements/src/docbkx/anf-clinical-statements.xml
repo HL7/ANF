@@ -3,35 +3,7 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
-    <title>ANF Clinical Statements</title>
-    <para> </para>
-    <informaltable>
-        <tgroup cols="1">
-            <colspec colnum="1" colname="col1"/>
-            <tbody>
-                <row>
-                    <entry>
-                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>To provide understanding of ANF statements </para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Introduce the 2 types of ANF statements and their
-                                            purpose</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Explain the benefits of having only 2 types</para>
-                                    </listitem>
-                                </itemizedlist>
-                            </listitem>
-                        </itemizedlist>
-                        <para> </para>
-                    </entry>
-                </row>
-            </tbody>
-        </tgroup>
-    </informaltable>
+    <title>How ANF Works? ANF Clinical Statements</title>
     <para>In the context of the ANF Model, a clinical statement represents an entry in the patient
         record that documents, in a structured/computable manner, clinical information related to
         the patient that is asserted by a particular source, recorded, and potentially verified. </para>
@@ -48,8 +20,7 @@
         <editorial-rule>
             <title><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. "?>Performance
                 of Action<?oxy_comment_end?></title>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words 'passive' & 'active'. I don't think it adds any extra information and this will keep people from argueing whether observations are really passive or active."?><?oxy_comment_end?>
-
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words &apos;passive&apos; &amp; &apos;active&apos;. I don&apos;t think it adds any extra information and this will keep people from argueing whether observations are really passive or active."?><?oxy_comment_end?>
             <mathphrase>A Performance may include the passive observation of a phenomenon related to
                 patients and their health status or family history, and may also include active
                 interventions, such as providing education or administering medications or
@@ -65,18 +36,18 @@
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
 As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
-" id="xfp_jyf_nhb" mid="2"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
+" id="xfp_jyf_nhb" mid="4"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
 As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
 " parentID="xfp_jyf_nhb"?>A
                 Performance of Action statement describes a topic that has previously been
                 performed, and – if applicable - the result that corresponds to the
-                topic.<?oxy_comment_end?><?oxy_comment_end mid="2"?> As shown in the examples below,
+                topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="4"?><?oxy_comment_end mid="4"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="5"?><?oxy_comment_end mid="5"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="6"?><?oxy_comment_end mid="6"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can't be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information."?><?oxy_comment_end?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -145,11 +116,11 @@ For instance that a test is ordered?
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb" mid="9"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+" id="ppm_nyf_nhb" mid="12"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
 " parentID="ppm_nyf_nhb"?>Family
                                     history of breast
-                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="9"?></para>
+                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="12"?></para>
                             </listitem>
                         </itemizedlist>
                     </para>
@@ -192,12 +163,12 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done"?><?oxy_comment_end?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done" mid="12"?>
-                <para><?oxy_comment_end mid="12"?>In the Diabetes Mellitus type 2 example above, the
-                    Topic is an Observation procedure with a Has focus of Diabetes mellitus type 2.
-                    To represent that it is present, the Result is a lowerBound of 1, an upperBound
-                    of infinite (inf), and a measureSemantic of "Countable quantity".</para>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="17"?><?oxy_comment_end mid="17"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
+                <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
+                    an Observation procedure with a Has focus of Diabetes mellitus type 2. To
+                    represent that it is present, the Result is a lowerBound of 1, an upperBound of
+                    infinite (inf), and a measureSemantic of "Countable quantity".</para>
                 <editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
