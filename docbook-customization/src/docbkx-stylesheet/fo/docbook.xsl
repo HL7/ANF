@@ -337,17 +337,33 @@
   
 <!-- Modified table and figure label format -->
   <xsl:attribute-set name="formal.title.properties">
+    <!--
     <xsl:attribute name="color">#696969</xsl:attribute>
     <xsl:attribute name="font-size">10pt</xsl:attribute>
     <xsl:attribute name="text-align">center</xsl:attribute>
-   <!--   if needed add this conditional blcok for table/figure
-     <xsl:choose>
+    -->
+   <!--   if needed add this conditional blcok for table/figure -->
+    <xsl:attribute name="font-size"> 
+    <xsl:choose>
         <xsl:when test="self::d:table">10pt</xsl:when>
         <xsl:when test="self::d:figure">10pt</xsl:when>
         <xsl:otherwise>inherit</xsl:otherwise>
       </xsl:choose>
       </xsl:attribute>
-    -->
+    <xsl:attribute name="color"> 
+      <xsl:choose>
+        <xsl:when test="self::d:table">#696969</xsl:when>
+        <xsl:when test="self::d:figure">#696969</xsl:when>
+        <xsl:otherwise>inherit</xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
+    <xsl:attribute name="text-align"> 
+      <xsl:choose>
+        <xsl:when test="self::d:table">center</xsl:when>
+        <xsl:when test="self::d:figure">center</xsl:when>
+        <xsl:otherwise>inherit</xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
   </xsl:attribute-set>
 
 <!-- These titles are handled by formal.object.heading template,
