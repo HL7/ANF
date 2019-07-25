@@ -18,9 +18,9 @@
             RESULT</emphasis>).</para>
         <figure>
             <title>ANFStatement Structure</title>
-            <mediaobject role="bordered">
+            <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement.png" format="PNG" scale="60" align="center"/>
+                    <imagedata fileref="images/clinical_statement.png" format="PNG" scale="50" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>       
@@ -32,107 +32,112 @@
                 will contain either request or result information regarding the <emphasis role="bold">'topic'</emphasis>.</para>
             <informaltable>
                 <tgroup cols="3">
-                    <colspec colnum="1" colname="col1" colwidth="1.89*"/>
-                    <colspec colnum="2" colname="col2" colwidth="1*"/>
-                    <colspec colnum="3" colname="col3" colwidth="4.4*"/>
-                    <thead>
-                        <row>
-                            <entry>Attribute</entry>
-                            <entry><emphasis role="bold">Multiplicity</emphasis></entry>
-                            <entry><emphasis role="bold">Notes</emphasis></entry>
-                        </row>
-                    </thead>
-                    <tbody>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">id</emphasis> Identifier</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>Unique Identifier of the statement.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">time</emphasis> Measure</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>This data element describes when the statement was documented.
-                                    Is its expressed as a <emphasis role="bold"><emphasis role="underline">
-                                        <link linkend="measureClass">Measure</link></emphasis></emphasis>.</para>
-                                <para>For example the date of <emphasis role="bold">2019-07-09T00:12:31+00:00</emphasis> would be represented as
+                <colspec colnum="1" colname="col1" colwidth="1.93*"/>
+                <colspec colnum="2" colname="col2" colwidth="1*"/>
+                <colspec colnum="3" colname="col3" colwidth="4.14*"/>
+                <thead>
+                    <row>
+                        <entry>Attribute</entry>
+                        <entry><emphasis role="bold">Multiplicity</emphasis></entry>
+                        <entry><emphasis role="bold">Notes</emphasis></entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">id</emphasis> Identifier</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>Unique Identifier of the statement.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">time</emphasis> Measure</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>This data element describes when the statement was documented. Is
+                                its expressed as a <emphasis role="bold"><emphasis role="underline">
+                                        <link linkend="measureClass"
+                                    >Measure</link></emphasis></emphasis>.</para>
+                            <para>For example the date of <emphasis role="bold"
+                                    >2019-07-09T00:12:31+00:00</emphasis> would be represented as
                                 Unix Epoch time as <emphasis role="bold">1562631151</emphasis>
                                 seconds :</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>interval.lowerBound = 1562631151</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>interval.includeLowerBound = true</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>interval.upperBound = 1562631151</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>interval.includeLowerBound = true</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>semantic = Seconds | 257997001</para>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>The ANFStatement separates the timing related to documenting a
-                                    statement vs, the timing of the phenomenon that the statement is
-                                    describing. This data element specifies when the statement was
-                                    recorded/asserted.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">subjectOfRecord</emphasis>
-                                    Participant</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>A patient's clinical record will contain many statements. The
-                                    subjectOfRecord is a reference to the patient clinical record in
-                                    which this statement is contained.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">author</emphasis> Practitioner</para>
-                            </entry>
-                            <entry>
-                                <para>[0...*]</para>
-                            </entry>
-                            <entry>
-                                <para>Optional reference(s) list of identified authoring
-                                    practitioners.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">subjectOfInformation</emphasis>
-                                    LogicalExpression</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>A logical expression describing the subject of the statement;
-                                it's used to express <emphasis role="bold">WHO </emphasis>the
-                                clinical statement is about. A patient's clinical record may contain
+                            <itemizedlist>
+                                <listitem>
+                                    <para>interval.lowerBound = 1562631151</para>
+                                </listitem>
+                                <listitem>
+                                    <para>interval.includeLowerBound = true</para>
+                                </listitem>
+                                <listitem>
+                                    <para>interval.upperBound = 1562631151</para>
+                                </listitem>
+                                <listitem>
+                                    <para>interval.includeLowerBound = true</para>
+                                </listitem>
+                                <listitem>
+                                    <para>semantic = Seconds | 257997001</para>
+                                </listitem>
+                            </itemizedlist>
+                            <para>The ANFStatement separates the timing related to documenting a
+                                statement vs, the timing of the phenomenon that the statement is
+                                describing. This data element specifies when the statement was
+                                recorded/asserted.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">subjectOfRecord</emphasis>
+                            </para>
+                            <para>Participant</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>A patient's clinical record will contain many statements. The
+                                subjectOfRecord is a reference to the patient clinical record in
+                                which this statement is contained.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">author</emphasis>
+                            </para>
+                            <para>Practitioner</para>
+                        </entry>
+                        <entry>
+                            <para>[0...*]</para>
+                        </entry>
+                        <entry>
+                            <para>Optional reference(s) list of identified authoring
+                                practitioners.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">subjectOfInformation</emphasis>
+                                LogicalExpression</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>A logical expression describing the subject of the statement; it's
+                                used to express <emphasis role="bold">WHO </emphasis>the clinical
+                                statement is about. A patient's clinical record may contain
                                 statements not only about the patient, but also statements about
                                 children, relatives and donors. Thus, some possible values for
                                 subjectOfInformation, would include codes for 'subject of record'
@@ -140,102 +145,105 @@
                                 statements will have a subjectOfInformation with a value of 'subject
                                 of record', since most statements in a patient record will be about
                                 the patient.</para>
-                                <para>The subjectOfInformation is used to represent who the
-                                    statement is about. This is normally the patient unless
-                                    explicitly stated otherwise.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">associatedStatement</emphasis>
-                                    AssociatedStatement</para>
-                            </entry>
-                            <entry>
-                                <para>[0...*]</para>
-                            </entry>
-                            <entry>
-                                <para>An ANF statement to the performance of an action. If the topic
-                                    is a laboratory result panel, each association would point to
-                                    another statement which is a laboratory result.</para>
-                                <para>It may include:</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>a precondition</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>an interpretation</para>
-                                    </listitem>
-                                </itemizedlist>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">topic</emphasis>
-                                    LogicalExpression</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>This data element is an expression of <emphasis role="bold">WHAT </emphasis>is being requested or what was performed.
-                                    For both ANFstatement types (request or performance) a
-                                    pre-coordinated or post-coordinated “procedure” concept as a
-                                    logical expression is required to sufficiently capture the
-                                    action, which is either requested or performed.</para>
-                                <para>The topic is the central component of clinical statements. The
-                                    following are proposed principles for the topic of an
-                                    ANFStatement.</para>
-                            <para><emphasis role="bold" xml:id="topicPrinciple1">Principle 1:</emphasis> The topic defines
-                                the action (being performed or requested) or what is being
-                                requested, measured or observed.</para>
-                                <para><emphasis role="bold" xml:id="topicPrinciple2">Principle 2:</emphasis> The topic has to be
-                                able to exist on its own and still retain original intent and
-                                clarity of meaning.</para>
-                                <para><emphasis role="bold" xml:id="topicPrinciple3">Principle 3: </emphasis>Each clinical
-                                statement may only have one topic [but the topic is comprehensive
-                                expression].</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">type</emphasis> LogicalExpression</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>This data element distinguishes between a performance
-                                        (<emphasis role="bold">'performed'</emphasis>) and a request
-                                        (<emphasis role="bold">'requested'</emphasis>). Performances
-                                    may be observational performances, e.g. the observation of a
-                                    clinical finding or disorder being present or absent. They can
-                                    also be a procedure or intervention which has been performed on
-                                    the subject of record in the past, e.g. “a procedure using a
-                                    12-lead electrocardiogram”. Performances can – but do not have
-                                    to – include quantitative or qualitative results, e.g. “3 dot
-                                    blot hemorrhages” or “Hepatitis A antibody positive”.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
-                                <para><emphasis role="bold">circumstance</emphasis>
-                                    CircumstanceChoice</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>A choice of circumstance appropriate to the type of clinical
-                                    statement.</para>
-                                <para/>
-                            </entry>
-                        </row>
-                    </tbody>
-                </tgroup>
+                            <para>The subjectOfInformation is used to represent who the statement is
+                                about. This is normally the patient unless explicitly stated
+                                otherwise.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">associatedStatement</emphasis>
+                                AssociatedStatement</para>
+                        </entry>
+                        <entry>
+                            <para>[0...*]</para>
+                        </entry>
+                        <entry>
+                            <para>An ANF statement to the performance of an action. If the topic is
+                                a laboratory result panel, each association would point to another
+                                statement which is a laboratory result.</para>
+                            <para>It may include:</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>a precondition</para>
+                                </listitem>
+                                <listitem>
+                                    <para>an interpretation</para>
+                                </listitem>
+                            </itemizedlist>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">topic</emphasis>
+                            </para>
+                            <para>LogicalExpression</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>This data element is an expression of <emphasis role="bold">WHAT
+                                </emphasis>is being requested or what was performed. For both
+                                ANFstatement types (request or performance) a pre-coordinated or
+                                post-coordinated “procedure” concept as a logical expression is
+                                required to sufficiently capture the action, which is either
+                                requested or performed.</para>
+                            <para>The topic is the central component of clinical statements. The
+                                following are proposed principles for the topic of an
+                                ANFStatement.</para>
+                            <para><emphasis role="bold" xml:id="topicPrinciple1">Principle
+                                    1:</emphasis> The topic defines the action (being performed or
+                                requested) or what is being requested, measured or observed.</para>
+                            <para><emphasis role="bold" xml:id="topicPrinciple2">Principle
+                                    2:</emphasis> The topic has to be able to exist on its own and
+                                still retain original intent and clarity of meaning.</para>
+                            <para><emphasis role="bold" xml:id="topicPrinciple3">Principle 3:
+                                </emphasis>Each clinical statement may only have one topic [but the
+                                topic is comprehensive expression].</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">type</emphasis></para>
+                            <para> LogicalExpression</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>This data element distinguishes between a performance (<emphasis
+                                    role="bold">'performed'</emphasis>) and a request (<emphasis
+                                    role="bold">'requested'</emphasis>). Performances may be
+                                observational performances, e.g. the observation of a clinical
+                                finding or disorder being present or absent. They can also be a
+                                procedure or intervention which has been performed on the subject of
+                                record in the past, e.g. “a procedure using a 12-lead
+                                electrocardiogram”. Performances can – but do not have to – include
+                                quantitative or qualitative results, e.g. “3 dot blot hemorrhages”
+                                or “Hepatitis A antibody positive”.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para><emphasis role="bold">circumstance</emphasis>
+                                CircumstanceChoice</para>
+                        </entry>
+                        <entry>
+                            <para>[1...1]</para>
+                        </entry>
+                        <entry>
+                            <para>A choice of circumstance appropriate to the type of clinical
+                                statement.</para>
+                            <para/>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
             </informaltable>
         </section>
         <section>
@@ -257,9 +265,9 @@
                 interval.upperBound=INF.</para>
             <figure>
                 <title>Circumstance</title>
-                <mediaobject role="bordered">
+                <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG" scale="60" align="center"/>
+                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG" scale="50" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -628,7 +636,7 @@
                 float). </para>
             <figure>
                 <title>Data Structures</title>
-                <mediaobject role="bordered">
+                <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/data_structures.png" format="PNG" scale="60" align="center"/>
                     </imageobject>
@@ -1003,7 +1011,7 @@
             <para>ANF statements may also reference other related statements</para>
             <figure>
                 <title>References</title>
-                <mediaobject role="bordered">
+                <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/reference_classes.png" format="PNG" scale="70" align="center"/>
                     </imageobject>
