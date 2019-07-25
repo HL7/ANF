@@ -60,10 +60,14 @@ public class DocumentPrepend extends AbstractMojo {
         PDDocument doc = PDDocument.load(new File(path));
         PDDocumentOutline bookmarks = doc.getDocumentCatalog().getDocumentOutline();
         PDOutlineItem item = bookmarks.getFirstChild();
-        item.setTitle("Title Page");
+        item.setTitle("ANF Informative Ballot");
         PDPageDestination dest = new PDPageFitWidthDestination();
         dest.setPage(doc.getPage(0));
         item.setDestination(dest);
+
+        PDActionGoTo action = new PDActionGoTo();
+        action.setDestination(dest);
+
         doc.save(new File(path));
     }
 }
