@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" 
     type="application/relax-ng-compact-syntax"?>
-<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
-    version="5.1">
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
         <title>ANF UML Model</title>
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
             </emphasis></emphasis>is logical model and uses  Object Management Group (OMG) Unified
@@ -15,8 +14,7 @@
         <para>The following diagram describes the logical structure of clinical statement that
             conforms to the Analysis Normal Form specification. At a high-level an ANF statement
             defines the topic (<emphasis role="bold">WHAT </emphasis>happened, was observed,
-            requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold"
-                >HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
+            requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold">HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
             RESULT</emphasis>).</para>
         <figure>
             <title>ANFStatement Structure</title>
@@ -31,8 +29,7 @@
             <para>This is the main class which describes a clinical statement. Most importantly it
                 contains the <emphasis role="bold">'topic' </emphasis>which describes what this
                 statement is about, and the <emphasis role="bold">'circumstance' </emphasis>which
-                will contain either request or result information regarding the <emphasis
-                    role="bold">'topic'</emphasis>.</para>
+                will contain either request or result information regarding the <emphasis role="bold">'topic'</emphasis>.</para>
             <informaltable>
                 <tgroup cols="3">
                     <colspec colnum="1" colname="col1" colwidth="1.89*"/>
@@ -67,11 +64,11 @@
                             </entry>
                             <entry>
                                 <para>This data element describes when the statement was documented.
-                                    Is its expressed as a <emphasis role="bold"><emphasis
-                                            role="underline">
+                                    Is its expressed as a <emphasis role="bold"><emphasis role="underline">
                                         <link linkend="measureClass">Measure</link></emphasis></emphasis>.</para>
-                                <para>For example the date of 2019-07-09T00:12:31+00:00 would be
-                                    represented as Unix Epoch time as 1562631151 seconds :</para>
+                                <para>For example the date of <emphasis role="bold">2019-07-09T00:12:31+00:00</emphasis> would be represented as
+                                Unix Epoch time as <emphasis role="bold">1562631151</emphasis>
+                                seconds :</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>interval.lowerBound = 1562631151</para>
@@ -133,17 +130,16 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>A logical expression describing the subject of the statement.
-                                    I't used to express <emphasis role="bold">WHO </emphasis>the
-                                    clinical statement is about. A patient's clinical record may
-                                    contain statements not only about the patient, but also
-                                    statements about children, relatives and donors. Thus, some
-                                    possible values for subjectOfInformation, would include codes
-                                    for 'subject of record' (the patient), 'family member', or
-                                    'donor'. The majority of statements will have a
-                                    subjectOfInformation with a value of 'subject of record', since
-                                    most statements in a patient record will be about the
-                                    patient.</para>
+                                <para>A logical expression describing the subject of the statement;
+                                it's used to express <emphasis role="bold">WHO </emphasis>the
+                                clinical statement is about. A patient's clinical record may contain
+                                statements not only about the patient, but also statements about
+                                children, relatives and donors. Thus, some possible values for
+                                subjectOfInformation, would include codes for 'subject of record'
+                                (the patient), 'family member', or 'donor'. The majority of
+                                statements will have a subjectOfInformation with a value of 'subject
+                                of record', since most statements in a patient record will be about
+                                the patient.</para>
                                 <para>The subjectOfInformation is used to represent who the
                                     statement is about. This is normally the patient unless
                                     explicitly stated otherwise.</para>
@@ -183,8 +179,7 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>This data element is an expression of <emphasis role="bold"
-                                        >WHAT </emphasis>is being requested or what was performed.
+                                <para>This data element is an expression of <emphasis role="bold">WHAT </emphasis>is being requested or what was performed.
                                     For both ANFstatement types (request or performance) a
                                     pre-coordinated or post-coordinated “procedure” concept as a
                                     logical expression is required to sufficiently capture the
@@ -192,16 +187,15 @@
                                 <para>The topic is the central component of clinical statements. The
                                     following are proposed principles for the topic of an
                                     ANFStatement.</para>
-                                <para><emphasis role="bold">Principle 1: </emphasis>The topic
-                                    defines the action being performed or requested.</para>
-                                <para><emphasis role="bold">Principle 2: </emphasis>The topic has to
-                                    be able to exist on its own and still retain original intent and
-                                    clarity of</para>
-                                <para>meaning.</para>
-                                <para><emphasis role="bold">Principle 3: </emphasis>The topic
-                                    includes what is being requested, measured or observed.</para>
-                                <para><emphasis role="bold">Principle 4: </emphasis>Each clinical
-                                    statement may only have one topic.</para>
+                            <para><emphasis role="bold" xml:id="topicPrinciple1">Principle 1:</emphasis> The topic defines
+                                the action (being performed or requested) or what is being
+                                requested, measured or observed.</para>
+                                <para><emphasis role="bold" xml:id="topicPrinciple2">Principle 2:</emphasis> The topic has to be
+                                able to exist on its own and still retain original intent and
+                                clarity of meaning.</para>
+                                <para><emphasis role="bold" xml:id="topicPrinciple3">Principle 3: </emphasis>Each clinical
+                                statement may only have one topic [but the topic is comprehensive
+                                expression].</para>
                                 <para/>
                             </entry>
                         </row>
@@ -247,8 +241,7 @@
         <section>
             <title> Circumstance </title>
 
-            <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis
-                    role="bold">WHY, WHEN, and with what RESULT </emphasis>a requested or performed
+            <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what RESULT </emphasis>a requested or performed
                 action will be or was carried out. </para>
             <para>A unique aspect of the ANF Model is t An important point to notice in this class
                 diagram is that the ANF Model promotes a normalized representation of observation or
@@ -266,7 +259,7 @@
                 <title>Circumstance</title>
                 <mediaobject role="bordered">
                     <imageobject>
-                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG"  scale="60" align="center" />
+                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG" scale="60" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -276,20 +269,14 @@
                     an ANFStatement is instantiated:</para>
                 <itemizedlist>
                     <listitem>
-                        <para role="underline"><link
-                                linkend="performanceClass"
-                            >PerformanceCircumstance</link></para>
+                        <para role="underline"><link linkend="performanceClass">PerformanceCircumstance</link></para>
                     </listitem>
                     <listitem>
                         
-                        <para role="underline"><link
-                                linkend="requestClass"
-                                >RequestCircumstance</link></para>
+                        <para role="underline"><link linkend="requestClass">RequestCircumstance</link></para>
                     </listitem>
                     <listitem>
-                        <para role="underline"><link
-                                linkend="narrativeClass"
-                                >NarrativeCircumstance</link></para>
+                        <para role="underline"><link linkend="narrativeClass">NarrativeCircumstance</link></para>
                     </listitem>
                 </itemizedlist>
 
@@ -337,7 +324,7 @@
                                     LogicalExpression</para>
                             </entry>
                             <entry>
-                                <para>[1...*]</para>
+                                <para>[0...*]</para>
                             </entry>
                             <entry>
                                 <para>This data element describes WHY a procedure was requested or
@@ -361,8 +348,7 @@
                     about the request will be documented in this clinical statement, including
                     information about details relating to the request, such as patient must fast for
                     12 hours before having a lipids blood test.</para>
-                <para><emphasis role="bold"><emphasis role="italic"
-                    >Examples</emphasis></emphasis>:</para>
+                <para><emphasis role="bold"><emphasis role="italic">Examples</emphasis></emphasis>:</para>
                 <itemizedlist>
                     <listitem>
                         <para>Request for Rheumatoid factor 1 time routine</para>
@@ -467,9 +453,7 @@
                             </entry>
                             <entry>
                                 <para>This data element Repetitiondescribes when an action is
-                                    requested for more than a single occurrence using the <emphasis
-                                        role="underline"><link linkend="measureClass"
-                                        >Measure</link></emphasis> data structure:</para>
+                                    requested for more than a single occurrence using the <emphasis role="underline"><link linkend="measureClass">Measure</link></emphasis> data structure:</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>When the repeated action should begin (periodStart),
@@ -505,11 +489,9 @@
                 <title>PerformanceCircumstance </title>
                 <para>This class describe the circumstances associate with a treatment service. It
                     is used when a clinical statement describes a performing treatment services. It
-                    specifies the result of intervention using both a measure and a coded <emphasis
-                        role="italic">status.</emphasis></para>
+                    specifies the result of intervention using both a measure and a coded <emphasis role="italic">status.</emphasis></para>
                 <para>For example, "<emphasis role="italic">Insulin placed on hold 24 hours prior to
-                        catheterization</emphasis>" would have a status of "<emphasis role="italic"
-                        >On hold</emphasis>". A typical, successfully completed procedure would have
+                        catheterization</emphasis>" would have a status of "<emphasis role="italic">On hold</emphasis>". A typical, successfully completed procedure would have
                     a status of "<emphasis role="italic">Completed</emphasis>".</para>
                 <informaltable>
                     <tgroup cols="3">
@@ -588,13 +570,13 @@
                             <row>
                                 <entry>
                                     <para><emphasis role="bold">participant</emphasis>
-                                        Reference</para>
+                                    Participant</para>
                                 </entry>
                                 <entry>
                                     <para>[0...*]</para>
                                 </entry>
                                 <entry>
-                                    <para/>
+                                    <para>Practitioner responsible for the results reported.</para>
                                 </entry>
                             </row>
                         </tbody>
@@ -640,9 +622,7 @@
         </section>
         <section>
             <title> Data Structures </title>
-            <para>The following are data structures used to represent an <emphasis role="underline"
-                        ><link linkend="ANFStatement"
-                        >ANFStatement</link></emphasis>. This section describes the data structures
+            <para>The following are data structures used to represent an <emphasis role="underline"><link linkend="ANFStatement">ANFStatement</link></emphasis>. This section describes the data structures
                 specific to ANF. This model references a set of logical structures to represent
                 unique identifiers (i.e. Identifier, Expresson) and primitive types (boolean,
                 float). </para>
@@ -650,7 +630,7 @@
                 <title>Data Structures</title>
                 <mediaobject role="bordered">
                     <imageobject>
-                        <imagedata fileref="images/data_structures.png" format="PNG" scale="60" align="center" />
+                        <imagedata fileref="images/data_structures.png" format="PNG" scale="60" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -667,13 +647,10 @@
                     represents the numeric range within which the observed value of a phenomenon
                     occurs. Note that this formalism allows both exact values and ranges of values
                     to be expressed. In case that the beginning and end point of an interval are the
-                    same value,, the meaning is that the value of the phenomenon is <emphasis
-                        role="underline">exactly</emphasis><emphasis role="underline"
-                    > </emphasis>that value.</para>
+                    same value,, the meaning is that the value of the phenomenon is <emphasis role="underline">exactly</emphasis><emphasis role="underline"> </emphasis>that value.</para>
                 <para>In the case that the lower and upper bound of an measure are the same number,
                         <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>, the
-                    meaning is that the value of the phenomenon is exactly <emphasis role="bold"
-                            ><emphasis role="italic">n</emphasis></emphasis>.</para>
+                    meaning is that the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>.</para>
                 <itemizedlist>
                     <listitem>
                         <para role="italic">[5,5] : exactly 5 ; [0,0] : exactly 0</para>
@@ -784,7 +761,7 @@
                             <entry>
                                 <para>Measure semantic represents a unit of measure or scale
                                     specified by the interval values. It is described using a
-                                    logical expression using standard-based terminology (i.e. SNOME
+                                    logical expression using standard-based terminology (i.e. SNOMED
                                     CT). </para>
                                 <para>For systolic blood pressure, the unit of measure is
                                     millimeters of mercury, and thus the measure semantic is a
@@ -880,9 +857,7 @@
             </section>
             <section>
                 <title xlink:href="repetitionClass">Repetition </title>
-                <para>This class builds on <emphasis role="underline"><link
-                            linkend="measureClass"
-                        >Measure</link></emphasis> and it is used to represent when an action
+                <para>This class builds on <emphasis role="underline"><link linkend="measureClass">Measure</link></emphasis> and it is used to represent when an action
                     is requested for more than a single occurrence. Repetition is an optional
                     component for a RequestCircumstance.</para>
                 <informaltable>
@@ -907,8 +882,8 @@
                             </entry>
                             <entry>
                                 <para>This required field is used to represent when a repeated
-                                    action should begin. If  it is not specified, a default value of
-                                    [0,inf] will be used. e.g. NOW</para>
+                                    action should begin (e.g. NOW). If it is not specified, a
+                                    default value of [0,INF) will be used. </para>
                                 <para/>
                             </entry>
                         </row>
@@ -920,7 +895,9 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para/>
+                                <para>This required field is used to represent how long a repeated
+                                    action should persist (e.g. for a year). If it is not specified,
+                                    a default value of [0,INF) will be used.</para>
                             </entry>
                         </row>
                         <row>
@@ -933,9 +910,8 @@
                             </entry>
                             <entry>
                                 <para>This required field is used to represent how long between
-                                    actions. If it is</para>
-                                <para>not specified, a default value of [0,inf] will be used. e.g.
-                                    for 2 weeks</para>
+                                    actions (e.g.  1 week ). If it is not specified, a default value
+                                    of [0,INF) will be used. </para>
                                 <para/>
                             </entry>
                         </row>
@@ -947,10 +923,9 @@
                                 <para>[0...1]</para>
                             </entry>
                             <entry>
-                                <para>This required field is used to represent how long a repetition
-                                    should persist.</para>
-                                <para>If it is not specified, a default value of [0,inf] will be
-                                    used. e.g. for 3 week</para>
+                                <para>This optional field is used to represent how long a repetition
+                                    should persist ( e.g. for 2 hours). If it is not specified, a
+                                    default value of [0,INF) will be used.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -963,9 +938,8 @@
                             </entry>
                             <entry>
                                 <para>This required field is used to represent how often the action
-                                    should occur.</para>
-                                <para>If it is not specified, a default value of [0,inf] will be
-                                    used. e.g. 3 times per week</para>
+                                    should occur (e.g. 4 times per month). If it is not specified, a
+                                    default value of [0, INF) will be used. </para>
                                 <para/>
                             </entry>
                         </row>
@@ -973,7 +947,7 @@
                 </tgroup>
                 </informaltable>
             </section>
-            <section  xml:id="logicalExpressionClass">
+            <section xml:id="logicalExpressionClass">
                 <title>LogicalExpression </title>
                 <para>This class represents is a wrapper for logical expression.</para>
                 <informaltable>
@@ -1004,9 +978,9 @@
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
                                             >Expresssion</link></emphasis> structure or a similar
                                     standard-based syntax ((e.g. SNOMED Expression Constrain
-                                    Language - ECL).</para>
-                                <para><emphasis role="bold">References: </emphasis></para>
-                                <para>https://confluence.ihtsdotools.org/display/DOCECL</para>
+                                    Language - ECL). </para>
+                                <para>The expression must use valid, standard-based
+                                    terminology.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -1031,10 +1005,59 @@
                 <title>References</title>
                 <mediaobject role="bordered">
                     <imageobject>
-                        <imagedata fileref="images/reference_classes.png" format="PNG" scale="60"  align="center"/>
+                        <imagedata fileref="images/reference_classes.png" format="PNG" scale="70" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
+        <section>
+            <title>AssociatedStatement </title>
+            <para>This class specifies how a statement may be associated with another
+                statement.</para>
+            <informaltable>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="col1" colwidth="1.88*"/>
+                    <colspec colnum="2" colname="col2" colwidth="1*"/>
+                    <colspec colnum="3" colname="col3" colwidth="3.96*"/>
+                    <thead>
+                        <row>
+                            <entry>Attribute</entry>
+                            <entry><emphasis role="bold">Multiplicity</emphasis></entry>
+                            <entry><emphasis role="bold">Notes</emphasis></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">id</emphasis> Reference</para>
+                            </entry>
+                            <entry>
+                                <para> </para>
+                                <para>[1...1]</para>
+                            </entry>
+                            <entry>
+                                <para>A reference to the associated statement</para>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">semantic</emphasis>
+                                    LogicalExpression</para>
+                            </entry>
+                            <entry>
+                                <para> </para>
+                                <para>[1...1]</para>
+                            </entry>
+                            <entry>
+                                <para>A logical expression to capture how the target statement is
+                                    associated(e.g. a precondition, an interpretation, a
+                                    component).</para>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </informaltable>
+        </section>
+            
             <section>
                 <title>Participant </title>
                 <para>This class specifies the role/specialties/services that a practitioner may
@@ -1052,9 +1075,9 @@
                 </itemizedlist>
                 <informaltable>
                     <tgroup cols="3">
-                    <colspec colnum="1" colname="col1" colwidth="1.24*"/>
+                    <colspec colnum="1" colname="col1" colwidth="1.66*"/>
                     <colspec colnum="2" colname="col2" colwidth="1*"/>
-                    <colspec colnum="3" colname="col3" colwidth="2.79*"/>
+                    <colspec colnum="3" colname="col3" colwidth="4.06*"/>
                     <thead>
                         <row>
                             <entry>Attribute</entry>
@@ -1071,7 +1094,7 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para/>
+                                <para>Unique identifier (e.g. National Provider Identifier).</para>
                             </entry>
                         </row>
                         <row>
@@ -1082,7 +1105,7 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para/>
+                                <para>Reference to the particpating practitioner.</para>
                             </entry>
                         </row>
                         <row>
