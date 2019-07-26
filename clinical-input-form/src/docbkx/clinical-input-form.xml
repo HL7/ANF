@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-    <title>Current Modeling Efforts -
+    <title>Current CIMI Modeling Efforts -
         <?oxy_comment_start author="kec" timestamp="20190721T184354-0700" comment="Move this chapter after ANF. Then use the same examples as in ANF to illustrate CIMI. "?>CIMI
         Clinical Statements<?oxy_comment_end?></title>
     <section>
@@ -12,8 +12,8 @@
         </title>
 
         <para>
-            <?oxy_comment_start author="kec" timestamp="20190721T183926-0700" comment="More active voice: This chapter describes the CIMI clinical statement model. "?>The
-            CIMI Clinical Statement Model is described in this chapter.<?oxy_comment_end?> This
+
+            This chapter describes the CIMI clinical statement model. This
             model uses a traditional structured data tree approach which can then be compared and
             contrasted with the ANF model. </para>
 
@@ -779,7 +779,7 @@
    
 
 
-</chapter>
+</appendix>
 
 
 

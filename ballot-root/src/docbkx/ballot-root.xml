@@ -90,6 +90,10 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
+    <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <!-- Introduction -->
   <!--<xi:include href="../../../introduction/src/docbkx/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   -->
