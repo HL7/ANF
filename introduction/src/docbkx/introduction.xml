@@ -123,7 +123,7 @@
         finding, request or observation. ANF requires an ability to classify the <emphasis
           role="bold">topic</emphasis> of a statement as standard-based and thus it depends on
         structured input data information that formal terminology. ANF disambiguates input data
-        along a well-defined compositional layers (see <link linkend="Intro_SoC_Section">Separation
+        along a well-defined compositional layers (see <link linkend="SoC_Section">Separation
           of Concerns</link>). In practice, information systems may create normal data natively or
         transform other representations of clinical statements (e.g. C-CDA templates, FHIR profiles)
         to normal form (i.e., ANF).</para>
@@ -263,7 +263,7 @@
         the data semantics and terminology are sufficiently precise to define the elements mandatory
         for analysis. </para>
     </section>
-    <section>
+    <section xml:id="SoC_Section">
       <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. "?>Approach
         - Architectural Separation of Concerns<?oxy_comment_end?></title>
       <para>I<?oxy_comment_start author="kec" timestamp="20190721T123625-0700" comment="Add a paragraph that describes current challenges lack of separation of concerns creates. Use FHIR observation resource as an example, with fields that overlap with SNOMED model. Then transition to Seperation of Concerns as a solution to the problem. "?>ncreased<?oxy_comment_end?>
@@ -298,9 +298,9 @@ Try &quot;Separating concerns across architectural layers is a foundational...&q
         unrelated standards development organizations. In these cases, SoC allows teams to work
         independently, in coordination with each other, and reuse the resulting artifacts.</para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T131643-0700" comment="I edited this one directly to demonstrate the linking mechanism. " flag="done"?><xref
-          linkend="SOC-KA"/> shows how a layered knowledge architecture can enable a separation of
+        linkend="SoC-diagram"/> shows how a layered knowledge architecture can enable a separation of
         concerns.<?oxy_comment_end?></para>
-      <figure>
+      <figure xml:id="SoC-diagram">
         <title>Separation of Concerns: Knowledge Architecture</title>
         <mediaobject role="bordered">
           <imageobject>
@@ -395,7 +395,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           clinical statements to normal form by decoupling structure from semantics and workflow.
           <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
 
-Yes, ANF is for URU..."?>in
+Yes, ANF is for URU..." flag="done"?>in
           regard to an isosemantic representation in the Statement Model layer<?oxy_comment_end?>.
           <!--<para>ANF can help the modeling of clinical statements achieve the following design features: </para><itemizedlist><listitem><para>Understandable: The meaning of a clinical statement can be understood, without reference to private or inaccessible information.</para></listitem><listitem><para>Reproducible: Multiple users can apply the clinical statement model to the same situations.</para></listitem><listitem><para>Useful: The clinical statement has a practical value to users that is self-evident or can be readily explained.</para></listitem></itemizedlist>--></para>
       </figure>
@@ -477,7 +477,7 @@ Yes, ANF is for URU..."?>in
       </section>
     </section>
     <section>
-      <title>CIMI Statements</title>
+      <title xml:id="CIMIStatement">CIMI Statements</title>
       <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of logical
         clinical information models using a common modeling formalism. CIMI intends to improve the
         interoperability of healthcare information systems through shared detailed clinical
