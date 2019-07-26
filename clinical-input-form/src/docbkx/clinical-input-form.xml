@@ -3,19 +3,13 @@
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-    <title>Current CIMI Modeling Efforts -
-        <?oxy_comment_start author="kec" timestamp="20190721T184354-0700" comment="Move this chapter after ANF. Then use the same examples as in ANF to illustrate CIMI. "?>CIMI
-        Clinical Statements<?oxy_comment_end?></title>
-    <section>
-        <title><?oxy_comment_start author="kec" timestamp="20190721T183853-0700" comment="Remove this as a standalone section, and put all the content immediately following the chapter"?>Introduction
-            to CIMI Clinical Statements<?oxy_comment_end?>
-        </title>
+    <title>Current CIMI Clinical Statement Modeling Effort</title>
 
         <para>
-
             This chapter describes the CIMI clinical statement model. This
             model uses a traditional structured data tree approach which can then be compared and
-            contrasted with the ANF model. </para>
+            contrasted with the ANF model. 
+        </para>
 
         <para>
             The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic communication made about a patient typically documented as an 'entry' in the patient record. For example, a CIMI Clinical Statement can be used to represent the following statements made about a patient.
@@ -47,11 +41,10 @@
         <para> CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135"
                 xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘metadata’. The ‘topic’
             is the clinical entity being described. The ‘context’ describes the circumstances that
-            form the setting in which the ‘topic’ should be evaluated. Finally, ‘metadata’ which is
-            not an
-            <?oxy_comment_start author="kec" timestamp="20190721T184136-0700" comment="How does CIMI define attribute such that metadata (who declared the information)  is not an attribute? Is it a non-standard definition of attribute? Is there a better word we can use in its place? "?>attribute<?oxy_comment_end?>,
-            but is only meant for illustrative purposes to represent the collection of metadata that
-            is associated with the clinical statement: the who, where, why and when information. </para>
+            form the setting in which the ‘topic’ should be evaluated. Finally, ‘metadata’ is shown in the diagram for purely illustrative purposes to represent the collection of metadata attributes that
+            that represent the who, where, why and when information. But 'metadata' itself is not actually an attribute of CIMI Clinical Statement.
+
+        </para>
 
         <para>CIMI adopts a compositional approach rather than inheritance, where a particular topic
             and context are added to a CIMI Clinical Statement. But topics and contexts themselves
@@ -195,7 +188,7 @@
             </varlistentry>
         </variablelist>
         
-    </section>
+    
 
     <section>
         <title>Examples Using Topic and Context</title>
