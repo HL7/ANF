@@ -264,13 +264,13 @@
         for analysis. </para>
     </section>
     <section xml:id="SoC_Section">
-      <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. "?>Approach
+      <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. " flag="done"?>Approach
         - Architectural Separation of Concerns<?oxy_comment_end?></title>
-      <para>I<?oxy_comment_start author="kec" timestamp="20190721T123625-0700" comment="Add a paragraph that describes current challenges lack of separation of concerns creates. Use FHIR observation resource as an example, with fields that overlap with SNOMED model. Then transition to Seperation of Concerns as a solution to the problem. "?>ncreased<?oxy_comment_end?>
+      <para>I<?oxy_comment_start author="kec" timestamp="20190721T123625-0700" comment="Add a paragraph that describes current challenges lack of separation of concerns creates. Use FHIR observation resource as an example, with fields that overlap with SNOMED model. Then transition to Seperation of Concerns as a solution to the problem. " id="tky_qh4_n3b"?><?oxy_comment_start author="Ioana" timestamp="20190726T124126-0400" comment="Adde a milder version: SoF should abe applied to &quot;how standard are implemented&quot;" parentID="tky_qh4_n3b" mid="22"?>ncreased<?oxy_comment_end mid="22"?><?oxy_comment_end?>
         reliance on computerized health records, including Electronic Health Records Systems,
         requires standardized medical terminology to encode health information consistently across
         systems and enterprises.
-        <?oxy_comment_start author="kec" timestamp="20190721T123842-0700" comment="Add why simply mapping won&apos;t solve the problem, and we need to rely on a more comprehensive approach of statement to model transformation. Maybe anticipate the model transformation section. "?>Clinicians
+        <?oxy_comment_start author="kec" timestamp="20190721T123842-0700" comment="Add why simply mapping won&apos;t solve the problem, and we need to rely on a more comprehensive approach of statement to model transformation. Maybe anticipate the model transformation section. " flag="done"?>Clinicians
         require not only objective quantitative measurements (e.g. 90 beats per minute for a
         patient's pulse) but also contextual or procedural context (e.g. pulse oximetry, manual)
         about past observations or requests for future interventions. While two quantitative
@@ -279,8 +279,12 @@
         exchanged across systems, the solution requires a common understanding of data and a method
         to support knowledge representation and clinical decision rules based on a common
         terminology and statements. Each component must address an aspect and, together they need to
-        address the requirements of clinicians.<?oxy_comment_end?>
-      </para>
+        address the requirements of clinicians.<?oxy_comment_end?> Current HL7 standard
+        implementations rely on profiles and templates to disambiguate statement and terminology and
+        provide sufficient  precision for transactions, documents, and standard-based APIs.
+        Therefore the architectural approach described here would be applicable to standard
+        organizations developing interoperability ,  enterprise,  and project-specific
+        implementations in equal measure. </para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T124118-0700" comment="&quot;Breaking up the solution&quot; is a bad phrase... Humpty Dumpty had a great fall.. All the [etc] could not put him back togehter again. There is a potential fear that this will make things more complicated, and make it difficult to fit all the pieces. 
 
 Try &quot;Separating concerns across architectural layers is a foundational...&quot;" flag="done"?>Functional
@@ -369,7 +373,9 @@ Remove the definition from the figure, and link to glossary where appropriate. "
                 numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data (e.g.,
                 pregnancy induced hypertension vs. renal hypertension) within a standard data
                 structure to facilitate information exchange or retrieval, such as within a
-                standard-based clinical statement (i.e. ANF). <?oxy_comment_end?></para>
+                standard-based clinical statement (i.e. CIMI, CDA, FHIR, ANF, etc.).
+                <?oxy_comment_end?>
+              </para>
             </listitem>
             <listitem>
               <para><?oxy_comment_start author="kec" timestamp="20190721T171053-0700" comment="Assertional knowledge can&apos;t contain conditional branches, so can&apos;t represent workflow (implied branching), and can&apos;t represent rules &quot;if-then-else&quot;" flag="done"?>At
@@ -396,7 +402,12 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
 
 Yes, ANF is for URU..." flag="done"?>in
-          regard to an isosemantic representation in the Statement Model layer<?oxy_comment_end?>.
+          regard to an isosemantic representation in the Statement Model
+          layer<?oxy_comment_end?>.</para>
+        <para><?oxy_comment_start author="Ioana" timestamp="20190726T124838-0400" comment="New!"?>HL7
+          relies on implementation guides (for V2, CDA, and FHIR) to add the clarity to
+          standard-based "statement models" to support busineess and workflow decision points
+          consinstent with Assertional and Procedural layers described above<?oxy_comment_end?>.
           <!--<para>ANF can help the modeling of clinical statements achieve the following design features: </para><itemizedlist><listitem><para>Understandable: The meaning of a clinical statement can be understood, without reference to private or inaccessible information.</para></listitem><listitem><para>Reproducible: Multiple users can apply the clinical statement model to the same situations.</para></listitem><listitem><para>Useful: The clinical statement has a practical value to users that is self-evident or can be readily explained.</para></listitem></itemizedlist>--></para>
       </figure>
     </section>
@@ -424,7 +435,7 @@ Yes, ANF is for URU..." flag="done"?>in
         Conceptual Perspective. This approach ensures that any implementable artifacts (i.e. service
         specifications, implementation guides) are traceable to business/clinical requirements and
         logical models of knowledge.</para>
-      <figure>
+      <figure xml:id="SAIF-CD-diagram">
         <title>Model Derivation according to SAIF</title>
         <mediaobject role="bordered">
           <imageobject>
@@ -555,14 +566,14 @@ Yes, ANF is for URU..." flag="done"?>in
       of ANF modeling. </para>
     <para>Subsequently, we will outline how the various building blocks and attributes work together
       to model ANF Clinical Statements. </para>
-    <para>Then, we will explore current CIMI modeling efforts inlcuding illustrative examples for
+    <para>Then, we will explore current CIMI modeling efforts including illustrative examples for
       modeling CIMI clinical statements. We will also compare and contrast ANF Clinical Statements
       and CIMI Clinical Statements. </para>
     <para>We then provide the ANF Modeling Methodology, including a list of modeling principles and
       rules.</para>
-    <para>Next, we discuss how isosemantic clinical statements can be transormed and normalized into
-      ANF Clinical Statements. </para>
-    <para>Finally, we discuss the implciations of ANF on data quality, clinical decision support,
+    <para>Next, we discuss how isosemantic clinical statements can be transformed and normalized
+      into ANF Clinical Statements. </para>
+    <para>Finally, we discuss the implications of ANF on data quality, clinical decision support,
       and ultimately, patient safety and outcomes. </para>
   </section>
 </chapter>
