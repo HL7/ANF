@@ -39,10 +39,10 @@
         </itemizedlist>
 
         <para> CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135"
-                xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘metadata’. The ‘topic’
+                xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘various metadata’. The ‘topic’
             is the clinical entity being described. The ‘context’ describes the circumstances that
-            form the setting in which the ‘topic’ should be evaluated. Finally, ‘metadata’ is shown in the diagram for purely illustrative purposes to represent the collection of metadata attributes that
-            that represent the who, where, why and when information. But 'metadata' itself is not actually an attribute of CIMI Clinical Statement.
+            form the setting in which the ‘topic’ should be evaluated. Finally, ‘various metadata’ is shown in the diagram for purely illustrative purposes to represent the collection of attributes that
+            that represent the who, where, why and when information. But 'various metadata' itself is not actually an attribute of CIMI Clinical Statement.
 
         </para>
 
