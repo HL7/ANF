@@ -73,6 +73,9 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/bibliography.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
+  <part>
+    <title>Appendices</title>
+
   <!-- Clinical Input Form -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
@@ -80,6 +83,7 @@
     
   
   <!-- Differences between ANF and CIF -->
+
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -93,7 +97,7 @@
     <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+  </part>
   <!-- Introduction -->
   <!--<xi:include href="../../../introduction/src/docbkx/introduction.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
   -->
