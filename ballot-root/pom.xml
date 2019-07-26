@@ -235,6 +235,36 @@
                </execution>
             </executions>
          </plugin>
+         <!--<plugin>-->
+            <!--<artifactId>maven-antrun-plugin</artifactId>-->
+            <!--<version>1.8</version>-->
+            <!--<executions>-->
+               <!--<execution>-->
+                  <!--<id>remove-bookmark</id>-->
+                  <!--<phase>compile</phase>-->
+                  <!--<configuration>-->
+                     <!--<target>-->
+                        <!--<replace token='&lt;fo:bookmark internal-destination="d0e2" starting-state="hide"&gt;&lt;fo:bookmark-title/&gt;&lt;/fo:bookmark&gt;'-->
+                                 <!--value=''-->
+                                 <!--file='target/site/docbook/ballot-root.fo'>-->
+                        <!--</replace>-->
+                        <!--&lt;!&ndash;<replace token='fo:bookmark-title/'&ndash;&gt;-->
+                                 <!--&lt;!&ndash;value='BALLS'&ndash;&gt;-->
+                                 <!--&lt;!&ndash;file='target/site/docbook/ballot-root.fo'>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</replace>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<replace token='/fo:bookmark'&ndash;&gt;-->
+                                 <!--&lt;!&ndash;value='BALLS'&ndash;&gt;-->
+                                 <!--&lt;!&ndash;file='target/site/docbook/ballot-root.fo'>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</replace>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<replaceregexp file="target/site/docbook/ballot-root.fo" match='<fo:bookmark internal-destination="d0e2" starting-state="hide"><fo:bookmark-title/></fo:bookmark>' replace=""/>&ndash;&gt;-->
+                     <!--</target>-->
+                  <!--</configuration>-->
+                  <!--<goals>-->
+                     <!--<goal>run</goal>-->
+                  <!--</goals>-->
+               <!--</execution>-->
+            <!--</executions>-->
+         <!--</plugin>-->
       </plugins>
    </build>
 </project>

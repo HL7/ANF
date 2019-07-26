@@ -9,6 +9,16 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.pdfbox.io.MemoryUsageSetting;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.interactive.action.PDActionGoTo;
+import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination;
+import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination;
+import org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageFitWidthDestination;
+import org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutline;
+import org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem;
+
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -26,25 +36,38 @@ public class DocumentPrepend extends AbstractMojo {
     private String sourceXEPPath;
 
     @Override
-    public void execute() throws MojoExecutionException, MojoFailureException {
+    public void execute() {
 
         try {
-            PDFMergerUtility ut = new PDFMergerUtility();
-            ut.addSource(this.coverPath);
-            ut.addSource(this.sourcePath);
-            ut.setDestinationFileName(this.sourcePath);
+            mergeDocuments(this.sourcePath);
+            mergeDocuments(this.sourceXEPPath);
 
-            ut.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
 
-            PDFMergerUtility ut1 = new PDFMergerUtility();
-            ut1.addSource(this.coverPath);
-            ut1.addSource(this.sourceXEPPath);
-            ut1.setDestinationFileName(this.sourceXEPPath);
-
-            ut1.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void mergeDocuments(String path) throws IOException {
+        PDFMergerUtility ut = new PDFMergerUtility();
+        ut.addSource(this.coverPath);
+        ut.addSource(path);
+        ut.setDestinationFileName(path);
+
+        ut.mergeDocuments(MemoryUsageSetting.setupMainMemoryOnly());
+
+        PDDocument doc = PDDocument.load(new File(path));
+        PDDocumentOutline bookmarks = doc.getDocumentCatalog().getDocumentOutline();
+        PDOutlineItem item = bookmarks.getFirstChild();
+        item.setTitle("ANF Informative Ballot");
+        PDPageDestination dest = new PDPageFitWidthDestination();
+        dest.setPage(doc.getPage(0));
+        item.setDestination(dest);
+
+        PDActionGoTo action = new PDActionGoTo();
+        action.setDestination(dest);
+
+        doc.save(new File(path));
     }
 }
