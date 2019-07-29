@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Pragmatic Usage and Next Steps</title>
-    <para> xxx</para>
+    <para>Like other CIMI isosemantic models, ANF is a logical model and therefore it may
+        implemented using relevant implementable models and technology (see <link xpref="SAIF-CD-diagram">SAIF-CD</link>). Therefore this project will expand on the use
+        of ANF alongside preexisting information exchange HL7 standards (i.e. HL7 V2 messaging, CDA
+        documents) and HL7 standard-based APIs (I.e.. FHIR resources). In practice, ANF is
+        applicable to systems normalising or creating normalized data to support Assertional and
+        Procedural knowledge (e.g. clinical alerts, workflow, data analysis, decision support).
+        These needs to aggregate data from many isosemantic source models into a single analysis
+        format.</para>
+    <para>Implementers may use the logical model  and methodology  in this document to design
+        software components, databases, or APIs that support reuse and analysis of treatment
+        information captured using a best practices (e.g. CIMI models) and exchanged using
+        interoperability specifications. </para>
+    <para>This project will expand on the use ANF to support emerging US Realm specifications that
+        will drive the adoption of FHIR-based APIs in the near future. As information sharing will
+        rely on a variety of clinical statement approaches and syntax representations, it will
+        become necessary to create normalized instances of those clinical statements intended for
+        reuse. Not all the data produced by a system is necessary for analysis and the ANF model,
+        like other CIMI models, is focused on
+        <?oxy_comment_start author="Ioana" timestamp="20190726T125624-0400" comment="True?  Quality measures combine clinical and admnistrative info sometimes so it would be useful to say, if true, that other types of data may be combined."?>clinical
+        information<?oxy_comment_end?>.  ANF does not require a specific input form syntax , its
+        focus are implemetnations where data quality  and semantics and information is aggregated
+        from many and diverse sources. </para>
+    <section>
+        <info>
+            <title>FHIR implementation</title>
+        </info>
+        
+        <para><?oxy_comment_start author="bechang" timestamp="20190426T225012-0600" comment="Need Ioana to expand upon what would be next after successful balloting of this whitepaper in September 2019"?>We
+            believe that ANF represents an approach to statement representation that next needs to be
+            refined into a normative set of editorial guidelines that can eventually also be expanded upon
+            into the latest standards, such as creating an HL7 FHIR Implementation
+            Guide<?oxy_comment_end?> .</para>
+    </section>
+    <section>
+        <info>
+            <title>Other platforms</title>
+        </info>
+    </section>
 </chapter>
