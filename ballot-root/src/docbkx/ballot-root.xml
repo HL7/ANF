@@ -63,10 +63,10 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Precision -->
-  <xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
-  <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <!--<xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
   <!-- Complete Glossary -->
   <xi:include
