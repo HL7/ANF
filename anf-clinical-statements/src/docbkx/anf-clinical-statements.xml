@@ -4,10 +4,10 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
     <title>How ANF Works? ANF Clinical Statements</title>
-    <para>In the context of the ANF Model, a clinical statement represents an entry in the patient
+    <para>In the context of the ANF Model, a <glossterm baseform="Clinical Statement">clinical statement</glossterm> represents an entry in the patient
         record that documents, in a structured/computable manner, clinical information related to
         the patient that is asserted by a particular source, recorded, and potentially verified. </para>
-    <para>As seen in the CIMI Clinical Statements section, clinical information related to the
+    <para>As seen in the <glossterm baseform="CIMI Clinical Statement">CIMI Clinical Statements</glossterm> section, clinical information related to the
         patient can be entered and stored in an EMR in multiple different ways. ANF strives to
         standardize the structure of clinical statements to eliminate the disparity of clinical
         information by limiting the design choices a clinical modeler must make. ANF can then act as
@@ -15,11 +15,11 @@
         representations that currently exist, making this clinical information more easily
         computable and eliminating the need to create multiple ways to analyze the same data.</para>
     <section>
-        <title><anchor xml:id="_Toc1824812"/>Types of ANF Statements</title>
+        <title><anchor xml:id="_Toc1824812"/>Types of <glossterm baseform="ANF Statement">ANF Statements</glossterm></title>
         <para>There are two types of ANF Statements:</para>
         <editorial-rule>
-            <title><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. "?>Performance
-                of Action<?oxy_comment_end?></title>
+            <title><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. "?><glossterm baseform="ANF Performance">Performance
+                of Action</glossterm><?oxy_comment_end?></title>
             <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words &apos;passive&apos; &amp; &apos;active&apos;. I don&apos;t think it adds any extra information and this will keep people from argueing whether observations are really passive or active."?><?oxy_comment_end?>
             <mathphrase>A Performance may include the passive observation of a phenomenon related to
                 patients and their health status or family history, and may also include active
@@ -28,7 +28,7 @@
                 health status. </mathphrase>
         </editorial-rule>
         <editorial-rule>
-            <title>Request for Action</title>
+            <title><glossterm baseform="ANF Request">Request for Action</glossterm></title>
             <mathphrase>Requests for clinical testing, active interventions, future goals, or
                 consultation with other providers. </mathphrase>
         </editorial-rule>
@@ -127,12 +127,12 @@ Doing family history, donor statements using subject of information is now the n
                 </listitem>
             </itemizedlist>
             <section>
-                <title>Presence or absence of a clinical phenomenon</title>
+                <title>Presence or absence of a <glossterm baseform="Clinical phenomenom">clinical phenomenon</glossterm></title>
                 <editorial-rule>
                     <title>Timing - Performance of Action</title>
                     <mathphrase>For a Performance of Action, the Timing can represent a time in the
                         past or a current time. If a history of a performance of action is to be
-                        represented in ANF the Timing will be for a time in the past prior to the
+                        represented in <glossterm>ANF</glossterm> the Timing will be for a time in the past prior to the
                         statement. Otherwise the Timing will be represented with the current time of
                         the statement. </mathphrase>
                 </editorial-rule>
@@ -213,7 +213,7 @@ Doing family history, donor statements using subject of information is now the n
                         such.</mathphrase>
                 </editorial-rule>
                 <editorial-rule>
-                    <title>Technique</title>
+                    <title><glossterm baseform="Technique">Technique</glossterm></title>
                     <mathphrase>A device used, a method applied, or a temporary state in which the
                         patient was <emphasis role="bold">actively</emphasis> placed <emphasis
                             role="bold">during</emphasis> performance of the action. <itemizedlist>
@@ -288,7 +288,7 @@ Doing family history, donor statements using subject of information is now the n
                     with an upperBound and lowerBound they are both represented as 68 in this
                     case.<?oxy_comment_end?></para>
                 <editorial-rule>
-                    <title>Prerequisite</title>
+                    <title><glossterm>Prerequisite</glossterm></title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
                             <emphasis role="bold">must</emphasis> exist before something else can
                         happen or be done. Prerequisites are part of the details under which a

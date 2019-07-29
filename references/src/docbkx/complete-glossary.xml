@@ -161,15 +161,15 @@
             single concepts within the host terminology. </para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Topic expression </glossterm>
+        <glossterm>Topic expression</glossterm>
         <glossdef><para>The ‘topic’ is the clinical entity described by a clinical statement.</para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Context expression </glossterm>
+        <glossterm>Context expression</glossterm>
         <glossdef><para>The ‘context’ describes the circumstances that form the setting in which the ‘topic’ should be evaluated. </para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>High Reliability Organization </glossterm>
+        <glossterm>High Reliability Organization</glossterm>
         <acronym>HRO</acronym>
         <glossdef><para>Organizations characterized by high levels of safety under inherently risky, technologically-complex,
             and demanding conditions.</para></glossdef>
