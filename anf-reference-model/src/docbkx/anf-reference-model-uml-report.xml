@@ -4,18 +4,23 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
         <title>ANF UML Model</title>
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
-            </emphasis></emphasis>is logical model and uses  Object Management Group (OMG) Unified
-        Modeling Language (UML) 2.0 notation to describe the structure of normalized clinical
-        statement that uses ANFStatement to describe clinical statements for computational analysis.
-        This logical model may be implemented using any programming language, database technology,
-        or interoperability specification (e.g. FHIR) suitable for analysis. ANF is intended to
-        normalize approaches and methodologies in use across the industry and provide a uniform
-        representation of data to enable analysis. </para>
-        <para>The following diagram describes the logical structure of clinical statement that
-            conforms to the Analysis Normal Form specification. At a high-level an ANF statement
-            defines the topic (<emphasis role="bold">WHAT </emphasis>happened, was observed,
-            requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold">HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
-            RESULT</emphasis>).</para>
+            </emphasis></emphasis>is
+        <?oxy_comment_start author="timowilliams" timestamp="20190729T120239-0500" comment="a "?>logical<?oxy_comment_end?>
+        model and uses Object Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to
+        <?oxy_comment_start author="timowilliams" timestamp="20190729T120353-0500" comment="Wording is off.  Suggest &quot;....describe the structure of normalized clinical statements for computational analysis.&quot;"?>describe
+        the structure of normalized clinical statement that uses ANFStatement to describe clinical
+        statements for computational analysis.<?oxy_comment_end?> This logical model may be
+        implemented using any programming language, database technology, or interoperability
+        specification (e.g. FHIR) suitable for analysis. ANF is intended to normalize approaches and
+        methodologies in use across the industry and provide a uniform representation of data to
+        enable analysis. </para>
+        <para>The following diagram describes the logical structure of
+        <?oxy_comment_start author="timowilliams" timestamp="20190729T120408-0500" comment="a"?>clinical<?oxy_comment_end?>
+        statement that conforms to the Analysis Normal Form specification. At a high-level an ANF
+        statement defines the topic (<emphasis role="bold">WHAT </emphasis>happened, was observed,
+        requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold"
+            >HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
+        RESULT</emphasis>).</para>
         <figure>
             <title>ANFStatement Structure</title>
             <mediaobject>
@@ -187,10 +192,11 @@
                         <entry>
                             <para>This data element is an expression of <emphasis role="bold">WHAT
                                 </emphasis>is being requested or what was performed. For both
-                                ANFstatement types (request or performance) a pre-coordinated or
-                                post-coordinated “procedure” concept as a logical expression is
-                                required to sufficiently capture the action, which is either
-                                requested or performed.</para>
+                                <?oxy_comment_start author="timowilliams" timestamp="20190729T124305-0500" comment="ANFStatement"?>ANFstatement<?oxy_comment_end?>
+                                types (request or performance) a pre-coordinated or post-coordinated
+                                “procedure” concept as a logical expression is required to
+                                sufficiently capture the action, which is either requested or
+                                performed.</para>
                             <para>The topic is the central component of clinical statements. The
                                 following are proposed principles for the topic of an
                                 ANFStatement.</para>
@@ -251,9 +257,12 @@
 
             <para>Circumstances can describe <emphasis role="bold">HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what RESULT </emphasis>a requested or performed
                 action will be or was carried out. </para>
-            <para>A unique aspect of the ANF Model is t An important point to notice in this class
-                diagram is that the ANF Model promotes a normalized representation of observation or
-                intervention results.hat all measures and results are numeric ranges. </para>
+            <para><?oxy_comment_start author="timowilliams" timestamp="20190729T121320-0500" comment="Rest of the sentence is missing"?>A
+            unique aspect of the ANF Model is t<?oxy_comment_end?> An important point to notice in
+            this class diagram is that the ANF Model promotes a normalized representation of
+            observation or intervention
+            results.<?oxy_comment_start author="timowilliams" timestamp="20190729T121400-0500" comment="Actually, here is the rest of the sentence from above."?>hat
+            all measures and results are numeric ranges<?oxy_comment_end?>. </para>
             <para>This approach reduces data retrieval difficulties by eliminating the potential for
                 multiple differing representations of the same clinical statement. For example, with
                 coded results there are multiple potential methods to represent eye color that
@@ -336,8 +345,9 @@
                             </entry>
                             <entry>
                                 <para>This data element describes WHY a procedure was requested or
-                                    performed in a post-coordinated expression, based on two
-                                    possible procedures:</para>
+                                    perfo<?oxy_comment_start author="timowilliams" timestamp="20190729T121606-0500" comment="missing the two possible procedures."?>rmed
+                                    in a post-coordinated expression, based on two possible
+                                    procedures:<?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
@@ -347,8 +357,10 @@
             </section>
             <section xml:id="requestClass">                
                 <title>RequestCircumstance </title>
-                <para>This class = further specifies <emphasis role="bold">HOW </emphasis>a
-                    requested action is to be performed, e.g. how often or how long.</para>
+                <para>This class
+                <?oxy_comment_start author="timowilliams" timestamp="20190729T121527-0500" comment="is the = sign needed here?"?>=
+                <?oxy_comment_end?>further specifies <emphasis role="bold">HOW </emphasis>a
+                requested action is to be performed, e.g. how often or how long.</para>
                 <para>A Request for Action clinical statement describes a request made by a
                     clinician. Most of the times, but not always, the object of the request (e.g.,
                     lab test, medication order) will be fulfilled by someone other than the
@@ -398,9 +410,11 @@
                             </entry>
                             <entry>
                                 <para>This data element is used to represent a condition, or set of
-                                    conditions that must exist in order for a</para>
+                                    conditions that must exist in order for
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122337-0500" comment="We probably dont need a paragraph break here."?>a<?oxy_comment_end?></para>
                                 <para>Request to be executed. For example, Ibuprofen 400 mg tablet
-                                    oral every 6 hours as needed for back</para>
+                                    oral every 6 hours as needed for
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122353-0500" comment="Or here."?>back<?oxy_comment_end?></para>
                                 <para>pain, the use of Ibuprofen is conditional on the presence of
                                     back pain.</para>
                                 <para><emphasis role="bold">Question</emphasis>: do we need a
@@ -433,7 +447,8 @@
                             </entry>
                             <entry>
                                 <para>This data element species the priority with which a requested
-                                    action has to be carried out, e.g. “routine” or</para>
+                                    action has to be carried out, e.g. “routine”
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122428-0500" comment="Do we need a paragraph break here?"?>or<?oxy_comment_end?></para>
                                 <para>“stat”. By default a Request will be considered "routine"
                                     unless otherwise specified.</para>
                                 <para/>
@@ -448,7 +463,9 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>It species the measurable result.</para>
+                                <para>It
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122443-0500" comment="specifies"?>species<?oxy_comment_end?>
+                                    the measurable result.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -460,8 +477,12 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>This data element Repetitiondescribes when an action is
-                                    requested for more than a single occurrence using the <emphasis role="underline"><link linkend="measureClass">Measure</link></emphasis> data structure:</para>
+                                <para>This data element
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122500-0500" comment="space needed"?>Repetitiondescribes<?oxy_comment_end?>
+                                    when an action is requested for more than a single occurrence
+                                    using the <emphasis role="underline"><link
+                                            linkend="measureClass">Measure</link></emphasis> data
+                                    structure:</para>
                                 <itemizedlist>
                                     <listitem>
                                         <para>When the repeated action should begin (periodStart),
@@ -495,9 +516,13 @@
             </section>
             <section xml:id="performanceClass">
                 <title>PerformanceCircumstance </title>
-                <para>This class describe the circumstances associate with a treatment service. It
-                    is used when a clinical statement describes a performing treatment services. It
-                    specifies the result of intervention using both a measure and a coded <emphasis role="italic">status.</emphasis></para>
+                <para>This class describe the circumstances
+                <?oxy_comment_start author="timowilliams" timestamp="20190729T122533-0500" comment="associated"?>associate<?oxy_comment_end?>
+                with a treatment service. It is used when a clinical statement describes
+                a<?oxy_comment_start author="timowilliams" timestamp="20190729T122735-0500" comment="It is also used to describe an observation of something like Patient has diabetes."?>
+                performing treatment services<?oxy_comment_end?>. It specifies the result of
+                intervention using both a measure and a coded <emphasis role="italic"
+                    >status.</emphasis></para>
                 <para>For example, "<emphasis role="italic">Insulin placed on hold 24 hours prior to
                         catheterization</emphasis>" would have a status of "<emphasis role="italic">On hold</emphasis>". A typical, successfully completed procedure would have
                     a status of "<emphasis role="italic">Completed</emphasis>".</para>
@@ -546,11 +571,13 @@
                                         LogicalExpression</para>
                                 </entry>
                                 <entry>
-                                    <para>[1...1]</para>
-                                </entry>
+                                <?oxy_comment_start author="timowilliams" timestamp="20190729T122826-0500" comment="This is optional?"?>
+                                <para>[1...1]<?oxy_comment_end?></para>
+                            </entry>
                                 <entry>
                                     <para>Health Risk is used to flag a result with coded values
-                                        such as 'low', 'normal', high', and</para>
+                                    such as 'low', 'normal', high',
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T122915-0500" comment="No need for paragraph break"?>and<?oxy_comment_end?></para>
                                     <para>'critical'. </para>
                                     <para/>
                                 </entry>
@@ -561,7 +588,7 @@
                                         Measure</para>
                                 </entry>
                                 <entry>
-                                    <para>[1...1]</para>
+                                    <para><?oxy_comment_start author="timowilliams" timestamp="20190729T122841-0500" comment="This is optional, right?"?>[1...1]<?oxy_comment_end?></para>
                                 </entry>
                                 <entry>
                                     <para>Normal Range is the interval of values that are
@@ -630,10 +657,12 @@
         </section>
         <section>
             <title> Data Structures </title>
-            <para>The following are data structures used to represent an <emphasis role="underline"><link linkend="ANFStatement">ANFStatement</link></emphasis>. This section describes the data structures
-                specific to ANF. This model references a set of logical structures to represent
-                unique identifiers (i.e. Identifier, Expresson) and primitive types (boolean,
-                float). </para>
+            <para>The following are data structures used to represent an <emphasis role="underline"
+                    ><link linkend="ANFStatement">ANFStatement</link></emphasis>. This section
+            describes the data structures specific to ANF. This model references a set of logical
+            structures to represent unique identifiers (i.e. Identifier,
+            <?oxy_comment_start author="timowilliams" timestamp="20190729T124410-0500" comment="Expression"?>Expresson<?oxy_comment_end?>)
+            and primitive types (boolean, float). </para>
             <figure>
                 <title>Data Structures</title>
                 <mediaobject>
@@ -645,17 +674,22 @@
             <section xml:id="measureClass">
                 <title>Measure </title>
                 <para>This class captures measurable elements of clinical statements , e.g. the
-                    results of test procedures, time periods, frequencies of repetitions for
-                    procedures or medication administrations. The measure formally represents a
-                    numeric interval between two nonnegative real numbers with a semantic and
-                    precision/resolution. The interval can be open or closed depending on wether the
-                    upper and lower bounds are included in the measure interval.</para>
+                results of test procedures, time periods, frequencies of repetitions for procedures
+                or medication administrations. The measure formally represents a numeric interval
+                between two nonnegative real numbers with a semantic and precision/resolution. The
+                interval can be open or closed depending on
+                <?oxy_comment_start author="timowilliams" timestamp="20190729T123605-0500" comment="whether"?>wether<?oxy_comment_end?>
+                the upper and lower bounds are included in the measure interval.</para>
                 <para>The measure provides a single way to represent both “presence” or "absence"
-                    values and numeric values for a phenomenon. In general,the interval value
-                    represents the numeric range within which the observed value of a phenomenon
-                    occurs. Note that this formalism allows both exact values and ranges of values
-                    to be expressed. In case that the beginning and end point of an interval are the
-                    same value,, the meaning is that the value of the phenomenon is <emphasis role="underline">exactly</emphasis><emphasis role="underline"> </emphasis>that value.</para>
+                values and numeric values for a phenomenon. In general,the interval value represents
+                the numeric range within which the observed value of a phenomenon occurs. Note that
+                this formalism allows both exact values and ranges of values to be expressed. In
+                case that the beginning and end point of an interval are the same
+                value<?oxy_comment_start author="timowilliams" timestamp="20190729T123643-0500" comment="too many commas"?>,,
+                <?oxy_comment_end?>the meaning is that the value of the phenomenon is <emphasis
+                    role="underline">exactly</emphasis><emphasis role="underline"
+                    ><?oxy_comment_start author="timowilliams" timestamp="20190729T123722-0500" comment="too many emphasis elements"?><?oxy_comment_end?></emphasis>that
+                value.</para>
                 <para>In the case that the lower and upper bound of an measure are the same number,
                         <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>, the
                     meaning is that the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>.</para>
@@ -746,7 +780,8 @@
                                     bound would not be included. The lower range size of 1cm is not
                                     included.</para>
                                 <para>The inclusion or exclusion of lower bound is needed to express
-                                    measurable elements which include relative</para>
+                                    measurable elements which include
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T123823-0500" comment="too many para tags used here."?>relative<?oxy_comment_end?></para>
                                 <para>properties, such as “greater than”, “less than” and others.
                                     Example: “Persistent cough for more than 10</para>
                                 <para>days”. If a lower bound of “10” is chosen, it would not be
@@ -805,7 +840,8 @@
                             </entry>
                             <entry>
                                 <para>It defines the possible or allowed increments in which the
-                                    measured “thing”</para>
+                                    measured
+                                    “thing”<?oxy_comment_start author="timowilliams" timestamp="20190729T123928-0500" comment="too many para elements used?"?></para>
                                 <para>can be counted. In the example of the systolic blood pressure
                                     of 120 mmHg, the resolution is “1”, because the blood pressure
                                     measurement result can be counted in 1 mmHg increments. The
@@ -813,7 +849,7 @@
                                 <para>defined or known. Example: a clinical statement like “History
                                     of breast cancer” implies an undefined</para>
                                 <para>amount of time in the past and it is not stated, if it is
-                                    years, months, etc.</para>
+                                    years,<?oxy_comment_end?> months, etc.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -825,15 +861,16 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>It represents the upper bound of a measurable element. This
-                                    can be the upper boundary of a</para>
+                                <para>I<?oxy_comment_start author="timowilliams" timestamp="20190729T123947-0500" comment="too many para elements used"?>t
+                                    represents the upper bound of a measurable element. This can be
+                                    the upper boundary of a</para>
                                 <para>range: For the “Tumor greater than 1 cm but less than 4 cm”
                                     the upper bound is 4. In cases, where the</para>
                                 <para>measurable element does not represent a range, upper and lower
                                     bound have the same value.</para>
                                 <para><emphasis role="bold">Invariant</emphasis>: it must be greater
                                     than or equal to the lower bound.</para>
-                                <para/>
+                                <para><?oxy_comment_end?></para>
                             </entry>
                         </row>
                         <row>
@@ -845,15 +882,18 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>It states whether the upper bound in the interval is included
-                                    in the interval. Similar to</para>
+                                <para>It
+                                    sta<?oxy_comment_start author="timowilliams" timestamp="20190729T124014-0500" comment="too many para elements used."?>tes
+                                    whether the upper bound in the interval is included in the
+                                    interval. Similar to</para>
                                 <para>lower bound, where the measurable element has relative
                                     properties, the same rules apply. If the upper</para>
                                 <para>bound of a measure is not defined, e.g. “blood glucose
                                     measurement daily for at least 2 weeks”, the upper</para>
                                 <para>bound will be captured as “inf” (infinite). Infinite as an
                                     upper bound is never included.</para>
-                                <para>If "true" the upper bound is part of the interval.</para>
+                                <para>If "true" the upper bound is part of the
+                                    interval.<?oxy_comment_end?></para>
                                 <para><emphasis role="bold">Invariant</emphasis>: if (lowerBound ==
                                     INF) { includeLowerBound = false }.</para>
                                 <para/>
@@ -984,9 +1024,9 @@
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
                                             >FHIR </link><link
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
-                                            >Expresssion</link></emphasis> structure or a similar
-                                    standard-based syntax ((e.g. SNOMED CT Expression Constrain
-                                    Language - ECL). </para>
+                                            ><?oxy_comment_start author="timowilliams" timestamp="20190729T124053-0500" comment="Expression"?>Expresssion<?oxy_comment_end?></link></emphasis>
+                                    structure or a similar standard-based syntax ((e.g. SNOMED CT
+                                    Expression Constrain Language - ECL). </para>
                                 <para>The expression must use valid, standard-based
                                     terminology.</para>
                                 <para/>
@@ -1113,7 +1153,9 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>Reference to the particpating practitioner.</para>
+                                <para>Reference to the
+                                    <?oxy_comment_start author="timowilliams" timestamp="20190729T124451-0500" comment="participating"?>particpating<?oxy_comment_end?>
+                                    practitioner.</para>
                             </entry>
                         </row>
                         <row>
