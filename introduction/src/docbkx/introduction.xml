@@ -2,16 +2,16 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Why Analysis Normal Form? A Normal Form for Clinical Statements</title>
-  <para>A clinical <glossterm>statement</glossterm> is a definite and clear representation of a
+  <para>A <glossterm baseform="Clinical Statement">clinical statement</glossterm> is a definite and clear representation of a
     clinically-significant fact or situation that was observed to exist or happen. A clinical
-    statement can be expressed as a <glossterm baseform="Narrative">narrative</glossterm> that
+    statement can be expressed as a <glossterm baseform="Statement Narrative">narrative</glossterm> that
     provides a written account that can be naturally read by humans, as well as a <glossterm
       baseform="Normal Form">normal form</glossterm> which is a machine-processable representation
     of the statement's data as a standardized and encoded fundamental form. Today, clinical
     statements are often represented in unpredictable and denormalized forms, which makes reliable
     and safe decision support challenging, and reduces the quality of other types of data
     processing. </para>
-  <para>Healthcare organizations are striving to become high reliability organizations (HROs),
+  <para>Healthcare organizations are striving to become <glossterm baseform="High Reliability Organization">high reliability organizations (HROs)</glossterm>,
     characterized by high levels of safety under inherently risky, technologically-complex, and
     demanding conditions.<citation>HRO_HIT</citation>
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
@@ -31,13 +31,13 @@
     <emphasis role="bold">form</emphasis> intended to safely and reliably support data analysis that
     can be used to aggregate data created using any standard or non-standard input form or exchange
     mechanism.<?oxy_comment_end?> ANF Reference Model, is a
-    logical model and part of the CIMI library of models.</para><?oxy_comment_end mid="3"?>
+    <glossterm baseform="Logical Model">logical model</glossterm> and part of the <glossterm>CIMI</glossterm> library of models.</para><?oxy_comment_end mid="3"?>
   <?oxy_comment_start author="Ioana" timestamp="20190722T224830-0400" comment="Moved the URU references fron SoC section and expanded how URU is embodied by ANF." flag="done"?>
   <para>ANF is a model for clinical statements used in analysis that meet the criteria
       <emphasis>Understandable, Reproducible, and Useful</emphasis> (URU) [reference]:</para><?oxy_comment_end?>
   <itemizedlist>
     <listitem>
-      <para><emphasis role="bold">Understandable</emphasis>. The content of an ANF statement can be
+      <para><emphasis role="bold">Understandable</emphasis>. The content of an <glossterm baseform="ANF Statement">ANF statement</glossterm> can be
         processed by health IT systems and understood by most healthcare providers, without
         reference to private or inaccessible information. </para>
     </listitem>
@@ -59,8 +59,8 @@
     <para><?oxy_comment_start author="kec" timestamp="20190721T122636-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Information
       systems record and manage clinical statements using a variety of standard or ad-hoc models.
       However, both treatment and analysis of clinical statements require consistency not only at
-      the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance of an <link
-        xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> DCMs, CIMI model,
+      the format level (e.g. <glossterm>CDA</glossterm>, <glossterm>FHIR</glossterm>, V2) but also the content model (i.e. an instance of an <link
+              xlink:href="https://www.iso.org/standard/62416.html"><glossterm baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCMs, CIMI model,
       etc.). <citation>DCM_Quality</citation> In most cases the data quality is the greatest
       obstacle to analysis, but even in the case of structured, semantically-clear information,
       inconsistency across sources of information raises obstacles to analysis and research.
@@ -69,11 +69,11 @@
       common format and level of semantic clarity.<?oxy_comment_end?></para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
-      current detailed clinical modeling efforts, but there is also further variation in how the
+      current <glossterm baseform="Detailed Clinical Model">detailed clinical modeling</glossterm> efforts, but there is also further variation in how the
       data is entered into information systems by end-users. This reality has a direct impact on
       patient safety if a clinical statement is recorded and displayed differently across the
       continuum of care: Clinicians author clinical statements and enter them into their
-      organization’s EHR systems as "Structured Clinical Input Forms" or "input forms". This concept
+      organization’s EHR systems as <glossterm baseform="Structured Clinical Input Forms">"Structured Clinical Input Forms"</glossterm> or "input forms". This concept
       describes any data entry mechanism used by clinicians to record clinical statements. An
       instance of a clinical statement may be created using one or more input forms. Vendors compete
       on usability for seamless input forms but, in some cases, structured clinical statements are
@@ -176,14 +176,15 @@
         for all the various use cases. Maximum efficiency for each use case necessitates that any
         particular clinical information be available in multiple modeled forms. These models,
         although different in form, semantically represent the same information, and are known as
-        isosemantic models. Any particular detailed clinical model exists within a family of
+        <glossterm baseform="Isosemantic Model">isosemantic models</glossterm>. Any particular detailed
+        clinical model exists within a family of
         isosemantic siblings. </para><?oxy_comment_end mid="10"?>
     </section>
   </section>
   <section>
     <title>Analysis Normal Form </title>
     <para>
-      <emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
+      <emphasis role="bold">Analysis Normal Form</emphasis> (ANF) is a
       logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
       aggregate clinical statements recorded during treatment for analysis, research, clinical
       decision support, and other purposes. ANF can be used to represent any isosemantic clinical
@@ -191,9 +192,9 @@
       systems or medical devices). ANF
       <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can" flag="done"?>can<?oxy_comment_end?>
       be used in conjunction with other models intended to ensure that clinical information is
-      structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
+      structured and complete at the time of entry (e.g. CIMI models, <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
-      Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
+      Models) or exchanged among systems (e.g. HL7 CDA templates, <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2 message profiles</glossterm>,
         <glossterm>FHIR</glossterm> profiles). </para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
       integrators, health IT developers, and researchers<?oxy_comment_end?> face different
@@ -237,7 +238,7 @@
         </itemizedlist><itemizedlist spacing="compact">
           <listitem>
             <para><?oxy_comment_start author="kec" timestamp="20190721T122226-0700" comment="Don&apos;t put bulleted lists inside of bullited lists. Maybe put in a transition paragraph, then a new bullited list. " flag="done"?>Enhancing
-              information clinical content for use as used Clinical Decision Support Systems,
+              information clinical content for use as used <glossterm>Clinical Decision Support</glossterm> Systems,
               Quality Measures and National Registries, Healthcare Guidelines and Protocols, or
               Epidemiological Research</para><?oxy_comment_end?>
           </listitem>
@@ -251,7 +252,7 @@
       <para>ANF
         support<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         on highly post-coordinated<?oxy_comment_end?> compositional terminologies to provide greater
-        content coverage than can be achieved by relying only on pre-coordinated concepts.
+        content coverage than can be achieved by relying only on <glossterm baseform="Pre-coordinated concept">pre-coordinated concepts.</glossterm>
         <?oxy_comment_start author="kec" timestamp="20190721T123231-0700" comment="than can be achieved by relying only on pre-coordinated concepts. " flag="done"?><?oxy_comment_end?>.
         Post-coordinated compositional terminologies are more expressive and can achieve better
         analysis than can be achieved by relying only on pre-coordinated concept. ANF can help
@@ -291,7 +292,7 @@ Try &quot;Separating concerns across architectural layers is a foundational...&q
         decomposition<?oxy_comment_end?> across components or sections with a specific purpose is a
         foundational design principle for
         <?oxy_comment_start author="kec" timestamp="20190721T124700-0700" comment="Not just software develop. &quot;complex system development&quot; " flag="done"?>software
-        <?oxy_comment_end?>design and complex system architecture: Separation of Concerns (SoC). It
+        <?oxy_comment_end?>design and complex system architecture: <glossterm baseform="Separation of Concerns">Separation of Concerns</glossterm> (SoC). It
         allows a complete system to be subdivided into distinct sections or components with
         well-defined functionality and dependencies. If successful, this approach allows individual
         sections to be able to be <emphasis>reused</emphasis>, as well as designed, implemented, and
@@ -327,7 +328,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             role="bold"
               ><?oxy_comment_start author="Ioana" timestamp="20190729T001818-0400" comment="Add link to glossary"?><link
               linkend="CIF_EHR_1">Architectural Foundation</link><?oxy_comment_end?></emphasis> –
-          The Architectural Foundation of the Knowledge Architecture provides the common elements of
+          The <glossterm>Architectural Foundation</glossterm> of the Knowledge Architecture provides the common elements of
           interoperability such as object identity, versioning, modularity, and knowledge
           representation. It includes a) the foundation and building blocks of the common model; (b)
           how the repeatable transformation process of disparate standards into the common model
@@ -339,7 +340,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
               ><?oxy_comment_start author="Ioana" timestamp="20190729T001906-0400" comment="Add link to glossary"?>Terminology
               Knowledge<?oxy_comment_end?></emphasis>
           </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
-          The Terminology Knowledge layer is responsible for structured sets of medical terms and
+          The <glossterm>Terminology Knowledge</glossterm> layer is responsible for structured sets of medical terms and
           codes that define concepts of interest, including descriptions, dialects, language, and
           semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer
           <?oxy_comment_end?>
@@ -352,7 +353,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           statement model specific to analysis and clinical decision. Other standard-based clinical
           statements are discussed later in this chapter..</para>
         <para><?oxy_comment_start author="kec" timestamp="20190721T130846-0700" comment="The Assertional Knowledge layer is responsible for..." flag="done"?><emphasis
-            role="bold">Assertional Knowledge</emphasis> – The Assertional Knowledge layer reuses
+                role="bold">Assertional Knowledge</emphasis> – The <glossterm baseform="Assertion">Assertional</glossterm> Knowledge layer reuses
           information based on Statement Model. It is responsible for guidelines and business rules
           to assist clinical decision making. This includes facts and knowledge upon which concepts
           and combinations of concepts can assimilate into protocols. ANF statements can be used to
@@ -377,7 +378,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
                 concept during the transformation and integration process at
                 <?oxy_comment_start author="kec" timestamp="20190721T171552-0700" comment="The foundational layer is just data structures. Terminology integration happens at the terminology layer. " flag="done"?>the
                 Terminology layer <?oxy_comment_end?>(e.g.,
-                Solor).<!-- Furthermore, any updates over time to code sets or value sets that define hypertension (in the NLM’s Value Set Authority Center for instance) would be maintained by continuous integration at the Architectural Foundation layer.--></para>
+                <glossterm>Solor</glossterm>).<!-- Furthermore, any updates over time to code sets or value sets that define hypertension (in the NLM’s Value Set Authority Center for instance) would be maintained by continuous integration at the Architectural Foundation layer.--></para>
             </listitem>
             <listitem>
               <para><?oxy_comment_start author="kec" timestamp="20190721T171955-0700" comment="The FHIR observation resource is not ANF. Can be considered another CIF, and we would need a standard transform. For here, just say that the statement model layer provide a standard means for representing quantatative and existential measurement... Probably want to replace categorical data with existential measurement throughout. " flag="done"?>Moving
@@ -444,7 +445,7 @@ Yes, ANF is for URU..." flag="done"?>in
           <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>SAIF-CD</citation><?oxy_comment_end?></para>
       <para>The SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
         Conceptual, Logical, and Implementable. These perspectives are not formally equivalent with
-        Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
+        <glossterm baseform="Object Management Group">Object Management Group’s (OMG)</glossterm> levels-of-abstraction in Model-Driven Architecture (MDA)
         even though it reuses the same derivation. Therefore, the Implementable Perspective is
         derived from the Logical Perspective and the Logical Perspective is derived from the
         Conceptual Perspective. This approach ensures that any implementable artifacts (i.e. service
@@ -463,9 +464,9 @@ Yes, ANF is for URU..." flag="done"?>in
         </caption>
       </figure>
       <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
-        of Computationally Independent Model (CIM), the Logical Perspective is not equivalent to the
-        MDA Platform Independent Model (PIM), nor is the Implementable Perspective equivalent to the
-        MDA Platform Specific Model although this Perspective is the SAIF Perspective that most
+        of <glossterm baseform="Computationally Independent Model">Computationally Independent Model (CIM)</glossterm>, the Logical Perspective is not equivalent to the
+        MDA <glossterm baseform="Platform Independent Model">Platform Independent Model (PIM)</glossterm>, nor is the Implementable Perspective equivalent to the
+        MDA <glossterm baseform="Platform Specific Model">Platform Specific Model</glossterm> although this Perspective is the SAIF Perspective that most
         closely aligns with an MDA analogue.</para>
       <section>
         <title>Conceptual Perspective</title>
@@ -489,7 +490,7 @@ Yes, ANF is for URU..." flag="done"?>in
         <para>There are no definite boundaries between the Logical and Implementable Perspectives.
           Therefore, it’s important for organizations such as HL7 to standardize logical models used
           to generate/create implementable artifacts (i.e. implementation guides, profiles, and
-          templates). <link linkend="CIMIStatement">CIMI Clinical Statements</link> , <link
+          templates). <glossterm baseform="CIMI Clinical Statement">CIMI Clinical Statements</glossterm> , <link
             xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed
           Clinical Models, and ANF statements all belong in this perspective.</para>
       </section>
@@ -546,7 +547,7 @@ Yes, ANF is for URU..." flag="done"?>in
       </itemizedlist>
       <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
         the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
-        Statement Model is a polymorphic model: it can represent observations, procedures,
+        Statement Model is a <glossterm baseform="Polymorphic model">polymorphic model</glossterm>: it can represent observations, procedures,
         encounters, public health reports, supply, medications, exposure, and derivations of
         clinical acts. The C3 Clinical Statement model provides a Statement Model with partial
         Terminology constraints. For example, Clinical Statements in CDA document section need to be
@@ -560,8 +561,9 @@ Yes, ANF is for URU..." flag="done"?>in
     </section>
     <section>
       <title xml:id="CIMIStatement">CIMI Statements</title>
-      <para>The Clinical Information Modeling Initiative (CIMI) is defining a library of logical
-        clinical information models using a common modeling formalism. CIMI intends to improve the
+      <para>The <glossterm baseform="Clinical Information Modeling Initiative">Clinical Information Modeling Initiative
+        (CIMI)</glossterm> is defining a library of logical
+        <glossterm baseform="Clinical Information Model">clinical information models</glossterm> using a common modeling formalism. CIMI intends to improve the
         interoperability of healthcare information systems through shared detailed clinical
         information models that can be used to generate platform-specific model specifications such
         as FHIR profiles, CDA templates, OpenEHR Archetypes, <link
@@ -570,7 +572,7 @@ Yes, ANF is for URU..." flag="done"?>in
         <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? "?>CIMI
         models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
         clinical models<?oxy_comment_end?>, which capture the same clinical meaning using different
-        combinations of pre and post-coordinated concepts and corresponding information model
+        combinations of pre and <glossterm baseform="Post-coordinated concept">post-coordinated concepts</glossterm> and corresponding information model
         structure. The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A
         CIMI Clinical Statement represents structured electronic communication made about a patient
         typically documented as an 'entry' in the patient record. </para>
