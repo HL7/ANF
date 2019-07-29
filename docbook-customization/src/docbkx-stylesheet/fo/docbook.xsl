@@ -53,6 +53,37 @@
       <xsl:call-template name="inline.charseq"/>
     </fo:inline>
   </xsl:template>
+
+  <xsl:template name="object.id">
+    <xsl:param name="object" select="."/>
+
+    <xsl:variable name="id" select="@id"/>
+    <xsl:variable name="xid" select="@xml:id"/>
+
+    <xsl:variable name="preceding.id"
+                  select="count(preceding::*[@id = $id])"/>
+
+    <xsl:variable name="preceding.xid"
+                  select="count(preceding::*[@xml:id = $xid])"/>
+
+    <xsl:choose>
+      <xsl:when test="$object/@id and $preceding.id != 0">
+        <xsl:value-of select="concat($object/@id, $preceding.id)"/>
+      </xsl:when>
+      <xsl:when test="$object/@id">
+        <xsl:value-of select="$object/@id"/>
+      </xsl:when>
+      <xsl:when test="$object/@xml:id and $preceding.xid != 0">
+        <xsl:value-of select="concat($object/@xml:id, $preceding.xid)"/>
+      </xsl:when>
+      <xsl:when test="$object/@xml:id">
+        <xsl:value-of select="$object/@xml:id"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="generate-id($object)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
   
   <!-- PI to cause a line break
   usage: <?hard-linebreak?>, <?line-break?> or <?lb?>  -->
@@ -486,7 +517,7 @@ so these templates do nothing-->
       <!--</xsl:when>-->
       <xsl:when test="$position='left'">
         <fo:block>Page <fo:page-number/></fo:block>
-        <fo:block>© 2019 Health Level Seven International.  All rights reserved.</fo:block>
+        <fo:block>© 2019 HSPC &#x26; HL7. Licensed under the Apache License 2.0.</fo:block>
       </xsl:when>
       <xsl:when test="$position='right'">HL7_CIMI_LM_ANF_R1_I1_2019SEP
         September 2019 Ballot</xsl:when>
