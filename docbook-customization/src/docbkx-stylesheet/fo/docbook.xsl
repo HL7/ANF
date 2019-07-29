@@ -372,8 +372,12 @@ so these templates do nothing-->
 <xsl:template match="d:editorial-rule/d:title"/>
 
 <!-- Border for media object/figure -->
-  <!-- Border for media object/figure -->
-  <xsl:template match="d:mediaobject">
+  <!-- Border added for media object/figure -->
+    <xsl:template match="d:mediaobject">
+    <fo:block border="0.5pt solid gray">
+      <xsl:apply-imports/>
+    </fo:block>   
+    <!-- to add the figure border selectively, uncomment:
     <xsl:choose>
       <xsl:when test="@role = 'bordered'">
         <fo:block border="0.5pt solid gray">
@@ -384,6 +388,7 @@ so these templates do nothing-->
         <xsl:apply-imports/>
       </xsl:otherwise>
     </xsl:choose>
+     -->
   </xsl:template>
 
 <!-- You can customize the header content with this template -->
