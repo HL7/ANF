@@ -33,7 +33,8 @@ task before
 </xsl:param>
 
   <xsl:param name="bibliography.collection" select="concat('file:///', system-property('user.dir'),'/bibliography-db/target/generated-sources/docbkx/bibliography.xml')"/>
-  
+  <xsl:param name="part.autolabel" select="0"/>
+
   <!-- Add new lists to book TOC -->
 <xsl:param name="generate.toc">
 /appendix toc,title
@@ -41,7 +42,7 @@ article/appendix  nop
 /article  toc,title
 book      toc,title,figure,table,example,requirement,editorial-rule,equation
 /chapter  toc,title
-part      toc,title
+part      title
 /preface  toc,title
 reference toc,title
 /sect1    toc
@@ -52,6 +53,8 @@ reference toc,title
 /section  toc
 set       toc,title
 </xsl:param>
+
+
 <!--==============================================================-->
 <!--  Generated text settings                                     -->
 <!--==============================================================-->
