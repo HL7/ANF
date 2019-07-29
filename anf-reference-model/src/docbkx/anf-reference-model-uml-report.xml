@@ -985,7 +985,7 @@
                                             >FHIR </link><link
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
                                             >Expresssion</link></emphasis> structure or a similar
-                                    standard-based syntax ((e.g. SNOMED Expression Constrain
+                                    standard-based syntax ((e.g. SNOMED CT Expression Constrain
                                     Language - ECL). </para>
                                 <para>The expression must use valid, standard-based
                                     terminology.</para>

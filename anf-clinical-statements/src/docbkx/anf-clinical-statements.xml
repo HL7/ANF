@@ -386,7 +386,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <para><editorial-rule>
-                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
+                        <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED CT concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
                         <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I find this title confusing, as you can&apos;t have Mulitple Topics. Maybe something like Separation of Compound Topic??"?><?oxy_comment_end?>
                         <mathphrase>For the purposes of ANF, a statement is a request or performance

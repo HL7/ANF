@@ -338,7 +338,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             <emphasis role="bold"
               ><?oxy_comment_start author="Ioana" timestamp="20190729T001906-0400" comment="Add link to glossary"?>Terminology
               Knowledge<?oxy_comment_end?></emphasis>
-          </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
+          </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
           The Terminology Knowledge layer is responsible for structured sets of medical terms and
           codes that define concepts of interest, including descriptions, dialects, language, and
           semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer
@@ -602,7 +602,7 @@ Yes, ANF is for URU..." flag="done"?>in
       we discuss the implications of ANF on data quality, clinical decision support, and ultimately,
       patient safety and outcomes. </para>
     <note>
-    <para>Throughout this document, SNOMED Clinical Terminology (CT) to describe clinical concepts
+    <para>Throughout this document, SNOMED CT to describe clinical concepts
         and illustrate sample statements based on both ANF and CIMI logical/</para>
     </note>
   </section>
