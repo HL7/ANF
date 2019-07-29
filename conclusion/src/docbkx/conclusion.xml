@@ -23,7 +23,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
     <para>The design of
       <?oxy_comment_start author="kec" timestamp="20190722T175226-0700" comment="As I read this, it is more restating Khan, that saying how ANF supports data quality in ways that Khan says are important. Need to redraft to be more of how ANF supports data quality, for each way we support data quality, pile on that Kahn thinks it important, and other references that we can point to as well..." flag="done"?>ANF
       is based on research into data quality frameworks
-        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Khan</citation><?oxy_comment_end?>
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Kahn</citation><?oxy_comment_end?>
       that identified that information conformance, completeness, and plausibility are all necessary
       to analysis. </para>
     <para>

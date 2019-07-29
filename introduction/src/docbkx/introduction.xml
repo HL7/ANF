@@ -20,7 +20,7 @@
     improve population health through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
-    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. A
+    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <citation>Chassin</citation>  A
       <emphasis>standard</emphasis> normal form can help replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background  on other logical HL7 and ISO clinical
@@ -61,12 +61,12 @@
       However, both treatment and analysis of clinical statements require consistency not only at
       the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance of an <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> DCMs, CIMI model,
-      etc.). In most cases the data quality is the greatest obstacle to analysis, but even in the
-      case of structured, semantically-clear information, inconsistency across sources of
-      information raises obstacles to analysis and research. Analysis of aggregate information
-      managed by health information networks poses the greatest challenge today because a meaningful
-      use of data for patient outcomes or research requires a common format and level of semantic
-      clarity.<?oxy_comment_end?></para>
+      etc.). <citation>DCM_Quality</citation> In most cases the data quality is the greatest
+      obstacle to analysis, but even in the case of structured, semantically-clear information,
+      inconsistency across sources of information raises obstacles to analysis and research.
+      Analysis of aggregate information managed by health information networks poses the greatest
+      challenge today because a meaningful use of data for patient outcomes or research requires a
+      common format and level of semantic clarity.<?oxy_comment_end?></para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
       current detailed clinical modeling efforts, but there is also further variation in how the
@@ -440,7 +440,8 @@ Yes, ANF is for URU..." flag="done"?>in
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability. This architecture, the HL7 Service-Aware
-        Interoperability Framework Canonical Definition (SAIF-CD). </para>
+        Interoperability Framework Canonical Definition (SAIF-CD).
+          <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>SAIF-CD</citation><?oxy_comment_end?></para>
       <para>The SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
         Conceptual, Logical, and Implementable. These perspectives are not formally equivalent with
         Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)

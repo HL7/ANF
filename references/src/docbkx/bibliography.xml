@@ -10,14 +10,17 @@
         <!--<bibliomixed xml:id="welcome"/>-->
         <bibliomixed xml:id="HRO_HIT"/>
         <bibliomixed xml:id="Chassin"/>
-        <bibliomixed xml:id="concepts"/>
+        <bibliomixed xml:id="DCM_Quality"/>  
+        <bibliomixed xml:id="SAIF-CD"/>  
+        <bibliomixed xml:id="HL7v3"/>  
+        <bibliomixed xml:id="Elkin_Terminology"/>
+        <bibliomixed xml:id="Kahn"/>
+        <bibliomixed xml:id="ONC"/>
+        <bibliomixed xml:id="Jean"/>
         <bibliomixed xml:id="Cholan_specs"/>
-        <bibliomixed xml:id="lookback"/>
-        <bibliomixed xml:id="Hemler"/>
-        <bibliomixed xml:id="Dorr"/>
-        <bibliomixed xml:id="DCM_Quality"/>   
-        <bibliomixed xml:id="HL7v3"/>   
-        <bibliomixed xml:id="SAIF-CD"/>   
+        
+        
+       
     </bibliodiv>
     
 </bibliography>
