@@ -23,18 +23,18 @@
     <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. A
       <emphasis>standard</emphasis> normal form can help replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
-    <!--normal forms--><?oxy_comment_end?> background on clinical statement representations
-    introduced by HL7 and ISO clinical statement models, and focus on the need for—and logical
-    specification of—an <glossterm baseform="Analysis Normal Form">Analysis Normal Form
-      (ANF)</glossterm>.
+    <!--normal forms--><?oxy_comment_end?> background  on other logical HL7 and ISO clinical
+    statement models, and focus on the need for—and logical specification of—an <glossterm
+      baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm>.
     <?oxy_comment_start author="Ioana" timestamp="20190722T235956-0400" comment="Expanded this section." flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T085644-0700" comment="Insert introduction of URU here (Understandable, Reproducible, and Useful. " flag="done" mid="3"?>ANF
     is a <emphasis role="bold">normal</emphasis>
     <emphasis role="bold">form</emphasis> intended to safely and reliably support data analysis that
     can be used to aggregate data created using any standard or non-standard input form or exchange
-    mechanism.<?oxy_comment_end?></para><?oxy_comment_end mid="3"?>
+    mechanism.<?oxy_comment_end?> ANF Reference Model, is a
+    logical model and part of the CIMI library of models.</para><?oxy_comment_end mid="3"?>
   <?oxy_comment_start author="Ioana" timestamp="20190722T224830-0400" comment="Moved the URU references fron SoC section and expanded how URU is embodied by ANF." flag="done"?>
-  <para>ANF provides a model for clinical statements for analysis that are <emphasis>Understandable,
-      Reproducible, and Useful</emphasis> (URU):</para><?oxy_comment_end?>
+  <para>ANF is a model for clinical statements used in analysis that meet the criteria
+      <emphasis>Understandable, Reproducible, and Useful</emphasis> (URU) [reference]:</para><?oxy_comment_end?>
   <itemizedlist>
     <listitem>
       <para><emphasis role="bold">Understandable</emphasis>. The content of an ANF statement can be
@@ -81,25 +81,25 @@
       proprietary models. For the purposes of this document, the type or usability of data
       structures used for capture or display of clinical statements is not in scope. We assume that
         <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
-      suitable for normalization for analysis. <?oxy_comment_end?></para>
+      suitable for normalization and analysis. <?oxy_comment_end?></para>
     <para>Therefore, clinical statements can be expressed and documented in many different ways in
       EHR systems, where input forms provide different options to document the same clinical
       statement. These differences pose challenges for how the data is modeled, how the data is
       stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
       analysis results. </para>
     <section>
-      <title>Variation by Implementation - Structured Clinical Input</title>
+      <title>Variation by Implementation: Structured Clinical Input Forms</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
         that we call here
         <?oxy_comment_start author="kec" timestamp="20190721T122744-0700" comment="a Clinical Input Form (CIF) and link to glossary. "?>structured
-        clinical input<?oxy_comment_end?>, or the manner in which
+        clinical input<?oxy_comment_end?> form, or the manner in which
         <?oxy_comment_start author="kec" timestamp="20190721T122821-0700" comment="A Clinical Presentation Form (CPF) and link to glossary. "?>information
         is presented<?oxy_comment_end?> to the clinicians and how they enter the data, such as by
         constraining the information to allow only certain values to be entered, e.g. through a
         drop-down list, radio buttons, or breaking up large chunks of related information into
         smaller parts.</para>
       <?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems." flag="done"?>
-      <?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="17"?>
+      <?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="10"?>
       <para>For example, <link linkend="CIF_EHR_1">data collected by an EHR</link> combines
         information reported by devices with findings and interpretation: <orderedlist>
           <listitem>
@@ -177,7 +177,7 @@
         particular clinical information be available in multiple modeled forms. These models,
         although different in form, semantically represent the same information, and are known as
         isosemantic models. Any particular detailed clinical model exists within a family of
-        isosemantic siblings. </para><?oxy_comment_end mid="17"?>
+        isosemantic siblings. </para><?oxy_comment_end mid="10"?>
     </section>
   </section>
   <section>
@@ -185,15 +185,16 @@
     <para>
       <emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
       logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
-      aggregate clinical statements for analysis, research, clinical decision support, and other
-      purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
-      the information was captured at its source (i.e. information systems or medical devices). ANF
+      aggregate clinical statements recorded during treatment for analysis, research, clinical
+      decision support, and other purposes. ANF can be used to represent any isosemantic clinical
+      statements irrespective of how the information was captured at its source (i.e. information
+      systems or medical devices). ANF
       <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can" flag="done"?>can<?oxy_comment_end?>
       be used in conjunction with other models intended to ensure that clinical information is
       structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
       Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
-        <glossterm>FHIR</glossterm> profiles).  </para>
+        <glossterm>FHIR</glossterm> profiles). </para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
       integrators, health IT developers, and researchers<?oxy_comment_end?> face different
       priorities, forcing trade-offs to be made that optimize data entry brevity at the cost of
@@ -215,8 +216,8 @@
         finding, request or observation. ANF requires an ability to classify the <emphasis
           role="bold">topic</emphasis> of a statement as standard-based and thus it depends on
         structured input data information that formal terminology. ANF disambiguates input data
-        along a well-defined compositional layers (see <link linkend="SoC_Section">Separation
-          of Concerns</link>). In practice, information systems may create normal data natively or
+        along a well-defined compositional layers (see <link linkend="SoC_Section">Separation of
+          Concerns</link>). In practice, information systems may create normal data natively or
         transform other representations of clinical statements (e.g. C-CDA templates, FHIR profiles)
         to normal form (i.e., ANF).</para>
       <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
@@ -242,7 +243,6 @@
           </listitem>
         </itemizedlist></para>
     </section>
-   
     <section>
       <title>Assumptions for ANF</title>
       <para>ANF provides a precise, consistent semantic data and terminology specification that is
@@ -302,8 +302,8 @@ Try &quot;Separating concerns across architectural layers is a foundational...&q
         unrelated standards development organizations. In these cases, SoC allows teams to work
         independently, in coordination with each other, and reuse the resulting artifacts.</para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T131643-0700" comment="I edited this one directly to demonstrate the linking mechanism. " flag="done"?><xref
-        linkend="SoC-diagram"/> shows how a layered knowledge architecture can enable a separation of
-        concerns.<?oxy_comment_end?></para>
+          linkend="SoC-diagram"/> shows how a layered knowledge architecture can enable a separation
+        of concerns.<?oxy_comment_end?></para>
       <figure xml:id="SoC-diagram">
         <title>Separation of Concerns: Knowledge Architecture</title>
         <mediaobject role="bordered">
@@ -410,15 +410,18 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             </listitem>
           </itemizedlist></para>
         <para>A clear separation of concern enables the isosemantic transformation of standard-based
-          clinical statements to normal form by decoupling structure from semantics and workflow.
+          clinical statements to normal form by decoupling structure from semantics and workflow
           <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
 
 Yes, ANF is for URU..." flag="done"?>in
           regard to an isosemantic representation in the Statement Model
           layer<?oxy_comment_end?>.</para>
-        <para>HL7 relies on implementation guides (for V2, CDA, and FHIR) to add the clarity to
-          standard-based "statement models" to support business and workflow decision points
-          consistent with Assertional and Procedural layers described above.
+        <para>HL7 relies on implementation guides (for V2, CDA, and FHIR) to add sufficient
+          terminology knowledge to standard-based clinical statement. Vocabulary constraints
+          documented as profiles or templates are the  mechanism to create interoperable
+          implementation guides from health IT standards. Only, after the Terminology Knowledge is
+          fully defined, the standard-based statements can be used to support business and workflow
+          decision points consistent with Assertional and Procedural layers described above.
           <!--<para>ANF can help the modeling of clinical statements achieve the following design features: </para><itemizedlist><listitem><para>Understandable: The meaning of a clinical statement can be understood, without reference to private or inaccessible information.</para></listitem><listitem><para>Reproducible: Multiple users can apply the clinical statement model to the same situations.</para></listitem><listitem><para>Useful: The clinical statement has a practical value to users that is self-evident or can be readily explained.</para></listitem></itemizedlist>--></para>
       </figure>
     </section>
@@ -456,7 +459,6 @@ Yes, ANF is for URU..." flag="done"?>in
         <caption>
           <para>Like other CIMI models, ANF is a Logical Model that may be used to created
             implementation specifications.</para>
-          
         </caption>
       </figure>
       <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
@@ -503,7 +505,6 @@ Yes, ANF is for URU..." flag="done"?>in
           models.</para>
       </section>
     </section>
-    
     <section>
       <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? " flag="done"?>
       <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
@@ -564,15 +565,14 @@ Yes, ANF is for URU..." flag="done"?>in
         information models that can be used to generate platform-specific model specifications such
         as FHIR profiles, CDA templates, OpenEHR Archetypes, <link
           xlink:href="https://www.iso.org/standard/40784.html">ISO 13606</link> Archetypes, <link
-            xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> DCMs,
+          xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> DCMs,
         <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? "?>CIMI
         models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
         clinical models<?oxy_comment_end?>, which capture the same clinical meaning using different
         combinations of pre and post-coordinated concepts and corresponding information model
         structure. The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A
         CIMI Clinical Statement represents structured electronic communication made about a patient
-        typically documented as an 'entry' in the patient record. 
-      </para>
+        typically documented as an 'entry' in the patient record. </para>
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
         Terminology Knowledge and provides a separate model for each type statements, organized into
         a comprehensive library.</para>
@@ -590,20 +590,20 @@ Yes, ANF is for URU..." flag="done"?>in
     <title>About this Document</title>
     <para>This document describes how information systems can improve patient safety and outcomes by
       increasing the precision of clinical information using a normal form to enhance and support
-      quality data and analysis. </para>
-    <para>In the subsequent chapter we will provide a deep dive into the building blocks and
-      constructs for ANF, in a chapter containing the ANF Reference Model and illustrative examples
-      of ANF modeling. </para>
+      quality data and analysis. In the subsequent chapter we will provide a deep dive into the
+      building blocks and constructs for ANF, in a chapter containing the ANF Reference Model and
+      illustrative examples of ANF modeling. </para>
     <para>Subsequently, we will outline how the various building blocks and attributes work together
-      to model ANF Clinical Statements. </para>
-    <para>Then, we will explore current CIMI modeling efforts including illustrative examples for
-      modeling CIMI clinical statements. We will also compare and contrast ANF Clinical Statements
-      and CIMI Clinical Statements. </para>
-    <para>We then provide the ANF Modeling Methodology, including a list of modeling principles and
-      rules.</para>
-    <para>Next, we discuss how isosemantic clinical statements can be transformed and normalized
-      into ANF Clinical Statements. </para>
-    <para>Finally, we discuss the implications of ANF on data quality, clinical decision support,
-      and ultimately, patient safety and outcomes. </para>
+      to create ANF Clinical Statements. Then, we will explore current CIMI modeling efforts
+      including illustrative examples for modeling CIMI clinical statements. We will also compare
+      and contrast ANF Clinical Statements and CIMI Clinical Statements. We then provide the ANF
+      Modeling Methodology, including a list of modeling principles and rules. Next, we discuss
+      clinical statements can be transformed and normalized into ANF Clinical Statements. Finally,
+      we discuss the implications of ANF on data quality, clinical decision support, and ultimately,
+      patient safety and outcomes. </para>
+    <note>
+    <para>Throughout this document, SNOMED Clinical Terminology (CT) to describe clinical concepts
+        and illustrate sample statements based on both ANF and CIMI logical/</para>
+    </note>
   </section>
 </chapter>
