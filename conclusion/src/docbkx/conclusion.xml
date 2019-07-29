@@ -6,8 +6,8 @@
     <?oxy_comment_start author="timowilliams" timestamp="20190717T183011-0500" comment="Comment from Stephanie K:
 There isn&apos;t a sub-section for patient safety.  There is one for population health.  Should it be renamed to include both?" flag="done"?>clinical
     data quality, clinical decision support, patient safety and population health because it
-    promot4es the reuse of information aggregated from reused to derive new information about
-    treatment quality, patient safety, and outcomes. </para><?oxy_comment_end?>
+    promotes the reuse of information aggregated to derive new information about treatment quality,
+    patient safety, and outcomes. </para><?oxy_comment_end?>
   <section>
     <title>Implications for Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
@@ -22,10 +22,10 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       semantic clarity to allow for a meaningful secondary uses of clinical data. </para>
     <para>The design of
       <?oxy_comment_start author="kec" timestamp="20190722T175226-0700" comment="As I read this, it is more restating Khan, that saying how ANF supports data quality in ways that Khan says are important. Need to redraft to be more of how ANF supports data quality, for each way we support data quality, pile on that Kahn thinks it important, and other references that we can point to as well..." flag="done"?>ANF
-      is based on research into data quality
-      frameworks[<?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?>Khan
-      et al: (Khan)]<?oxy_comment_end?> that  identified that information  conformance,
-      completeness, and plausibility are all necessary to analysis. </para>
+      is based on research into data quality frameworks
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Khan</citation><?oxy_comment_end?>
+      that identified that information conformance, completeness, and plausibility are all necessary
+      to analysis. </para>
     <para>
       <itemizedlist>
         <listitem>
@@ -56,7 +56,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
                 technical functional specifications. ANF highlights the measure in which a an
                 action, finding, or observation was either requested or performed to a common
                 "measure" thus supporting the development of computational, assertional, and
-                procedural  predicates.</para>
+                procedural predicates.</para>
             </listitem>
           </itemizedlist>
         </listitem>
@@ -66,7 +66,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
             data values. Completeness measures assess the absence of data at a single moment over
             time or when measured at multiple moments over time. ANF disambiguates the date a
             statement was made/asserted from the timing of the circumstances in which the underlying
-            action,  observation, or  finding. </para>
+            action, observation, or finding. </para>
         </listitem>
         <listitem>
           <para><emphasis role="bold"
@@ -117,46 +117,50 @@ Or maybe reference back to the interoperability levels, of which semantic was th
     <title>Implications on Clinical Decision Support</title>
     <para>A 2012 Literature Review commissioned by the Agency for Healthcare Research and Quality
       (AHRQ) found evidence showing that CDS had positive impact on process measures and increasing
-      user knowledge relevant to a medical condition. (Lobach et al., 2012) </para>
-    <para>Additional studies show that well-executed CDS can:</para>
+      user knowledge relevant to a medical condition.
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
+    </para>
+    <para>Additional studies show that well-executed CDS can
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
+      :</para>
     <itemizedlist>
       <listitem>
-        <para>reduce adverse drug-drug interaction events and medication errors (Smithburger et al.,
-          2011; Sonnichsen et al., 2016) (Fritz et al., 2012); </para>
+        <para>reduce adverse drug-drug interaction events and medication errors; </para>
       </listitem>
       <listitem>
-        <para>decrease unnecessary lab testing (Felcher et al., 2017);</para>
+        <para>decrease unnecessary lab testing;</para>
       </listitem>
       <listitem>
-        <para>reduce cardiovascular risk in patients with type 2 diabetes (Cleveringa et al., 2008);
-        </para>
+        <para>reduce cardiovascular risk in patients with type 2 diabetes; </para>
       </listitem>
       <listitem>
-        <para>improve practitioner performance (Garg et al., 2005); </para>
+        <para>improve practitioner performance; </para>
       </listitem>
       <listitem>
-        <para>increase cardiovascular disease risk assessment in routine primary care practice
-          (Wells et al., 2008); </para>
+        <para>increase cardiovascular disease risk assessment in routine primary care practice; </para>
       </listitem>
       <listitem>
-        <para>improve public health outcomes associated with outbreaks of food-borne illness (Wu et
-          al., 2012); </para>
+        <para>improve public health outcomes associated with outbreaks of food-borne illness; </para>
       </listitem>
       <listitem>
-        <para>and, produce cost savings associated with hospital-based pharmacy interventions
-          (Calloway et al., 2013).</para>
+        <para>and, produce cost savings associated with hospital-based pharmacy
+          interventions.</para>
       </listitem>
     </itemizedlist>
     <para>Taken together, the available evidence shows that CDS —when implemented in the right
       context, and when governed with formal management—can reduce errors, improve the quality of
-      care, reduce cost, and ease the cognitive burden on health care providers. (ONC, NAM Report)
+      care, reduce cost, and ease the cognitive burden on health care providers.
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
       As a result, the impetus for achieving standardized, widespread adoption of CDS across health
       systems is clear.</para>
     <para>A report entitled “<emphasis role="italic">Optimizing Strategies for Clinical Decision
-        Support: Summary of a Meeting Series</emphasis>” was produced out of the collaboration
-      between the ONC and the National Academy of Medicine (NAM). The report states that there are
-      at least four important technical challenges to sharing and therefore standardizing
-      implementations of CDS content: (ONC, NAM Report)</para>
+        Support: Summary of a Meeting Series</emphasis>”
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
+      was produced out of the collaboration between the ONC and the National Academy of Medicine
+      (NAM). The report states that there are at least four important technical challenges to
+      sharing and therefore standardizing implementations of CDS content:
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
+    </para>
     <para><emphasis role="bold">(1) insufficient standardization of patient data representation;
       </emphasis></para>
     <para>(2) insufficient standardization of CDS knowledge representation; </para>
@@ -168,7 +172,9 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       instantiations of use of the same EHR systems differ in how they encode patient data and in
       how they represent clinical statements. The ONC and NAM report states that "[b]ecause CDS
       relies on inferencing using patient data, this heterogeneity in patient data representation
-      poses an immense obstacle to sharing CDS." (ONC, NAM Report)</para>
+      poses an immense obstacle to sharing CDS."
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>ONC</citation><?oxy_comment_end?>
+    </para>
     <para>ANF aims to reduce the variability of how clinical data within the value sets and CDS
       rules are inputted into EHR systems and modeled/stored in data repositories. The
       standardization of clinical observations in a manner that supports automated processing
@@ -200,34 +206,42 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       underlying logical models may impact the ability of clinicians to assess care and improve
       quality. Jean-Jacques et al. showed that health information technology-supported quality
       improvement (QI) initiatives can decrease disparities for some chronic disease management and
-      preventive measures QI. Data-driven QI efforts rely heavily on patient-level data generated by
-      eCQM reports or CDS alerts, which are dependent upon standards-based encoded clinical data. If
-      clinicians rely on inaccurate implementations of eCQMs and CDS, then they may have
-      lists/alerts with patients intended to be excluded from a measure/alert, and may therefore,
-      target inappropriate patients for therapies, such as recommending aspirin use for someone at
-      high-risk for a fatal bleeding event. Similarly,  life-saving treatment may be denied or
+      preventive measures
+        QI.<?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Jean</citation><?oxy_comment_end?>
+      Data-driven QI efforts rely heavily on patient-level data generated by eCQM reports or CDS
+      alerts, which are dependent upon standards-based encoded clinical data. If clinicians rely on
+      inaccurate implementations of eCQMs and CDS, then they may have lists/alerts with patients
+      intended to be excluded from a measure/alert, and may therefore, target inappropriate patients
+      for therapies, such as recommending aspirin use for someone at high-risk for a fatal bleeding
+      event. Similarly, life-saving treatment may be denied or
       delayed.<?oxy_comment_start author="timowilliams" timestamp="20190717T183701-0500" comment="From Stephanie K.
 
 Would you want to state that the opposite could be true as well, where patients who should have been on the list were incorrectly excluded?" flag="done"?></para><?oxy_comment_end?>
-    <para>Rea search shows that variations in implementations of eCQM specifications for
+    <para>Reasearch shows that variations in implementations of eCQM specifications for
       cardiovascular event prevention could result in potential lives saved or harms avoided in
       quality improvement activities
-      <?oxy_comment_start author="Ioana" timestamp="20190728T224349-0400" comment="Bibliography"?>[Cholan
-      et al ]. <?oxy_comment_end?>For aspirin use for secondary prevention of heart attacks,
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Chlan_specs</citation><?oxy_comment_end?>
+      <?oxy_comment_start author="Ioana" timestamp="20190728T224349-0400" comment="Bibliography"?>.
+      <?oxy_comment_end?>For aspirin use for secondary prevention of heart attacks,
       Number-Needed-to- Treat (NNT) statistics show that of patients with known cardiovascular risk
       who took aspirin, 1.3% were helped by preventing a non-fatal heart attack, and 0.25% were
-      harmed by a major bleeding event. The same research study [Cholan et al ],  shows that121
-      (92%) of the patients were inappropriately included in a measure’s denominator. These patients
-      were also taking an anticoagulant medication, so the Number-Needed-to-Harm (NNH) statistic for
-      this subset of patients is likely much higher, and for this study, 1 to 2 people may have been
-      harmed if the inaccurate implementation persisted, as Hansen et. al showed that patients with
-      combinations of aspirin, warfarin, and clopidogrel are associated with up to a three-fold
-      higher risk of bleeding for patients on dual therapy and triple therapy. With another measure
-      for statin therapy, 1 in 21 people have a repeat heart attack, stroke or death avoided, so
-      even 10 missed people have significant risk of events. Similarly, 10% are harmed by muscle
-      damage or pain, or ~1 of the 14 inappropriately included in the Cholan et al study. Even in
-      the small Cholan et al study with data from two primary care clinics, failure to include or
-      exclude patients could have led to real harm. </para>
+      harmed by a major bleeding event. The same research study
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Chlan_specs</citation><?oxy_comment_end?>
+      , shows that121 (92%) of the patients were inappropriately included in a measure’s
+      denominator. These patients were also taking an anticoagulant medication, so the
+      Number-Needed-to-Harm (NNH) statistic for this subset of patients is likely much higher, and
+      for this study, 1 to 2 people may have been harmed if the inaccurate implementation persisted,
+      as evidence shows that patients with combinations of aspirin, warfarin, and clopidogrel are
+      associated with up to a three-fold higher risk of bleeding for patients on dual therapy and
+      triple therapy. With another measure for statin therapy, 1 in 21 people have a repeat heart
+      attack, stroke or death avoided, so even 10 missed people have significant risk of events.
+      Similarly, 10% are harmed by muscle damage or pain, or ~1 of the 14 inappropriately included
+      in the study.
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Chlan_specs</citation><?oxy_comment_end?>
+      Even in the small eCQM implementation study
+        <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>Chlan_specs</citation><?oxy_comment_end?>
+      with data from two primary care clinics, failure to include or exclude patients could have led
+      to real harm. </para>
     <para>With eCQM implementation and QI infrastructure increasing, the problem of having, and
       using, inaccurate eCQM implementations or CDS implementations could have significant potential
       negative impact on population health by not avoiding events and avoiding harms for patients.
@@ -239,12 +253,12 @@ Would you want to state that the opposite could be true as well, where patients 
     <title>Summary</title>
     <para>In conclusion, Analysis Normal Form (ANF) presents a simple reproducible approach to
       modeling clinical statements specifically for data analysis. It reduces clinical statements to
-      two types, Performance of an action, finding, or observation and Request for Action, both clinical statement types with
-      topics. ANF is compatible with other work in statement representation models such as the CIMI
-      Clinical Statement approach, with its focus on more traditional complex structured trees,
-      whereas ANF focuses on structuring data in a way CDS systems can extract data in an
-      unambiguous way. ANF provides a single, normatlized, form for clinical statements that may be
-      used to create assertional or prcoedural knowledge articacts as clinical decision
-      support</para>
+      two types, Performance of an action, finding, or observation and Request for Action, both
+      clinical statement types with topics. ANF is compatible with other work in statement
+      representation models such as the CIMI Clinical Statement approach, with its focus on more
+      traditional complex structured trees, whereas ANF focuses on structuring data in a way CDS
+      systems can extract data in an unambiguous way. ANF provides a single, normatlized, form for
+      clinical statements that may be used to create assertional or prcoedural knowledge articacts
+      as clinical decision support</para>
   </section>
 </chapter>
