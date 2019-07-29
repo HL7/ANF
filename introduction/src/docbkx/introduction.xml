@@ -87,69 +87,6 @@
       statement. These differences pose challenges for how the data is modeled, how the data is
       stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
       analysis results. </para>
-  </section>
-  <section>
-    <title>Analysis Normal Form </title>
-    <para>
-      <emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
-      logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
-      aggregate clinical statements for analysis, research, clinical decision support, and other
-      purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
-      the information was captured at its source (i.e. information systems or medical devices). ANF
-      <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can" flag="done"?>can<?oxy_comment_end?>
-      be used in conjunction with other models intended to ensure that clinical information is
-      structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
-        xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
-      Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
-        <glossterm>FHIR</glossterm> profiles).  </para>
-    <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
-      integrators, health IT developers, and researchers<?oxy_comment_end?> face different
-      priorities, forcing trade-offs to be made that optimize data entry brevity at the cost of
-      computability. ANF represents a collection of patterns and approaches to provide a
-      <?oxy_comment_start author="kec" timestamp="20190721T085955-0700" comment="ANF does not provide predictable transformations, it provides a predictable (URU) normal form that can be used by transformation developers. " flag="done"?>predictable
-      <?oxy_comment_end?>normal form to aggregate data sets across multiple
-      <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. " flag="done"?><?oxy_comment_end?>systems
-      <!--through normalization-->. The more normalized a data set is, the simpler it will become to
-      analyze, and errors will be reduced. Post-coordinated compositional statements using ANF
-      introduce the ability to faithfully expand from a reduced form or compare to other statements
-      with ease and no loss of semantic integrity.
-      <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?><?oxy_comment_end?></para>
-    <section>
-      <title>Objectives and Purpose of ANF</title>
-      <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
-        purpose is to introduce standard-based, normalized representation of clinical statements
-        from a heterogeneous source using an objective quantitative <emphasis role="bold"
-          >measure</emphasis> to help evaluate the result, presence, and magnitude of a specific
-        finding, request or observation. ANF requires an ability to classify the <emphasis
-          role="bold">topic</emphasis> of a statement as standard-based and thus it depends on
-        structured input data information that formal terminology. ANF disambiguates input data
-        along a well-defined compositional layers (see <link linkend="SoC_Section">Separation
-          of Concerns</link>). In practice, information systems may create normal data natively or
-        transform other representations of clinical statements (e.g. C-CDA templates, FHIR profiles)
-        to normal form (i.e., ANF).</para>
-      <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
-        multiple sources to better support a set of analysis. <itemizedlist spacing="compact">
-          <listitem>
-            <para>Specify clinical content extracted from EHR systems using FHIR</para>
-          </listitem>
-        </itemizedlist><itemizedlist>
-          <listitem>
-            <para>Providing a common analysis form of data exchange, HL7 messages, FHIR and
-              CDA</para>
-          </listitem>
-        </itemizedlist><itemizedlist>
-          <listitem>
-            <para>Specifying clinical content for User Interfaces</para>
-          </listitem>
-        </itemizedlist><itemizedlist spacing="compact">
-          <listitem>
-            <para><?oxy_comment_start author="kec" timestamp="20190721T122226-0700" comment="Don&apos;t put bulleted lists inside of bullited lists. Maybe put in a transition paragraph, then a new bullited list. " flag="done"?>Enhancing
-              information clinical content for use as used Clinical Decision Support Systems,
-              Quality Measures and National Registries, Healthcare Guidelines and Protocols, or
-              Epidemiological Research</para><?oxy_comment_end?>
-          </listitem>
-        </itemizedlist></para>
-    </section>
     <section>
       <title>Variation by Implementation - Structured Clinical Input</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
@@ -242,6 +179,70 @@
         isosemantic models. Any particular detailed clinical model exists within a family of
         isosemantic siblings. </para><?oxy_comment_end mid="17"?>
     </section>
+  </section>
+  <section>
+    <title>Analysis Normal Form </title>
+    <para>
+      <emphasis role="bold"><glossterm>Analysis Normal Form</glossterm></emphasis> (ANF) is a
+      logical model intended to represent a <emphasis role="bold">normalized</emphasis> view of
+      aggregate clinical statements for analysis, research, clinical decision support, and other
+      purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
+      the information was captured at its source (i.e. information systems or medical devices). ANF
+      <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can" flag="done"?>can<?oxy_comment_end?>
+      be used in conjunction with other models intended to ensure that clinical information is
+      structured and complete at the time of entry (e.g. <glossterm>CIMI</glossterm> models, <link
+        xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
+      Models) or exchanged among systems (e.g. HL7 CDA templates, HL7 V2 message profiles,
+        <glossterm>FHIR</glossterm> profiles).  </para>
+    <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
+      integrators, health IT developers, and researchers<?oxy_comment_end?> face different
+      priorities, forcing trade-offs to be made that optimize data entry brevity at the cost of
+      computability. ANF represents a collection of patterns and approaches to provide a
+      <?oxy_comment_start author="kec" timestamp="20190721T085955-0700" comment="ANF does not provide predictable transformations, it provides a predictable (URU) normal form that can be used by transformation developers. " flag="done"?>predictable
+      <?oxy_comment_end?>normal form to aggregate data sets across multiple
+      <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. " flag="done"?><?oxy_comment_end?>systems
+      <!--through normalization-->. The more normalized a data set is, the simpler it will become to
+      analyze, and errors will be reduced. Post-coordinated compositional statements using ANF
+      introduce the ability to faithfully expand from a reduced form or compare to other statements
+      with ease and no loss of semantic integrity.
+      <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?><?oxy_comment_end?></para>
+    <section>
+      <title>Objectives and Purpose of ANF</title>
+      <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
+        purpose is to introduce standard-based, normalized representation of clinical statements
+        from a heterogeneous source using an objective quantitative <emphasis role="bold"
+          >measure</emphasis> to help evaluate the result, presence, and magnitude of a specific
+        finding, request or observation. ANF requires an ability to classify the <emphasis
+          role="bold">topic</emphasis> of a statement as standard-based and thus it depends on
+        structured input data information that formal terminology. ANF disambiguates input data
+        along a well-defined compositional layers (see <link linkend="SoC_Section">Separation
+          of Concerns</link>). In practice, information systems may create normal data natively or
+        transform other representations of clinical statements (e.g. C-CDA templates, FHIR profiles)
+        to normal form (i.e., ANF).</para>
+      <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
+        multiple sources to better support a set of analysis. <itemizedlist spacing="compact">
+          <listitem>
+            <para>Specify clinical content extracted from EHR systems using FHIR</para>
+          </listitem>
+        </itemizedlist><itemizedlist>
+          <listitem>
+            <para>Providing a common analysis form of data exchange, HL7 messages, FHIR and
+              CDA</para>
+          </listitem>
+        </itemizedlist><itemizedlist>
+          <listitem>
+            <para>Specifying clinical content for User Interfaces</para>
+          </listitem>
+        </itemizedlist><itemizedlist spacing="compact">
+          <listitem>
+            <para><?oxy_comment_start author="kec" timestamp="20190721T122226-0700" comment="Don&apos;t put bulleted lists inside of bullited lists. Maybe put in a transition paragraph, then a new bullited list. " flag="done"?>Enhancing
+              information clinical content for use as used Clinical Decision Support Systems,
+              Quality Measures and National Registries, Healthcare Guidelines and Protocols, or
+              Epidemiological Research</para><?oxy_comment_end?>
+          </listitem>
+        </itemizedlist></para>
+    </section>
+   
     <section>
       <title>Assumptions for ANF</title>
       <para>ANF provides a precise, consistent semantic data and terminology specification that is
