@@ -525,19 +525,21 @@
                                 <entry>
                                     <para>This is a coded value representing the current status of
                                         the intervention.</para>
-                                    <para/>
                                 </entry>
                             </row>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">result</emphasis> Measure</para>
+                                    <para><emphasis role="bold">result</emphasis>
+                                </para>
+                                <para>Measure</para>
                                 </entry>
                                 <entry>
                                     <para>[1...1]</para>
                                 </entry>
                                 <entry>
-                                    <para>Intervention result as a measure. </para>
-                                    <para/>
+                                    <para>Intervention result as a <link linkend="measureClass"
+                                        >measure</link>. </para>
+                                    
                                 </entry>
                             </row>
                             <row>
@@ -546,13 +548,10 @@
                                         LogicalExpression</para>
                                 </entry>
                                 <entry>
-                                    <para>[1...1]</para>
+                                    <para>[0...1]</para>
                                 </entry>
-                                <entry>
-                                    <para>Health Risk is used to flag a result with coded values
-                                        such as 'low', 'normal', high', and</para>
-                                    <para>'critical'. </para>
-                                    <para/>
+                                <entry>This optional data element is used to flag a result with
+                                coded values such as 'low', 'normal', high', and 'critical'.
                                 </entry>
                             </row>
                             <row>
@@ -561,19 +560,12 @@
                                         Measure</para>
                                 </entry>
                                 <entry>
-                                    <para>[1...1]</para>
+                                    <para>[0...1]</para>
                                 </entry>
-                                <entry>
-                                    <para>Normal Range is the interval of values that are
-                                        normal.</para>
-                                    <itemizedlist>
-                                        <listitem>
-                                            <para>refers to "normal" for the patient with these
-                                                conditions.</para>
-                                        </listitem>
-                                    </itemizedlist>
-                                    <para/>
-                                </entry>
+                                <entry>This optional data element is the interval of values that are
+                                normal for the observation/finding described by the "topic" for this
+                                "subject". It refers to "normal" for the patient/subject with these
+                                conditions.</entry>
                             </row>
                             <row>
                                 <entry>
@@ -584,7 +576,8 @@
                                     <para>[0...*]</para>
                                 </entry>
                                 <entry>
-                                    <para>Practitioner responsible for the results reported.</para>
+                                    <para>This optional data element identifies the practitioner(s)
+                                    responsible for the results reported.</para>
                                 </entry>
                             </row>
                         </tbody>
