@@ -6,17 +6,17 @@
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
             </emphasis></emphasis>is a
         <?oxy_comment_start author="timowilliams" timestamp="20190729T120239-0500" comment="a " flag="done"?>logical<?oxy_comment_end?>
-        model and uses Object Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to
-        describe the structure of normalized clinical statements for computational
+            model and uses <glossterm baseform="Object Management Group">Object Management Group (OMG)</glossterm> <glossterm baseform="Unified Modeling Language">Unified Modeling Language (UML)</glossterm> 2.0 notation to
+            describe the structure of normalized <glossterm baseform="Clinical Statement">clinical statements</glossterm> for computational
         analysis<?oxy_comment_start author="timowilliams" timestamp="20190729T120353-0500" comment="Wording is off.  Suggest &quot;....describe the structure of normalized clinical statements for computational analysis.&quot;" flag="done"?>.<?oxy_comment_end?>
-        This logical model may be implemented using any programming language, database technology,
+            This <glossterm baseform="Logical Model">logical model</glossterm> may be implemented using any programming language, database technology,
         or interoperability specification (e.g. FHIR) suitable for analysis. ANF is intended to
         normalize approaches and methodologies in use across the industry and provide a uniform
         representation of data to enable analysis. </para>
         <para>The following diagram describes the logical structure of a
         <?oxy_comment_start author="timowilliams" timestamp="20190729T120408-0500" comment="a" flag="done"?>clinical<?oxy_comment_end?>
-        statement that conforms to the Analysis Normal Form specification. At a high-level an ANF
-        statement defines the topic (<emphasis role="bold">WHAT </emphasis>happened, was observed,
+        statement that conforms to the Analysis Normal Form specification. At a high-level an <glossterm baseform="ANF Statement">ANF
+                statement</glossterm> defines the topic (<emphasis role="bold">WHAT </emphasis>happened, was observed,
         requested, measured, asserted, etc.) and under what circumstances-(<emphasis role="bold"
             >HOW</emphasis>, <emphasis role="bold">WHY, WHEN, and with what
         RESULT</emphasis>).</para>
@@ -192,7 +192,7 @@
                             <para>This data element is an expression of <emphasis role="bold">WHAT
                                 </emphasis>is being requested or what was performed. For both
                                 <?oxy_comment_start author="timowilliams" timestamp="20190729T124305-0500" comment="ANFStatement" flag="done"?>ANFStatement<?oxy_comment_end?>
-                                types (request or performance) a pre-coordinated or post-coordinated
+                                types (request or performance) a <glossterm baseform="Pre-coordinated concept">pre-coordinated</glossterm> or <glossterm baseform="Post-coordinated concept">post-coordinated</glossterm>
                                 “procedure” concept as a logical expression is required to
                                 sufficiently capture the action, which is either requested or
                                 performed.</para>
@@ -259,7 +259,7 @@
                 with what RESULT </emphasis>a requested or performed action will be or was carried
             out. ANF  promotes a normalized representation of observation or intervention results
             where all results are reduced to a "measure".<?oxy_comment_end?> This approach reduces
-            data retrieval difficulties by eliminating the potential for multiple differing
+            data retrieval difficulties by eliminating the potential for mulatiple differing
             representations of the same clinical statement. For example, with coded results there
             are multiple potential methods to represent eye color that complicate data retrieval.
             The Topic could be a Finding refined by an Observable (Iris finding->Interprets = Color

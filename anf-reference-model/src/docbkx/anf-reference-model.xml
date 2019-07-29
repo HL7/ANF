@@ -6,10 +6,10 @@
         <?oxy_comment_start author="kec" timestamp="20190721T191027-0700" comment="Move  before CIMI chapter" flag="done"?>ANF<?oxy_comment_end?>
         Reference Model</title>
 
-    <para>The ANF Reference Model is a logical information model describing the format of a
+    <para>The <glossterm>ANF</glossterm> Reference Model is a logical information model describing the format of a
         normalized clinical statement that may have originated from an information system data
-        store, a standard-based message (e.g. HL7 Version 2), a standard-document (e.g. HL7 CDA), or a
-        standard-based resource (e.g. HL7 FHIR), or an instance of a CIMI model (e.g. FHIR-based profile, openEHR archetype) .</para>
+        store, a standard-based message (e.g. HL7 Version 2), a standard-document (e.g. <glossterm baseform="HL7 Clinical Document Architecture">HL7 CDA</glossterm>), or a
+        standard-based resource (e.g. <glossterm baseform="Fast Healthcare Interoperability Resource">HL7 FHIR</glossterm>), or an instance of a <glossterm baseform="Clinical Information Model">CIMI model</glossterm> (e.g. FHIR-based profile, openEHR archetype) .</para>
     <!-- These sections are replaced by the autho-generated RM 
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
