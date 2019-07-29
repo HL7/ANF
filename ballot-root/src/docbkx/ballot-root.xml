@@ -22,9 +22,9 @@
   <!-- <xi:include href="../../../introduction/src/docbkx/outline.xml"
   xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
 
-  <!-- Glossary -->
+  <!-- Abbreviated Glossary -->
   <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/glossary.xml"
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/abbreviated-glossary.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 
@@ -63,10 +63,15 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Precision -->
-  <xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
-  <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  
+  <!--<xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
+
+  <!-- Complete Glossary -->
+  <xi:include
+          href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/complete-glossary.xml"
+          xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Bibliography -->
   <xi:include
