@@ -6,9 +6,9 @@
     <title>Putting it Together: Normalization and Transformation</title>
 
 
-    <para>Normalization of clinical statements is defined by Elkin as "the ability to identify every
+    <para>Normalization of clinical statements is defined as "the ability to identify every
         representational format that confers the same meaning as being equivalent (i.e., unambiguous
-        representation). </para>
+        representation). <citation>Elkin_Terminology</citation></para>
 
 
     <section>
@@ -35,7 +35,7 @@
                 </para>
             </footnote>
             ANF accomplishes this by moving the complexity that usually requires a complex data structure into
-            the terminology as a complex post-coordinated snomed expression.
+            the terminology as a complex post-coordinated SNOMED CT expression.
         </para>
 
     </section>
@@ -92,7 +92,7 @@
         <para> Transformation, in this case, is not a simple endeavor that one can hope to automate
             across domains of clinical statements or even within a single domain of clinical
             statements. As presented, it will involve navigating disparate data structure trees and
-            include variable representations to then generate a well-formed post-coordinated snomed
+            include variable representations to then generate a well-formed post-coordinated SNOMED CT
             expression. It is most likely possible to target subdomains for consistent
             transformation, such as all quantitative laboratory results, but in some cases, it may
             be that each detailed clinical model needs its own unique transformation. </para>
@@ -106,7 +106,7 @@
                     <para>One source instance will frequently be transformed to many ANF instances</para>
                 </listitem>
                 <listitem>
-                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated snomed expression for inclusion as ANF Topic</para>
+                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated SNOMED CT expression for inclusion as ANF Topic</para>
                 </listitem>
             </itemizedlist>
 

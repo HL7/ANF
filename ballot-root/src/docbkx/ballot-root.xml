@@ -66,7 +66,7 @@
   <xi:include href="../../../precision/src/docbkx/precision.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
-  <!-- <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>   -->
+  <xi:include href="../../../acknowledgements/src/docbkx/acknowledgements.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>  
 
   <!-- Bibliography -->
   <xi:include

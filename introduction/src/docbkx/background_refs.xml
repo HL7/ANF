@@ -18,7 +18,7 @@
             information systems that support this capability. The foremost challenge, and the one
             that has been most studied, is the design of user interfaces that enable clinicians to
             create post-coordinated expressions efficiently, intuitively, and in a manner that is
-            consistent with the SCT terminology model. However, another important set of challenges
+            consistent with the SNOMED CT terminology model. However, another important set of challenges
             pertain to the management of post-coordinated expressions after they have been specified
             by clinicians. These management tasks include the appropriate persistence of
             post-coordinated observations in a patient database and efficient subsumption testing
@@ -49,8 +49,8 @@
                 <para>Determining appropriate strategies for optimizing the performance of
                     subsumption testing against post-coordinated expressions (a critical but
                     inherently costly operation). Potential strategies include maintaining a
-                    transitive closure of the SCT hierarchy and incorporating post-coordinated
-                    concepts into the SCT terminology model (“just-in-time pre-coordination”).
+                    transitive closure of the SNOMED CT hierarchy and incorporating post-coordinated
+                    concepts into the SNOMED CT terminology model (“just-in-time pre-coordination”).
                 </para>
             </listitem>
         </itemizedlist>

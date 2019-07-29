@@ -20,7 +20,7 @@
     improve population health through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
-    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. A
+    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <citation>Chassin</citation>  A
       <emphasis>standard</emphasis> normal form can help replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background  on other logical HL7 and ISO clinical
@@ -61,24 +61,24 @@
       However, both treatment and analysis of clinical statements require consistency not only at
       the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance of an <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> DCMs, CIMI model,
-      etc.). In most cases the data quality is the greatest obstacle to analysis, but even in the
-      case of structured, semantically-clear information, inconsistency across sources of
-      information raises obstacles to analysis and research. Analysis of aggregate information
-      managed by health information networks poses the greatest challenge today because a meaningful
-      use of data for patient outcomes or research requires a common format and level of semantic
-      clarity.<?oxy_comment_end?></para>
+      etc.). <citation>DCM_Quality</citation> In most cases the data quality is the greatest
+      obstacle to analysis, but even in the case of structured, semantically-clear information,
+      inconsistency across sources of information raises obstacles to analysis and research.
+      Analysis of aggregate information managed by health information networks poses the greatest
+      challenge today because a meaningful use of data for patient outcomes or research requires a
+      common format and level of semantic clarity.<?oxy_comment_end?></para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
       current detailed clinical modeling efforts, but there is also further variation in how the
       data is entered into information systems by end-users. This reality has a direct impact on
       patient safety if a clinical statement is recorded and displayed differently across the
       continuum of care: Clinicians author clinical statements and enter them into their
-      organization’s EHR systems as "Structured Clinical Input". This concept describes any data
-      entry mechanism used by clinicians to record clinical statements. An instance of a clinical
-      statement may be created using one or more forms. Vendors compete on usability for seamless
-      Structured Clinical Input but, in some cases, structured clinical statements are based on
-      standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be based on
-      proprietary models. For the purposes of this document, the type or usability of data
+      organization’s EHR systems as "Structured Clinical Input Forms" or "input forms". This concept
+      describes any data entry mechanism used by clinicians to record clinical statements. An
+      instance of a clinical statement may be created using one or more input forms. Vendors compete
+      on usability for seamless input forms but, in some cases, structured clinical statements are
+      based on standard-based models (e.g. CIMI, openEHR archetypes, etc.) but they may also be
+      based on proprietary models. For the purposes of this document, the type or usability of data
       structures used for capture or display of clinical statements is not in scope. We assume that
         <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
       suitable for normalization and analysis. <?oxy_comment_end?></para>
@@ -92,8 +92,8 @@
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
         that we call here
         <?oxy_comment_start author="kec" timestamp="20190721T122744-0700" comment="a Clinical Input Form (CIF) and link to glossary. "?>structured
-        clinical input<?oxy_comment_end?> form, or the manner in which
-        <?oxy_comment_start author="kec" timestamp="20190721T122821-0700" comment="A Clinical Presentation Form (CPF) and link to glossary. "?>information
+        clinical input<?oxy_comment_end?> form (or simply "input forms"), or the manner in which
+        <?oxy_comment_start author="kec" timestamp="20190721T122821-0700" comment="A Clinical Presentation Form (CPF) and link to glossary. " flag="done"?>information
         is presented<?oxy_comment_end?> to the clinicians and how they enter the data, such as by
         constraining the information to allow only certain values to be entered, e.g. through a
         drop-down list, radio buttons, or breaking up large chunks of related information into
@@ -338,7 +338,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             <emphasis role="bold"
               ><?oxy_comment_start author="Ioana" timestamp="20190729T001906-0400" comment="Add link to glossary"?>Terminology
               Knowledge<?oxy_comment_end?></emphasis>
-          </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
+          </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
           The Terminology Knowledge layer is responsible for structured sets of medical terms and
           codes that define concepts of interest, including descriptions, dialects, language, and
           semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer
@@ -440,7 +440,8 @@ Yes, ANF is for URU..." flag="done"?>in
         architecture to allow for a clear separation of concerns among interoperability models and
         specification from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability. This architecture, the HL7 Service-Aware
-        Interoperability Framework Canonical Definition (SAIF-CD). </para>
+        Interoperability Framework Canonical Definition (SAIF-CD).
+          <?oxy_comment_start author="Ioana" timestamp="20190726T135203-0400" comment="Ref..." flag="done"?><citation>SAIF-CD</citation><?oxy_comment_end?></para>
       <para>The SAIF-CD specification <citation>SAIF-CD</citation> defines three SAIF Perspectives:
         Conceptual, Logical, and Implementable. These perspectives are not formally equivalent with
         Object Management Group’s (OMG) levels-of-abstraction in Model-Driven Architecture (MDA)
@@ -602,7 +603,7 @@ Yes, ANF is for URU..." flag="done"?>in
       we discuss the implications of ANF on data quality, clinical decision support, and ultimately,
       patient safety and outcomes. </para>
     <note>
-    <para>Throughout this document, SNOMED Clinical Terminology (CT) to describe clinical concepts
+    <para>Throughout this document, SNOMED CT to describe clinical concepts
         and illustrate sample statements based on both ANF and CIMI logical/</para>
     </note>
   </section>
