@@ -14,6 +14,12 @@
         <bibliomixed xml:id="SAIF-CD"/>  
         <bibliomixed xml:id="HL7v3"/>  
         <bibliomixed xml:id="Elkin_Terminology"/>
+        <bibliomixed xml:id="xslt"/>
+        <bibliomixed xml:id="xpath"/>
+        <bibliomixed xml:id="FML"/>
+        <bibliomixed xml:id="fhir"/>
+        <bibliomixed xml:id="mof"/>
+        <bibliomixed xml:id="qvt"/>
         <bibliomixed xml:id="Kahn"/>
         <bibliomixed xml:id="ONC"/>
         <bibliomixed xml:id="Jean"/>

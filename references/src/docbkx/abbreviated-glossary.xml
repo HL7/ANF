@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gloss">
+    <title>Abbreviated Glossary</title>
+
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Analysis-Normal-Form)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Clinical-Decision-Support)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Clincal-Information-Modeling-Initiative)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Solor)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Statement)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Statement-Narrative)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Normal-Form)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Fast-Healthcare-Interoperability-Resource)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include
+            href="complete-glossary.xml"
+            xpointer="element(Structured-Clinical-Input-Forms)"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+</glossary>
