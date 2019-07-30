@@ -2,41 +2,58 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Acknowledgements</title>
     <para>The project team would like to acknowledge the contributions and assistance received from
-        the following, listed alphabetically:</para>
+        the following individuals, listed alphabetically:</para>
     <para>
         <itemizedlist>
             <listitem>
-                <para>Keith E. Campbell</para>
+                <para>Keith E. Campbell<superscript>1</superscript></para>
             </listitem>
             <listitem>
-                <para>Benson Chang</para>
+                <para>Benson Chang<superscript>2</superscript></para>
             </listitem>
             <listitem>
-                <para>Raja A. Cholan</para>
+                <para>Raja A. Cholan<superscript>2</superscript></para>
             </listitem>
             <listitem>
-                <para>Joey Coyle</para>
+                <para>Joey Coyle<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Richard Esmond</para>
+                <para>Richard Esmond<superscript>4</superscript></para>
             </listitem>
             <listitem>
-                <para>Kirsten Haake</para>
+                <para>Kirsten Haake<superscript>2</superscript></para>
             </listitem>
             <listitem>
-                <para>Kyle Maulden</para>
+                <para>Stephanie Klepacki</para>
             </listitem>
             <listitem>
-                <para>Ioana Singureanu</para>
+                <para>Ken Lord<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Walter Sujansky</para>
+                <para>Kyle Maulden<superscript>2</superscript></para>
             </listitem>
             <listitem>
-                <para>Andy Chen Wang</para>
+                <para>Claude Nanjo<superscript>4</superscript></para>
             </listitem>
             <listitem>
-                <para>Tim Williams</para>
+                <para>Andrew Sills<superscript>2</superscript></para>
+            </listitem>
+            <listitem>
+                <para>Ioana Singureanu<superscript>3</superscript></para>
+            </listitem>
+            <listitem>
+                <para>Walter Sujansky<superscript>5</superscript></para>
+            </listitem>
+            <listitem>
+                <para>Andy Chen Wang<superscript>2</superscript></para>
+            </listitem>
+            <listitem>
+                <para>Tim Williams<superscript>2</superscript></para>
+                <para><superscript>1</superscript>Veterans Health Administration</para>
+                <para><superscript>2</superscript>Deloitte Consulting LLP</para>
+                <para><superscript>3</superscript>Book Zurman, Inc</para>
+                <para><superscript>4</superscript>HL7 CIMI Work Group</para>
+                <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
             </listitem>
         </itemizedlist>
     </para>
