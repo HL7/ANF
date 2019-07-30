@@ -16,6 +16,8 @@
 <xsl:param name="section.autolabel" select="1"/>
 <xsl:param name="section.label.includes.component.label" select="1"/>
   <xsl:param name="footer.column.widths">3 0 2</xsl:param>
+  <xsl:param name="title.font.family">Times Roman</xsl:param>
+
 
 
   <!-- This parameter places the element's title either before
