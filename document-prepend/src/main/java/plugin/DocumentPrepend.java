@@ -68,6 +68,9 @@ public class DocumentPrepend extends AbstractMojo {
         PDActionGoTo action = new PDActionGoTo();
         action.setDestination(dest);
 
+        doc.getDocumentCatalog().setOpenAction(action);
+
         doc.save(new File(path));
+        doc.close();
     }
 }
