@@ -104,7 +104,7 @@
       <title>Variation by Implementation: Structured Clinical Input Forms</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
         that we call here
-        <?oxy_comment_start author="kec" timestamp="20190721T122744-0700" comment="a Clinical Input Form (CIF) and link to glossary. "?>structured
+        <?oxy_comment_start author="kec" timestamp="20190721T122744-0700" comment="a Clinical Input Form (CIF) and link to glossary. " flag="done"?>structured
         clinical input<?oxy_comment_end?> form (or simply "input forms"), or the manner in which
         <?oxy_comment_start author="kec" timestamp="20190721T122821-0700" comment="A Clinical Presentation Form (CPF) and link to glossary. " flag="done"?>information
         is presented<?oxy_comment_end?> to the clinicians and how they enter the data, such as by

@@ -3,27 +3,6 @@
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Differences between ANF and CIMI</title>
-    <informaltable>
-        <tgroup cols="1">
-            <colspec colnum="1" colname="col1"/>
-            <tbody>
-                <row>
-                    <entry>
-                        <para><emphasis role="bold">Purpose of this section:</emphasis></para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Explain how the ANF Model is different from CIF </para>
-                            </listitem>
-                            <listitem>
-                                <para>Explain the consequences of the differences for data
-                                    retrieval</para>
-                            </listitem>
-                        </itemizedlist>
-                    </entry>
-                </row>
-            </tbody>
-        </tgroup>
-    </informaltable>
     <para>There are two fundamental differences between the ANF and CIMI Statement approach. </para>
     <orderedlist spacing="compact">
         <listitem>

@@ -5,15 +5,14 @@
 
     <title>Current CIMI Clinical Statement Modeling Effort</title>
 
-        <para>
-            This chapter describes the CIMI clinical statement model. This
-            model uses a traditional structured data tree approach which can then be compared and
-            contrasted with the ANF model. 
-        </para>
+        <para>This chapter describes the CIMI clinical statement model. This model uses a
+        traditional structured data tree approach which can then be compared and contrasted with the
+        ANF model. </para>
 
-        <para>
-            The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic communication made about a patient typically documented as an 'entry' in the patient record. For example, a CIMI Clinical Statement can be used to represent the following statements made about a patient.
-        </para>
+        <para>The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A CIMI
+        Clinical Statement represents structured electronic communication made about a patient
+        typically documented as an 'entry' in the patient record. For example, a CIMI Clinical
+        Statement can be used to represent the following statements made about a patient. </para>
 
         <itemizedlist mark="bullet" spacing="compact">
             <listitem>
@@ -38,13 +37,13 @@
             </listitem>
         </itemizedlist>
 
-        <para> CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135"
-                xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘various metadata’. The ‘topic’
-            is the clinical entity being described. The ‘context’ describes the circumstances that
-            form the setting in which the ‘topic’ should be evaluated. Finally, ‘various metadata’ is shown in the diagram for purely illustrative purposes to represent the collection of attributes that
-            that represent the who, where, why and when information. But 'various metadata' itself is not actually an attribute of CIMI Clinical Statement.
-
-        </para>
+        <para>CIMI Clinical Statement, shown in <xref linkend="cimi_msg_cstatement_0135"
+            xrefstyle="select: label"/>, has a ‘topic’, ‘context’, and ‘various metadata’. The
+        ‘topic’ is the clinical entity being described. The ‘context’ describes the circumstances
+        that form the setting in which the ‘topic’ should be evaluated. Finally, ‘various metadata’
+        is shown in the diagram for purely illustrative purposes to represent the collection of
+        attributes that represent the who, where, why and when information. But 'various metadata'
+        itself is not actually an attribute of CIMI Clinical Statement. </para>
 
         <para>CIMI adopts a compositional approach rather than inheritance, where a particular topic
             and context are added to a CIMI Clinical Statement. But topics and contexts themselves
@@ -101,16 +100,16 @@
                         </listitem>
                     </itemizedlist>
 
-                    <para> In ANF, these various structured trees representing the topic will all be
-                        represented
-                        <?oxy_comment_start author="kec" timestamp="20190721T184817-0700" comment="Not necessarily post-coordinated expressions. Post-coordination is an option of a precoordinated code is not sufficient to define the necessary topic. "?>with
-                        SNOMED CT post-coordinated expressions.<?oxy_comment_end?>
-                        <?oxy_comment_start author="kec" timestamp="20190721T184923-0700" comment="I assume there is an equivalent representation even though some of the representational details are different. Can we illustrate this difference with pulse or BP somehow? "?>Some
-                        CIMI uses of topic will be illegal in ANF. For example, if CIMI modeled
-                        using EvaluationResultTopic with a coded result in the Context, this would
-                        not be possible in ANF because ANF does not allow coded results. Instead,
-                        this would need to be modeled in an AssertionTopic style with the result
-                        moved into the topic to be representable by ANF. <?oxy_comment_end?></para>
+                    <para>In ANF, these various structured trees representing the topic will all be
+                    represented
+                    <?oxy_comment_start author="kec" timestamp="20190721T184817-0700" comment="Not necessarily post-coordinated expressions. Post-coordination is an option of a precoordinated code is not sufficient to define the necessary topic. "?>with
+                    SNOMED CT post-coordinated expressions.<?oxy_comment_end?>
+                    <?oxy_comment_start author="kec" timestamp="20190721T184923-0700" comment="I assume there is an equivalent representation even though some of the representational details are different. Can we illustrate this difference with pulse or BP somehow? "?>Some
+                    CIMI uses of topic will be illegal in ANF. For example, if CIMI modeled using
+                    EvaluationResultTopic with a coded result in the Context, this would not be
+                    possible in ANF because ANF does not allow coded results. Instead, this would
+                    need to be modeled in an AssertionTopic style with the result moved into the
+                    topic to be representable by ANF. <?oxy_comment_end?></para>
                     
                 </listitem>
 
