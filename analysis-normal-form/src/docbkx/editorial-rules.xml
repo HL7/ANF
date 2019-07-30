@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+
+	<title>Editorial Rules</title>
+
+	<editorial-rule xml:id="anf-editorialrule-performanceRequest">
+        <title>Performance versus request</title>                    
+        <mathphrase>
+        	Descrpription
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-topicsAreActions">
+        <title>Topics are always an action</title>                    
+        <mathphrase>
+        	<itemizedlist spacing="compact">
+        		<listitem>
+       				<para>Observations are procedures concepts</para>
+        		</listitem>
+        		<listitem>
+					<para>Medication administrations use an administration of subtance concept</para>
+				</listitem>
+				<listitem>
+					<para>Laboratory procedures use Laboratory Procedure concept</para>
+				</listitem>
+				<listitem>
+					<para>Imaging Procedures with use Imaging Procedure concept</para>
+				</listitem>
+				<listitem>
+					<para>Administration of Medication Topic - Request for Action</para>
+				</listitem>
+				<listitem>
+					<para>Request for Action Topics</para>
+				</listitem>
+				<listitem>
+					<para>Performance of Action Topics</para>
+				</listitem>
+			</itemizedlist>
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-timing">
+        <title>Timing - past, present, or future</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-resultsRangedQuantity">
+        <title>Results are always a ranged quantity</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-presenceAbsence">
+        <title>Presence and absence are a countable quantity</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-separateCompoundTopics">
+        <title>Separate compound topics</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-techniques">
+        <title>Techniques are inseparable from the topic</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-prerequisites">
+        <title>Prerequisites must be separated from the topic</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-associatedStatement">
+        <title>Related statements should be associated</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-subjectOfInformation">
+        <title>Subject of information is used to represent family and donor history</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-status">
+        <title>Status indicates the state of result</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-healthRisk">
+        <title>HealthRisk indicates the clinical risk of the result</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-normalRange">
+        <title>NormalRange indicates the normal range of the result</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-participants">
+        <title>Participants can be specified or requested</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-purpose">
+        <title>Purpose indicates the purpose of a request</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-priority">
+        <title>Priority defaults to routine for a request</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-repetition">
+        <title>Repetition is used to request multiple occurences of the topic</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+    <editorial-rule xml:id="anf-editorialrule-requestedResult">
+        <title>A desired result can be part of a request</title>                    
+        <mathphrase>
+        	Description
+        </mathphrase>
+    </editorial-rule>
+
+
+</section>

@@ -472,4 +472,6 @@ I&apos;m confused.  Previously and also on the next page it was said that ANF do
             </mathphrase>
         </editorial-rule>
     </section>
+
+    <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
