@@ -413,7 +413,7 @@
             </example>
 
         <figure xml:id="cimi_diabetes_assertion_0135">
-            <title>Diabetes Mellitus Assertion</title>
+            <title>CIMI Diabetes Mellitus Type 2 Assertion</title>
             <mediaobject>
                 <imageobject>
                             <imagedata fileref="images/dm_cimi.svg" format="svg" align="center"
@@ -424,7 +424,7 @@
         </figure>
 
         <figure xml:id="cimi_tubular_bsounds_assertion_0135">
-            <title>Tubular Breath Sounds Assertion</title>
+            <title>CIMI Tubular Breath Sounds Assertion</title>
             <mediaobject>
                 <imageobject>
                             <imagedata fileref="images/breath_assertion_cimi.svg" format="svg"
@@ -625,7 +625,7 @@
             </example>
 
         <figure xml:id="cimi_breath_sounds_evaluation_0135">
-            <title>Tubular Breath Sounds Evaluation</title>
+            <title>CIMI Tubular Breath Sounds Evaluation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/breath_evaluation_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
@@ -638,7 +638,7 @@
         </para>
 
         <figure xml:id="cimi_blood_pressure_eval_0135">
-            <title>Systolic Blood Pressure Evaluation</title>
+            <title>CIMI Systolic Blood Pressure 120 mmHg Evaluation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/blood_pressure_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
@@ -647,7 +647,9 @@
         </figure>
 
         <figure xml:id="cimi_blood_pressure_complex_0135">
-            <title>Systolic Blood Pressure Evaluation with complex topic</title>
+            <title>CIMI Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
+                        Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes,
+                        Urinated Not More than 30 Minutes \Prior to Measurement Evaluation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/bp_complex_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
