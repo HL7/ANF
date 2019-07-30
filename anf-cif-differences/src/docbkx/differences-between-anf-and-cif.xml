@@ -65,7 +65,7 @@ Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
 
 Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED CT, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure>
-                <title>Pulse Rate - ANF Representation</title>
+                <title>Pulse Rate 68bpm, Taken by Pulse Oximeter - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1"
@@ -74,7 +74,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Pulse Rate - CIMI Representation</title>
+                <title>Pulse Rate 68bpm, Taken by Pulse Oximeter - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1"
@@ -131,7 +131,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             are very aligned, except for the fact that the ANF model will always use a range of that
             quantity.</para>
         <figure>
-            <title>Simple Systolic Blood Pressure - CIMI Representation</title>
+            <title>Systolic Blood Pressure 120 mmHg - CIMI Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="kec" timestamp="20190722T173728-0700" comment="The CIMI statements and ANF statements are not visually distincitve, and easy to confuse. Several possible ways of improving. One would be to always present comparisons within a table that has ANF on the top ros, and CIMI on following row. This presents other benifits by havign the comparisons on the same page is the table does not get broken up. "?>
@@ -230,7 +230,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             </table>
         </para>
         <figure>
-            <title>Breath Sound - CIMI Evaluation Representation</title>
+            <title>Tubular Breath Sounds - CIMI Evaluation Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T115942-0500" comment="I think this one may be off." flag="done"?>
@@ -243,7 +243,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                     Also, I would either choose a result from the valueset, or add your result to the valueset 
 
                     " flag="done" mid="3"?>
-                    <imagedata fileref="images/breath_evalutation_cimi.svg" format="SVG"
+                    <imagedata fileref="images/breath_evaluation_cimi.svg" format="SVG"
                         scalefit="1" width="100%" contentdepth="100%"
                     /><?oxy_comment_end?><?oxy_comment_end mid="3"?>
                 </imageobject>
@@ -256,7 +256,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!.
         I fixed this diagram for use in the CIF chapter, so you can grab it from there." flag="done"?><?oxy_comment_end?>
         <figure>
-            <title>Breath Sound - CIMI Assertion Representation</title>
+            <title>Tubular Breath Sound - CIMI Assertion Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
@@ -295,7 +295,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 aligned.  Since the ANF model requires both an upper and lower bound there is extra
                 information required.</para>
             <figure>
-                <title>Simple Systolic Blood Pressure - ANF Representation</title>
+                <title>Systolic Blood Pressure 120 mmHg - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/blood_pressure_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
@@ -303,7 +303,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Simple Systolic Blood Pressure - CIMI Representation</title>
+                <title>Systolic Blood Pressure 120 mmHg - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="kec" timestamp="20190722T173926-0700" comment="Make cimi and anf visualy distinct and possibly present together in a table. 
@@ -354,7 +354,9 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Complex Systolic Blood Pressure - CIMI Representation</title>
+                <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
+                    Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes, Urinated
+                    Not More than 30 Minutes \Prior to Measurement  - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1"
@@ -380,7 +382,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Diabetes Mellitus - CIMI Representation</title>
+                <title>Diabetes Mellitus Type 2 - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
