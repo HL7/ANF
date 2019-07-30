@@ -356,7 +356,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             <figure>
                 <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
                     Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes, Urinated
-                    Not More than 30 Minutes \Prior to Measurement  - CIMI Representation</title>
+                    Not More than 30 Minutes Prior to Measurement  - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1"
