@@ -22,6 +22,8 @@
         <bibliomixed xml:id="fhir"/>
         <bibliomixed xml:id="mof"/>
         <bibliomixed xml:id="qvt"/>
+        <bibliomixed xml:id="ehr"/>
+        <bibliomixed xml:id="cancer"/>
         <bibliomixed xml:id="Kahn"/>
         <bibliomixed xml:id="ONC"/>
         <bibliomixed xml:id="Jean"/>

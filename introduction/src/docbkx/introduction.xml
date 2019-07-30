@@ -17,7 +17,7 @@
     demanding conditions.<citation>HRO_HIT</citation>
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
-    standard-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
+    standards-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
     improve population health through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
@@ -90,7 +90,7 @@
       entry mechanism used by clinicians to record clinical statements. An instance of a clinical
       statement may be created using one or more input forms. Vendors compete on usability for
       seamless input forms but, in some cases, structured clinical statements are based on
-      standard-based models (e.g. CIMI, openEHR archetypes) but they may also be based on
+      standards-based models (e.g. CIMI, openEHR archetypes) but they may also be based on
       proprietary models. For the purposes of this document, the type or usability of data
       structures used for capture or display of clinical statements is not in scope. We assume that
         <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
@@ -414,7 +414,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
                 numerical measurement (e.g., systolic BP = 140 mmHg) or the categorical data (e.g.,
                 pregnancy induced hypertension vs. renal hypertension) within a standard data
                 structure to facilitate information exchange or retrieval, such as within a
-                standard-based clinical statement (i.e. CIMI, CDA, FHIR, ANF, etc.).
+                standards-based clinical statement (i.e. CIMI, CDA, FHIR, ANF, etc.).
                 <?oxy_comment_end?>
               </para>
             </listitem>
@@ -618,10 +618,9 @@ Yes, ANF is for URU..." flag="done"?>in
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
         Terminology Knowledge and provides a separate model for each type statements, organized into
         a comprehensive library.</para>
-      <para>
-        <?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="62"?>CIMI
-        clinical statements are further explained in this
-        document.<?oxy_comment_end mid="62"?><?oxy_comment_end?><!--For example, CIMI Clinical
+      <para><?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b" mid="62"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b"?>CIMI
+        clinical statements are further explained in this document (See Current CIMI Modeling
+        Efforts).<?oxy_comment_end?><?oxy_comment_end mid="62"?><!--For example, CIMI Clinical
         Statement can be used to represent the following statements made about a patient. This can
         be the statement of a condition being present, a request for a procedure to be done, the
         results of lab tests or the patient’s family history of cancer.-->

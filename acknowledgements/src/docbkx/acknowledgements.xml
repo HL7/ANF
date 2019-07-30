@@ -6,7 +6,11 @@
     <para>
         <itemizedlist>
             <listitem>
-                <para>Keith E. Campbell<superscript>1</superscript></para>
+                <para><emphasis role="bold">Keith E.
+                    Campbell</emphasis><superscript>1</superscript></para>
+            </listitem>
+            <listitem>
+                <para>Ryan C. Bradley<superscript>2</superscript></para>
             </listitem>
             <listitem>
                 <para>Benson Chang<superscript>2</superscript></para>
@@ -36,7 +40,7 @@
                 <para>Claude Nanjo<superscript>4</superscript></para>
             </listitem>
             <listitem>
-                <para>Andrew Sills<superscript>2</superscript></para>
+                <para>Andrew K. Sills<superscript>2</superscript></para>
             </listitem>
             <listitem>
                 <para>Ioana Singureanu<superscript>3</superscript></para>
