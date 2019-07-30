@@ -417,10 +417,6 @@
                                     conditions that must exist in order for Request to be executed. For example, Ibuprofen 400 mg tablet
                                     oral every 6 hours as needed for pain, the use of Ibuprofen is conditional on the presence of
                                     back pain.</para>
-                                <para><?oxy_comment_start author="timowilliams" timestamp="20190730T114609-0500" comment="Is this supposed to be here?"?><emphasis
-                                        role="bold">Question</emphasis>: do we need a conditional
-                                    predicate instead of a logical
-                                    expression?<?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
