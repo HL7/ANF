@@ -23,16 +23,11 @@
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/abbreviated-glossary.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-
+  
   <!-- Introduction -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-   <!-- Introduction to Clinical Statements -->
-  <!--<xi:include href="../../../clinical-statements/src/docbkx/clinical-statements-intro.xml"
-  xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
   <!-- ANF Reference Model -->
   <xi:include
@@ -54,13 +49,13 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/transformation/transformation.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <!-- Conclusion -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
   <!-- Precision -->
   <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <!-- Conclusion -->
+  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
   <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml"
