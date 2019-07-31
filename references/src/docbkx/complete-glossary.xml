@@ -23,7 +23,8 @@
                 problems, such as dangerous medication interaction.</para>
         </glossdef>
     </glossentry>
-    <!--<!-\-<glossentry>
+    <?oxy_comment_start author="Ioana" timestamp="20190731T165526-0400" comment="Delete"?>
+    <glossentry>
         <glossterm>HL7 Clinical Decision Support Workgroup</glossterm>
         <acronym>CDS Workgroup</acronym>
         <glossdef>
@@ -32,10 +33,10 @@
                 messages, services, information models, and knowledge representation formalisms. For
                 more information please see <link
                     xlink:href="http://www.hl7.org/Special/committees/dss/index.cfm">
-                    http://www.hl7.org/Special/committees/dss/index.cfm</link>. </para>
+                    http://www.hl7.org/Special/committees/dss/index.cfm</link>.
+                <?oxy_comment_end?></para>
         </glossdef>
     </glossentry>
-    -\->
     <glossentry xml:id="Clincal-Information-Modeling-Initiative">
         <glossterm>Clinical Information Modeling Initiative</glossterm>
         <acronym>CIMI</acronym>
@@ -48,7 +49,7 @@
                     >http://www.hl7.org/Special/Committees/cimi/index.cfm</link></para><?oxy_comment_end?>
         </glossdef>
     </glossentry>
-  -->  <glossentry xml:id="Solor">
+    <glossentry xml:id="Solor">
         <glossterm>Solor</glossterm>
         <glossdef>
             <para>A project sponsored by the Department of Veterans Affairs that represents and
@@ -92,7 +93,8 @@
     <glossentry>
         <glossterm>Logical Model</glossterm>
         <glossdef>
-            <para>A model is expressed independently of a particular implementation technology.</para>
+            <para>A model is expressed independently of a particular implementation
+                technology.</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -163,31 +165,35 @@
                 information into smaller parts.</para>
         </glossdef>
     </glossentry>
-    <!--<glossentry>
+    <glossentry>
+        <?oxy_comment_start author="Ioana" timestamp="20190731T165606-0400" comment="Just reference HL7 CDA R2 product"?>
         <glossterm>HL7 Clinical Document Architecture Release 2</glossterm>
         <acronym>CDA</acronym>
         <glossdef>
-            <!-\-<para>an XML-based markup standard intended to specify the encoding, structure and
-                semantics of clinical documents for exchange.</para>-\->
+            <para>an XML-based markup standard intended to specify the encoding, structure and
+                semantics of clinical documents for exchange.<?oxy_comment_end?></para>
         </glossdef>
-    </glossentry>-->
+    </glossentry>
     <glossentry>
         <glossterm>HL7 V2 Message Profile</glossterm>
         <acronym>V2</acronym>
         <glossdef>
-            <para>HL7's Version 2.x (V2) messaging standard is widely used for electronic data
-                exchange in the clinical domain. This messaging standard allows the exchange of
-                clinical data between systems.</para>
+            <para>H<?oxy_comment_start author="Ioana" timestamp="20190731T165725-0400" comment="Just reference V2.8 product sheet
+"?>L7's
+                Version 2.x (V2) messaging standard is widely used for electronic data exchange in
+                the clinical domain. This messaging standard allows the exchange of clinical data
+                between systems.<?oxy_comment_end?></para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>HL7 V3</glossterm>
         <glossdef>
-            <para>A suite of specifications based on HL7's Reference Information Model (RIM). The
+            <para><?oxy_comment_start author="Ioana" timestamp="20190731T165744-0400" comment="Reference the product sheet"?>A
+                suite of specifications based on HL7's Reference Information Model (RIM). The
                 Version 3 Normative Edition represents a new approach to clinical information
                 exchange based on a model driven methodology that produces messages and electronic
                 documents expressed in XML syntax.</para>
-        </glossdef>
+        </glossdef><?oxy_comment_end?>
     </glossentry>
     <glossentry>
         <glossterm>Pre-coordinated concept</glossterm>
@@ -357,7 +363,8 @@
         </glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Clinical phenomenom</glossterm>
+        <?oxy_comment_start author="Ioana" timestamp="20190731T165825-0400" comment="Rename &quot;Clinical Event&quot; ?"?>
+        <glossterm>Clinical phenomenom</glossterm><?oxy_comment_end?>
         <glossdef>
             <para>___ TBD ____</para>
         </glossdef>
@@ -401,7 +408,8 @@
     <glossentry>
         <glossterm>Editorial Rule</glossterm>
         <glossdef>
-            <para>Methodolgoy rules to describe the proper modeling of an ANF Statement instance.</para>
+            <para>Methodolgoy rules to describe the proper modeling of an ANF Statement
+                instance.</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -429,13 +437,14 @@
                 procedure.</para>
         </glossdef>
     </glossentry>
-<!--    <glossentry>
+    <glossentry>
+        <?oxy_comment_start author="Ioana" timestamp="20190731T165510-0400" comment="Delete"?>
         <glossterm>Health Level Seven</glossterm>
         <acronym>HL7</acronym>
         <glossdef>
-            <para/>
+            <para><?oxy_comment_end?></para>
         </glossdef>
-    </glossentry>-->
+    </glossentry>
     <glossentry>
         <glossterm>Understandable, Reproducible, Useful</glossterm>
         <acronym>URU</acronym>
@@ -496,14 +505,15 @@
             <para/>
         </glossdef>
     </glossentry>
-  <!--  <glossentry>
+    <glossentry>
         <glossterm>Domain Analysis Model</glossterm>
         <acronym>DAM</acronym>
         <glossdef>
             <para/>
         </glossdef>
-    </glossentry>-->
+    </glossentry>
     <glossentry>
+        <?oxy_comment_start author="Ioana" timestamp="20190731T165919-0400" comment="Delete: I removed the reference in intro"?>
         <glossterm>Subject Matter Expert</glossterm>
         <acronym>SME</acronym>
         <glossdef>
@@ -514,7 +524,7 @@
         <glossterm>Domain Expert</glossterm>
         <acronym>DE</acronym>
         <glossdef>
-            <para/>
+            <para><?oxy_comment_end?></para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -554,6 +564,7 @@
             <para/>
         </glossdef>
     </glossentry>
+    <?oxy_comment_start author="Ioana" timestamp="20190731T165948-0400" comment="We need to ask Joey/Keith about these"?>
     <glossentry>
         <glossterm>Number-Needed-to-Treat</glossterm>
         <acronym>NNT</acronym>
@@ -563,7 +574,7 @@
     </glossentry>
     <glossentry>
         <glossterm>Number-Needed-to-Harm</glossterm>
-        <acronym>NNH</acronym>
+        <acronym>NNH</acronym><?oxy_comment_end?>
         <glossdef>
             <para/>
         </glossdef>
