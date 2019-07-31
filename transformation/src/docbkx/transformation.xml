@@ -59,7 +59,7 @@
     </section>
 
     <section>
-        <title>Transformation</title>
+        <title>Transformation Languages and Architecture</title>
 
         <para>
             The previous sections have described the variation that can exist in the data structure and modeling style of a single standard.  Moreover, this variation is significantly compounded when simultaneously using data from multiple standards, such as when receiving data from mulitple institutions.
@@ -82,14 +82,15 @@
                     <imagedata fileref="images/transformationToAnf.png" align="center" format="png" width="100%"/>
                 </imageobject>
             </mediaobject>
-            <caption><para>PLACEHOLDER CAPTION</para></caption>
+            <caption><para><emphasis>Various isosemantic representations of statement models can be brought toegether
+                        into a consistent representation, Analysis Normal Form</emphasis></para></caption>
         </figure>
 
-        <para> Transformation, in this case, is not a simple endeavor that one can hope to automate
+        <para>Transformation, in this case, is not a simple endeavor that one can hope to automate
             across domains of clinical statements or even within a single domain of clinical
             statements. As presented, it will involve navigating disparate data structure trees and
-            include variable representations to then generate a well-formed post-coordinated SNOMED CT
-            expression. It is most likely possible to target subdomains for consistent
+            include variable representations to then generate a well-formed post-coordinated SNOMED
+            CT expression. It is most likely possible to target subdomains for consistent
             transformation, such as all quantitative laboratory results, but in some cases, it may
             be that each detailed clinical model needs its own unique transformation. </para>
 
@@ -452,7 +453,7 @@
                 <title>MDMI Standard</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%"/>
+                        <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
                 <caption><para>PLACEHOLDER CAPTION</para></caption>
@@ -479,7 +480,7 @@
                 <title>MDMI Transformation Process</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%"/>
+                        <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
                 <caption><para>PLACEHOLDER CAPTION</para></caption>

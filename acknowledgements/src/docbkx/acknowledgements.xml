@@ -1,66 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Acknowledgements</title>
-    <para>The project team would like to acknowledge the contributions and assistance received from
-        the following individuals, listed alphabetically:</para>
+    <para>The project team would like to acknowledge the leadership and guidance from: </para>
     <para>
         <itemizedlist>
             <listitem>
-                <para><emphasis role="bold">Keith E.
-                    Campbell</emphasis><superscript>1</superscript></para>
+                <para><emphasis role="bold">Keith E. Campbell</emphasis><superscript>1</superscript>
+                    - Program Manager</para>
             </listitem>
             <listitem>
-                <para>Ryan C. Bradley<superscript>2</superscript></para>
+                <para><emphasis role="bold">Richard Esmond</emphasis><superscript>2</superscript> -
+                    HL7 CIMI Work Group Chair</para>
+            </listitem>
+        </itemizedlist>
+    </para>
+    <para>Analysis Normal Form received assistance and contributions from the following individuals: </para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>Ryan C. Bradley<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Benson Chang<superscript>2</superscript></para>
+                <para>Benson Chang<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Raja A. Cholan<superscript>2</superscript></para>
+                <para>Raja A. Cholan<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Joey Coyle<superscript>3</superscript></para>
+                <para>Joey Coyle<superscript>4</superscript></para>
             </listitem>
             <listitem>
-                <para>Richard Esmond<superscript>4</superscript></para>
-            </listitem>
-            <listitem>
-                <para>Kirsten Haake<superscript>2</superscript></para>
+                <para>Kirsten Haake<superscript>3</superscript></para>
             </listitem>
             <listitem>
                 <para>Stephanie Klepacki<superscript>1</superscript></para>
             </listitem>
             <listitem>
-                <para>Deb Konicek<superscript>2</superscript></para>
+                <para>Deb Konicek<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Ken Lord<superscript>3</superscript></para>
+                <para>Ken Lord<superscript>4</superscript></para>
             </listitem>
             <listitem>
-                <para>Kyle Maulden<superscript>2</superscript></para>
+                <para>Kyle Maulden<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Claude Nanjo<superscript>4</superscript></para>
+                <para>Claude Nanjo<superscript>2</superscript></para>
             </listitem>
             <listitem>
-                <para>Andrew K. Sills<superscript>2</superscript></para>
+                <para>Andrew K. Sills<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Ioana Singureanu<superscript>3</superscript></para>
+                <para>Ioana Singureanu<superscript>4</superscript></para>
             </listitem>
             <listitem>
                 <para>Walter Sujansky<superscript>5</superscript></para>
             </listitem>
             <listitem>
-                <para>Andy Chen Wang<superscript>2</superscript></para>
+                <para>Andy Chen Wang<superscript>3</superscript></para>
             </listitem>
             <listitem>
-                <para>Tim Williams<superscript>2</superscript></para>
+                <para>Tim Williams<superscript>3</superscript></para>
                 <para/>
                 <para><superscript>1</superscript>Veterans Health Administration</para>
-                <para><superscript>2</superscript>Deloitte Consulting LLP</para>
-                <para><superscript>3</superscript>Book Zurman, Inc</para>
-                <para><superscript>4</superscript>HL7 CIMI Work Group</para>
+                <para><superscript>2</superscript>HL7 CIMI Work Group</para>
+                <para><superscript>3</superscript>Deloitte Consulting LLP</para>
+                <para><superscript>4</superscript>Book Zurman, Inc</para>
                 <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
             </listitem>
         </itemizedlist>

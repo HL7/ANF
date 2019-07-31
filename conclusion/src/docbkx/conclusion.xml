@@ -9,7 +9,7 @@ There isn&apos;t a sub-section for patient safety.  There is one for population 
     promotes the reuse of information aggregated to derive new information about treatment quality,
     patient safety, and outcomes. </para><?oxy_comment_end?>
   <section>
-    <title>Implications for Data Quality </title>
+    <title>Improved Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models and formats. However, both treatment and analysis of clinical statements require
       consistency not only at the
@@ -114,7 +114,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
     </para>
   </section>
   <section>
-    <title>Implications on Clinical Decision Support</title>
+    <title>Enhanced Clinical Decision Support</title>
     <para>A 2012 Literature Review commissioned by the Agency for Healthcare Research and Quality
       (AHRQ) found evidence showing that CDS had positive impact on process measures and increasing
       user knowledge relevant to a medical condition.
@@ -196,7 +196,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       ConceptID = 40733004) in their record.”</para>
   </section>
   <section>
-    <title>Implications on Population Health</title>
+    <title>Increasing Population Health</title>
     <para><glossterm baseform="Electronic Clinical Quality Measures">Electronic clinical quality measures (eCQMs)</glossterm> and CDS alerts are triggered by clinical data
       that is represented in data repositories by clinical statements represented by detailed
       clinical models with data elements encoded by standards-based clinical terminologies. Because
