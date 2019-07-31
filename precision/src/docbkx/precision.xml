@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Pragmatic Usage and Next Steps</title>
     <para>Like other CIMI isosemantic models, ANF is a logical model and therefore it may
         implemented using relevant implementable models and technology (see <link
@@ -23,14 +24,20 @@
         <?oxy_comment_start author="Ioana" timestamp="20190726T125624-0400" comment="True?  Quality measures combine clinical and admnistrative info sometimes so it would be useful to say, if true, that other types of data may be combined." id="rvl_2mj_43b" flag="done" mid="2"?><?oxy_comment_start author="Ioana" timestamp="20190729T103421-0400" comment="Administrative info is part of the infrastructure of Knowlege Architecture." parentID="rvl_2mj_43b" flag="done"?>clinical
         information<?oxy_comment_end?><?oxy_comment_end mid="2"?>. ANF does not require a specific
         input form syntax , its focus is on implementations where data quality and semantics and
-        information is aggregated from many and diverse sources. Implementers will be able to
-        <?oxy_comment_start author="rcholan" timestamp="20190730T130415-0400" comment="Incomplete sentence"?>pt<?oxy_comment_end?>
-    </para>
+        information is aggregated from many and diverse sources. </para>
+
+    <para>The ANF logical model can be used to create practical implementation guidance (i.e.
+        implementation guide, profiles, value sets based on standard terminology) and can be applied
+        to design data analysis solutions. Implementation specifications include provide vocabulary
+        binding based on standard terminologies (e.g. SNOMED CT, LOINC, RxNorm) to support the
+        Terminology layer of
+        the<?oxy_comment_start author="Ioana" timestamp="20190731T020015-0400" comment="Link to intro"?>
+        <link linkend="SoC_Section">Knowledge Architecture</link>.<?oxy_comment_end?></para>
     <section>
         <info>
             <title>ANF FHIR implementation</title>
         </info>
-        
+
         <para><?oxy_comment_start author="bechang" timestamp="20190426T225012-0600" comment="Need Ioana to expand upon what would be next after successful balloting of this whitepaper in September 2019" flag="done"?>ANF
             is a logical model intended to represent any clinical data using a complete yet simple
             normal form. It allows other software modules to reuse the information and derive new
@@ -38,34 +45,48 @@
             the care that was delivered, (2) find out what type care leads to the best patient
             outcomes, and (3) use rules and business triggers to automate clinical decision and
             workflow steps. <?oxy_comment_end?>ANF could be used to design standards-based
-            Application Programming Interfaces (APIs). Therefore, ANF could be implemented using
-            FHIR resources, profiles, and extensions to create an API that can retrieve information
-            intended for clinical decision support, clinical quality measures, and to support
-            workflow automation by triggering reminders and clinical notifications.</para>
-        <para>ANF statements may be created from existing clinical and patient-entered data:</para>
-        <para>
-            <orderedlist>
-                <listitem>
+            Application Programming Interfaces (APIs) optimized for a specific analysis purpose. ANF
+            APIs may be implemented using FHIR resources, profiles, and extensions to access
+            clinical decision support, clinical quality measures, and to support workflow automation
+            by triggering reminders and clinical notifications.</para>
+        <para>ANF statements may be created from existing clinical statements and patient-entered
+            data to support APIs intended for Analysis or to automate information derived from device
+            measurements, clinician inputs, and patient-generated data:</para>
+        <section>
+            <title>Analysis API</title>
                     <para>The typical implementation of ANF will be a system that normalizes
-                        clinical information (e.g. FHIR, CDA documents) to be used by business and
-                        decision support rules. Healthcare enterprises may use middleware,
-                        standards-based transformation and terminology servers to normalize a
-                        variety of observations, orders, diagnoses, medications, procedure notes,
-                        and other interventions to a set of Performance or Request statements.
-                        Narrative clinical statements may not be immediately reducible to ANF and it
-                        may require natural language processing and other methods of augmentation
-                        and enhancements.</para>
-               
-                            <para>ANF-specific resources and implementation guidance can be tested
-                        during FHIR Connectathons to validate that the logical model outlined in
-                        this specification is suitable to data aggregation and supports the analysis
+                clinical information (e.g. FHIR, CDA documents) to be used by business and decision
+                support rules. Healthcare enterprises may use middleware, standards-based
+                transformation and terminology servers to normalize a variety of observations,
+                orders, diagnoses, medications, procedure notes, and other interventions to a set of
+                Performance or Request statements. Narrative clinical statements may not be
+                immediately reducible to ANF and it may require natural language processing and
+                other methods of augmentation and enhancement.</para>
+
+                    <para>ANF-specific resources and implementation guidance can be tested during
+                        FHIR Connectathons to validate that the logical model outlined in this
+                        specification is suitable to data aggregation and supports the analysis
                         objectives of researchers, before proposing them as new resources for future
                         versions of FHIR and as extensions and profiles for current versions. Both
                         approaches may be desirable.</para>
-                </listitem>
-                   
-                <listitem>
-                    <para>ANF statements may be created as an outcome of evaluating device,
+            <para>
+                <figure xml:id="ANF-FHIR-API">
+                    <title>ANF-based FHIR API </title>
+                    
+                    <mediaobject role="bordered">
+                        <imageobject>
+                            <imagedata fileref="images/ANF-FHIR-API.png" scale="50"/>
+                        </imageobject>
+                    </mediaobject>
+                    <caption>
+                        <para>ANF-based information can be used to create data warehouses and support data mining.</para></caption>
+                </figure>
+            </para>
+        </section>
+
+               <section>
+                   <title>Automated Data Analysis</title>
+                   <para>ANF statements may be created as an outcome of evaluating device,
                         clinician, patient-entered data (e.g. questionnaires) automatically and in
                         near-real-time. For example, specific answers to a PHQ-9 screening tool
                         along with previous assessments could trigger a specific type of follow-up
@@ -86,13 +107,24 @@ to https://academic.oup.com/jamia/article/22/1/43/834511" flag="done"?>Learning
 https://www.cancer.gov/about-cancer/treatment/types/precision-medicine
 optional:
 https://obamawhitehouse.archives.gov/the-press-office/2015/01/30/fact-sheet-president-obama-s-precision-medicine-initiative" flag="done"?>Precision Medicine<?oxy_comment_end?>
-                        <citation>cancer</citation>  and reducing provider burden through
+                        <citation>cancer</citation> and reducing provider burden through
                         automation.</para>
-                </listitem>
-            </orderedlist>
-        </para>
-        <para/>
-        
+                   <para>
+                       <figure xml:id="ANF-derivation">
+                           <title>ANF-based FHIR API </title>
+                           
+                           <mediaobject role="bordered">
+                               <imageobject>
+                                   <imagedata fileref="images/derivation.png" scale="50"/>
+                               </imageobject>
+                           </mediaobject>
+                           <caption>
+                               <para>ANF statements may be derived from other data inputs and combined to support near-real-time analysis.</para></caption>
+                       </figure>
+                   </para>
+               </section>
+       
+    
     </section>
     <section>
         <info>
@@ -102,12 +134,27 @@ https://obamawhitehouse.archives.gov/the-press-office/2015/01/30/fact-sheet-pres
             registries etc. all require large data sets of consistent structure and semantics that
             can be analysed I aggregated for the benefit of individual patients, to evaluate an
             organization, or to establish new facts. </para>
+        <figure xml:id="ANF-DATA-MINING">
+            <title>ANF-based FHIR API </title>
+            
+            <mediaobject role="bordered">
+                <imageobject>
+                    <imagedata fileref="images/data-mining.png" scale="50"/>
+                </imageobject>
+            </mediaobject>
+            <caption>
+                <para>Standard-based information may be normalized to ANF to be used for clinical
+                    decision support.</para></caption>
+        </figure>
         <para>Interoperability standards sometimes pose challenges due to the use of
             synthetics/abstract data types that attempt to capture the complexity of healthcare
             data. ANF simplifies the statement structure by using a small set of primitive types
             (e.g. float, varchar, boolean) and a sophisticated terminology . Data warehousing and
             mining solutions rely need a consistent simple representation of data organized along
-            facts and axes. ANF borrows from Database Normalization the idea that "normalization"
-            can . ANF  could be used to deisgn database schemas that enable analysis..</para>
+            facts and axes. ANF borrows from Database Normalization the idea that "normalization" to
+            reduce data redundancy and improve integrity. The ANF logical be used to design database
+            "fact based" dimensional schemas that enable analysis focused on a specific set of facts
+            and dimensions to evaluate outcomes associated with the use of a specific therapy,
+            device, or medication. .</para>
     </section>
 </chapter>
