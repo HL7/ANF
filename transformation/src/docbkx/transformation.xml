@@ -82,6 +82,7 @@
                     <imagedata fileref="images/transformationToAnf.png" align="center" format="png" width="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para>PLACEHOLDER CAPTION</para></caption>
         </figure>
 
         <para> Transformation, in this case, is not a simple endeavor that one can hope to automate
@@ -454,6 +455,7 @@
                         <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para>PLACEHOLDER CAPTION</para></caption>
             </figure>
 
             <para>
@@ -480,6 +482,7 @@
                         <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para>PLACEHOLDER CAPTION</para></caption>
             </figure>
 
 
