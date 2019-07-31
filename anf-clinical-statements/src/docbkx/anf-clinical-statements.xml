@@ -154,7 +154,7 @@ Doing family history, donor statements using subject of information is now the n
                 <para><xref linkend="anf-editorialrule-presenceAbsence"/></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
-                    <title>Diabetes Mellitus Present Clinical Statement Example</title>
+                    <title>Diabetes Mellitus Type 2 Present ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172538-0700" comment="For topics where more than 1 is nonsensical, such as diabetes, maybe have the interval [1,1], and reserve the [1, inf) for situations where it is possible there is more than one, but we don&apos;t know how many there are... Dot, blot hemorrhage comes to mind: [1,inf), there is at least one dot blot hemorrhage. "?>
@@ -177,7 +177,7 @@ Doing family history, donor statements using subject of information is now the n
                 </editorial-rule>-->
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating absence issue." flag="done"?><?oxy_comment_end?>
                 <figure>
-                    <title>Diabetes Mellitus Absent Clinical Statement Example</title>
+                    <title>Diabetes Mellitus Type 2 Absent ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/dm_absent_anf.svg" format="SVG" scalefit="1"
@@ -190,7 +190,7 @@ Doing family history, donor statements using subject of information is now the n
                     is represented as an upperBound and lowerBound of zero with the same
                     measureSemantic.</para>
                 <figure>
-                    <title>Dot Blot Hemorrhage Present Clinical Statement Example</title>
+                    <title>Dot Blot Hemorrhage Present ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T161253-0500" comment="How do the measureSemantic for this example match up with the 3 dot blot example below?" flag="done"?>
@@ -274,7 +274,7 @@ Doing family history, donor statements using subject of information is now the n
                         </itemizedlist></mathphrase>
                 </editorial-rule>-->
                 <figure>
-                    <title>Pulse Rate Clinical Statement Example</title>
+                    <title>Pulse Rate 68 bpm, Taken by Pulse Oximeter ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172330-0700" comment="For a few of these, maybe have the range actually indicate an interval of certainty. Maybe [68,70], just because we can :-)"?>
@@ -330,7 +330,10 @@ Doing family history, donor statements using subject of information is now the n
                         </itemizedlist></mathphrase>
                 </editorial-rule>-->
                 <figure>
-                    <title>Systolic Blood Pressure Clinical Statement Example</title>
+                    <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using
+                        BP Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes,
+                        Urinated Not More Than 30 Minutes Prior to Measurement ANF Statement
+                        Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="kec" timestamp="20190722T172755-0700" comment="Maybe make result [120,122] to indicate a resolution/precision of 2 millimeter of mercury? "?>
@@ -341,7 +344,8 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="On main systolic diagram, add blue box for statementAssociations and off that, add 2 peach colored boxes for associated statements 1 and 2" flag="done"?><?oxy_comment_end?>
                 <figure>
-                    <title>Systolic Blood Pressure Associated Statement 1 Example</title>
+                    <title>Patient in Sitting Position for at Least 5 Minutes Associated ANF
+                        Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/bp_complex2_anf.svg" format="SVG"
@@ -350,7 +354,8 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <figure>
-                    <title>Systolic Blood Pressure Associated Statement 2 Example</title>
+                    <title>Urinated Not More Than 30 Minutes Prior to Measurement Associated ANF
+                        Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T143741-0500" comment="From Joey, not sure how we should capture the “prior to measurement” here? We used “timing” in the TSRs with “ISO 8601 prior to statement time”, but that is not quite right, either…" id="eys_3pz_23b"?>
@@ -367,19 +372,17 @@ Doing family history, donor statements using subject of information is now the n
                     we see examples of Results having a range of values using the upperBound and
                     lowerBound.</para>
                 <figure>
-                    <title>Three Dot Blot Hemorrhages Clinical Statement Example</title>
+                    <title>Three Dot Blot Hemorrhages ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190625T210341-0500" comment="How does Three reconcile with Present above?  They both use different measure semantics?
-" flag="done"?>
                             <imagedata fileref="images/three_dbh_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                                width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
                 <para/>
                 <figure>
-                    <title>Positive Screen for Fall Risk Clinical Statement Example</title>
+                    <title>Positive Screen for Fall Risk ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/pos_scree_fall_anf.svg" format="SVG"
@@ -387,7 +390,8 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para><editorial-rule>
+                <para>
+                    <!--<editorial-rule>
                         <title><?oxy_comment_start author="timowilliams" timestamp="20190711T092429-0500" comment="How do we handle multiple topics in a single narrative? When do you allow a topic that uses a combination SNOMED CT concept vs and ANF statement with one or more associated ANF statement vs multiple unrelated ANF statements?" flag="done"?>Multiple
                             Topics<?oxy_comment_end?></title>
                         <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I find this title confusing, as you can&apos;t have Mulitple Topics. Maybe something like Separation of Compound Topic??"?><?oxy_comment_end?>
@@ -404,7 +408,9 @@ Doing family history, donor statements using subject of information is now the n
                             a single topic as it represents a single activity that is performed at
                             the same time even though a Lumbar CT and a Thoracic CT could be done
                             separately.</mathphrase>
-                    </editorial-rule><editorial-rule>
+                    </editorial-rule>--></para>
+                <para>
+                    <xref linkend="anf-editorialrule-separateCompoundTopics"/><editorial-rule>
                         <title>Associated Statements</title>
                         <mathphrase>Use an associated statement when it is important for the
                             interpretation of one statement that the others were observed,
@@ -426,7 +432,7 @@ Doing family history, donor statements using subject of information is now the n
 
                     "?><?oxy_comment_end?>
                 <figure>
-                    <title>Negative Screen for PTSD Clinical Statement Example</title>
+                    <title>Negative Screen for PTSD ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/ptsd_neg_anf.svg" format="SVG" scalefit="1"
@@ -435,7 +441,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                 </figure>
                 <figure>
-                    <title>Negative Screen for Depression Clinical Statement Example</title>
+                    <title>Negative Screen for Depression ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/depress_neg_anf.svg" format="SVG"
@@ -462,7 +468,8 @@ Doing family history, donor statements using subject of information is now the n
                         then it will also be added.</mathphrase>
                 </editorial-rule>
                 <figure>
-                    <title>Medication Administered Clinical Statement Example</title>
+                    <title> Patient Took One Acetaminophen 500 mg Tablet by Mouth for Pain ANF
+                        Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/meds_anf.svg" format="SVG" scalefit="1"
@@ -484,7 +491,8 @@ Doing family history, donor statements using subject of information is now the n
                         applied.</mathphrase>
                 </editorial-rule>
                 <figure>
-                    <title>Education Provided Clinical Statement Example</title>
+                    <title>Patient was Provided with Educational Material on Diabetes ANF Statement
+                        Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/educ_perf_anf.svg" format="SVG" scalefit="1"
@@ -497,14 +505,15 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Other States or Specific Characteristics That Are Clinically Relevant</title>
-                <editorial-rule>
+                <!--<editorial-rule>
                     <title>subjectOfInformation</title>
                     <mathphrase>The subjectOfInformation is used to represent who the statement is
                         about. This is normally the patient (Subject of record) unless explicitly
                         stated otherwise, for example Mother, Sibling, Donor, etc.</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
+                <para><xref linkend="anf-editorialrule-subjectOfInformation"/></para>
                 <figure>
-                    <title>Family History Clinical Statement Example</title>
+                    <title>Family History  of Breast Cancer ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/fh_ca_anf.svg" format="SVG" scalefit="1"
@@ -519,8 +528,8 @@ Doing family history, donor statements using subject of information is now the n
             <section>
                 <title>Normal Range Information or Health Risk Specified</title>
                 <figure>
-                    <title>Systolic Blood Pressure Observation Result Clinical Statement
-                        Example</title>
+                    <title>Systolic Blood Pressure 180 mmHg, Normal Range (90-120), Health Risk
+                        Critical ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/bp_nr_hr_anf.svg" format="SVG" scalefit="1"
@@ -577,15 +586,16 @@ The distinction with a performance clinical statement concerning giving him educ
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
                 </editorial-rule>
-                <editorial-rule>
+                <para><xref linkend="anf-editorialrule-priority"/></para>
+                <!--<editorial-rule>
                     <title>Priority</title>
                     <mathphrase>Priority is used to represent the priority for which the request is
                         to be carried out. By default a Request will be considered "routine" unless
                         otherwise specified.</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Again, not sure Unit of time correct to say 1 Time" flag="done"?><?oxy_comment_end?>
                 <figure>
-                    <title>Lab Request Clinical Statement Example</title>
+                    <title>Rheumatoid Factor 1 Time Routine Request ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/lab_request_anf.svg" format="SVG"
@@ -604,7 +614,8 @@ The distinction with a performance clinical statement concerning giving him educ
                         that are lateralizable.</mathphrase>
                 </editorial-rule>
                 <figure>
-                    <title>X-Ray Request Clinical Statement Example</title>
+                    <title> X-ray Chest to Evaluate for Heart Failure Request ANF Statement
+                        Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/xray_request_anf.svg" format="SVG"
@@ -615,7 +626,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 <para>The Imaging Request example above is built using a subtype of image procedure
                     concept and includes a Purpose to record why the procedure is being done.</para>
                 <figure>
-                    <title>Referral Clinical Statement Example</title>
+                    <title>Cardiology Referral Request ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/referral_anf.svg" format="SVG" scalefit="1"
@@ -633,8 +644,9 @@ The distinction with a performance clinical statement concerning giving him educ
                         concepts will be refined with the substance and dose form and strength being
                         requested. If Route of administration exists, then it will also be
                         added.</mathphrase>
+                    <para><xref linkend="anf-editorialrule-repetition"/></para>
                 </editorial-rule>
-                <editorial-rule>
+                <!--<editorial-rule>
                     <title>Repetition</title>
                     <mathphrase>Repetition is used to represent when an action is requested for more
                         than a single occurrence. Repetition is an optional component for a
@@ -672,9 +684,10 @@ The distinction with a performance clinical statement concerning giving him educ
                             </listitem>
                         </itemizedlist>
                     </mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <figure>
-                    <title>Medication Request Clinical Statement Example</title>
+                    <title>Ribavirin 200 mg Capsule Oral, Take 2 Capsules Every Morning Request ANF
+                        Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T164552-0500" comment="Verify Repetition"?>
@@ -687,7 +700,8 @@ The distinction with a performance clinical statement concerning giving him educ
                     Statements that includes not only the Topic, but also the Repetition information
                     for completing the request.</para>
                 <figure>
-                    <title>Counseling Request Clinical Statement Example</title>
+                    <title>Advised to Participate in Tobacco Cessation Counseling Once a Week
+                        Request ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/counseling_request_anf.svg" format="SVG"
