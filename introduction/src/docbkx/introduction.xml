@@ -501,7 +501,12 @@ Yes, ANF is for URU..." flag="done"?>in
         </mediaobject>
         <caption>
           <para>Like other CIMI models, ANF is a Logical Model that may be used to created
-            implementation specifications.</para>
+            implementation specifications. </para>
+          <para><link
+              xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=3">HL7
+              Service-Aware Interoperability Framework: Canonical Definition Specification, Release
+              2</link>
+          </para>
         </caption>
       </figure>
       <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
@@ -564,36 +569,53 @@ Yes, ANF is for URU..." flag="done"?>in
       </title>
       <para>Starting with <glossterm baseform="HL7 V3">HL7 Version 3</glossterm> <citation>HL7v3</citation>, the minimum requirements for the
         interoperable clinical statement:</para>
-      <para><emphasis>“Clinical Statement for the care of patients (persons, animals and other
-          entities) is:</emphasis></para>
-      <para><emphasis>An expression of a discrete item of clinical, clinically-related or public
-          health information that is recorded because of its relevance to the care of a patient or
-          other entities. Clinical or public health information can be expressed with different
-          levels of granularity and therefore the extent and detail conveyed in a single statement
-          may vary. To be regarded as a Clinical Statement, a concept must be associated with a
-          patient or other entity in a manner which makes clear:</emphasis></para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para><emphasis>Its temporal context</emphasis></para>
-        </listitem>
-        <listitem>
-          <para><emphasis>Its relationship to the entity or entities</emphasis></para>
-        </listitem>
-      </itemizedlist>
-      <para><emphasis>In the case of an observation, its
-          <?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?" flag="done"?><?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." flag="done" mid="59"?>mood<?oxy_comment_end?><?oxy_comment_end mid="59"?>
-          and presence, absence or value</emphasis></para>
-      <para><emphasis>In the case of a procedure, its mood and status</emphasis></para>
-      <para><emphasis>This clarity may be achieved by:</emphasis></para>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para><emphasis>Explicit representation; or,</emphasis></para>
-        </listitem>
-        <listitem>
-          <para><emphasis>Implicit application of defaults ONLY where explicitly modeled rules state
-              the appropriate defaults." </emphasis></para>
-        </listitem>
-      </itemizedlist>
+      <table>
+        <info>
+          <title>HL7 V3 Clinical Statement Definition</title>
+        </info>
+        <tgroup cols="1">
+          <tbody>
+            <row>
+              <entry>
+                <para><emphasis>“Clinical Statement for the care of patients (persons, animals and
+                    other entities) is:</emphasis></para>
+                <para><emphasis>An expression of a discrete item of clinical, clinically-related or
+                    public health information that is recorded because of its relevance to the care
+                    of a patient or other entities. Clinical or public health information can be
+                    expressed with different levels of granularity and therefore the extent and
+                    detail conveyed in a single statement may vary. To be regarded as a Clinical
+                    Statement, a concept must be associated with a patient or other entity in a
+                    manner which makes clear:</emphasis></para>
+                <itemizedlist spacing="compact">
+                  <listitem>
+                    <para><emphasis>Its temporal context</emphasis></para>
+                  </listitem>
+                  <listitem>
+                    <para><emphasis>Its relationship to the entity or entities</emphasis></para>
+                  </listitem>
+                </itemizedlist>
+                <para><emphasis>In the case of an observation, its
+                    <?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." flag="done"?><?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?" flag="done" mid="58"?>mood<?oxy_comment_end?><?oxy_comment_end mid="58"?>
+                    and presence, absence or value</emphasis></para>
+                <para><emphasis>In the case of a procedure, its mood and status</emphasis></para>
+                <para><emphasis>This clarity may be achieved by:</emphasis></para>
+                <itemizedlist spacing="compact">
+                  <listitem>
+                    <para><emphasis>Explicit representation; or,</emphasis></para>
+                  </listitem>
+                  <listitem>
+                    <para><emphasis>Implicit application of defaults ONLY where explicitly modeled
+                        rules state the appropriate defaults." </emphasis></para>
+                  </listitem>
+                </itemizedlist>
+              </entry>
+            </row>
+            <row><entry>
+              <link xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
+                >HL7 Version 3 Standard: Clinical Statement CMETs Release 10</link></entry></row>
+          </tbody>
+        </tgroup>    
+      </table>
       <para>The V3 Clinical Statement Model is applied across CDA implementation guides including
         the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
         Statement Model is a <glossterm baseform="Polymorphic model">polymorphic model</glossterm>:
@@ -619,14 +641,14 @@ Yes, ANF is for URU..." flag="done"?>in
         OpenEHR Archetypes, <link xlink:href="https://www.iso.org/standard/40784.html">ISO
           13606</link> Archetypes, <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS
           13972</link> DCMs,
-        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? "?>CIMI
+        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? " id="kv2_dp5_43b" mid="60"?><?oxy_comment_start author="Ioana" timestamp="20190730T231505-0400" comment="I believe CIMI is working on a library of detailed clinical models - CIMI models. " parentID="kv2_dp5_43b"?>CIMI
         models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
-        clinical models<?oxy_comment_end?>, which capture the same clinical meaning using different
-        combinations of pre and <glossterm baseform="Post-coordinated concept">post-coordinated
-          concepts</glossterm> and corresponding information model structure. The central focus of
-        the CIMI Reference Model is the CIMI Clinical Statement. A CIMI Clinical Statement
-        represents structured electronic communication made about a patient typically documented as
-        an 'entry' in the patient record. </para>
+        clinical models<?oxy_comment_end?><?oxy_comment_end mid="60"?>, which capture the same
+        clinical meaning using different combinations of pre and <glossterm
+          baseform="Post-coordinated concept">post-coordinated concepts</glossterm> and
+        corresponding information model structure. The central focus of the CIMI Reference Model is
+        the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic
+        communication made about a patient typically documented as an 'entry' in the patient record. </para>
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
         Terminology Knowledge and provides a separate model for each type statements, organized into
         a comprehensive library.</para>
