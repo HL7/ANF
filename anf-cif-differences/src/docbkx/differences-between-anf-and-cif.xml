@@ -85,7 +85,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             below we see Dot blot hemorrhage represented in ANF as either present or with the number
             of hemorrhages that exist.</para>
         <figure>
-            <title>Dot Blot Hemorrhage Present - ANF</title>
+            <title>Dot Blot Hemorrhage Present - ANF Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="kec" timestamp="20190722T174123-0700" comment="Need CIMI statement for deep retinal hemorrhage. For all examples in this chapter, should have an ANF and CIMI for each example. Maybe present together in a table. "?>
@@ -95,7 +95,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             </mediaobject>
         </figure>
         <figure>
-            <title>Three Dot Blot Hemorrhage - ANF</title>
+            <title>Three Dot Blot Hemorrhage - ANF Representation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/Three_dbh_anf.svg" format="SVG" scalefit="1"
@@ -286,7 +286,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="kec" timestamp="20190722T173926-0700" comment="Make cimi and anf visualy distinct and possibly present together in a table. 
-"?>
+" flag="done"?>
                         <imagedata fileref="images/blood_pressure_cimi.svg" format="SVG"
                             scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
@@ -307,17 +307,19 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 blood pressure clinical statement.</para>
             <para>The ANF model is much more expressive and is able to capture the timing
                 information for the position and urination that requires a separate precondition code to be created in the CIMI model.</para>
-
             <figure>
-                <title>Complex Systolic Blood Pressure - ANF Representation</title>
-                <mediaobject>
+                <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
+                    Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes, Urinated
+                    Not More Than 30 Minutes Prior to Measurement - ANF Representation</title>
+               <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
             <figure>
-                <title>Complex Systolic Blood Pressure - Associated ANF Statement #1</title>
+                <title>Patient in Sitting Position for at Least 5 Minutes - Associated ANF Statement
+                    #1</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex2_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
@@ -325,7 +327,8 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Complex Systolic Blood Pressure - Associated ANF Statement #2</title>
+                <title>Urinated Not More Than 30 Minutes Prior to Measurement - Associated ANF
+                    Statement #2</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex3_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
@@ -353,7 +356,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 lowerBound of 1 and an upperBound of infinite.  Representing absence would be done
                 with an upper and lower bound of zero.</para>
             <figure>
-                <title>Diabetes Mellitus - ANF Representation</title>
+                <title>Diabetes Mellitus Type 2 - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>

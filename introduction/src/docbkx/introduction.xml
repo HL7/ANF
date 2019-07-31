@@ -158,6 +158,7 @@
               />
             </imageobject>
           </mediaobject>
+          <caption><para>PLACEHOLDER CAPTION</para></caption>
         </figure></para>
       <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset
         of information about the blood pressure measurement - omitting "micturition context" and
@@ -179,6 +180,7 @@
             <imagedata fileref="images/EHR-2.svg" scale="60" align="center" format="SVG"/>
           </imageobject>
         </mediaobject>
+        <caption><para>PLACEHOLDER CAPTION</para></caption>
       </figure><?oxy_comment_end?>
       <para>In the first case, the structured clinical input form has separate drop-down constraints
         to enter the artery and laterality as distinct concepts. In the second wire frame, the
