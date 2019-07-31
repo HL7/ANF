@@ -31,7 +31,9 @@
                 Action</glossterm></emphasis></para>
         <para>Requests for clinical testing, active interventions, future goals, or consultation
             with other providers. </para>
-        <para>See editorial rule: <xref linkend="anf-editorialrule-performanceRequest"/></para>
+        <para>See editorial rule: <xi:include
+                href="../../../analysis-normal-form/src/docbkx/editorial-rules.xml"
+                xpointer="anf-editorialrule-performanceRequest"/></para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
