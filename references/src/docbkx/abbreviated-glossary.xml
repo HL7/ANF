@@ -13,10 +13,6 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
             href="complete-glossary.xml"
-            xpointer="element(Clincal-Information-Modeling-Initiative)"
-            xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include
-            href="complete-glossary.xml"
             xpointer="element(Solor)"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
