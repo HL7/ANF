@@ -391,4 +391,27 @@
         <acronym>MOF</acronym>
         <glossdef><para></para></glossdef>
     </glossentry>
+    <glossentry>
+        <glossterm>ANF Reference Model</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Electronic Clinical Quality Measures</glossterm>
+        <acronym>eCQM</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Number-Needed-to-Treat</glossterm>
+        <acronym>NNT</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Number-Needed-to-Harm</glossterm>
+        <acronym>NNH</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Knowledge Architecture</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
 </glossary>

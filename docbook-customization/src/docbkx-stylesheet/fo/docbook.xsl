@@ -457,10 +457,10 @@ so these templates do nothing-->
         <!-- nothing -->
       </xsl:when>
 
-      <xsl:when test="$position='left'">
-        <!-- Same for odd, even, empty, and blank sequences -->
-        <xsl:call-template name="draft.text"/>
-      </xsl:when>
+      <!--<xsl:when test="$position='left'">-->
+        <!--&lt;!&ndash; Same for odd, even, empty, and blank sequences &ndash;&gt;-->
+        <!--<xsl:call-template name="draft.text"/>-->
+      <!--</xsl:when>-->
 
       <xsl:when test="($sequence='odd' or $sequence='even') and $position='center'">
         <xsl:if test="$pageclass != 'titlepage'">
@@ -468,10 +468,10 @@ so these templates do nothing-->
         </xsl:if>
       </xsl:when>
 
-      <xsl:when test="$position='right'">
-        <!-- Same for odd, even, empty, and blank sequences -->
-        <xsl:call-template name="draft.text"/>
-      </xsl:when>
+      <!--<xsl:when test="$position='right'">-->
+        <!--&lt;!&ndash; Same for odd, even, empty, and blank sequences &ndash;&gt;-->
+        <!--<xsl:call-template name="draft.text"/>-->
+      <!--</xsl:when>-->
 
       <xsl:when test="$sequence = 'first'">
         <!-- nothing for first pages -->
