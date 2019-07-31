@@ -262,7 +262,7 @@
             another constraint model.</para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Unified Modeling Language </glossterm>
+        <glossterm>Unified Modeling Language</glossterm>
         <acronym>UML</acronym>
         <glossdef><para>Unified Modeling Language is an Object Management Group (OMG) specification defining a graphical
             language for visualizing, specifying, constructing, and documenting the artifacts of distributed
@@ -375,6 +375,20 @@
     <glossentry>
         <glossterm>Domain Expert</glossterm>
         <acronym>DE</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>openEHR</glossterm>
+        <glossdef><para>openEHR is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in electronic health records.</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>SNOMED CT Expression Constrain Language</glossterm>
+        <acronym>ECL</acronym>
+        <glossdef><para>The SNOMED CT Expression Constraint Language is a formal language for defining bounded sets of clinical meanings represented by either precoordinated or postcoordinated expressions.</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Meta Object Facility</glossterm>
+        <acronym>MOF</acronym>
         <glossdef><para></para></glossdef>
     </glossentry>
 </glossary>

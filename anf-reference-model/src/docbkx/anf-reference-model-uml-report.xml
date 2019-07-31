@@ -990,9 +990,10 @@
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
                                             >Expression</link></emphasis> structure or a similar
                                     standard-based syntax ((e.g.
-                                    <?oxy_comment_start author="timowilliams" timestamp="20190730T093741-0500" comment="Glossary?  Or Reference?" id="str_n4t_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T195231-0400" comment="The SNOMED CT Expression Constraint Language is a formal language for defining bounded sets of clinical meanings represented by either precoordinated or postcoordinated expressions." parentID="str_n4t_43b" mid="3"?>SNOMED
-                                    CT Expression Constrain Language -
-                                    ECL<?oxy_comment_end mid="3"?><?oxy_comment_end?>). </para>
+                                        <?oxy_comment_start author="timowilliams" timestamp="20190730T093741-0500" comment="Glossary?  Or Reference?" id="str_n4t_43b" flag="done" mid="3"?><?oxy_comment_start author="rcholan" timestamp="20190730T195231-0400" comment="The SNOMED CT Expression Constraint Language is a formal language for defining bounded sets of clinical meanings represented by either precoordinated or postcoordinated expressions." parentID="str_n4t_43b" flag="done"?><glossterm
+                                        baseform="SNOMED CT Expression Constrain Language">SNOMED CT
+                                        Expression Constrain Language -
+                                    ECL</glossterm><?oxy_comment_end mid="3"?><?oxy_comment_end?>). </para>
                                 <para>The expression must use valid, standard-based
                                     terminology.</para>
                                 <para/>

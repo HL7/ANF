@@ -6,7 +6,7 @@
     <title>Putting it Together: Normalization and Transformation</title>
 
 
-    <para>Normalization of clinical statements is defined as "the ability to identify every
+    <para>Normalization of <glossterm baseform="Clinical Statement">clinical statements</glossterm> is defined as "the ability to identify every
         representational format that confers the same meaning as being equivalent (i.e., unambiguous
         representation). <citation>Elkin_Terminology</citation></para>
 
@@ -15,7 +15,7 @@
         <title>Data Structures</title>
         <para>
             Currently, the standard is to define detailed clinical models using different data structures for 
-            different domains of clinical statements.  For example, FHIR independently defines the resources for Conditions, 
+            different domains of clinical statements.  For example, <glossterm baseterm="Fast Healthcare Interoperability Resource">FHIR</glossterm> independently defines the resources for Conditions,
             Observations, Diagnosis, Procedure, Goal, Medication Administration, Medication Request, etc. 
             Some implementations, such as FHIR, explicity define the property names
             for the parts of each data structure tree and other formalisms such as BMM/ADL and CEML 
@@ -27,11 +27,11 @@
         <para>
 
         </para>
-        <para>ANF seeks to simplify the complexity that currently exists in detailed clinical
+        <para><glossterm baseform="Analysis-Normal-Form">ANF</glossterm> seeks to simplify the complexity that currently exists in detailed clinical
             models. As it's name suggests, Analysis Normal Form provides one normalized data
             structure to describe clinical statements from all domains. ANF accomplishes this by
             moving the complexity that usually requires a complex data structure into the
-            terminology as a complex post-coordinated SNOMED CT expression. </para>
+            terminology as a complex <glossterm baseform="Post-coordinated concept">post-coordinated</glossterm> SNOMED CT expression. </para>
 
     </section>
 
@@ -44,8 +44,8 @@
             or as 'rales' with a result of 'present'.
             Currently, organiztions try to minimize this type of variation by
             documenting design choice rules in modeling "style guides".
-            For instance, a common style guide choice in the CIMI Clinical Statement model is to
-            either use the Assertion style or the Evaluation Result style, and CIMI documents which types of clinical statement
+            For instance, a common style guide choice in the <glossterm baseterm="CIMI Clinical Statement">CIMI Clinical Statement</glossterm> model is to
+            either use the <glossterm>Assertion</glossterm> style or the <glossterm>Evaluation Result</glossterm> style, and <glossterm baseterm="Clinical Information Modeling Initiative">CIMI</glossterm> documents which types of clinical statement
             are best suited for each. The current approach is to solve the problem by conformity rather than with technology.
         </para>
 
@@ -72,7 +72,7 @@
             being algorithmically equivalent. </para>
 
         <para>
-            To be clear, the transformation discussed is a data instance to data instance transformation.  An example could be John Doe's Systolic Blood Pressure measurement taken on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to an ANF instance representing this same data.  This is not to be confused with a detailed clinical model transformation between two formalisms, such as an ISO DCM for Systolic Blood Pressure transformed to a FHIR profile for Systolic Blood Pressure.
+            To be clear, the transformation discussed is a data instance to data instance transformation.  An example could be John Doe's Systolic Blood Pressure measurement taken on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to an ANF instance representing this same data.  This is not to be confused with a detailed clinical model transformation between two formalisms, such as an <glossterm baseform="International Organization for Standardization">ISO</glossterm> <glossterm baseform="Detailed Clinical Model">DCM</glossterm> for Systolic Blood Pressure transformed to a FHIR profile for Systolic Blood Pressure.
         </para>
 
         <figure xml:id="transformationToANF_0135">
@@ -101,7 +101,7 @@
                     <para>One source instance will frequently be transformed to many ANF instances</para>
                 </listitem>
                 <listitem>
-                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated SNOMED CT expression for inclusion as ANF Topic</para>
+                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated SNOMED CT expression for inclusion as <glossterm>ANF Topic</glossterm></para>
                 </listitem>
             </itemizedlist>
 
@@ -324,7 +324,7 @@
                     to reference external functions written in different languages. There are also
                     notable differences between FML and XSLT. The source input of FML is not limited
                     to XML documents, but may include any object models and rendering syntaxes
-                    conformant with OMG’s Meta Object Facility (MOF) language.
+                    conformant with <glossterm baseform="Object Management Group">OMG’s</glossterm> <glossterm baseform="Meta Object Facility">Meta Object Facility (MOF)</glossterm> language.
                         <citation>mof</citation> MOF is a general formalism for representing object
                     models as directed acyclic graphs (DAGs), and MOF-compliant models can use
                     various syntactic constructs to represent the classes, attributes, and attribute
@@ -366,7 +366,7 @@
                 <para><emphasis role="bold">Limitations</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
-                        <para>Inputs/outputs other than FHIR logical models currently require
+                        <para>Inputs/outputs other than FHIR <glossterm baseform="Logical Model">logical models</glossterm> currently require
                             additional custom programming</para>
                     </listitem>
                     <listitem>
@@ -467,7 +467,7 @@
             <para> The MDMI SEER is a repository for the semantically unique concepts, called
                 Business Elements, that are exchanged in healthcare transformations. One can view
                 the MDMI SEER as a bag of unique, atomic semantic concepts exchanged, primarily
-                driven by the HL7 standards of v.2, CDA, and FHIR that are used to exchange
+                driven by the <glossterm baseterm="HL7 V2 Messaging Profile">HL7 standards of v.2</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA</glossterm>, and FHIR that are used to exchange
                 information. If there is a new semantic concept that does not exist in the SEER,
                 then a new Business Element is simply added. Each MDMI Transformation Model uses the
                 MDMI SEER to create an iso-semantic relationship with its own semantic concepts and
@@ -484,7 +484,7 @@
 
 
             <para>
-                There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are pre-coordinated semantic concepts represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism. 
+                There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are <glossterm baseform="Pre-coordinated concept">pre-coordinated semantic concepts</glossterm> represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism.
             </para>
 
             <para> An open source implementation of MDMI started in the Open Healthcare Tools
@@ -504,7 +504,7 @@
                 <?oxy_comment_start author="timowilliams" timestamp="20190717T182730-0500" comment="From Stephanie K:
 
 Probably should define FHIM since it hasn&apos;t been used previously in the document and/or include in the glossary."?>FHIM<?oxy_comment_end?>
-                using the model driven MDHT tooling and Ontological Models such as ANF / Solor. </para>
+                using the model driven MDHT tooling and Ontological Models such as ANF / <glossterm baseform="Solor">Solor</glossterm>. </para>
 
             <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">

@@ -14,7 +14,7 @@
             baseform="Fast Healthcare Interoperability Resource">HL7 FHIR</glossterm>), or an
         instance of a <glossterm baseform="Clinical Information Model">CIMI model</glossterm> (e.g.
         FHIR-based profile,
-        <?oxy_comment_start author="timowilliams" timestamp="20190730T103208-0500" comment="Glossary?" id="sv3_g4t_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T195022-0400" comment="openEHR is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in electronic health records." parentID="sv3_g4t_43b" mid="2"?>openEHR<?oxy_comment_end mid="2"?><?oxy_comment_end?>
+            <?oxy_comment_start author="timowilliams" timestamp="20190730T103208-0500" comment="Glossary?" id="sv3_g4t_43b" flag="done" mid="2"?><?oxy_comment_start author="rcholan" timestamp="20190730T195022-0400" comment="openEHR is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in electronic health records." parentID="sv3_g4t_43b" flag="done"?><glossterm>openEHR</glossterm><?oxy_comment_end mid="2"?><?oxy_comment_end?>
         archetype) .</para>
     <!-- These sections are replaced by the autho-generated RM 
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
