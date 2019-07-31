@@ -26,9 +26,10 @@
     HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background on other logical
-    <?oxy_comment_start author="rcholan" timestamp="20190730T082039-0400" comment="glossary HL7"?>HL7<?oxy_comment_end?>
-    and
-    <?oxy_comment_start author="rcholan" timestamp="20190730T082028-0400" comment="glossary ISO"?>ISO<?oxy_comment_end?>
+      <?oxy_comment_start author="rcholan" timestamp="20190730T082039-0400" comment="glossary HL7" flag="done"?><glossterm
+      baseform="Health Level Seven">HL7</glossterm><?oxy_comment_end?> and
+      <?oxy_comment_start author="rcholan" timestamp="20190730T082028-0400" comment="glossary ISO" flag="done"?><glossterm
+      baseform="International Organization for Standardization">ISO</glossterm><?oxy_comment_end?>
     clinical statement models, and focus on the need for—and logical specification of—an <glossterm
       baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm>.
     <?oxy_comment_start author="Ioana" timestamp="20190722T235956-0400" comment="Expanded this section." flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T085644-0700" comment="Insert introduction of URU here (Understandable, Reproducible, and Useful. " flag="done" mid="5"?>ANF
@@ -40,22 +41,23 @@
     models.</para><?oxy_comment_end mid="5"?>
   <?oxy_comment_start author="Ioana" timestamp="20190722T224830-0400" comment="Moved the URU references fron SoC section and expanded how URU is embodied by ANF." flag="done"?>
   <para>ANF is a model for clinical statements used in analysis that meet the following criteria:
-      <emphasis>Understandable, Reproducible, and Useful</emphasis>
-    (<?oxy_comment_start author="rcholan" timestamp="20190730T082722-0400" comment="glossary"?>URU<?oxy_comment_end?>)
+        <emphasis><glossterm baseform="Understandable, Reproducible, Useful">Understandable,
+        Reproducible, and Useful</glossterm></emphasis>
+    (<?oxy_comment_start author="rcholan" timestamp="20190730T082722-0400" comment="glossary" flag="done"?>URU<?oxy_comment_end?>)
       <citation>spackman</citation><citation>cimino</citation>:</para><?oxy_comment_end?>
   <itemizedlist>
     <listitem>
-      <para><emphasis role="bold">Understandable</emphasis>. The content of an <glossterm
+      <para><emphasis role="bold"><glossterm baseform="Understandable">Understandable</glossterm></emphasis>. The content of an <glossterm
           baseform="ANF Statement">ANF statement</glossterm> can be processed by health IT systems
         and understood by most healthcare providers, without reference to private or inaccessible
         information. </para>
     </listitem>
     <listitem>
-      <para><emphasis role="bold">Reproducible</emphasis>. Multiple users or systems apply the ANF
+      <para><emphasis role="bold"><glossterm baseform="Reproducible">Reproducible</glossterm></emphasis>. Multiple users or systems apply the ANF
         to the same situations and source data with the same/similar result. </para>
     </listitem>
     <listitem>
-      <para><emphasis role="bold">Useful</emphasis> (fit-for-purpose). The ANF statement has a
+      <para><emphasis role="bold"><glossterm baseform="Useful">Useful</glossterm></emphasis> (fit-for-purpose). The ANF statement has a
         practical value: analysis, research, outcomes, etc. that requires information aggregated
         across health IT systems. </para>
     </listitem>
@@ -217,7 +219,8 @@
       <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. " flag="done"?><?oxy_comment_end?>systems
       <!--through normalization-->. The more normalized a data set is, the simpler it will become to
       analyze, and errors will be reduced.
-      <?oxy_comment_start author="rcholan" timestamp="20190730T085154-0400" comment="glossary"?>Post-coordinated<?oxy_comment_end?>
+        <?oxy_comment_start author="rcholan" timestamp="20190730T085154-0400" comment="glossary" flag="done"?><glossterm
+        baseform="Post-coordinated concept">Post-coordinated</glossterm><?oxy_comment_end?>
       compositional statements using ANF introduce the ability to faithfully expand from a reduced
       form or compare to other statements with ease and no loss of semantic integrity.
       <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?><?oxy_comment_end?></para>
@@ -226,11 +229,13 @@
       <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
         purpose is to introduce standards-based, normalized representation of clinical statements
         from a heterogeneous source using an objective quantitative <emphasis role="bold"
-          ><?oxy_comment_start author="rcholan" timestamp="20190730T085855-0400" comment="glossary"?>measure<?oxy_comment_end?></emphasis>
-        to help evaluate the result, presence, and magnitude of a specific finding, request or
-        observation. ANF requires an ability to classify the <emphasis role="bold"
-          ><?oxy_comment_start author="rcholan" timestamp="20190730T085913-0400" comment="glossary"?>topic<?oxy_comment_end?></emphasis>
-        of a statement as standards-based and thus it depends on structured input form data that is
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T085855-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Measure">measure</glossterm><?oxy_comment_end?></emphasis> to help evaluate
+        the result, presence, and magnitude of a specific finding, request or observation. ANF
+        requires an ability to classify the <emphasis role="bold"
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T085913-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Topic expression">topic</glossterm><?oxy_comment_end?></emphasis> of a
+        statement as standards-based and thus it depends on structured input form data that is
         encoded by formal terminology. ANF disambiguates input data along well-defined compositional
         layers (see <link linkend="SoC_Section">Separation of Concerns</link>). In practice,
         information systems may create normal data natively or transform other representations of
@@ -267,7 +272,7 @@
       <para>ANF
         supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         highly
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" mid="25"?>post-coordinated<?oxy_comment_end?><?oxy_comment_end mid="25"?>
+        <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="25"?>post-coordinated<?oxy_comment_end?><?oxy_comment_end mid="25"?>
         compositional terminologies to provide greater content coverage than can be achieved by
         relying only on <glossterm baseform="Pre-coordinated concept">pre-coordinated
           concepts.</glossterm> Post-coordinated compositional terminologies are more expressive and
@@ -277,15 +282,16 @@
         post-coordinated expressions used as input. </para>
       <para>Successful analysis requires relatively high data quality that allows systems to define
         a precise
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary"?>topic<?oxy_comment_end?>,
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary"?>category<?oxy_comment_end?>,
-        and clear
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110912-0400" comment="glossary"?>measure<?oxy_comment_end?>
+        <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary" flag="done"?>topic<?oxy_comment_end?>,
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?><glossterm
+          baseform="Category">category</glossterm><?oxy_comment_end?>, and clear
+        <?oxy_comment_start author="rcholan" timestamp="20190730T110912-0400" comment="glossary" flag="done"?>measure<?oxy_comment_end?>
         or
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110921-0400" comment="glossary"?>result<?oxy_comment_end?>
-        of what was observed, requested, or assessed during treatment. ANF can be applied to any
-        input data and any formalism as long as the data semantics and terminology are sufficiently
-        precise to define the elements mandatory for analysis. </para>
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110921-0400" comment="glossary" flag="done"?><glossterm
+          baseform="Evaluation Result">result</glossterm><?oxy_comment_end?> of what was observed,
+        requested, or assessed during treatment. ANF can be applied to any input data and any
+        formalism as long as the data semantics and terminology are sufficiently precise to define
+        the elements mandatory for analysis. </para>
     </section>
     <section xml:id="SoC_Section">
       <title><?oxy_comment_start author="kec" timestamp="20190721T123358-0700" comment="Change section name to &quot;Architectural Separation of Concerns&quot;. Promote section, and move to prior to Analysis Normal Form section. " flag="done"?>Approach
@@ -341,61 +347,65 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             <imagedata fileref="images/SoC_new.png" scale="40"/><?oxy_comment_end?>
           </imageobject>
         </mediaobject>
-        <para><emphasis><?oxy_comment_start author="rcholan" timestamp="20190730T121145-0400" comment="can you make this a caption? See the caption tag below the SAIF-CD image below...."?>Separation
-            of concerns is an architectural design principle, whereby a system is divided into
-            distinct sections, such that each section can address separate concerns. In this case,
-            each architectural layer addresses separate concerns that can make use of the
-            architecture layers below.<?oxy_comment_end?></emphasis>
-        </para>
+        
+        <caption><para>Separation
+          of concerns is an architectural design principle, whereby a system is divided into
+          distinct sections, such that each section can address separate concerns. In this case,
+          each architectural layer addresses separate concerns that can make use of the
+          architecture layers below.</para></caption>
+      </figure>
         <para><?oxy_comment_start author="kec" timestamp="20190721T130509-0700" comment="Change from using emphasis, to using glossary link. Start out active voice. &quot;The Architectural Foundation layer is responsible for defining how object identity, versioning, modularity, and symbolic knowledge is represented&quot;" flag="done"?><emphasis
-            role="bold"
-              ><?oxy_comment_start author="Ioana" timestamp="20190729T001818-0400" comment="Add link to glossary"?><link
-              linkend="CIF_EHR_1">Architectural Foundation</link><?oxy_comment_end?></emphasis> –
-          The <glossterm>Architectural Foundation</glossterm> of the Knowledge Architecture provides
-          the common elements of interoperability such as object identity, versioning, modularity,
-          and knowledge representation. It includes a) the foundation and building blocks of the
-          common model; (b) how the repeatable transformation process of disparate standards into
-          the common model promotes interoperability with other environments; and (c) how the
-          modules of the architecture are tightly version controlled over time.
-          <!--The Architectural Foundation provides patient identity cross-referencing, practitoiner, data provance, security, etc. --></para><?oxy_comment_end?>
+          role="bold"
+            ><?oxy_comment_start author="Ioana" timestamp="20190729T001818-0400" comment="Add link to glossary" flag="done"?><link
+            linkend="CIF_EHR_1"><glossterm baseform="Architectural Foundation">Architectural
+              Foundation</glossterm></link><?oxy_comment_end?></emphasis> – The
+          <glossterm>Architectural Foundation</glossterm> of the Knowledge Architecture provides the
+        common elements of interoperability such as object identity, versioning, modularity, and
+        knowledge representation. It includes a) the foundation and building blocks of the common
+        model; (b) how the repeatable transformation process of disparate standards into the common
+        model promotes interoperability with other environments; and (c) how the modules of the
+        architecture are tightly version controlled over time.
+        <!--The Architectural Foundation provides patient identity cross-referencing, practitoiner, data provance, security, etc. --></para><?oxy_comment_end?>
         <para><link linkend="CIF_EHR_1">
-            <emphasis role="bold"
-              ><?oxy_comment_start author="Ioana" timestamp="20190729T001906-0400" comment="Add link to glossary"?>Terminology
-              Knowledge<?oxy_comment_end?></emphasis>
-          </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
-          The <glossterm>Terminology Knowledge</glossterm> layer is responsible for structured sets
-          of medical terms and codes that define concepts of interest, including descriptions,
-          dialects, language, and semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this
-          layer <?oxy_comment_end?>
-        </para>
+          <emphasis role="bold"
+              ><?oxy_comment_start author="Ioana" timestamp="20190729T001906-0400" comment="Add link to glossary" flag="done"?><glossterm
+              baseform="Terminology Knowledge">Terminology
+            Knowledge</glossterm><?oxy_comment_end?></emphasis>
+        </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
+        The Terminology Knowledge layer is responsible for structured sets of medical terms and
+        codes that define concepts of interest, including descriptions, dialects, language, and
+        semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer <?oxy_comment_end?>
+      </para>
         <para><?oxy_comment_start author="kec" timestamp="20190721T130821-0700" comment="The Statement Model layer is responsible for defining how terminology concepts can be combined to create a statement. " flag="done"?><emphasis
-            role="bold"
-            ><?oxy_comment_start author="rcholan" timestamp="20190730T111546-0400" comment="glossary"?>Statement
-            Model<?oxy_comment_end?></emphasis> – The Statement Model layer is responsible for
-          defining how terminology concepts can be combined to create a statement. Within the data
-          structures, additional detail to describe subject, numerical, and categorical information
-          related to concepts can be added in this layer. <?oxy_comment_end?>ANF introduces a
-          statement model specific to analysis and clinical decision support. Other standards-based
-          clinical statements are discussed later in this chapter.</para>
+          role="bold"
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T111546-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Statement Model">Statement Model</glossterm><?oxy_comment_end?></emphasis> –
+        The Statement Model layer is responsible for defining how terminology concepts can be
+        combined to create a statement. Within the data structures, additional detail to describe
+        subject, numerical, and categorical information related to concepts can be added in this
+        layer. <?oxy_comment_end?>ANF introduces a statement model specific to analysis and clinical
+        decision support. Other standards-based clinical statements are discussed later in this
+        chapter.</para>
         <para><?oxy_comment_start author="kec" timestamp="20190721T130846-0700" comment="The Assertional Knowledge layer is responsible for..." flag="done"?><emphasis
-            role="bold"
-            ><?oxy_comment_start author="rcholan" timestamp="20190730T111554-0400" comment="glossary"?>Assertional
-            Knowledge<?oxy_comment_end?></emphasis> – The <glossterm baseform="Assertion"
-            >Assertional</glossterm> Knowledge layer reuses information based on Statement Model. It
-          is responsible for guidelines and business rules to assist clinical decision making. This
-          includes facts and knowledge upon which concepts and combinations of concepts can
-          assimilate into protocols. ANF statements can be used to support assertional
-          artifacts.</para>
+          role="bold"
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T111554-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Assertional Knowledge">Assertional
+          Knowledge<?oxy_comment_end?></glossterm></emphasis> – The Assertional Knowledge layer
+        reuses information based on Statement Model. It is responsible for guidelines and business
+        rules to assist clinical decision making. This includes facts and knowledge upon which
+        concepts and combinations of concepts can assimilate into protocols. ANF statements can be
+        used to support assertional artifacts.</para>
         <para><?oxy_comment_end?><emphasis role="bold"
-            ><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..." flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190730T111601-0400" comment="glossary"?>Procedural
-            Knowledge<?oxy_comment_end?></emphasis> –The Procedural Knowledge Layer is responsible
-          for information about standard ways to carry out specific procedures as well as other
-          procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
-          particular patient situations. Procedural knowledge, together with assertional knowledge,
-          enables clinical decision support, quality measurement, and supports patient safety. This
-          layer is based on the interoperability infrastructure and terminology layers, incorporates
-          the statement model for information retrieval, and uses the assertional layer to apply
-          rules.<?oxy_comment_end?></para>
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T111601-0400" comment="glossary" flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..." flag="done" mid="45"?><glossterm
+            baseform="Procedural Knowledge">Procedural
+          Knowledge</glossterm><?oxy_comment_end?></emphasis> –The Procedural Knowledge Layer is
+        responsible for information about standard ways to carry out specific procedures as well as
+        other procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
+        particular patient situations. Procedural knowledge, together with assertional knowledge,
+        enables clinical decision support, quality measurement, and supports patient safety. This
+        layer is based on the interoperability infrastructure and terminology layers, incorporates
+        the statement model for information retrieval, and uses the assertional layer to apply
+        rules.<?oxy_comment_end mid="45"?></para>
         <para>Examining a clinical procedure for controlling hypertension illustrates each of the
           layers of the informatics architectural separation of concerns. <itemizedlist>
             <listitem>
@@ -453,7 +463,6 @@ Yes, ANF is for URU..." flag="done"?>in
           fully defined, the standards-based statements can be used to support business and workflow
           decision points consistent with Assertional and Procedural layers described above.
           <!--<para>ANF can help the modeling of clinical statements achieve the following design features: </para><itemizedlist><listitem><para>Understandable: The meaning of a clinical statement can be understood, without reference to private or inaccessible information.</para></listitem><listitem><para>Reproducible: Multiple users can apply the clinical statement model to the same situations.</para></listitem><listitem><para>Useful: The clinical statement has a practical value to users that is self-evident or can be readily explained.</para></listitem></itemizedlist>--></para>
-      </figure>
     </section>
   </section>
   <section>
@@ -476,8 +485,9 @@ Yes, ANF is for URU..." flag="done"?>in
         Conceptual, Logical, and Implementable. These perspectives are not formally equivalent with
           <glossterm baseform="Object Management Group">Object Management Group’s (OMG)</glossterm>
         levels-of-abstraction in
-        <?oxy_comment_start author="rcholan" timestamp="20190730T120946-0400" comment="glossary"?>Model-Driven
-        Architecture (MDA)<?oxy_comment_end?> even though it reuses the same derivation. Therefore,
+          <?oxy_comment_start author="rcholan" timestamp="20190730T120946-0400" comment="glossary" flag="done"?><glossterm
+          baseform="Model Driven Architecture">Model-Driven Architecture
+        (MDA)</glossterm><?oxy_comment_end?> even though it reuses the same derivation. Therefore,
         the Implementable Perspective is derived from the Logical Perspective and the Logical
         Perspective is derived from the Conceptual Perspective. This approach ensures that any
         implementable artifacts (i.e. service specifications, implementation guides) are traceable
@@ -510,14 +520,16 @@ Yes, ANF is for URU..." flag="done"?>in
           Domain Experts and Subject Matter Experts and rigorous enough to serve as input into the
           development in the Logical Perspective.</para>
         <para>In HL7, the Conceptual Perspective is represented by
-          <?oxy_comment_start author="rcholan" timestamp="20190730T121224-0400" comment="glossary"?>Domain
-          Analysis Models (DAMs) <?oxy_comment_end?>and business models that represent stakeholder
+            <?oxy_comment_start author="rcholan" timestamp="20190730T121224-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Domain Analysis Model">Domain Analysis Models
+          (DAMs)</glossterm><?oxy_comment_end?>and business models that represent stakeholder
           requirements analyzed by
-          <?oxy_comment_start author="rcholan" timestamp="20190730T121345-0400" comment="glossary"?>SMEs<?oxy_comment_end?>
-          and
-          <?oxy_comment_start author="rcholan" timestamp="20190730T121356-0400" comment="glossary, not sure what this stands for"?>DEs<?oxy_comment_end?>.
-          This perspective that precede the development of either logical or implementable artifacts
-          and it is key to successful testing of implementations. </para>
+            <?oxy_comment_start author="rcholan" timestamp="20190730T121345-0400" comment="glossary" flag="done"?><glossterm
+            baseform="Subject Matter Expert">SMEs</glossterm><?oxy_comment_end?> and
+            <?oxy_comment_start author="rcholan" timestamp="20190730T121356-0400" comment="glossary, not sure what this stands for" flag="done"?><glossterm
+            baseform="Domain Expert">DEs</glossterm><?oxy_comment_end?>. This perspective that
+          precede the development of either logical or implementable artifacts and it is key to
+          successful testing of implementations. </para>
       </section>
       <section>
         <title>Logical Perspective</title>
@@ -550,7 +562,7 @@ Yes, ANF is for URU..." flag="done"?>in
       <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? " flag="done"?>
       <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
       </title>
-      <para>Starting with HL7 Version 3 <citation>HL7v3</citation>, the minimum requirements for the
+      <para>Starting with <glossterm baseform="HL7 V3">HL7 Version 3</glossterm> <citation>HL7v3</citation>, the minimum requirements for the
         interoperable clinical statement:</para>
       <para><emphasis>“Clinical Statement for the care of patients (persons, animals and other
           entities) is:</emphasis></para>
@@ -619,8 +631,8 @@ Yes, ANF is for URU..." flag="done"?>in
         Terminology Knowledge and provides a separate model for each type statements, organized into
         a comprehensive library.</para>
       <para><?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b" mid="62"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b"?>CIMI
-        clinical statements are further explained in this document (See Current CIMI Modeling
-        Efforts).<?oxy_comment_end?><?oxy_comment_end mid="62"?><!--For example, CIMI Clinical
+        clinical statements are further explained in this document <link linkend="clinical-input-form">(See Current CIMI Modeling
+          Efforts).</link><?oxy_comment_end?><?oxy_comment_end mid="62"?><!--For example, CIMI Clinical
         Statement can be used to represent the following statements made about a patient. This can
         be the statement of a condition being present, a request for a procedure to be done, the
         results of lab tests or the patient’s family history of cancer.-->

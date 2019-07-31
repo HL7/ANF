@@ -102,7 +102,7 @@
             Any particular detailed clinical model exists within a family of isosemantic siblings. </para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>International Organization for Standardization </glossterm>
+        <glossterm>International Organization for Standardization</glossterm>
         <acronym>ISO</acronym>
         <glossdef><para>A worldwide federation of national standards bodies from more than 160 countries, with one standards
             body representing each member country. </para></glossdef>
@@ -214,7 +214,7 @@
             standards consortium.</para></glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Model Driven Architecture </glossterm>
+        <glossterm>Model Driven Architecture</glossterm>
         <acronym>MDA</acronym>
         <glossdef><para>An approach to software design, development and implementation spearheaded by the OMG.
             MDA provides guidelines for structuring software specifications that are expressed as models.</para></glossdef>
@@ -315,5 +315,66 @@
     <glossentry>
         <glossterm>Situation with Explicit Context</glossterm>
         <glossdef><para>A SNOMED Concept Model that defines the context of a clinical finding or procedure.</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Health Level Seven</glossterm>
+        <acronym>HL7</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Understandable, Reproducible, Useful</glossterm>
+        <acronym>URU</acronym>
+        <glossdef><para>A design principle that defines the solution to be Understandable, Reproducible, and Useful.
+            See Also Understandable, Reproducible, Useful</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Understandable</glossterm>
+        <glossdef><para>The content of an ANF statement can be processed by health IT systems and understood by most
+            healthcare providers, without reference to private or inaccessible information.</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Reproducible</glossterm>
+        <glossdef><para>Multiple users or systems apply the ANF to the same situations and source data
+            with the same/similar result. </para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Useful</glossterm>
+        <glossdef><para>The ANF statement has a practical value: analysis, research, outcomes, etc.
+            that requires information aggregated across health IT systems.</para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Measure</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Category</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Statement Model</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Assertional Knowledge</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Procedural Knowledge</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Domain Analysis Model</glossterm>
+        <acronym>DAM</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Subject Matter Expert</glossterm>
+        <acronym>SME</acronym>
+        <glossdef><para></para></glossdef>
+    </glossentry>
+    <glossentry>
+        <glossterm>Domain Expert</glossterm>
+        <acronym>DE</acronym>
+        <glossdef><para></para></glossdef>
     </glossentry>
 </glossary>
