@@ -28,11 +28,13 @@
 
     <para>The ANF logical model can be used to create practical implementation guidance (i.e.
         implementation guide, profiles, value sets based on standard terminology) and can be applied
-        to design data analysis solutions. Implementation specifications include provide vocabulary
-        binding based on standard terminologies (e.g. SNOMED CT, LOINC, RxNorm) to support the
-        Terminology layer of
-        the<?oxy_comment_start author="Ioana" timestamp="20190731T020015-0400" comment="Link to intro"?>
-        <link linkend="SoC_Section"><glossterm baseform="Knowledge Architecture">Knowledge Architecture</glossterm></link>.<?oxy_comment_end?></para>
+        to design data analysis solutions. Implementation specifications include vocabulary bindings
+        based on standard terminologies (e.g. SNOMED CT, LOINC, RxNorm) to support the Terminology
+        layer of the<?oxy_comment_start author="Ioana" timestamp="20190731T020015-0400" comment="Link to intro"?>
+        <link linkend="SoC_Section"><glossterm baseform="Knowledge Architecture">Knowledge
+                Architecture</glossterm></link>.<?oxy_comment_end?> For simplicity, SNOMED CT is
+        used for all logical expressions and examples in this specification but ANF implementation
+        may require LOINC or RxNorm as well.</para>
     <section>
         <info>
             <title>ANF FHIR implementation</title>
@@ -75,11 +77,12 @@
                     
                     <mediaobject role="bordered">
                         <imageobject>
-                            <imagedata fileref="images/ANF-FHIR-API.png" scale="50"/>
+                            <imagedata fileref="images/ANF-FHIR-API.png" scale="40"/>
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para>ANF-based information can be used to create data warehouses and support data mining.</para></caption>
+                        <para><emphasis>ANF-based information can be used to create data warehouses
+                                and support data mining</emphasis>.</para></caption>
                 </figure>
             </para>
         </section>
@@ -111,15 +114,16 @@ https://obamawhitehouse.archives.gov/the-press-office/2015/01/30/fact-sheet-pres
                         automation.</para>
                    <para>
                        <figure xml:id="ANF-derivation">
-                           <title>ANF-based FHIR API </title>
+                           <title>Derived ANF Statements </title>
                            
                            <mediaobject role="bordered">
                                <imageobject>
-                                   <imagedata fileref="images/derivation.png" scale="50"/>
+                                   <imagedata fileref="images/derivation.png" scale="40"/>
                                </imageobject>
                            </mediaobject>
                            <caption>
-                               <para>ANF statements may be derived from other data inputs and combined to support near-real-time analysis.</para></caption>
+                               <para><emphasis>ANF statements may be derived from other data inputs
+                                and combined to support near-real-time analysis.</emphasis></para></caption>
                        </figure>
                    </para>
                </section>
@@ -135,16 +139,16 @@ https://obamawhitehouse.archives.gov/the-press-office/2015/01/30/fact-sheet-pres
             can be analysed I aggregated for the benefit of individual patients, to evaluate an
             organization, or to establish new facts. </para>
         <figure xml:id="ANF-DATA-MINING">
-            <title>ANF-based FHIR API </title>
+            <title>Data Mining using ANF statements </title>
             
             <mediaobject role="bordered">
                 <imageobject>
-                    <imagedata fileref="images/data-mining.png" scale="50"/>
+                    <imagedata fileref="images/data-mining.png" scale="40"/>
                 </imageobject>
             </mediaobject>
             <caption>
-                <para>Standards-based information may be normalized to ANF to be used for clinical
-                    decision support.</para></caption>
+                <para><emphasis>Standards-based information may be normalized to ANF to be used for
+                        clinical decision support.</emphasis></para></caption>
         </figure>
         <para>Interoperability standards sometimes pose challenges due to the use of
             synthetics/abstract data types that attempt to capture the complexity of healthcare

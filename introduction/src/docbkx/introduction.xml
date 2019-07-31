@@ -97,11 +97,19 @@
       structures used for capture or display of clinical statements is not in scope. We assume that
         <emphasis role="bold">any suitably encoded</emphasis> structured clinical statement may be
       suitable for normalization and analysis. <?oxy_comment_end?></para>
-    <para>Therefore, clinical statements can be expressed and documented in many different ways in
-      EHR systems, where input forms provide different options to document the same clinical
-      statement. These differences pose challenges for how the data is modeled, how the data is
-      stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
-      analysis results. </para>
+    <para>Ideally, clinical information is modeled in a manner that is most efficient for use. This
+      is a problem because there are many different use cases for clinical information with a wide
+      range of requirements. There is no single model that can be the most efficient model for all
+      the various use cases. Maximum efficiency for each use case necessitates that any particular
+      clinical information be available in multiple modeled forms. These models, although different
+      in form, semantically represent the same information, and are known as <glossterm
+        baseform="Isosemantic Model">isosemantic models</glossterm>. Any particular detailed
+      clinical model exists within a family of isosemantic siblings.  </para>
+    <para>Since clinical statements can be expressed and documented in many different ways in EHR
+      systems, where input forms provide different options to document the same clinical statement.
+      These differences pose challenges for how the data is modeled, how the data is stored, and
+      therefore has implications on data retrieval, data analysis, accuracy of clinical analysis
+      results. </para>
     <section>
       <title>Variation by Implementation: Structured Clinical Input Forms</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
@@ -114,7 +122,7 @@
         through a drop-down list, radio buttons, or breaking up large chunks of related information
         into smaller parts.</para>
       <?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems." flag="done"?>
-      <?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " mid="13"?>
+      <?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done" mid="13"?>
       <para>Let's consider the following example, represented below, in which <link
           linkend="CIF_EHR_1">data collected by an EHR</link> combines information reported by
         devices with findings and interpretation: <orderedlist>
@@ -158,7 +166,15 @@
               />
             </imageobject>
           </mediaobject>
-          <caption><para>PLACEHOLDER CAPTION</para></caption>
+          <caption>
+            <para><emphasis>In this example the system provides the measurement information from the
+                device to be verified by a nurse. The nurse also annotates the topic of with
+                information describing the patient during the measurement (at rest, prone) and the
+                location (left brachial artery). The user may also fill in information about
+                micturition, if known. A physician may interpret the measurement to be indicative of
+                hypertension.</emphasis>
+            </para>
+          </caption>
         </figure></para>
       <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset
         of information about the blood pressure measurement - omitting "micturition context" and
@@ -173,6 +189,11 @@
       </itemizedlist>
       <para>The image below illustrates another distinct user interface for capturing a set of
         “clinical statements" related to Blood Pressure. </para>
+      <para>In the first case, the structured clinical input form has separate drop-down constraints
+        to enter the artery and laterality as distinct concepts. In the alternative data entry form,
+        the location and laterality into a compound concept. This variation present in the
+        structured clinical input forms may also have implications on how the clinical statement is
+        modeled. </para>
       <figure xml:id="Display_EHR_2">
         <title> Alternative Blood Pressure representation in a second EHR system</title>
         <mediaobject role="bordered">
@@ -180,22 +201,13 @@
             <imagedata fileref="images/EHR-2.svg" scale="60" align="center" format="SVG"/>
           </imageobject>
         </mediaobject>
-        <caption><para>PLACEHOLDER CAPTION</para></caption>
-      </figure><?oxy_comment_end?>
-      <para>In the first case, the structured clinical input form has separate drop-down constraints
-        to enter the artery and laterality as distinct concepts. In the second wire frame, the
-        structured clinical input form has combined the artery and laterality into a compound
-        concept. This variation present in the structured clinical input forms may also have
-        implications on how the clinical statement is modeled. </para>
-      <para>Ideally, clinical information is modeled in a manner that is most efficient for use.
-        This is a problem because there are many different use cases for clinical information with a
-        wide range of requirements. There is no single model that can be the most efficient model
-        for all the various use cases. Maximum efficiency for each use case necessitates that any
-        particular clinical information be available in multiple modeled forms. These models,
-        although different in form, semantically represent the same information, and are known as
-          <glossterm baseform="Isosemantic Model">isosemantic models</glossterm>. Any particular
-        detailed clinical model exists within a family of isosemantic siblings.
-      </para><?oxy_comment_end mid="13"?>
+        <caption>
+          <para><emphasis>In the second example, the scenario - a similar system or another
+              configuration of the same system - that provides a different set of options to verify
+              and record the blood pressure including a combination of conception and does not
+              support any details related to micturition..</emphasis></para>
+        </caption>
+      </figure><?oxy_comment_end?><?oxy_comment_end mid="13"?>
     </section>
   </section>
   <section>
@@ -279,9 +291,7 @@
         relying only on <glossterm baseform="Pre-coordinated concept">pre-coordinated
           concepts.</glossterm> Post-coordinated compositional terminologies are more expressive and
         can achieve better analysis than can be achieved by relying only on pre-coordinated
-        concepts. ANF can help aggregate post-coordinated content in a normalized manner with
-        respect to the content and semantics with the same representational structure as
-        post-coordinated expressions used as input. </para>
+        concepts. </para>
       <para>Successful analysis requires relatively high data quality that allows systems to define
         a precise
         <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary" flag="done"?>topic<?oxy_comment_end?>,
@@ -530,20 +540,17 @@ Yes, ANF is for URU..." flag="done"?>in
             <?oxy_comment_start author="rcholan" timestamp="20190730T121224-0400" comment="glossary" flag="done"?><glossterm
             baseform="Domain Analysis Model">Domain Analysis Models
           (DAMs)</glossterm><?oxy_comment_end?>and business models that represent stakeholder
-          requirements analyzed by
-            <?oxy_comment_start author="rcholan" timestamp="20190730T121345-0400" comment="glossary" flag="done"?><glossterm
-            baseform="Subject Matter Expert">SMEs</glossterm><?oxy_comment_end?> and
-            <?oxy_comment_start author="rcholan" timestamp="20190730T121356-0400" comment="glossary, not sure what this stands for" flag="done"?><glossterm
-            baseform="Domain Expert">DEs</glossterm><?oxy_comment_end?>. This perspective that
-          precede the development of either logical or implementable artifacts and it is key to
-          successful testing of implementations. </para>
+          requirements analyzed by subject matter and domain experts. This perspective that precede
+          the development of either logical or implementable artifacts and it is key to successful
+          testing of implementations. </para>
       </section>
       <section>
         <title>Logical Perspective</title>
         <para>Artifacts in the Logical Perspective represent traceable translations of
           Conceptual-level artifacts into a form and format, usable by and useful to architects and
           “inward-facing analysts.” Also included are additional specification materials required by
-          architects preparing artifacts for consumption by developers. </para>
+          architects preparing artifacts for consumption by developers. The Logical Perspective
+          contains platform-independent artifacts.</para>
         <para>There are no definite boundaries between the Logical and Implementable Perspectives.
           Therefore, it is important for organizations such as HL7 to standardize logical models
           used to generate/create implementable artifacts (i.e. implementation guides, profiles, and
@@ -682,7 +689,9 @@ Yes, ANF is for URU..." flag="done"?>in
       Statements and CIMI Clinical Statements in an appendix. </para>
     <note>
       <para>Throughout this document, SNOMED CT is used to describe clinical concepts and illustrate
-        sample statements based on both ANF and CIMI logical models.</para>
+        sample statements based on both ANF and CIMI logical models. For simplicity, SNOMED CT is
+        used for all logical expressions and examples in this specification but ANF implementation
+        may require LOINC or RxNorm as well.</para>
     </note>
   </section>
 </chapter>

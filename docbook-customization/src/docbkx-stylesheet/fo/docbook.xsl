@@ -395,12 +395,11 @@
         <xsl:otherwise>inherit</xsl:otherwise>
       </xsl:choose>
     </xsl:attribute>
-    <xsl:attribute name="font-family">
-      <xsl:choose>
-        <xsl:when test="self::d:table">Helvetica</xsl:when>
-        <xsl:when test="self::d:figure">Helvetica</xsl:when>
-        <xsl:otherwise>inherit</xsl:otherwise>
-      </xsl:choose>
+    <xsl:attribute name="font-family">Helvetica
+      <!--<xsl:choose>-->
+        <!--<xsl:when test="self::d:table">Helvetica</xsl:when>-->
+        <!--<xsl:when test="self::d:figure">Helvetica</xsl:when>-->
+      <!--</xsl:choose>-->
     </xsl:attribute>
   </xsl:attribute-set>
 

@@ -321,9 +321,8 @@
                             <entry>
                                 <para><emphasis role="bold">WHEN </emphasis>a requested action
                                     should be performed or <emphasis role="bold">WHEN </emphasis>an
-                                    observed finding or disorder was present</para>
-                                <para>or absent. Timing is used to capture a time or time range
-                                    for</para>
+                                    observed finding or disorder was present or absent. Timing is
+                                    used to capture a time or time range for:</para>
                                 <para>• Requests for action at a future time</para>
                                 <para>• Performance of action, which has taken place in the past
                                     (including “History of X….)</para>
@@ -537,10 +536,9 @@
                                 <entry>
                                     <para>[1...1]</para>
                                 </entry>
-                                <entry>
-                                    <para>This is a coded value representing the current status of
-                                        the intervention.</para>
-                                </entry>
+                                <entry>This is a coded value representing the current status of the
+                                intervention (e.g. "completed"). This data element is not intended
+                                as a substitute for workflow specification.</entry>
                             </row>
                             <row>
                                 <entry>
