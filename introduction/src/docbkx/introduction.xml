@@ -611,8 +611,10 @@ Yes, ANF is for URU..." flag="done"?>in
               </entry>
             </row>
             <row><entry>
-              <link xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
-                >HL7 Version 3 Standard: Clinical Statement CMETs Release 10</link></entry></row>
+                <link
+                  xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
+                  >HL7 Version 3 Standard: Clinical Statement CMETs Release 1</link>
+                <citation>HL7v3</citation></entry></row>
           </tbody>
         </tgroup>    
       </table>
