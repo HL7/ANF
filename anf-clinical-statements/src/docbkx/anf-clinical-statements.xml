@@ -19,7 +19,7 @@
                 Statements</glossterm></title>
         <para>There are two types of ANF Statements:</para>
         <para><emphasis role="bold"
-                    ><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. "?><glossterm
+                    ><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. " flag="done"?><glossterm
                     baseform="ANF Performance">Performance of
                 Action</glossterm><?oxy_comment_end?></emphasis></para>
         <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words &apos;passive&apos; &amp; &apos;active&apos;. I don&apos;t think it adds any extra information and this will keep people from argueing whether observations are really passive or active." flag="done"?><?oxy_comment_end?>
@@ -31,6 +31,7 @@
                 Action</glossterm></emphasis></para>
         <para>Requests for clinical testing, active interventions, future goals, or consultation
             with other providers. </para>
+        <para><xref linkend="anf-editorialrule-performanceRequest"/></para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
@@ -43,10 +44,10 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="6"?><?oxy_comment_end mid="6"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="9"?><?oxy_comment_end mid="9"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -128,14 +129,9 @@ Doing family history, donor statements using subject of information is now the n
             <section>
                 <title>Presence or Absence of a <glossterm baseform="Clinical phenomenom">Clinical
                         Phenomenon</glossterm></title>
-                <editorial-rule>
-                    <title>Timing - Performance of Action</title>
-                    <mathphrase>For a Performance of Action, the Timing can represent a time in the
-                        past or a current time. If a history of a performance of action is to be
-                        represented in <glossterm>ANF</glossterm> the Timing will be for a time in
-                        the past prior to the statement. Otherwise the Timing will be represented
-                        with the current time of the statement. </mathphrase>
-                </editorial-rule>
+                <!--                  <para>Timing - Performance of Action</para>
+                    
+                
                 <editorial-rule>
                     <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="title is a bit confusing... maybe Topic describing an observation."?><?oxy_comment_end?>
                     <title>Observation Topic</title>
@@ -152,6 +148,10 @@ Doing family history, donor statements using subject of information is now the n
                         Topic will have a Result with an upperBound of infinite (inf), lowerBound of
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
+                -->
+                <para><xref linkend="anf-editorialrule-timing"/></para>
+                <para><xref linkend="anf-editorialrule-topicsAreActions"/></para>
+                <para><xref linkend="anf-editorialrule-presenceAbsence"/></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Present Clinical Statement Example</title>
@@ -163,18 +163,18 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="17"?><?oxy_comment_end mid="17"?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="16"?><?oxy_comment_end mid="16"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
                     infinite (inf), and a measureSemantic of "Countable quantity".</para>
-                <editorial-rule>
+                <!--<editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
                         with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable
                         quantity".</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="As above, the topic stating absence issue." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Absent Clinical Statement Example</title>
@@ -211,8 +211,9 @@ Doing family history, donor statements using subject of information is now the n
                         is a single value, the upperBound and lowerBound will be the same value. If
                         the Result is a range, the upperBound and lowerBound will be specified as
                         such.</mathphrase>
+                    <para><xref linkend="anf-editorialrule-techniques"/></para>
                 </editorial-rule>
-                <editorial-rule>
+                <!--<editorial-rule>
                     <title><glossterm baseform="Technique">Technique</glossterm></title>
                     <mathphrase>A device used, a method applied, or a temporary state in which the
                         patient was <emphasis role="bold">actively</emphasis> placed <emphasis
@@ -271,7 +272,7 @@ Doing family history, donor statements using subject of information is now the n
                                 </itemizedlist>
                             </listitem>
                         </itemizedlist></mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <figure>
                     <title>Pulse Rate Clinical Statement Example</title>
                     <mediaobject>
@@ -287,7 +288,8 @@ Doing family history, donor statements using subject of information is now the n
                     and contains a resultant value of 68 beats/minute. Since a Result is represented
                     with an upperBound and lowerBound they are both represented as 68 in this
                     case.<?oxy_comment_end?></para>
-                <editorial-rule>
+                <para><xref linkend="anf-editorialrule-prerequisites"/></para>
+                <!--<editorial-rule>
                     <title><glossterm>Prerequisite</glossterm></title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
                             <emphasis role="bold">must</emphasis> exist before something else can
@@ -326,7 +328,7 @@ Doing family history, donor statements using subject of information is now the n
                                 </itemizedlist>
                             </listitem>
                         </itemizedlist></mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <figure>
                     <title>Systolic Blood Pressure Clinical Statement Example</title>
                     <mediaobject>
@@ -352,10 +354,10 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T143741-0500" comment="From Joey, not sure how we should capture the “prior to measurement” here? We used “timing” in the TSRs with “ISO 8601 prior to statement time”, but that is not quite right, either…" id="eys_3pz_23b"?>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="29"?>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="26"?>
                             <imagedata fileref="images/bp_complex3_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"
-                            /><?oxy_comment_end?><?oxy_comment_end mid="29"?>
+                            /><?oxy_comment_end?><?oxy_comment_end mid="26"?>
                         </imageobject>
                     </mediaobject>
                 </figure>
@@ -444,12 +446,13 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Administering a Medication or Other Substance</title>
-                <editorial-rule>
+                <!--<editorial-rule>
                     <title>Purpose</title>
                     <mathphrase>The purpose is why an action was requested. The purpose of the topic
                         is represented with either an Evaluation procedure or Therapeutic procedure
                         with a hasFocus attribute describing the purpose.</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
+                <para><xref linkend="anf-editorialrule-purpose"/></para>
                 <editorial-rule>
                     <title>Administration of Medication Topic - Performance of Action</title>
                     <mathphrase>To represent the performance of an administration of medication, the
