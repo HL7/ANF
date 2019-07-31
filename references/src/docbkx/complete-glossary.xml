@@ -410,4 +410,8 @@
         <acronym>NNH</acronym>
         <glossdef><para></para></glossdef>
     </glossentry>
+    <glossentry>
+        <glossterm>Knowledge Architecture</glossterm>
+        <glossdef><para></para></glossdef>
+    </glossentry>
 </glossary>

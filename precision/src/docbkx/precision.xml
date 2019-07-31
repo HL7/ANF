@@ -2,20 +2,20 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Pragmatic Usage and Next Steps</title>
-    <para>Like other CIMI isosemantic models, ANF is a logical model and therefore it may
+    <para>Like other <glossterm baseform="Clinical Information Modeling Initiative">CIMI</glossterm> <glossterm baseform="Isosemantic Model">isosemantic models</glossterm>, <glossterm baseform="Analysis Normal Form">ANF</glossterm> is a <glossterm baseform="Logical Model">logical model</glossterm> and therefore it may
         implemented using relevant implementable models and technology (see <link
             linkend="SAIF-CD-diagram"
             ><?oxy_comment_start author="Ioana" timestamp="20190729T170311-0400" comment="Add reference to intro" flag="done"?>SAIF-CD<?oxy_comment_end?></link>).
         Therefore, this project will expand on the use of ANF alongside preexisting information
-        exchange HL7 standards (i.e. HL7 V2 messaging, CDA documents) and HL7 standards-based APIs
-        (i.e., FHIR resources). In practice, ANF is applicable to systems normalizing or creating
-        normalized data to support <link linkend="SoC_Section">Assertional</link> and <link
-            linkend="SoC-diagram">Procedural</link> knowledge (e.g. clinical alerts, workflow, data
+        exchange <glossterm baseform="Health Level Seven">HL7</glossterm> standards (i.e. <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2 messaging</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA documents</glossterm>) and HL7 standards-based APIs
+        (i.e., <glossterm baseform="Fast Healthcare Interoperability Resource">FHIR</glossterm> resources). In practice, ANF is applicable to systems normalizing or creating
+        normalized data to support <link linkend="SoC_Section"><glossterm baseform="Assertional Knowledge">Assertional</glossterm></link> and <link
+            linkend="SoC-diagram"><glossterm baseform="Procedural Knowledge">Procedural</glossterm></link> knowledge (e.g. clinical alerts, workflow, data
         analysis, decision support). These need to aggregate data from many isosemantic source
         models into a single analysis format.</para>
     <para>Implementers may use the logical model and methodology in this document to design software
         components, databases, or APIs that support reuse and analysis of treatment information
-        captured using best practices (e.g. CIMI models) and exchanged using interoperability
+        captured using best practices (e.g. <glossterm baseform="Clinical Information Model">CIMI models</glossterm>) and exchanged using interoperability
         specifications required across the US (e.g. FHIR US Core, Consolidated CDA). Since
         information sharing already relies on a variety of clinical statement approaches and syntax
         representations, it will become necessary to create normalized instances of those clinical
@@ -32,7 +32,7 @@
         binding based on standard terminologies (e.g. SNOMED CT, LOINC, RxNorm) to support the
         Terminology layer of
         the<?oxy_comment_start author="Ioana" timestamp="20190731T020015-0400" comment="Link to intro"?>
-        <link linkend="SoC_Section">Knowledge Architecture</link>.<?oxy_comment_end?></para>
+        <link linkend="SoC_Section"><glossterm baseform="Knowledge Architecture">Knowledge Architecture</glossterm></link>.<?oxy_comment_end?></para>
     <section>
         <info>
             <title>ANF FHIR implementation</title>
@@ -59,7 +59,7 @@
                 support rules. Healthcare enterprises may use middleware, standards-based
                 transformation and terminology servers to normalize a variety of observations,
                 orders, diagnoses, medications, procedure notes, and other interventions to a set of
-                Performance or Request statements. Narrative clinical statements may not be
+                        <glossterm baseform="ANF Performance">Performance</glossterm> or <glossterm baseform="ANF Request">Request</glossterm> statements. Narrative clinical statements may not be
                 immediately reducible to ANF and it may require natural language processing and
                 other methods of augmentation and enhancement.</para>
 
