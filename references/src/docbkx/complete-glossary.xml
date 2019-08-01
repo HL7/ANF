@@ -280,14 +280,10 @@
         <acronym>CIM</acronym>
         <glossdef>
             <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>According to Model-Driven Architecture, a Computation Independent
+                        According to Model-Driven Architecture, a Computation Independent
                             model (CIM) corresponds to a view defined by a computation independent
                             viewpoint. It describes the business context and business requirements
-                            for the software system(s).</para>
-                    </listitem>
-                </itemizedlist>
+                            for the software system(s).
             </para>
         </glossdef>
     </glossentry>
