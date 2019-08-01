@@ -505,14 +505,16 @@ Doing family history, donor statements using subject of information is now the n
                         with a hasFocus attribute describing the purpose.</mathphrase>
                 </editorial-rule>-->
                 <para>See editorial rule: <xref linkend="anf-editorialrule-purpose"/></para>
-                <editorial-rule>
+                <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"
+                    /></para>
+                <!--<editorial-rule>
                     <title>Administration of Medication Topic - Performance of Action</title>
                     <mathphrase>To represent the performance of an administration of medication, the
                         Topic will be built using the Administration of substance concept. All
                         Administration of substance concepts will be refined with the substance and
                         dose form and strength being requested. If Route of administration exists,
                         then it will also be added.</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <figure>
                     <title> Administration of Medication ANF Example</title>
                     <mediaobject>
@@ -533,12 +535,14 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Provision of Educational Materials</title>
-                <editorial-rule>
+                <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"
+                    /></para>
+                <!--<editorial-rule>
                     <title>Topic for All Other Procedures</title>
                     <mathphrase>Any other action that was performed would be represented by a
                         Procedure concept with any of the approved terminology procedure attributes
                         applied.</mathphrase>
-                </editorial-rule>
+                </editorial-rule>-->
                 <figure>
                     <title>Provision of Educational Material ANF Example</title>
                     <mediaobject>
