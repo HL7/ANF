@@ -160,7 +160,7 @@
             <para>Next, the physician adds an interpretation. </para>
           </listitem>
         </orderedlist><figure xml:id="CIF_EHR_1">
-          <title> Blood Pressure Statement recorded by an EHR system</title>
+          <title>Blood Pressure Statement recorded by an EHR system</title>
           <mediaobject role="bordered">
             <imageobject>
               <imagedata fileref="images/BP data capture.svg" scale="60" align="center" format="SVG"
@@ -196,7 +196,7 @@
         structured clinical input forms may also have implications on how the clinical statement is
         modeled. </para>
       <figure xml:id="Display_EHR_2">
-        <title> Alternative Blood Pressure representation in a second EHR system</title>
+        <title>Alternative Blood Pressure representation in a second EHR system</title>
         <mediaobject role="bordered">
           <imageobject>
             <imagedata fileref="images/EHR-2.svg" scale="60" align="center" format="SVG"/>
