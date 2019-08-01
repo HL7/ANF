@@ -3,17 +3,19 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
-    <title>How ANF Works? ANF Clinical Statements</title>
-    <para>In the context of the ANF Model, a <glossterm baseform="Clinical Statement">clinical statement</glossterm> represents an entry in the patient
-        record that documents, in a structured/computable manner, clinical information related to
-        the patient that is asserted by a particular source, recorded, and potentially verified. </para>
-    <para>As seen in the <glossterm baseform="CIMI Clinical Statement">CIMI Clinical Statements</glossterm> section, clinical information related to the
-        patient can be entered and stored in an EMR in multiple different ways. ANF strives to
-        standardize the structure of clinical statements to eliminate the disparity of clinical
-        information by limiting the design choices a clinical modeler must make. ANF can then act as
-        a consistent transformation target for the multiple differing clinical information
-        representations that currently exist, making this clinical information more easily
-        computable and eliminating the need to create multiple ways to analyze the same data.</para>
+    <title>How ANF Works: ANF Clinical Statements</title>
+    <para>In the context of the ANF Model, a <glossterm baseform="Clinical Statement">clinical
+            statement</glossterm> represents an entry in the patient record that documents, in a
+        structured/computable manner, clinical information related to the patient that is asserted
+        by a particular source, recorded, and potentially verified. </para>
+    <para>As seen in the <glossterm baseform="CIMI Clinical Statement">CIMI Clinical
+            Statements</glossterm> section, clinical information related to the patient can be
+        entered and stored in an EHR in multiple different ways. ANF strives to standardize the
+        structure of clinical statements to eliminate the disparity of clinical information by
+        limiting the design choices a clinical modeler must make. ANF can then act as a consistent
+        transformation target for the multiple differing clinical information representations that
+        currently exist, making this clinical information more easily computable and eliminating the
+        need to create multiple ways to analyze the same data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of <glossterm baseform="ANF Statement">ANF
                 Statements</glossterm></title>

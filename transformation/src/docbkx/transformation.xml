@@ -83,7 +83,7 @@
                 </imageobject>
             </mediaobject>
             <caption><para><emphasis>Various isosemantic representations of statement models can be brought toegether
-                        into a consistent representation, Analysis Normal Form</emphasis></para></caption>
+                        into Analysis Normal Form</emphasis></para></caption>
         </figure>
 
         <para>Transformation, in this case, is not a simple endeavor that one can hope to automate
@@ -225,7 +225,7 @@
     -->
     
     <section>
-        <title>Transformation</title>
+        <title>Transformation to ANF</title>
         
         <para> A number of options exist for expressing transformation logic and for executing the
             transformation on specific instances of clinical data for normalization into ANF.  These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author.  One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
@@ -456,7 +456,9 @@
                         <imagedata fileref="images/mdmi_standard.png" align="center" format="png" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
-                <caption><para>PLACEHOLDER CAPTION</para></caption>
+                <caption>
+                    <para><emphasis>The MDMI Transformation Metamodel</emphasis></para>
+                </caption>
             </figure>
 
             <para>
@@ -483,7 +485,7 @@
                         <imagedata fileref="images/mdmi_transformation_process.png" align="center" format="png" width="100%" scale="70"/>
                     </imageobject>
                 </mediaobject>
-                <caption><para>PLACEHOLDER CAPTION</para></caption>
+                <caption><para><emphasis>The MDMI Transformation Process</emphasis></para></caption>
             </figure>
 
 
