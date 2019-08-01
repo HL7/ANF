@@ -44,7 +44,7 @@ Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
 
 Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED CT, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure>
-                <title>Pulse Rate 68bpm, Taken by Pulse Oximeter - ANF Representation</title>
+                <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/pulse_rate_anf.svg" format="SVG" scalefit="1"
@@ -53,13 +53,14 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 </mediaobject>
             </figure>
             <figure>
-                <title>Pulse Rate 68bpm, Taken by Pulse Oximeter - CIMI Representation</title>
+                <title>Pulse Rate - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/pulse_rate_cimi.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Pulse Rate 68bpm, Taken by Pulse Oximeter ANF vs CIMI Representations</emphasis></para></caption>
             </figure>
         </para>  
         <para>One implication of this is that the ANF is using two formalisms to represent the
@@ -93,6 +94,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Dot Blot Hemorrhage Present - ANF Representation</emphasis></para></caption>
         </figure>
         <figure>
             <title>Three Dot Blot Hemorrhage - ANF Representation</title>
@@ -102,6 +104,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Three Dot Blot Hemorrhage - ANF Representation</emphasis></para></caption>
         </figure>
         <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other." flag="done"?><?oxy_comment_end?>
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice
@@ -110,7 +113,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             are very aligned, except for the fact that the ANF model will always use a range of that
             quantity.</para>
         <figure>
-            <title>Systolic Blood Pressure 120 mmHg - CIMI Representation</title>
+            <title>Systolic Blood Pressure - CIMI Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="kec" timestamp="20190722T173728-0700" comment="The CIMI statements and ANF statements are not visually distincitve, and easy to confuse. Several possible ways of improving. One would be to always present comparisons within a table that has ANF on the top ros, and CIMI on following row. This presents other benifits by havign the comparisons on the same page is the table does not get broken up. "?>
@@ -118,6 +121,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg - CIMI Representation</emphasis></para></caption>
         </figure>
         <para>But when a CIMI model has a potential coded result, the choice between
             <?oxy_comment_start author="kec" timestamp="20190722T173830-0700" comment="Is there potential for confusion betwen when to use evauation result, assertion, and other types of coded result? "?>EvaluationResult
@@ -227,6 +231,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                     /><?oxy_comment_end?><?oxy_comment_end mid="3"?>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Tubular Breath Sounds - CIMI Evaluation Representation</emphasis></para></caption>
         </figure>
         <para>The other option, is that each of the breath sounds in the valueset is modeled as an
             Assertion with a topic of Tubular breathing and a contextCode indicating presence or
@@ -246,6 +251,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                     /><?oxy_comment_end?><?oxy_comment_end mid="6"?>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Tubular Breath Sounds - CIMI Evaluation Representation</emphasis></para></caption>
         </figure>
         <para>In this example, the ANF model doesn't support an EvaluationResult style model as it
             doesn't allow coded results. Thus, ANF is forced to make one and only one choice, which
@@ -274,15 +280,16 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 aligned.  Since the ANF model requires both an upper and lower bound there is extra
                 information required.</para>
             <figure>
-                <title>Systolic Blood Pressure 120 mmHg - ANF Representation</title>
+                <title>Systolic Blood Pressure - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/blood_pressure_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="images/blood_pressure_anf.svg" format="SVG" scalefit="1"
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
             </figure>
             <figure>
-                <title>Systolic Blood Pressure 120 mmHg - CIMI Representation</title>
+                <title>Systolic Blood Pressure - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <?oxy_comment_start author="kec" timestamp="20190722T173926-0700" comment="Make cimi and anf visualy distinct and possibly present together in a table. 
@@ -291,6 +298,8 @@ Also, the implications of a more complex seperation of concerns with respect to 
                             scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg - ANF vs CIMI
+                            Representations</emphasis></para></caption>
             </figure>
         </section>
         <section>
@@ -308,43 +317,52 @@ Also, the implications of a more complex seperation of concerns with respect to 
             <para>The ANF model is much more expressive and is able to capture the timing
                 information for the position and urination that requires a separate precondition code to be created in the CIMI model.</para>
             <figure>
-                <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
-                    Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes, Urinated
-                    Not More Than 30 Minutes Prior to Measurement - ANF Representation</title>
+                <title>Systolic Blood Pressure with Associated Statements- ANF
+                    Representation</title>
                <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery,
+                            Using BP Cuff Adult Size, Patient in Sitting Position for at Least 5
+                            Minutes, Urinated Not More Than 30 Minutes Prior to Measurement - ANF
+                            Representation</emphasis></para></caption>
             </figure>
             <figure>
-                <title>Patient in Sitting Position for at Least 5 Minutes - Associated ANF Statement
-                    #1</title>
+                <title>Systolic Blood Pressure Sitting Position Associated - ANF
+                    Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex2_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-            </figure>
+                <caption><para><emphasis role="italics">Patient in Sitting Position for at Least 5 Minutes - ANF
+                            Representation</emphasis></para></caption>
+                          </figure>
             <figure>
-                <title>Urinated Not More Than 30 Minutes Prior to Measurement - Associated ANF
-                    Statement #2</title>
+                <title>Systolic Blood Pressure Urination  - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex3_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Urinated Not More Than 30 Minutes Prior to Measurement - ANF
+                            Representation</emphasis></para></caption>
             </figure>
             <figure>
-                <title>Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
-                    Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes, Urinated
-                    Not More than 30 Minutes Prior to Measurement  - CIMI Representation</title>
+                <title>Systolic Blood Pressure with Associated Statements - CIMI
+                    Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/bp_complex_cimi.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery,
+                            Using BP Cuff Adult Size, Patient in Sitting Position for at Least 5
+                            Minutes, Urinated Not More than 30 Minutes Prior to Measurement - CIMI
+                            Representation</emphasis></para></caption>
             </figure>
         </section>
          
@@ -356,20 +374,22 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 lowerBound of 1 and an upperBound of infinite.  Representing absence would be done
                 with an upper and lower bound of zero.</para>
             <figure>
-                <title>Diabetes Mellitus Type 2 - ANF Representation</title>
+                <title>Diabetes Mellitus Present - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Diabetes Mellitus Type 2 - ANF Representation</emphasis></para></caption>
             </figure>
             <figure>
-                <title>Diabetes Mellitus Type 2 - CIMI Representation</title>
+                <title>Diabetes Mellitus Present - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/dm_cimi.svg" format="SVG" scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Diabetes Mellitus Type 2 - CIMI Representation</emphasis></para></caption>
             </figure>
         </section>
     </section>
