@@ -152,8 +152,7 @@ Doing family history, donor statements using subject of information is now the n
                 </editorial-rule>
                 -->
                 <para>See editorial rule: <xref linkend="anf-editorialrule-timing"/></para>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"
-                    /></para>
+                <para>See editorial rule: <xi:include href="..\..\..\analysis-normal-form\src\docbkx\editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions)"/></para>
                 <para>See editorial rule: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
@@ -398,10 +397,12 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
-                    using an adult sized cuff, but also includes two prerequisites that are
-                    represented as separate associated ANF Statements. In the Associated Statements
-                    we see examples of Results having a range of values using the upperBound and
-                    lowerBound.</para>
+                    using an adult sized cuff, but also includes two prerequisites
+                    th<?oxy_comment_start author="timowilliams" timestamp="20190801T083854-0500" comment="add link here"?>at
+                    are represented as separate associated ANF Statements. In the Associated
+                    Statements we see examples of Results having a range of values using the
+                    upperBound and lowerBound. Too see a more detailed representation see the
+                    tabular form here: <?oxy_comment_end?></para>
                 <figure>
                     <title>Three Dot Blot Hemorrhages ANF Example</title>
                     <mediaobject>
