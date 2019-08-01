@@ -37,7 +37,7 @@
                     </para>
         		</listitem>
         		<listitem>
-					<para> Medication administrations will use an Administration of substance concept to represent
+					<para>Medication administrations will use an Administration of substance concept to represent
                         the topic. All Administration of substance concepts will be refined with the
                         substance and dose form and strength being requested. If Route of
                         administration exists, then it will also be added. </para>
@@ -115,16 +115,21 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-separateCompoundTopics-content">
                 <listitem>
-                    <para> For the purposes of ANF, a statement is a request or performance of an
+                    <para>For the purposes of ANF, a statement is a request or performance of an
                         action that should exist independently. Thus, if a compound topic contains
                         two topics that could each exist separately, then they should be divided
                         into separate ANF Statements. These independent ANF Statements can then be
                         associated with each other as associated statements. </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        For example, "Negative screen for PTSD and depression", contains two separate ANF Statements that would then be associated to each other. However, if the narrative represents two or more actions that are performed as a single activity at the same time without the need for stopping the action, then a single topic would be used. For example, "Lumbar/Thoracic Spine CT" would be represented with a single topic as it represents a single activity that is performed at the same time even though a Lumbar CT and a Thoracic CT could be done separately.
-                    </para>
+                    <para>For example, "Negative screen for PTSD and depression", contains two
+                        separate ANF Statements that would then be associated to each other.
+                        However, if the narrative represents two or more actions that are performed
+                        as a single activity at the same time without the need for stopping the
+                        action, then a single topic would be used. For example, "Lumbar/Thoracic
+                        Spine CT" would be represented with a single topic as it represents a single
+                        activity that is performed at the same time even though a Lumbar CT and a
+                        Thoracic CT could be done separately. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -135,14 +140,12 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-techniques-content">
                 <listitem>
-                	<para>
-                        A technique is inseparable from the topic and cannot be expressed as a stand-alone clinical statement.
-                    </para>
+                	<para>A technique is inseparable from the topic and cannot be expressed as a
+                        stand-alone clinical statement. </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        A technique is a device used, a method applied, or a temporary state in which the patient was actively placed during performance of the action.
-                    </para>
+                    <para>A technique is a device used, a method applied, or a temporary state in
+                        which the patient was actively placed during performance of the action. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -153,14 +156,14 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-prerequisites-content">
                 <listitem>
-                	<para>
-                        A prerequisite is separable from the topic and can be expressed as a stand-alone clinical statement
-                    </para>
+                	<para>A prerequisite is separable from the topic and can be expressed as a
+                        stand-alone clinical statement </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        A prerequisite is a state that must exist before something else can happen or be done. Prerequisites are part of the details under which a procedure is being performed. The state must exist prior to the performance of the action.
-                    </para>
+                    <para>A prerequisite is a state that must exist before something else can happen
+                        or be done. Prerequisites are part of the details under which a procedure is
+                        being performed. The state must exist prior to the performance of the
+                        action. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -171,9 +174,11 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-associatedStatement-content">
                 <listitem>
-                	<para>
-                        Use an associated statement when it is important for the interpretation of one statement that the other statements were observed, performed, or requested. Also, if there is some implicitness that the two statements are related (pleural empyema with fistula) or that they are unrelated (Akinetic seizure without atonia) then the two statements should be associated.
-                    </para>
+                	<para>Use an associated statement when it is important for the interpretation of
+                        one statement that the other statements were observed, performed, or
+                        requested. Also, if there is some implicitness that the two statements are
+                        related (pleural empyema with fistula) or that they are unrelated (Akinetic
+                        seizure without atonia) then the two statements should be associated. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -184,9 +189,9 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content">
                 <listitem>
-                    <para>
-                	   The subjectOfInformation is used to represent who the statement is about. This is normally the patient (Subject of record) unless explicitly stated otherwise, for example Mother, Sibling, Donor, etc.
-                    </para>
+                    <para>The subjectOfInformation is used to represent who the statement is about.
+                        This is normally the patient (Subject of record) unless explicitly stated
+                        otherwise, for example Mother, Sibling, Donor, etc. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -197,9 +202,8 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-status-content">
                 <listitem>
-                	<para>
-                        The status of a Performance of action can be specified with concepts such as (on hold, needed, rejected, etc).
-                    </para>
+                	<para>The status of a Performance of action can be specified with concepts such as
+                        (on hold, needed, rejected, etc). </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -210,9 +214,8 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-healthRisk-content">
                 <listitem>
-                	<para>
-                        In PerformanceCircumstance, healthRisk is used to flag a result with coded values such as 'low', 'normal', high', and 'critical'.
-                    </para>
+                	<para>In PerformanceCircumstance, healthRisk is used to flag a result with coded
+                        values such as 'low', 'normal', high', and 'critical'. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -223,9 +226,8 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
-                	<para>
-                        In PerfromanceCircumstance, normalRange is used to flag a result with coded values such as 'low', 'normal', high', and 'critical'.
-                    </para>
+                	<para>In PerfromanceCircumstance, normalRange is used to flag a result with coded
+                        values such as 'low', 'normal', high', and 'critical'. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -236,14 +238,12 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-participants-content">
                 <listitem>
-                    <para>
-                        A Performance of action can specify participants using participant in PerformanceCircumstance.
-                    </para>
+                    <para>A Performance of action can specify participants using participant in
+                        PerformanceCircumstance. </para>
                 </listitem>
                 <listitem>
-                	<para>
-                        A Request for action can specify requested participants  using requestedParticipant in RequestCircumstance.
-                    </para>
+                	<para>A Request for action can specify requested participants using
+                        requestedParticipant in RequestCircumstance. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -254,9 +254,9 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-purpose-content">
                 <listitem>
-                    <para>
-                	   The purpose is why an action was requested. The purpose of the topic is represented with either an Evaluation procedure or Therapeutic procedure with a hasFocus attribute describing the purpose.
-                    </para>
+                    <para>The purpose is why an action was requested. The purpose of the topic is
+                        represented with either an Evaluation procedure or Therapeutic procedure
+                        with a hasFocus attribute describing the purpose. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -267,9 +267,9 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-priority-content">
                 <listitem>
-                	<para>
-                        Priority is used to represent the priority for which a request is to be carried out. By default a Request will be considered "routine" unless otherwise specified.
-                    </para>
+                	<para>Priority is used to represent the priority for which a request is to be
+                        carried out. By default a Request will be considered "routine" unless
+                        otherwise specified. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -280,14 +280,13 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-repetition-content">
                 <listitem>
-                	<para>
-                        Repetition is used to represent when an action is requested for more than a single occurrence. 
-                    </para>
+                	<para>Repetition is used to represent when an action is requested for more than a
+                        single occurrence. </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        Repetition is an optional component for a RequestCircumstance and contains five Measures that are used to further define the parameters of the Repetition:
-                    </para>
+                    <para>Repetition is an optional component for a RequestCircumstance and contains
+                        five Measures that are used to further define the parameters of the
+                        Repetition: </para>
 
                     <itemizedlist>
                         <listitem>
@@ -328,19 +327,17 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-requestedResult-content">
                 <listitem>
-                    <para>
-                        A desired result can be specified as a Measure using requestedResult in RequestCircumstance.
-                    </para>
+                    <para>A desired result can be specified as a Measure using requestedResult in
+                        RequestCircumstance. </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        If a requestedResult is specified, the appropriate upperBound and lowerBound is specified with the correct MeasureSemantic.
-                    </para>
+                    <para>If a requestedResult is specified, the appropriate upperBound and
+                        lowerBound is specified with the correct MeasureSemantic. </para>
                 </listitem>
                 <listitem>
-                	<para>
-                        If a requestedResult is not specified in the request, an upperBound and lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement time. 
-                    </para>
+                	<para>If a requestedResult is not specified in the request, an upperBound and
+                        lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement
+                        time. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
