@@ -10,7 +10,7 @@
         modeling. The modeling within the post-coordinated expressions of the “topic” could
         potentially be done in different ways.</para>
     <section>
-        <title><anchor xml:id="_Toc5884786"/>Blood Pressure Measurement </title>
+        <title><anchor xml:id="table_perform_bpm"/>Blood Pressure Measurement </title>
         <table>
             <title>Blood Pressure
                 <?oxy_comment_start author="kec" timestamp="20190721T191629-0700" comment="I thought these tables where going away and would be replaced by the graphical representation that Tim has been working on.  "?>Performance
@@ -292,7 +292,7 @@
         </table>
     </section>
     <section>
-        <title><anchor xml:id="_Toc5884787"/>Pulse Rate Measurement</title>
+        <title><anchor xml:id="table_perform_pulse"/>Pulse Rate Measurement</title>
         <para>
             <table>
                 <title>Pulse Rate Measurement Performance Statement</title>
@@ -384,7 +384,7 @@
         </para>
     </section>
     <section>
-        <?oxy_comment_start author="kmaulden" timestamp="20190418T112637-0400" comment="This and all the following examples still have to be either formatted (tables) like the examples above or moved into an Appendix, where the formatting could be simpler."?>
+        <?oxy_comment_start author="kmaulden" timestamp="20190418T112637-0400" comment="This and all the following examples still have to be either formatted (tables) like the examples above or moved into an Appendix, where the formatting could be simpler." flag="done"?>
         <title>Patient History</title><?oxy_comment_end?>
         <table>
             <title>Patient History Performance Statement</title>
@@ -472,7 +472,7 @@
         </table>
     </section>
     <section>
-        <title>Condition Present</title>
+        <title><anchor xml:id="table_perform_dmpresent"/>Condition Present</title>
         <table>
             <title>Condition Present Performance Statement</title>
             <tgroup cols="2">
@@ -559,7 +559,7 @@
         </table>
     </section>
     <section>
-        <title>Condition Not Present</title>
+        <title><anchor xml:id="table_perform_dmabsent"/>Condition Not Present</title>
         <table>
             <title>Condition Not Present Performance Statement</title>
             <tgroup cols="2">
@@ -647,7 +647,7 @@
         </table>
     </section>
     <section>
-        <title>Three Dot Blot Hemorrhages</title>
+        <title><anchor xml:id="table_perform_3dbh"/>Three Dot Blot Hemorrhages</title>
         <table>
             <title>Three Dot Blot Hemorrhages Performance Clinical Statement</title>
             <tgroup cols="2">
@@ -734,7 +734,7 @@
         </table>
     </section>
     <section>
-        <title>Dot Blot Hemorrhage Present</title>
+        <title><anchor xml:id="table_perform_dbhpresent"/>Dot Blot Hemorrhage Present</title>
         <table>
             <title>Dot Blot Hemorrhage Present Performance Clinical Statement</title>
             <tgroup cols="2">

@@ -174,7 +174,9 @@ Doing family history, donor statements using subject of information is now the n
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
-                    infinite (inf), and a measureSemantic of "Countable quantity".</para>
+                    infinite (inf), and a measureSemantic of "Countable quantity".  Too see a more
+                    detailed representation see the tabular form here: <xref
+                        linkend="table_perform_dmpresent"/></para>
                 <para>See editorial rule: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
                 <!--<editorial-rule>
                     <title>Statement of absence of a Topic</title>
@@ -199,7 +201,8 @@ Doing family history, donor statements using subject of information is now the n
                 <para>In the Diabetes Mellitus Type 2 Absent example, the topic is the same as
                     Diabetes Mellitus Type 2 Present example. The difference is in the Result which
                     is represented as an upperBound and lowerBound of zero with the same
-                    measureSemantic.</para>
+                    measureSemantic.  Too see a more detailed representation see the tabular form
+                    here: <xref linkend="table_perform_dmabsent"/></para>
                 <figure>
                     <title>Dot Blot Hemorrhage Present ANF Example</title>
                     <mediaobject>
@@ -210,8 +213,10 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>
+                        <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>    
                     </caption>
+                    <para>Too see a more detailed representation see the tabular form here: <xref
+                            linkend="table_perform_dbhpresent"/></para>
                 </figure>
             </section>
             <section>
@@ -306,7 +311,8 @@ Doing family history, donor statements using subject of information is now the n
                 <para>The Pule Rate example above utilizes a technique, the pulse oximeter device,
                     and contains a resultant value of 68 beats/minute. Since a Result is represented
                     with an upperBound and lowerBound they are both represented as 68 in this
-                    case.<?oxy_comment_end?></para>
+                    case.<?oxy_comment_end?> Too see a more detailed representation see the tabular
+                    form here: <xref linkend="table_perform_pulse"/></para>
                 <para>See editorial rule: <xref linkend="anf-editorialrule-prerequisites"/></para>
                 <!--<editorial-rule>
                     <title><glossterm>Prerequisite</glossterm></title>
@@ -397,12 +403,11 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
-                    using an adult sized cuff, but also includes two prerequisites
-                    th<?oxy_comment_start author="timowilliams" timestamp="20190801T083854-0500" comment="add link here"?>at
-                    are represented as separate associated ANF Statements. In the Associated
-                    Statements we see examples of Results having a range of values using the
-                    upperBound and lowerBound. Too see a more detailed representation see the
-                    tabular form here: <?oxy_comment_end?></para>
+                    using an adult sized cuff, but also includes two prerequisites that are
+                    represented as separate associated ANF Statements. In the Associated Statements
+                    we see examples of Results having a range of values using the upperBound and
+                    lowerBound. Too see a more detailed representation see the tabular form here:
+                        <xref linkend="table_perform_bpm"/></para>
                 <figure>
                     <title>Three Dot Blot Hemorrhages ANF Example</title>
                     <mediaobject>
@@ -415,7 +420,8 @@ Doing family history, donor statements using subject of information is now the n
                         <para><emphasis role="italics">Three Dot Blot Hemorrhages</emphasis></para>
                     </caption>
                 </figure>
-                <para/>
+                <para>Too see a more detailed representation see the tabular form here: <xref
+                        linkend="table_perform_3dbh"/></para>
                 <figure>
                     <title>Positive Screen for Fall Risk ANF Example</title>
                     <mediaobject>
