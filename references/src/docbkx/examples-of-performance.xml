@@ -561,7 +561,7 @@
     <section>
         <title>Condition Not Present</title>
         <table>
-            <title>Condition Not Present Peformance Statement</title>
+            <title>Condition Not Present Performance Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
