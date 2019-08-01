@@ -7,7 +7,7 @@
     <section>
         <title><anchor xml:id="_Toc5884799"/>Summary of Care</title>
         <table>
-            <title>Summary of Care 1</title>
+            <title>Summary of Care</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -183,21 +183,6 @@
                                     Albuterol 0.09 MG/ACTUAT]</emphasis></para>
                         </entry>
                     </row>
-                </tbody>
-            </tgroup>
-        </table>
-        <para> </para>
-        <para> </para>
-        <table>
-            <title>Summary of Care 2</title>
-            <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
-                <tbody>
-                    <row>
-                        <entry><emphasis role="bold">C-CDA Category/Entry</emphasis></entry>
-                        <entry><emphasis role="bold">Modeling</emphasis></entry>
-                    </row>
                     <row>
                         <entry morerows="1">
                             <para>Functional and Cognitive Status</para>
@@ -211,23 +196,23 @@
                             </itemizedlist>
                         </entry>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic"
-                                    >[5751000205109|Observation procedure]-</emphasis></para>
+                                >[5751000205109|Observation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus)
-                                    [</emphasis><emphasis role="italic">118228005 |Functional
+                                [</emphasis><emphasis role="italic">118228005 |Functional
                                     finding]-</emphasis></para>
                             <para><emphasis role="italic">(363714003 |Interprets) [246464006
-                                    |Function]-</emphasis></para>
+                                |Function]-</emphasis></para>
                             <para><emphasis role="italic">(363713009 |Has interpretation) [17621005
-                                    |Normal];</emphasis></para>
+                                |Normal];</emphasis></para>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic"
@@ -264,81 +249,81 @@
                             <para> </para>
                         </entry>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic: </emphasis>[<emphasis role="italic"
-                                    >14456009 |Measuring height of patient]-</emphasis></para>
+                                >14456009 |Measuring height of patient]-</emphasis></para>
                             <para><emphasis role="italic">(260686004 |Method) [129266000
-                                    |Measurement - action]</emphasis></para>
+                                |Measurement - action]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Result:</emphasis><emphasis role="italic">
-                                    70 [258677007 |Inch]</emphasis></para>
+                                70 [258677007 |Inch]</emphasis></para>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic: </emphasis>[<emphasis role="italic"
-                                    >39857003 |Weighing patient]-</emphasis></para>
+                                >39857003 |Weighing patient]-</emphasis></para>
                             <para><emphasis role="italic">(260686004 |Method) [129266000
-                                    |Measurement - action]</emphasis></para>
+                                |Measurement - action]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Result:</emphasis><emphasis role="italic">
-                                    195 [258693003 |pounds]</emphasis></para>
+                                195 [258693003 |pounds]</emphasis></para>
                         </entry>
                     </row>
                     
                     <row>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic: </emphasis>[<emphasis role="italic"
-                                    >698094009 |Measurement of body mass index]-</emphasis></para>
+                                >698094009 |Measurement of body mass index]-</emphasis></para>
                             <para><emphasis role="italic">(260686004 |Method) [129266000
-                                    |Measurement - action]</emphasis></para>
+                                |Measurement - action]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Result:</emphasis><emphasis role="italic">
-                                    28</emphasis></para>
+                                28</emphasis></para>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic">
-                                    [5751000205109|Observation procedure]-</emphasis></para>
+                                [5751000205109|Observation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(260686004|Method) [302199004|Examination
-                                    - action]-</emphasis></para>
+                                - action]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [163030003 |On
-                                    examination - Systolic blood pressure
+                                examination - Systolic blood pressure
                                 reading];</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Result:</emphasis><emphasis role="italic">
-                                    155 [259018001 |Millimeter of mercury]</emphasis></para>
+                                155 [259018001 |Millimeter of mercury]</emphasis></para>
                         </entry>
                     </row>
                     
                     <row>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
+                            <para><emphasis role="bold">Statement type:</emphasis>
                                 <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic">
-                                    [5751000205109|Observation procedure]-</emphasis></para>
+                                [5751000205109|Observation procedure]-</emphasis></para>
                             <para><emphasis role="italic">(260686004|Method) [302199004|Examination
-                                    - action]-</emphasis></para>
+                                - action]-</emphasis></para>
                             <para><emphasis role="italic">(363702006 |Has focus) [163031004 |On
-                                    examination - Diastolic blood pressure
+                                examination - Diastolic blood pressure
                                 reading]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Circumstance:</emphasis></para>
                             <para><emphasis role="bold">Result:</emphasis><emphasis role="italic">
-                                    92 [259018001 |Millimeter of mercury]</emphasis></para>
+                                92 [259018001 |Millimeter of mercury]</emphasis></para>
                         </entry>
                     </row>
                     <row>
@@ -381,8 +366,8 @@
                             <para> </para>
                         </entry>
                         <entry>
-                                    <para><emphasis role="bold">Statement type:</emphasis>
-                                        <emphasis role="italic">[Performance]</emphasis></para>
+                            <para><emphasis role="bold">Statement type:</emphasis>
+                                <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic">
                                 [266724001 |Weight-reducing diet education]</emphasis></para>
@@ -390,8 +375,8 @@
                     </row>
                     <row>
                         <entry>
-                                <para><emphasis role="bold">Statement type:</emphasis>
-                                    <emphasis role="italic">[Performance]</emphasis></para>
+                            <para><emphasis role="bold">Statement type:</emphasis>
+                                <emphasis role="italic">[Performance]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic:</emphasis><emphasis role="italic">
                                 [698605001 |Education about asthma self
@@ -403,9 +388,8 @@
     </section>
     <section>
         <title><anchor xml:id="_Toc5884800"/>Patient Chart Summary (Excerpt)</title>
-        <para> </para>
         <table>
-            <title>Patient Chart Summary 1</title>
+            <title>Patient Chart Summary</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>

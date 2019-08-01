@@ -7,9 +7,8 @@
     <section>
         <title><anchor xml:id="_Toc5884802"/>Atrial Fibrillation / Atrial Flutter Order Set
             (Excerpt)</title>
-        <para> </para>
         <table>
-            <title>Artial Fabrillation 1</title>
+            <title>Artial Fabrillation</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -106,42 +105,27 @@
                                     >[50811001 |Routine]</emphasis></para>
                         </entry>
                     </row>
-                </tbody>
-            </tgroup>
-        </table>
-        <para> </para>
-        <table>
-            <title>Artial Fabrillation 2</title>
-            <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
-                <tbody>
-                    <row>
-                        <entry><emphasis role="bold">Orderable
-                            Procedure/Narrative</emphasis></entry>
-                        <entry><emphasis role="bold">Modeling</emphasis></entry>
-                    </row>
                     <row>
                         <entry>Metoprolol tartrate 50 mg tablet oral daily 2 times</entry>
                         <entry>
                             <para><emphasis role="bold">Statement type:</emphasis><emphasis
-                                    role="italic">[Request]</emphasis></para>
+                                role="italic">[Request]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Topic: </emphasis><emphasis role="italic"
-                                    >[416118004 |Administration]-</emphasis></para>
+                                >[416118004 |Administration]-</emphasis></para>
                             <para><emphasis role="italic">(260686004 |Method) [[129445006
-                                    |Administration – action]-</emphasis></para>
+                                |Administration – action]-</emphasis></para>
                             <para><emphasis role="italic">(363701004 |Direct substance) [318475005
-                                    |Product containing precisely metoprolol tartrate 50 milligram/1
-                                    each conventional release oral tablet]-</emphasis></para>
+                                |Product containing precisely metoprolol tartrate 50 milligram/1
+                                each conventional release oral tablet]-</emphasis></para>
                             <para><emphasis role="italic">(410675002 |Route of administration)
-                                    [[260548002 |Oral];</emphasis></para>
+                                [[260548002 |Oral];</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Requested Result: 1 </emphasis><emphasis
-                                    role="italic">[421026006 |Oral tablet]</emphasis></para>
+                                role="italic">[421026006 |Oral tablet]</emphasis></para>
                             <para/>
                             <para><emphasis role="bold">Frequency: 2 </emphasis><emphasis
-                                    role="italic">[258703001 |day]</emphasis></para>
+                                role="italic">[258703001 |day]</emphasis></para>
                         </entry>
                     </row>
                 </tbody>
@@ -151,9 +135,8 @@
     <section>
         <title><anchor xml:id="_Toc5884803"/>Diagnostic Breast Imaging Documentation Template
             (Excerpt)</title>
-        <para> </para>
         <table>
-            <title>Diagnostic Breast Imaging Documentation Template 1</title>
+            <title>Diagnostic Breast Imaging Documentation Template</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
