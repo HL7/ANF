@@ -23,7 +23,7 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <docbkx-maven-plugin.version>2.0.17</docbkx-maven-plugin.version>
-      <draftMode>no</draftMode>
+      <draft.mode>no</draft.mode> <!-- needs to be yes/no, not true/false -->
    </properties>
    <build>
       <pluginManagement>
