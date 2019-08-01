@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title/>
+    <title>Bibliography</title>
     <para xml:id="bib1" >1. Ratwani R, Hettinger Z, Rollin F. The Role of Health IT Developers in Improving Patient
         Safety in High Reliability Organizations [Internet]. Anticipating Unintended Consequences of
         Health Information Technology and Health Information Exchange . The Office of the National
