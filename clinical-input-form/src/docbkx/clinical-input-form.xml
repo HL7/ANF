@@ -107,7 +107,7 @@
             <?oxy_comment_start author="kec" timestamp="20190721T184209-0700" comment="Use pulse and blood pressure as an example to illustrate."?><?oxy_comment_end?>
 
         <figure xml:id="cimi_msg_cstatement_0135">
-            <title>Clinical Statement</title>
+            <title>CIMI Clinical Statement</title>
             <mediaobject>
                 <imageobject>                   
                     <imagedata fileref="images/cimi_clincal_statement.svg" format="SVG" scalefit="1"
@@ -264,13 +264,14 @@
             <?oxy_comment_start author="kec" timestamp="20190721T190343-0700" comment="This style of reference results in a lot of &quot;Patient has...&quot; in the table of contents. Probably drop &quot;Patient has...&quot; in all the example titles. There is a way have having an alternative name for link references. Make use of xreflabel=&quot;Whatever&quot; if the title can&apos;t be improved. "?><?oxy_comment_end?>
 
         <figure xml:id="cimi_msg_cstatement_chf_0135" xreflabel="Congestive Heart Failure">
-            <title>Patient has diagnosis of congestive heart failure.</title>
+            <title>CIMI Presence Context Example</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/clinical_statement_chf.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Patient has diagnosis of congestive heart failure</emphasis></para></caption>
         </figure>
         
         <para> 
@@ -282,13 +283,14 @@
         </para>
 
         <figure xml:id="cimi_msg_cstatement_order_0135" xreflabel="Order for physical therapy">
-            <title>Patient has an order for Physical Therapy.</title>
+            <title>CIMI Order Context Example</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/clinical_statement_order.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Patient has an order for Physical Therapy</emphasis></para></caption>
         </figure>
 
         <para> 
@@ -401,13 +403,14 @@
         </para>
 
         <figure xml:id="cimi_assertion_example_44" xreflabel="Assertion Pattern">
-            <title>Assertion Pattern with context representing presence</title>
+            <title>CIMI Assertion Pattern with Context Representing Presence</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/cimi_dm1_absent.svg" format="SVG" scalefit="1"
+                    <imagedata fileref="images/dm_cimi.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Diabetes Mellitus Type 2 Present</emphasis></para></caption>
         </figure>
 
         <section>
@@ -452,30 +455,33 @@
                     common to all context types. </para>
 
         <figure xml:id="cimi_example_1_0135" xreflabel="Diabetes Present">
-            <title>Diabetes mellitus type 1 which was diagnosed at age 24</title>
+            <title>CIMI Assertion Pattern with Presence Context and Age of Onset</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/cimi_dm1_age24.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Diabetes Mellitus Type 1 Which was Diagnosed at Age
+                            24</emphasis></para></caption>
         </figure>
 
         <figure xml:id="cimi_example_2_0135" xreflabel="Diabetes not present">
-            <title>The patient does not have diabetes mellitus type 1</title>
+            <title>CIMI Assertion Pattern with Presence Context of Absent</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/cimi_dm1_absent.svg" format="SVG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">The Patient does not Have Diabetes Mellitus Type 1</emphasis></para></caption>
         </figure>
 
         <?oxy_comment_start author="kec" timestamp="20190721T190624-0700" comment="Should be using standard interval presentation for present: [1,inf) count?  Or maybe not... This is how CIMI represents present with a code? Yes, probably, never mind. Maybe compare and contract here for the same statments would help me not get confused. Need to start with pulse, bp. Not sure if we should present any examples for CIMI that are not also presented for ANF so we always have examples for comparison. "?><?oxy_comment_end?>
 
 
         <figure xml:id="cimi_diabetes_assertion_0135">
-            <title>CIMI Diabetes Mellitus Type 2 Assertion</title>
+            <title>CIMI Assertion Pattern with Presence Context of Present</title>
             <mediaobject>
                 <imageobject>
                             <imagedata fileref="images/dm_cimi.svg" format="svg" align="center"
@@ -483,6 +489,7 @@
                                 ></imagedata>
                         </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Diabetes Mellitus Type 2 Present</emphasis></para></caption>
         </figure>
 
 
@@ -506,13 +513,14 @@
             </para>
 
             <figure xml:id="cimi_example_3_0135" xreflabel="Right femur fracture">
-                <title>Femur fracture of the right leg</title>
+                <title>CIMI Finding Site Assertion Pattern</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/cimi_fracture_assert.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="italics">Femur fracture of the right leg</emphasis></para></caption>
             </figure>
 
 
@@ -647,13 +655,14 @@
 
 
             <figure xml:id="cimi_example_5_0135" xreflabel="Skin turgor is friable">
-                <title>The patient’s skin turgor is friable</title>
+                <title>CIMI Physical Evaluation Result Pattern</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="images/cimi_skin_turgor.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
+                <caption><para><emphasis role="">The patient’s skin turgor is friable</emphasis></para></caption>
             </figure>
 
 
@@ -664,6 +673,7 @@
                     <imagedata fileref="images/breath_evaluation_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="">Tubular Breath Sounds</emphasis></para></caption>
         </figure>
 
         <para>
@@ -671,23 +681,26 @@
         </para>
 
         <figure xml:id="cimi_blood_pressure_eval_0135">
-            <title>CIMI Systolic Blood Pressure 120 mmHg Evaluation</title>
+            <title>CIMI Systolic Blood Pressure Evaluation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/blood_pressure_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg</emphasis></para></caption>
         </figure>
 
         <figure xml:id="cimi_blood_pressure_complex_0135">
-            <title>CIMI Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
-                        Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes,
-                        Urinated Not More than 30 Minutes Prior to Measurement Evaluation</title>
+            <title>CIMI Systolic Blood Pressure with Sitting Position and Urination
+                        Evaluation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/bp_complex_cimi.svg" format="svg" align="center" scalefit="1" width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
+            <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg, Taken on Right Brachial Artery, Using BP
+                Cuff Adult Size, Patient in Sitting Position for at Least 5 Minutes,
+                Urinated Not More than 30 Minutes Prior to Measurement</emphasis></para></caption>
         </figure>
 
             
