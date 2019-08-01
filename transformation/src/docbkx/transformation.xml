@@ -6,9 +6,11 @@
     <title>Putting it Together: Normalization and Transformation</title>
 
 
-    <para>Normalization of <glossterm baseform="Clinical Statement">clinical statements</glossterm> is defined as "the ability to identify every
-        representational format that confers the same meaning as being equivalent (i.e., unambiguous
-        representation). [8] </para>
+    <para>Normalization of <glossterm baseform="Clinical Statement">clinical statements</glossterm>
+        is defined as "the ability to identify every representational format that confers the same
+        meaning as being equivalent (i.e., unambiguous representation). <link linkend="bib8"
+            >[8]</link>
+    </para>
 
 
     <section>
@@ -242,11 +244,11 @@
 
         <section>
             <title>XSLT</title>
-            <para> XSLT is a W3C-standard language for the transformation of structured data. [9]
-                XSLT transformation scripts take as input any valid XML document and produce as
-                output an ASCII-formatted document (including XML, HTML, other formatting languages,
-                free text, etc.). The XSLT language specifies transformations through declarative,
-                rule-based commands (see below). </para>
+            <para> XSLT is a W3C-standard language for the transformation of structured data. <link
+                    linkend="bib9">[9]</link> XSLT transformation scripts take as input any valid
+                XML document and produce as output an ASCII-formatted document (including XML, HTML,
+                other formatting languages, free text, etc.). The XSLT language specifies
+                transformations through declarative, rule-based commands (see below). </para>
             <para> XSLT is widely used in modern information processing, including in health care
                 applications. Numerous XSLT transformation engines exist, including commercial and
                 open-source versions. These implementations are mature, stable, and
@@ -262,10 +264,10 @@
                     tree for XSLT transformations.</para>
                 <para> XSLT uses the sub-language “XPath” to reference portions of the XML source
                     tree for purposes of navigating the tree and selecting specific parts of it to
-                    translate. [10] XPath is essentially a query language for identifying and
-                    retrieving XML sub-trees that match specified criteria. For example, the XPath
-                    query </para>
-                <para> The actual transformation logic in XLST scripts is specified as a series of
+                    translate. <link linkend="bib10">[10]</link> XPath is essentially a query
+                    language for identifying and retrieving XML sub-trees that match specified
+                    criteria. </para>
+                <para>The actual transformation logic in XLST scripts is specified as a series of
                     “templates”. Each template matches to a specified sub-part of the source tree
                     and specifies what output will be generated for that sub-part. Templates are
                     generally called from within other templates via a declarative template-matching
@@ -320,11 +322,12 @@
 
         <section>
             <title>FHIR Mapping Language</title>
-            <para> The FHIR mapping language (FML) [11] is a relatively new, bespoke transformation
-                language specifically designed to transform HL7 FHIR resources to alternative
-                representations, including different FHIR resources, C/CDE documents, etc. The
-                mapping language was created by Graham Grieve as a specification of the QVT
-                framework for model-transformation languages (see <xref linkend="_Ref494462079"/>). </para>
+            <para> The FHIR mapping language (FML) <link linkend="bib11">[11]</link> is a relatively
+                new, bespoke transformation language specifically designed to transform HL7 FHIR
+                resources to alternative representations, including different FHIR resources, C/CDE
+                documents, etc. The mapping language was created by Graham Grieve as a specification
+                of the QVT framework for model-transformation languages (see <xref
+                    linkend="_Ref494462079"/>). </para>
             <section>
                 <title>Overview of Language and Data Model</title>
                 <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
@@ -335,10 +338,10 @@
                     to XML documents, but may include any object models and rendering syntaxes
                     conformant with <glossterm baseform="Object Management Group">OMG’s</glossterm>
                     <glossterm baseform="Meta Object Facility">Meta Object Facility
-                        (MOF)</glossterm> language. [12] MOF is a general formalism for representing
-                    object models as directed acyclic graphs (DAGs), and MOF-compliant models can
-                    use various syntactic constructs to represent the classes, attributes, and
-                    attribute values of such graphs. </para>
+                        (MOF)</glossterm> language. <link linkend="bib12">[12]</link> MOF is a
+                    general formalism for representing object models as directed acyclic graphs
+                    (DAGs), and MOF-compliant models can use various syntactic constructs to
+                    represent the classes, attributes, and attribute values of such graphs. </para>
                 <para> Hence, in FML, there is no built-in notion of source trees containing XML
                     “elements”, “attributes”, “comments”, “namespaces”, etc. In fact, FML
                     transformation rules do not specify any target syntax for inputs or outputs,
@@ -406,13 +409,13 @@
                 based on the QVT language used to develop the FHIR Mapping Language. </para>
             <section>
                 <title>Overview</title>
-                <para>QVT [13] is a general model-transformation framework and language developed by
-                    the Object Management Group . It includes both an imperative (“QVT-O”) and a
-                    declarative (“QVT-R”) version, and offers considerable flexibility in defining
-                    the constructs of purpose-specific transformation languages. Although QVT is
-                    intended for the transformation of data <emphasis>models</emphasis> rather than
-                    data instances, the FHIR Mapping Language shows that it can be applied to the
-                    latter task as well. </para>
+                <para>QVT <link linkend="bib13">[13]</link> is a general model-transformation
+                    framework and language developed by the Object Management Group . It includes
+                    both an imperative (“QVT-O”) and a declarative (“QVT-R”) version, and offers
+                    considerable flexibility in defining the constructs of purpose-specific
+                    transformation languages. Although QVT is intended for the transformation of
+                    data <emphasis>models</emphasis> rather than data instances, the FHIR Mapping
+                    Language shows that it can be applied to the latter task as well. </para>
                 <para> A number of implementations of QVT exist as open-source and commercial
                     software offerings. These include: </para>
                 <itemizedlist>
@@ -430,7 +433,7 @@
                         <para>ModelMorf (proprietary)</para>
                     </listitem>
                     <listitem>
-                        <para>Others (see [13]) </para>
+                        <para>Others (see <link linkend="bib13">[13]</link>) </para>
                     </listitem>
                 </itemizedlist>
             </section>

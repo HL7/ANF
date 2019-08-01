@@ -14,15 +14,16 @@
   <para>Healthcare organizations are striving to become <glossterm
       baseform="High Reliability Organization">high reliability organizations (HROs)</glossterm>,
     characterized by high levels of safety under inherently risky, technologically-complex, and
-    demanding conditions. [1]
+    demanding conditions. <link linkend="bib1">[1]</link>
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
     standards-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
     improve population health through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
-    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. [2] A
-      <emphasis>standard</emphasis> normal form can help replicate HROs across our industry.</para>
+    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <link
+      linkend="bib2">[2]</link> A <emphasis>standard</emphasis> normal form can help replicate HROs
+    across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background on other logical
       <?oxy_comment_start author="rcholan" timestamp="20190730T082039-0400" comment="glossary HL7" flag="done"?><glossterm
@@ -43,7 +44,7 @@
         <emphasis><glossterm baseform="Understandable, Reproducible, Useful">Understandable,
         Reproducible, and Useful</glossterm></emphasis>
     (<?oxy_comment_start author="rcholan" timestamp="20190730T082722-0400" comment="glossary" flag="done"?>URU<?oxy_comment_end?>)
-    [3][4]</para><?oxy_comment_end?>
+      <link linkend="bib3">[3]</link><link linkend="bib4">[4]</link></para><?oxy_comment_end?>
   <itemizedlist>
     <listitem>
       <para><emphasis role="bold"><glossterm baseform="Understandable"
@@ -71,16 +72,15 @@
     <para><?oxy_comment_start author="kec" timestamp="20190721T122636-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Information
       systems record and manage clinical statements using a variety of standard or ad-hoc models.
       However, both treatment and analysis of clinical statements require consistency not only at
-      the format level (e.g. <glossterm>CDA</glossterm>, FHIR, V2) but also
-      the content model (i.e. an instance of an <link
-        xlink:href="https://www.iso.org/standard/62416.html"><glossterm
+      the format level (e.g. <glossterm>CDA</glossterm>, FHIR, V2) but also the content model (i.e.
+      an instance of an <link xlink:href="https://www.iso.org/standard/62416.html"><glossterm
           baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCMs, CIMI
-      model, etc.). [5] In most cases the data quality is the greatest obstacle to analysis, but
-      even in the case of structured, semantically-clear information, inconsistency across sources
-      of information raises obstacles to analysis and research. Analysis of aggregate information
-      managed by health information networks poses the greatest challenge today because a meaningful
-      use of data for patient outcomes or research requires a common format and level of semantic
-      clarity.<?oxy_comment_end?></para>
+      model, etc.). <link linkend="bib5">[5]</link> In most cases the data quality is the greatest
+      obstacle to analysis, but even in the case of structured, semantically-clear information,
+      inconsistency across sources of information raises obstacles to analysis and research.
+      Analysis of aggregate information managed by health information networks poses the greatest
+      challenge today because a meaningful use of data for patient outcomes or research requires a
+      common format and level of semantic clarity.<?oxy_comment_end?></para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
       current <glossterm baseform="Detailed Clinical Model">detailed clinical modeling</glossterm>
@@ -223,8 +223,7 @@
       structured and complete at the time of entry (e.g. CIMI models, <link
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
       Models) or exchanged among systems (e.g. HL7 CDA templates, <glossterm
-        baseform="HL7 V2 Messaging Profile">HL7 V2 message profiles</glossterm>,
-        FHIR profiles). </para>
+        baseform="HL7 V2 Messaging Profile">HL7 V2 message profiles</glossterm>, FHIR profiles). </para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
       integrators, health IT developers, and researchers<?oxy_comment_end?> face different
       priorities, forcing trade-offs to be made that optimize data entry brevity at the cost of
@@ -490,11 +489,12 @@ Yes, ANF is for URU..." flag="done"?>in
         architecture to allow for a clear separation of concerns among interoperability models and
         specifications from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability. This architecture is the HL7 Service-Aware
-        Interoperability Framework Canonical Definition (SAIF-CD).[6]</para>
-      <para>The SAIF-CD specification [6] defines three SAIF Perspectives: Conceptual, Logical, and
-        Implementable. These perspectives are not formally equivalent with <glossterm
-          baseform="Object Management Group">Object Management Group’s (OMG)</glossterm>
-        levels-of-abstraction in
+        Interoperability Framework Canonical Definition (SAIF-CD).<link linkend="bib6"
+        >[6]</link></para>
+      <para>The SAIF-CD specification <link linkend="bib6">[6]</link> defines three SAIF
+        Perspectives: Conceptual, Logical, and Implementable. These perspectives are not formally
+        equivalent with <glossterm baseform="Object Management Group">Object Management Group’s
+          (OMG)</glossterm> levels-of-abstraction in
           <?oxy_comment_start author="rcholan" timestamp="20190730T120946-0400" comment="glossary" flag="done"?><glossterm
           baseform="Model Driven Architecture">Model-Driven Architecture
         (MDA)</glossterm><?oxy_comment_end?> even though it reuses the same derivation. Therefore,
@@ -569,8 +569,8 @@ Yes, ANF is for URU..." flag="done"?>in
       <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? " flag="done"?>
       <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
       </title>
-      <para>Starting with HL7 Version 3 [7] the minimum requirements for the interoperable clinical
-        statement:</para>
+      <para>Starting with HL7 Version 3 <link linkend="bib7">[7]</link> the minimum requirements for
+        the interoperable clinical statement:</para>
       <table>
         <info>
           <title>HL7 V3 Clinical Statement Definition</title>
@@ -651,10 +651,10 @@ Yes, ANF is for URU..." flag="done"?>in
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
         Terminology Knowledge and provides a separate model for each type statements, organized into
         a comprehensive library.</para>
-      <para><?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b" mid="59"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b"?>CIMI
+      <para><?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="59"?>CIMI
         clinical statements are further explained in this document <link
           linkend="clinical-input-form">(See Current CIMI Modeling
-        Efforts).</link><?oxy_comment_end mid="59"?><?oxy_comment_end?><!--For example, CIMI Clinical
+        Efforts).</link><?oxy_comment_end?><?oxy_comment_end mid="59"?><!--For example, CIMI Clinical
         Statement can be used to represent the following statements made about a patient. This can
         be the statement of a condition being present, a request for a procedure to be done, the
         results of lab tests or the patient’s family history of cancer.-->
