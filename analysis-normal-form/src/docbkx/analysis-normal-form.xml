@@ -187,7 +187,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 <para><emphasis role="bold">Iterative development and validation of model using use
                         cases: </emphasis>ANF has been developed using an iterative approach
                     evaluating the model with narrative use cases.  Examples of narratives used to
-                    evaluate the model can be found in the Appendix.</para>
+                    evaluate the model can be found in the <link linkend="appendix">Appendix</link> .</para>
             </listitem>
         </orderedlist>
 

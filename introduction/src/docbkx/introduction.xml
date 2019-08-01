@@ -159,7 +159,7 @@
             <para>Next, the physician adds an interpretation. </para>
           </listitem>
         </orderedlist><figure xml:id="CIF_EHR_1">
-          <title> Blood Pressure Statement recorded by an EHR systems</title>
+          <title> Blood Pressure Statement recorded by an EHR system</title>
           <mediaobject role="bordered">
             <imageobject>
               <imagedata fileref="images/BP data capture.svg" scale="60" align="center" format="SVG"
@@ -512,13 +512,8 @@ Yes, ANF is for URU..." flag="done"?>in
           </imageobject>
         </mediaobject>
         <caption>
-          <para>Like other CIMI models, ANF is a Logical Model that may be used to created
-            implementation specifications. </para>
-          <para><link
-              xlink:href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=3">HL7
-              Service-Aware Interoperability Framework: Canonical Definition Specification, Release
-              2</link>
-          </para>
+          <para><emphasis>Like other CIMI models, ANF is a Logical Model that may be used to created
+              implementation specifications. </emphasis></para>
         </caption>
       </figure>
       <para>However, the SAIF Conceptual Perspective is not completely equivalent to the MDA concept
