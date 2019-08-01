@@ -61,18 +61,18 @@
             </listitem>
             <listitem>
                 <para>Tim Williams<superscript>3</superscript></para>
-                <para> </para>
-                <para><superscript>1</superscript>Veterans Health Administration</para>
-                <para><superscript>2</superscript>HL7 CIMI Work Group</para>
-                <para><superscript>3</superscript>Deloitte Consulting LLP</para>
-                <para><superscript>4</superscript>Book Zurman, Inc</para>
-                <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
-                <para> </para>
-                <para>This work was funded by the Veterans Health Administration Office of Health
-                    Informatics. It would not have been possible without the support of Jonathan
-                        Nebeker<superscript>1</superscript> and Steven
-                        Brown<superscript>1</superscript>.</para>
             </listitem>
         </itemizedlist>
+        <para> </para>
+        <para><superscript>1</superscript>Veterans Health Administration</para>
+        <para><superscript>2</superscript>HL7 CIMI Work Group</para>
+        <para><superscript>3</superscript>Deloitte Consulting LLP</para>
+        <para><superscript>4</superscript>Book Zurman, Inc</para>
+        <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
+        <para> </para>
+        <para>This work was funded by the Veterans Health Administration Office of Health
+            Informatics. It would not have been possible without the support of Jonathan
+            Nebeker<superscript>1</superscript> and Steven
+            Brown<superscript>1</superscript>.</para>
     </para>
 </chapter>
