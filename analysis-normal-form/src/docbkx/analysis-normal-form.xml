@@ -306,17 +306,37 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-timing-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <para><emphasis role="bold">Timing: </emphasis>The Timing will always represent a future
             time in a Request for Action ANF Statement. Therefore, the Measure used in the Timing
             will be for a future time. </para>
+        -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-participants"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-participants-content)"><xi:fallback></xi:fallback></xi:include>
+        <!--
         <editorial-rule>
             <title>RequestedParticipant</title>
             <mathphrase>If the Request for Action specifies a Requested Participant the
                 requestedParticipant will be populated.</mathphrase>
-        </editorial-rule>
+        </editorial-rule> -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-priority"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-priority-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <para><emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority
             for which the request is to be carried out. By default a Request will be considered
-            "routine" unless otherwise specified.</para>
+            "routine" unless otherwise specified.</para>  -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <title>Request for Action Topics</title>
             <mathphrase><?oxy_comment_start author="Ioana" timestamp="20190626T124639-0400" comment="Do we need to place &quot;itemlizedlist&quot; inside the &quot;mathphrase&quot;?" flag="done"?>The
@@ -352,7 +372,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         terminology procedure attributes applied.</para>
                 </listitem>
             </itemizedlist>
-        </editorial-rule>
+        </editorial-rule>  -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-repetition"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-repetition-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <para><emphasis role="bold">Repetition:</emphasis> Repetition is used to represent when an
             action is requested for more than a single occurrence. Repetition is an optional
             component for a RequestCircumstance. A Request Component contains five Measures that are
@@ -382,13 +407,20 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         to represent how long every action should last. </para>
                 </listitem>
             </itemizedlist></para>
+
+        -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-requestedResult"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-requestedResult-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <title>requestedResult</title>
             <mathphrase>If a requestedResult is not specified in the request, an upperBound and
                 lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement time. If
                 a requestedResult is specified, the appropriate upperBound and lowerBound is
                 specified with the correct MeasureSemantic.</mathphrase>
-        </editorial-rule>
+        </editorial-rule>  -->
     </section>
     
     <section>
@@ -402,11 +434,23 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </imageobject>
             </mediaobject>
         </figure>
+
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-timing-content)"><xi:fallback></xi:fallback></xi:include>
+        <!--
         <para><emphasis role="bold">Timing - Performance of Action:</emphasis> For a Performance of
             Action, the Timing can represent a time in the past or a current time. If a history of a
             performance of action is to be represented in ANF the Timing will be for a time in the
             past prior to the statement. Otherwise the Timing will be represented by with the
-            current time as of the statement. </para>
+            current time as of the statement. </para>  -->
+
+
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions-content)"><xi:fallback></xi:fallback></xi:include>
+
+            <!--
         <editorial-rule>
             <title>Performance of Action Topics</title>
             <mathphrase>The topic follows a variety of possible patterns:</mathphrase>
@@ -441,12 +485,24 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     </listitem>
                 </itemizedlist>
             
-        </editorial-rule>
+        </editorial-rule>  -->
+
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-status"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-status-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <title>status</title>
             <mathphrase>If the narrative being evaluated has a status (on hold, needed, rejected,
                 etc) an InterventionResult will be used in order to record the status. </mathphrase>
-        </editorial-rule>
+        </editorial-rule>  -->
+
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-healthRisk"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-healthRisk-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <?oxy_comment_start author="timowilliams" timestamp="20190711T143006-0500" comment="From Stephanie K.
 
@@ -456,12 +512,23 @@ I&apos;m confused.  Previously and also on the next page it was said that ANF do
             <mathphrase>healthRisk is used to flag a result with coded values such as 'low',
                 'normal', high', and
             'critical'.</mathphrase><?oxy_comment_end?><?oxy_comment_end mid="27"?>
-        </editorial-rule>
+        </editorial-rule> -->
+
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-normalRange"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-normalRange-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <title>normalRange</title>
             <mathphrase>normalRange is used to represent the interval of values that are
                 normal.</mathphrase>
-        </editorial-rule>
+        </editorial-rule> -->
+
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-resultsRangedQuantity"/></para>
+        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-resultsRangedQuantity-content)"><xi:fallback></xi:fallback></xi:include>
+
+        <!--
         <editorial-rule>
             <title>Result</title>
             <mathphrase>If a Result is intended to represent a numeric
@@ -470,7 +537,7 @@ I&apos;m confused.  Previously and also on the next page it was said that ANF do
                 If a Result is intended to represent the presence of a Phenomenon, the Result will be represented with an upperBound and lowerBound of 1 and a MeasureSemantic of ISO 8601 current to statement time.
                 If a Result is intended to represent the absence of a Phenomenon, the Result will be represented with an upperBound and lowerBound of 0 and a MeasureSemantic of ISO 8601 prior to statement time.
             </mathphrase>
-        </editorial-rule>
+        </editorial-rule> -->
     </section>
 
     <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
