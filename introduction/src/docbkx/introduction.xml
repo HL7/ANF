@@ -295,8 +295,7 @@
       <para>Successful analysis requires relatively high data quality that allows systems to define
         a precise
         <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary" flag="done"?>topic<?oxy_comment_end?>,
-          <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?><glossterm
-          baseform="Category">category</glossterm><?oxy_comment_end?>, and clear
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?>category<?oxy_comment_end?>, and clear
         <?oxy_comment_start author="rcholan" timestamp="20190730T110912-0400" comment="glossary" flag="done"?>measure<?oxy_comment_end?>
         or
           <?oxy_comment_start author="rcholan" timestamp="20190730T110921-0400" comment="glossary" flag="done"?><glossterm
