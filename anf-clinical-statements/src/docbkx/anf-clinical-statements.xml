@@ -7,7 +7,7 @@
     <para>In the context of the ANF Model, a <glossterm baseform="Clinical Statement">clinical
             statement</glossterm> represents an entry in the patient record that documents, in a
         structured/computable manner, clinical information related to the patient that is asserted
-        by a particular source, recorded, and potentially verified. </para>
+        by a particular source, recorded, and potentially verified.</para>
     <para>As seen in the <glossterm baseform="CIMI Clinical Statement">CIMI Clinical
             Statements</glossterm> section, clinical information related to the patient can be
         entered and stored in an EHR in multiple different ways. ANF strives to standardize the
@@ -28,11 +28,11 @@
         <para>A Performance may include the observation of a phenomenon related to patients and
             their health status or family history, and may also include interventions, such as
             providing education or administering medications or documenting that a patient is
-            participating in exercise to improve their overall health status. </para>
+            participating in exercise to improve their overall health status.</para>
         <para><emphasis role="bold"><glossterm baseform="ANF Request">Request for
                 Action</glossterm></emphasis></para>
         <para>Requests for clinical testing, active interventions, future goals, or consultation
-            with other providers. </para>
+            with other providers.</para>
         <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-performanceRequest)"><xi:fallback></xi:fallback></xi:include></para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
@@ -125,7 +125,7 @@ Doing family history, donor statements using subject of information is now the n
                                     cancer<?oxy_comment_end?><?oxy_comment_end mid="12"?></para>
                             </listitem>
                         </itemizedlist>
-                    </para>
+                </para>
                 </listitem>
             </itemizedlist>
             <section>
@@ -291,7 +291,7 @@ Doing family history, donor statements using subject of information is now the n
                                             is inseparable from the topic and cannot be expressed as
                                             a stand-alone clinical statement. It therefore
                                             constitutes a technique and will be modeled as part of
-                                            the topic. </para>
+                                            the topic.</para>
                                     </listitem>
                                 </itemizedlist>
                             </listitem>
@@ -389,7 +389,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Patient in Sitting Position for at Least 5
+                        <para><emphasis role="italics"> Patient in Sitting Position for at Least 5
                                 Minutes</emphasis></para>
                     </caption>
                 </figure>
@@ -537,7 +537,7 @@ Doing family history, donor statements using subject of information is now the n
                         then it will also be added.</mathphrase>
                 </editorial-rule>-->
                 <figure>
-                    <title> Administration of Medication ANF Example</title>
+                    <title>Administration of Medication ANF Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/meds_anf.svg" format="SVG" scalefit="1"
@@ -578,7 +578,7 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>In this example, the concept Provision of educational material is used with a
-                    Has focus of Diabetes mellitus. </para>
+                    Has focus of Diabetes mellitus.</para>
             </section>
             <section>
                 <title>Other States or Specific Characteristics That Are Clinically Relevant</title>
@@ -641,7 +641,7 @@ Doing family history, donor statements using subject of information is now the n
             <para>Examples of Request clinical statements:</para>
             <itemizedlist spacing="compact">
                 <listitem>
-                    <para>Request for Rheumatoid factor 1 time routine </para>
+                    <para>Request for Rheumatoid factor 1 time routine</para>
                 </listitem>
                 <listitem>
                     <para>Request for X-ray chest to evaluate for heart failure</para>
@@ -710,7 +710,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         that are lateralizable.</mathphrase>
                 </editorial-rule>-->
                 <figure>
-                    <title> Imaging Request ANF Example</title>
+                    <title>Imaging Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/xray_request_anf.svg" format="SVG"
@@ -737,8 +737,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </caption>
                 </figure>
                 <para/>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"
-                    /></para>
+                <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Administration of Medication Topic - Request for Action</title>
                     <mathphrase>For requesting the administration of medication, the Topic will be
@@ -784,7 +783,7 @@ The distinction with a performance clinical statement concerning giving him educ
                             <listitem>
                                 <para><emphasis>eventDuration:</emphasis>This is an optional field
                                     that is used to represent how long every action should last "Use
-                                    for 2 weeks". </para>
+                                    for 2 weeks".</para>
                             </listitem>
                         </itemizedlist>
                     </mathphrase>
