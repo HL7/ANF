@@ -2,36 +2,60 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Bibliography</title>
+    <title>Bibliography </title>
+    <para>1. Ratwani R, Hettinger Z, Rollin F. The Role of Health IT Developers in Improving Patient
+        Safety in High Reliability Organizations [Internet]. Anticipating Unintended Consequences of
+        Health Information Technology and Health Information Exchange . The Office of the National
+        Coordinator for Health IT; 2014. Available from: <emphasis role="underline"><link
+                xlink:href="https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf"
+                >https://www.healthit.gov/sites/default/files/medstar_hit_safety_1_29_v2.pdf</link></emphasis>.</para>
+    <para>2. Chassin MR, Loeb JM. High-reliability health care: getting there from here. Milbank Q.
+        2013;91(3):459-90.</para>
+    <para>3. Spackman KA, Reynoso G. Examining SNOMED from the perspective of Formal Ontological
+        Principles: Some Preliminary Analysis and Observations. Proc. KR-MED, 2004: 72-80.</para>
+    <para>4. Cimino JJ. Desiderata for controlled medical vocabularies in the twenty-first century.
+        Methods of information in medicine. 1998;37(4-5):394-403.</para>
+    <para>5. Ahn S, Huff SM, Kim Y, Kalra D. Quality metrics for detailed clinical models.
+        International journal of medical informatics. 2013;82(5):408-17.</para>
+    <para>6. HL7 Service-Aware Interoperability Framework: Canonical Definition Specification,
+        Release 2. Health Level 7 International.Available from: <emphasis role="underline"><link
+                xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=3"
+                >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=3</link></emphasis>.</para>
+    <para>7. HL7 Version 3 Standard: Clinical Statement CMETs Release 1. Health Level Seven
+        International. Available from: <emphasis role="underline"><link
+                xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=40"
+                >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=40</link></emphasis>.</para>
+    <para>8. Elkin P. Terminology And Terminological Systems. Springer London LTD; 2016.</para>
+    <para>9. XSL Transformations (XSLT) Version 2.0. Worldwide Web Consortium. Available from:
+            <emphasis role="underline"><link xlink:href="https://www.w3.org/TR/xslt20/"
+                >https://www.w3.org/TR/xslt20/</link></emphasis>.</para>
+    <para>10. XPath Syntax. Worldwide Web Consortium. Available from: <emphasis role="underline"
+                ><link xlink:href="https://www.w3schools.com/xml/xpath_syntax.asp"
+                >https://www.w3schools.com/xml/xpath_syntax.asp</link></emphasis>.</para>
+    <para>11. FHIR Mapping Language. HL7 FHIR. Available from: <emphasis role="underline"><link
+                xlink:href="https://www.hl7.org/fhir/mapping-language.html"
+                >https://www.hl7.org/fhir/mapping-language.html</link></emphasis>.</para>
+    <para>12. MetaObject Facility Specification. OMG MetaObject Facility. Object Management Group.
+        Available from: <emphasis role="underline"><link xlink:href="https://www.omg.org/mof/"
+                >https://www.omg.org/mof/</link></emphasis>.</para>
+    <para>13. Query/View/Transformation Specification.Object Management Group. Available from:
+            <emphasis role="underline"><link xlink:href="https://www.omg.org/spec/QVT/About-QVT/"
+                >https://www.omg.org/spec/QVT/About-QVT/</link></emphasis>.</para>
+    <para>14. Tcheng JE. Optimizing Strategies for Clinical Decision Support: Summary of a Meeting
+        Series: National Academy of Medicine; 2018.</para>
+    <para>15. Friedman C, Rubin J, Brown J, Buntin M, Corn M, Etheredge L, et al. Toward a science
+        of learning systems: a research agenda for the high-functioning Learning Health System.
+        Journal of the American Medical Informatics Association : JAMIA. 2015;22(1):43-50.</para>
+    <para>16. Jean-Jacques M, Persell SD, Thompson JA, Hasnain-Wynia R, Baker DW. Changes in
+        disparities following the implementation of a health information technology-supported
+        quality improvement initiative. Journal of general internal medicine.
+        2012;27(1):71-7.</para>
+    <para>17. Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+        Specifications of Clinical Quality Measures and Value Set Vocabularies Shift Over Time: A
+        Study of Change through Implementation Differences. AMIA Annual Symposium proceedings AMIA
+        Symposium. 2017;2017:575-84.</para>
+    <para> </para>
+    <para> </para>
     
-<bibliography>
-    <bibliodiv>
-        <title></title>
-        <!--<bibliomixed xml:id="welcome"/>-->
-        <bibliomixed xml:id="HRO_HIT"/>
-        <bibliomixed xml:id="Chassin"/>
-        <bibliomixed xml:id="spackman"/>
-        <bibliomixed xml:id="cimino"/>
-        <bibliomixed xml:id="DCM_Quality"/>  
-        <bibliomixed xml:id="SAIF-CD"/>  
-        <bibliomixed xml:id="HL7v3"/>  
-        <bibliomixed xml:id="Elkin_Terminology"/>
-        <bibliomixed xml:id="xslt"/>
-        <bibliomixed xml:id="xpath"/>
-        <bibliomixed xml:id="FML"/>
-        <bibliomixed xml:id="fhir"/>
-        <bibliomixed xml:id="mof"/>
-        <bibliomixed xml:id="qvt"/>
-        <bibliomixed xml:id="ehr"/>
-        <bibliomixed xml:id="cancer"/>
-        <bibliomixed xml:id="Kahn"/>
-        <bibliomixed xml:id="ONC"/>
-        <bibliomixed xml:id="Jean"/>
-        <bibliomixed xml:id="Cholan_specs"/>
-        
-        
-       
-    </bibliodiv>
-    
-</bibliography>
+
 </chapter>
