@@ -33,7 +33,7 @@
                 Action</glossterm></emphasis></para>
         <para>Requests for clinical testing, active interventions, future goals, or consultation
             with other providers. </para>
-        <para>See editorial rule: <xref linkend="anf-editorialrule-performanceRequest"/></para>
+        <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-performanceRequest)"><xi:fallback></xi:fallback></xi:include></para>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
@@ -151,9 +151,9 @@ Doing family history, donor statements using subject of information is now the n
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
                 -->
-                <para>See editorial rule: <xref linkend="anf-editorialrule-timing"/></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-timing)"><xi:fallback></xi:fallback></xi:include></para>
                 <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions)"><xi:fallback></xi:fallback></xi:include></para>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-presenceAbsence)"><xi:fallback></xi:fallback></xi:include></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Present ANF Example</title>
@@ -221,8 +221,12 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Test/Screening or Procedure and Resultant Value</title>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-resultsRangedQuantity"
-                    /></para>
+                <para>See editorial rule: <xi:include
+                        href="../analysis-normal-form/editorial-rules.xml"
+                        xpointer="element(anf-editorialrule-resultsRangedQuantity)">
+                        <xi:fallback/>
+                    </xi:include></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-techniques)"><xi:fallback></xi:fallback></xi:include></para>
                 <!--<editorial-rule>
                     <title>Statement with a Result Value</title>
                     <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="could use better wording below, because a topic doesn&apos;t &apos;state&apos; a result."?><?oxy_comment_end?>
@@ -313,7 +317,11 @@ Doing family history, donor statements using subject of information is now the n
                     with an upperBound and lowerBound they are both represented as 68 in this
                     case.<?oxy_comment_end?> Too see a more detailed representation see the tabular
                     form here: <xref linkend="table_perform_pulse"/></para>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-prerequisites"/></para>
+                <para>See editorial rule: <xi:include
+                        href="../analysis-normal-form/editorial-rules.xml"
+                        xpointer="element(anf-editorialrule-prerequisites)">
+                        <xi:fallback/>
+                    </xi:include></para>
                 <!--<editorial-rule>
                     <title><glossterm>Prerequisite</glossterm></title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
@@ -461,10 +469,16 @@ Doing family history, donor statements using subject of information is now the n
                             are unrelated (Akinetic seizure without atonia) then the two statements
                             should be associated. </mathphrase>
                     </editorial-rule>--></para>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-separateCompoundTopics"
-                    /></para>
-                <para>See editorial rule: <xref linkend="anf-editorialrule-associatedStatement"
-                    /></para>
+                <para>See editorial rule: <xi:include
+                        href="../analysis-normal-form/editorial-rules.xml"
+                        xpointer="element(anf-editorialrule-separateCompoundTopics)">
+                        <xi:fallback/>
+                    </xi:include></para>
+                <para>See editorial rule: <xi:include
+                        href="../analysis-normal-form/editorial-rules.xml"
+                        xpointer="element(anf-editorialrule-associatedStatement)">
+                        <xi:fallback/>
+                    </xi:include></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="
                         At risk of possible firing squad, I wonder...
                         Should we make the blue bubble text more consistent with capitalization
@@ -511,7 +525,7 @@ Doing family history, donor statements using subject of information is now the n
                         is represented with either an Evaluation procedure or Therapeutic procedure
                         with a hasFocus attribute describing the purpose.</mathphrase>
                 </editorial-rule>-->
-                <para>See editorial rule: <xref linkend="anf-editorialrule-purpose"/></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-purpose)"><xi:fallback></xi:fallback></xi:include></para>
                 <para>See editorial rule: <xref linkend="anf-editorialrule-topicsAreActions"
                     /></para>
                 <!--<editorial-rule>
@@ -574,8 +588,7 @@ Doing family history, donor statements using subject of information is now the n
                         about. This is normally the patient (Subject of record) unless explicitly
                         stated otherwise, for example Mother, Sibling, Donor, etc.</mathphrase>
                 </editorial-rule>-->
-                <para>See editorial rule: <xref linkend="anf-editorialrule-subjectOfInformation"
-                    /></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-subjectOfInformation)"><xi:fallback></xi:fallback></xi:include></para>
                 <figure>
                     <title>Family History ANF Example</title>
                     <mediaobject>
@@ -592,6 +605,8 @@ Doing family history, donor statements using subject of information is now the n
                 <para>In the Family history of breast cancer example we see that the Family history
                     is represented by the Subject of information with a value of Person in the
                     family.</para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-normalRange)"><xi:fallback></xi:fallback></xi:include></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-healthRisk)"><xi:fallback></xi:fallback></xi:include></para>
             </section>
             <section>
                 <title>Normal Range Information or Health Risk Specified</title>
@@ -661,7 +676,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
                 </editorial-rule>-->
-                <para>See editorial rule: <xref linkend="anf-editorialrule-priority"/></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-priority)"><xi:fallback></xi:fallback></xi:include></para>
                 <!--<editorial-rule>
                     <title>Priority</title>
                     <mathphrase>Priority is used to represent the priority for which the request is
@@ -734,7 +749,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         requested. If Route of administration exists, then it will also be
                         added.</mathphrase>
                 </editorial-rule>-->
-                <para>See editorial rule: <xref linkend="anf-editorialrule-repetition"/></para>
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-repetition)"><xi:fallback></xi:fallback></xi:include></para>
                 <!--<editorial-rule>
                     <title>Repetition</title>
                     <mathphrase>Repetition is used to represent when an action is requested for more
