@@ -14,7 +14,7 @@
     </orderedlist>
     <section>
         <title>The Representation of Topic</title>
-        <para> In the ANF Statement model, the topic is represented by a single field containing a
+        <para>In the ANF Statement model, the topic is represented by a single field containing a
             simple to complex post-coordinated
             <?oxy_comment_start author="kec" timestamp="20190722T173102-0700" comment="OWL EL++ expression. Not necessarily just SNOMED CT, Solor for example would potentially have extensions to SNOMED. "?>SNOMED<?oxy_comment_end?>
             expression, whereas in the CIMI Statement model, all the pieces of information that make
@@ -34,7 +34,7 @@ Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
                 </mediaobject>
             </figure>
         </para>
-        <para> As we can see in the Pulse Rate examples below, the ANF topic is represented as a
+        <para>As we can see in the Pulse Rate examples below, the ANF topic is represented as a
             post-coordinated expression while the CIMI topic is represented with a topic containing
             a single concept along with associated structural properties representing the pulse
             oximeter device. Since the ANF Statement will always be either the request for an action
