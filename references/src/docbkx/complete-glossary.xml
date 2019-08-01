@@ -27,8 +27,7 @@
         <glossterm>Clinical Information Modeling Initiative</glossterm>
         <acronym>CIMI</acronym>
         <glossdef>
-            <para>A
-                workgroup of Health Level 7 (HL7) focused on improving the interoperability of
+            <para>A workgroup of Health Level 7 (HL7) focused on improving the interoperability of
                 healthcare systems through shared implementable clinical information models, and a
                 sponsor of this whitepaper. </para>
             <glossseealso otherterm="Clinical-Information-Model">CIMI Model</glossseealso>
@@ -114,7 +113,7 @@
         <glossterm>Detailed Clinical Model</glossterm>
         <acronym>DCM</acronym>
         <glossdef>
-            <para>A detailed clinical model is a general informatics term. As it's name suggests, it
+            <para>A detailed clinical model is a general informatics term. As its name suggests, it
                 is a model that describes the fine details of specific clinical information. For
                 example, a detailed clinical model representing a systolic blood pressure
                 measurement would describe allowable body locations to take this measurement and the
@@ -145,33 +144,33 @@
         </glossdef>
     </glossentry>
     <glossentry>
-        <?oxy_comment_start author="Ioana" timestamp="20190731T165606-0400" comment="Just reference HL7 CDA R2 product"?>
+        <?oxy_comment_start author="Ioana" timestamp="20190731T165606-0400" comment="Just reference HL7 CDA R2 product" flag="done"?>
         <glossterm>HL7 Clinical Document Architecture Release 2</glossterm>
         <acronym>CDA</acronym>
         <glossdef>
-            <para>an XML-based markup standard intended to specify the encoding, structure and
-                semantics of clinical documents for exchange.<?oxy_comment_end?></para>
+            <para><?oxy_comment_end?>See: HL7 CDA Release 2. Health Level 7 International. Available
+                from: <link
+                    xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7"
+                    >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7</link></para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>HL7 V2 Message Profile</glossterm>
         <acronym>V2</acronym>
         <glossdef>
-            <para>H<?oxy_comment_start author="Ioana" timestamp="20190731T165725-0400" comment="Just reference V2.8 product sheet
-"?>L7's
-                Version 2.x (V2) messaging standard is widely used for electronic data exchange in
-                the clinical domain. This messaging standard allows the exchange of clinical data
-                between systems.<?oxy_comment_end?></para>
+            <para>See: HL7 Version 2.x Message Profiling Specification. Health Level 7
+                International. Available from: <link
+                    xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=244"
+                    >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=244</link></para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>HL7 V3</glossterm>
         <glossdef>
-            <para><?oxy_comment_start author="Ioana" timestamp="20190731T165744-0400" comment="Reference the product sheet"?>A
-                suite of specifications based on HL7's Reference Information Model (RIM). The
-                Version 3 Normative Edition represents a new approach to clinical information
-                exchange based on a model driven methodology that produces messages and electronic
-                documents expressed in XML syntax.</para>
+            <para>See: HL7 Version 3 Product Suite. Health Level 7 International. Available from:
+                    <link
+                    xlink:href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=186"
+                    >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=186</link><?oxy_comment_start author="Ioana" timestamp="20190731T165744-0400" comment="Reference the product sheet" flag="done"?></para>
         </glossdef><?oxy_comment_end?>
     </glossentry>
     <glossentry>
@@ -278,20 +277,31 @@
         <glossterm>Computationally Independent Model </glossterm>
         <acronym>CIM</acronym>
         <glossdef>
-            <para>___ TBD ____</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>According to Model-Driven Architecture, a Computation Independent
+                            model (CIM) corresponds to a view defined by a computation independent
+                            viewpoint. It describes the business context and business requirements
+                            for the software system(s).</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Platform Independent Model </glossterm>
         <acronym>PIM</acronym>
         <glossdef>
-            <para>___ TBD ____</para>
+            <para>A model of a software system or business system that is independent of the
+                specific technological platform used to implement it. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Platform Specific Model</glossterm>
         <glossdef>
-            <para>___ TBD ____</para>
+            <para>A model of a software system or business system that is independent of the
+                specific technological platform used to implement it.</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -338,28 +348,22 @@
         <glossdef>
             <para>Unified Modeling Language is an Object Management Group (OMG) specification
                 defining a graphical language for visualizing, specifying, constructing, and
-                documenting the artifacts of distributed object systems. [defintion from OMG]</para>
-        </glossdef>
-    </glossentry>
-    <glossentry>
-        <?oxy_comment_start author="Ioana" timestamp="20190731T165825-0400" comment="Rename &quot;Clinical Event&quot; ?"?>
-        <glossterm>Clinical phenomenom</glossterm><?oxy_comment_end?>
-        <glossdef>
-            <para>___ TBD ____</para>
+                documenting the artifacts of distributed object systems. [definition from
+                OMG]</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>ANF Topic</glossterm>
         <glossdef>
-            <para>A property of ANF Statemment with a value of a Logical Expression representing
-                WHAT is being requested or what was performed</para>
+            <para>A property of ANF Statement with a value of a Logical Expression representing WHAT
+                is being requested or what was performed</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>ANF Circumstance</glossterm>
         <glossdef>
-            <para>ANF Circumstance is a property of ANF Statemment with a value representing the
-                HOW, WHY, WHEN, and with what RESULT a requested or performed action will be or was
+            <para>ANF Circumstance is a property of ANF Statement with a value representing the HOW,
+                WHY, WHEN, and with what RESULT a requested or performed action will be or was
                 carried out.</para>
         </glossdef>
     </glossentry>
@@ -387,7 +391,7 @@
     <glossentry>
         <glossterm>Editorial Rule</glossterm>
         <glossdef>
-            <para>Methodolgoy rules to describe the proper modeling of an ANF Statement
+            <para>Methodological rules to describe the proper modeling of an ANF Statement
                 instance.</para>
         </glossdef>
     </glossentry>
@@ -449,38 +453,52 @@
     <glossentry>
         <glossterm>Measure</glossterm>
         <glossdef>
-            <para/>
-        </glossdef>
-    </glossentry>
-    <glossentry>
-        <glossterm>Category</glossterm>
-        <glossdef>
-            <para/>
+            <para>Measure captures measurable elements of clinical statements , e.g. the results of
+                test procedures, time periods, frequencies of repetitions for procedures or
+                medication administrations using an Interval (upper and lower bound) as well as a
+                measureSemantic representing the unit of measure.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Statement Model</glossterm>
         <glossdef>
-            <para/>
+            <para>The Statement Model layer is responsible for defining how terminology concepts can
+                be combined to create a statement. Within the data structures, additional detail to
+                describe subject, numerical, and categorical information related to concepts can be
+                added in this layer. ANF introduces a statement model specific to analysis and
+                clinical decision support. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Assertional Knowledge</glossterm>
         <glossdef>
-            <para/>
+            <para>The Assertional Knowledge layer reuses information based on Statement Model. It is
+                responsible for guidelines and business rules to assist clinical decision making.
+                This includes facts and knowledge upon which concepts and combinations of concepts
+                can assimilate into protocols. ANF statements can be used to support assertional
+                artifacts.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Procedural Knowledge</glossterm>
         <glossdef>
-            <para/>
+            <para>The Procedural Knowledge Layer is responsible for information about standard ways
+                to carry out specific procedures as well as other procedural guidelines, e.g.
+                treatment protocols for diseases and order sets focused on particular patient
+                situations. Procedural knowledge, together with assertional knowledge, enables
+                clinical decision support, quality measurement, and supports patient safety. This
+                layer is based on the interoperability infrastructure and terminology layers,
+                incorporates the statement model for information retrieval, and uses the assertional
+                layer to apply rules.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Domain Analysis Model</glossterm>
         <acronym>DAM</acronym>
         <glossdef>
-            <para/>
+            <para>An abstract representation of a subject area of interest, complete enough to allow
+                instantiation of all necessary concrete classes needed to develop child design
+                artifacts.</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -496,49 +514,66 @@
         <acronym>ECL</acronym>
         <glossdef>
             <para>The SNOMED CT Expression Constraint Language is a formal language for defining
-                bounded sets of clinical meanings represented by either precoordinated or
-                postcoordinated expressions.</para>
+                bounded sets of clinical meanings represented by either pre-coordinated or
+                post-coordinated expressions.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Meta Object Facility</glossterm>
         <acronym>MOF</acronym>
         <glossdef>
-            <para/>
+            <para>The foundation of OMG's industry-standard environment where models can be exported
+                from one application, imported into another, transported across a network, stored in
+                a repository and then retrieved, rendered into different formats (including XMI™,
+                OMG's XML-based standard format for model transmission and storage), transformed,
+                and used to generate application code</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>ANF Reference Model</glossterm>
         <glossdef>
-            <para/>
+            <para>A logical model and uses Object Management Group (OMG) Unified Modeling Language
+                (UML) 2.0 notation to describe the structure of normalized clinical statements for
+                computational analysis. This logical model may be implemented using any programming
+                language, database technology, or interoperability specification (e.g. FHIR)
+                suitable for analysis. ANF is intended to normalize approaches and methodologies in
+                use across the industry and provide a uniform representation of data to enable
+                analysis.</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Electronic Clinical Quality Measures</glossterm>
         <acronym>eCQM</acronym>
         <glossdef>
-            <para/>
+            <para>An electronic clinical quality measure (eCQM) is a clinical quality measure that
+                is expressed and formatted to use EHR data to measure healthcare quality,
+                specifically data captured in structured form during the process of patient
+                care.</para>
         </glossdef>
     </glossentry>
-    <?oxy_comment_start author="Ioana" timestamp="20190731T165948-0400" comment="We need to ask Joey/Keith about these"?>
+    <?oxy_comment_start author="Ioana" timestamp="20190731T165948-0400" comment="We need to ask Joey/Keith about these" flag="done"?>
     <glossentry>
         <glossterm>Number-Needed-to-Treat</glossterm>
         <acronym>NNT</acronym>
         <glossdef>
-            <para/>
+            <para>The number of patients you need to treat to prevent one additional bad outcome
+                (death, stroke, etc.)</para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Number-Needed-to-Harm</glossterm>
         <acronym>NNH</acronym><?oxy_comment_end?>
         <glossdef>
-            <para/>
+            <para>A measure of how many people need to be treated (or exposed to a risk factor) in
+                order for one person to have a particular adverse effect. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Knowledge Architecture</glossterm>
         <glossdef>
-            <para/>
+            <para>A layered healthcare informatics knowledge architecture enables a clean separation
+                of concerns and contains the following layers: Architectural, Terminology, Statement
+                Model, Assertional Knowledge, and Procedural Knowledge. </para>
         </glossdef>
     </glossentry>
 </glossary>
