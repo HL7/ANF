@@ -23,6 +23,7 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <docbkx-maven-plugin.version>2.0.17</docbkx-maven-plugin.version>
+      <draftMode>no</draftMode>
    </properties>
    <build>
       <pluginManagement>
