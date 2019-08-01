@@ -21,6 +21,12 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
+        <dependency>
+            <groupId>org.hl7.anf-ballot-submission</groupId>
+            <artifactId>analysis-normal-form</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

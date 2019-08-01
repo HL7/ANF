@@ -152,7 +152,7 @@ Doing family history, donor statements using subject of information is now the n
                 </editorial-rule>
                 -->
                 <para>See editorial rule: <xref linkend="anf-editorialrule-timing"/></para>
-                <!--<para>See editorial rule: <xi:include href="../../../analysis-normal-form/src/docbkx/editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions)"/></para>-->
+                <para>See editorial rule: <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions)"><xi:fallback></xi:fallback></xi:include></para>
                 <para>See editorial rule: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
