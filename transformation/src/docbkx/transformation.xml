@@ -13,46 +13,48 @@
 
     <section>
         <title>Data Structures</title>
-        <para>
-            Currently, the standard is to define detailed clinical models using different data structures for 
-            different domains of clinical statements.  For example, <glossterm baseterm="Fast Healthcare Interoperability Resource">FHIR</glossterm> independently defines the resources for Conditions,
-            Observations, Diagnosis, Procedure, Goal, Medication Administration, Medication Request, etc. 
-            Some implementations, such as FHIR, explicity define the property names
-            for the parts of each data structure tree and other formalisms such as BMM/ADL and CEML 
-            use a form of key-value pairing to genericise the property naming of the data structure tree. 
-            But in all these cases, the fact remains that the resulting structure of the tree still remains different 
-            for different domains of clinical statements. Thus, computation and analysis of data instances, that conform to these models, requires a 
-            prior understanding of the tree structure for each domain.
-        </para>
+        <para>Currently, the standard is to define detailed clinical models using different data
+            structures for different domains of clinical statements. For example, <glossterm
+                baseterm="Fast Healthcare Interoperability Resource">FHIR</glossterm> independently
+            defines the resources for Conditions, Observations, Diagnosis, Procedure, Goal,
+            Medication Administration, Medication Request, etc. Some implementations, such as FHIR,
+            explicitly define the property names for the parts of each data structure tree and other
+            formalisms such as BMM/ADL and CEML use a form of key-value pairing to genericise the
+            property naming of the data structure tree. But in all these cases, the fact remains
+            that the resulting structure of the tree still remains different for different domains
+            of clinical statements. Thus, computation and analysis of data instances, that conform
+            to these models, requires a prior understanding of the tree structure for each domain. </para>
         <para>
 
         </para>
-        <para><glossterm baseform="Analysis-Normal-Form">ANF</glossterm> seeks to simplify the complexity that currently exists in detailed clinical
-            models. As it's name suggests, Analysis Normal Form provides one normalized data
-            structure to describe clinical statements from all domains. ANF accomplishes this by
-            moving the complexity that usually requires a complex data structure into the
-            terminology as a complex <glossterm baseform="Post-coordinated concept">post-coordinated</glossterm> SNOMED CT expression. </para>
+        <para><glossterm baseform="Analysis-Normal-Form">ANF</glossterm> seeks to simplify the
+            complexity that currently exists in detailed clinical models. As its name suggests,
+            Analysis Normal Form provides one normalized data structure to describe clinical
+            statements from all domains. ANF accomplishes this by moving the complexity that usually
+            requires a complex data structure into the terminology as a complex <glossterm
+                baseform="Post-coordinated concept">post-coordinated</glossterm> SNOMED CT
+            expression. </para>
 
     </section>
 
     <section>
         <title>Modeling Style</title>
 
-        <para>
-            Another variation that currently exists is the allowed design choices which can be made by model authors.
-            For example, a modeler may choose to model breath sounds, as 'breath sounds' with a coded result of 'rales',
-            or as 'rales' with a result of 'present'.
-            Currently, organiztions try to minimize this type of variation by
-            documenting design choice rules in modeling "style guides".
-            For instance, a common style guide choice in the <glossterm baseterm="CIMI Clinical Statement">CIMI Clinical Statement</glossterm> model is to
-            either use the <glossterm>Assertion</glossterm> style or the <glossterm>Evaluation Result</glossterm> style, and <glossterm baseterm="Clinical Information Modeling Initiative">CIMI</glossterm> documents which types of clinical statement
-            are best suited for each. The current approach is to solve the problem by conformity rather than with technology.
-        </para>
+        <para>Another variation that currently exists is the allowed design choices which can be
+            made by model authors. For example, a modeler may choose to model breath sounds, as
+            'breath sounds' with a coded result of 'rales', or as 'rales' with a result of
+            'present'. Currently, organizations try to minimize this type of variation by
+            documenting design choice rules in modeling "style guides". For instance, a common style
+            guide choice in the <glossterm baseterm="CIMI Clinical Statement">CIMI Clinical
+                Statement</glossterm> model is to either use the <glossterm>Assertion</glossterm>
+            style or the <glossterm>Evaluation Result</glossterm> style, and <glossterm
+                baseterm="Clinical Information Modeling Initiative">CIMI</glossterm> documents which
+            types of clinical statement are best suited for each. The current approach is to solve
+            the problem by conformity rather than with technology. </para>
 
-        <para>
-            ANF seeks to minimize this variation by only allowing quantitative results.  This eliminates the choice
-            between Evaluation style versus Assertion style clinical statements as coded results are not possible.
-        </para>
+        <para>ANF seeks to minimize this variation by only allowing quantitative results. This
+            eliminates the choice between Evaluation style versus Assertion style clinical
+            statements as coded results are not possible. </para>
 
         
 
@@ -61,19 +63,25 @@
     <section>
         <title>Transformation Languages and Architecture</title>
 
-        <para>
-            The previous sections have described the variation that can exist in the data structure and modeling style of a single standard.  Moreover, this variation is significantly compounded when simultaneously using data from multiple standards, such as when receiving data from mulitple institutions.
-        </para>
+        <para>The previous sections have described the variation that can exist in the data
+            structure and modeling style of a single standard. Moreover, this variation is
+            significantly compounded when simultaneously using data from multiple standards, such as
+            when receiving data from multiple institutions. </para>
 
-        <para> Analysis Normal Form can act as a transformation target to normalize these disparate
+        <para>Analysis Normal Form can act as a transformation target to normalize these disparate
             representations of clinical statements, shown in <xref
                 linkend="transformationToANF_0135" xrefstyle="select: label"/>. Normalization
             implies the ability to recognize all representations that express the same meaning as
             being algorithmically equivalent. </para>
 
-        <para>
-            To be clear, the transformation discussed is a data instance to data instance transformation.  An example could be John Doe's Systolic Blood Pressure measurement taken on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to an ANF instance representing this same data.  This is not to be confused with a detailed clinical model transformation between two formalisms, such as an <glossterm baseform="International Organization for Standardization">ISO</glossterm> <glossterm baseform="Detailed Clinical Model">DCM</glossterm> for Systolic Blood Pressure transformed to a FHIR profile for Systolic Blood Pressure.
-        </para>
+        <para>To be clear, the transformation discussed is a data instance to data instance
+            transformation. An example could be John Doe's Systolic Blood Pressure measurement taken
+            on June 4, 2019 represented as a FHIR Observation instance, which is then transformed to
+            an ANF instance representing this same data. This is not to be confused with a detailed
+            clinical model transformation between two formalisms, such as an <glossterm
+                baseform="International Organization for Standardization">ISO</glossterm>
+            <glossterm baseform="Detailed Clinical Model">DCM</glossterm> for Systolic Blood
+            Pressure transformed to a FHIR profile for Systolic Blood Pressure. </para>
 
         <figure xml:id="transformationToANF_0135">
             <title>Transformation to ANF</title>
@@ -82,8 +90,8 @@
                     <imagedata fileref="images/transformationToAnf.png" align="center" format="png" width="100%"/>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis>Various isosemantic representations of statement models can be brought toegether
-                        into Analysis Normal Form</emphasis></para></caption>
+            <caption><para><emphasis>Various isosemantic representations of statement models can be brought together into
+                        Analysis Normal Form</emphasis></para></caption>
         </figure>
 
         <para>Transformation, in this case, is not a simple endeavor that one can hope to automate
@@ -108,8 +116,8 @@
             </itemizedlist>
 
 
-        <para> Currently, there are three basic categories of errors that might be associated with
-            attempts at normalizing clinical statement represenation. The first is error associated
+        <para>Currently, there are three basic categories of errors that might be associated with
+            attempts at normalizing clinical statement representation. The first is error associated
             with normalization of content of the terminology; the second is error associated with
             normalization of the semantics of the terminology; and, third are errors that result
             from ambiguous or misleading interaction between the structured clinical input and
@@ -300,7 +308,7 @@
                             read/understand/debug/maintain</para>
                     </listitem>
                     <listitem>
-                        <para>Transformation are entirely syntactic</para>
+                        <para>Transformations are entirely syntactic</para>
                     </listitem>
                     <listitem>
                         <para>Limited to XML input – instances rendered in other formats cannot be

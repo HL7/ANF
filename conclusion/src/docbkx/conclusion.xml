@@ -169,7 +169,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       how they represent clinical statements. The ONC and NAM report states that "[b]ecause CDS
       relies on inferencing using patient data, this heterogeneity in patient data representation
       poses an immense obstacle to sharing CDS." [15] </para>
-    <para>ANF aims to reduce the variability of clincial data inputted into EHR systems and
+    <para>ANF aims to reduce the variability of clinical data inputted into EHR systems and
       modeled/stored in data repositories. The standardization of clinical observations in a manner
       that supports automated processing requires a formal clinical statement model, such as ANF.
       The most important requirements of such a statement model are that (1) it can represent any
@@ -210,7 +210,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       delayed.<?oxy_comment_start author="timowilliams" timestamp="20190717T183701-0500" comment="From Stephanie K.
 
 Would you want to state that the opposite could be true as well, where patients who should have been on the list were incorrectly excluded?" flag="done"?></para><?oxy_comment_end?>
-    <para>Implementation reasearch shows that variations in implementations of eCQM specifications
+    <para>Implementation research shows that variations in implementations of eCQM specifications
       for cardiovascular event prevention could result in potential lives saved or harms avoided in
       quality improvement activities. [18] For aspirin use for secondary prevention of heart
       attacks, <glossterm baseform="Number-Needed-to-Treat">Number-Needed-to-Treat (NNT)</glossterm>
@@ -226,7 +226,7 @@ Would you want to state that the opposite could be true as well, where patients 
       three-fold higher risk of bleeding for patients on dual therapy and triple therapy. With
       another measure for statin therapy, 1 in 21 people have a repeat heart attack, stroke or death
       avoided, so even 10 missed people have significant risk of events. Similarly, 10% are harmed
-      by muscle damage or pain, or ~1 of the 14 inappropriately included in the study. [18]  Even in
+      by muscle damage or pain, or ~1 of the 14 inappropriately included in the study. [18] Even in
       the small eCQM implementation study [18] with data from two primary care clinics, failure to
       include or exclude patients could have led to real harm. </para>
     <para>With eCQM implementation and QI infrastructure increasing, the problem of having, and
@@ -244,8 +244,8 @@ Would you want to state that the opposite could be true as well, where patients 
       clinical statement types with topics. ANF is compatible with other work in statement
       representation models such as the CIMI Clinical Statement approach, with its focus on more
       traditional complex structured trees, whereas ANF focuses on structuring data in a way CDS
-      systems can extract data in an unambiguous way. ANF provides a single, normatlized, form for
-      clinical statements that may be used to create assertional or prcoedural knowledge articacts
+      systems can extract data in an unambiguous way. ANF provides a single, normalized, form for
+      clinical statements that may be used to create assertional or procedural knowledge artifacts
       as clinical decision support</para>
   </section>
 </chapter>

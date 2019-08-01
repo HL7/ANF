@@ -206,7 +206,7 @@
           <para><emphasis>In the second example, the scenario - a similar system or another
               configuration of the same system - that provides a different set of options to verify
               and record the blood pressure including a combination of conception and does not
-              support any details related to micturition..</emphasis></para>
+              support any details related to micturition.</emphasis></para>
         </caption>
       </figure><?oxy_comment_end?><?oxy_comment_end mid="13"?>
     </section>
@@ -423,8 +423,8 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         layers of the informatics architectural separation of concerns. <itemizedlist>
           <listitem>
             <para>At the Terminology Knowledge layer, there may be various codes and terms from
-              disparate source terminologies to define the a concept (e.g. hypertension).
-              <!--For example, the concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in SNOMED CT-->.
+              disparate source terminologies to define a concept (e.g. hypertension).
+              <!--For example, the concept “essential hypertension” is defined by the ICD-10 CM code I10 and 59621000 in SNOMED CT-->
               Ideally, these overlapping codes and terms would be oriented to the same parent
               concept during the transformation and integration process at
               <?oxy_comment_start author="kec" timestamp="20190721T171552-0700" comment="The foundational layer is just data structures. Terminology integration happens at the terminology layer. " flag="done"?>the

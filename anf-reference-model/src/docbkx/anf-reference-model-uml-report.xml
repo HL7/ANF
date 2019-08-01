@@ -278,8 +278,8 @@
             </figure>
             <section>
                 <title>CircumstanceChoice </title>
-                <para>This class provides a exclusive choice of circumstances that may chosen when
-                    an ANFStatement is instantiated:</para>
+                <para>This class provides an exclusive choice of circumstances that may be chosen
+                when an ANFStatement is instantiated:</para>
                 <itemizedlist>
                     <listitem>
                         <para role="underline"><link linkend="performanceClass">PerformanceCircumstance</link></para>
@@ -660,11 +660,11 @@
                 interval can be open or closed depending on whether the upper and lower bounds are
                 included in the measure interval.</para>
                 <para>The measure provides a single way to represent both “presence” or "absence"
-                values and numeric values for a phenomenon. In general,the interval value represents
-                the numeric range within which the observed value of a phenomenon occurs. Note that
-                this formalism allows both exact values and ranges of values to be expressed. In
-                case that the beginning and end point of an interval are the same value, the meaning
-                is that the value of the phenomenon is exactly that value.</para>
+                values and numeric values for a phenomenon. In general, the interval value
+                represents the numeric range within which the observed value of a phenomenon occurs.
+                Note that this formalism allows both exact values and ranges of values to be
+                expressed. In case that the beginning and end point of an interval are the same
+                value, the meaning is that the value of the phenomenon is exactly that value.</para>
                 <para>In the case that the lower and upper bound of an measure are the same number,
                         <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>, the
                     meaning is that the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>.</para>
@@ -686,11 +686,11 @@
                     “absent”, or “indeterminate”. Specifically, any interval value that includes
                     only numbers that are > 0 also denotes the value “present”.</para>
                 <para>Any interval value that includes only the number 0, itself, denotes the value
-                    “absent”. Any interval value that includes both the number 0 and at least one
-                    number > 0 denotes the value “indeterminate”. Lastly, there are two interval
-                    values that explicitly denote “present” and “absent,” respectively. These value
-                    may be assigned to phenomena that would not otherwise take on a numeric value
-                    (such as “nausea”):</para>
+                “absent”. Any interval value that includes both the number 0 and at least one number
+                > 0 denotes the values “indeterminate”. Lastly, there are two interval values that
+                explicitly denote “present” and “absent,” respectively. These value may be assigned
+                to phenomena that would not otherwise take on a numeric value (such as
+                “nausea”):</para>
                 <itemizedlist>
                     <listitem>
                         <para role="italic">Nausea value = [0,INF) : present</para>
@@ -759,8 +759,8 @@
                                 <para>Example: “Persistent cough for more than 10 days”. If a lower
                                     bound of “10” is chosen, it would not be included, because the
                                     example states: more than 10 days. Choosing “11” would require
-                                    to include the lower bound If "true" the lower bound is part of
-                                    the interval.</para>
+                                    it to include the lower bound If "true" the lower bound is part
+                                    of the interval.</para>
                                 <para><emphasis role="bold">Invariant</emphasis>: if (upperBound ==
                                     INF) { includeUpperBound = false }.</para>
                                 <para/>

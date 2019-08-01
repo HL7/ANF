@@ -75,7 +75,7 @@ Incomplete and partially ambiguous.
 Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
 ‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
 " flag="done"?><emphasis
-                                            role="bold">Example:</emphasis>Some things implicit in
+                                            role="bold">Example:</emphasis> Some things implicit in
                                         the statement, “I ordered a book from Amazon” are: paying
                                         for the book, delivery of the book to some location, and the
                                         transfer of ownership of the book from the vendor to the
@@ -138,7 +138,7 @@ What does that mean for the table example I gave? Clearly it changes, which of t
                     in an object that represents a clinical statement. </para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">Reusability:</emphasis>Architectural patterns should
+                <para><emphasis role="bold">Reusability:</emphasis> Architectural patterns should
                     <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
 But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
 "?>encourage
@@ -358,7 +358,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             component for a RequestCircumstance. A Request Component contains five Measures that are
             used to further define the parameters of the Repetition: <itemizedlist>
                 <listitem>
-                    <para><emphasis>periodDuration:</emphasis>This required field is used to
+                    <para><emphasis>periodDuration:</emphasis> This required field is used to
                         represent how long a repetition should persist. If it is not specified, a
                         default value of [0,inf) will be used. e.g. for 3 weeks</para>
                 </listitem>
@@ -368,17 +368,17 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                         of [0,inf) will be used. e.g. NOW</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis>eventSeparation:</emphasis>This required field is used to
+                    <para><emphasis>eventSeparation:</emphasis> This required field is used to
                         represent how long between actions. If it is not specified, a default value
                         of [0,inf) will be used. e.g. for 2 weeks</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis>eventFrequency:</emphasis>This required field is used to
+                    <para><emphasis>eventFrequency:</emphasis> This required field is used to
                         represent how often the action should occur. If it is not specified, a
                         default value of [0,inf) will be used. e.g. 3 times per week</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis>eventDuration:</emphasis>This is an optional field that is used
+                    <para><emphasis>eventDuration:</emphasis> This is an optional field that is used
                         to represent how long every action should last. </para>
                 </listitem>
             </itemizedlist></para>

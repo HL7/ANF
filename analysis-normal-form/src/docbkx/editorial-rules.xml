@@ -37,9 +37,10 @@
                     </para>
         		</listitem>
         		<listitem>
-					<para>
-                        Medication administrations will use an Administration of subtance concept to represent the topic. All Administration of substance concepts will be refined with the substance and dose form and strength being requested. If Route of administration exists, then it will also be added.
-                    </para>
+					<para> Medication administrations will use an Administration of substance concept to represent
+                        the topic. All Administration of substance concepts will be refined with the
+                        substance and dose form and strength being requested. If Route of
+                        administration exists, then it will also be added. </para>
 				</listitem>
 				<listitem>
 					<para>
@@ -114,9 +115,11 @@
         <mathphrase>
             <itemizedlist>
                 <listitem>
-                    <para>
-                	   For the purposes of ANF, a statement is a request or performance of an action that should exist independently. Thus, if a compound topic contains two topics that could each exist separately, then they should be divided into spearate ANF Statements. These independent ANF Statements can then be associated with each other as associated statements.
-                    </para>
+                    <para> For the purposes of ANF, a statement is a request or performance of an
+                        action that should exist independently. Thus, if a compound topic contains
+                        two topics that could each exist separately, then they should be divided
+                        into separate ANF Statements. These independent ANF Statements can then be
+                        associated with each other as associated statements. </para>
                 </listitem>
                 <listitem>
                     <para>
@@ -273,7 +276,7 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-repetition" xreflabel="Repetition is used to request multiple occurences of a topic">
-        <title>Repetition is used to request multiple occurences of a topic</title>                    
+        <title>Repetition is used to request multiple occurrences of a topic</title>                    
         <mathphrase>
             <itemizedlist>
                 <listitem>
@@ -288,9 +291,10 @@
 
                     <itemizedlist>
                         <listitem>
-                            <para><emphasis>periodDuration:</emphasis>This required field is used to
-                                represent how long a repetition should persist. If it is not specified, a
-                                default value of [0,inf) will be used. e.g. for 3 weeks</para>
+                            <para><emphasis>periodDuration:</emphasis> This required field is used
+                                to represent how long a repetition should persist. If it is not
+                                specified, a default value of [0,inf) will be used. e.g. for 3
+                                weeks</para>
                         </listitem>
                         <listitem>
                             <para><emphasis>periodStart:</emphasis> This required field is used to represent
@@ -298,18 +302,19 @@
                                 of [0,inf) will be used. e.g. NOW</para>
                         </listitem>
                         <listitem>
-                            <para><emphasis>eventSeparation:</emphasis>This required field is used to
-                                represent how long between actions. If it is not specified, a default value
-                                of [0,inf) will be used. e.g. for 2 weeks</para>
+                            <para><emphasis>eventSeparation:</emphasis> This required field is used
+                                to represent how long between actions. If it is not specified, a
+                                default value of [0,inf) will be used. e.g. for 2 weeks</para>
                         </listitem>
                         <listitem>
-                            <para><emphasis>eventFrequency:</emphasis>This required field is used to
-                                represent how often the action should occur. If it is not specified, a
-                                default value of [0,inf) will be used. e.g. 3 times per week</para>
+                            <para><emphasis>eventFrequency:</emphasis> This required field is used
+                                to represent how often the action should occur. If it is not
+                                specified, a default value of [0,inf) will be used. e.g. 3 times per
+                                week</para>
                         </listitem>
                         <listitem>
-                            <para><emphasis>eventDuration:</emphasis>This is an optional field that is used
-                                to represent how long every action should last. </para>
+                            <para><emphasis>eventDuration:</emphasis> This is an optional field that
+                                is used to represent how long every action should last. </para>
                         </listitem>
                     </itemizedlist>
 
