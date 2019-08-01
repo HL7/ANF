@@ -237,19 +237,19 @@
     <section>
         <title>Transformation to ANF</title>
         
-        <para> A number of options exist for expressing transformation logic and for executing the
+        <para>A number of options exist for expressing transformation logic and for executing the
             transformation on specific instances of clinical data for normalization into ANF.  These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author.  One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
         </para>
 
 
         <section>
             <title>XSLT</title>
-            <para> XSLT is a W3C-standard language for the transformation of structured data. <link
+            <para>XSLT is a W3C-standard language for the transformation of structured data. <link
                     linkend="bib9">[9]</link> XSLT transformation scripts take as input any valid
                 XML document and produce as output an ASCII-formatted document (including XML, HTML,
                 other formatting languages, free text, etc.). The XSLT language specifies
                 transformations through declarative, rule-based commands (see below). </para>
-            <para> XSLT is widely used in modern information processing, including in health care
+            <para>XSLT is widely used in modern information processing, including in health care
                 applications. Numerous XSLT transformation engines exist, including commercial and
                 open-source versions. These implementations are mature, stable, and
                 high-performance, and are available as runtime libraries or embedded in XLST
@@ -257,12 +257,12 @@
                 for XSLT. </para>
             <section>
                 <title>Overview of Language and Data Model</title>
-                <para> XSLT scripts operate over source “trees” containing the structured contents
+                <para>XSLT scripts operate over source “trees” containing the structured contents
                     of parsed XML documents. These trees contain as their nodes the various
                     constructs of specific XML documents, i.e., the named elements, attributes, and
                     text values that appear in the documents, and upon parsing, becomes a source
                     tree for XSLT transformations.</para>
-                <para> XSLT uses the sub-language “XPath” to reference portions of the XML source
+                <para>XSLT uses the sub-language “XPath” to reference portions of the XML source
                     tree for purposes of navigating the tree and selecting specific parts of it to
                     translate. <link linkend="bib10">[10]</link> XPath is essentially a query
                     language for identifying and retrieving XML sub-trees that match specified
@@ -279,7 +279,7 @@
             </section>
             <section>
                 <title>Advantages and Limitations</title>
-                <para> XSLT is effective in representing and executing the transformation logic
+                <para>XSLT is effective in representing and executing the transformation logic
                     needed for clinical translations. In general, XSLT provides various advantages,
                     as well as limitations, for this task. </para>
                 <para><emphasis role="bold">Advantages</emphasis></para>
@@ -322,7 +322,7 @@
 
         <section>
             <title>FHIR Mapping Language</title>
-            <para> The FHIR mapping language (FML) <link linkend="bib11">[11]</link> is a relatively
+            <para>The FHIR mapping language (FML) <link linkend="bib11">[11]</link> is a relatively
                 new, bespoke transformation language specifically designed to transform HL7 FHIR
                 resources to alternative representations, including different FHIR resources, C/CDE
                 documents, etc. The mapping language was created by Graham Grieve as a specification
@@ -342,7 +342,7 @@
                     general formalism for representing object models as directed acyclic graphs
                     (DAGs), and MOF-compliant models can use various syntactic constructs to
                     represent the classes, attributes, and attribute values of such graphs. </para>
-                <para> Hence, in FML, there is no built-in notion of source trees containing XML
+                <para>Hence, in FML, there is no built-in notion of source trees containing XML
                     “elements”, “attributes”, “comments”, “namespaces”, etc. In fact, FML
                     transformation rules do not specify any target syntax for inputs or outputs,
                     just the general concepts of named classes, class members, and member values.
@@ -350,7 +350,7 @@
                     normalization to ANF to be represented in different formats than XML, were that
                     to be deemed preferable. For example, instances rendered using JSON, ODIN, or
                     ASN1 syntax could be the inputs of FML transformations. </para>
-                <para> The output of an FML transformation is not a text-rendered document (unlike
+                <para>The output of an FML transformation is not a text-rendered document (unlike
                     XSLT), but an internally stored DAG consistent with the specified output model.
                     Subsequently, the DAG may be rendered in any number of syntaxes, including XML,
                     JSON, or the tables and fields of a relational database. </para>
@@ -404,7 +404,7 @@
 
         <section xml:id="_Ref494462079">
             <title>QVT</title>
-            <para> A third alternative is to develop a new transformation language customized to
+            <para>A third alternative is to develop a new transformation language customized to
                 support the requirements of a normalization to ANF, 
                 based on the QVT language used to develop the FHIR Mapping Language. </para>
             <section>
@@ -416,7 +416,7 @@
                     transformation languages. Although QVT is intended for the transformation of
                     data <emphasis>models</emphasis> rather than data instances, the FHIR Mapping
                     Language shows that it can be applied to the latter task as well. </para>
-                <para> A number of implementations of QVT exist as open-source and commercial
+                <para>A number of implementations of QVT exist as open-source and commercial
                     software offerings. These include: </para>
                 <itemizedlist>
                     <listitem>
@@ -439,7 +439,7 @@
             </section>
             <section>
                 <title>Advantages and Limitations</title>
-                <para> The strength of QVT is that it is very abstract, which confers great
+                <para>The strength of QVT is that it is very abstract, which confers great
                     flexibility and configurability to create custom transformation languages.
                     However, the abstractness also makes QVT quite difficult to understand and
                     learn, and there are limited resources to assist in the learning process. For
@@ -454,7 +454,7 @@
 
             <title>Model Driven Message Interoperability (MDMI)</title>
 
-            <para> MDMI is an Object Management Group Standard for the transformation of data in one
+            <para>MDMI is an Object Management Group Standard for the transformation of data in one
                 format to data in another format. MDMI Standard is not a language. The MDMI Standard
                 is a specification for addressing this problem and was developed by multiple domain
                 experts. The specification contains two major sections: the MDMI Transformation
@@ -480,7 +480,7 @@
                 The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts in a format. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example of this is a data element that can have multiple semantics concepts that must be disambiguated based on other values contained in format.  
             </para>
 
-            <para> The MDMI SEER is a repository for the semantically unique concepts, called
+            <para>The MDMI SEER is a repository for the semantically unique concepts, called
                 Business Elements, that are exchanged in healthcare transformations. One can view
                 the MDMI SEER as a bag of unique, atomic semantic concepts exchanged, primarily
                 driven by the <glossterm baseterm="HL7 V2 Messaging Profile">HL7 standards of v.2</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA</glossterm>, and FHIR that are used to exchange
@@ -504,7 +504,7 @@
                 There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are <glossterm baseform="Pre-coordinated concept">pre-coordinated semantic concepts</glossterm> represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism.
             </para>
 
-            <para> An open source implementation of MDMI started in the Open Healthcare Tools
+            <para>An open source implementation of MDMI started in the Open Healthcare Tools
                 organization which built an MDMI compliant tooling for healthcare. The MDMI Open
                 Source Project continues today in GitHub and has been and is being used in HL7
                 projects as well as in commercial implementations. </para>
@@ -515,7 +515,7 @@
         <section>
             <title>Advantages and Limitations</title>
 
-            <para> MDMI is a model driven approach. Having a formal model, the open source project
+            <para>MDMI is a model driven approach. Having a formal model, the open source project
                 has been able to develop tooling based on the MDMI model as well as leverage other
                 modeling efforts. Examples are Information Models such as FHIR and the
                 <?oxy_comment_start author="timowilliams" timestamp="20190717T182730-0500" comment="From Stephanie K:
