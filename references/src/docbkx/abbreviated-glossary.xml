@@ -29,10 +29,6 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
             href="complete-glossary.xml"
-            xpointer="element(Fast-Healthcare-Interoperability-Resource)"
-            xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include
-            href="complete-glossary.xml"
             xpointer="element(Structured-Clinical-Input-Forms)"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
 

@@ -71,7 +71,7 @@
     <para><?oxy_comment_start author="kec" timestamp="20190721T122636-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Information
       systems record and manage clinical statements using a variety of standard or ad-hoc models.
       However, both treatment and analysis of clinical statements require consistency not only at
-      the format level (e.g. <glossterm>CDA</glossterm>, <glossterm>FHIR</glossterm>, V2) but also
+      the format level (e.g. <glossterm>CDA</glossterm>, FHIR, V2) but also
       the content model (i.e. an instance of an <link
         xlink:href="https://www.iso.org/standard/62416.html"><glossterm
           baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCMs, CIMI
@@ -224,7 +224,7 @@
         xlink:href="https://www.iso.org/standard/62416.html">ISO/TS 13972</link> Detailed Clinical
       Models) or exchanged among systems (e.g. HL7 CDA templates, <glossterm
         baseform="HL7 V2 Messaging Profile">HL7 V2 message profiles</glossterm>,
-        <glossterm>FHIR</glossterm> profiles). </para>
+        FHIR profiles). </para>
     <para><?oxy_comment_start author="kec" timestamp="20190721T085757-0700" comment="Clinicians, researchers, and HIT developers" flag="done"?>Clinicians,
       integrators, health IT developers, and researchers<?oxy_comment_end?> face different
       priorities, forcing trade-offs to be made that optimize data entry brevity at the cost of

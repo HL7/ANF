@@ -17,7 +17,7 @@ There isn&apos;t a sub-section for patient safety.  There is one for population 
 
 Or maybe reference back to the interoperability levels, of which semantic was the highest? " flag="done"?>format
       level (e.g. <glossterm baseform="HL7 Clinical Document Architecture">CDA</glossterm>,
-        <glossterm baseform="Fast Healthcare Interoperability Resource">FHIR</glossterm>, <glossterm
+        FHIR, <glossterm
         baseform="HL7 V2 Messaging Profile">V2</glossterm>) but also the content and semantics (i.e.
       ANF, <glossterm baseform="Clinical Information Model">CIMI model</glossterm>,
       etc.)<?oxy_comment_end?>. In most cases the data quality is the greatest obstacle to analysis.

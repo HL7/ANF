@@ -7,8 +7,8 @@
             linkend="SAIF-CD-diagram"
             ><?oxy_comment_start author="Ioana" timestamp="20190729T170311-0400" comment="Add reference to intro" flag="done"?>SAIF-CD<?oxy_comment_end?></link>).
         Therefore, this project will expand on the use of ANF alongside preexisting information
-        exchange <glossterm baseform="Health Level Seven">HL7</glossterm> standards (i.e. <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2 messaging</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA documents</glossterm>) and HL7 standards-based APIs
-        (i.e., <glossterm baseform="Fast Healthcare Interoperability Resource">FHIR</glossterm> resources). In practice, ANF is applicable to systems normalizing or creating
+        exchange HL7 standards (i.e. <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2 messaging</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA documents</glossterm>) and HL7 standards-based APIs
+        (i.e., FHIR resources). In practice, ANF is applicable to systems normalizing or creating
         normalized data to support <link linkend="SoC_Section"><glossterm baseform="Assertional Knowledge">Assertional</glossterm></link> and <link
             linkend="SoC-diagram"><glossterm baseform="Procedural Knowledge">Procedural</glossterm></link> knowledge (e.g. clinical alerts, workflow, data
         analysis, decision support). These need to aggregate data from many isosemantic source
