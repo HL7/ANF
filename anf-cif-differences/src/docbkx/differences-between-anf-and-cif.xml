@@ -43,7 +43,7 @@ Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
             <?oxy_comment_start author="kec" timestamp="20190722T173538-0700" comment="Need a section of some sort discussing the benefits of a classifiable topic on aggregation, retrieval, etc. 
 
 Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED CT, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
-            <figure>
+            <figure xml:id="anf_cimi_diff-anfPulse">
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
                     <imageobject>
@@ -52,7 +52,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
                     </imageobject>
                 </mediaobject>
             </figure>
-            <figure>
+            <figure xml:id="anf_cimi_diff-cimiPulse">
                 <title>Pulse Rate - CIMI Representation</title>
                 <mediaobject>
                     <imageobject>
