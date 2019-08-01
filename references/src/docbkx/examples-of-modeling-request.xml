@@ -7,7 +7,7 @@
     <section>
         <title>Medication Order</title>
     <table>
-        <title>Request Clinical Statement</title>
+        <title>Ibuprofen Order Request Clinical Statement</title>
         <tgroup cols="2">
             <colspec colnum="1" colname="col1"/>
             <colspec colnum="2" colname="col2"/>
@@ -115,7 +115,7 @@ The problem with this approach is that expressions of this sort are restricted t
         <title>Radiology Order</title><?oxy_comment_end?>
         
         <table>
-            <title>Request Clinical Statement</title>
+            <title>Radiology Order Request Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -195,7 +195,7 @@ The problem with this approach is that expressions of this sort are restricted t
     <section>
         <title>Medication Order</title>
         <table>
-            <title>Request Clinical Statement</title>
+            <title>Nitroglycerin Order Request Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
