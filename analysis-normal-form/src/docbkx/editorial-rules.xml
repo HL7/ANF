@@ -7,7 +7,7 @@
 	<editorial-rule xml:id="anf-editorialrule-performanceRequest" xreflabel="Performance versus request">
         <title>Performance versus request</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-performanceRequest-content">
                 <listitem>
                     <para>
         	           ANF Statements must be either a Performance of an action or a Request for an action.
@@ -27,10 +27,10 @@
         </mathphrase>
     </editorial-rule>
 
-    <editorial-rule xml:id="anf-editorialrule-topicsAreActions" xreflabel="">
+    <editorial-rule xml:id="anf-editorialrule-topicsAreActions" xreflabel="Topics are always an action">
         <title>Topics are always an action</title>                    
         <mathphrase>
-        	<itemizedlist>
+        	<itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
         		<listitem>
        				<para>
                         Observations will begin with an Observation procedure to represent the topic. The Observation procedure will also specify a Has focus attribute linking it to the Clinical Finding or Disorder that it is being observed. The observation procedure can also be further refined by adding attributes in the terminology model, including Method, Procedure site - Direct, (if appropriate) Laterality, and Using device
@@ -56,10 +56,10 @@
         </mathphrase>
     </editorial-rule>
 
-    <editorial-rule xml:id="anf-editorialrule-timing" xreflabel="">
+    <editorial-rule xml:id="anf-editorialrule-timing" xreflabel="Timing - past, present, or future">
         <title>Timing - past, present, or future</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-timing-content">
                 <listitem>
         	       <para>
                         For a Performance of Action, the Timing can represent a time in the past or a current time. If a history of a performance of action is to be represented in ANF the Timing will be for a time in the past prior to the statement. Otherwise the Timing will be represented with the current time of the statement.
@@ -77,7 +77,7 @@
     <editorial-rule xml:id="anf-editorialrule-resultsRangedQuantity" xreflabel="Results are always a ranged quantity">
         <title>Results are always a ranged quantity</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-resultsRangedQuantity-content">
                 <listitem>
                 	<para>
                         Results are always a Measure, which is a ranged quantity.  Measure includes both a numeric interval along with a Measure Semantic specified as a Logical Expression.
@@ -95,7 +95,7 @@
     <editorial-rule xml:id="anf-editorialrule-presenceAbsence" xreflabel="Presence and absence are a countable quantity">
         <title>Presence and absence are a countable quantity</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content">
                 <listitem>
                 	<para>
                         Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".   
@@ -113,7 +113,7 @@
     <editorial-rule xml:id="anf-editorialrule-separateCompoundTopics" xreflabel="Separate compound topics">
         <title>Separate compound topics</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-separateCompoundTopics-content">
                 <listitem>
                     <para> For the purposes of ANF, a statement is a request or performance of an
                         action that should exist independently. Thus, if a compound topic contains
@@ -133,7 +133,7 @@
     <editorial-rule xml:id="anf-editorialrule-techniques" xreflabel="Techniques are inseparable from the topic">
         <title>Techniques are inseparable from the topic</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-techniques-content">
                 <listitem>
                 	<para>
                         A technique is inseparable from the topic and cannot be expressed as a stand-alone clinical statement.
@@ -151,7 +151,7 @@
     <editorial-rule xml:id="anf-editorialrule-prerequisites" xreflabel="Prerequisites must be separated from the topic">
         <title>Prerequisites must be separated from the topic</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-prerequisites-content">
                 <listitem>
                 	<para>
                         A prerequisite is separable from the topic and can be expressed as a stand-alone clinical statement
@@ -169,7 +169,7 @@
     <editorial-rule xml:id="anf-editorialrule-associatedStatement" xreflabel="Related statements should be associated">
         <title>Related statements should be associated</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-associatedStatement-content">
                 <listitem>
                 	<para>
                         Use an associated statement when it is important for the interpretation of one statement that the other statements were observed, performed, or requested. Also, if there is some implicitness that the two statements are related (pleural empyema with fistula) or that they are unrelated (Akinetic seizure without atonia) then the two statements should be associated.
@@ -182,7 +182,7 @@
     <editorial-rule xml:id="anf-editorialrule-subjectOfInformation" xreflabel="Subject of information is used to represent family and donor history">
         <title>Subject of information is used to represent family and donor history</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content">
                 <listitem>
                     <para>
                 	   The subjectOfInformation is used to represent who the statement is about. This is normally the patient (Subject of record) unless explicitly stated otherwise, for example Mother, Sibling, Donor, etc.
@@ -195,7 +195,7 @@
     <editorial-rule xml:id="anf-editorialrule-status" xreflabel="Status indicates the state of a result">
         <title>Status indicates the state of a result</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-status-content">
                 <listitem>
                 	<para>
                         The status of a Performance of action can be specified with concepts such as (on hold, needed, rejected, etc).
@@ -208,7 +208,7 @@
     <editorial-rule xml:id="anf-editorialrule-healthRisk" xreflabel="HealthRisk indicates the clinical risk of the result">
         <title>HealthRisk indicates the clinical risk of the result</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-healthRisk-content">
                 <listitem>
                 	<para>
                         In PerformanceCircumstance, healthRisk is used to flag a result with coded values such as 'low', 'normal', high', and 'critical'.
@@ -221,7 +221,7 @@
     <editorial-rule xml:id="anf-editorialrule-normalRange" xreflabel="Normal Range can be specified for a result">
         <title>Normal Range can be specified for a result</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
                 	<para>
                         In PerfromanceCircumstance, normalRange is used to flag a result with coded values such as 'low', 'normal', high', and 'critical'.
@@ -234,7 +234,7 @@
     <editorial-rule xml:id="anf-editorialrule-participants" xreflabel="Participants can be specified or requested">
         <title>Participants can be specified or requested</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-participants-content">
                 <listitem>
                     <para>
                         A Performance of action can specify participants using participant in PerformanceCircumstance.
@@ -252,7 +252,7 @@
     <editorial-rule xml:id="anf-editorialrule-purpose" xreflabel="Purpose indicates the reason for a request">
         <title>Purpose indicates the reason for a request</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-purpose-content">
                 <listitem>
                     <para>
                 	   The purpose is why an action was requested. The purpose of the topic is represented with either an Evaluation procedure or Therapeutic procedure with a hasFocus attribute describing the purpose.
@@ -265,7 +265,7 @@
     <editorial-rule xml:id="anf-editorialrule-priority" xreflabel="Priority defaults to routine for a request">
         <title>Priority defaults to routine for a request</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-priority-content">
                 <listitem>
                 	<para>
                         Priority is used to represent the priority for which a request is to be carried out. By default a Request will be considered "routine" unless otherwise specified.
@@ -278,7 +278,7 @@
     <editorial-rule xml:id="anf-editorialrule-repetition" xreflabel="Repetition is used to request multiple occurences of a topic">
         <title>Repetition is used to request multiple occurrences of a topic</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-repetition-content">
                 <listitem>
                 	<para>
                         Repetition is used to represent when an action is requested for more than a single occurrence. 
@@ -326,7 +326,7 @@
     <editorial-rule xml:id="anf-editorialrule-requestedResult" xreflabel="A desired result can be specified in a request">
         <title>A desired result can be specified in a request</title>                    
         <mathphrase>
-            <itemizedlist>
+            <itemizedlist xml:id="anf-editorialrule-requestedResult-content">
                 <listitem>
                     <para>
                         A desired result can be specified as a Measure using requestedResult in RequestCircumstance.
