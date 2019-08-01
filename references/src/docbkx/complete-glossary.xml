@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
-<glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     xml:id="gloss">
     <title>Complete Glossary</title>
+    <glossary>
+        <title></title>
     <glossentry xml:id="Analysis-Normal-Form">
         <glossterm>Analysis Normal Form</glossterm>
         <acronym>ANF</acronym>
@@ -576,4 +578,5 @@
                 Model, Assertional Knowledge, and Procedural Knowledge. </para>
         </glossdef>
     </glossentry>
-</glossary>
+    </glossary>
+</chapter>
