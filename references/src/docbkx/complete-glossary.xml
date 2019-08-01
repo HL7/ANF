@@ -38,12 +38,13 @@
     <glossentry xml:id="Solor">
         <glossterm>Solor</glossterm>
         <glossdef>
-            <para>A project sponsored by the Department of Veterans Affairs that represents and
-                brings together different terminology standards by using a single model that can
-                encompass any customized content. Solor allows informaticists and developers to
-                convert user-supplied terminologies into a single model using open source software
-                to produce Solor content. For more information please see <link
-                    xlink:href="http://solor.io">http://solor.io</link></para>
+            <para>A project sponsored by the Department of Veterans Affairs and Healthcare Services
+                    Platform Consortium (HSPC) that represents and brings together different
+                    terminology standards by using a single model that can encompass any customized
+                    content. Solor allows informaticists and developers to convert user-supplied
+                    terminologies into a single model using open source software to produce Solor
+                    content. For more information please see <link xlink:href="http://solor.io"
+                        >http://solor.io</link></para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Clinical-Statement">
