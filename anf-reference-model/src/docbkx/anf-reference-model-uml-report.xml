@@ -74,7 +74,7 @@
                             <para>For example the date of <emphasis role="bold"
                                     >2019-07-09T00:12:31+00:00</emphasis> would be represented as
                                 Unix Epoch time as <emphasis role="bold">1562631151</emphasis>
-                                seconds :</para>
+                                seconds:</para>
                             <itemizedlist>
                                 <listitem>
                                     <para>interval.lowerBound = 1562631151</para>
@@ -101,9 +101,8 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">subjectOfRecord</emphasis>
-                            </para>
-                            <para>Participant</para>
+                            <para><emphasis role="bold"> subjectOfRecord</emphasis>
+                                Participant</para>
                         </entry>
                         <entry>
                             <para>[1...1]</para>
@@ -117,9 +116,7 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">author</emphasis>
-                            </para>
-                            <para>Practitioner</para>
+                            <para><emphasis role="bold">author</emphasis> Practitioner</para>
                         </entry>
                         <entry>
                             <para>[0...*]</para>
@@ -132,8 +129,8 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">subjectOfInformation</emphasis>
-                                LogicalExpression</para>
+                            <para><emphasis role="bold"
+                                >subjectOfInformation</emphasis> LogicalExpression</para>
                         </entry>
                         <entry>
                             <para>[1...1]</para>
@@ -157,8 +154,8 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">associatedStatement</emphasis>
-                                AssociatedStatement</para>
+                            <para><emphasis role="bold"
+                                >associatedStatement</emphasis> AssociatedStatement</para>
                         </entry>
                         <entry>
                             <para>[0...*]</para>
@@ -181,9 +178,7 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">topic</emphasis>
-                            </para>
-                            <para>LogicalExpression</para>
+                            <para><emphasis role="bold">topic</emphasis> LogicalExpression</para>
                         </entry>
                         <entry>
                             <para>[1...1]</para>
@@ -214,8 +209,7 @@
                     </row>
                     <row>
                         <entry>
-                            <para><emphasis role="bold">type</emphasis></para>
-                            <para> LogicalExpression</para>
+                            <para><emphasis role="bold">type</emphasis> LogicalExpression</para>
                         </entry>
                         <entry>
                             <para>[1...1]</para>
@@ -332,8 +326,7 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">purpose</emphasis>
-                                    LogicalExpression</para>
+                                <para><emphasis role="bold">purpose</emphasis> LogicalExpression</para>
                             </entry>
                             <entry>
                                 <para>[0...*]</para>
@@ -352,7 +345,7 @@
                                 </listitem>
                                 </itemizedlist></para>
                                 <para>The procedure is then refined by post-coordinating with a “363702006 |Has focus
-                                    (attribute) |” attribute and identifying a finding/disorder or procedure concept as
+                                    (attribute)|” attribute and identifying a finding/disorder or procedure concept as
                                     the value for the attribute.</para>
                             </entry>
                         </row>
@@ -436,8 +429,7 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">priority</emphasis>
-                                    LogicalExpression</para>
+                                <para><emphasis role="bold">priority</emphasis> LogicalExpression</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -530,8 +522,7 @@
                         <tbody>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">status</emphasis>
-                                        LogicalExpression</para>
+                                    <para><emphasis role="bold">status</emphasis> LogicalExpression</para>
                                 </entry>
                                 <entry>
                                     <para>[1...1]</para>
@@ -542,9 +533,7 @@
                             </row>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">result</emphasis>
-                                </para>
-                                <para>Measure</para>
+                                    <para><emphasis role="bold">result</emphasis> Measure</para>
                                 </entry>
                                 <entry>
                                     <para>[1...1]</para>
@@ -557,8 +546,7 @@
                             </row>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">healthRisk</emphasis>
-                                        LogicalExpression</para>
+                                    <para><emphasis role="bold">healthRisk</emphasis> LogicalExpression</para>
                                 </entry>
                                 <entry>
 
@@ -570,8 +558,7 @@
                             </row>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">normalRange</emphasis>
-                                        Measure</para>
+                                    <para><emphasis role="bold">normalRange</emphasis> Measure</para>
                                 </entry>
                                 <entry>
 
@@ -584,8 +571,7 @@
                             </row>
                             <row>
                                 <entry>
-                                    <para><emphasis role="bold">participant</emphasis>
-                                    Participant</para>
+                                    <para><emphasis role="bold">participant</emphasis> Participant</para>
                                 </entry>
                                 <entry>
                                     <para>[0...*]</para>
@@ -653,7 +639,7 @@
             </figure>
             <section xml:id="measureClass">
                 <title>Measure </title>
-                <para>This class captures measurable elements of clinical statements , e.g. the
+                <para>This class captures measurable elements of clinical statements, e.g. the
                 results of test procedures, time periods, frequencies of repetitions for procedures
                 or medication administrations. The measure formally represents a numeric interval
                 between two nonnegative real numbers with a semantic and precision/resolution. The
@@ -768,8 +754,7 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">semantic</emphasis>
-                                    LogicalExpression</para>
+                                <para><emphasis role="bold">semantic</emphasis> LogicalExpression</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -788,7 +773,7 @@
                                 <para>For quantity/count measure values, the measure semantic to
                                     express a number of findings or phenomena described in the
                                     ANFStatement.topic "3 dot-and-blot hemorrhages " would be
-                                    "30766002 | Quantitative".</para>
+                                    "30766002 | Quantitative (qualifier value)".</para>
                                 <para>If Measure is used to represent date or time:</para>
                                 <itemizedlist>
                                     <listitem>
@@ -805,8 +790,7 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">resolution</emphasis>
-                                    decimal-primitive</para>
+                                <para><emphasis role="bold">resolution</emphasis> decimal-primitive</para>
                             </entry>
                             <entry>
                                 <para>[0...1]</para>
@@ -912,15 +896,14 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">eventSeparation</emphasis>
-                                    Measure</para>
+                                <para><emphasis role="bold">eventSeparation</emphasis> Measure</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
                                 <para>This required field is used to represent how long between
-                                    actions (e.g.  1 week ). If it is not specified, a default value
+                                    actions (e.g. 1 week). If it is not specified, a default value
                                     of [0,INF) will be used. </para>
                                 <para/>
                             </entry>
@@ -934,7 +917,7 @@
                             </entry>
                             <entry>
                                 <para>This optional field is used to represent how long a repetition
-                                    should persist ( e.g. for 2 hours). If it is not specified, a
+                                    should persist (e.g. for 2 hours). If it is not specified, a
                                     default value of [0,INF) will be used.</para>
                                 <para/>
                             </entry>
@@ -987,11 +970,11 @@
                                             >FHIR </link><link
                                             xlink:href="http://build.fhir.org/metadatatypes.html#Expression"
                                             >Expression</link></emphasis> structure or a similar
-                                    standard-based syntax ((e.g.
-                                        <?oxy_comment_start author="timowilliams" timestamp="20190730T093741-0500" comment="Glossary?  Or Reference?" id="str_n4t_43b" flag="done" mid="3"?><?oxy_comment_start author="rcholan" timestamp="20190730T195231-0400" comment="The SNOMED CT Expression Constraint Language is a formal language for defining bounded sets of clinical meanings represented by either precoordinated or postcoordinated expressions." parentID="str_n4t_43b" flag="done"?><glossterm
+                                    standard-based syntax (e.g.
+                                        <?oxy_comment_start author="timowilliams" timestamp="20190730T093741-0500" comment="Glossary?  Or Reference?" id="str_n4t_43b" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190730T195231-0400" comment="The SNOMED CT Expression Constraint Language is a formal language for defining bounded sets of clinical meanings represented by either precoordinated or postcoordinated expressions." parentID="str_n4t_43b" flag="done" mid="3"?><glossterm
                                         baseform="SNOMED CT Expression Constrain Language">SNOMED CT
                                         Expression Constrain Language -
-                                    ECL</glossterm><?oxy_comment_end mid="3"?><?oxy_comment_end?>). </para>
+                                    ECL</glossterm><?oxy_comment_end?><?oxy_comment_end mid="3"?>). </para>
                                 <para>The expression must use valid, standard-based
                                     terminology.</para>
                                 <para/>
@@ -1044,11 +1027,10 @@
                                 <para><emphasis role="bold">id</emphasis> Reference</para>
                             </entry>
                             <entry>
-                                <para> </para>
-                                <para>[1...1]</para>
+                                <para> [1...1]</para>
                             </entry>
                             <entry>
-                                <para>A reference to the associated statement</para>
+                                <para>A reference to the associated statement.</para>
                             </entry>
                         </row>
                         <row>
@@ -1057,12 +1039,11 @@
                                     LogicalExpression</para>
                             </entry>
                             <entry>
-                                <para> </para>
-                                <para>[1...1]</para>
+                                <para> [1...1]</para>
                             </entry>
                             <entry>
                                 <para>A logical expression to capture how the target statement is
-                                    associated(e.g. a precondition, an interpretation, a
+                                    associated (e.g. a precondition, an interpretation, a
                                     component).</para>
                             </entry>
                         </row>
@@ -1131,7 +1112,6 @@
                             <entry>
                                 <para>Role(s) which this practitioner is authorized to perform for
                                     the organization.</para>
-                                <para/>
                             </entry>
                         </row>
                     </tbody>
