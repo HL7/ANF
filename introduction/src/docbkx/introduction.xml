@@ -121,8 +121,6 @@
         constraining the information to allow only certain values to be entered - for instance,
         through a drop-down list, radio buttons, or breaking up large chunks of related information
         into smaller parts.</para>
-      <?oxy_comment_start author="Ioana" timestamp="20190621T232719-0400" comment="Edited to address Stephanie&apos;s question on the intent of the numbers in the wireframe, further explained the variations across systems." flag="done"?>
-      <?oxy_comment_start author="kec" timestamp="20190721T122915-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done" mid="13"?>
       <para>Let's consider the following example, represented below, in which <link
           linkend="CIF_EHR_1">data collected by an EHR</link> combines information reported by
         devices with findings and interpretation: <orderedlist>
@@ -168,7 +166,7 @@
           </mediaobject>
           <caption>
             <para><emphasis>In this example the system provides the measurement information from the
-                device to be verified by a nurse. The nurse adds annotations describing the how the
+                device to be verified by a nurse. The nurse adds annotations describing how the
                 measurement was taken (at rest, prone) and the location (left brachial artery). The
                 user may also fill in information about micturition, if known. A physician may
                 interpret the measurement to be indicative of hypertension.</emphasis>
@@ -205,7 +203,7 @@
               pressure measurement. This representation combines laterality and site and excludes
               details related to micturition.</emphasis></para>
         </caption>
-      </figure><?oxy_comment_end?><?oxy_comment_end mid="13"?>
+      </figure>
     </section>
   </section>
   <section>
@@ -392,7 +390,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         The Statement Model layer is responsible for defining how data elements are combined to
         create a statement. <?oxy_comment_end?>ANF Reference Model belongs in this layer. Other
         standards-based clinical statements are discussed later in this chapter. This layer reuses
-        the artifacts defined Terminology Knowledge layer.</para>
+        the artifacts defined in the Terminology Knowledge layer.</para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T130846-0700" comment="The Assertional Knowledge layer is responsible for..." flag="done"?><emphasis
           role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T111554-0400" comment="glossary" flag="done"?><glossterm
@@ -676,11 +674,11 @@ Yes, ANF is for URU..." flag="done"?>in
       examples for modeling CIMI clinical statements. We also compare and contrast ANF Clinical
       Statements and CIMI Clinical Statements in an appendix. </para>
     <note>
-      <para>SNOMED CT is used as a representative example of a terminology system for the
-        coded data elements in the ANF Reference Model. This ballot is focusing defining a Statement
-        Model, not the underlying Terminology Knowledge layer describe in the Knowledge
-        Architecture. While the SNOMED examples are based on actual SNOMED definitions that are part of the
-        SNOMED distribution, we recognize that there are inconsistencies within SNOMED that allow
+      <para>SNOMED CT is used as a representative example of a terminology system for the coded data
+        elements in the ANF Reference Model. This ballot is focusing defining a Statement Model, not
+        the underlying Terminology Knowledge layer describe in the Knowledge Architecture. While the
+        SNOMED CT examples are based on actual SNOMED CT definitions that are part of the SNOMED CT
+        distribution, we recognize that there are inconsistencies within SNOMED CT that allow
         redundant representations that should addressed by the Terminology Layer.</para>
     </note>
   </section>
