@@ -4,7 +4,7 @@
   <title>Why Analysis Normal Form? A Normal Form for Clinical Statements</title>
   <para>A <glossterm baseform="Clinical Statement">clinical statement</glossterm> is a definite and
     clear representation of a clinically-significant fact or situation that was observed to exist or
-    happen. A clinical statement can be expressed as a <glossterm baseform="Statement Narrative"
+    happened. A clinical statement can be expressed as a <glossterm baseform="Statement Narrative"
       >narrative</glossterm> that provides a written account that can be naturally read by humans,
     as well as a <glossterm baseform="Normal Form">normal form</glossterm> which is a
     machine-processable representation of the statement's data as a standardized and encoded
@@ -174,7 +174,7 @@
           </caption>
         </figure></para>
       <para><link linkend="Display_EHR_2">Another EHR system</link> may capture or display a subset
-        of information about the blood pressure measurement - omitting "micturition context" and
+        of information about the blood pressure measurement—omitting "micturition context" and
         pre-coordinates site and laterality as:</para>
       <itemizedlist spacing="compact">
         <listitem>
@@ -521,7 +521,7 @@ Yes, ANF is for URU..." flag="done"?>in
       <section>
         <title>Conceptual Perspective</title>
         <para>These artifacts are most commonly focused on the “Problem-Space” rather than the
-          “Solution Space,” and contain explicit, unambiguous descriptions of the various dimensions
+          “Solution-Space,” and contain explicit, unambiguous descriptions of the various dimensions
           of the component (e.g. clinical statement) or system being specified. </para>
         <para>A fully-specified Conceptual Perspective thus should be both readable and traceable by
           Domain Experts and Subject Matter Experts and rigorous enough to serve as input into the
@@ -567,7 +567,7 @@ Yes, ANF is for URU..." flag="done"?>in
       <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
       </title>
       <para>Starting with HL7 Version 3 <link linkend="bib7">[7]</link> the minimum requirements for
-        the interoperable clinical statement:</para>
+        the interoperable clinical statement are:</para>
       <table>
         <info>
           <title>HL7 V3 Clinical Statement Definition</title>
@@ -620,7 +620,7 @@ Yes, ANF is for URU..." flag="done"?>in
         provides a Statement Model with partial Terminology constraints. For example, Clinical
         Statements in a CDA document section need to be constrained to add the precision needed to
         support the Terminology Knowledge layer. CDA entry and sub-entry templates can be used to
-        create precise implementations of theV3 Clinical Statement model for a specific type of
+        create precise implementations of the V3 Clinical Statement model for a specific type of
         clinical statement (e.g. Procedure Activity, Problem Observation) sharing a common statement
         model but different terminology and usage constraints. The US-Realm C-CDA specification
         consists of a set of templates that constrain the document, sections, and entries used in
@@ -675,11 +675,11 @@ Yes, ANF is for URU..." flag="done"?>in
       Statements and CIMI Clinical Statements in an appendix. </para>
     <note>
       <para>SNOMED CT is used as a representative example of a terminology system for the coded data
-        elements in the ANF Reference Model. This ballot is focusing defining a Statement Model, not
-        the underlying Terminology Knowledge layer describe in the Knowledge Architecture. While the
-        SNOMED CT examples are based on actual SNOMED CT definitions that are part of the SNOMED CT
-        distribution, we recognize that there are inconsistencies within SNOMED CT that allow
-        redundant representations that should addressed by the Terminology Layer.</para>
+        elements in the ANF Reference Model. This ballot is focused on defining a Statement Model,
+        not the underlying Terminology Knowledge layer described in the Knowledge Architecture.
+        While the SNOMED CT examples are based on actual SNOMED CT definitions that are part of the
+        SNOMED CT distribution, we recognize that there are inconsistencies within SNOMED CT that
+        allow redundant representations that should addressed by the Terminology Layer.</para>
     </note>
   </section>
 </chapter>
