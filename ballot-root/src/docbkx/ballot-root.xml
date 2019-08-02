@@ -46,7 +46,7 @@
     <para>
       <itemizedlist>
         <listitem>
-          <para>Keith Campbell<superscript>1</superscript></para>
+          <para>Keith E. Campbell<superscript>1</superscript></para>
         </listitem>
         <listitem>
           <para>Ryan C. Bradley<superscript>2</superscript></para>
@@ -95,16 +95,13 @@
           </para>
           <para> </para>
           <para>
-            <superscript>1</superscript>Veterans Health Administration
-                <para><superscript>2</superscript>Deloitte Consulting
-                LLP</para><para><superscript>3</superscript>Book Zurman, Inc </para></para>
-          <para><superscript>4</superscript>HL7 CIMI Work Group</para>
-          <para>
-            <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
-            <para>This work was funded by the Veterans Health Administration Office of Health
-              Informatics. It would not have been possible without the support of Jonathan Nebeker
-              and Steven Brown.</para>
-          </para>
+            <superscript>1</superscript>Veterans Health Administration;
+            <superscript>2</superscript>Deloitte Consulting LLP; <superscript>3</superscript>Book
+            Zurman, Inc;<superscript>4</superscript>HL7 CIMI Work Group;
+              <superscript>5</superscript>Sujansky &amp; Associates, LLC </para>
+          <para>This work was funded by the Veterans Health Administration Office of Health
+            Informatics. It would not have been possible without the support of Jonathan Nebeker and
+            Steven Brown.</para>
         </listitem>
       </itemizedlist>
     </para>
