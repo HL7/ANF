@@ -44,67 +44,49 @@
     </para>
     <para>Analysis Normal Form received contributions and assistance from the following individuals: </para>
     <para>
-      <itemizedlist>
-        <listitem>
-          <para>Keith E. Campbell<superscript>1</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Ryan C. Bradley<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Benson Chang<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Raja A. Cholan<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Joey Coyle<superscript>3</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Kirsten Haake<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Stephanie Klepacki<superscript>1</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Deb Konicek<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Ken Lord<superscript>3</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Kyle Maulden<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Claude Nanjo<superscript>4</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Andrew K. Sills<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Ioana Singureanu<superscript>3</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Walter Sujansky<superscript>5</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Andy Chen Wang<superscript>2</superscript></para>
-        </listitem>
-        <listitem>
-          <para>Tim Williams<superscript>2</superscript>
-          </para>
+      
+      <informaltable frame="none" rowsep="0" colsep="0">
+        <tgroup cols="2" align="left">
+          <colspec colname="c1" colnum="1" colwidth="1*"/>
+          <colspec colname="c2" colnum="2" colwidth="1*"/>
+          <tbody>
+            <row>
+              <entry><para>Keith Campbell<superscript>1</superscript></para>
+                <para>Benson Chang2<superscript>1</superscript></para>
+                <para>Joey Coyle<superscript>3</superscript></para>
+                <para>Stephanie Klepacki<superscript>1</superscript></para>
+                <para>Ken Lord<superscript>3</superscript></para>
+                <para>Claude Nanjo<superscript>4</superscript></para>
+                <para>Ioana Singureanu<superscript>3</superscript></para>
+                <para>Andy Chen Wang<superscript>2</superscript></para>
+              </entry>
+              <entry><para>Ryan C. Bradley<superscript>2</superscript></para>
+                <para>Raja A. Cholan<superscript>2</superscript></para>
+                <para>Kirsten Haake<superscript>2</superscript></para>
+                <para>Deb Konicek<superscript>2</superscript></para>
+                <para>Kyle Maulden<superscript>2</superscript></para>
+                <para>Andrew K. Sills<superscript>2</superscript></para>
+                <para>Walter Sujansky<superscript>5</superscript></para>
+                <para>Tim Williams<superscript>2</superscript></para>
+                
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </para>
           <para> </para>
-          <para>
-            <superscript>1</superscript>Veterans Health Administration;
-            <superscript>2</superscript>Deloitte Consulting LLP; <superscript>3</superscript>Book
-            Zurman, Inc;<superscript>4</superscript>HL7 CIMI Work Group;
-              <superscript>5</superscript>Sujansky &amp; Associates, LLC </para>
+    <para><superscript>1</superscript>Veterans Health Administration;</para>
+    <para><superscript>2</superscript>Deloitte Consulting LLP; </para>
+      <para><superscript>3</superscript>Book Zurman, Inc;</para>
+      <para><superscript>4</superscript>HL7 CIMI Work Group;</para>
+      <para><superscript>5</superscript>Sujansky &amp; Associates, LLC </para>
+    <para/>
           <para>This work was funded by the Veterans Health Administration Office of Health
             Informatics. It would not have been possible without the support of Jonathan Nebeker and
             Steven Brown.</para>
-        </listitem>
-      </itemizedlist>
-    </para>
+       
+    
   </preface>
   <toc/>
 
