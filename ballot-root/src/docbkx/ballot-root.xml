@@ -39,10 +39,13 @@
         <listitem>
           <para><emphasis role="bold">Steven Brown, MD, MS</emphasis> - Director of Knowledge Based
             Systems, Veterans Health Administration</para>
+          <para/>
+          <para/>
         </listitem>
       </itemizedlist>
     </para>
-    <para>Analysis Normal Form received contributions and assistance from the following individuals: </para>
+    <para>This Analysis Normal Form ballot received contributions and assistance from the following
+      individuals: </para>
     <para>
       
       <informaltable frame="none" rowsep="0" colsep="0">
@@ -51,14 +54,14 @@
           <colspec colname="c2" colnum="2" colwidth="1*"/>
           <tbody>
             <row>
-              <entry><para>Keith Campbell<superscript>1</superscript></para>
-                <para>Benson Chang<superscript>1</superscript></para>
-                <para>Joey Coyle<superscript>3</superscript></para>
-                <para>Stephanie Klepacki<superscript>1</superscript></para>
-                <para>Ken Lord<superscript>3</superscript></para>
-                <para>Claude Nanjo<superscript>4</superscript></para>
-                <para>Ioana Singureanu<superscript>3</superscript></para>
-                <para>Andy Chen Wang<superscript>2</superscript></para>
+              <entry><para>&#x2003;&#x2003;&#x2003;Keith Campbell<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Benson Chang<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Joey Coyle<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Stephanie Klepacki<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Ken Lord<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Claude Nanjo<superscript>4</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Ioana Singureanu<superscript>3</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Andy Chen Wang<superscript>2</superscript></para>
               </entry>
               <entry><para>Ryan C. Bradley<superscript>2</superscript></para>
                 <para>Raja A. Cholan<superscript>2</superscript></para>
@@ -76,11 +79,14 @@
       </informaltable>
     </para>
           <para> </para>
-    <para><superscript>1</superscript>Veterans Health Administration;</para>
-    <para><superscript>2</superscript>Deloitte Consulting LLP; </para>
-      <para><superscript>3</superscript>Book Zurman, Inc;</para>
-      <para><superscript>4</superscript>HL7 CIMI Work Group;</para>
-      <para><superscript>5</superscript>Sujansky &amp; Associates, LLC </para>
+    <para/>
+    <para/>
+    <para/>
+    <para><superscript>1</superscript>Veterans Health Administration;
+      <superscript>2</superscript>Deloitte Consulting LLP;  <superscript>3</superscript>Book Zurman,
+      Inc; <superscript>4</superscript>HL7 CIMI Work Group; <superscript>5</superscript>Sujansky
+      &amp; Associates, LLC </para>
+    <para/>
     <para/>
           <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics and Data Management Office. This work would not have
       been possible without the support of Jonathan Nebeker and Steven Brown.</para>
