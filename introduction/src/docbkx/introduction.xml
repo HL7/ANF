@@ -359,10 +359,10 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           </imageobject>
         </mediaobject>
         <caption>
-          <para>Separation of concerns is an architectural design principle, whereby a system is
-            divided into distinct sections, such that each section can address separate concerns. In
-            this case, each architectural layer addresses separate concerns that can make use of the
-            architecture layers below.</para>
+          <para><emphasis>Separation of concerns is an architectural design principle, whereby a
+              system is divided into distinct sections, such that each section can address separate
+              concerns. In this case, each architectural layer addresses separate concerns that can
+              make use of the architecture layers below.</emphasis></para>
         </caption>
       </figure>
       <para><?oxy_comment_start author="kec" timestamp="20190721T130509-0700" comment="Change from using emphasis, to using glossary link. Start out active voice. &quot;The Architectural Foundation layer is responsible for defining how object identity, versioning, modularity, and symbolic knowledge is represented&quot;" flag="done"?><emphasis

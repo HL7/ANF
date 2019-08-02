@@ -80,7 +80,7 @@
                 be nested within another relation.</para>
         </glossdef>
     </glossentry>
-    <glossentry>
+        <glossentry xml:id="Logical-Model">
         <glossterm>Logical Model</glossterm>
         <glossdef>
             <para>A model is expressed independently of a particular implementation
@@ -96,7 +96,7 @@
                 blood pressure observation, a Discharge Summary, or a Medication Order.</para>
         </glossdef>
     </glossentry>
-    <glossentry>
+        <glossentry xml:id="Isosemantic">
         <glossterm>Isosemantic Model</glossterm>
         <glossdef>
             <para>A model that, while different in structure, represents the same semantic content
@@ -250,9 +250,9 @@
         </glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>HL7 Service</glossterm>
+        <glossterm>HL7 Service Aware Interoperability Framework Canonical Definition (SAIF-CD)</glossterm>
         <glossdef>
-            <para>Aware Interoperability Framework Canonical Definition (SAIF-CD) – HL7 introduced
+            <para>HL7 Service Aware Interoperability Framework Canonical Definition (SAIF-CD) – HL7 introduced
                 an architecture to allow for a clear separation of concerns among interoperability
                 models and specification from the abstract or conceptual to the most precise,
                 implementable, and testable that ensures semantic interoperability. [SAIF-CD]
@@ -387,7 +387,7 @@
                 clinical statement as defined by the Analysis Normal Form specification.</para>
         </glossdef>
     </glossentry>
-    <glossentry>
+        <glossentry xml:id="Editorial" >
         <glossterm>Editorial Rule</glossterm>
         <glossdef>
             <para>Methodological rules to describe the proper modeling of an ANF Statement
@@ -528,7 +528,7 @@
                 and used to generate application code</para>
         </glossdef>
     </glossentry>
-    <glossentry>
+        <glossentry xml:id="Reference">
         <glossterm>ANF Reference Model</glossterm>
         <glossdef>
             <para>A logical model and uses Object Management Group (OMG) Unified Modeling Language

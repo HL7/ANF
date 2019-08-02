@@ -31,5 +31,21 @@
             href="complete-glossary.xml"
             xpointer="element(Structured-Clinical-Input-Forms)"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+                href="complete-glossary.xml"
+                xpointer="element(Logical-Model)"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+                href="complete-glossary.xml"
+                xpointer="element(Isosemantic)"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+                href="complete-glossary.xml"
+                xpointer="element(Reference)"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include
+                href="complete-glossary.xml"
+                xpointer="element(Editorial)"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
 </glossary>
