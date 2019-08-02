@@ -96,7 +96,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 </listitem>
                 <listitem>
                     <para>Was administered a medication or other substance</para>
-                    <itemizedlist>
+                    <itemizedlist spacing="compact" >
                         <listitem>
                             <para>Patient took one Acetaminophen 500 mg tablet by mouth for
                                 pain</para>
@@ -105,7 +105,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 </listitem>
                 <listitem>
                     <para>Was provided educational materials</para>
-                    <itemizedlist>
+                    <itemizedlist spacing="compact" >
                         <listitem>
                             <para>Patient was provided with educational materials on diabetes</para>
                         </listitem>
@@ -118,7 +118,7 @@ For instance that a test is ordered?
                         any other state or specific characteristic that is clinically
                         relevant<?oxy_comment_end?></para>
                     <para>
-                        <itemizedlist>
+                        <itemizedlist spacing="compact" >
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
@@ -234,7 +234,7 @@ Doing family history, donor statements using subject of information is now the n
                     <caption>
                         <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>
                     </caption>
-                    <para>Too see a more detailed representation see the tabular form here: <xref
+                    <para>To see a more detailed representation see the tabular form here: <xref
                             linkend="table_perform_dbhpresent"/></para>
                 </figure>
             </section>
