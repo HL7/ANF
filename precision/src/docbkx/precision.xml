@@ -15,12 +15,13 @@
         models into a single analysis format.</para>
     <para>Implementers may use the logical model and methodology in this document to design software
         components, databases, or APIs that support reuse and analysis of treatment information
-        captured using best practices (e.g. <glossterm baseform="Clinical Information Model">CIMI models</glossterm>) and exchanged using interoperability
-        specifications required across the US (e.g. FHIR US Core, Consolidated CDA). Since
-        information sharing already relies on a variety of clinical statement approaches and syntax
-        representations, it will become necessary to create normalized instances of those clinical
-        statements intended for reuse. Not all the data produced by a system is necessary for
-        analysis; and, the ANF model - like other CIMI models - is focused on
+        captured using best practices (e.g. <glossterm baseform="Clinical Information Model">CIMI
+            models</glossterm>) and exchanged using interoperability specifications required across
+        the US (e.g. FHIR US Core, Consolidated CDA). Since information sharing already relies on a
+        variety of clinical statement approaches and syntax representations, it will become
+        necessary to create normalized instances of those clinical statements intended for reuse.
+        Not all the data produced by a system is necessary for analysis; and, the ANF model—like
+        other CIMI models—is focused on
         <?oxy_comment_start author="Ioana" timestamp="20190726T125624-0400" comment="True?  Quality measures combine clinical and admnistrative info sometimes so it would be useful to say, if true, that other types of data may be combined." id="rvl_2mj_43b" flag="done" mid="2"?><?oxy_comment_start author="Ioana" timestamp="20190729T103421-0400" comment="Administrative info is part of the infrastructure of Knowlege Architecture." parentID="rvl_2mj_43b" flag="done"?>clinical
         information<?oxy_comment_end?><?oxy_comment_end mid="2"?>. ANF does not require a specific
         input form syntax , its focus is on implementations where data quality and semantics and
@@ -52,8 +53,8 @@
             clinical decision support, clinical quality measures, and to support workflow automation
             by triggering reminders and clinical notifications.</para>
         <para>ANF statements may be created from existing clinical statements and patient-entered
-            data to support APIs intended for Analysis or to automate information derived from device
-            measurements, clinician inputs, and patient-generated data:</para>
+            data to support APIs intended for Analysis or to automate information derived from
+            device measurements, clinician inputs, and patient-generated data.</para>
         <section>
             <title>Analysis API</title>
                     <para>The typical implementation of ANF will be a system that normalizes
@@ -127,7 +128,7 @@
         </info>
         <para>Big data analytic, data mining, business intelligence, healthcare quality programs,
             registries etc. all require large data sets of consistent structure and semantics that
-            can be analysed I aggregated for the benefit of individual patients, to evaluate an
+            can be analyzed and aggregated for the benefit of individual patients, to evaluate an
             organization, or to establish new facts. </para>
         <figure xml:id="ANF-DATA-MINING">
             <title>Data Mining using ANF statements </title>
@@ -145,11 +146,11 @@
             synthetics/abstract data types that attempt to capture the complexity of healthcare
             data. ANF simplifies the statement structure by using a small set of primitive types
             (e.g. float, varchar, boolean) and a sophisticated terminology . Data warehousing and
-            mining solutions rely need a consistent simple representation of data organized along
-            facts and axes. ANF borrows from Database Normalization the idea that "normalization" to
-            reduce data redundancy and improve integrity. The ANF logical be used to design database
-            "fact based" dimensional schemas that enable analysis focused on a specific set of facts
-            and dimensions to evaluate outcomes associated with the use of a specific therapy,
-            device, or medication. .</para>
+            mining solutions rely on a consistent simple representation of data organized along
+            facts and axes. ANF borrows from Database Normalization the idea that "normalization"
+            reduces data redundancy and improves data integrity. The ANF logical model can be used
+            to design "fact-based" dimensional schemas for databases which enables analysis of
+            specific set of facts and dimensions, such as evaluation of outcomes associated with the
+            use of a specific therapy, device, or medication.</para>
     </section>
 </chapter>

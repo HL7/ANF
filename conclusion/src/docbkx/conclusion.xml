@@ -12,16 +12,17 @@ There isn&apos;t a sub-section for patient safety.  There is one for population 
     <title>Improved Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
       ad-hoc models and formats. However, both treatment and analysis of clinical statements require
-      consistency not only at the
+      consistency, not only at the
       <?oxy_comment_start author="kec" timestamp="20190722T175052-0700" comment="Should we add semantic consistency here as seperate from format consistency, content consistency, adn semantic consistency? 
 
 Or maybe reference back to the interoperability levels, of which semantic was the highest? " flag="done"?>format
       level (e.g. <glossterm baseform="HL7 Clinical Document Architecture">CDA</glossterm>, FHIR,
-        <glossterm baseform="HL7 V2 Messaging Profile">V2</glossterm>) but also the content and
-      semantics (i.e. ANF, <glossterm baseform="Clinical Information Model">CIMI model</glossterm>,
-      etc.)<?oxy_comment_end?>. In most cases the data quality is the greatest obstacle to analysis.
-      Analysis Normal Form aims to minimize data quality challenges and provide a common format with
-      semantic clarity to allow for a meaningful secondary uses of clinical data. </para>
+        <glossterm baseform="HL7 V2 Messaging Profile">V2</glossterm>), but also at the content and
+      semantic levels (i.e. ANF, <glossterm baseform="Clinical Information Model">CIMI
+        model</glossterm>, etc.)<?oxy_comment_end?>. In most cases, the data quality is the greatest
+      obstacle to analysis. Analysis Normal Form aims to minimize data quality challenges and
+      provide a common format with semantic clarity to allow for a meaningful secondary uses of
+      clinical data. </para>
     <para>The design of
       <?oxy_comment_start author="kec" timestamp="20190722T175226-0700" comment="As I read this, it is more restating Khan, that saying how ANF supports data quality in ways that Khan says are important. Need to redraft to be more of how ANF supports data quality, for each way we support data quality, pile on that Kahn thinks it important, and other references that we can point to as well..." flag="done"?>ANF
       is based on research into data quality frameworks <link linkend="bib16">[16]</link> that
@@ -30,10 +31,11 @@ Or maybe reference back to the interoperability levels, of which semantic was th
     <para>
       <itemizedlist>
         <listitem>
-          <para><?oxy_comment_end?><emphasis role="bold">Conformance</emphasis>: Conformance how
-            well a system or implementation meets a specification. ANF provides a logical structure
-            and constraints of clinical data for value conformance, relational conformance, and
-            computational conformance irrespective of data representation (e.g. CDA, FHIR)</para>
+          <para><?oxy_comment_end?><emphasis role="bold">Conformance</emphasis>: Conformance
+            describes how well a system or implementation meets a specification. ANF provides a
+            logical structure and constraints of clinical data for value conformance, relational
+            conformance, and computational conformance irrespective of data representation (e.g.
+            CDA, FHIR)</para>
           <itemizedlist>
             <listitem>
               <para>Value Conformance: Value conformance seeks to determine if recorded data
@@ -124,7 +126,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       user knowledge relevant to a medical condition. <link linkend="bib17">[17]</link></para>
     <para>Additional studies show that well-executed CDS can <link linkend="bib17">[17]</link>
       :</para>
-    <itemizedlist>
+    <itemizedlist spacing="compact" >
       <listitem>
         <para>reduce adverse drug-drug interaction events and medication errors; </para>
       </listitem>
@@ -148,16 +150,17 @@ Or maybe reference back to the interoperability levels, of which semantic was th
           interventions.</para>
       </listitem>
     </itemizedlist>
-    <para>Taken together, the available evidence shows that CDS —when implemented in the right
+    <para>Taken together, the available evidence shows that CDS—when implemented in the right
       context, and when governed with formal management—can reduce errors, improve the quality of
-      care, reduce cost, and ease the cognitive burden on health care providers. [15] As a result,
-      the impetus for achieving standardized, widespread adoption of CDS across health systems is
-      clear.</para>
+      care, reduce cost, and ease the cognitive burden on health care providers.<link
+        linkend="bib17">[17]</link> As a result, the impetus for achieving standardized, widespread
+      adoption of CDS across health systems is clear.</para>
     <para>A report entitled “<emphasis role="italic">Optimizing Strategies for Clinical Decision
-        Support: Summary of a Meeting Series</emphasis>” [16] was produced out of the collaboration
-      between the ONC and the National Academy of Medicine (NAM). The report states that there are
-      at least four important technical challenges to sharing and therefore standardizing
-      implementations of CDS content: <link linkend="bib17">[17]</link></para>
+        Support: Summary of a Meeting Series</emphasis>” <link linkend="bib17">[17]</link> was
+      produced out of the collaboration between the ONC and the National Academy of Medicine (NAM).
+      The report states that there are at least four important technical challenges to sharing and
+      therefore standardizing implementations of CDS content: <link linkend="bib17"
+      >[17]</link></para>
     <para><emphasis role="bold">(1) insufficient standardization of patient data representation;
       </emphasis></para>
     <para>(2) insufficient standardization of CDS knowledge representation; </para>

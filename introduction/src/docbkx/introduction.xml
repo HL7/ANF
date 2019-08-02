@@ -456,7 +456,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
               for workflow and conditional logic (i.e. if-then-else).</para>
           </listitem>
         </itemizedlist></para>
-      <para>A clear separation of concern enables the isosemantic transformation of standards-based
+      <para>A clear separation of concerns enables the isosemantic transformation of standards-based
         clinical statements to normal form by decoupling structure from semantics and workflow
         <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
 
@@ -507,7 +507,7 @@ Yes, ANF is for URU..." flag="done"?>in
           </imageobject>
         </mediaobject>
         <caption>
-          <para><emphasis>Like other CIMI models, ANF is a Logical Model that may be used to created
+          <para><emphasis>Like other CIMI models, ANF is a Logical Model that may be used to create
               implementation specifications. </emphasis></para>
         </caption>
       </figure>
@@ -529,9 +529,9 @@ Yes, ANF is for URU..." flag="done"?>in
         <para>In HL7, the Conceptual Perspective is represented by
             <?oxy_comment_start author="rcholan" timestamp="20190730T121224-0400" comment="glossary" flag="done"?><glossterm
             baseform="Domain Analysis Model">Domain Analysis Models
-          (DAMs)</glossterm><?oxy_comment_end?>and business models that represent stakeholder
-          requirements analyzed by subject matter and domain experts. This perspective that precede
-          the development of either logical or implementable artifacts and it is key to successful
+          (DAMs)</glossterm><?oxy_comment_end?> and business models that represent stakeholder
+          requirements analyzed by subject matter and domain experts. This perspective precedes the
+          development of either logical or implementable artifacts and it is key to successful
           testing of implementations. </para>
       </section>
       <section>
@@ -646,8 +646,8 @@ Yes, ANF is for URU..." flag="done"?>in
         the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic
         communication made about a patient typically documented as an 'entry' in the patient record. </para>
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
-        Terminology Knowledge and provides a separate model for each type statements, organized into
-        a comprehensive library.</para>
+        Terminology Knowledge and provides a separate model for each type of statements, organized
+        into a comprehensive library.</para>
       <para><?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="59"?>CIMI
         clinical statements are further explained in this document <link
           linkend="clinical-input-form">(See Current CIMI Modeling

@@ -140,7 +140,7 @@
     </glossentry>
     <glossentry xml:id="Structured-Clinical-Input-Forms">
         <glossterm>Clinical Input Forms</glossterm>
-        <acronym>Input Forms</acronym>
+        <acronym>CIF</acronym>
         <glossdef>
             <para>The manner by which clinicians author clinical statements and enter them into
                 their organizations’ electronic health record (EHR). Input forms have an impact as
