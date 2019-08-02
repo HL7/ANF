@@ -29,9 +29,7 @@
         <glossterm>Clinical Information Modeling Initiative</glossterm>
         <acronym>CIMI</acronym>
         <glossdef>
-            <para>A workgroup of Health Level 7 (HL7) focused on improving the interoperability of
-                healthcare systems through shared implementable clinical information models, and a
-                sponsor of this whitepaper. </para>
+            <para/>
             <glossseealso otherterm="Clinical-Information-Model">CIMI Model</glossseealso>
         </glossdef>
     </glossentry>
@@ -76,9 +74,15 @@
     <glossentry xml:id="Normal-Form">
         <glossterm>Normal Form</glossterm>
         <glossdef>
-            <para>A defined standard structure for relational databases in which a relation may not
-                be nested within another relation.</para>
+            <para>A well-defined definitional structure that elimintes redundancy and improves data
+                    integrity. Normal forms are widely used in databases schmema design.</para>
         </glossdef>
+    </glossentry>
+        <glossentry xml:id="Normalization">
+            <glossterm>Normalization</glossterm>
+            <glossdef>
+                <para>The process of eliminating redundancy and improving data integrity by transforming a data definion (e.g. database schema). </para>
+            </glossdef>
     </glossentry>
         <glossentry xml:id="Logical-Model">
         <glossterm>Logical Model</glossterm>
@@ -570,9 +574,9 @@
     <glossentry>
         <glossterm>Knowledge Architecture</glossterm>
         <glossdef>
-            <para>A layered healthcare informatics knowledge architecture enables a clean separation
-                of concerns and contains the following layers: Architectural, Terminology, Statement
-                Model, Assertional Knowledge, and Procedural Knowledge. </para>
+            <para>A layered healthcare informatics knowledge architecture; it enables a clean
+                    separation of concerns and contains the following layers: Architectural,
+                    Terminology, Statement Model, Assertional Knowledge, and Procedural Knowledge. </para>
         </glossdef>
     </glossentry>
     </glossary>

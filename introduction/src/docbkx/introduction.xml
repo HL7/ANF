@@ -96,8 +96,7 @@
       openEHR archetypes) but they may also be based on proprietary models. For the purposes of this
       document, the type or usability of data structures used for capture or display of clinical
       statements is not in scope. We assume that <emphasis role="bold">any suitably
-        encoded</emphasis>  clinical statement may be suitable for normalization and analysis.
-      <?oxy_comment_end?></para>
+        encoded</emphasis> clinical statement may be normalized. <?oxy_comment_end?></para>
     <para>Ideally, clinical information is modeled in a manner that is most efficient for use. This
       is a problem because there are many different use cases for clinical information with a wide
       range of requirements. There is no single model that can be the most efficient model for all
@@ -169,11 +168,10 @@
           </mediaobject>
           <caption>
             <para><emphasis>In this example the system provides the measurement information from the
-                device to be verified by a nurse. The nurse also annotates the topic of with
-                information describing the patient during the measurement (at rest, prone) and the
-                location (left brachial artery). The user may also fill in information about
-                micturition, if known. A physician may interpret the measurement to be indicative of
-                hypertension.</emphasis>
+                device to be verified by a nurse. The nurse adds annotations describing the how the
+                measurement was taken (at rest, prone) and the location (left brachial artery). The
+                user may also fill in information about micturition, if known. A physician may
+                interpret the measurement to be indicative of hypertension.</emphasis>
             </para>
           </caption>
         </figure></para>
@@ -202,10 +200,10 @@
           </imageobject>
         </mediaobject>
         <caption>
-          <para><emphasis>In the second example, the scenario - a similar system or another
-              configuration of the same system - that provides a different set of options to verify
-              and record the blood pressure including a combination of concepts and does not support
-              any details related to micturition.</emphasis></para>
+          <para><emphasis>In the second example, a similar system (or an alternative configuration
+              of the same system) may support a different set of options to verify and record blood
+              pressure measurement. This representation combines laterality and site and excludes
+              details related to micturition.</emphasis></para>
         </caption>
       </figure><?oxy_comment_end?><?oxy_comment_end mid="13"?>
     </section>
@@ -231,11 +229,8 @@
       <?oxy_comment_end?>normal form to aggregate data sets across multiple
       <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. " flag="done"?><?oxy_comment_end?>systems
       <!--through normalization-->. The more normalized a data set is, the simpler it will become to
-      analyze, and errors will be reduced.
-        <?oxy_comment_start author="rcholan" timestamp="20190730T085154-0400" comment="glossary" flag="done"?><glossterm
-        baseform="Post-coordinated concept">Post-coordinated</glossterm><?oxy_comment_end?>
-      compositional statements using ANF introduce the ability to faithfully expand from a reduced
-      form or compare to other statements with ease and no loss of semantic integrity.
+      analyze, and errors will be reduced. In addition to improving analysis, ANF introduces the
+      ability compare statements with ease and no loss of semantic integrity.
       <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?><?oxy_comment_end?></para>
     <section>
       <title>Objectives and Purpose of ANF</title>
@@ -254,47 +249,51 @@
         information systems may create normal data natively or transform other representations of
         clinical statements (e.g. C-CDA templates, FHIR profiles) to normal form (i.e., ANF).</para>
       <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
-        multiple sources to better support a set of analysis. ANF enhances the ability to:
-          <itemizedlist spacing="compact">
+        multiple sources to better support a set of analysis. ANF enhances the ability to analyze
+        and compare clinical statements aggregated across systems and organizations and provide a
+        logical model to:<itemizedlist spacing="compact">
           <listitem>
-            <para>Specify clinical content extracted from EHR systems using FHIR</para>
+            <para>Specify a common form for clinical statements extracted from EHR systems and
+              FHIR</para>
           </listitem>
         </itemizedlist><itemizedlist>
           <listitem>
-            <para>Provide a common analysis form of data exchange, HL7 messages, FHIR and CDA</para>
-          </listitem>
-        </itemizedlist><itemizedlist>
-          <listitem>
-            <para>Specify clinical content for User Interfaces</para>
+            <para>Provide a common analysis form to data exchange paradigms (e.g. HL7 messages, FHIR
+              and CDA).</para>
           </listitem>
         </itemizedlist><itemizedlist spacing="compact">
           <listitem>
             <para><?oxy_comment_start author="kec" timestamp="20190721T122226-0700" comment="Don&apos;t put bulleted lists inside of bullited lists. Maybe put in a transition paragraph, then a new bullited list. " flag="done"?>Enhance
-              information from clinical content for use in <glossterm>Clinical Decision
-                Support</glossterm> Systems, Clinical Quality Measures and National Registries,
-              Healthcare Guidelines and Protocols, and Epidemiological
-            Research.</para><?oxy_comment_end?>
+              clinical data for use in <glossterm>Clinical Decision Support</glossterm> Systems,
+              Clinical Quality Measures and National Registries, Healthcare Guidelines and
+              Protocols, and Epidemiological Research.</para><?oxy_comment_end?>
           </listitem>
         </itemizedlist></para>
     </section>
     <section>
       <title>Assumptions for ANF</title>
-      <para>ANF provides a precise, consistent semantic data and terminology specification that is
-        comparable and sharable between multiple care providers, health enterprises, and
-        standards-based Healthcare Information Technology (HIT). </para>
+      <para>ANF provides a precise statement specification that is comparable and sharable between
+        multiple care providers, health enterprises, and standards-based Healthcare Information
+        Technology (HIT). ANF does not define the terminology specification but relies on <glossterm
+          baseform="Terminology Knowledge">terminology knowledge </glossterm> to specify the meaning
+        of clinical statements. ANF coded data may use single codes, as well as any legal
+        terminology expression defined within the terminology layer of the <link
+          linkend="SoC_Section">architecture</link>.</para>
       <para>ANF
         supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         highly
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="25"?>post-coordinated<?oxy_comment_end?><?oxy_comment_end mid="25"?>
-        compositional terminologies to provide greater content coverage than can be achieved by
-        relying only on <glossterm baseform="Pre-coordinated concept">pre-coordinated
-          concepts.</glossterm> Post-coordinated compositional terminologies are more expressive and
-        can achieve better analysis than can be achieved by relying only on pre-coordinated
-        concepts. </para>
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="24"?><glossterm
+          baseform="Post-coordinated concept"
+        >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="24"?> compositional
+        terminologies to provide greater content coverage than can be achieved by relying only on
+          <glossterm baseform="Pre-coordinated concept">pre-coordinated concepts.</glossterm>
+        Post-coordinated compositional terminologies are more expressive and can achieve better
+        analysis than can be achieved by relying only on pre-coordinated concepts. </para>
       <para>Successful analysis requires relatively high data quality that allows systems to define
         a precise
         <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary" flag="done"?>topic<?oxy_comment_end?>,
-          <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?>category<?oxy_comment_end?>, and clear
+        <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?>category<?oxy_comment_end?>,
+        and clear
         <?oxy_comment_start author="rcholan" timestamp="20190730T110912-0400" comment="glossary" flag="done"?>measure<?oxy_comment_end?>
         or
           <?oxy_comment_start author="rcholan" timestamp="20190730T110921-0400" comment="glossary" flag="done"?><glossterm
@@ -384,38 +383,40 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         </link><?oxy_comment_start author="kec" timestamp="20190721T130700-0700" comment="The Termnology Knowledge layer is responsible for... Most of SNOMED CT, LOINC, RxNorm live here. I don&apos;t think &quot;Representation of absence&quot; should be mentioned here. " flag="done"?>–
         The Terminology Knowledge layer is responsible for structured sets of medical terms and
         codes that define concepts of interest, including descriptions, dialects, language, and
-        semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer <?oxy_comment_end?>
-      </para>
+        semantic hierarchy. SNOMED CT, LOINC, and RxNorm are part of this layer. It defines what
+        valid codes or expressions may be used by higher level layers<?oxy_comment_end?>. </para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T130821-0700" comment="The Statement Model layer is responsible for defining how terminology concepts can be combined to create a statement. " flag="done"?><emphasis
           role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T111546-0400" comment="glossary" flag="done"?><glossterm
             baseform="Statement Model">Statement Model</glossterm><?oxy_comment_end?></emphasis> –
-        The Statement Model layer is responsible for defining how terminology concepts can be
-        combined to create a statement. Within the data structures, additional detail to describe
-        subject, numerical, and categorical information related to concepts can be added in this
-        layer. <?oxy_comment_end?>ANF introduces a statement model specific to analysis and clinical
-        decision support. Other standards-based clinical statements are discussed later in this
-        chapter.</para>
+        The Statement Model layer is responsible for defining how data elements are combined to
+        create a statement. <?oxy_comment_end?>ANF Reference Model belongs in this layer. Other
+        standards-based clinical statements are discussed later in this chapter. This layer reuses
+        the artifacts defined Terminology Knowledge layer.</para>
       <para><?oxy_comment_start author="kec" timestamp="20190721T130846-0700" comment="The Assertional Knowledge layer is responsible for..." flag="done"?><emphasis
           role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T111554-0400" comment="glossary" flag="done"?><glossterm
             baseform="Assertional Knowledge">Assertional
           Knowledge<?oxy_comment_end?></glossterm></emphasis> – The Assertional Knowledge layer
-        reuses information based on Statement Model. It is responsible for guidelines and business
-        rules to assist clinical decision making. This includes facts and knowledge upon which
-        concepts and combinations of concepts can assimilate into protocols. ANF statements can be
-        used to support assertional artifacts.</para>
+        reuses artifacts defined in the Statement Model to specify guidelines and business rules to
+        assist clinical decision making. This includes facts and knowledge upon which concepts and
+        combinations of concepts can assimilate into protocols. Assertional Knowledge may indicate
+        what symptoms may be associated with a disorder. ANF statements are intended to support the
+        assertional knowledge.</para>
       <para><?oxy_comment_end?><emphasis role="bold"
-            ><?oxy_comment_start author="rcholan" timestamp="20190730T111601-0400" comment="glossary" flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..." flag="done" mid="45"?><glossterm
+            ><?oxy_comment_start author="rcholan" timestamp="20190730T111601-0400" comment="glossary" flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..." flag="done" mid="44"?><glossterm
             baseform="Procedural Knowledge">Procedural
-          Knowledge</glossterm><?oxy_comment_end?></emphasis> –The Procedural Knowledge Layer is
-        responsible for information about standard ways to carry out specific procedures as well as
-        other procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
-        particular patient situations. Procedural knowledge, together with assertional knowledge,
-        enables clinical decision support, quality measurement, and supports patient safety. This
-        layer is based on the interoperability infrastructure and terminology layers, incorporates
-        the statement model for information retrieval, and uses the assertional layer to apply
-        rules.<?oxy_comment_end mid="45"?></para>
+          Knowledge</glossterm><?oxy_comment_end?></emphasis> – <emphasis role="bold">Procedural
+          knowledge</emphasis>, also known as <emphasis role="bold">imperative knowledge</emphasis>,
+        is the knowledge exercised in the performance of some task. It is responsible for
+        information about standard ways to carry out specific procedures as well as other procedural
+        guidelines, e.g. treatment protocols for diseases and order sets focused on particular
+        patient situations. Procedural knowledge, together with assertional knowledge, enables
+        clinical decision support, quality measurement, and supports patient safety. This layer is
+        based on the interoperability infrastructure and terminology layers, incorporates the
+        statement model for information retrieval, and uses the assertional
+        rules.<?oxy_comment_end mid="44"?> Procedural knowledge artifacts may include clinical alert
+        rules, reminders, etc. that trigger actions or recommend interventions.</para>
       <para>Examining a clinical procedure for controlling hypertension illustrates each of the
         layers of the informatics architectural separation of concerns. <itemizedlist>
           <listitem>
@@ -675,10 +676,12 @@ Yes, ANF is for URU..." flag="done"?>in
       examples for modeling CIMI clinical statements. We also compare and contrast ANF Clinical
       Statements and CIMI Clinical Statements in an appendix. </para>
     <note>
-      <para>Throughout this document, SNOMED CT is used to describe clinical concepts and illustrate
-        sample statements based on both ANF and CIMI logical models. For simplicity, SNOMED CT is
-        used for all logical expressions and examples in this specification but ANF implementation
-        may require LOINC or RxNorm as well.</para>
+      <para>SNOMED CT is used as a representative example of a terminology system for the
+        coded data elements in the ANF Reference Model. This ballot is focusing defining a Statement
+        Model, not the underlying Terminology Knowledge layer describe in the Knowledge
+        Architecture. While the SNOMED examples are based on actual SNOMED definitions that are part of the
+        SNOMED distribution, we recognize that there are inconsistencies within SNOMED that allow
+        redundant representations that should addressed by the Terminology Layer.</para>
     </note>
   </section>
 </chapter>
