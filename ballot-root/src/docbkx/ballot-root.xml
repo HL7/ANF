@@ -52,7 +52,7 @@
           <tbody>
             <row>
               <entry><para>Keith Campbell<superscript>1</superscript></para>
-                <para>Benson Chang2<superscript>1</superscript></para>
+                <para>Benson Chang<superscript>1</superscript></para>
                 <para>Joey Coyle<superscript>3</superscript></para>
                 <para>Stephanie Klepacki<superscript>1</superscript></para>
                 <para>Ken Lord<superscript>3</superscript></para>
@@ -82,9 +82,8 @@
       <para><superscript>4</superscript>HL7 CIMI Work Group;</para>
       <para><superscript>5</superscript>Sujansky &amp; Associates, LLC </para>
     <para/>
-          <para>This work was funded by the Veterans Health Administration Office of Health
-            Informatics. It would not have been possible without the support of Jonathan Nebeker and
-            Steven Brown.</para>
+          <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics and Data Management Office. This work would not have
+      been possible without the support of Jonathan Nebeker and Steven Brown.</para>
        
     
   </preface>
