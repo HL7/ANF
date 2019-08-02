@@ -63,7 +63,7 @@
     </section>
 
     <section>
-        <title>Transformation Languages and Architecture</title>
+        <title>Transformation to ANF</title>
 
         <para>The previous sections have described the variation that can exist in the data
             structure and modeling style of a single standard. Moreover, this variation is
@@ -235,7 +235,7 @@
     -->
     
     <section>
-        <title>Transformation to ANF</title>
+        <title>Transformation Languages and Architecture</title>
         
         <para>A number of options exist for expressing transformation logic and for executing the
             transformation on specific instances of clinical data for normalization into ANF.  These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author.  One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
@@ -442,10 +442,7 @@
                 <para>The strength of QVT is that it is very abstract, which confers great
                     flexibility and configurability to create custom transformation languages.
                     However, the abstractness also makes QVT quite difficult to understand and
-                    learn, and there are limited resources to assist in the learning process. For
-                    example, a search on Amazon Books for references on the QVT framework yielded
-                    only 8 relevant results, most of which were not in English. In contrast, a
-                    similar search for XSLT references returned 270 results. </para>
+                    learn, and there are limited resources to assist in the learning process. </para>
             </section>
         </section>
 
