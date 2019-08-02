@@ -133,8 +133,7 @@ Doing family history, donor statements using subject of information is now the n
                 </listitem>
             </itemizedlist>
             <section>
-                <title>Presence or Absence of a Clinical
-                        Phenomenon</title>
+                <title>Presence or Absence of a Clinical Phenomenon</title>
                 <!--                  <para>Timing - Performance of Action</para>
                     
                 
@@ -155,16 +154,24 @@ Doing family history, donor statements using subject of information is now the n
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
                 -->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-timing-content)"><xi:fallback></xi:fallback></xi:include>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions-content)"><xi:fallback></xi:fallback></xi:include>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-presenceAbsence-content)"><xi:fallback></xi:fallback></xi:include>
-
-
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-timing"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-timing-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-topicsAreActions-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-presenceAbsence"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-presenceAbsence-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="IMPORTANT:discuss with Keith. This unit of time thing leads to two ways to model the presence. I can do a unit of count for dot blot hemorrhages or this time unit. This doesn&apos;t seem any better than other&apos;s using two models, one with a coded presence, and one with a count." flag="done"?><?oxy_comment_end?>
                 <figure>
                     <title>Diabetes Mellitus Present ANF Example</title>
@@ -185,10 +192,11 @@ Doing family history, donor statements using subject of information is now the n
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
-                    infinite (inf), and a measureSemantic of "Countable quantity".  Too see a more
+                    infinite (inf), and a measureSemantic of "Countable quantity". To see a more
                     detailed representation see the tabular form here: <xref
                         linkend="table_perform_dmpresent"/></para>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-presenceAbsence"/></para>
+                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-presenceAbsence"/></para>
                 <!--<editorial-rule>
                     <title>Statement of absence of a Topic</title>
                     <mathphrase>Any statement that represents absence of a Topic will have a Result
@@ -212,7 +220,7 @@ Doing family history, donor statements using subject of information is now the n
                 <para>In the Diabetes Mellitus Type 2 Absent example, the topic is the same as
                     Diabetes Mellitus Type 2 Present example. The difference is in the Result which
                     is represented as an upperBound and lowerBound of zero with the same
-                    measureSemantic.  Too see a more detailed representation see the tabular form
+                    measureSemantic. To see a more detailed representation see the tabular form
                     here: <xref linkend="table_perform_dmabsent"/></para>
                 <figure>
                     <title>Dot Blot Hemorrhage Present ANF Example</title>
@@ -224,7 +232,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>    
+                        <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>
                     </caption>
                     <para>Too see a more detailed representation see the tabular form here: <xref
                             linkend="table_perform_dbhpresent"/></para>
@@ -232,16 +240,18 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Test/Screening or Procedure and Resultant Value</title>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-resultsRangedQuantity"/></para>
-                <xi:include
-                        href="../analysis-normal-form/editorial-rules.xml"
-                        xpointer="element(anf-editorialrule-resultsRangedQuantity-content)">
-                        <xi:fallback/>
-                    </xi:include>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-techniques"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-techniques-content)"><xi:fallback></xi:fallback></xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-resultsRangedQuantity"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-resultsRangedQuantity-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-techniques"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-techniques-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <!--<editorial-rule>
                     <title>Statement with a Result Value</title>
                     <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="could use better wording below, because a topic doesn&apos;t &apos;state&apos; a result."?><?oxy_comment_end?>
@@ -327,18 +337,17 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <?oxy_comment_start author="kec" timestamp="20190722T172654-0700" comment="Put in the narrative a discussion of the utility of being able to represent intervals of certainty. "?>
-                <para>The Pule Rate example above utilizes a technique, the pulse oximeter device,
+                <para>The Pulse Rate example above utilizes a technique, the pulse oximeter device,
                     and contains a resultant value of 68 beats/minute. Since a Result is represented
                     with an upperBound and lowerBound they are both represented as 68 in this
                     case.<?oxy_comment_end?> Too see a more detailed representation see the tabular
                     form here: <xref linkend="table_perform_pulse"/></para>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-prerequisites"/></para>   
-                <xi:include
-                        href="../analysis-normal-form/editorial-rules.xml"
-                        xpointer="element(anf-editorialrule-prerequisites-content)">
-                        <xi:fallback/>
-                    </xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-prerequisites"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-prerequisites-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <!--<editorial-rule>
                     <title><glossterm>Prerequisite</glossterm></title>
                     <mathphrase> A prerequisite is a <emphasis role="bold">state</emphasis> that
@@ -486,21 +495,18 @@ Doing family history, donor statements using subject of information is now the n
                             are unrelated (Akinetic seizure without atonia) then the two statements
                             should be associated. </mathphrase>
                     </editorial-rule>--></para>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-separateCompoundTopics"/></para>
-                <xi:include
-                        href="../analysis-normal-form/editorial-rules.xml"
-                        xpointer="element(anf-editorialrule-separateCompoundTopics-content)">
-                        <xi:fallback/>
-                    </xi:include>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-associatedStatement"/></para>
-                <xi:include
-                        href="../analysis-normal-form/editorial-rules.xml"
-                        xpointer="element(anf-editorialrule-associatedStatement-content)">
-                        <xi:fallback/>
-                    </xi:include>
-
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-separateCompoundTopics"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-separateCompoundTopics-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-associatedStatement"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-associatedStatement-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="
                         At risk of possible firing squad, I wonder...
                         Should we make the blue bubble text more consistent with capitalization
