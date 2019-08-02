@@ -204,8 +204,8 @@
         <caption>
           <para><emphasis>In the second example, the scenario - a similar system or another
               configuration of the same system - that provides a different set of options to verify
-              and record the blood pressure including a combination of conception and does not
-              support any details related to micturition.</emphasis></para>
+              and record the blood pressure including a combination of concepts and does not support
+              any details related to micturition.</emphasis></para>
         </caption>
       </figure><?oxy_comment_end?><?oxy_comment_end mid="13"?>
     </section>
@@ -241,7 +241,7 @@
       <title>Objectives and Purpose of ANF</title>
       <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
         purpose is to introduce standards-based, normalized representation of clinical statements
-        from a heterogeneous source using an objective quantitative <emphasis role="bold"
+        from a heterogeneous source using an objective <emphasis role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T085855-0400" comment="glossary" flag="done"?><glossterm
             baseform="Measure">measure</glossterm><?oxy_comment_end?></emphasis> to help evaluate
         the result, presence, and magnitude of a specific finding, request or observation. ANF
@@ -617,7 +617,7 @@ Yes, ANF is for URU..." flag="done"?>in
         the US-Realm Consolidated CDA (C-CDA) to represent CDA document entries. A V3 Clinical
         Statement Model is a <glossterm baseform="Polymorphic model">polymorphic model</glossterm>:
         it can represent observations, procedures, encounters, public health reports, supply,
-        medications, exposure, and derivations of clinical acts. The C3 Clinical Statement model
+        medications, exposure, and derivations of clinical acts. The V3 Clinical Statement model
         provides a Statement Model with partial Terminology constraints. For example, Clinical
         Statements in a CDA document section need to be constrained to add the precision needed to
         support the Terminology Knowledge layer. CDA entry and sub-entry templates can be used to

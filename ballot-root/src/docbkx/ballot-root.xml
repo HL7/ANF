@@ -17,6 +17,98 @@
       they all depend on interoperable, reusable, and analysis-ready information that can improve
       outcomes, produce new therapies, and put into practice "precision medicine."</para>
   </preface>
+  <preface> <title>Acknowledgements</title><para> The project team would like to acknowledge the leadership and guidance from: </para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Keith E. Campbell, MD, PHD</emphasis> - Director of
+            Informatics Architecture, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Richard Esmond</emphasis> - HL7 CIMI Work Group
+            Co-Chair</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Diane Montella, MD</emphasis> - Office of Health Informatics,
+            Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Jonathan Nebeker, MD, MS</emphasis> - Deputy Chief Medical
+            Informatics Officer, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Steven Brown, MD, MS</emphasis> - Director of Knowledge Based
+            Systems, Veterans Health Administration</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>Analysis Normal Form received contributions and assistance from the following individuals: </para>
+    <para>
+      <itemizedlist>
+        <listitem>
+          <para>Keith Campbell<superscript>1</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Ryan C. Bradley<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Benson Chang<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Raja A. Cholan<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Joey Coyle<superscript>3</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Kirsten Haake<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Stephanie Klepacki<superscript>1</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Deb Konicek<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Ken Lord<superscript>3</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Kyle Maulden<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Claude Nanjo<superscript>4</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Andrew K. Sills<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Ioana Singureanu<superscript>3</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Walter Sujansky<superscript>5</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Andy Chen Wang<superscript>2</superscript></para>
+        </listitem>
+        <listitem>
+          <para>Tim Williams<superscript>2</superscript>
+          </para>
+          <para> </para>
+          <para>
+            <superscript>1</superscript>Veterans Health Administration
+                <para><superscript>2</superscript>Deloitte Consulting
+                LLP</para><para><superscript>3</superscript>Book Zurman, Inc </para></para>
+          <para><superscript>4</superscript>HL7 CIMI Work Group</para>
+          <para>
+            <para><superscript>5</superscript>Sujansky &amp; Associates, LLC</para>
+            <para>This work was funded by the Veterans Health Administration Office of Health
+              Informatics. It would not have been possible without the support of Jonathan Nebeker
+              and Steven Brown.</para>
+          </para>
+        </listitem>
+      </itemizedlist>
+    </para>
+  </preface>
   <toc/>
 
   <!-- Abbreviated Glossary -->
@@ -58,8 +150,8 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <!-- <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/acknowledgements/acknowledgements.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
   <!-- Complete Glossary -->
   <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/complete-glossary.xml"

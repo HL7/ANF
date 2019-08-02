@@ -340,7 +340,7 @@ Doing family history, donor statements using subject of information is now the n
                 <para>The Pulse Rate example above utilizes a technique, the pulse oximeter device,
                     and contains a resultant value of 68 beats/minute. Since a Result is represented
                     with an upperBound and lowerBound they are both represented as 68 in this
-                    case.<?oxy_comment_end?> Too see a more detailed representation see the tabular
+                    case.<?oxy_comment_end?> To see a more detailed representation see the tabular
                     form here: <xref linkend="table_perform_pulse"/></para>
                 <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-prerequisites"/></para>
@@ -440,7 +440,7 @@ Doing family history, donor statements using subject of information is now the n
                     using an adult sized cuff, but also includes two prerequisites that are
                     represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
-                    lowerBound. Too see a more detailed representation see the tabular form here:
+                    lowerBound. To see a more detailed representation see the tabular form here:
                         <xref linkend="table_perform_bpm"/></para>
                 <figure>
                     <title>Three Dot Blot Hemorrhages ANF Example</title>
@@ -454,7 +454,7 @@ Doing family history, donor statements using subject of information is now the n
                         <para><emphasis role="italics">Three Dot Blot Hemorrhages</emphasis></para>
                     </caption>
                 </figure>
-                <para>Too see a more detailed representation see the tabular form here: <xref
+                <para>To see a more detailed representation see the tabular form here: <xref
                         linkend="table_perform_3dbh"/></para>
                 <figure>
                     <title>Positive Screen for Fall Risk ANF Example</title>
