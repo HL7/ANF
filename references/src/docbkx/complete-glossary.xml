@@ -83,7 +83,7 @@
         <glossentry xml:id="Logical-Model">
         <glossterm>Logical Model</glossterm>
         <glossdef>
-            <para>A model is expressed independently of a particular implementation
+            <para>A model expressed independently of a particular implementation
                 technology.</para>
         </glossdef>
     </glossentry>
@@ -135,7 +135,7 @@
         </glossdef>
     </glossentry>
     <glossentry xml:id="Structured-Clinical-Input-Forms">
-        <glossterm>Structured Clinical Input Forms</glossterm>
+        <glossterm>Clinical Input Forms</glossterm>
         <acronym>Input Forms</acronym>
         <glossdef>
             <para>The manner by which clinicians author clinical statements and enter them into
