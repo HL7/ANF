@@ -58,7 +58,8 @@
     <glossentry xml:id="Statement">
         <glossterm>Statement</glossterm>
         <glossdef>
-            <para>A representation of a fact or situation was observed to exist or happen.</para>
+            <para>A representation of a fact or situation that was observed to exist or
+                    happen.</para>
             <glossseealso otherterm="Clinical-Statement">Clinical Statement</glossseealso>
             <glossseealso otherterm="Statement-Narrative">Statement Narrative</glossseealso>
         </glossdef>
@@ -66,9 +67,8 @@
     <glossentry xml:id="Statement-Narrative">
         <glossterm>Statement Narrative</glossterm>
         <glossdef>
-            <para>A written account of a fact or situation was observed to exist or happen,
-                corresponding to one or more statements. See Also Clinical Statement, Statement.
-            </para>
+            <para>A written account of a fact or situation that was observed to exist or happen,
+                    corresponding to one or more statements. See Also Clinical Statement, Statement. </para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Normal-Form">
@@ -143,11 +143,11 @@
         <acronym>CIF</acronym>
         <glossdef>
             <para>The manner by which clinicians author clinical statements and enter them into
-                their organizations’ electronic health record (EHR). Input forms have an impact as
-                to how information is presented to the clinicians and how they enter the data, such
-                as by constraining the information to allow only certain values to be entered, such
-                as through a drop-down list or radio button, or breaking up large chunks of related
-                information into smaller parts.</para>
+                    their organizations’ electronic health record (EHR). Clinical Input Forms (CIFs)
+                    have an impact as to how information is presented to the clinicians and how they
+                    enter the data. CIFs might constrain the information to allow only certain
+                    values to be entered, such as through a drop-down list or radio button, or
+                    breaking up large chunks of related information into smaller parts.</para>
         </glossdef>
     </glossentry>
     <glossentry>
