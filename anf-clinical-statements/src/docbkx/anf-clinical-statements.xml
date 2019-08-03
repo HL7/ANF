@@ -33,11 +33,12 @@
                 Action</glossterm></emphasis></para>
         <para>Requests for clinical testing, active interventions, future goals, or consultation
             with other providers.</para>
-        
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-performanceRequest"/></para>
-
-         <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-performanceRequest-content)"><xi:fallback></xi:fallback></xi:include>
-
+        <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-performanceRequest"/></para>
+        <xi:include href="../analysis-normal-form/editorial-rules.xml"
+            xpointer="element(anf-editorialrule-performanceRequest-content)">
+            <xi:fallback/>
+        </xi:include>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
@@ -52,8 +53,8 @@ As expected?  Maybe just change this to performance of a topic and request of a 
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="8"?><?oxy_comment_end mid="8"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="9"?><?oxy_comment_end mid="9"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -96,7 +97,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 </listitem>
                 <listitem>
                     <para>Was administered a medication or other substance</para>
-                    <itemizedlist spacing="compact" >
+                    <itemizedlist spacing="compact">
                         <listitem>
                             <para>Patient took one Acetaminophen 500 mg tablet by mouth for
                                 pain</para>
@@ -105,7 +106,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                 </listitem>
                 <listitem>
                     <para>Was provided educational materials</para>
-                    <itemizedlist spacing="compact" >
+                    <itemizedlist spacing="compact">
                         <listitem>
                             <para>Patient was provided with educational materials on diabetes</para>
                         </listitem>
@@ -118,7 +119,7 @@ For instance that a test is ordered?
                         any other state or specific characteristic that is clinically
                         relevant<?oxy_comment_end?></para>
                     <para>
-                        <itemizedlist spacing="compact" >
+                        <itemizedlist spacing="compact">
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
@@ -129,7 +130,7 @@ Doing family history, donor statements using subject of information is now the n
                                     cancer<?oxy_comment_end?><?oxy_comment_end mid="12"?></para>
                             </listitem>
                         </itemizedlist>
-                </para>
+                    </para>
                 </listitem>
             </itemizedlist>
             <section>
@@ -154,19 +155,19 @@ Doing family history, donor statements using subject of information is now the n
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
                 -->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-timing"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-timing-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-topicsAreActions"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-topicsAreActions-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-presenceAbsence"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-presenceAbsence-content)">
@@ -195,7 +196,7 @@ Doing family history, donor statements using subject of information is now the n
                     infinite (inf), and a measureSemantic of "Countable quantity". To see a more
                     detailed representation see the tabular form here: <xref
                         linkend="table_perform_dmpresent"/></para>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-presenceAbsence"/></para>
                 <!--<editorial-rule>
                     <title>Statement of absence of a Topic</title>
@@ -240,13 +241,13 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Test/Screening or Procedure and Resultant Value</title>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-resultsRangedQuantity"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-resultsRangedQuantity-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-techniques"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-techniques-content)">
@@ -342,7 +343,7 @@ Doing family history, donor statements using subject of information is now the n
                     with an upperBound and lowerBound they are both represented as 68 in this
                     case.<?oxy_comment_end?> To see a more detailed representation see the tabular
                     form here: <xref linkend="table_perform_pulse"/></para>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-prerequisites"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-prerequisites-content)">
@@ -495,13 +496,13 @@ Doing family history, donor statements using subject of information is now the n
                             are unrelated (Akinetic seizure without atonia) then the two statements
                             should be associated. </mathphrase>
                     </editorial-rule>--></para>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-separateCompoundTopics"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-separateCompoundTopics-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-associatedStatement"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-associatedStatement-content)">
@@ -553,10 +554,14 @@ Doing family history, donor statements using subject of information is now the n
                         is represented with either an Evaluation procedure or Therapeutic procedure
                         with a hasFocus attribute describing the purpose.</mathphrase>
                 </editorial-rule>-->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-purpose"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-purpose-content)"><xi:fallback></xi:fallback></xi:include>
-
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-purpose"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-purpose-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Administration of Medication Topic - Performance of Action</title>
                     <mathphrase>To represent the performance of an administration of medication, the
@@ -585,8 +590,8 @@ Doing family history, donor statements using subject of information is now the n
             </section>
             <section>
                 <title>Provision of Educational Materials</title>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"
-                    /></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Topic for All Other Procedures</title>
                     <mathphrase>Any other action that was performed would be represented by a
@@ -617,9 +622,12 @@ Doing family history, donor statements using subject of information is now the n
                         about. This is normally the patient (Subject of record) unless explicitly
                         stated otherwise, for example Mother, Sibling, Donor, etc.</mathphrase>
                 </editorial-rule>-->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-subjectOfInformation"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-subjectOfInformation-content)"><xi:fallback></xi:fallback></xi:include>
-
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-subjectOfInformation"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-subjectOfInformation-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <figure>
                     <title>Family History ANF Example</title>
                     <mediaobject>
@@ -636,13 +644,18 @@ Doing family history, donor statements using subject of information is now the n
                 <para>In the Family history of breast cancer example we see that the Family history
                     is represented by the Subject of information with a value of Person in the
                     family.</para>
-                
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-normalRange"/></para>   
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-normalRange-content)"><xi:fallback></xi:fallback></xi:include>
-
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-healthRisk"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-healthRisk-content)"><xi:fallback></xi:fallback></xi:include>
-
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-normalRange"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-normalRange-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-healthRisk"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-healthRisk-content)">
+                    <xi:fallback/>
+                </xi:include>
             </section>
             <section>
                 <title>Normal Range Information or Health Risk Specified</title>
@@ -697,23 +710,28 @@ The distinction with a performance clinical statement concerning giving him educ
             </itemizedlist>
             <section>
                 <title>Request Examples</title>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-timing"/></para>
                 <!--<editorial-rule>
                     <title>Timing - Request for Action</title>
                     <mathphrase>The Timing will always represent a future time in a Request for
                         Action ANF Statement. Therefore, the Measure used in the Timing will be for
                         a future time. </mathphrase>
                 </editorial-rule>-->
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"
-                    /></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Laboratory Procedure Topic</title>
                     <mathphrase>For Laboratory procedures, the Topic will be built using a
                         Laboratory Procedure concept. These concepts can be further
                         refined.</mathphrase>
                 </editorial-rule>-->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-priority"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-priority-content)"><xi:fallback></xi:fallback></xi:include>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-priority"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-priority-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <!--<editorial-rule>
                     <title>Priority</title>
                     <mathphrase>Priority is used to represent the priority for which the request is
@@ -737,8 +755,8 @@ The distinction with a performance clinical statement concerning giving him educ
                 <para>The Laboratory Request example above shows how the topic is built using a
                     laboratory procedure concept, with no refinements in this case. It also has a
                     Priority of Routine as stated in the narrative description.</para>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"
-                    /></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Imaging Procedure Topic</title>
                     <mathphrase>For Imaging procedures, the Topic will be built using an Imaging
@@ -774,7 +792,8 @@ The distinction with a performance clinical statement concerning giving him educ
                     </caption>
                 </figure>
                 <para/>
-                <para>See <emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Administration of Medication Topic - Request for Action</title>
                     <mathphrase>For requesting the administration of medication, the Topic will be
@@ -785,8 +804,12 @@ The distinction with a performance clinical statement concerning giving him educ
                         requested. If Route of administration exists, then it will also be
                         added.</mathphrase>
                 </editorial-rule>-->
-                <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-repetition"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml" xpointer="element(anf-editorialrule-repetition-content)"><xi:fallback></xi:fallback></xi:include>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-repetition"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-repetition-content)">
+                    <xi:fallback/>
+                </xi:include>
                 <!--<editorial-rule>
                     <title>Repetition</title>
                     <mathphrase>Repetition is used to represent when an action is requested for more
