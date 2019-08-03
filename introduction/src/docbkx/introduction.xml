@@ -88,15 +88,15 @@
       systems by end-users. This reality has a direct impact on patient safety if a clinical
       statement is recorded and displayed differently across the continuum of care. Clinicians
       author clinical statements and enter them into their organization’s EHR systems as <glossterm
-        baseform="Structured Clinical Input Forms">"Clinical Input Forms"</glossterm> which we also
-      refer to in this document as "input forms". This concept describes any data entry mechanism
-      used by clinicians to record clinical statements. An instance of a clinical statement may be
-      created using one or more input forms. Vendors compete on usability for seamless input forms
-      but, in some cases, clinical statements are based on standards-based models (e.g. CIMI,
-      openEHR archetypes) but they may also be based on proprietary models. For the purposes of this
-      document, the type or usability of data structures used for capture or display of clinical
-      statements is not in scope. We assume that <emphasis role="bold">any suitably
-        encoded</emphasis> clinical statement may be normalized. <?oxy_comment_end?></para>
+        baseform="Structured Clinical Input Forms">"Clinical Input Forms"</glossterm> (CIF) . This
+      concept describes any data entry mechanism used by clinicians to record clinical statements.
+      An instance of a clinical statement may be created using one or more input forms. Vendors
+      compete on usability for seamless CIFs but, in some cases, clinical statements are based on
+      standards-based models (e.g. CIMI, openEHR archetypes) but they may also be based on
+      proprietary models. For the purposes of this document, the type or usability of data
+      structures used for capture or display of clinical statements is not in scope. We assume that
+        <emphasis role="bold">any suitably encoded</emphasis> clinical statement may be normalized.
+      <?oxy_comment_end?></para>
     <para>Ideally, clinical information is modeled in a manner that is most efficient for use. This
       is a problem because there are many different use cases for clinical information with a wide
       range of requirements. There is no single model that can be the most efficient model for all
@@ -106,10 +106,10 @@
         baseform="Isosemantic Model">isosemantic models</glossterm>. Any particular detailed
       clinical model exists within a family of isosemantic siblings. </para>
     <para>Since clinical statements can be expressed and documented in many different ways in EHR
-      systems, where input forms provide different options to document the same clinical statement.
-      These differences pose challenges for how the data is modeled, how the data is stored, and
-      therefore has implications on data retrieval, data analysis, accuracy of clinical analysis
-      results. </para>
+      systems, where clinical input forms provide different options to document the same clinical
+      statement. These differences pose challenges for how the data is modeled, how the data is
+      stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
+      analysis results. </para>
     <section>
       <title>Variation by Implementation: Clinical Input Forms</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
@@ -165,7 +165,7 @@
             </imageobject>
           </mediaobject>
           <caption>
-            <para><emphasis>In this example the system provides the measurement information from the
+            <para><emphasis>In this example the CIF provides the measurement information from the
                 device to be verified by a nurse. The nurse adds annotations describing how the
                 measurement was taken (at rest, prone) and the location (left brachial artery). The
                 user may also fill in information about micturition, if known. A physician may
@@ -188,8 +188,8 @@
         “clinical statements" related to Blood Pressure. </para>
       <para>In the first case, the clinical input form has separate drop-down constraints to enter
         the artery and laterality as distinct concepts. In the alternative data entry form, the
-        location and laterality into a compound concept. This variation present in the clinical
-        input forms may also have implications on how the clinical statement is modeled. </para>
+        location and laterality into a compound concept. This variation present in the CIFs may also
+        have implications on how the clinical statement is modeled. </para>
       <figure xml:id="Display_EHR_2">
         <title>Alternative Blood Pressure representation in a second EHR system</title>
         <mediaobject role="bordered">
@@ -198,10 +198,10 @@
           </imageobject>
         </mediaobject>
         <caption>
-          <para><emphasis>In the second example, a similar system (or an alternative configuration
-              of the same system) may support a different set of options to verify and record blood
-              pressure measurement. This representation combines laterality and site and excludes
-              details related to micturition.</emphasis></para>
+          <para><emphasis>In the second CIF example, a similar system (or an alternative
+              configuration of the same system) may support a different set of options to verify and
+              record blood pressure measurement. This representation combines laterality and site
+              and excludes details related to micturition.</emphasis></para>
         </caption>
       </figure>
     </section>
