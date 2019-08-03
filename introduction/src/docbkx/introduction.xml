@@ -74,7 +74,7 @@
       However, both treatment and analysis of clinical statements require consistency not only at
       the format level (e.g. <glossterm>CDA</glossterm>, FHIR, V2) but also the content model (i.e.
       an instance of an <link xlink:href="https://www.iso.org/standard/62416.html"><glossterm
-          baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCMs, CIMI
+          baseform="ISO/TS Detailed Clinical Models">ISO/TS 13972</glossterm></link> DCM, CIMI
       model, etc.). <link linkend="bib5">[5]</link> In most cases the data quality is the greatest
       obstacle to analysis, but even in the case of structured, semantically-clear information,
       inconsistency across sources of information raises obstacles to analysis and research.
