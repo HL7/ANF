@@ -126,7 +126,7 @@
         devices with findings and interpretation: <orderedlist>
           <listitem>
             <para>A vital signs monitor transmits the systolic and diastolic blood pressure
-              including date/time and the id of the device, </para>
+              including date/time and the id of the device. </para>
           </listitem>
           <listitem>
             <para>The nurse marks the measurement as "verified". </para>
@@ -189,12 +189,12 @@
           <para>Left brachial artery</para>
         </listitem>
       </itemizedlist>
-      <para>The image below illustrates another distinct CIF in which the user interface for
-        capturing a set of “clinical statements" related to Blood Pressure. </para>
+      <para>The image below illustrates another distinct CIF in which the user interface captures a
+        set of clinical statements related to Blood Pressure. </para>
       <para>In the first case, the clinical input form has separate drop-down constraints to enter
         the artery and laterality as distinct concepts. In the alternative data entry form, the
-        location and laterality into a compound concept. This variation present in  CIFs may also
-        have implications on how the clinical statement is modeled. </para>
+        location and laterality are represented by a single, compound concept. This variation
+        present in CIFs may also have implications on how the clinical statement is modeled. </para>
       <figure xml:id="Display_EHR_2">
         <title>Alternative Blood Pressure representation in a second EHR system</title>
         <mediaobject role="bordered">
@@ -257,7 +257,7 @@
         logical model to:<itemizedlist spacing="compact">
           <listitem>
             <para>Specify a common form for clinical statements extracted from EHR systems and
-              FHIR</para>
+              FHIR.</para>
           </listitem>
         </itemizedlist><itemizedlist>
           <listitem>
@@ -408,19 +408,18 @@ Remove the definition from the figure, and link to glossary where appropriate. "
       <para><?oxy_comment_end?><emphasis role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T111601-0400" comment="glossary" flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T130913-0700" comment="The procedural knowledge layer is responsible for..." flag="done" mid="41"?><glossterm
             baseform="Procedural Knowledge">Procedural
-          Knowledge</glossterm><?oxy_comment_end?></emphasis> – <emphasis role="bold">Procedural
-          knowledge</emphasis>, also known as <emphasis role="bold">imperative knowledge</emphasis>,
-        is the knowledge exercised in the performance of some task, such as determining a
-        hypertension treatment plan by analyzing a combination of a patients ANF statements, and the
-        available assertional knowledge. The procedural knowledge is responsible for information
-        about standard ways to carry out specific procedures as well as other procedural guidelines,
-        e.g. treatment protocols for diseases and order sets focused on particular patient
-        situations. Procedural knowledge, together with assertional knowledge, enables clinical
-        decision support, quality measurement, and supports patient safety. This layer is based on
-        the interoperability infrastructure and terminology layers, incorporates the statement model
-        for information retrieval, and uses the assertional knowledge.<?oxy_comment_end mid="41"?>
-        Procedural knowledge artifacts may include clinical alert rules, reminders, etc. that
-        trigger actions or recommend interventions.</para>
+          Knowledge</glossterm><?oxy_comment_end?></emphasis> – Procedural knowledge, also known as
+        imperative knowledge, is the knowledge exercised in the performance of some task, such as
+        determining a hypertension treatment plan by analyzing a combination of a patients ANF
+        statements, and the available assertional knowledge. The procedural knowledge is responsible
+        for information about standard ways to carry out specific procedures as well as other
+        procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
+        particular patient situations. Procedural knowledge, together with assertional knowledge,
+        enables clinical decision support, quality measurement, and supports patient safety. This
+        layer relies on the architectural foundation and terminology layers, incorporates the
+        statement model for information retrieval, and uses the assertional
+        knowledge.<?oxy_comment_end mid="41"?> Procedural knowledge artifacts may include clinical
+        alert rules, reminders, etc. that trigger actions or recommend interventions.</para>
       <para>Examining a clinical procedure for controlling hypertension illustrates each of the
         layers of the informatics architectural separation of concerns. <itemizedlist>
           <listitem>
