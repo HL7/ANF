@@ -660,15 +660,17 @@
                         >n</emphasis></emphasis>.</para>
             <itemizedlist>
                 <listitem>
-                    <para role="italic"><emphasis role="bold">[n,n] </emphasis>: means the value is
-                        exactly <emphasis role="bold">n</emphasis> because
+                    <para role="italic">[10, 10]<emphasis role="bold"> </emphasis>: means the value
+                        is exactly <emphasis role="bold">10</emphasis> because the
                             <emphasis>lowerBound</emphasis> and <emphasis>upperBound</emphasis> are
-                        both <emphasis role="bold">n</emphasis>; <?oxy_comment_end?></para>
+                        both <emphasis role="bold">10</emphasis>; <?oxy_comment_end?></para>
                 </listitem>
             </itemizedlist>
-            <para>In the special case that the beginning of the interval is a number, n, and the end
-                point is <emphasis role="bold">INF</emphasis> (infinity), the meaning is that the
-                value of the phenomenon is > n or >=n, depending on whether the interval is open or
+            <para>In the special case that the beginning of the interval is a number, <emphasis
+                    role="bold">n</emphasis>, and the end point is <emphasis role="bold"
+                    >INF</emphasis> (infinity), the meaning is that the value of the phenomenon is >
+                    <emphasis role="bold">n</emphasis> or <emphasis role="bold">>=</emphasis>
+                <emphasis role="bold">n</emphasis>, depending on whether the interval is open or
                 closed.</para>
             <itemizedlist>
                 <listitem>
@@ -712,12 +714,10 @@
                             xlink:href="https://standards.ieee.org/standard/754-2019.html"> IEEE 754
                             standard for Floating Point Numbers</link>. </para>
                     <note>
-                        <para>A Java 4 byte representation of a floating point number could range
-                            between approximately <emphasis role="italic">-
-                                3.40282347E+38</emphasis> and <emphasis>+3 .40282347E+38</emphasis>
-                            - using a sign, the exponent, and mantissa specified by <link
+                        <para>A Java <emphasis role="bold">float</emphasis> number  uses 32 bits to
+                            represent the sign, exponent, and mantissa consistent with  <link
                                 xlink:href="https://standards.ieee.org/standard/754-2019.html">IEEE
-                                754</link>. The values <emphasis role="bold">+infinity
+                                754:1985</link>. The values <emphasis role="bold">+infinity
                             </emphasis>and -<emphasis role="bold">infinity</emphasis> are denoted
                             with an exponent of all ones and a mantissa of all zeros. The sign bit
                             distinguishes between negative infinity and positive
@@ -727,9 +727,9 @@
             </itemizedlist>
             <informaltable>
                 <tgroup cols="3">
-                    <colspec colnum="1" colname="col1" colwidth="1*"/>
-                    <colspec colnum="2" colname="col2" colwidth="1.03*"/>
-                    <colspec colnum="3" colname="col3" colwidth="3.14*"/>
+                    <colspec colnum="1" colname="col1" colwidth="1.59*"/>
+                    <colspec colnum="2" colname="col2" colwidth="1*"/>
+                    <colspec colnum="3" colname="col3" colwidth="4.14*"/>
                     <thead>
                         <row>
                             <entry>Attribute</entry>
@@ -740,7 +740,9 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">lowerBound</emphasis> float</para>
+                                <para><emphasis role="bold">lowerBound</emphasis>
+                                </para>
+                                <para>float</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -764,7 +766,8 @@
                                     <listitem>
                                         <?oxy_comment_start author="Ioana" timestamp="20190804T134308-0400" comment="added"?>
                                         <para>For an unbound measure, the lowerBound is
-                                            -INF(negative infinity) and includeLowerBound is "false"
+                                            -INF(negative infinity) and
+                                                <emphasis>includeLowerBound</emphasis> is "false"
                                             <?oxy_comment_end?>
                                         </para>
                                     </listitem>
@@ -839,7 +842,8 @@
                         <row>
                             <entry>
                                 <para><emphasis role="bold">resolution</emphasis>
-                                    decimal-primitive</para>
+                                </para>
+                                <para>decimal-primitive</para>
                             </entry>
                             <entry>
                                 <para>[0...1]</para>
@@ -858,7 +862,8 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">upperBound</emphasis> float</para>
+                                <para><emphasis role="bold">upperBound</emphasis></para>
+                                <para> float</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
