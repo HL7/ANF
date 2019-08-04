@@ -2,8 +2,7 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Methodology -
-        <?oxy_comment_start author="kec" timestamp="20190722T174740-0700" comment="ANF modeling principles probably need to be consolidated into the preamble of the ANF Structure chapter, and then point out how the structure follows the principles. 
+    <title>Methodology—<?oxy_comment_start author="kec" timestamp="20190722T174740-0700" comment="ANF modeling principles probably need to be consolidated into the preamble of the ANF Structure chapter, and then point out how the structure follows the principles. 
 
 We also need clearly differentiate modeling principles (how we evaluate our model to decide if we met our requirements) from what we are currently calling Editorial Rules (might be a better phrase than editorial rules), which is how we populate the ANF structure content... 
 
@@ -16,82 +15,61 @@ Editoral rules (creation of post-coordinated expressions)
 
 Statement rules (rules about how to create statements). 
 "?>ANF
-        Modeling Principles<?oxy_comment_end?> and Rules</title>
+        Design Principles<?oxy_comment_end?> and Rules</title>
     <section>
-        <title>ANF Modeling Principles</title>
+        <title>ANF Design Principles</title>
+        <para>As an overarching principle we favor the simpler, consistent model over more complex
+            models that allow for multiple inconsistent representations. As such, the following
+            principles have been used when designing the ANF model:</para>
         <orderedlist numeration="upperalpha">
             <listitem>
-                <para>As an overarching principle we favor the simpler, consistent model over more
-                    complex models that allow for multiple inconsistent representations. As such,
-                    the following principles have been used when designing the ANF model:<itemizedlist>
-                        <listitem>
-                            <para><emphasis role="bold">Overall Model Simplicity:
-                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
+                <para><emphasis role="bold">Overall Model Simplicity:
+                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
 1) How do you quantify simplicity?
 2) Why not design the principles so they don’t collide?
 "?>In
-                                cases where different principles collide, we shall favor the
-                                enhancement of simplicity of the entire system over simplicity in
-                                one area of the system.<?oxy_comment_end?></para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis role="bold">Convention Over Configuration:
-                                </emphasis>Convention over configuration (also known as coding by
-                                convention) is a software design paradigm used by software
-                                frameworks that attempts to decrease the number of decisions that a
-                                developer using the framework is required to make without
-                                necessarily losing flexibility.</para>
-                        </listitem>
-                        <listitem>
-                            <para><emphasis role="bold">Model Consistency:
-                                </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
+                    cases where different principles collide, we shall favor simplicity of the
+                    entire system over simplicity in one area of the
+                    system.<?oxy_comment_end?></para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Convention Over Configuration: </emphasis>Convention
+                    over configuration is a design paradigm used by frameworks that decreases the
+                    number of decisions that a developer using the framework is required to make,
+                    without necessarily losing flexibility because conventions can be overridden
+                    when necessary.</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Model Consistency:
+                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
 Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
 "?>Patterns
-                                should allow the consistent representation of information that is
-                                commonly shared across models. For instance, attribution and
-                                participation information should be captured consistently. Failure
-                                to do so forces implementers to develop heuristics to capture and
-                                normalize attribution information that is represented or extended
-                                differently in different classes (e.g., FHIR).</para>
-                        </listitem><?oxy_comment_end?>
-                        <listitem>
-                            <para><emphasis role="bold">Model Should Avoid Semantic Overloading
-                                    (semantic precision): </emphasis>Semantic overloading occurs
-                                when a model attribute’s meaning changes entirely, depending on
-                                context. While the refinement of the semantics of an attribute in a
-                                subclass is acceptable, a change of meaning is problematic. For
-                                instance, in FHIR, the Composition class defines an attribute called
-                                Subject. In some subclasses, the attribute may be the entity that
-                                this composition refers to (e.g., the patient in a medical record).
-                                In other cases, it is the topic being discussed by the composition
-                                (e.g., a medication orderable catalog).</para>
-                        </listitem>
-                        <listitem><para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
-                            surfaced explicitly in the model.</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para><?oxy_comment_start author="kmaulden" timestamp="20190418T111623-0400" comment="Comment from WC:
-Incomplete and partially ambiguous.
-Also implicit is (1) that the statement is in English, (2) that the asserter exists, (3) that he understands English and is able to produce statements in English, (4) that a copy of the book either exists or can be produced, (5) that Amazon exists and did not go out of existence while its website through which the asserter ordered was still functioning, (6) …
-‘Order’ seems here to be taken as the ‘fat process’ which includes the ‘thin process’ of ordering which is filling out the forms for what it is you ordered pus the payment, plus other processes such as the delivery of the book. Under the ‘thin’ meaning: you could still order but never get the book.
-" flag="done"?><emphasis
-                                            role="bold">Example:</emphasis> Some things implicit in
-                                        the statement, “I ordered a book from Amazon” are: paying
-                                        for the book, delivery of the book to some location, and the
-                                        transfer of ownership of the book from the vendor to the
-                                        client.<?oxy_comment_end?></para>
-                            </listitem>
-                        </itemizedlist>
-                        </listitem>
-                    </itemizedlist></para>
+                    should allow the consistent representation of information that is commonly
+                    shared across models. For instance, attribution and participation information
+                    should be captured consistently. Failure to do so forces implementers to develop
+                    heuristics to capture and normalize attribution information that is represented
+                    or extended differently in different classes (e.g., FHIR).</para>
+            </listitem><?oxy_comment_end?>
+            <listitem>
+                <para><emphasis role="bold">No Semantic Overloading: </emphasis>Semantic overloading
+                    occurs when a model attribute’s meaning changes entirely, depending on context.
+                    While the refinement of the semantics of an attribute in a subclass is
+                    acceptable, a change of meaning is problematic. For instance, in FHIR, the
+                    Composition class defines an attribute called Subject. In some subclasses, the
+                    attribute may be the entity that this composition refers to (e.g., the patient
+                    in a medical record). In other cases, it is the topic being discussed by the
+                    composition (e.g., a medication orderable catalog).</para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">Assumption-free: </emphasis>Implied semantics must be
+                    surfaced explicitly in the model.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Composition Over Inheritance: </emphasis>Composition
-                    over inheritance (or composite reuse principle) in object-oriented programming
-                    is the principle that classes should achieve polymorphic behavior and code reuse
-                    by their composition (by containing those instances of other classes that
-                    implement the desired functionality) rather than inheritance from a base or
-                    parent class.</para>
+                    over inheritance (or composite reuse principle) is the principle that classes
+                    should achieve polymorphic behavior and code reuse by their composition (by
+                    containing those instances of other classes that implement the desired
+                    functionality) rather than inheritance from a base or parent class.</para>
                 <para>To favor composition over inheritance is a design principle that gives the
                     design higher flexibility. It is more natural to build business-domain classes
                     out of various components than trying to find commonality between them and
@@ -105,7 +83,7 @@ Also implicit is (1) that the statement is in English, (2) that the asserter exi
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="3"?><?oxy_comment_end mid="3"?>
+" parentID="ckd_fyv_lhb" mid="4"?><?oxy_comment_end mid="4"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
@@ -145,49 +123,33 @@ But in line with previous principle, you have then to drag with you the entire m
                     class reusability where possible.<?oxy_comment_end?> Reusability may further
                     refine encapsulation when composition is considered.</para>
             </listitem>
-            
-            <listitem>
-                <para><emphasis role="bold"
-                        ><?oxy_comment_start author="timowilliams" timestamp="20190611T135415-0500" comment="Remove?"?>Design
-                        by Composition and/or Class Specialization: </emphasis>The capture of
-                    additional model expressivity must be captured by composition and/or by class
-                    specialization. The modeling approach should avoid the use of design by
-                    constraint (except for terminology binding and attribute type constraints) as it
-                    violates proper decoupling and encapsulation.
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111645-0400" comment="Comment from WC:
-The HL7-RIM disaster.
-"?>An
-                    example of design by constraint is to create a single procedure class containing
-                    all attributes for all known procedures and constraining out irrelevant
-                    attributes in a more specialized model. This approach is very difficult to
-                    implement and violates numerous object-oriented best
-                    practices.<?oxy_comment_end?></para>
-            </listitem><?oxy_comment_end?>
             <listitem>
                 <para><emphasis role="bold">No False Dichotomies:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111659-0400" comment="Comment from WC:
 Examples needed, although I would favor such an approach, one can’t argue that there is no ambiguity when a model is built such that disjointness of classes is to be asserted explicitly and when it isn’t, disjointness should not be assumed. Another issue is how this is impacted by temporality, e.g. ‘child’ and ‘adult’ are disjoint for human beings in the sense that at a time a human being is a child, it can’t be also an adult or the other way round. But cross time, every adult was at some earlier time a child. In the clinical notes of a longitudinal EHR the phrases ‘this child’ and ‘this adult’ may very well denote just one particular person.
 "?>Dichotomies
-                    that are not completely disjoint (mutually exclusive) lead to arbitrary
+                    are created when model fields are not completely disjoint (mutually exclusive),
+                    such as allowing family history to be represented in the topic field in addition
+                    to the subject of information field. False dichotomies lead to arbitrary
                     classification rules and result in ambiguity based on different assumptions
-                    about the domain. These must be avoided.</para>
+                    about the domain. False dichotomies must be eliminated by ensuring that fields
+                    in the model are mutually exclusinve.</para>
             </listitem><?oxy_comment_end?>
-            
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
 "?>
-                <para><emphasis role="bold">Model Symmetry:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111756-0400" comment="Comment from WC:
+                <para><emphasis role="bold">Model Symmetry: </emphasis>Symmetric models are more
+                    consistent, and easier to comprehend and
+                    use<?oxy_comment_start author="kmaulden" timestamp="20190418T111756-0400" comment="Comment from WC:
 I don’t see why, or what the ‘symmetry’ would apply to.
-"?>There
-                    should be symmetry in the models wherever we can have
-                    it.<?oxy_comment_end?></para><?oxy_comment_end?>
+"?>.<?oxy_comment_end?></para><?oxy_comment_end?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Iterative development and validation of model using use
                         cases: </emphasis>ANF has been developed using an iterative approach
                     evaluating the model with narrative use cases. Examples of narratives used to
-                    evaluate the model can be found in the <link linkend="appendix">Appendix</link>.</para>
+                    evaluate the model can be found in the <link linkend="appendix"
+                    >Appendix</link>.</para>
             </listitem>
         </orderedlist>
 
@@ -197,7 +159,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         <para>All ANF statements share some common model components. The following modeling
             guidelines can be used to properly model a narrative into the appropriate components of
             a single statement or a statement that has multiple associated statements. For the
-            purposes of ANF, a statement is a request or performance of an action that has to be
+            purposes of ANF, a statement is a request for—or performance of—an action that has to be
             able to exist on its own. Therefore a narrative would be separated into multiple
             clinical statements if it contains multiple requests or performance of actions that
             could exist on their own.</para>
@@ -212,8 +174,11 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </figure>
         <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
                 linkend="anf-editorialrule-techniques"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-techniques-content)"><xi:fallback></xi:fallback></xi:include>
-       <!-- <para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-techniques-content)">
+            <xi:fallback/>
+        </xi:include>
+        <!-- <para>
             <itemizedlist>
                 <listitem>
                     <para>Actions can be performed by various techniques. As opposed to the action
@@ -254,8 +219,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 </listitem>
             </itemizedlist>
         </para>-->
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-prerequisites"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-prerequisites-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-prerequisites"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-prerequisites-content)">
+            <xi:fallback/>
+        </xi:include>
         <!--<para><emphasis role="bold">Prerequisite:</emphasis> A prerequisite is a <emphasis
                 role="bold">state</emphasis> that <emphasis role="bold">must</emphasis> exist before
             something else can happen or be done. Prerequisites are part of the details under which
@@ -290,18 +259,26 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     </itemizedlist>
                 </listitem>
             </itemizedlist></para>-->
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-subjectOfInformation"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-subjectOfInformation-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-subjectOfInformation"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-subjectOfInformation-content)">
+            <xi:fallback/>
+        </xi:include>
         <!--<para><emphasis role="bold">subjectOfInformation:</emphasis> The subjectOfInformation is
             used to represent who the statement is about. This is normally the patient unless
             explicitly stated otherwise. </para>-->
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-purpose"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-purpose-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-purpose"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-purpose-content)">
+            <xi:fallback/>
+        </xi:include>
         <!--<para><emphasis role="bold">Purpose:</emphasis> The purpose is why an action was requested.
             The purpose of the topic is represented with either an Evaluation procedure or
             Therapeutic procedure with a hasFocus attribute describing the purpose. </para>-->
     </section>
-    
+
     <section>
         <title>Request for Action Guidelines</title>
         <figure>
@@ -314,8 +291,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </mediaobject>
         </figure>
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-timing-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-timing"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-timing-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <para><emphasis role="bold">Timing: </emphasis>The Timing will always represent a future
@@ -323,8 +304,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             will be for a future time. </para>
         -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-participants"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-participants-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-participants"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-participants-content)">
+            <xi:fallback/>
+        </xi:include>
         <!--
         <editorial-rule>
             <title>RequestedParticipant</title>
@@ -332,16 +317,24 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 requestedParticipant will be populated.</mathphrase>
         </editorial-rule> -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-priority"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-priority-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-priority"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-priority-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <para><emphasis role="bold">Priority: </emphasis>Priority is used to represent the priority
             for which the request is to be carried out. By default a Request will be considered
             "routine" unless otherwise specified.</para>  -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-topicsAreActions"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-topicsAreActions-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>
@@ -381,8 +374,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             </itemizedlist>
         </editorial-rule>  -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-repetition"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-repetition-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-repetition"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-repetition-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <para><emphasis role="bold">Repetition:</emphasis> Repetition is used to represent when an
@@ -417,8 +414,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
 
         -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-requestedResult"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-requestedResult-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-requestedResult"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-requestedResult-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>
@@ -429,22 +430,26 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                 specified with the correct MeasureSemantic.</mathphrase>
         </editorial-rule>  -->
     </section>
-    
+
     <section>
         <title>Performance of Action Guidelines</title>
         <figure>
             <title>Performance of Action Modeling Guideline Decision Tree</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/performance_modeling_guidelines.svg" scalefit="1" width="100%"
-                        contentdepth="100%"/>
+                    <imagedata fileref="images/performance_modeling_guidelines.svg" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </figure>
 
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-timing"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-timing-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-timing"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-timing-content)">
+            <xi:fallback/>
+        </xi:include>
         <!--
         <para><emphasis role="bold">Timing - Performance of Action:</emphasis> For a Performance of
             Action, the Timing can represent a time in the past or a current time. If a history of a
@@ -454,10 +459,14 @@ I don’t see why, or what the ‘symmetry’ would apply to.
 
 
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-topicsAreActions"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-topicsAreActions-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-topicsAreActions"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-topicsAreActions-content)">
+            <xi:fallback/>
+        </xi:include>
 
-            <!--
+        <!--
         <editorial-rule>
             <title>Performance of Action Topics</title>
             <mathphrase>The topic follows a variety of possible patterns:</mathphrase>
@@ -495,8 +504,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </editorial-rule>  -->
 
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-status"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-status-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-status"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-status-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>
@@ -506,8 +519,12 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </editorial-rule>  -->
 
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-healthRisk"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-healthRisk-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-healthRisk"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-healthRisk-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>
@@ -522,8 +539,12 @@ I&apos;m confused. Previously and also on the next page it was said that ANF doe
         </editorial-rule> -->
 
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-normalRange"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-normalRange-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-normalRange"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-normalRange-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>
@@ -532,8 +553,12 @@ I&apos;m confused. Previously and also on the next page it was said that ANF doe
                 normal.</mathphrase>
         </editorial-rule> -->
 
-        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref linkend="anf-editorialrule-resultsRangedQuantity"/></para>
-        <xi:include href="./editorial-rules.xml" xpointer="element(anf-editorialrule-resultsRangedQuantity-content)"><xi:fallback></xi:fallback></xi:include>
+        <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
+                linkend="anf-editorialrule-resultsRangedQuantity"/></para>
+        <xi:include href="./editorial-rules.xml"
+            xpointer="element(anf-editorialrule-resultsRangedQuantity-content)">
+            <xi:fallback/>
+        </xi:include>
 
         <!--
         <editorial-rule>

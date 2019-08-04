@@ -153,8 +153,11 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-techniques-content">
                 <listitem>
+                    <para>A technique must be true within the duration of the performance.</para>
+                </listitem>
+                <listitem>
                 	<para>A technique is inseparable from the topic and cannot be expressed as a
-                        stand-alone clinical statement. </para>
+                        stand-alone clinical statement.</para>
                 </listitem>
                 <listitem>
                     <para>A technique is a device used, a method applied, or a temporary state in
@@ -268,8 +271,7 @@
             <itemizedlist xml:id="anf-editorialrule-purpose-content">
                 <listitem>
                     <para>The purpose is why an action was requested. The purpose of the topic is
-                        represented with either an Evaluation procedure or Therapeutic procedure
-                        with a hasFocus attribute describing the purpose. </para>
+                        typically some type of therapeutic intent, diagnostic intent, or both. There can be more than one therapeutic intent and diagnostic intent.</para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
