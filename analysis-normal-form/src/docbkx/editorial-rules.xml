@@ -9,18 +9,15 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-performanceRequest-content">
                 <listitem>
-                    <para>
-        	           ANF Statements must be either a Performance of an action or a Request for an action.
+                    <para>ANF Statements must be either a Performance of an action or a Request for an action.
                     </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        A Performance may include the passive observation of a phenomenon related to patients and their health status or family history, and may also include active interventions, such as providing education or administering medications or documenting that a patient is participating in exercise to improve their overall health status.
+                    <para>A Performance may include the passive observation of a phenomenon related to patients and their health status or family history, and may also include active interventions, such as providing education or administering medications or documenting that a patient is participating in exercise to improve their overall health status.
                     </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        A Request may include requests for clinical testing, active interventions, future goals, or consultation with other providers.
+                    <para>A Request may include requests for clinical testing, active interventions, future goals, or consultation with other providers.
                     </para>
                 </listitem>
             </itemizedlist>
@@ -32,10 +29,33 @@
         <mathphrase>
         	<itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
         		<listitem>
-       				<para>
-                        Observations will begin with an Observation procedure to represent the topic. The Observation procedure will also specify a Has focus attribute linking it to the Clinical Finding or Disorder that it is being observed. The observation procedure can also be further refined by adding attributes in the terminology model, including Method, Procedure site - Direct, (if appropriate) Laterality, and Using device
-                    </para>
-        		</listitem>
+                    <para>The particulars of how topics—and other statement fields—are modeled is a
+                        Terminology Knowledge layer concern, not a Statement Layer concern. The
+                        Statement Layer does require that the Terminology Expression fields in a
+                        statement are disjoint: There should be no confusion—or creation of false
+                        dichotomies. There should be one, and only one, place to put each type of
+                        information in a terminology expression. For example, the Statement Layer
+                        defines a particular place to represent the subject of information.
+                        Therefore, the terminology layer must not allow the subject of information
+                        to be redundantly—and possibly contradictory—represented in a topic
+                        expression (such as would be the case if "maternal history of diabetes"
+                        where an allowed topic expression). The Statement Layer requires that the
+                        topic represent an Action as a code or expression according to the rules of
+                        the terminology layer, and that the rules of the terminology layer enforce a
+                        disjointness of between different types of terminology expressions. Here we
+                        present a starting point for what the Terminology Layer editorial rules may
+                        look like, based on current SNOMED practice. </para>
+                </listitem>
+                <listitem>
+                    <para>SNOMED can accommodate this requirement for simple observations by using
+                        Observation procedure to represent the topic (or other types of procedures
+                        when appropriate, such as the administration of a medication). In SNOMED
+                        examples, the Observation procedure specifies a Has focus attribute linking
+                        it to the Clinical Finding or Disorder that it is being observed. The
+                        observation procedure can also be further refined by adding attributes in
+                        the terminology model, including Method, Procedure site - Direct, (if
+                        appropriate) Laterality, and Using device. We expect </para>
+                </listitem>
         		<listitem>
 					<para>Medication administrations will use an Administration of substance concept to represent
                         the topic. All Administration of substance concepts will be refined with the
@@ -43,14 +63,13 @@
                         administration exists, then it will also be added. </para>
 				</listitem>
 				<listitem>
-					<para>
-                        Laboratory tests will use a Laboratory Procedure concept to represent the topic. These concepts can be further refined.
-                    </para>
+					<para>Laboratory tests will use a Laboratory Procedure concept to represent the topic. These
+                        concepts can be further refined. </para>
 				</listitem>
 				<listitem>
-					<para>
-                        Imaging Procedures with use an Imaging Procedure concept to represent the topic. These concepts will be further refined with a Method, Procedure site - Direct and (if appropriate) a laterality for those sites that are lateralizable.
-                    </para>
+					<para>Imaging Procedures with use an Imaging Procedure concept to represent the topic. These
+                        concepts will be further refined with a Method, Procedure site and (if
+                        appropriate) a laterality for those sites that are lateralizable. </para>
 				</listitem>
 			</itemizedlist>
         </mathphrase>
@@ -61,13 +80,11 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-timing-content">
                 <listitem>
-        	       <para>
-                        For a Performance of Action, the Timing can represent a time in the past or a current time. If a history of a performance of action is to be represented in ANF the Timing will be for a time in the past prior to the statement. Otherwise the Timing will be represented with the current time of the statement.
+        	       <para>For a Performance of Action, the Timing can represent a time in the past or a current time. If a history of a performance of action is to be represented in ANF the Timing will be for a time in the past prior to the statement. Otherwise the Timing will be represented with the current time of the statement.
                     </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        For a Request of Action, the Timing will always represent a future time. 
+                    <para>For a Request of Action, the Timing will always represent a future time. 
                     </para>
                 </listitem>
             </itemizedlist>
@@ -79,13 +96,11 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-resultsRangedQuantity-content">
                 <listitem>
-                	<para>
-                        Results are always a Measure, which is a ranged quantity. Measure includes both a numeric interval along with a Measure Semantic specified as a Logical Expression.
+                	<para>Results are always a Measure, which is a ranged quantity. Measure includes both a numeric interval along with a Measure Semantic specified as a Logical Expression.
                     </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        If a Result is intended to represent a numeric result then the upperBound and lowerBound would be populated with the appropriate numeric values and the Measure Semantic would indicate the unit of measure.
+                    <para>If a Result is intended to represent a numeric result then the upperBound and lowerBound would be populated with the appropriate numeric values and the Measure Semantic would indicate the unit of measure.
                     </para>
                 </listitem>
             </itemizedlist>
@@ -97,13 +112,11 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content">
                 <listitem>
-                	<para>
-                        Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".  
+                	<para>Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".  
                     </para>
                 </listitem>
                 <listitem>
-                    <para>
-                        Any statement that represents the Absence or implies Absence of a Topic will have a Result with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable quantity".  
+                    <para>Any statement that represents the Absence or implies Absence of a Topic will have a Result with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable quantity".  
                     </para>
                 </listitem>
             </itemizedlist>
@@ -226,7 +239,7 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
-                	<para>In PerfromanceCircumstance, normalRange is used to flag a result with coded
+                	<para>In PerformanceCircumstance, normalRange is used to flag a result with coded
                         values such as 'low', 'normal', high', and 'critical'. </para>
                 </listitem>
             </itemizedlist>

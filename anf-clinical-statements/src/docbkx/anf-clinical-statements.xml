@@ -47,7 +47,7 @@ As expected, it goes already wrong here: surely requesting something is an actio
 As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
 " parentID="xfp_jyf_nhb"?>A
                 Performance of Action statement describes a topic that has previously been
-                performed, and – if applicable - the result that corresponds to the
+                performed, and—if applicable—the result that corresponds to the
                 topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?> As shown in the examples below,
                 this can range from documenting that a subject of information:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
@@ -57,8 +57,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
             <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information. As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
             <itemizedlist>
                 <listitem>
-                    <para>Was observed to have the presence or absence of a clinical
-                        phenomenon</para>
+                    <para>The presence or absence of a clinical phenomenon</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Diabetes mellitus is present</para>
@@ -72,8 +71,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>Underwent a specific test/screening or procedure, and its resultant value,
-                        if any</para>
+                    <para>The results of specific test/screening or procedure</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
@@ -81,8 +79,9 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                         <listitem>
                             <para>Systolic blood pressure 120 mmHg, taken on right brachial artery,
                                 using BP cuff adult size, patient in sitting position for at least 5
-                                minutes, urinated not more than 30 minutes prior to
-                                measurement</para>
+                                minutes,
+                                <?oxy_comment_start author="kec" timestamp="20190804T092911-0700" comment="Sometimes we use micturation (or micturation context in the figures), sometimes we use urination. Should probably work to be consistent. "?>urinated<?oxy_comment_end?>
+                                not more than 30 minutes prior to measurement</para>
                         </listitem>
                         <listitem>
                             <para>Three dot blot hemorrhages</para>
@@ -96,7 +95,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>Was administered a medication or other substance</para>
+                    <para>Administered a medication or other substance</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Patient took one Acetaminophen 500 mg tablet by mouth for
@@ -105,7 +104,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>Was provided educational materials</para>
+                    <para>Provision of educational materials</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Patient was provided with educational materials on diabetes</para>
@@ -185,7 +184,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Diabetes Mellitus Type 2
-                            Present</emphasis></para>
+                            Present.</emphasis></para>
                     </caption>
                 </figure>
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time, shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="16"?><?oxy_comment_end mid="16"?>
@@ -215,7 +214,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Diabetes Mellitus Type 2
-                            Absent</emphasis></para>
+                            Absent.</emphasis></para>
                     </caption>
                 </figure>
                 <para>In the Diabetes Mellitus Type 2 Absent example, the topic is the same as
@@ -233,11 +232,12 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Dot Blot Hemorrhage Present</emphasis></para>
+                        <para><emphasis role="italics">Dot Blot Hemorrhage
+                            Present.</emphasis></para>
                     </caption>
-                    <para>To see a more detailed representation see the tabular form here: <xref
-                            linkend="table_perform_dbhpresent"/></para>
                 </figure>
+                <para>To see a more detailed representation see the tabular form here: <xref
+                    linkend="table_perform_dbhpresent"/></para>
             </section>
             <section>
                 <title>Test/Screening or Procedure and Resultant Value</title>
@@ -334,7 +334,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Pulse Rate 68 bpm, Taken by Pulse
-                                Oximeter</emphasis></para>
+                                Oximeter.</emphasis></para>
                     </caption>
                 </figure>
                 <?oxy_comment_start author="kec" timestamp="20190722T172654-0700" comment="Put in the narrative a discussion of the utility of being able to represent intervals of certainty. "?>
@@ -402,7 +402,7 @@ Doing family history, donor statements using subject of information is now the n
                         <para><emphasis role="italics">Systolic Blood Pressure 120 mmHg, Taken on
                                 Right Brachial Artery, Using BP Cuff Adult Size, Patient in Sitting
                                 Position for at Least 5 Minutes, Urinated Not More Than 30 Minutes
-                                Prior to Measurement</emphasis></para>
+                                Prior to Measurement.</emphasis></para>
                     </caption>
                 </figure>
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="On main systolic diagram, add blue box for statementAssociations and off that, add 2 peach colored boxes for associated statements 1 and 2" flag="done"?><?oxy_comment_end?>
@@ -417,12 +417,13 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics"> Patient in Sitting Position for at Least 5
-                                Minutes</emphasis></para>
+                                Minutes.</emphasis></para>
                     </caption>
                 </figure>
                 <figure>
-                    <title>Systolic Blood Pressure Urination Associated ANF Statement
-                        Example</title>
+                    <title>Systolic Blood Pressure
+                        <?oxy_comment_start author="kec" timestamp="20190804T101229-0700" comment="Urination or Micturation? "?>Urination
+                        Associated<?oxy_comment_end?> ANF Statement Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T143741-0500" comment="From Joey, not sure how we should capture the “prior to measurement” here? We used “timing” in the TSRs with “ISO 8601 prior to statement time”, but that is not quite right, either…" id="eys_3pz_23b"?>
@@ -434,7 +435,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Urinated Not More Than 30 Minutes Prior to
-                                Measurement</emphasis></para>
+                                Measurement.</emphasis></para>
                     </caption>
                 </figure>
                 <para>The systolic blood pressure example above not only includes a technique of
@@ -452,7 +453,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Three Dot Blot Hemorrhages</emphasis></para>
+                        <para><emphasis role="italics">Three Dot Blot Hemorrhages.</emphasis></para>
                     </caption>
                 </figure>
                 <para>To see a more detailed representation see the tabular form here: <xref
@@ -467,7 +468,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Positive Screen for Fall
-                            Risk</emphasis></para>
+                            Risk.</emphasis></para>
                     </caption>
                 </figure>
                 <para><!--<editorial-rule>
@@ -529,7 +530,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Negative Screen for PTSD</emphasis></para>
+                        <para><emphasis role="italics">Negative Screen for PTSD.</emphasis></para>
                     </caption>
                 </figure>
                 <figure>
@@ -542,7 +543,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Negative Screen for
-                            Depression</emphasis></para>
+                            Depression.</emphasis></para>
                     </caption>
                 </figure>
             </section>
@@ -580,7 +581,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Patient Took One Acetaminophen 500 mg Tablet
-                                by Mouth for Pain</emphasis></para>
+                                by Mouth for Pain.</emphasis></para>
                     </caption>
                 </figure>
                 <para>In the medication example above a purpose is specified using Pain control
@@ -608,7 +609,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Patient was Provided with Educational
-                                Material on Diabetes</emphasis></para>
+                                Material on Diabetes.</emphasis></para>
                     </caption>
                 </figure>
                 <para>In this example, the concept Provision of educational material is used with a
@@ -638,7 +639,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Family History of Breast
-                            Cancer</emphasis></para>
+                            Cancer.</emphasis></para>
                     </caption>
                 </figure>
                 <para>In the Family history of breast cancer example we see that the Family history
@@ -670,7 +671,7 @@ Doing family history, donor statements using subject of information is now the n
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Systolic Blood Pressure 180 mmHg, Normal
-                                Range (90-120), Health Risk Critical</emphasis></para>
+                                Range (90-120), Health Risk Critical.</emphasis></para>
                     </caption>
                 </figure>
                 <para>Systolic Blood Pressure for adults has a normal range of 90-120 and is
@@ -749,7 +750,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Rheumatoid Factor 1 Time
-                            Routine</emphasis></para>
+                            Routine.</emphasis></para>
                     </caption>
                 </figure>
                 <para>The Laboratory Request example above shows how the topic is built using a
@@ -774,7 +775,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">X-ray Chest to Evaluate for Heart
-                                Failure</emphasis></para>
+                                Failure.</emphasis></para>
                     </caption>
                 </figure>
                 <para>The Imaging Request example above is built using a subtype of image procedure
@@ -788,7 +789,7 @@ The distinction with a performance clinical statement concerning giving him educ
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Cardiology Referral</emphasis></para>
+                        <para><emphasis role="italics">Cardiology Referral.</emphasis></para>
                     </caption>
                 </figure>
                 <para/>
@@ -860,7 +861,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Ribavirin 200 mg Capsule Oral, Take 2
-                                Capsules Every Morning</emphasis></para>
+                                Capsules Every Morning.</emphasis></para>
                     </caption>
                 </figure>
                 <para>The Medication request example represents one of the more complicated ANF
@@ -876,7 +877,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Advised to Participate in Tobacco Cessation
-                                Counseling Once a Week</emphasis></para>
+                                Counseling Once a Week.</emphasis></para>
                     </caption>
                 </figure>
                 <para>In this example we see Repetition used only to define the eventFrequency while
