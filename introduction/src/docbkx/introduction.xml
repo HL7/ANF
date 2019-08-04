@@ -105,11 +105,11 @@
       in form, semantically represent the same information, and are known as <glossterm
         baseform="Isosemantic Model">isosemantic models</glossterm>. Any particular detailed
       clinical model exists within a family of isosemantic siblings. </para>
-    <para>Since clinical statements can be expressed and documented in many different ways in EHR
-      systems, where clinical input forms provide different options to document the same clinical
-      statement. These differences pose challenges for how the data is modeled, how the data is
-      stored, and therefore has implications on data retrieval, data analysis, accuracy of clinical
-      analysis results. </para>
+    <para>Clinical statements can be expressed and documented in many different ways in EHR systems,
+      where clinical input forms provide different options to document the same clinical statement.
+      These differences pose challenges for how the data is modeled, how the data is stored, and
+      therefore has implications on data retrieval, data analysis, and accuracy of clinical analysis
+      results. </para>
     <section>
       <title>Variation by Implementation: Clinical Input Forms</title>
       <para>Clinicians enter clinical statements into their organization’s EHR typically in a manner
@@ -233,7 +233,7 @@
       <?oxy_comment_start author="kec" timestamp="20190721T122129-0700" comment="and therefore can be used as a predictable formal form for transformation. " flag="done"?><?oxy_comment_end?>systems
       <!--through normalization-->. The more normalized a data set is, the simpler it will become to
       analyze, and errors will be reduced. In addition to improving analysis, ANF introduces the
-      ability compare statements with ease and no loss of semantic integrity.
+      ability to compare statements with ease and no loss of semantic integrity.
       <?oxy_comment_start author="timowilliams" timestamp="20190710T093048-0500" comment="Bibliography?" flag="done"?><?oxy_comment_end?></para>
     <section>
       <title>Objectives and Purpose of ANF</title>
