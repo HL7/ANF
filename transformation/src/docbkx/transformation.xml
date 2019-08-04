@@ -322,7 +322,7 @@
 
         <section>
             <title>FHIR Mapping Language</title>
-            <para>The FHIR mapping language (FML) <link linkend="bib11">[14]</link> is a r4elatively
+            <para>The FHIR mapping language (FML) <link linkend="bib11">[14]</link> is a relatively
                 new, bespoke transformation language specifically designed to transform HL7 FHIR
                 resources to alternative representations, including different FHIR resources, C/CDE
                 documents, etc. The mapping language was created by Graham Grieve as a specification
