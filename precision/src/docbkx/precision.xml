@@ -24,7 +24,7 @@
         other CIMI models—is focused on
         <?oxy_comment_start author="Ioana" timestamp="20190726T125624-0400" comment="True?  Quality measures combine clinical and admnistrative info sometimes so it would be useful to say, if true, that other types of data may be combined." id="rvl_2mj_43b" flag="done" mid="2"?><?oxy_comment_start author="Ioana" timestamp="20190729T103421-0400" comment="Administrative info is part of the infrastructure of Knowlege Architecture." parentID="rvl_2mj_43b" flag="done"?>clinical
         information<?oxy_comment_end?><?oxy_comment_end mid="2"?>. ANF does not require a specific
-        input form syntax , its focus is on implementations where data quality and semantics and
+        input form syntax, its focus is on implementations where data quality and semantics and
         information is aggregated from many and diverse sources. </para>
 
     <para>The ANF logical model can be used to create practical implementation guidance (i.e.

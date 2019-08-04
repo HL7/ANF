@@ -10,7 +10,7 @@
         Intermountain Healthcare. </para>
     <para> In detailed clinical modeling there is a general approach shown in <xref
             linkend="reference_constraint_0135"/>, that most standards have taken where there is a
-        reference model which is then constrained with constraint models. In , the reference model
+        reference model which is then constrained with constraint models. The reference model
         and constraint model of various standards are shown. Additional information shown is the
         syntax used to describe the reference or constraint model, and if the standard is shaded
         grey, this symbolizes that clinical content is modeled in this part of the standard. </para>

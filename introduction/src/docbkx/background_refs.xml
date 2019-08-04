@@ -93,7 +93,7 @@
             clinical practice and registry forms, like minimum data sets, for the data collection.
             We also see that information modeling is applied as tool to organize data in healthcare
             information technology in general, and the EHR in particular. Two core examples are the
-            Health Level Seven Reference Information Model , and the IS 13606-1 reference
+            Health Level Seven Reference Information Model, and the IS 13606-1 reference
             information model for the Electronic Health Record.</para>
         <para> The underlying assumption for this standard on Detailed Clinical Models is that to
             use, exchange and reuse data, and to obtain meaningful information from it for each

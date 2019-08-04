@@ -458,7 +458,7 @@
     <glossentry>
         <glossterm>Measure</glossterm>
         <glossdef>
-            <para>Measure captures measurable elements of clinical statements , e.g. the results of
+            <para>Measure captures measurable elements of clinical statements, e.g. the results of
                 test procedures, time periods, frequencies of repetitions for procedures or
                 medication administrations using an Interval (upper and lower bound) as well as a
                 measureSemantic representing the unit of measure.</para>
