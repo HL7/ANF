@@ -13,7 +13,7 @@
         <title><anchor xml:id="table_perform_bpm"/>Blood Pressure Measurement </title>
         <table>
             <title>Blood Pressure
-                <?oxy_comment_start author="kec" timestamp="20190721T191629-0700" comment="I thought these tables where going away and would be replaced by the graphical representation that Tim has been working on.  "?>Performance
+                <?oxy_comment_start author="kec" timestamp="20190721T191629-0700" comment="I thought these tables where going away and would be replaced by the graphical representation that Tim has been working on. "?>Performance
                 Statement<?oxy_comment_end?></title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>

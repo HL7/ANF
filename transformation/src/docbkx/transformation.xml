@@ -163,8 +163,8 @@
 
 
             <?oxy_comment_start author="jcoyle" timestamp="20190601T180110-0500" comment="I believe this is
-            actually the opposite.  Normalization will result in the information being spread across more
-            clinical statements.  For example, in ANF, patient sitting and having urinated will be there
+            actually the opposite. Normalization will result in the information being spread across more
+            clinical statements. For example, in ANF, patient sitting and having urinated will be there
             own associated clinical statements"?><?oxy_comment_end?>
 
             
@@ -238,7 +238,7 @@
         <title>Transformation Languages and Architecture</title>
         
         <para>A number of options exist for expressing transformation logic and for executing the
-            transformation on specific instances of clinical data for normalization into ANF.  These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author.  One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
+            transformation on specific instances of clinical data for normalization into ANF. These range from transformation languages to expensive middleware options commonly used in healthcare interfaces. The suitability of the chosen language highly depends on the format of the source data, and the quality and accuracy of the transformation is left to the transformation author. One option described here is Model Driven Message Interoperability (MDMI), which is an architecture for transformation that assists in producing semantically accurate transformations.
         </para>
 
 
@@ -470,11 +470,11 @@
             </figure>
 
             <para>
-                The MDMI Transformation Metamodel is composed of a syntax model and a semantic model. The syntax model contains the syntactical representation of each data element in a format and the semantic model contains the semantic concept represented by the data element. The syntax model is used to compose a collection of semantic representations into a target file format or to decompose a source file into its semantic representations.  The syntax model can be used for any format.  XML, JSON, HL7 V.2, CVS, various EDI payment, and proprietary formats have been used.
+                The MDMI Transformation Metamodel is composed of a syntax model and a semantic model. The syntax model contains the syntactical representation of each data element in a format and the semantic model contains the semantic concept represented by the data element. The syntax model is used to compose a collection of semantic representations into a target file format or to decompose a source file into its semantic representations. The syntax model can be used for any format. XML, JSON, HL7 V.2, CVS, various EDI payment, and proprietary formats have been used.
             </para>
 
             <para>
-                The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts in a format. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example of this is a data element that can have multiple semantics concepts that must be disambiguated based on other values contained in format.  
+                The semantic model captures the semantic concepts in the format and the relationships between the semantic concepts in a format. Probably the most important relationship is the containership relationships. The semantic model of the MDMI is also used to capture other relationships and rules required to create unambiguous semantic representations. An example of this is a data element that can have multiple semantics concepts that must be disambiguated based on other values contained in format. 
             </para>
 
             <para>The MDMI SEER is a repository for the semantically unique concepts, called
@@ -529,7 +529,7 @@ Probably should define FHIM since it hasn&apos;t been used previously in the doc
                         <para>It minimizes change. If one MDMI Model changes (e.g. FHIR 4 to FHIR 5), this does not require changes to other existing MDMI Models such as CCDA 2.1, HL7 V2.8, or a proprietary model.</para>
                     </listitem>
                     <listitem>
-                        <para>It simplifies development.  Tooling exists to develop and maintain individual MDMI Models by SMEs who do not need to be developers. The scope of expertise is further reduced because the knowledge one needs to create a MDMI Model is primary to know what the data in their format means. </para>
+                        <para>It simplifies development. Tooling exists to develop and maintain individual MDMI Models by SMEs who do not need to be developers. The scope of expertise is further reduced because the knowledge one needs to create a MDMI Model is primary to know what the data in their format means. </para>
                     </listitem>
                     <listitem>
                         <para>It enables automation tooling for creating MDMI models, for creating computable artifacts, and generating reports.</para>

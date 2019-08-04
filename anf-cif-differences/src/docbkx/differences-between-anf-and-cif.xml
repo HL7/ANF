@@ -70,7 +70,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <para>The CIMI Statement model in this example, on the other hand, would be fully
             represented using the formalism that represents the CIMI reference model. This model
             however allows for the possibility of multiple modeling style representations of the
-            same data that are then not easily queried for equivalence.  </para>
+            same data that are then not easily queried for equivalence. </para>
     </section>
     <section>
         <title>The Representation of Results</title>
@@ -217,7 +217,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T115942-0500" comment="I think this one may be off." flag="done"?>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161744-0500" comment=" JCoyle - Yes, the result doesn&apos;t go in the topic, it goes in context.  
+                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161744-0500" comment=" JCoyle - Yes, the result doesn&apos;t go in the topic, it goes in context. 
 
                     context(PresenceContext).contextCode = &quot;Some breath sound code&quot;
 
@@ -272,12 +272,12 @@ Also, the implications of a more complex seperation of concerns with respect to 
     <section>
         <title>ANF vs CIMI Examples</title>
         <para>The following examples seek to highlight the differences between the ANF and CIMI
-            models.  These representations are at a graphic high level and are not intended to be
+            models. These representations are at a graphic high level and are not intended to be
             exact representations.</para>
         <section>
             <title>Simple Systolic Blood Pressure Statement</title>
             <para>In this systolic blood pressure example both the ANF and CIMI models are closely
-                aligned.  Since the ANF model requires both an upper and lower bound there is extra
+                aligned. Since the ANF model requires both an upper and lower bound there is extra
                 information required.</para>
             <figure>
                 <title>Systolic Blood Pressure - ANF Representation</title>
@@ -369,9 +369,9 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <section>
             <title>Diabetes Mellitus Statement</title>
             <para>The Diabetes Mellitus example highlights the main difference between ANF and CIMI
-                in the case of stating that a condition is present.  In the case of ANF, since
+                in the case of stating that a condition is present. In the case of ANF, since
                 Result is not allowed to use a coded value it represents the presence as a
-                lowerBound of 1 and an upperBound of infinite.  Representing absence would be done
+                lowerBound of 1 and an upperBound of infinite. Representing absence would be done
                 with an upper and lower bound of zero.</para>
             <figure>
                 <title>Diabetes Mellitus Present - ANF Representation</title>

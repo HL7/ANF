@@ -90,9 +90,9 @@ o	Start with simple examples of “Pulse” (Pulse by method, Pulse by patient s
             and data analysts in their attempts to extract accurate clinical analysis results. </para>
         <para>Clinicians enter clinical statements into their organization’s
             EHR<?oxy_comment_start author="kmaulden" timestamp="20190423T095907-0400" comment="Joey Coyle:
-We need a better term than CIF, as Classic CIMI is not CIF. Classic CIMI is as post-coordinated as is reasonable for the purpose of making queries and analysis easier.  A clinical input form is the opposite and is usually as pre-coordinated as is reasonable. During data input, these pre-coordinated instances would then need to be transformed to a post-coordinated form before being stored in a repository.
+We need a better term than CIF, as Classic CIMI is not CIF. Classic CIMI is as post-coordinated as is reasonable for the purpose of making queries and analysis easier. A clinical input form is the opposite and is usually as pre-coordinated as is reasonable. During data input, these pre-coordinated instances would then need to be transformed to a post-coordinated form before being stored in a repository.
 
-The main problem is that both ANF and highly post-coordinated models are for analysis.  ANF may be more reproducibly consistent and better for analysis, but to assert that CIMI models are designed to aid in clinical input is an error.
+The main problem is that both ANF and highly post-coordinated models are for analysis. ANF may be more reproducibly consistent and better for analysis, but to assert that CIMI models are designed to aid in clinical input is an error.
 
 This should be decided sooner than later.
 

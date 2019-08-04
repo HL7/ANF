@@ -2,7 +2,7 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within.  Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things.  Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
+    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within. Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things. Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
     <title>How ANF Works: ANF Clinical Statements</title>
     <para>In the context of the ANF Model, a <glossterm baseform="Clinical Statement">clinical
             statement</glossterm> represents an entry in the patient record that documents, in a
@@ -54,7 +54,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information.  As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information. As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
             <itemizedlist>
                 <listitem>
                     <para>Was observed to have the presence or absence of a clinical
@@ -189,7 +189,7 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time , shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="16"?><?oxy_comment_end mid="16"?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes.  It would be an observation that the patient has diabetes.  We currently state that representing present would be with [1,inf).  Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes. It would be an observation that the patient has diabetes. We currently state that representing present would be with [1,inf). Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
@@ -369,7 +369,7 @@ Doing family history, donor statements using subject of information is now the n
                                 </itemizedlist>
                             </listitem>
                             <listitem>
-                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Again, I think this could go first.  And instead of the wording &apos;can be expressed&apos;, maybe stronger as &apos;should be expressed&apos;."?><?oxy_comment_end?>
+                                <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Again, I think this could go first. And instead of the wording &apos;can be expressed&apos;, maybe stronger as &apos;should be expressed&apos;."?><?oxy_comment_end?>
                                 <para>A prerequisite is separable from the topic and can be
                                     expressed as a stand-alone clinical statement</para>
                                 <itemizedlist>
@@ -517,7 +517,7 @@ Doing family history, donor statements using subject of information is now the n
 
                             3.) Retain capitilized as we do now, for Performance Circumstance, Request Circumestance, and Narrative Circumstance, as these are classes used in composition. 
 
-                            4.) In this figure, should be associatedStatement with properties of id and semantic.  The green value bubble of Negative screen for depression, could be pink, the same color of ANF Statement, indicating we are binding to another instance, and not a value within this model.
+                            4.) In this figure, should be associatedStatement with properties of id and semantic. The green value bubble of Negative screen for depression, could be pink, the same color of ANF Statement, indicating we are binding to another instance, and not a value within this model.
 
                     "?><?oxy_comment_end?>
                 <figure>

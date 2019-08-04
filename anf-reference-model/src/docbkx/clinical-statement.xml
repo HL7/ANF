@@ -132,7 +132,7 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
                 <para>Request for systolic blood pressure measurement</para>
             </listitem>
         </itemizedlist>
-        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="For the following examples, I have found better results using the docbook programlisting element rather than tables, because things line up the way you want them with docbook making the decsions.  Look in the CIF chapter for examples."?><?oxy_comment_end?>
+        <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="For the following examples, I have found better results using the docbook programlisting element rather than tables, because things line up the way you want them with docbook making the decsions. Look in the CIF chapter for examples."?><?oxy_comment_end?>
         <table>
             <title><emphasis>Example Request for Action Topic: <emphasis role="bold">Request for
                         administration of Ibuprofen 400 mg tablet oral</emphasis></emphasis></title>
@@ -162,7 +162,7 @@ You don’t mean that just the phrase ‘stress echocardiogram’ is a request f
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111940-0400" comment="Comment from WC:
 But surely you should disambiguate between the phenomena themselves and the observations thereof. Plus be more precise about what ‘observation’ exactly is, otherwise you get trapped in HL7-nonsense. Clearly, you can only observe phenomena that are there: you can only observe congestive heart failure in a patient when it is there. But you can state in a record that the patient has CHF without he having it. In such case, the clinician might believe he observed an instance of CHF, but he did not observe it. Furthermore, ‘observe’ should not be overloaded with ‘deduce’. You can’t observe ‘psychosis’, only deduce it on the basis of … 
 " id="dd3_dm2_thb" mid="16"?>
-                <?oxy_comment_start author="timowilliams" timestamp="20190514T150323-0500" comment="Changed CHF and numbness to observation of.  Should the history also be observation?  Not sure if this is right.  does this fix this issue." parentID="dd3_dm2_thb"?>
+                <?oxy_comment_start author="timowilliams" timestamp="20190514T150323-0500" comment="Changed CHF and numbness to observation of. Should the history also be observation?  Not sure if this is right. does this fix this issue." parentID="dd3_dm2_thb"?>
                 <para>Observation of Congestive heart failure</para>
             </listitem>
             <listitem>
@@ -221,7 +221,7 @@ But surely you should disambiguate between the phenomena themselves and the obse
         <?oxy_comment_start author="kmaulden" timestamp="20190418T112050-0400" comment="Comment from WC:
 Lack of distinction between the observation as an action and that what is observed leads to ambiguity about whether an absent observed finding is an assertion about whether, for example, a requested observation was not done, or whether it was done but there was nothing to observe.
 " id="t5z_trt_vhb"?>
-        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in.  It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="20"?>
+        <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in. It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="20"?>
         <section>
             <?oxy_comment_start author="Ioana" timestamp="20190627T174619-0400" comment="Timing is of type &quot;Measure&quot; so we should show how to instantiate it speciy &quot;WHEN&quot; ... "?>
             <title>Timing<?oxy_comment_end?></title>
@@ -436,7 +436,7 @@ Would it not be better to call this then ‘request goal’?
                         <?oxy_comment_start author="kmaulden" timestamp="20190418T112144-0400" comment="Comment from WC:
 This is an example of having an unclear topic. Is it the (implicit) request that such tablets are taken, or is it such tablets?
 " id="wy1_p5t_vhb" mid="37"?>
-                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult.  To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome.  Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="38"?>
+                        <?oxy_comment_start author="timowilliams" timestamp="20190523T211517-0500" comment="I agree with WC, but on the fact that eventFrequency seems to cover these cases better than requestedResult. To me, the lowering blood pressure &lt;130mmHG is the requestedResult or at least the hopeful outcome. Should we change this to another example to lower body weight?" parentID="wy1_p5t_vhb" mid="38"?>
                         <para>Narrative: Diltiazem 30 mg, <emphasis role="underline">one
                                 tablet</emphasis> oral daily 4
                         times</para><?oxy_comment_end?><?oxy_comment_end mid="37"?><?oxy_comment_end mid="38"?>

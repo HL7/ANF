@@ -4,7 +4,7 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
         <title>ANF UML Model</title>
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
-            </emphasis></emphasis>is a logical model and uses <glossterm
+            </emphasis></emphasis>is a logical model described herein using the <glossterm
             baseform="Object Management Group">Object Management Group (OMG)</glossterm>
         <glossterm baseform="Unified Modeling Language">Unified Modeling Language (UML)</glossterm>
         2.0 notation to describe the structure of normalized <glossterm

@@ -26,7 +26,7 @@
                             <para>Subject of info:<emphasis role="italic"
                                     ><?oxy_comment_start author="kmaulden" timestamp="20190418T113928-0400" comment="Comment from WC:
 I would expect here the unique identifier for the person who is the Subject of record, and not the concept Subject of Record
-" id="sxp_fxr_thb" flag="done" mid="1"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112208-0500" comment="Nope.  That is the Subject of Record ID" parentID="sxp_fxr_thb" flag="done"?>[Subject
+" id="sxp_fxr_thb" flag="done" mid="1"?><?oxy_comment_start author="timowilliams" timestamp="20190516T112208-0500" comment="Nope. That is the Subject of Record ID" parentID="sxp_fxr_thb" flag="done"?>[Subject
                                     of record]
                                     <?oxy_comment_end?><?oxy_comment_end mid="1"?></emphasis>
                             </para>

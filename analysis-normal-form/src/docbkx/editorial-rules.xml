@@ -80,7 +80,7 @@
             <itemizedlist xml:id="anf-editorialrule-resultsRangedQuantity-content">
                 <listitem>
                 	<para>
-                        Results are always a Measure, which is a ranged quantity.  Measure includes both a numeric interval along with a Measure Semantic specified as a Logical Expression.
+                        Results are always a Measure, which is a ranged quantity. Measure includes both a numeric interval along with a Measure Semantic specified as a Logical Expression.
                     </para>
                 </listitem>
                 <listitem>
@@ -98,12 +98,12 @@
             <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content">
                 <listitem>
                 	<para>
-                        Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".   
+                        Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".  
                     </para>
                 </listitem>
                 <listitem>
                     <para>
-                        Any statement that represents the Absence or implies Absence of a Topic will have a Result with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable quantity".   
+                        Any statement that represents the Absence or implies Absence of a Topic will have a Result with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable quantity".  
                     </para>
                 </listitem>
             </itemizedlist>

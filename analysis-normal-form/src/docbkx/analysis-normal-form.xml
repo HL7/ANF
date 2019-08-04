@@ -186,7 +186,7 @@ I don’t see why, or what the ‘symmetry’ would apply to.
             <listitem>
                 <para><emphasis role="bold">Iterative development and validation of model using use
                         cases: </emphasis>ANF has been developed using an iterative approach
-                    evaluating the model with narrative use cases.  Examples of narratives used to
+                    evaluating the model with narrative use cases. Examples of narratives used to
                     evaluate the model can be found in the <link linkend="appendix">Appendix</link> .</para>
             </listitem>
         </orderedlist>
@@ -465,9 +465,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     <listitem>
                         <para><emphasis>Administration of Medication</emphasis>: To represent the
                             performance of an administration of medication, the Topic will be built
-                            using the Administration of substance concept.  All Administration of
+                            using the Administration of substance concept. All Administration of
                             substance concepts will be refined with the substance and dose form and
-                            strength being requested.  If Route of administration exists, then it will
+                            strength being requested. If Route of administration exists, then it will
                             also be added.</para>
                     </listitem>
                     <listitem>
@@ -479,9 +479,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
                     </listitem>
                     <listitem>
                         <para><emphasis>Observation Procedure</emphasis>: Any performance of an action
-                            that is an observation would begin with an Observation procedure.  The
+                            that is an observation would begin with an Observation procedure. The
                             Observation procedure with then have a Has focus attribute linking it to the
-                            Clinical Finding or Disorder that it is being observed.  The observation
+                            Clinical Finding or Disorder that it is being observed. The observation
                             procedure can also be further refined by adding the Method, Procedure site -
                             Direct, (if appropriate) laterality, and Using device.</para>
                     </listitem>
@@ -513,8 +513,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         <editorial-rule>
             <?oxy_comment_start author="timowilliams" timestamp="20190711T143006-0500" comment="From Stephanie K.
 
-I&apos;m confused.  Previously and also on the next page it was said that ANF doesn&apos;t allow coded values for Result.  See section 6.3.3.  Thus, why are they allowed here?" id="tts_5bk_j3b"?>
-            <?oxy_comment_start author="timowilliams" timestamp="20190711T143022-0500" comment="This isn&apos;t used to represent the result, that is only represented as the upper and lower bounds.  This is just used to describe that result." parentID="tts_5bk_j3b" mid="27"?>
+I&apos;m confused. Previously and also on the next page it was said that ANF doesn&apos;t allow coded values for Result. See section 6.3.3. Thus, why are they allowed here?" id="tts_5bk_j3b"?>
+            <?oxy_comment_start author="timowilliams" timestamp="20190711T143022-0500" comment="This isn&apos;t used to represent the result, that is only represented as the upper and lower bounds. This is just used to describe that result." parentID="tts_5bk_j3b" mid="27"?>
             <title>healthRisk</title>
             <mathphrase>healthRisk is used to flag a result with coded values such as 'low',
                 'normal', high', and

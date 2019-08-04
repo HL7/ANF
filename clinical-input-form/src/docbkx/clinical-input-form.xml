@@ -700,7 +700,7 @@
             <caption><para><emphasis role="">Tubular Breath Sounds</emphasis></para></caption>
         </figure>
 
-        <para><xref linkend="cimi_blood_pressure_eval_0135" xrefstyle="select: label"/> and <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/> are both Evaluation Result style representations of a systolic blood pressure.  In the first, where CIMI has a simple topic, the style is very similar to how it would be modeled in ANF.  But in <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/>, which has a complex topic, CIMI represents this with named properties in a tree structure.  ANF, on the other hand, would put all this structured topic complexity into a post-coordinated SNOMED CT expression.
+        <para><xref linkend="cimi_blood_pressure_eval_0135" xrefstyle="select: label"/> and <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/> are both Evaluation Result style representations of a systolic blood pressure. In the first, where CIMI has a simple topic, the style is very similar to how it would be modeled in ANF. But in <xref linkend="cimi_blood_pressure_complex_0135" xrefstyle="select: label"/>, which has a complex topic, CIMI represents this with named properties in a tree structure. ANF, on the other hand, would put all this structured topic complexity into a post-coordinated SNOMED CT expression.
         </para>
 
         <figure xml:id="cimi_blood_pressure_eval_0135">

@@ -4,7 +4,7 @@
   <title>Implications - Improving Patient Safety and Outcomes</title>
   <para><glossterm baseform="Analysis Normal Form">ANF</glossterm> has implications on
     <?oxy_comment_start author="timowilliams" timestamp="20190717T183011-0500" comment="Comment from Stephanie K:
-There isn&apos;t a sub-section for patient safety.  There is one for population health.  Should it be renamed to include both?" flag="done"?>clinical
+There isn&apos;t a sub-section for patient safety. There is one for population health. Should it be renamed to include both?" flag="done"?>clinical
     data quality, <glossterm baseform="Clinical Decision Support">clinical decision support</glossterm>, patient safety and population health because it
     promotes the reuse of information aggregated to derive new information about treatment quality,
     patient safety, and outcomes. </para><?oxy_comment_end?>
@@ -52,7 +52,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
                 information about patients, practitioners, encounters, etc. to provide context to
                 the topic and result recorded.</para>
             </listitem>
-            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="ANF is abstracted above a relational database, in fact no relational database is required.  Any kind of datastore will work." flag="done"?><?oxy_comment_end?>
+            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="ANF is abstracted above a relational database, in fact no relational database is required. Any kind of datastore will work." flag="done"?><?oxy_comment_end?>
             <listitem>
               <para>Computational Conformance: Computational conformance seeks to determine if
                 computations used to create derived values from existing variables yield the
