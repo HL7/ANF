@@ -74,14 +74,15 @@
     <glossentry xml:id="Normal-Form">
         <glossterm>Normal Form</glossterm>
         <glossdef>
-            <para>A well-defined definitional structure that elimintes redundancy and improves data
-                    integrity. Normal forms are widely used in databases schmema design.</para>
+            <para>A well-defined definitional structure that eliminates redundancy and improves data
+                    integrity. Normal forms are widely used in databases schema design.</para>
         </glossdef>
     </glossentry>
         <glossentry xml:id="Normalization">
             <glossterm>Normalization</glossterm>
             <glossdef>
-                <para>The process of eliminating redundancy and improving data integrity by transforming a data definion (e.g. database schema). </para>
+                <para>The process of eliminating redundancy and improving data integrity by
+                    transforming a data definition (e.g. database schema). </para>
             </glossdef>
     </glossentry>
         <glossentry xml:id="Logical-Model">
@@ -421,8 +422,8 @@
     <glossentry>
         <glossterm>Situation with Explicit Context</glossterm>
         <glossdef>
-            <para>A SNOMED Concept Model that defines the context of a clinical finding or
-                procedure.</para>
+            <para>A SNOMED CT Concept Model that defines the context of a clinical finding or
+                    procedure.</para>
         </glossdef>
     </glossentry>
     <glossentry>
