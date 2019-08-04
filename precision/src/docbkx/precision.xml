@@ -2,17 +2,22 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Pragmatic Usage and Next Steps</title>
-    <para>Like other <glossterm baseform="Clinical Information Modeling Initiative">CIMI</glossterm> <glossterm baseform="Isosemantic Model">isosemantic models</glossterm>, <glossterm baseform="Analysis Normal Form">ANF</glossterm> is a <glossterm baseform="Logical Model">logical model</glossterm> and therefore it may
-        implemented using relevant implementable models and technology (see <link
-            linkend="SAIF-CD-diagram"
+    <para>Like other <glossterm baseform="Clinical Information Modeling Initiative">CIMI</glossterm>
+        <glossterm baseform="Isosemantic Model">isosemantic models</glossterm>, <glossterm
+            baseform="Analysis Normal Form">ANF</glossterm> is a <glossterm baseform="Logical Model"
+            >logical model</glossterm> and therefore it may be implemented using relevant
+        implementable models and technology (see <link linkend="SAIF-CD-diagram"
             ><?oxy_comment_start author="Ioana" timestamp="20190729T170311-0400" comment="Add reference to intro" flag="done"?>SAIF-CD<?oxy_comment_end?></link>).
         Therefore, this project will expand on the use of ANF alongside preexisting information
-        exchange HL7 standards (i.e. <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2 messaging</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA documents</glossterm>) and HL7 standards-based APIs
-        (i.e., FHIR resources). In practice, ANF is applicable to systems normalizing or creating
-        normalized data to support <link linkend="SoC_Section"><glossterm baseform="Assertional Knowledge">Assertional</glossterm></link> and <link
-            linkend="SoC-diagram"><glossterm baseform="Procedural Knowledge">Procedural</glossterm></link> knowledge (e.g. clinical alerts, workflow, data
-        analysis, decision support). These need to aggregate data from many isosemantic source
-        models into a single analysis format.</para>
+        exchange HL7 standards (i.e. <glossterm baseform="HL7 V2 Messaging Profile">HL7 V2
+            messaging</glossterm>, <glossterm baseform="HL7 Clinical Document Architecture">CDA
+            documents</glossterm>) and HL7 standards-based APIs (i.e., FHIR resources). In practice,
+        ANF is applicable to systems normalizing or creating normalized data to support <link
+            linkend="SoC_Section"><glossterm baseform="Assertional Knowledge"
+                >Assertional</glossterm></link> and <link linkend="SoC-diagram"><glossterm
+                baseform="Procedural Knowledge">Procedural</glossterm></link> knowledge (e.g.
+        clinical alerts, workflow, data analysis, decision support). These need to aggregate data
+        from many isosemantic source models into a single analysis format.</para>
     <para>Implementers may use the logical model and methodology in this document to design software
         components, databases, or APIs that support reuse and analysis of treatment information
         captured using best practices (e.g. <glossterm baseform="Clinical Information Model">CIMI
