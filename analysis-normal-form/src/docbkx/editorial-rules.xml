@@ -44,17 +44,17 @@
                         the terminology layer, and that the rules of the terminology layer enforce a
                         disjointness of between different types of terminology expressions. Here we
                         present a starting point for what the Terminology Layer editorial rules may
-                        look like, based on current SNOMED practice. </para>
+                        look like, based on current SNOMED CT practice. </para>
                 </listitem>
                 <listitem>
-                    <para>SNOMED can accommodate this requirement for simple observations by using
-                        Observation procedure to represent the topic (or other types of procedures
-                        when appropriate, such as the administration of a medication). In SNOMED
-                        examples, the Observation procedure specifies a Has focus attribute linking
-                        it to the Clinical Finding or Disorder that it is being observed. The
-                        observation procedure can also be further refined by adding attributes in
-                        the terminology model, including Method, Procedure site - Direct, (if
-                        appropriate) Laterality, and Using device. We expect </para>
+                    <para>SNOMED CT can accommodate this requirement for simple observations by
+                        using Observation procedure to represent the topic (or other types of
+                        procedures when appropriate, such as the administration of a medication). In
+                        SNOMED CT examples, the Observation procedure specifies a Has focus
+                        attribute linking it to the Clinical Finding or Disorder that it is being
+                        observed. The observation procedure can also be further refined by adding
+                        attributes in the terminology model, including Method, Procedure site -
+                        Direct, (if appropriate) Laterality, and Using device. We expect </para>
                 </listitem>
         		<listitem>
 					<para>Medication administrations will use an Administration of substance concept to represent
