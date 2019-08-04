@@ -346,8 +346,8 @@ Try &quot;Separating concerns across architectural layers is a foundational...&q
         of concerns.<?oxy_comment_end?></para>
       <figure xml:id="SoC-diagram">
         <title>Separation of Concerns: Knowledge Architecture</title>
-        <mediaobject role="bordered">
-          <imageobject>
+        <mediaobject role="bordered" >
+          <imageobject >
             <?oxy_comment_start author="kec" timestamp="20190721T130116-0700" comment="Move the &quot;Each architectural layer...&quot; to the caption (I demonstrated how to do it here)
 
 Not sure how ANF leads to agile improvement. Possibly just remove, and simplify diagram, 
@@ -355,7 +355,7 @@ Not sure how ANF leads to agile improvement. Possibly just remove, and simplify 
 Add to the Shared Module System description: &quot;Shared version and module system&quot; &quot;Provides the structural foundation that supports change over time, modularity, and knowledge representation. &quot;
 
 Remove the definition from the figure, and link to glossary where appropriate. " flag="done"?>
-            <imagedata fileref="images/SoC_new.png" scale="40"/><?oxy_comment_end?>
+            <imagedata fileref="images/SoC_new.png" scale="40" align="center"/><?oxy_comment_end?>
           </imageobject>
         </mediaobject>
         <caption>
