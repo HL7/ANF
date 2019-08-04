@@ -102,8 +102,9 @@ Or maybe reference back to the interoperability levels, of which semantic was th
                 trusted or relative gold standards (Validation). For example, in the case of
                 systolic blood pressure, an independent verification of the value measured by a
                 device is provided by the practitioner who conducts performance. ANF clinical
-                statements support results that evaluated based on a "reference range" of plausible
-                values based on patient status, device-supported ranges, or human physiology.</para>
+                statements support results that are evaluated based on a "reference range" of
+                plausible values based on patient status, device-supported ranges, or human
+                physiology.</para>
             </listitem>
             <listitem>
               <para>Temporal Plausibility: Temporal plausibility seeks to determine if time-varying
@@ -251,7 +252,7 @@ Would you want to state that the opposite could be true as well, where patients 
       representation models such as the CIMI Clinical Statement approach, with its focus on more
       traditional complex structured trees, whereas ANF focuses on structuring data in a way CDS
       systems can extract data in an unambiguous way. ANF provides a single, normalized, form for
-      clinical statements that may be used to create assertional or procedural knowledge artifacts
-      as clinical decision support</para>
+      clinical statements that may be used to create assertional or procedural knowledge artifacts,
+      such as clinical decision support</para>
   </section>
 </chapter>
