@@ -102,9 +102,9 @@ This is too cryptic for me to understand. Any source suggestion?
                     administer a drug or to treat a condition is identified. By representing these
                     types of potentially dynamic concerns in the terminology expressions, as opposed
                     to static fields in a class structure, we do not have to change the model every
-                    time something new is discovered. As Terry Winograd said, anticipating
-                    breakdowns, and providing a space for action when they occur, is a design
-                    imperative.</para>
+                    time something new is discovered. A design imperative is anticipating
+                    breakdowns, and providing a space for action when they occur. <link
+                        linkend="bibx">[11]</link></para>
                 <para>In some regards, in this context “stable” means “not brittle.” A model easily
                     broken by changes that someone could anticipate is one possible definition of
                     brittle. A stable model is critical in the phase of a known changing landscape.
