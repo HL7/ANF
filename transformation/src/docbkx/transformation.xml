@@ -8,7 +8,7 @@
 
     <para>Normalization of <glossterm baseform="Clinical Statement">clinical statements</glossterm>
         is defined as "the ability to identify every representational format that confers the same
-        meaning as being equivalent (i.e., unambiguous representation). <link linkend="bib8"
+        meaning as being equivalent (i.e., unambiguous representation)." <link linkend="bib8"
             >[11]</link>
     </para>
 
@@ -32,10 +32,11 @@
         <para><glossterm baseform="Analysis-Normal-Form">ANF</glossterm> seeks to simplify the
             complexity that currently exists in detailed clinical models. As its name suggests,
             Analysis Normal Form provides one normalized data structure to describe clinical
-            statements from all domains. ANF accomplishes this by moving the complexity that usually
-            requires a complex data structure into the terminology as a complex <glossterm
-                baseform="Post-coordinated concept">post-coordinated</glossterm> SNOMED CT
-            expression. </para>
+            statements from all domains. ANF accomplishes this simplification by moving the
+            complexity  from static statement data structures to dynamic
+                <emphasis>pre-coordinated</emphasis>, or <glossterm
+                baseform="Post-coordinated concept">post-coordinated</glossterm> terminology
+            expressions, as defined by the Terminology Knowledge layer of the architecture. </para>
 
     </section>
 
@@ -51,12 +52,13 @@
                 Statement</glossterm> model is to either use the <glossterm>Assertion</glossterm>
             style or the <glossterm>Evaluation Result</glossterm> style, and <glossterm
                 baseterm="Clinical Information Modeling Initiative">CIMI</glossterm> documents which
-            types of clinical statement are best suited for each. The current approach is to solve
-            the problem by conformity rather than with technology. </para>
-
-        <para>ANF seeks to minimize this variation by only allowing quantitative results. This
-            eliminates the choice between Evaluation style versus Assertion style clinical
-            statements as coded results are not possible. </para>
+            types of clinical statement are best suited for each. Assignment of clinical statement
+            types into these categories creates false dichotomies, since there are a myriad of
+            examples where clinical statement types can readily fit in both categories. </para>
+        <para>ANF's approach is to solve the problem by eliminating the need to make choices between
+            overlapping statement types. ANF seeks to minimize this variation by only allowing
+            quantitative results. This eliminates the choice between Evaluation style versus
+            Assertion style clinical statements as coded results are not possible. </para>
 
         
 
@@ -99,10 +101,10 @@
         <para>Transformation, in this case, is not a simple endeavor that one can hope to automate
             across domains of clinical statements or even within a single domain of clinical
             statements. As presented, it will involve navigating disparate data structure trees and
-            include variable representations to then generate a well-formed post-coordinated SNOMED
-            CT expression. It is most likely possible to target subdomains for consistent
-            transformation, such as all quantitative laboratory results, but in some cases, it may
-            be that each detailed clinical model needs its own unique transformation. </para>
+            include variable representations to then generate a well-formed terminology expression.
+            It is most likely possible to target subdomains for consistent transformation, such as
+            all quantitative laboratory results, but in some cases, it may be that each detailed
+            clinical model needs its own unique transformation. </para>
 
         <para>
             Potential areas of difficulty during transformation
@@ -255,30 +257,25 @@
                 high-performance, and are available as runtime libraries or embedded in XLST
                 authoring/editing applications. Excellent documentation and training are available
                 for XSLT. </para>
-            <section>
-                <title>Overview of Language and Data Model</title>
-                <para>XSLT scripts operate over source “trees” containing the structured contents
-                    of parsed XML documents. These trees contain as their nodes the various
-                    constructs of specific XML documents, i.e., the named elements, attributes, and
-                    text values that appear in the documents, and upon parsing, becomes a source
-                    tree for XSLT transformations.</para>
-                <para>XSLT uses the sub-language “XPath” to reference portions of the XML source
-                    tree for purposes of navigating the tree and selecting specific parts of it to
-                    translate. <link linkend="bib10">[13]</link> XPath is essentially a query
-                    language for identifying and retrieving XML sub-trees that match specified
-                    criteria. </para>
-                <para>The actual transformation logic in XLST scripts is specified as a series of
-                    “templates”. Each template matches to a specified sub-part of the source tree
-                    and specifies what output will be generated for that sub-part. Templates are
-                    generally called from within other templates via a declarative template-matching
-                    process, and a recursive traversal and transformation of the input tree occurs
-                    through this template-invocation model. The transformation logic within
-                    templates may include various conditional, branching, and formatting constructs,
-                    as well as calls to external functions written in various programming languages
-                    (such as Java). </para>
-            </section>
-            <section>
-                <title>Advantages and Limitations</title>
+            <para>XSLT scripts operate over source “trees” containing the structured contents
+                of parsed XML documents. These trees contain as their nodes the various
+                constructs of specific XML documents, i.e., the named elements, attributes, and
+                text values that appear in the documents, and upon parsing, becomes a source
+                tree for XSLT transformations.</para>
+            <para>XSLT uses the sub-language “XPath” to reference portions of the XML source
+                tree for purposes of navigating the tree and selecting specific parts of it to
+                translate. <link linkend="bib10">[13]</link> XPath is essentially a query
+                language for identifying and retrieving XML sub-trees that match specified
+                criteria. </para>
+            <para>The actual transformation logic in XLST scripts is specified as a series of
+                “templates”. Each template matches to a specified sub-part of the source tree
+                and specifies what output will be generated for that sub-part. Templates are
+                generally called from within other templates via a declarative template-matching
+                process, and a recursive traversal and transformation of the input tree occurs
+                through this template-invocation model. The transformation logic within
+                templates may include various conditional, branching, and formatting constructs,
+                as well as calls to external functions written in various programming languages
+                (such as Java). </para>
                 <para>XSLT is effective in representing and executing the transformation logic
                     needed for clinical translations. In general, XSLT provides various advantages,
                     as well as limitations, for this task. </para>
@@ -317,7 +314,6 @@
                             translated</para>
                     </listitem>
                 </itemizedlist>
-            </section>
         </section>
 
         <section>
@@ -328,9 +324,7 @@
                 documents, etc. The mapping language was created by Graham Grieve as a specification
                 of the QVT framework for model-transformation languages (see <xref
                     linkend="_Ref494462079"/>). </para>
-            <section>
-                <title>Overview of Language and Data Model</title>
-                <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
+                 <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
                     rules that are automatically matched to input data, (b) includes a sub-language
                     (“FHIRPath”) to reference parts of source parse trees, and (c) has the ability
                     to reference external functions written in different languages. There are also
@@ -354,9 +348,7 @@
                     XSLT), but an internally stored DAG consistent with the specified output model.
                     Subsequently, the DAG may be rendered in any number of syntaxes, including XML,
                     JSON, or the tables and fields of a relational database. </para>
-            </section>
-            <section>
-                <title>Advantages and Limitations</title>
+            
                 <para>The FHIR Mapping Language may also be effective in representing and executing
                     the transformation logic needed
                     for normalization to ANF. As with XSLT, however, there
@@ -399,7 +391,6 @@
                         <para>Few knowledgeable programmers</para>
                     </listitem>
                 </itemizedlist>
-            </section>
         </section>
 
         <section xml:id="_Ref494462079">
@@ -407,8 +398,6 @@
             <para>A third alternative is to develop a new transformation language customized to
                 support the requirements of a normalization to ANF, 
                 based on the QVT language used to develop the FHIR Mapping Language. </para>
-            <section>
-                <title>Overview</title>
                 <para>QVT <link linkend="bib13">[16]</link> is a general model-transformation
                     framework and language developed by the Object Management Group. It includes
                     both an imperative (“QVT-O”) and a declarative (“QVT-R”) version, and offers
@@ -436,14 +425,21 @@
                         <para>Others (see <link linkend="bib13">[16]</link>) </para>
                     </listitem>
                 </itemizedlist>
-            </section>
-            <section>
-                <title>Advantages and Limitations</title>
-                <para>The strength of QVT is that it is very abstract, which confers great
-                    flexibility and configurability to create custom transformation languages.
-                    However, the abstractness also makes QVT quite difficult to understand and
-                    learn, and there are limited resources to assist in the learning process. </para>
-            </section>
+            <para><emphasis role="bold">Advantages</emphasis></para>
+            <itemizedlist spacing="compact">
+                <listitem>
+                    <para>QVT is very abstract, which confers great
+                        flexibility and configurability to create custom transformation languages.
+                    </para>
+                </listitem>
+            </itemizedlist>
+            <para><emphasis role="bold">Limitations</emphasis></para>
+            <itemizedlist spacing="compact">
+                <listitem>
+                    <para>the abstractness also makes QVT quite difficult to understand and
+                        learn, and there are limited resources to assist in the learning process.</para>
+                </listitem>
+             </itemizedlist>
         </section>
 
         <section>
@@ -465,7 +461,7 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis>The MDMI Transformation Metamodel</emphasis></para>
+                    <para><emphasis>The MDMI Transformation Metamodel.</emphasis></para>
                 </caption>
             </figure>
 
@@ -507,10 +503,7 @@
                 projects as well as in commercial implementations. </para>
 
 
-        </section>
-
-        <section>
-            <title>Advantages and Limitations</title>
+        
 
             <para>MDMI is a model driven approach. Having a formal model, the open source project
                 has been able to develop tooling based on the MDMI model as well as leverage other
@@ -553,6 +546,5 @@ Probably should define FHIM since it hasn&apos;t been used previously in the doc
                 </itemizedlist>
 
         </section>
-
     </section>
 </chapter>
