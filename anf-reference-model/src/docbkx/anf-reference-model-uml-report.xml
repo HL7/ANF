@@ -633,62 +633,100 @@
                 <title>Data Structures</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/data_structures.png" format="PNG" scale="60" align="center"/>
-                    </imageobject>
+                    <?oxy_comment_start author="Ioana" timestamp="20190804T133814-0400" comment="updated invariants"?>
+                    <imagedata fileref="images/data_structures.png" format="PNG" scale="60"
+                        align="center"/><?oxy_comment_end?>
+                </imageobject>
                 </mediaobject>
             </figure>
             <section xml:id="measureClass">
-                <title>Measure </title>
-                <para>This class captures measurable elements of clinical statements, e.g. the
-                results of test procedures, time periods, frequencies of repetitions for procedures
-                or medication administrations. The measure formally represents a numeric interval
-                between two nonnegative real numbers with a semantic and precision/resolution. The
+            <title>Measure </title>
+            <para>This class captures measurable elements of clinical statements, e.g. the results
+                of test procedures, time periods, frequencies of repetitions for procedures or
+                medication administrations. The measure formally represents a numeric interval
+                between two non-negative real numbers with a semantic and precision/resolution. The
                 interval can be open or closed depending on whether the upper and lower bounds are
                 included in the measure interval.</para>
-                <para>The measure provides a single way to represent both “presence” or "absence"
-                values and numeric values for a phenomenon. In general, the interval value
-                represents the numeric range within which the observed value of a phenomenon occurs.
-                Note that this formalism allows both exact values and ranges of values to be
-                expressed. In case that the beginning and end point of an interval are the same
-                value, the meaning is that the value of the phenomenon is exactly that value.</para>
-                <para>In the case that the lower and upper bound of an measure are the same number,
-                        <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>, the
-                    meaning is that the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic">n</emphasis></emphasis>.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para role="italic">[5,5] : exactly 5 ; [0,0] : exactly 0</para>
-                    </listitem>
-                </itemizedlist>
-
-                <para>In the special case that the beginning of the interval is a number, n, and the
-                    end point is INF (infinity), the meaning is that the value of the phenomenon is
-                    > n or >=n, depending on whether the interval is open or closed.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para role="italic">(0,INF) : > 0 ; [10,INF) : >= 10</para>
-                    </listitem>
-                </itemizedlist>
-                <para>The interval value also represents whether a phenomenon is “present”,
-                    “absent”, or “indeterminate”. Specifically, any interval value that includes
-                    only numbers that are > 0 also denotes the value “present”.</para>
-                <para>Any interval value that includes only the number 0, itself, denotes the value
-                “absent”. Any interval value that includes both the number 0 and at least one number
-                > 0 denotes the values “indeterminate”. Lastly, there are two interval values that
-                explicitly denote “present” and “absent,” respectively. These value may be assigned
+            <para>The measure provides a single way to represent both "presence" or "absence" values
+                and numeric values for a phenomenon. In general, the interval value represents the
+                numeric range within which the observed value of a phenomenon occurs. Note that this
+                formalism allows both exact values and ranges of values to be expressed. In case
+                that the beginning and end point of an interval are the same value, the meaning is
+                that the value of the phenomenon is exactly that value.</para>
+            <para><?oxy_comment_start author="Ioana" timestamp="20190804T133858-0400" comment="updated to provide an example that uses &quot;n&quot; - a generic numeric value"?>In
+                the case that the lower and upper bound of an measure are the same number, <emphasis
+                    role="bold"><emphasis role="italic">n</emphasis></emphasis>, the meaning is that
+                the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic"
+                        >n</emphasis></emphasis>.</para>
+            <itemizedlist>
+                <listitem>
+                    <para role="italic"><emphasis role="bold">[n,n] </emphasis>: means the value is
+                        exactly <emphasis role="bold">n</emphasis> because
+                            <emphasis>lowerBound</emphasis> and <emphasis>upperBound</emphasis> are
+                        both <emphasis role="bold">n</emphasis>; <?oxy_comment_end?></para>
+                </listitem>
+            </itemizedlist>
+            <para>In the special case that the beginning of the interval is a number, n, and the end
+                point is <emphasis role="bold">INF</emphasis> (infinity), the meaning is that the
+                value of the phenomenon is > n or >=n, depending on whether the interval is open or
+                closed.</para>
+            <itemizedlist>
+                <listitem>
+                    <para role="italic">(0,INF) : > 0 ; (greater than 0)</para>
+                </listitem>
+                <listitem>
+                    <para role="italic">[10,INF) : >= 10 (greater than or equal to 10)</para>
+                </listitem>
+                <listitem>
+                    <para>(-INF, 10): &lt;10 (less than 10)</para>
+                </listitem>
+            </itemizedlist>
+            <para>The interval value also represents whether a phenomenon is "present", "absent", or
+                "indeterminate". Specifically, any interval value that includes only numbers that
+                are > 0 also denotes the value "present".</para>
+            <para>Any interval value that includes only the number 0, itself, denotes the value
+                "absent". Any interval value that includes both the number 0 and at least one number
+                > 0 denotes the values "indeterminate". Lastly, there are two interval values that
+                explicitly denote "present" and "absent", respectively. These value may be assigned
                 to phenomena that would not otherwise take on a numeric value (such as
-                “nausea”):</para>
-                <itemizedlist>
-                    <listitem>
-                        <para role="italic">Nausea value = [0,INF) : present</para>
-                    </listitem>
-                </itemizedlist>
-                <itemizedlist>
-                    <listitem>
-                        <para role="italic">Nausea value = [0,0] : absent</para>
-                    </listitem>
-                </itemizedlist>
-                <informaltable>
-                    <tgroup cols="3">
+                "nausea"):</para>
+            <itemizedlist>
+                <listitem>
+                    <para role="italic"
+                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added"?>Nausea
+                        value = (0,INF) : <emphasis role="bold">present</emphasis> (greater than
+                        0)</para>
+                </listitem>
+                <listitem>
+                    <para>Nausea value = [0, INF): <emphasis role="bold">indeterminate</emphasis>
+                        (greater than or equal to 0)</para>
+                </listitem>
+            </itemizedlist>
+            <itemizedlist>
+                <listitem>
+                    <para role="italic">Nausea value = [0,0] : <emphasis role="bold"
+                            >absent</emphasis> (exactly zero)</para>
+                    <para>The numeric attributes of this class are of type "<emphasis role="bold"
+                            >float</emphasis>" to support both positive and negative values that
+                        conform to<link
+                            xlink:href="https://standards.ieee.org/standard/754-2019.html"> IEEE 754
+                            standard for Floating Point Numbers</link>. </para>
+                    <note>
+                        <para>A Java 4 byte representation of a floating point number could range
+                            between approximately <emphasis role="italic">-
+                                3.40282347E+38</emphasis> and <emphasis>+3 .40282347E+38</emphasis>
+                            - using a sign, the exponent, and mantissa specified by <link
+                                xlink:href="https://standards.ieee.org/standard/754-2019.html">IEEE
+                                754</link>. The values <emphasis role="bold">+infinity
+                            </emphasis>and -<emphasis role="bold">infinity</emphasis> are denoted
+                            with an exponent of all ones and a mantissa of all zeros. The sign bit
+                            distinguishes between negative infinity and positive
+                            infinity.<?oxy_comment_end?></para>
+                    </note>
+                </listitem>
+            </itemizedlist>
+            <informaltable>
+                <tgroup cols="3">
                     <colspec colnum="1" colname="col1" colwidth="1*"/>
                     <colspec colnum="2" colname="col2" colwidth="1.03*"/>
                     <colspec colnum="3" colname="col3" colwidth="3.14*"/>
@@ -723,6 +761,13 @@
                                             pressure 110 mmHg. The lower and upper bound are both
                                             110 mmHg.</para>
                                     </listitem>
+                                    <listitem>
+                                        <?oxy_comment_start author="Ioana" timestamp="20190804T134308-0400" comment="added"?>
+                                        <para>For an unbound measure, the lowerBound is
+                                            -INF(negative infinity) and includeLowerBound is "false"
+                                            <?oxy_comment_end?>
+                                        </para>
+                                    </listitem>
                                 </itemizedlist>
                                 <para/>
                             </entry>
@@ -747,14 +792,17 @@
                                     example states: more than 10 days. Choosing “11” would require
                                     it to include the lower bound If "true" the lower bound is part
                                     of the interval.</para>
-                                <para><emphasis role="bold">Invariant</emphasis>: if (upperBound ==
-                                    INF) { includeUpperBound = false }.</para>
+                                <para><?oxy_comment_start author="Ioana" timestamp="20190804T133656-0400" comment="updated"?><emphasis
+                                        role="bold">Invariant</emphasis><?oxy_comment_end?>: if
+                                        (<emphasis>lowerBound</emphasis> == - INF) {
+                                        <emphasis>includeLowerBound</emphasis> = false }.</para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">semantic</emphasis> LogicalExpression</para>
+                                <para><emphasis role="bold">semantic</emphasis>
+                                    LogicalExpression</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -790,19 +838,21 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">resolution</emphasis> decimal-primitive</para>
+                                <para><emphasis role="bold">resolution</emphasis>
+                                    decimal-primitive</para>
                             </entry>
                             <entry>
                                 <para>[0...1]</para>
                             </entry>
                             <entry>
                                 <para>It defines the possible or allowed increments in which the
-                                    measured “thing” can be counted. In the example of the systolic blood pressure
-                                    of 120 mmHg, the resolution is “1”, because the blood pressure
-                                    measurement result can be counted in 1 mmHg increments. The
-                                    Resolution is not always defined or known. Example: a clinical statement like “History
-                                    of breast cancer” implies an undefined amount of time in the
-                                    past and it is not stated, if it is years, months, etc.</para>
+                                    measured “thing” can be counted. In the example of the systolic
+                                    blood pressure of 120 mmHg, the resolution is “1”, because the
+                                    blood pressure measurement result can be counted in 1 mmHg
+                                    increments. The Resolution is not always defined or known.
+                                    Example: a clinical statement like “History of breast cancer”
+                                    implies an undefined amount of time in the past and it is not
+                                    stated, if it is years, months, etc.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -819,8 +869,10 @@
                                     than 1 cm but less than 4 cm” the upper bound is 4. In cases,
                                     where the measurable element does not represent a range, upper
                                     and lower bound have the same value.</para>
-                                <para><emphasis role="bold">Invariant</emphasis>: it must be greater
-                                    than or equal to the lower bound.</para>
+                                <?oxy_comment_start author="Ioana" timestamp="20190804T133725-0400" comment="updated"?>
+                                <para><emphasis role="bold">Invariant</emphasis>:
+                                        <emphasis>upperBound</emphasis> >=
+                                        <emphasis>lowerBound</emphasis>.<?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
@@ -838,17 +890,20 @@
                                     element has relative properties, the same rules apply. If the
                                     upper bound of a measure is not defined, e.g. “blood glucose
                                     measurement daily for at least 2 weeks”, the upper bound will be
-                                    captured as “inf” (infinite). Infinite as an upper bound is
+                                    captured as “INF” (infinite). Infinite as an upper bound is
                                     never included. If "true" the upper bound is part of the
                                     interval.</para>
-                                <para><emphasis role="bold">Invariant</emphasis>: if (lowerBound ==
-                                    INF) { includeLowerBound = false }.</para>
+                                <para><emphasis role="bold"
+                                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133749-0400" comment="updated"?>Invariant</emphasis>:
+                                    if (<emphasis>upperBound</emphasis> == INF) {
+                                        <emphasis>includeUpperBound</emphasis> = false
+                                    }.<?oxy_comment_end?></para>
                             </entry>
                         </row>
                     </tbody>
                 </tgroup>
-                </informaltable>
-            </section>
+            </informaltable>
+        </section>
             <section>
                 <title xlink:href="repetitionClass">Repetition </title>
                 <para>This class builds on <emphasis role="underline"><link linkend="measureClass">Measure</link></emphasis> and it is used to represent when an action
