@@ -18,47 +18,59 @@
         Methods of information in medicine. 1998;37(4-5):394-403.</para>
     <para xml:id="bib5" >5. Ahn S, Huff SM, Kim Y, Kalra D. Quality metrics for detailed clinical models.
         International journal of medical informatics. 2013;82(5):408-17.</para>
-    <para xml:id="bib6" >6. HL7 Service-Aware Interoperability Framework: Canonical Definition Specification,
+    <para xml:id="bibA" >6. Handler, J. The Importance of Accurate Blood Pressure Measurement. The Permanente Journal (2009) 13:3: 51-54.</para>
+    <para xml:id="bibB">7. O'Brien E, R. Asmar, L Beilin, Y Imai, J. Mallion, G. Mancia, T. Mengden,
+        M. Myers, P. Padfield, P. Palatini, G. Parati, T. Pickering, J. Redon, J. Staessen, G.
+        Stergiou, P. Verdecchia. European Society of Hypertension recommendations for conventional,
+        ambulatory, and home blood pressure measurements. Journal of Hypertension (2003) 21:
+        821-848.</para>
+        <para xml:id="bibC">8. Pickering, T.G., J.E. Hall, L.J. Appel, B.E. Falkner, J. Graves, M.N.
+        Hill, D.W. Jones, T. Kurtz, S.G Sheps, E. J. Roccella. Recommendations for Blood Pressure
+        Measurement in Humans and Experimental Animals: Part 1: Blood Pressure Measurement in
+        Humans: A Statement for Professionals From the Subcommittee of Professional and Public
+        Education of the American Heart Association Council on High Blood Pressure Research.
+        Hypertension (2005) 45:142-161.</para>
+    <para xml:id="bib6" >9. HL7 Service-Aware Interoperability Framework: Canonical Definition Specification,
         Release 2. Health Level 7 International.Available from: <link
             xlink:href="https://secure-web.cisco.com/1FQEoCupb_bRKrjvwpzA2s7o3H7wG_Q8o0yFg6PKJsOnC_G_RWDd6ZuCwoMr6PD-E4QZaBSljCA7Hb2n-9NEqko7MBLRKXRYg2Yzce5Wy9ED8_pCOvwzg1ffh6v512YAVNUe6hWYEofOM79ovXMWsa-xT1x-_hvQ_uP2NEKZVdvVoeShEw7SsQTVEncde3qK_hsCNYeM9enqqlUYNE-WSRw0kpPabPSJczu94UfQg7sFL3Nh9_-iHY2nVeyaCYOWZaUpoIXHgtq7FoDVbMK6ec3cCkJx2897wNR0xCKd7gUBfZDE4Tm1JIsynZNglATOZHzYM687rYyuD1C98Ib17omNAS_GR_QnMQYpDOgywFdPh1C84F2VlHzMXVz-amcR0YaHt9G-pN5WDfhXCVHRU1Ls4DCzNnpqLpATBEvlzhB0Dngtv8I2h--lCs93_16QQyOnuix4oe-dLiJlN4Q6fm0OuSFHWtSR7H0wsK6fNx0bKVu3YeE4QAg5laXJZ4uB7YiBumk3MWqkZ_DPka1n9IQ/https%3A%2F%2Fwww.hl7.org%2Fimplement%2Fstandards%2Fproduct_brief.cfm%3Fproduct_id%3D3"
             >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=3</link>.</para>
-    <para xml:id="bib7" >7. HL7 Version 3 Standard: Clinical Statement CMETs Release 1. Health Level Seven
+    <para xml:id="bib7" >10. HL7 Version 3 Standard: Clinical Statement CMETs Release 1. Health Level Seven
         International. Available from: <link
             xlink:href="https://secure-web.cisco.com/1NEMgN8-xKhq4qIXxE2ZhsXB3Uv_tlSeJnXYQDqfOFBcHGUy0craswt_EYfieziK3G-7YdvR6ISkieep9mY_peI3YAoJU_gRdwprju82KNLQxfhVbzPB_ORE1DPJC2gyem4ye2V_1CoUkTFuTF2Vi9KwmWNJPJdfFPmm4Oqj02xUYvT17m5dDKKYkNPHQdKSTzwNvmDG7YmAguJGEoqejSqVFAEPl_TGMm6hr0rOTF2TF64JLHepRSUVbM9hBrrcWhhzAyQPuUX0HRglcp8PF24UFvYZy2Npi6-k2FWL8_0MTXuPddRLDG9CNCPh85Q5EkwXgRFMRlYfmCCwnH38zu1DdIpH7ppbGc6LuAW4rILybUQ8SeqPviR0dS9oGg907L6ZWpSF9zq1YaIpnf8hDlfn5820hO2AsHOKT1UxE-_5Fw6IZI9EtYCbtOYXwtFEFU7RG73FI1RAIZ3PF8ShaF_WQcgRtHTCbLxr7aUJIM5GE3R2KbCxEx0AyKECKzHXMKN41XMZUpGfFwGMmjVNShA/https%3A%2F%2Fwww.hl7.org%2Fimplement%2Fstandards%2Fproduct_brief.cfm%3Fproduct_id%3D40"
             >https://www.hl7.org/implement/standards/product_brief.cfm?product_id=40</link>.</para>
-    <para xml:id="bib8" >8. Elkin P. Terminology And Terminological Systems. Springer London LTD; 2016.</para>
-    <para xml:id="bib9" >9. XSL Transformations (XSLT) Version 2.0. Worldwide Web Consortium. Available from: <link
+    <para xml:id="bib8" >11. Elkin P. Terminology And Terminological Systems. Springer London LTD; 2016.</para>
+    <para xml:id="bib9" >12. XSL Transformations (XSLT) Version 2.0. Worldwide Web Consortium. Available from: <link
             xlink:href="https://www.w3.org/TR/xslt20/">https://www.w3.org/TR/xslt20/</link>.</para>
-    <para xml:id="bib10"  >10. XPath Syntax. Worldwide Web Consortium. Available from: <link
+    <para xml:id="bib10"  >13. XPath Syntax. Worldwide Web Consortium. Available from: <link
             xlink:href="https://secure-web.cisco.com/1yW-AIXslMyu4HwUK84Mg5HXUC1NYjBwUA0X9G-I6Tb_Qjqh_IIfPFu1ZRkezLUXz0iGc2GtNYf5mql7ymeKVcL1GywtmtQPxfIKMqhQP9LcD-7A33Heahl_XLkPCuDKZzLwh_L5d4iQU4UB5ko4458wd-Rh5CTtCQVwAkmBjan1dHVvbkhhQ0DHR4pmwl1JKiDvfpO1Pk9ZZg0S9RPPzUIsuOxiS7fJRu6uQu_nyR4Zqftj1LBfXzv7HNWXiwqGRrpHTjxsDm66Dv2k_vsM8HYMhi3NLWKYNMvxMkia5LIXKKZbNKICRHu0J1NVPAee8mJCRoI7RaBrjzwuwg4wzulR4MuYsZTSGZaIbIl90Ez7upTz_kphdm4FMZ0PT8wbLIM4eJTbAEHZkOBDOq8-X-KAedYlrSBc1ExhqFT8CqEF7REvGVgbmaONyggS8bJRKaZ3zfk27muv7e2dbbch7wSRooLDZT_5SRCuFi7a-xw-iTVnIW6z6tQe4HRNUIhstrwcYXWB-9-P44WblUjpcow/https%3A%2F%2Fwww.w3schools.com%2Fxml%2Fxpath_syntax.asp"
             >https://www.w3schools.com/xml/xpath_syntax.asp</link>.</para>
-    <para xml:id="bib11" >11. FHIR Mapping Language. HL7 FHIR. Available from: <link
+    <para xml:id="bib11" >14. FHIR Mapping Language. HL7 FHIR. Available from: <link
             xlink:href="https://secure-web.cisco.com/1YtLFN-z2naZML537klVmHYzqQ5lBHBISIcKqPDI37EAYbeTe3lV4AQzepeZgu29YUW85jbDOL2Mi86xCUaQs3Y4evjgpg6rVsS4fGvbBwO0rlMD8tWzAKz7qGAiZZIkJetqAVHzUkk8NaJxAIpNdIIn5po_okEd_WkEy4oM9Y1wnaMqyd-98sUcGzLfI_EUKS9tk4C0c3XQanFzIH5TMPKlWuIe9VrluqoHCnoxvnLvkwJtu4nMU67ijsq-_Ly04e7wQMxf4LRj6UOUlYo_3yGVOtodt60PTJF3qtPlQi37oRacqFkUdTcSE1c-pQZZo54WU8Miy9VJ_2sN_96cn7rHf8_awB-rSvgeooaMVKCT47uefFP5t5nFBXirsxTyCKgIYRJ9vIfH5qzY4qGESYUz0rEzUqI_K-31KpY_HSGRqjoCOr-Z7H-woATaKXKhBtvVH7FoVbxWjmqTAUfloJUiDQRakckRjuDw1fUJlOJpT8O_VmYC0Z2xnbSEB9IRqe99GF1C18O14AljlTH6s7Q/https%3A%2F%2Fwww.hl7.org%2Ffhir%2Fmapping-language.html"
             >https://www.hl7.org/fhir/mapping-language.html</link>.</para>
-    <para xml:id="bib12" >12. MetaObject Facility Specification. OMG MetaObject Facility. Object Management Group.
+    <para xml:id="bib12" >15. MetaObject Facility Specification. OMG MetaObject Facility. Object Management Group.
         Available from: <link
             xlink:href="https://secure-web.cisco.com/1DLhswIxLly6q-OKzUqc8rUIjW-PNi2jcxr5jOCB-QzRnNQYQ5Qai1eM7rqYPe46din29hIIRk65z-BDS66IjhNUil7XRAmAuOX6q1x_qrQ_iWDygEtoxPKKYqKNjy-rtXzV1h8cRW8H0hTTUh5t0e2BEU_IGrv4ZEylyiNJxk6eNWUVF4X5CZYUE4YnMNKnV84O8u4KgYuqLDPbf_K5LvOVUaAJ6QM2qJe4WwDp8JxEWXkDoZyimxREK8U-h9auCRoDp4V1YIWh4MTPD3OCTUVMf0x7YV5iz3FY39evk6h49AZz1d3IltYg0BHGiVYvXI-qztlIhDa69c7qZOuE8bChrE53gNIPVLHvvbkOvNT8hCh82R_dagnXaxTcbgc6J_XfUAUnw-0hVFosFOkzmDuyC32Pu0CLGCJxY4Vx_ZaepyI83-iE_fT7DybDXSxgjfS9lv3kZRqpfpWN2qCZ2q8BMxTvKFolVQMCN-SS6GocsTyfEZZZSde-O1xy96cJYgHnCvYOb6DgdCKGcRvC5mw/https%3A%2F%2Fwww.omg.org%2Fmof%2F"
             >https://www.omg.org/mof/</link>.</para>
-    <para xml:id="bib13" >13. Query/View/Transformation Specification.Object Management Group. Available from: <link
+    <para xml:id="bib13" >16. Query/View/Transformation Specification.Object Management Group. Available from: <link
             xlink:href="https://secure-web.cisco.com/11sG4mdH4xp_U-0JOBYig3uwUmW-OgMJC3DYgOCtX8nkEQtd1fdvyLMD3Pwo1SqM-vXkiU3V07Jfuylq9vHiiV9IHnRrQONA1-DlAp21dF8CYq2s4PVyDl6W_XhEvJWUwLEsrgyFjfjyP1MPTAAIFB_dKOf2yYfUVVY_3Yg6INKBvmHMt_zJiR2vSkTZHwLBzAlpVPUAb5WZsFHcGUi9WYxVVLNJRfWS-8cNnVE609sDgOOaMps9beZqxpIf1b13Aa4TXkTpMNG3riPT9K0Wv256cHx-WfMTLCmgCksyViP_KC3uYtQqiXnB9B8MFDfaHxoQO-2nltZdksWXBm2ASNObkE7n18Y6tHSL8WOdFPxq4_r4ma4jvtECCl7p2YqGPcGyMNvyd6ZzfQmmqO3a5j991gir_6jtNC8mlZcbpzOUeHBR1xW1Ru9dBxs70PKwnGy_R1ZovTc8q9p4n6t23GtYGPepv9wxENGuFEVrZwTzSNjJW5ejPqwOaSvLG-95IddLCT8dRKarVW5f2D--EMA/https%3A%2F%2Fwww.omg.org%2Fspec%2FQVT%2FAbout-QVT%2F"
             >https://www.omg.org/spec/QVT/About-QVT/</link>.</para>
-    <para xml:id="bib14" >14. Friedman C, Rubin J, Brown J, Buntin M, Corn M, Etheredge L, et al. Toward a science
+    <para xml:id="bib14" >17. Friedman C, Rubin J, Brown J, Buntin M, Corn M, Etheredge L, et al. Toward a science
         of learning systems: a research agenda for the high-functioning Learning Health System.
         Journal of the American Medical Informatics Association : JAMIA. 2015;22(1):43-50.</para>
-    <para xml:id="bib15" >15. Precision Medicine in Cancer Treatment [Internet]. National Cancer Institute. [cited
+    <para xml:id="bib15" >18. Precision Medicine in Cancer Treatment [Internet]. National Cancer Institute. [cited
         2019Aug1]. Available from: <link
             xlink:href="https://secure-web.cisco.com/1lmqVOr6Wb-HUD_eGheFwYih4L_fGfEWsxKXPyevN1MyHhXYM4uF-KgBDgZasoPNOOnJ_VHjgDw4O1V88m9JNPEk5V0VFhJhUBlTCjyTLQniZD6WoNxhyJv70pKyrlQEXBf7st6-zFg7T-qpG3AIvNFzKipBIUzeU_q7MNy8XmbqmOLaCdR-LoIcasnAA3libkGoQM6sK8kDtHsNcInSeokidJm5eeollO-0yQIhCDytxWfeg95rMn3OcjFLAyPQ3vYnKAPKADOZ69TVwg4x3b9ilkQfKNY8s2v6ZQITygu0-41RQK0h2uNc5yUqTMEky1vwMPsSqNxmAVdCFwuTq_vqsWc4omQpaCIyz6Shu_t0p-3pHMlo5osXoZebNrUskEfYo7ZX6nAQWCz92HzPGf60ZFoSayjYuUl-9edTI5xNPMn5Hh_cMAMpFK_XeT9K2hyB09rXeBXw9pnTmLcrBPvGwe2Ib0J1fVETG_KKYPGJF7j-07FwYLcXbn5HwoHLra67frQ71zOQsj4kuNE4RXg/https%3A%2F%2Fwww.cancer.gov%2Fabout-cancer%2Ftreatment%2Ftypes%2Fprecision-medicine"
             >https://www.cancer.gov/about-cancer/treatment/types/precision-medicine</link>.</para>
-    <para xml:id="bib16" >16. Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, et al. A Harmonized
+    <para xml:id="bib16" >19. Kahn MG, Callahan TJ, Barnard J, Bauck AE, Brown J, Davidson BN, et al. A Harmonized
         Data Quality Assessment Terminology and Framework for the Secondary Use of Electronic Health
         Record Data. EGEMS (Washington, DC). 2016;4(1):1244.</para>
-    <para xml:id="bib17" >17. Tcheng JE. Optimizing Strategies for Clinical Decision Support: Summary of a Meeting
+    <para xml:id="bib17" >20. Tcheng JE. Optimizing Strategies for Clinical Decision Support: Summary of a Meeting
         Series: National Academy of Medicine; 2018.</para>
-    <para xml:id="bib18" >18. Jean-Jacques M, Persell SD, Thompson JA, Hasnain-Wynia R, Baker DW. Changes in
+    <para xml:id="bib18" >21. Jean-Jacques M, Persell SD, Thompson JA, Hasnain-Wynia R, Baker DW. Changes in
         disparities following the implementation of a health information technology-supported
         quality improvement initiative. Journal of general internal medicine.
         2012;27(1):71-7.</para>
-    <para xml:id="bib19" >19. Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
+    <para xml:id="bib19" >22. Cholan RA, Weiskopf NG, Rhoton DL, Colin NV, Ross RL, Marzullo MN, et al.
         Specifications of Clinical Quality Measures and Value Set Vocabularies Shift Over Time: A
         Study of Change through Implementation Differences. AMIA Annual Symposium proceedings AMIA
         Symposium. 2017;2017:575-84.</para>

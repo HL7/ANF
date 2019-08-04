@@ -9,7 +9,7 @@
     <para>Normalization of <glossterm baseform="Clinical Statement">clinical statements</glossterm>
         is defined as "the ability to identify every representational format that confers the same
         meaning as being equivalent (i.e., unambiguous representation). <link linkend="bib8"
-            >[8]</link>
+            >[11]</link>
     </para>
 
 
@@ -245,7 +245,7 @@
         <section>
             <title>XSLT</title>
             <para>XSLT is a W3C-standard language for the transformation of structured data. <link
-                    linkend="bib9">[9]</link> XSLT transformation scripts take as input any valid
+                    linkend="bib9">[12]</link> XSLT transformation scripts take as input any valid
                 XML document and produce as output an ASCII-formatted document (including XML, HTML,
                 other formatting languages, free text, etc.). The XSLT language specifies
                 transformations through declarative, rule-based commands (see below). </para>
@@ -264,7 +264,7 @@
                     tree for XSLT transformations.</para>
                 <para>XSLT uses the sub-language “XPath” to reference portions of the XML source
                     tree for purposes of navigating the tree and selecting specific parts of it to
-                    translate. <link linkend="bib10">[10]</link> XPath is essentially a query
+                    translate. <link linkend="bib10">[13]</link> XPath is essentially a query
                     language for identifying and retrieving XML sub-trees that match specified
                     criteria. </para>
                 <para>The actual transformation logic in XLST scripts is specified as a series of
@@ -322,7 +322,7 @@
 
         <section>
             <title>FHIR Mapping Language</title>
-            <para>The FHIR mapping language (FML) <link linkend="bib11">[11]</link> is a relatively
+            <para>The FHIR mapping language (FML) <link linkend="bib11">[14]</link> is a r4elatively
                 new, bespoke transformation language specifically designed to transform HL7 FHIR
                 resources to alternative representations, including different FHIR resources, C/CDE
                 documents, etc. The mapping language was created by Graham Grieve as a specification
@@ -338,7 +338,7 @@
                     to XML documents, but may include any object models and rendering syntaxes
                     conformant with <glossterm baseform="Object Management Group">OMG’s</glossterm>
                     <glossterm baseform="Meta Object Facility">Meta Object Facility
-                        (MOF)</glossterm> language. <link linkend="bib12">[12]</link> MOF is a
+                        (MOF)</glossterm> language. <link linkend="bib12">[15]</link> MOF is a
                     general formalism for representing object models as directed acyclic graphs
                     (DAGs), and MOF-compliant models can use various syntactic constructs to
                     represent the classes, attributes, and attribute values of such graphs. </para>
@@ -409,7 +409,7 @@
                 based on the QVT language used to develop the FHIR Mapping Language. </para>
             <section>
                 <title>Overview</title>
-                <para>QVT <link linkend="bib13">[13]</link> is a general model-transformation
+                <para>QVT <link linkend="bib13">[16]</link> is a general model-transformation
                     framework and language developed by the Object Management Group. It includes
                     both an imperative (“QVT-O”) and a declarative (“QVT-R”) version, and offers
                     considerable flexibility in defining the constructs of purpose-specific
@@ -433,7 +433,7 @@
                         <para>ModelMorf (proprietary)</para>
                     </listitem>
                     <listitem>
-                        <para>Others (see <link linkend="bib13">[13]</link>) </para>
+                        <para>Others (see <link linkend="bib13">[16]</link>) </para>
                     </listitem>
                 </itemizedlist>
             </section>

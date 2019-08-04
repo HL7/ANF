@@ -151,19 +151,9 @@
                   <para>the micturition context is left empty/unknown<footnote><para>Studies have shown that systolic blood pressure measurements could increase 10 to 15mmHg with
                         a full bladder. Micturition, the process of emptying the bladder, is
                         therefore a data element that can be recorded with some Clinical Input
-                        Forms.  [A] Handler, Joel. The Importance of Accurate Blood Pressure
-                        Measurement. The Permanente Journal (2009) 13:3: 51-54; [B] O'Brien E, R.
-                        Asmar, L Beilin, Y Imai, J. Mallion, G. Mancia, T. Mengden, M. Myers, P.
-                        Padfield, P. Palatini, G. Parati, T. Pickering, J. Redon, J. Staessen, G.
-                        Stergiou, P. Verdecchia. European Society of Hypertension recommendations
-                        for conventional, ambulatory, and home blood pressure measurements. Journal
-                        of Hypertension (2003) 21: 821-848. [C] Pickering, T.G., J.E. Hall, L.J.
-                        Appel, B.E. Falkner, J. Graves, M.N. Hill, D.W. Jones, T. Kurtz, S.G Sheps,
-                        E. J. Roccella. Recommendations for Blood Pressure Measurement in Humans and
-                        Experimental Animals: Part 1: Blood Pressure Measurement in Humans: A
-                        Statement for Professionals From the Subcommittee of Professional and Public
-                        Education of the American Heart Association Council on High Blood Pressure
-                        Research. Hypertension (2005) 45:142-161.</para></footnote></para>
+                        Forms. <link linkend="bibA">[6]</link><link linkend="bibB">[7]</link><link
+                          linkend="bibC">[8]</link>
+                      </para></footnote></para>
                 </listitem>
               </itemizedlist>
             </para>
@@ -502,8 +492,8 @@ Yes, ANF is for URU..." flag="done"?>in
         specifications from the abstract or conceptual to the most precise, implementable, and
         testable that ensures semantic interoperability. This architecture is the HL7 Service-Aware
         Interoperability Framework Canonical Definition (SAIF-CD).<link linkend="bib6"
-        >[6]</link></para>
-      <para>The SAIF-CD specification <link linkend="bib6">[6]</link> defines three SAIF
+        >[9]</link></para>
+      <para>The SAIF-CD specification <link linkend="bib6">[9]</link> defines three SAIF
         Perspectives: Conceptual, Logical, and Implementable. These perspectives are not formally
         equivalent with <glossterm baseform="Object Management Group">Object Management Group’s
           (OMG)</glossterm> levels-of-abstraction in
@@ -581,8 +571,8 @@ Yes, ANF is for URU..." flag="done"?>in
       <?oxy_comment_start author="kec" timestamp="20190721T172441-0700" comment="Can we point to examples of where the HL7 V3 Clinical Statement does not exhibit a clean separation of concerns? " flag="done"?>
       <title>HL7 Version 3 Clinical Statement<?oxy_comment_end?>
       </title>
-      <para>Starting with HL7 Version 3 <link linkend="bib7">[7]</link> the minimum requirements for
-        the interoperable clinical statement are:</para>
+      <para>Starting with HL7 Version 3 <link linkend="bib7">[10]</link> the minimum requirements
+        for the interoperable clinical statement are:</para>
       <table>
         <info>
           <title>HL7 V3 Clinical Statement Definition</title>
