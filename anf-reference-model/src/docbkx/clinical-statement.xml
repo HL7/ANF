@@ -59,7 +59,7 @@
     </section>
     <section>
         <title>subjectOfInformation</title>
-        <?oxy_comment_start author="Ioana" timestamp="20190627T174126-0400" comment="We need to clarify how we refer to &quot;who&quot; or what? using a logical expression. For example if the &quot;subjectOfInformation&quot; is &quot;grandmother&quot; or another next-of-kin then the statement may be describing a family history of cancer. We are describe the &quot;who&quot; as &quot;something coded&quot; . I would replace &quot;WHO&quot; with &quot;FOCUS&quot; or &quot;SUBJECT&quot; ."?>
+        <?oxy_comment_start author="Ioana" timestamp="20190627T174126-0400" comment="We need to clarify how we refer to &quot;who&quot; or what? using a logical expression. For example if the &quot;subjectOfInformation&quot; is &quot;grandmother&quot; or another next-of-kin then the statement may be describing a family history of cancer. We are describe the &quot;who&quot; as &quot;something coded&quot;. I would replace &quot;WHO&quot; with &quot;FOCUS&quot; or &quot;SUBJECT&quot;."?>
         <para>subjectOfInformation is a coded field used to express <emphasis role="bold">WHO
             </emphasis>the clinical statement is about. A patient's clinical record may contain
             statements not only about the patient, but also statements about children, relatives and
@@ -223,7 +223,7 @@ Lack of distinction between the observation as an action and that what is observ
 " id="t5z_trt_vhb"?>
         <?oxy_comment_start author="timowilliams" timestamp="20190523T205353-0500" comment="If I am correct, that is where the Status for InterventionResult comes in. It is used to represent when things are not done, cancelled, etc." parentID="t5z_trt_vhb" mid="20"?>
         <section>
-            <?oxy_comment_start author="Ioana" timestamp="20190627T174619-0400" comment="Timing is of type &quot;Measure&quot; so we should show how to instantiate it speciy &quot;WHEN&quot; ... "?>
+            <?oxy_comment_start author="Ioana" timestamp="20190627T174619-0400" comment="Timing is of type &quot;Measure&quot; so we should show how to instantiate it speciy &quot;WHEN&quot;... "?>
             <title>Timing<?oxy_comment_end?></title>
             <para><emphasis role="bold">WHEN </emphasis>a requested action should be performed or
                     <emphasis role="bold">WHEN </emphasis>an observed finding or disorder was
@@ -480,7 +480,7 @@ This is an example of having an unclear topic. Is it the (implicit) request that
                 <para>Participants involved in performing the action, e.g. technician, nurse</para>
             </section>
         </section>
-        <?oxy_comment_start author="Ioana" timestamp="20190628T095308-0400" comment="This should be part of a section about &quot;Circumstance&quot; - I would also recommend renaming it &quot;NarrativeCircumstance&quot; . This  class describes the circumstance as text rather than coded data but it&apos;s still a structure/structured."?>
+        <?oxy_comment_start author="Ioana" timestamp="20190628T095308-0400" comment="This should be part of a section about &quot;Circumstance&quot; - I would also recommend renaming it &quot;NarrativeCircumstance&quot;. This  class describes the circumstance as text rather than coded data but it&apos;s still a structure/structured."?>
         <section>
             <title>UnstructuredCircumstance</title><?oxy_comment_end?>
             <?oxy_comment_start author="kmaulden" timestamp="20190418T112339-0400" comment="Comment from WC:

@@ -410,7 +410,7 @@
             <section>
                 <title>Overview</title>
                 <para>QVT <link linkend="bib13">[13]</link> is a general model-transformation
-                    framework and language developed by the Object Management Group . It includes
+                    framework and language developed by the Object Management Group. It includes
                     both an imperative (“QVT-O”) and a declarative (“QVT-R”) version, and offers
                     considerable flexibility in defining the constructs of purpose-specific
                     transformation languages. Although QVT is intended for the transformation of

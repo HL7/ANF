@@ -88,7 +88,7 @@
       systems by end-users. This reality has a direct impact on patient safety if a clinical
       statement is recorded and displayed differently across the continuum of care. Clinicians
       author clinical statements and enter them into their organization’s EHR systems as <glossterm
-        baseform="Structured Clinical Input Forms">"Clinical Input Forms"</glossterm> (CIF) . This
+        baseform="Structured Clinical Input Forms">"Clinical Input Forms"</glossterm> (CIF). This
       concept describes any data entry mechanism used by clinicians to record clinical statements.
       An instance of a clinical statement may be created using one or more CIFs. Vendors compete on
       usability for seamless CIFs but, in some cases, clinical statements are based on

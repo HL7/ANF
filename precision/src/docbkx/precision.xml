@@ -145,7 +145,7 @@
         <para>Interoperability standards sometimes pose challenges due to the use of
             synthetics/abstract data types that attempt to capture the complexity of healthcare
             data. ANF simplifies the statement structure by using a small set of primitive types
-            (e.g. float, varchar, boolean) and a sophisticated terminology . Data warehousing and
+            (e.g. float, varchar, boolean) and a sophisticated terminology. Data warehousing and
             mining solutions rely on a consistent simple representation of data organized along
             facts and axes. ANF borrows from Database Normalization the idea that "normalization"
             reduces data redundancy and improves data integrity. The ANF logical model can be used
