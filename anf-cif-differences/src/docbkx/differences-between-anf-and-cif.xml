@@ -13,12 +13,13 @@
         </listitem>
     </orderedlist>
     <section>
+        <?oxy_comment_start author="kec" timestamp="20190722T173102-0700" comment="OWL EL++ expression. Not necessarily just SNOMED CT, Solor for example would potentially have extensions to SNOMED. "?>SNOMED<?oxy_comment_end?>
+
         <title>The Representation of Topic</title>
         <para>In the ANF Statement model, the topic is represented by a single field containing a
-            simple to complex post-coordinated
-            <?oxy_comment_start author="kec" timestamp="20190722T173102-0700" comment="OWL EL++ expression. Not necessarily just SNOMED CT, Solor for example would potentially have extensions to SNOMED. "?>SNOMED<?oxy_comment_end?>
-            expression, whereas in the CIMI Statement model, all the pieces of information that make
-            up the topic can be broken out and structured as needed into a complex tree of objects
+            terminology expression. This expression is not limited to any particular terminology model, but in this document we use SNOMED CT, as Solor would potentially have extensions to SNOMED CT.            
+            In the CIMI Statement model, all the pieces of information that make
+            up the topic can be broken out and structured as needed into a tree of objects
             with multiple properties and appropriate datatypes. </para>
         <para>
             <figure>
