@@ -13,14 +13,13 @@
         </listitem>
     </orderedlist>
     <section>
-        <?oxy_comment_start author="kec" timestamp="20190722T173102-0700" comment="OWL EL++ expression. Not necessarily just SNOMED CT, Solor for example would potentially have extensions to SNOMED. "?>SNOMED<?oxy_comment_end?>
-
         <title>The Representation of Topic</title>
         <para>In the ANF Statement model, the topic is represented by a single field containing a
-            terminology expression. This expression is not limited to any particular terminology model, but in this document we use SNOMED CT, as Solor would potentially have extensions to SNOMED CT.            
-            In the CIMI Statement model, all the pieces of information that make
-            up the topic can be broken out and structured as needed into a tree of objects
-            with multiple properties and appropriate datatypes. </para>
+            terminology expression. This expression is not limited to any particular terminology
+            model, but in this document we use SNOMED CT, as Solor would potentially have extensions
+            to SNOMED CT. In the CIMI Statement model, all the pieces of information that make up
+            the topic can be broken out and structured as needed into a tree of objects with
+            multiple properties and appropriate datatypes.</para>
         <para>
             <figure>
                 <title>Topic Comparison</title>
@@ -40,10 +39,9 @@ Also, OWL EL++ expression is classifiable, the CIMI topic is not. "?>
             a single concept along with associated structural properties representing the pulse
             oximeter device. Since the ANF Statement will always be either the request for an action
             or the performance of an action, the post-coordinated expression will always be a
-            procedure that is further refined providing a consistent
-            <?oxy_comment_start author="kec" timestamp="20190722T173538-0700" comment="Need a section of some sort discussing the benefits of a classifiable topic on aggregation, retrieval, etc. 
+            procedure that is further refined providing a consistent <?oxy_comment_start author="kec" timestamp="20190722T173538-0700" comment="Need a section of some sort discussing the benefits of a classifiable topic on aggregation, retrieval, etc. 
 
-Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED CT, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>. <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
+Also, the implications of a more complex seperation of concerns with respect to the CIMI topic, and the multiple places within the topic that use codes, wich have their own semantics (LOINC semantics, UCUM semantics, RxNorm, SNOMED CT, etc... And how to reconcile all that simply is a challenge. Having the two possibly working together (CIMI topic can be transformed (normalized) into ANF topic is a potential win-win). "?>representation<?oxy_comment_end?>.<?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="I&apos;m questioning whether everything is a procedure" flag="done"?><?oxy_comment_end?>
             <figure xml:id="anf_cimi_diff-anfPulse">
                 <title>Pulse Rate - ANF Representation</title>
                 <mediaobject>
@@ -61,13 +59,16 @@ Also, the implications of a more complex seperation of concerns with respect to 
                             width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
-                <caption><para><emphasis role="italics">Pulse Rate 68bpm, Taken by Pulse Oximeter ANF vs CIMI Representations</emphasis></para></caption>
-            </figure>
-        </para>  
-        <para>One implication of this is that the ANF is using two formalisms to represent the
-            clinical statement. First it uses the formalism that represents the ANF reference model.
-            Second, it uses SNOMED CT's syntax for post-coordinated SNOMED CT expressions. Tools for
-            authoring and analysis would be required to parse and process both syntaxes. </para>
+                <caption>
+                    <para><emphasis role="italics">Pulse Rate 68bpm, Taken by Pulse Oximeter ANF vs
+                            CIMI Representations</emphasis></para>
+                </caption>
+            </figure></para>
+        <para>One implication of this is that the ANF Statement Model is using two formalisms to
+            represent the clinical statement. First it uses the formalism that represents the ANF
+            reference model. Second, it uses SNOMED CT's syntax for post-coordinated SNOMED CT
+            expressions. Tools for authoring and analysis would be required to parse and process
+            both syntaxes. </para>
         <para>The CIMI Statement model in this example, on the other hand, would be fully
             represented using the formalism that represents the CIMI reference model. This model
             however allows for the possibility of multiple modeling style representations of the
