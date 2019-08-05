@@ -253,6 +253,6 @@ Would you want to state that the opposite could be true as well, where patients 
       traditional complex structured trees, whereas ANF focuses on structuring data in a way CDS
       systems can extract data in an unambiguous way. ANF provides a single, normalized, form for
       clinical statements that may be used to create assertional or procedural knowledge artifacts,
-      such as clinical decision support</para>
+      such as clinical decision support rules and clinical alerts.</para>
   </section>
 </chapter>
