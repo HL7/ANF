@@ -24,7 +24,7 @@
             <title>ANFStatement Structure</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="images/clinical_statement.png" format="PNG" scale="50" align="center"/>
+                    <imagedata fileref="images/clinical_statement.png" format="PNG" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                 </imageobject>
             </mediaobject>
         </figure>       
@@ -266,7 +266,7 @@
                 <title>Circumstance</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG" scale="50" align="center"/>
+                        <imagedata fileref="images/circumstance_hierarchy.png" format="PNG" scalefit="1"  width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
@@ -634,7 +634,7 @@
                 <mediaobject>
                     <imageobject>
                     <?oxy_comment_start author="Ioana" timestamp="20190804T133814-0400" comment="updated invariants"?>
-                    <imagedata fileref="images/data_structures.png" format="PNG" scale="60"
+                    <imagedata fileref="images/data_structures.png" format="PNG" scalefit="1"  width="100%" contentdepth="100%"
                         align="center"/><?oxy_comment_end?>
                 </imageobject>
                 </mediaobject>
@@ -1061,7 +1061,7 @@
                 <title>References</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="images/reference_classes.png" format="PNG" scale="70" align="center"/>
+                        <imagedata fileref="images/reference_classes.png" format="PNG" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
             </figure>
