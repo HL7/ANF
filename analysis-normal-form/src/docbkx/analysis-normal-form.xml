@@ -461,10 +461,10 @@ I don’t see why, or what the ‘symmetry’ would apply to.
 
         <para><emphasis role="bold">Editorial Rule</emphasis>: <xref
                 linkend="anf-editorialrule-topicsAreActions"/></para>
-        <xi:include href="./editorial-rules.xml"
+        <!--<xi:include href="./editorial-rules.xml" 
             xpointer="element(anf-editorialrule-topicsAreActions-content)">
             <xi:fallback/>
-        </xi:include>
+        </xi:include> -->
 
         <!--
         <editorial-rule>
