@@ -446,19 +446,20 @@
                     symptoms, etc., in the patient. As just described, different varieties of
                     assertion may extend an existing AssertionTopic class with any additional
                     attributes necessary to fully represent this new group of assertions. In the
-                    following sections, <xref
-                        linkend="cimi_example_1_0135" xrefstyle="select: label"/>
-                    and <xref linkend="cimi_example_2_0135" xrefstyle="select: label"/> show
-                    examples of clinical statements using the AssertionTopic class for the topic,
-                    and later, <xref linkend="cimi_example_3_0135" xrefstyle="select: label"/> and
-                        <xref linkend="cimi_example_4_0135" xrefstyle="select: label"/> show
-                    examples of clinical statement using FindingSiteAssertionTopic for the topic.
-                    These examples show the ‘topic.topicCode’ and ‘context.contextCode’ for each,
-                    with the addition of any extra attributes from the chosen topic needed to
-                    describe the clinical statement. Context will be discussed in depth later in
-                    this document. For now, be aware the chosen context is a full class with many
-                    attributes but here we are only showing the context code attribute that is
-                    common to all context types. </para>
+                    following sections, <xref linkend="cimi_example_1_0135"
+                        xrefstyle="select: label"/> and <xref linkend="cimi_example_2_0135"
+                        xrefstyle="select: label"/> show examples of clinical statements using the
+                    AssertionTopic class for the topic, and later, <xref
+                        linkend="cimi_example_3_0135" xrefstyle="select: label"/>
+                    <?oxy_comment_start author="Ioana" timestamp="20190806T141737-0400" comment="&quot;???&quot; removed "?><!--and
+                        <xref linkend="cimi_example_4_0135" xrefstyle="select: label"/>--><?oxy_comment_end?>
+                    shows a clinical statement using FindingSiteAssertionTopic for the topic. These
+                    examples show the ‘topic.topicCode’ and ‘context.contextCode’ for each, with the
+                    addition of any extra attributes from the chosen topic needed to describe the
+                    clinical statement. Context will be discussed in depth later in this document.
+                    For now, be aware the chosen context is a full class with many attributes but
+                    here we are only showing the context code attribute that is common to all
+                    context types. </para>
 
         <figure xml:id="cimi_example_1_0135" xreflabel="Diabetes Present">
             <title>CIMI Assertion Pattern with Presence Context and Age of Onset</title>
