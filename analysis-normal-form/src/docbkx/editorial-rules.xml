@@ -29,8 +29,9 @@
         <mathphrase>
         	<itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
         		<listitem>
-                    <para>The particulars of how topics—and other statement fields—are modeled is a
-                        Terminology Knowledge layer concern, not a Statement Layer concern. The
+                    <para>The particulars of how topics—and other statement fields—are modeled
+                        <?oxy_comment_start author="Ioana" timestamp="20190806T115233-0400" comment="Update: &quot;is&quot; to &quot;as&quot;  based on technical writer&apos;s review."?>as<?oxy_comment_end?>
+                        a Terminology Knowledge layer concern, not a Statement Layer concern. The
                         Statement Layer does require that the Terminology Expression fields in a
                         statement are disjoint: There should be no confusion—or creation of false
                         dichotomies. There should be one, and only one, place to put each type of
@@ -54,7 +55,9 @@
                         attribute linking it to the Clinical Finding or Disorder that it is being
                         observed. The observation procedure can also be further refined by adding
                         attributes in the terminology model, including Method, Procedure site -
-                        Direct, (if appropriate) Laterality, and Using device. We expect </para>
+                        Direct, (if appropriate) Laterality, and Using device.
+                        <?oxy_comment_start author="Ioana" timestamp="20190806T115341-0400" comment="Imcomplete statement "?><!--We
+                        expect --><?oxy_comment_end?></para>
                 </listitem>
         		<listitem>
 					<para>Medication administrations will use an Administration of substance concept to represent
@@ -112,12 +115,14 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-presenceAbsence-content">
                 <listitem>
-                	<para>Any statement that represents the Presence or implies Presence of a Topic will have a Result with an upperBound of infinite (inf), lowerBound of 1, and measureSemantic of "Countable quantity".  
-                    </para>
+                	<para>Any statement that represents the Presence or implies Presence of a Topic
+                        will have a Result with an upperBound of infinite (inf), lowerBound of 1,
+                        and Measure.semantic of "Countable quantity". </para>
                 </listitem>
                 <listitem>
-                    <para>Any statement that represents the Absence or implies Absence of a Topic will have a Result with an upperBound of 0, lowerBound of 0, and measureSemantic of "Countable quantity".  
-                    </para>
+                    <para>Any statement that represents the Absence or implies Absence of a Topic
+                        will have a Result with an upperBound of 0, lowerBound of 0, and
+                        Measure.semantic of "Countable quantity". </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -347,11 +352,11 @@
                 </listitem>
                 <listitem>
                     <para>If a requestedResult is specified, the appropriate upperBound and
-                        lowerBound is specified with the correct MeasureSemantic. </para>
+                        lowerBound is specified with the correct Measure.semantic. </para>
                 </listitem>
                 <listitem>
                 	<para>If a requestedResult is not specified in the request, an upperBound and
-                        lowerBound of 1 is used with a MeasureSemantic of ISO 8601 after statement
+                        lowerBound of 1 is used with a Measure.semantic of ISO 8601 after statement
                         time. </para>
                 </listitem>
             </itemizedlist>
