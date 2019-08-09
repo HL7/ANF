@@ -133,7 +133,7 @@ Examples needed, although I would favor such an approach, one can’t argue that
                     to the subject of information field. False dichotomies lead to arbitrary
                     classification rules and result in ambiguity based on different assumptions
                     about the domain. False dichotomies must be eliminated by ensuring that fields
-                    in the model are mutually exclusinve.</para>
+                    in the model are mutually exclusive.</para>
             </listitem><?oxy_comment_end?>
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
