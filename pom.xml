@@ -24,6 +24,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <docbkx-maven-plugin.version>2.0.17</docbkx-maven-plugin.version>
       <draft.mode>no</draft.mode> <!-- needs to be yes/no, not true/false -->
+      <project.version>1.0-SNAPSHOT</project.version>
    </properties>
    <build>
       <pluginManagement>

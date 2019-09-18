@@ -219,7 +219,7 @@
          <plugin>
             <groupId>org.hl7.anf-ballot-submission</groupId>
             <artifactId>document-prepend</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
             <executions>
                <execution>
                   <id>PrependDocument</id>
