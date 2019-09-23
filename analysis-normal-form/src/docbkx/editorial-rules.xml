@@ -231,7 +231,7 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-healthRisk" xreflabel="HealthRisk indicates the clinical risk of the result">
-        <title>HealthRisk indicates the clinical risk of the result</title>                    
+        <title>healthRisk indicates the clinical risk of the result</title>                    
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-healthRisk-content">
                 <listitem>
@@ -243,12 +243,14 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-normalRange" xreflabel="Normal Range can be specified for a result">
-        <title>Normal Range can be specified for a result</title>                    
+        <title>normalRange can be specified for a result</title>                    
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
-                	<para>In PerformanceCircumstance, normalRange is used to flag a result with coded
-                        values such as 'low', 'normal', high', and 'critical'. </para>
+                	<para>In PerformanceCircumstance, normalRange is the interval of values that are
+                        normal for the observation/finding described by the "topic" for this
+                        "subject.  It refers to "normal" for the patient/subject with these
+                        conditions.</para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
