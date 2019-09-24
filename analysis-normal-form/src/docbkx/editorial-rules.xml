@@ -11,14 +11,16 @@
                 <listitem>
                     <para>ANF Statements must be either a Performance of an action or a Request for an action.
                     </para>
-                </listitem>
-                <listitem>
-                    <para>A Performance may include the passive observation of a phenomenon related to patients and their health status or family history, and may also include active interventions, such as providing education or administering medications or documenting that a patient is participating in exercise to improve their overall health status.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>A Request may include requests for clinical testing, active interventions, future goals, or consultation with other providers.
-                    </para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>A Performance may include the passive observation of a phenomenon related to patients and their health status or family history, and may also include active interventions, such as providing education or administering medications or documenting that a patient is participating in exercise to improve their overall health status.
+                            </para>
+                        </listitem>
+                        <listitem>
+                            <para>A Request may include requests for clinical testing, active interventions, future goals, or consultation with other providers.
+                            </para>
+                        </listitem>
+                    </itemizedlist>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -30,22 +32,22 @@
         	<itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
         		<listitem>
                     <para>The particulars of how topics—and other statement fields—are modeled
-                        <?oxy_comment_start author="Ioana" timestamp="20190806T115233-0400" comment="Update: &quot;is&quot; to &quot;as&quot;  based on technical writer&apos;s review."?>as<?oxy_comment_end?>
-                        a Terminology Knowledge layer concern, not a Statement Layer concern. The
-                        Statement Layer does require that the Terminology Expression fields in a
-                        statement are disjoint: There should be no confusion—or creation of false
-                        dichotomies. There should be one, and only one, place to put each type of
-                        information in a terminology expression. For example, the Statement Layer
-                        defines a particular place to represent the subject of information.
-                        Therefore, the terminology layer must not allow the subject of information
-                        to be redundantly—and possibly contradictory—represented in a topic
-                        expression (such as would be the case if "maternal history of diabetes"
-                        where an allowed topic expression). The Statement Layer requires that the
-                        topic represent an Action as a code or expression according to the rules of
-                        the terminology layer, and that the rules of the terminology layer enforce a
-                        disjointness of between different types of terminology expressions. Here we
-                        present a starting point for what the Terminology Layer editorial rules may
-                        look like, based on current SNOMED CT practice. </para>
+                        <?oxy_comment_start author="Ioana" timestamp="20190806T115233-0400" comment="Update: &quot;is&quot; to &quot;as&quot;  based on technical writer&apos;s review." flag="done"?>as<?oxy_comment_end?>
+                        a Terminology Layer concern, not a Statement Layer concern. The Statement
+                        Layer does require that the Terminology Expression fields in a statement are
+                        disjoint: There should be no confusion—or creation of false dichotomies.
+                        There should be one, and only one, place to put each type of information in
+                        a terminology expression. For example, the Statement Layer defines a
+                        particular place to represent the subject of information. Therefore, the
+                        Terminology Layer must not allow the subject of information to be
+                        redundantly—and possibly contradictory—represented in a topic expression
+                        (such as would be the case if "maternal history of diabetes" were an allowed
+                        topic expression). The Statement Layer requires that the topic represent an
+                        Action as a code or expression according to the rules of the Terminology
+                        Layer, and that the rules of the Terminology Layer enforce a disjointness of
+                        between different types of terminology expressions. Here we present a
+                        starting point for what the Terminology Layer editorial rules may look like,
+                        based on current SNOMED CT practice. </para>
                 </listitem>
                 <listitem>
                     <para>SNOMED CT can accommodate this requirement for simple observations by
@@ -56,13 +58,13 @@
                         observed. The observation procedure can also be further refined by adding
                         attributes in the terminology model, including Method, Procedure site -
                         Direct, (if appropriate) Laterality, and Using device.
-                        <?oxy_comment_start author="Ioana" timestamp="20190806T115341-0400" comment="Imcomplete statement "?><!--We
+                        <?oxy_comment_start author="Ioana" timestamp="20190806T115341-0400" comment="Imcomplete statement " flag="done"?><!--We
                         expect --><?oxy_comment_end?></para>
                 </listitem>
         		<listitem>
 					<para>Medication administrations will use an Administration of substance concept to represent
                         the topic. All Administration of substance concepts will be refined with the
-                        substance and dose form and strength being requested. If Route of
+                        substance, dose form and strength being requested. If Route of
                         administration exists, then it will also be added. </para>
 				</listitem>
 				<listitem>
@@ -70,7 +72,7 @@
                         concepts can be further refined. </para>
 				</listitem>
 				<listitem>
-					<para>Imaging Procedures with use an Imaging Procedure concept to represent the topic. These
+					<para>Imaging Procedures will use an Imaging Procedure concept to represent the topic. These
                         concepts will be further refined with a Method, Procedure site and (if
                         appropriate) a laterality for those sites that are lateralizable. </para>
 				</listitem>
@@ -206,7 +208,9 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-subjectOfInformation" xreflabel="Subject of information is used to represent family and donor history">
-        <title>Subject of information is used to represent family and donor history</title>                    
+        <title>Subject of information is used to
+            represen<?oxy_comment_start author="timowilliams" timestamp="20190923T221250-0500" comment="From SK: This seems to exclude the patient, which isn&apos;t the case, as described in the sentence below."?>t
+            family and donor history<?oxy_comment_end?></title>                    
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content">
                 <listitem>
