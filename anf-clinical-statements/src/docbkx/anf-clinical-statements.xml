@@ -48,8 +48,9 @@ As expected?  Maybe just change this to performance of a topic and request of a 
 " parentID="xfp_jyf_nhb"?>A
                 Performance of Action statement describes a topic that has previously been
                 performed, and—if applicable—the result that corresponds to the
-                topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?> As shown in the examples below,
-                this can range from documenting that a subject of information:</para>
+                topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?>  Examples of the types of
+                performances of actions that can be documented for a subject of information are
+                shown below.:</para>
             <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
             <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
@@ -670,7 +671,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Systolic Blood Pressure 180 mmHg, Normal
+                        <para><emphasis role="italics">Systolic Blood Pressure 190 mmHg, Normal
                                 Range (90-120), Health Risk Critical.</emphasis></para>
                     </caption>
                 </figure>
@@ -854,7 +855,7 @@ The distinction with a performance clinical statement concerning giving him educ
                     <title>Medication Request ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190618T164552-0500" comment="Verify Repetition"?>
+                            <?oxy_comment_start author="timowilliams" timestamp="20190618T164552-0500" comment="Verify Repetition" flag="done"?>
                             <imagedata fileref="images/meds_request_anf.svg" format="SVG"
                                 scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>
