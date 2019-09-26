@@ -21,8 +21,9 @@
             defines the resources for Conditions, Observations, Diagnosis, Procedure, Goal,
             Medication Administration, Medication Request, etc. Some implementations, such as FHIR,
             explicitly define the property names for the parts of each data structure tree and other
-            formalisms such as BMM/ADL and CEML use a form of key-value pairing to genericise the
-            property naming of the data structure tree. But in all these cases, the fact remains
+            formalisms such as Basic Meta Model (BMM), Archetype Definition Language (ADL), and
+            Clinical Element Modeling Language (CEML) use a form of key-value pairing to genericise
+            the property naming of the data structure tree. But in all these cases, the fact remains
             that the resulting structure of the tree still remains different for different domains
             of clinical statements. Thus, computation and analysis of data instances, that conform
             to these models, requires a prior understanding of the tree structure for each domain. </para>
@@ -246,7 +247,8 @@
 
         <section>
             <title>XSLT</title>
-            <para>XSLT is a W3C-standard language for the transformation of structured data. <link
+            <para>XSLT (eXtensible Stylesheet Language Transformations) is a World Wide Web
+                Consortium (W3C) standard language for the transformation of structured data. <link
                     linkend="bib9">[13]</link> XSLT transformation scripts take as input any valid
                 XML document and produce as output an ASCII-formatted document (including XML, HTML,
                 other formatting languages, free text, etc.). The XSLT language specifies
@@ -320,8 +322,8 @@
             <para>The FHIR mapping language (FML) <link linkend="bib11">[15]</link> is a relatively
                 new, bespoke transformation language specifically designed to transform HL7 FHIR
                 resources to alternative representations, including different FHIR resources, C/CDE
-                documents, etc. The mapping language was created by Graham Grieve as a specification
-                of the QVT framework for model-transformation languages (see <xref
+                documents, etc. The mapping language was created by the FHIR Management Group as a
+                specification of the QVT framework for model-transformation languages (see <xref
                     linkend="_Ref494462079"/>). </para>
                  <para>Conceptually, FML is similar to XSLT in that it (a) consists of declarative
                 rules that are automatically matched to input data, (b) includes a sub-language

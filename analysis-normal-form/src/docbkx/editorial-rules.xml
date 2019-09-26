@@ -44,7 +44,7 @@
                         (such as would be the case if "maternal history of diabetes" were an allowed
                         topic expression). The Statement Layer requires that the topic represent an
                         Action as a code or expression according to the rules of the Terminology
-                        Layer, and that the rules of the Terminology Layer enforce a disjointness of
+                        Layer, and that the rules of the Terminology Layer enforce a disjointness
                         between different types of terminology expressions. Here we present a
                         starting point for what the Terminology Layer editorial rules may look like,
                         based on current SNOMED CT practice. </para>

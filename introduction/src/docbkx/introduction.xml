@@ -18,7 +18,7 @@
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
     standards-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
-    improve population health through quality measures, case reporting, and decision support. The
+    improve the health of the population (or citizenry) through quality measures, case reporting, and decision support. The
     ability to measure and improve outcomes relies on consistent, high-quality data that was
     aggregated from a variety of systems. Analysis using normal form allows HROs to
     <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <link
@@ -85,7 +85,7 @@
     <para><?oxy_comment_start author="kec" timestamp="20190721T122653-0700" comment="Also move to prior section (1.). This isn&apos;t specific to ANF, and provides more general background. " flag="done"?>Not
       only is there a potential for a lack of consistency with representing clinical statements with
       current <glossterm baseform="Detailed Clinical Model">detailed clinical modeling</glossterm>
-      efforts, but there is also further variation in how the data is entered into information
+      efforts, but there is also further variation in how the data are entered into information
       systems by end-users. This reality has a direct impact on patient safety if a clinical
       statement is recorded and displayed differently across the continuum of care. Clinicians
       author clinical statements and enter them into their organization’s EHR systems where they are
@@ -107,7 +107,7 @@
       clinical model exists within a family of isosemantic siblings. </para>
     <para>Clinical statements can be expressed and documented in many different ways in EHR systems,
       where clinical input forms provide different options to document the same clinical statement.
-      These differences pose challenges for how the data is modeled, how the data is stored, and
+      These differences pose challenges for how the data are modeled, how the data are stored, and
       therefore has implications on data retrieval, data analysis, and accuracy of clinical analysis
       results. </para>
     <section>
@@ -239,7 +239,7 @@
       <title>Objectives and Purpose of ANF</title>
       <para><?oxy_comment_start author="kec" timestamp="20190721T090631-0700" comment="Change to more active voice... &quot;ANF&apos;s main purpose is the normalized representation of statements...&quot;" flag="done"?>ANF<?oxy_comment_end?>'s
         purpose is to introduce standards-based, normalized representation of clinical statements
-        from a heterogeneous source using an objective <emphasis role="bold"
+        from heterogeneous sources using an objective <emphasis role="bold"
             ><?oxy_comment_start author="rcholan" timestamp="20190730T085855-0400" comment="glossary" flag="done"?><glossterm
             baseform="Measure">measure</glossterm><?oxy_comment_end?></emphasis> to help evaluate
         the result, presence, and magnitude of a specific finding, request or observation. ANF
@@ -346,8 +346,8 @@ Try &quot;Separating concerns across architectural layers is a foundational...&q
         of concerns.<?oxy_comment_end?></para>
       <figure xml:id="SoC-diagram">
         <title>Separation of Concerns: Knowledge Architecture</title>
-        <mediaobject role="bordered" >
-          <imageobject >
+        <mediaobject role="bordered">
+          <imageobject>
             <?oxy_comment_start author="kec" timestamp="20190721T130116-0700" comment="Move the &quot;Each architectural layer...&quot; to the caption (I demonstrated how to do it here)
 
 Not sure how ANF leads to agile improvement. Possibly just remove, and simplify diagram, 
@@ -410,7 +410,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
             baseform="Procedural Knowledge">Procedural
           Knowledge</glossterm><?oxy_comment_end?></emphasis> – Procedural knowledge, also known as
         imperative knowledge, is the knowledge exercised in the performance of some task, such as
-        determining a hypertension treatment plan by analyzing a combination of a patients ANF
+        determining a hypertension treatment plan by analyzing a combination of a patient's ANF
         statements, and the available assertional knowledge. The procedural knowledge is responsible
         for information about standard ways to carry out specific procedures as well as other
         procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
@@ -443,7 +443,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           </listitem>
           <listitem>
             <para>T<?oxy_comment_start author="kec" timestamp="20190721T171053-0700" comment="Assertional knowledge can&apos;t contain conditional branches, so can&apos;t represent workflow (implied branching), and can&apos;t represent rules &quot;if-then-else&quot;" flag="done"?>he
-              Assertional Knowledge layer represents non-procedural statements, or facts, such
+              Assertional Knowledge layer represents non-procedural statements, or facts, such as
               "Stage 2 high blood pressure is over 140 systolic or 90 diastolic," or that
               beta-blockers and ACE inhibitors may be used to treat hypertension, or that
               beta-blockers are contraindicated in patients with a diagnosis of reactive airway
@@ -453,11 +453,11 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           <listitem>
             <para><?oxy_comment_start author="kec" timestamp="20190721T171119-0700" comment="Procedural knowledge includes if-then-else. " flag="done"?>Finally,
               the Procedural Knowledge layer provides algorithms to analyze ANF statements about a
-              patients, in combination with the Assertional Knowledge, to recommend a treatment
+              patient, in combination with the Assertional Knowledge, to recommend a treatment
               protocol for different kinds of hypertension, including the considerations of, e.g.
               patient age, co-morbidities etc., which can be generated by an electronic clinical
               decision support system (Statement + Assertional layers).<?oxy_comment_end?> This
-              layer adds to support for workflow and conditional logic (i.e. if-then-else).</para>
+              layer adds support for workflow and conditional logic (i.e. if-then-else).</para>
           </listitem>
         </itemizedlist></para>
       <para>A clear separation of concerns enables the isosemantic transformation of standards-based

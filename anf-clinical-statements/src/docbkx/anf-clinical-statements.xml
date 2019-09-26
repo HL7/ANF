@@ -683,12 +683,12 @@ Doing family history, donor statements using subject of information is now the n
         <section>
             <title><anchor xml:id="_Toc1824814"/>Request Clinical Statements</title>
             <para>A Request for Action clinical statement describes a request made by a clinician.
-                Most of the times, but not always, the object of the request (e.g., lab test,
-                medication order) will be fulfilled by someone other than the clinician (e.g., lab
-                technician, pharmacist) making the request. All information about the request will
-                be documented in this clinical statement, including information about details
-                relating to the request, such as patient must fast for 12 hours before having a
-                lipids blood test.</para>
+                Most of the times, but not always, the object of the request (e.g., laboratory test,
+                medication order) will be fulfilled by someone other than the clinician (e.g.,
+                laboratory technician, pharmacist) making the request. All information about the
+                request will be documented in this clinical statement, including information about
+                details relating to the request, such as patient must fast for 12 hours before
+                having a lipids blood test.</para>
             <para>Examples of Request clinical statements:</para>
             <itemizedlist spacing="compact">
                 <listitem>
