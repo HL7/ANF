@@ -443,8 +443,12 @@ Doing family history, donor statements using subject of information is now the n
                     using an adult sized cuff, but also includes two prerequisites that are
                     represented as separate associated ANF Statements. In the Associated Statements
                     we see examples of Results having a range of values using the upperBound and
-                    lowerBound. To see a more detailed representation see the tabular form here:
-                        <xref linkend="table_perform_bpm"/></para>
+                    lowerBound. Additionally, while the narrative does not explicitly state that the
+                    blood pressure is taken in the sitting position, it is implied by the
+                    prerequisite that it is taken in the sitting position based on the prerequisite
+                    that the patient was in the sitting position for at least 5 minutes.  To see a
+                    more detailed representation see the tabular form here: <xref
+                        linkend="table_perform_bpm"/></para>
                 <figure>
                     <title>Three Dot Blot Hemorrhages ANF Example</title>
                     <mediaobject>
