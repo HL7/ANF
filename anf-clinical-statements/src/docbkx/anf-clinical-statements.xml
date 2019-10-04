@@ -591,8 +591,11 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <para>In the medication example above a purpose is specified using Pain control
                     which has a focus of pain. The Topic is built using Administration of substance
-                    with a Direct substance specifying the pharmaceutical product and a Route of
-                    Administration specifying Oral.</para>
+                    with a Direct substance specifying the pharmaceutical product including the
+                    strength and dose form and a Route of Administration specifying Oral.  In
+                    addition to the dose form in the Topic, the dose form is also specified in the
+                    Measure semantic for the Result.  This allows for the specification of multiple
+                    or partial dose forms.</para>
             </section>
             <section>
                 <title>Provision of Educational Materials</title>
@@ -619,6 +622,26 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <para>In this example, the concept Provision of educational material is used with a
                     Has focus of Diabetes mellitus.</para>
+                
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                    linkend="anf-editorialrule-status"/></para>
+                
+                <figure>
+                    <title>Provision of Educational Material Stopped Before Completion ANF Example</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/educ_partial_anf.svg" format="SVG" scalefit="1"
+                                width="100%" contentdepth="100%"/>
+                        </imageobject>
+                    </mediaobject>
+                    <caption>
+                        <para><emphasis role="italics">Patient was Provided with Educational
+                            Material on Diabetes but Education was Stopped Before Completion.</emphasis></para>
+                    </caption>
+                </figure>
+                <para>This example is similar to the prior example of completing the education,
+                    however the status is used to represent the education was not completed after
+                    starting.</para>
             </section>
             <section>
                 <title>Other States or Specific Characteristics That Are Clinically Relevant</title>
@@ -871,7 +894,12 @@ The distinction with a performance clinical statement concerning giving him educ
                 </figure>
                 <para>The Medication request example represents one of the more complicated ANF
                     Statements that includes not only the Topic, but also the Repetition information
-                    for completing the request.</para>
+                    for completing the request.  The Topic is built using Administration of
+                    substance with a Direct substance specifying the pharmaceutical product
+                    including the strength and dose form and a Route of Administration specifying
+                    Oral.  In addition to the dose form in the Topic, the dose form is also
+                    specified in the Measure semantic for the requestedResult.  This allows for the
+                    specification of multiple or partial dose forms.</para>
                 <figure>
                     <title>Counseling Request ANF Example</title>
                     <mediaobject>
