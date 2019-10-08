@@ -782,7 +782,9 @@ The distinction with a performance clinical statement concerning giving him educ
                 </figure>
                 <para>The Laboratory Request example above shows how the topic is built using a
                     laboratory procedure concept, with no refinements in this case. It also has a
-                    Priority of Routine as stated in the narrative description.</para>
+                    Priority of Routine as stated in the narrative description.  The requestedResult
+                    in this example is used to represent that you are requesting a single
+                    measurement be performed.</para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>

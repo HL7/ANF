@@ -57,9 +57,7 @@
                         attribute linking it to the Clinical Finding or Disorder that it is being
                         observed. The observation procedure can also be further refined by adding
                         attributes in the terminology model, including Method, Procedure site -
-                        Direct, (if appropriate) Laterality, and Using device.
-                        <?oxy_comment_start author="Ioana" timestamp="20190806T115341-0400" comment="Imcomplete statement " flag="done"?><!--We
-                        expect --><?oxy_comment_end?></para>
+                        Direct, (if appropriate) Laterality, and Using device. </para>
                 </listitem>
         		<listitem>
 					<para>Medication administrations will use an Administration of substance concept to represent
@@ -208,9 +206,7 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-subjectOfInformation" xreflabel="Subject of information is used to represent family and donor history">
-        <title>Subject of information is used to
-            represen<?oxy_comment_start author="timowilliams" timestamp="20190923T221250-0500" comment="From SK: This seems to exclude the patient, which isn&apos;t the case, as described in the sentence below."?>t
-            family and donor history<?oxy_comment_end?></title>                    
+        <title>Subject of information is used to represent who the statement is about</title>                    
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-subjectOfInformation-content">
                 <listitem>
@@ -282,7 +278,11 @@
             <itemizedlist xml:id="anf-editorialrule-purpose-content">
                 <listitem>
                     <para>The purpose is why an action was requested. The purpose of the topic is
-                        typically some type of therapeutic intent, diagnostic intent, or both. There can be more than one therapeutic intent and diagnostic intent.</para>
+                        typically some type of therapeutic intent, diagnostic intent, or both. There
+                        can be more than one therapeutic intent and diagnostic intent.  While the
+                        purpose can also exist as a separate clinical statement, if you specifically
+                        want to state that a topic was performed for a particular purpose, it must
+                        be represented using the purpose.</para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
