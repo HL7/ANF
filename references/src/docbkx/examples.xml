@@ -5,6 +5,7 @@
         
         <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="examples-of-modeling-request.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="examples-complex-anf.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="examples-of-modeling-CCDA.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="examples-of-modeling-KNARTS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </appendix>
