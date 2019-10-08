@@ -703,8 +703,8 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>Systolic Blood Pressure for adults has a normal range of 90-120 and is
-                    represented in the normalRange. Systolic Blood pressure above 180 would
-                    represent a critical health risk and is represented in the healthRisk.</para>
+                    represented in the reference. Systolic Blood pressure above 180 would represent
+                    a critical health risk and is represented in the healthRisk.</para>
             </section>
         </section>
         <section>

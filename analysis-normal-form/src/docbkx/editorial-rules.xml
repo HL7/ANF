@@ -247,13 +247,13 @@
     </editorial-rule>
 
     <editorial-rule xml:id="anf-editorialrule-normalRange" xreflabel="Normal Range can be specified for a result">
-        <title>normalRange can be specified for a result</title>                    
+        <title>reference can be specified for a result</title>                    
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
-                	<para>In PerformanceCircumstance, normalRange is the interval of values that are
+                	<para>In PerformanceCircumstance, reference is the interval of values that are
                         normal for the observation/finding described by the "topic" for this
-                        "subject.  It refers to "normal" for the patient/subject with these
+                        "subject. It refers to "normal" for the patient/subject with these
                         conditions.</para>
                 </listitem>
             </itemizedlist>
