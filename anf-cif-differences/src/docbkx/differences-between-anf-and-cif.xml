@@ -85,10 +85,10 @@ Also, the implications of a more complex seperation of concerns with respect to 
             be a range of a quantity. No coded results are allowed. Not allowing coded results
             forces more of the semantics to be represented in the terminology model and limits the
             ability to allow multiple different representations of the same data. In the example
-            below we see Dot blot hemorrhage represented in ANF as either present or with the number
+            below we see Retinal hemorrhage represented in ANF as either present or with the number
             of hemorrhages that exist.</para>
         <figure>
-            <title>Dot Blot Hemorrhage Present - ANF Representation</title>
+            <title>Retinal Hemorrhage Present - ANF Representation</title>
             <mediaobject>
                 <imageobject>
                     <?oxy_comment_start author="kec" timestamp="20190722T174123-0700" comment="Need CIMI statement for deep retinal hemorrhage. For all examples in this chapter, should have an ANF and CIMI for each example. Maybe present together in a table. "?>
@@ -96,17 +96,17 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Dot Blot Hemorrhage Present - ANF Representation</emphasis></para></caption>
+            <caption><para><emphasis role="italics">Retinal Hemorrhage Present - ANF Representation</emphasis></para></caption>
         </figure>
         <figure>
-            <title>Three Dot Blot Hemorrhage - ANF Representation</title>
+            <title>Three Retinal Hemorrhage - ANF Representation</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="images/Three_dbh_anf.svg" format="SVG" scalefit="1"
                         width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Three Dot Blot Hemorrhage - ANF Representation</emphasis></para></caption>
+            <caption><para><emphasis role="italics">Three Retinal Hemorrhage - ANF Representation</emphasis></para></caption>
         </figure>
         <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other." flag="done"?><?oxy_comment_end?>
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice

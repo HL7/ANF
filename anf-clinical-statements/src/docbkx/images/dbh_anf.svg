@@ -24,7 +24,7 @@
 	]]>
 	</style>
 
-	<g v:mID="19" v:index="2" v:groupContext="foregroundPage">
+	<g v:mID="19" v:index="5" v:groupContext="foregroundPage">
 		<title>Dot_Blot_present_ANF</title>
 		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
 		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(217.136,-165.636)">
@@ -111,7 +111,7 @@
 			<text x="48.23" y="236.78" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>result</text>		</g>
 		<g id="shape5-11" v:mID="5" v:groupContext="shape" transform="translate(446.636,-159.912)">
 			<title>Round Corner Rectangle.5</title>
-			<desc>[Observation procedure]- (Has focus) [Deep retinal hemorrhage]</desc>
+			<desc>[Observation procedure]- (Has focus) [Retinal hemorrhage]</desc>
 			<v:userDefs>
 				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
@@ -136,7 +136,7 @@
 						 200.76 L23.07 200.76 A23.073 23.073 -180 0 0 0 223.83 L0 231.07 A23.073 23.073 -180 0 0 23.07 254.14 Z"
 					class="st4"/>
 			<text x="49" y="223.86" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>[Observation procedure]-<v:newlineChar/><tspan
-						x="13.32" dy="1.201em" class="st3">(Has focus) [Deep retinal hemorrhage]</tspan></text>		</g>
+						x="26.99" dy="1.201em" class="st3">(Has focus) [Retinal hemorrhage]</tspan></text>		</g>
 		<g id="shape6-15" v:mID="6" v:groupContext="shape" transform="translate(446.636,321.68) rotate(180)">
 			<title>Multi-Line</title>
 			<v:userDefs>

@@ -647,9 +647,9 @@
         </table>
     </section>
     <section>
-        <title><anchor xml:id="table_perform_3dbh"/>Three Dot Blot Hemorrhages</title>
+        <title><anchor xml:id="table_perform_3dbh"/>Three Retinal Hemorrhages</title>
         <table>
-            <title>Three Dot Blot Hemorrhages Performance Clinical Statement</title>
+            <title>Three Retinal Hemorrhages Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -657,7 +657,7 @@
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Three dot blot
+                                        ><emphasis role="italic">Three retinal
                                         hemorrhages</emphasis></emphasis></para>
                             <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
@@ -673,7 +673,7 @@
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
                                     action]-</emphasis></para>
-                            <para><emphasis role="italic">(Has focus) [Deep retinal
+                            <para><emphasis role="italic">(Has focus) [Retinal
                                     hemorrhage];</emphasis></para>
                         </entry>
                     </row>
@@ -734,9 +734,9 @@
         </table>
     </section>
     <section>
-        <title><anchor xml:id="table_perform_dbhpresent"/>Dot Blot Hemorrhage Present</title>
+        <title><anchor xml:id="table_perform_dbhpresent"/>Retinal Hemorrhage Present</title>
         <table>
-            <title>Dot Blot Hemorrhage Present Performance Clinical Statement</title>
+            <title>Retinal Hemorrhage Present Performance Clinical Statement</title>
             <tgroup cols="2">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -744,7 +744,7 @@
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Dot blot hemorrhage
+                                        ><emphasis role="italic">Retinal hemorrhage
                                         present</emphasis></emphasis></para>
                             <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
@@ -760,7 +760,7 @@
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
                                     action]-</emphasis></para>
-                            <para><emphasis role="italic">(Has focus) [Deep retinal
+                            <para><emphasis role="italic">(Has focus) [Retinal
                                     hemorrhage];</emphasis></para>
                         </entry>
                     </row>

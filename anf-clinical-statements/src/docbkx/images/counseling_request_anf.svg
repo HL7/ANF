@@ -24,7 +24,7 @@
 	]]>
 	</style>
 
-	<g v:mID="35" v:index="13" v:groupContext="foregroundPage">
+	<g v:mID="35" v:index="16" v:groupContext="foregroundPage">
 		<title>counsel_request_anf</title>
 		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
 		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(191.255,-384.806)">
@@ -349,7 +349,7 @@
 		</g>
 		<g id="shape16-30" v:mID="16" v:groupContext="shape" transform="translate(522.989,-306.222)">
 			<title>Round Corner Rectangle.7</title>
-			<desc>[1,inf) Unit of time</desc>
+			<desc>[1,inf) Countable quantity</desc>
 			<v:userDefs>
 				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
 				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
@@ -373,7 +373,7 @@
 			<path d="M15.44 473.79 L138.94 473.79 A15.4378 15.4378 -180 0 0 154.38 458.35 L154.38 447.29 A15.4378 15.4378 -180 0
 						 0 138.94 431.85 L15.44 431.85 A15.4378 15.4378 -180 0 0 0 447.29 L0 458.35 A15.4378 15.4378 -180 0 0 15.44
 						 473.79 Z" class="st4"/>
-			<text x="30.17" y="456.42" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>[1,inf) Unit of time</text>		</g>
+			<text x="10.48" y="456.42" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>[1,inf) Countable quantity</text>		</g>
 		<g id="shape17-33" v:mID="17" v:groupContext="shape" transform="translate(525.741,620.376) rotate(179.667)">
 			<title>Multi-Line.13</title>
 			<v:userDefs>

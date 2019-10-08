@@ -67,7 +67,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                             <para>Diabetes mellitus is not present</para>
                         </listitem>
                         <listitem>
-                            <para>Dot blot hemorrhage is present</para>
+                            <para>Retinal hemorrhage is present</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -85,7 +85,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                                 not more than 30 minutes prior to measurement</para>
                         </listitem>
                         <listitem>
-                            <para>Three dot blot hemorrhages</para>
+                            <para>Three retinal hemorrhages</para>
                         </listitem>
                         <listitem>
                             <para>Positive screen for fall risk</para>
@@ -224,7 +224,7 @@ Doing family history, donor statements using subject of information is now the n
                     measureSemantic. To see a more detailed representation see the tabular form
                     here: <xref linkend="table_perform_dmabsent"/></para>
                 <figure>
-                    <title>Dot Blot Hemorrhage Present ANF Example</title>
+                    <title>Retinal Hemorrhage Present ANF Example</title>
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190625T161253-0500" comment="How do the measureSemantic for this example match up with the 3 dot blot example below?" flag="done"?>
@@ -233,8 +233,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Dot Blot Hemorrhage
-                            Present.</emphasis></para>
+                        <para><emphasis role="italics">Retinal Hemorrhage Present.</emphasis></para>
                     </caption>
                 </figure>
                 <para>To see a more detailed representation see the tabular form here: <xref
@@ -450,7 +449,7 @@ Doing family history, donor statements using subject of information is now the n
                     more detailed representation see the tabular form here: <xref
                         linkend="table_perform_bpm"/></para>
                 <figure>
-                    <title>Three Dot Blot Hemorrhages ANF Example</title>
+                    <title>Three Retinal Hemorrhages ANF Example</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="images/three_dbh_anf.svg" format="SVG" scalefit="1"
@@ -458,7 +457,7 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Three Dot Blot Hemorrhages.</emphasis></para>
+                        <para><emphasis role="italics">Three Retinal Hemorrhages.</emphasis></para>
                     </caption>
                 </figure>
                 <para>To see a more detailed representation see the tabular form here: <xref
