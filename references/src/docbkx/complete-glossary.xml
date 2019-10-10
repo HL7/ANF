@@ -12,7 +12,7 @@
             <para>An approach to clinical statements that ensures the statement representation is
                     reproducible and scalable, with the adherence to principles of being simple,
                     reproducible, and use case driven, with a clean separation between statement
-                    concerns, and terminology concerns.</para>
+                    concerns and terminology concerns.</para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Clinical-Decision-Support">
@@ -42,15 +42,15 @@
                     customized content. Solor allows informaticists and developers to convert
                     user-supplied terminologies into a single model using open source software to
                     produce Solor content. For more information please see <link
-                        xlink:href="http://solor.io">http://solor.io</link></para>
+                        xlink:href="http://solor.io">http://solor.io</link>.</para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Clinical-Statement">
         <glossterm>Clinical Statement</glossterm>
         <glossdef>
             <para>A clinical statement is a general informatics term. It is a definite and clear
-                representation of a clinically-significant fact or situation that was observed to
-                exist or happen. </para>
+                    representation of a clinically-significant fact or situation that was observed
+                    to exist or requested to happen. </para>
             <glossseealso otherterm="Statement">Statement</glossseealso>
             <glossseealso otherterm="Statement-Narrative">Statement Narrative</glossseealso>
         </glossdef>
@@ -68,7 +68,7 @@
         <glossterm>Statement Narrative</glossterm>
         <glossdef>
             <para>A written account of a fact or situation that was observed to exist or happen,
-                    corresponding to one or more statements. See Also Clinical Statement, Statement. </para>
+                    corresponding to one or more statements. See also Clinical Statement, Statement. </para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Normal-Form">
@@ -135,8 +135,8 @@
         <acronym>ISO DCM</acronym>
         <glossdef>
             <para>ISO standard for detailed clinical models, characteristics and processes; this
-                describes principles, requirements, governance, methods and a Logical Model to
-                describe the contents Detailed Clinical Models. </para>
+                    describes principles, requirements, governance, methods and a Logical Model to
+                    describe the contents of Detailed Clinical Models. </para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Structured-Clinical-Input-Forms">
@@ -252,8 +252,8 @@
         <glossterm>Polymorphic model</glossterm>
         <glossdef>
             <para>A model representing relationships from one class to multiple classes (e.g.,
-                observations, procedures, encounters, public health reports, supply, medications,
-                exposure)</para>
+                    observations, procedures, encounters, public health reports, supply,
+                    medications, exposure).</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -318,13 +318,13 @@
         </glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Systematized Nomenclature of Medicine</glossterm>
-        <glossdef>
-            <para>Clinical Terms is a standardized, multilingual vocabulary of clinical terminology
-                that is used by physicians and other health care providers for the electronic
-                exchange of clinical health information.</para>
-        </glossdef>
-    </glossentry>
+            <glossterm>Systematized Nomenclature of Medicine Clinical Terms</glossterm>
+            <glossdef>
+                <para>SNOMED CT is a standardized, multilingual vocabulary of clinical terminology
+                    that is used by physicians and other health care providers for the electronic
+                    exchange of clinical health information.</para>
+            </glossdef>
+        </glossentry>
     <glossentry>
         <glossterm>Evaluation Result</glossterm>
         <glossdef>
@@ -431,7 +431,7 @@
         <acronym>URU</acronym>
         <glossdef>
             <para>A design principle that defines the solution to be Understandable, Reproducible,
-                and Useful. See Also Understandable, Reproducible, Useful</para>
+                    and Useful. See also Understandable, Reproducible, Useful</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -529,10 +529,10 @@
         <acronym>MOF</acronym>
         <glossdef>
             <para>The foundation of OMG's industry-standard environment where models can be exported
-                from one application, imported into another, transported across a network, stored in
-                a repository and then retrieved, rendered into different formats (including XMI™,
-                OMG's XML-based standard format for model transmission and storage), transformed,
-                and used to generate application code</para>
+                    from one application, imported into another, transported across a network,
+                    stored in a repository and then retrieved, rendered into different formats
+                    (including XMI™, OMG's XML-based standard format for model transmission and
+                    storage), transformed, and used to generate application code.</para>
         </glossdef>
     </glossentry>
         <glossentry xml:id="Reference">

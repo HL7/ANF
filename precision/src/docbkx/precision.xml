@@ -96,7 +96,7 @@
                <section>
                    <title>Automated Data Analysis</title>
                    <para>ANF statements may be created as an outcome of evaluating device,
-                clinician, patient-entered data (e.g. questionnaires) automatically and in
+                clinician, and patient-entered data (e.g. questionnaires) automatically and in
                 near-real-time. For example, specific answers to a PHQ-9 screening tool along with
                 previous assessments could trigger a specific type of follow-up screening regarding
                 substance use treatment or further evaluation, consideration of Social Determinants

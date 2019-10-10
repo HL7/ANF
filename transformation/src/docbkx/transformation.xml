@@ -107,9 +107,7 @@
             all quantitative laboratory results, but in some cases, it may be that each detailed
             clinical model needs its own unique transformation. </para>
 
-        <para>
-            Potential areas of difficulty during transformation
-        </para>
+        <para> Potential areas of difficulty during transformation:</para>
 
             <itemizedlist spacing='compact'>
                 <listitem>
@@ -437,8 +435,8 @@
             <para><emphasis role="bold">Limitations</emphasis></para>
             <itemizedlist spacing="compact">
                 <listitem>
-                    <para>the abstractness also makes QVT quite difficult to understand and
-                        learn, and there are limited resources to assist in the learning process.</para>
+                    <para>The abstractness also makes QVT quite difficult to understand and learn,
+                        and there are limited resources to assist in the learning process.</para>
                 </listitem>
              </itemizedlist>
         </section>

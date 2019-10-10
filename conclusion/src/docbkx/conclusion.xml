@@ -11,7 +11,7 @@ There isn&apos;t a sub-section for patient safety. There is one for population h
   <section>
     <title>Improved Data Quality </title>
     <para>Information systems record and manage clinical statements using a variety of standard or
-      ad-hoc models and formats. However, analysis of clinical statements require consistency, not
+      ad-hoc models and formats. However, analysis of clinical statements requires consistency, not
       only at the
       <?oxy_comment_start author="kec" timestamp="20190722T175052-0700" comment="Should we add semantic consistency here as seperate from format consistency, content consistency, adn semantic consistency? 
 
@@ -25,7 +25,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       clinical data. </para>
     <para>The design of
       <?oxy_comment_start author="kec" timestamp="20190722T175226-0700" comment="As I read this, it is more restating Khan, that saying how ANF supports data quality in ways that Khan says are important. Need to redraft to be more of how ANF supports data quality, for each way we support data quality, pile on that Kahn thinks it important, and other references that we can point to as well..." flag="done"?>ANF
-      is based on research into data quality frameworks <link linkend="bib16">[20]</link> that
+      is based on research into data quality frameworks <link linkend="bib16">[20]</link> which
       identified that information conformance, completeness, and plausibility are all necessary to
       analysis. </para>
     <para>
@@ -35,14 +35,13 @@ Or maybe reference back to the interoperability levels, of which semantic was th
             describes how well a system or implementation meets a specification. ANF provides a
             logical structure and constraints of clinical data for value conformance, relational
             conformance, and computational conformance irrespective of data representation (e.g.
-            CDA, FHIR)</para>
+            CDA, FHIR).</para>
           <itemizedlist>
             <listitem>
               <para>Value Conformance: Value conformance seeks to determine if recorded data
                 elements are in agreement with a predefined, constraint-driven data architecture.
                 Internal data constraints are typically imposed by the <glossterm
-                  baseform="ANF Reference Model">ANF Reference Model</glossterm>
-              </para>
+                  baseform="ANF Reference Model">ANF Reference Model</glossterm>.</para>
             </listitem>
             <listitem>
               <para>Relational Conformance: Relational conformance seeks to determine if the
@@ -72,7 +71,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
             data values. Completeness measures assess the absence of data at a single moment over
             time or when measured at multiple moments over time. ANF disambiguates the date a
             statement was made/asserted from the timing of the circumstances in which the underlying
-            action, observation, or finding. </para>
+            action, observation, or finding occurred. </para>
         </listitem>
         <listitem>
           <para><emphasis role="bold"
@@ -158,10 +157,10 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       adoption of CDS across health systems is clear.</para>
     <para>A report entitled “<emphasis role="italic">Optimizing Strategies for Clinical Decision
         Support: Summary of a Meeting Series</emphasis>” <link linkend="bib17">[21]</link> was
-      produced out of the collaboration between the ONC and the National Academy of Medicine (NAM).
-      The report states that there are at least four important technical challenges to sharing and
-      therefore standardizing implementations of CDS content: <link linkend="bib17"
-      >[21]</link></para>
+      produced out of the collaboration between The Office of the National Coordinator for Health
+      Information Technology (ONC) and the National Academy of Medicine (NAM). The report states
+      that there are at least four important technical challenges to sharing and therefore
+      standardizing implementations of CDS content: <link linkend="bib17">[21]</link></para>
     <para><emphasis role="bold">(1) insufficient standardization of patient data representation;
       </emphasis></para>
     <para>(2) insufficient standardization of CDS knowledge representation; </para>
@@ -181,7 +180,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       The most important requirements of such a statement model are that (1) it can represent any
       clinician-specified observation accurately and precisely and (2) it can support automated
       query and retrieval operations correctly and efficiently.</para>
-    <para>ANF aims to reduce the variability of how clinical data within the value sets and clinical
+    <para>ANF aims to reduce the variability of clinical data within the value sets and clinical
       decision rules managed by EHR systems and modeled/stored in data repositories. For example, a
       clinician could document that a patient has “bacterial pneumonia caused by
       methicillin-resistant Staph. Aureus” by combining the pre-existing concept “bacterial
