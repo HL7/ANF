@@ -253,7 +253,7 @@
         C-CDA templates, FHIR profiles) to normal form (i.e., ANF).</para>
       <para>Overall, ANF allows healthcare enterprises to normalize information aggregated across
         multiple sources to better support a set of analysis. ANF enhances the ability to analyze
-        and compare clinical statements aggregated across systems and organizations and provide a
+        and compare clinical statements aggregated across systems and organizations and provides a
         logical model to:<itemizedlist spacing="compact">
           <listitem>
             <para>Specify a common form for clinical statements extracted from EHR systems and
@@ -279,7 +279,7 @@
         multiple care providers, health enterprises, and standards-based Healthcare Information
         Technology (HIT) systems. ANF does not define the terminology specification but relies on
           <glossterm baseform="Terminology Knowledge">terminology knowledge </glossterm> to specify
-        the meaning of clinical statements. ANF coded data may use single codes, as well as any
+        the meaning of clinical statements. ANF-coded data may use single codes, as well as any
         legal terminology expression defined within the terminology layer of the <link
           linkend="SoC_Section">architecture</link>.</para>
       <para>ANF
@@ -461,18 +461,14 @@ Remove the definition from the figure, and link to glossary where appropriate. "
           </listitem>
         </itemizedlist></para>
       <para>A clear separation of concerns enables the isosemantic transformation of standards-based
-        clinical statements to normal form by decoupling structure from semantics and workflow
-        <?oxy_comment_start author="kec" timestamp="20190721T172337-0700" comment="The clean separation of concerns helps to enable isosemantic transformation, by having a reproducible form. The separation of concerns does not really speak to the isosemantic representation. 
-
-Yes, ANF is for URU..." flag="done"?>in
-        regard to an isosemantic representation in the Statement Model
-        layer<?oxy_comment_end?>.</para>
+        clinical statements to normal form in the Statement Model layer by decoupling structure from
+        semantics and workflow.</para>
       <para>HL7 relies on implementation guides (for V2, CDA, and FHIR) to add sufficient
         terminology knowledge to standards-based clinical statements. Vocabulary constraints
         documented as profiles or templates are the mechanism to create interoperable implementation
         guides from health IT standards. Only after the Terminology Knowledge is fully defined, the
         standards-based statements can be used to support business and workflow decision points
-        consistent with Assertional and Procedural layers described above.
+        consistent with the Assertional and Procedural layers described above.
         <!--<para>ANF can help the modeling of clinical statements achieve the following design features: </para><itemizedlist><listitem><para>Understandable: The meaning of a clinical statement can be understood, without reference to private or inaccessible information.</para></listitem><listitem><para>Reproducible: Multiple users can apply the clinical statement model to the same situations.</para></listitem><listitem><para>Useful: The clinical statement has a practical value to users that is self-evident or can be readily explained.</para></listitem></itemizedlist>--></para>
     </section>
   </section>
@@ -640,17 +636,17 @@ Yes, ANF is for URU..." flag="done"?>in
         generate platform-specific model specifications such as FHIR profiles, CDA templates,
         OpenEHR Archetypes, <link xlink:href="https://www.iso.org/standard/40784.html">ISO
           13606</link> Archetypes, <link xlink:href="https://www.iso.org/standard/62416.html">ISO/TS
-          13972</link> DCMs,
-        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? " id="kv2_dp5_43b" mid="57"?><?oxy_comment_start author="Ioana" timestamp="20190730T231505-0400" comment="I believe CIMI is working on a library of detailed clinical models - CIMI models. " parentID="kv2_dp5_43b"?>CIMI
+          13972</link> DCMs.
+        <?oxy_comment_start author="kec" timestamp="20190721T172632-0700" comment="Is there an example of this grouping that relates to HTN? Or is CIMI more trying to define a normal form, and the isosemantic aspects are yet to be worked out? " id="kv2_dp5_43b" mid="52"?><?oxy_comment_start author="Ioana" timestamp="20190730T231505-0400" comment="I believe CIMI is working on a library of detailed clinical models - CIMI models. " parentID="kv2_dp5_43b"?>CIMI
         models are grouped into semantically equivalent (or ‘isosemantic’) families of detailed
-        clinical models<?oxy_comment_end?><?oxy_comment_end mid="57"?>, which capture the same
+        clinical models<?oxy_comment_end?><?oxy_comment_end mid="52"?>, which capture the same
         clinical meaning using different combinations of pre and <glossterm
           baseform="Post-coordinated concept">post-coordinated concepts</glossterm> and
         corresponding information model structure. The central focus of the CIMI Reference Model is
         the CIMI Clinical Statement. A CIMI Clinical Statement represents structured electronic
         communication made about a patient typically documented as an 'entry' in the patient record. </para>
       <para>Unlike the V3 Clinical Statement Model applied in C-CDA, CIMI models are designed with
-        Terminology Knowledge and provides a separate model for each type of statements, organized
+        Terminology Knowledge and provides a separate model for each type of statement, organized
         into a comprehensive library.</para>
       <para>For reader convenience,
         <?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="55"?>CIMI
