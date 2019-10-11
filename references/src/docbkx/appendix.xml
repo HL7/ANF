@@ -129,7 +129,7 @@
                 <title>Laboratory Performance of Action Narratives</title>
                 <itemizedlist>
                     <listitem>
-                        <para></para>
+                        <para>Fasting glucose [Mass/volume] in Serum or Plasma 99 mg/dL</para>
                     </listitem>
                 </itemizedlist>
             </example>
@@ -155,7 +155,8 @@
                         <para>Systolic Blood Pressure 120 mmHg</para>
                     </listitem>
                     <listitem>
-                        <para>Systolic Blood Pressure 180 mmHg, normalRange (90-120), health risk critical</para>
+                        <para>Systolic Blood Pressure 190 mmHg, normalRange (90-120), health risk
+                        critical</para>
                     </listitem>
                     <listitem>
                         <para>Systolic Blood Pressure 120 mmHg, taken on right brachial artery, using BP
@@ -201,8 +202,8 @@
                 <title>Cardiology Performance of Action Narratives</title>
                 <itemizedlist>
                     <listitem>
-                        <para></para>
-                    </listitem>
+                    <para>Patient has a Framingham risk score of 15</para>
+                </listitem>
                 </itemizedlist>
             </example>
             <example>

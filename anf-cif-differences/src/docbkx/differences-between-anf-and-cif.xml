@@ -3,7 +3,7 @@
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Differences between ANF and CIMI</title>
-    <para>There are two fundamental differences between the ANF and CIMI Statement approach. </para>
+    <para>There are two fundamental differences between the ANF and CIMI Statement approach:</para>
     <orderedlist spacing="compact">
         <listitem>
             <para>The representation of topic.</para>
@@ -96,7 +96,10 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Retinal Hemorrhage Present - ANF Representation</emphasis></para></caption>
+            <caption>
+                <para><emphasis role="italics">Retinal Hemorrhage Present - ANF
+                        Representation</emphasis></para>
+            </caption>
         </figure>
         <figure>
             <title>Three Retinal Hemorrhage - ANF Representation</title>
@@ -106,14 +109,17 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Three Retinal Hemorrhage - ANF Representation</emphasis></para></caption>
+            <caption>
+                <para><emphasis role="italics">Three Retinal Hemorrhage - ANF
+                        Representation</emphasis></para>
+            </caption>
         </figure>
         <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="With different units of measure, how are these dot blot hemorrhages comparable to each other." flag="done"?><?oxy_comment_end?>
         <para>In the CIMI Statement model, when creating a model with a numeric result, the choice
             is quite clear, and the choice will be an EvaluationResult, such as a topic of 'Systolic
-            Blood Pressure' and result with a numeric quantity. In this case, the CIMI and ANF model
-            are very aligned, except for the fact that the ANF model will always use a range of that
-            quantity.</para>
+            Blood Pressure' and result with a numeric quantity. In this case, the CIMI and ANF
+            models are very aligned, except for the fact that the ANF model will always use a range
+            of that quantity.</para>
         <figure>
             <title>Systolic Blood Pressure - CIMI Representation</title>
             <mediaobject>
@@ -123,7 +129,10 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         width="100%" contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Systolic Blood Pressure 120 mmHg - CIMI Representation</emphasis></para></caption>
+            <caption>
+                <para><emphasis role="italics">Systolic Blood Pressure 120 mmHg - CIMI
+                        Representation</emphasis></para>
+            </caption>
         </figure>
         <para>But when a CIMI model has a potential coded result, the choice between
             <?oxy_comment_start author="kec" timestamp="20190722T173830-0700" comment="Is there potential for confusion betwen when to use evauation result, assertion, and other types of coded result? "?>EvaluationResult
@@ -227,13 +236,16 @@ Also, the implications of a more complex seperation of concerns with respect to 
 
                     Also, I would either choose a result from the valueset, or add your result to the valueset 
 
-                    " flag="done" mid="3"?>
-                    <imagedata fileref="images/breath_evaluation_cimi.svg" format="SVG"
-                        scalefit="1" width="100%" contentdepth="100%"
-                    /><?oxy_comment_end?><?oxy_comment_end mid="3"?>
+                    " flag="done" mid="8"?>
+                    <imagedata fileref="images/breath_evaluation_cimi.svg" format="SVG" scalefit="1"
+                        width="100%" contentdepth="100%"
+                    /><?oxy_comment_end?><?oxy_comment_end mid="8"?>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Tubular Breath Sounds - CIMI Evaluation Representation</emphasis></para></caption>
+            <caption>
+                <para><emphasis role="italics">Tubular Breath Sounds - CIMI Evaluation
+                        Representation</emphasis></para>
+            </caption>
         </figure>
         <para>The other option, is that each of the breath sounds in the valueset is modeled as an
             Assertion with a topic of Tubular breathing and a contextCode indicating presence or
@@ -247,13 +259,16 @@ Also, the implications of a more complex seperation of concerns with respect to 
                 <imageobject>
                     <?oxy_comment_start author="timowilliams" timestamp="20190510T120637-0500" comment="Make sure this is correct CIMI
 " flag="done"?>
-                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" flag="done" mid="6"?>
+                    <?oxy_comment_start author="timowilliams" timestamp="20190520T161759-0500" comment=" JCoyle - Same problem with topic as above" flag="done" mid="11"?>
                     <imagedata fileref="images/breath_assertion_cimi.svg" format="SVG" scalefit="1"
                         width="100%" contentdepth="100%"
-                    /><?oxy_comment_end?><?oxy_comment_end mid="6"?>
+                    /><?oxy_comment_end?><?oxy_comment_end mid="11"?>
                 </imageobject>
             </mediaobject>
-            <caption><para><emphasis role="italics">Tubular Breath Sounds - CIMI Evaluation Representation</emphasis></para></caption>
+            <caption>
+                <para><emphasis role="italics">Tubular Breath Sounds - CIMI Assertion
+                        Representation</emphasis></para>
+            </caption>
         </figure>
         <para>In this example, the ANF model doesn't support an EvaluationResult style model as it
             doesn't allow coded results. Thus, ANF is forced to make one and only one choice, which

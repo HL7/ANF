@@ -186,14 +186,17 @@
         <glossterm>Pre-coordinated concept</glossterm>
         <glossdef>
             <para>A notion represented by language, which identifies one idea. These are terms which
-                are considered single concepts within the host terminology. </para>
+                    are considered single concepts within the host terminology and are assigned a
+                    single code to be used in recording and retrieving data. </para>
         </glossdef>
     </glossentry>
     <glossentry>
         <glossterm>Post-coordinated concept</glossterm>
         <glossdef>
             <para>A notion represented by language, which identifies one idea. These are terms which
-                are considered single concepts within the host terminology. </para>
+                    are considered single concepts within the host terminology but are not assigned
+                    a single code.  They are composed from existing codes in the host terminology
+                    based on a defined concept model. </para>
         </glossdef>
     </glossentry>
     <glossentry>

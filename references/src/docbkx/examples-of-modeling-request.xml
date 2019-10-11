@@ -88,7 +88,8 @@ The problem with this approach is that expressions of this sort are restricted t
                     <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para>requestedResult</para>
+                                    <para>requestedResult: [1,1] Conventional release oral
+                                        tablet</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -118,34 +119,30 @@ The problem with this approach is that expressions of this sort are restricted t
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                ><emphasis role="italic">Request for administration of
-                                    nitroglycerin 0.4 mg tablet sub-lingual every 5 minutes as
-                                    needed for chest pain; maximum 3 tablets
-                                    (routine).</emphasis></emphasis></para>
+                                        ><emphasis role="italic">Request for administration of
+                                        nitroglycerin 0.4 mg tablet sub-lingual every 5 minutes as
+                                        needed for chest pain; maximum 3 tablets
+                                        (routine).</emphasis></emphasis></para>
                             <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
-                                >[Request]</emphasis></emphasis></para>
+                                        >[Request]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info:<emphasis role="italic">[Subject of record]
-                            </emphasis>
+                                </emphasis>
                             </para>
                             <para/>
                             <para>Authors: <emphasis role="italic">[Healthcare professional]
-                            </emphasis></para>
+                                </emphasis></para>
                             <para/>
                             <para><?oxy_comment_start author="kmaulden" timestamp="20190418T113944-0400" comment="Comment from WC:
 The problem with this approach is that expressions of this sort are restricted to generic entities (concepts) and that the specific entities involved are not represented. As an example, you don’t specify here to whom the substance is administered: it might very well be the subject of record administering it to somebody else. Even if you would add “(370131001 | Recipient category) [410604004 |Subject of record] ”, you still are not saying who precisely it is. I also don’t see the ‘every 6 hours’ represented here.
 "?>Topic:
-                                <emphasis role="italic">[Procedure]-</emphasis></para>
+                                    <emphasis role="italic">[Procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Administration - action] (Direct
-                                substance) [Nitroglycerin 400micrograms
+                                    substance) [Nitroglycerin 400micrograms
                                 tablet]</emphasis></para>
                             <para><emphasis role="italic">(Route of administration)
-                                [Oral]</emphasis></para>
-                            <para><emphasis role="italic">(Method) [Administration - action] (Direct
-                                substance) [Ibuprofen 400 MG Oral Tablet]</emphasis></para>
-                            <para><emphasis role="italic">(Route of administration)
-                                [Oral]</emphasis><?oxy_comment_end?></para>
+                                    [Oral]</emphasis></para><?oxy_comment_end?>
                         </entry>
                     </row>
                     <row>
