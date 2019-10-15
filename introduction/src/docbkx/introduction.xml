@@ -284,7 +284,7 @@
           linkend="SoC_Section">architecture</link>.</para>
       <para>ANF
         supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
-        pre-coordinated and
+        pre-coordinated concepts and
           <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="22"?><glossterm
           baseform="Post-coordinated concept"
         >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="22"?> terminology
@@ -295,8 +295,7 @@
       <para>Successful analysis requires appropriate data quality necessary for systems to define a
         precise
         <?oxy_comment_start author="rcholan" timestamp="20190730T110833-0400" comment="glossary" flag="done"?>topic<?oxy_comment_end?>,
-        <?oxy_comment_start author="rcholan" timestamp="20190730T110839-0400" comment="glossary" flag="done"?>category<?oxy_comment_end?>,
-        and clear
+        type, and clear
         <?oxy_comment_start author="rcholan" timestamp="20190730T110912-0400" comment="glossary" flag="done"?>measure<?oxy_comment_end?>
         or
           <?oxy_comment_start author="rcholan" timestamp="20190730T110921-0400" comment="glossary" flag="done"?><glossterm
@@ -355,20 +354,20 @@ Not sure how ANF leads to agile improvement. Possibly just remove, and simplify 
 Add to the Shared Module System description: &quot;Shared version and module system&quot; &quot;Provides the structural foundation that supports change over time, modularity, and knowledge representation. &quot;
 
 Remove the definition from the figure, and link to glossary where appropriate. " flag="done"?>
-            <imagedata fileref="images/SoC_new2.png" scale="40" align="center"/><?oxy_comment_end?>
+            <imagedata fileref="images/SoC_new.png" scale="40" align="center"/><?oxy_comment_end?>
           </imageobject>
         </mediaobject>
         <caption>
           <para><emphasis>Separation of concerns is an architectural design principle, whereby a
               system is divided into distinct sections, such that each section can address separate
-              concerns. In this case, each architectural layer addresses separate concerns that can
-              make use of the architecture layers below.</emphasis></para>
+              concerns. In this case, each architectural layer may build upon artifacts from lower
+              layers.</emphasis></para>
         </caption>
       </figure>
       <para><?oxy_comment_start author="kec" timestamp="20190721T130509-0700" comment="Change from using emphasis, to using glossary link. Start out active voice. &quot;The Architectural Foundation layer is responsible for defining how object identity, versioning, modularity, and symbolic knowledge is represented&quot;" flag="done"?><emphasis
           role="bold"
             ><?oxy_comment_start author="Ioana" timestamp="20190729T001818-0400" comment="Add link to glossary" flag="done"?><link
-            linkend="CIF_EHR_1"><glossterm baseform="Architectural Foundation">Foundatonal
+            linkend="CIF_EHR_1"><glossterm baseform="Architectural Foundation">Foundational
               Architecture</glossterm></link><?oxy_comment_end?></emphasis> – The
           <glossterm>Foundational Architecture</glossterm> of the Knowledge Architecture provides
         the common elements of interoperability such as object identity, versioning, modularity, and
@@ -429,7 +428,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
               Ideally, these overlapping codes and terms would be oriented to the same parent
               concept during the transformation and integration process at
               <?oxy_comment_start author="kec" timestamp="20190721T171552-0700" comment="The foundational layer is just data structures. Terminology integration happens at the terminology layer. " flag="done"?>the
-              Terminology layer <?oxy_comment_end?>(e.g.,
+              Foundational Architecture layer <?oxy_comment_end?>(e.g.,
               <glossterm>Solor</glossterm>).<!-- Furthermore, any updates over time to code sets or value sets that define hypertension (in the NLM’s Value Set Authority Center for instance) would be maintained by continuous integration at the Architectural Foundation layer.--></para>
           </listitem>
           <listitem>
@@ -682,9 +681,9 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         SNOMED CT distribution, we recognize that there are inconsistencies within SNOMED CT that
         allow redundant representations. A first step in addressing the potential for redundant
         representation in the Terminology Layer is to define a separation of concerns between the
-        Terminology and Statement layers, so that redundancies created by a poor separation of
-        concerns between knowledge layers are eliminated. Subsequent efforts to improve the quality
-        of the Terminology Layer can then be done independent of the Statement layer.</para>
+        Terminology and Statement layers to eliminate redundant representations between layers.
+        Subsequent efforts to improve the quality of the Terminology Layer can then be done
+        independent of the Statement layer.</para>
     </note>
   </section>
 </chapter>

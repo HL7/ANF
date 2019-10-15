@@ -191,14 +191,14 @@
         </glossdef>
     </glossentry>
     <glossentry>
-        <glossterm>Post-coordinated concept</glossterm>
-        <glossdef>
-            <para>A notion represented by language, which identifies one idea. These are terms which
-                    are considered single concepts within the host terminology but are not assigned
-                    a single code.  They are composed from existing codes in the host terminology
-                    based on a defined concept model. </para>
-        </glossdef>
-    </glossentry>
+            <glossterm>Post-coordinated expression</glossterm>
+            <glossdef>
+                <para>A notion represented by language, which identifies one idea. These are terms
+                    which are considered single concepts within the host terminology but are not
+                    assigned a single code. They are composed from existing codes in the host
+                    terminology based on a defined concept model. </para>
+            </glossdef>
+        </glossentry>
     <glossentry>
         <glossterm>Topic expression</glossterm>
         <glossdef>
