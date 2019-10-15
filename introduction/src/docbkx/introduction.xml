@@ -355,7 +355,7 @@ Not sure how ANF leads to agile improvement. Possibly just remove, and simplify 
 Add to the Shared Module System description: &quot;Shared version and module system&quot; &quot;Provides the structural foundation that supports change over time, modularity, and knowledge representation. &quot;
 
 Remove the definition from the figure, and link to glossary where appropriate. " flag="done"?>
-            <imagedata fileref="images/SoC_new.png" scale="40" align="center"/><?oxy_comment_end?>
+            <imagedata fileref="images/SoC_new2.png" scale="40" align="center"/><?oxy_comment_end?>
           </imageobject>
         </mediaobject>
         <caption>
@@ -368,10 +368,10 @@ Remove the definition from the figure, and link to glossary where appropriate. "
       <para><?oxy_comment_start author="kec" timestamp="20190721T130509-0700" comment="Change from using emphasis, to using glossary link. Start out active voice. &quot;The Architectural Foundation layer is responsible for defining how object identity, versioning, modularity, and symbolic knowledge is represented&quot;" flag="done"?><emphasis
           role="bold"
             ><?oxy_comment_start author="Ioana" timestamp="20190729T001818-0400" comment="Add link to glossary" flag="done"?><link
-            linkend="CIF_EHR_1"><glossterm baseform="Architectural Foundation">Architectural
-              Foundation</glossterm></link><?oxy_comment_end?></emphasis> – The
-          <glossterm>Architectural Foundation</glossterm> of the Knowledge Architecture provides the
-        common elements of interoperability such as object identity, versioning, modularity, and
+            linkend="CIF_EHR_1"><glossterm baseform="Architectural Foundation">Foundatonal
+              Architecture</glossterm></link><?oxy_comment_end?></emphasis> – The
+          <glossterm>Foundational Architecture</glossterm> of the Knowledge Architecture provides
+        the common elements of interoperability such as object identity, versioning, modularity, and
         knowledge representation. It includes a) the foundation and building blocks of the common
         model; (b) how the repeatable transformation process of disparate standards into the common
         model promotes interoperability with other environments; and (c) how the modules of the
