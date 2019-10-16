@@ -2,7 +2,7 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" 
     type="application/relax-ng-compact-syntax"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-        <title>ANF UML Model</title>
+        <title>Model Representation</title>
         <para>The <emphasis role="bold"><emphasis role="italic">ANF Reference Model
             </emphasis></emphasis>is a logical model described herein using the <glossterm
             baseform="Object Management Group">Object Management Group (OMG)</glossterm>
@@ -203,7 +203,7 @@
                                 still retain original intent and clarity of meaning.</para>
                             <para><emphasis role="bold" xml:id="topicPrinciple3">Principle 3:
                                 </emphasis>Each clinical statement may only have one topic [but the
-                                topic is comprehensive expression].</para>
+                                topic is a comprehensive expression].</para>
                             <para/>
                         </entry>
                     </row>
@@ -307,7 +307,9 @@
                     <tbody>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">timing</emphasis> Measure</para>
+                                <para><emphasis role="bold">timing</emphasis>
+                                </para>
+                                <para>Measure</para>
                             </entry>
                             <entry>
                                 <para>[1...1]</para>
@@ -320,21 +322,23 @@
                                 <para>• Requests for action at a future time</para>
                                 <para>• Performance of action, which has taken place in the past
                                     (including “History of X….)</para>
-                                <para>• Performance of action that hasn't taken place</para>
+                                <para>• When an action  was supposed to be performed </para>
                                 <para/>
                             </entry>
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">purpose</emphasis> LogicalExpression</para>
+                                <para><emphasis role="bold">purpose</emphasis>
+                                </para>
+                                <para>LogicalExpression</para>
                             </entry>
                             <entry>
                                 <para>[0...*]</para>
                             </entry>
                             <entry>
-                                <para>This data element describes WHY a procedure was requested or
-                                    performed in a post-coordinated expression, based on two
-                                    possible procedures:</para>
+                                <para>This data element describes in a post-coordinated expression
+                                        <emphasis role="bold">WHY</emphasis> a procedure was
+                                    requested, based on two possible procedures:</para>
                                 <para>
                                     <itemizedlist>
                                     <listitem>
@@ -406,9 +410,10 @@
                             </entry>
                             <entry>
                                 <para>This data element is used to represent a condition, or set of
-                                    conditions that must exist in order for Request to be executed. For example, Ibuprofen 400 mg tablet
-                                    oral every 6 hours as needed for pain, the use of Ibuprofen is conditional on the presence of
-                                    back pain.</para>
+                                    conditions that must exist in order for Request to be executed.
+                                    For example, Ibuprofen 400 mg tablet oral every 6 hours as
+                                    needed for back pain, the use of Ibuprofen is conditional on the
+                                    presence of back pain.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -435,10 +440,10 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>This data element species the priority with which a requested
-                                    action has to be carried out, e.g. “routine” or “stat”. By
-                                    default a Request will be considered "routine" unless otherwise
-                                    specified.</para>
+                                <para>This data element specifies the priority with which a
+                                    requested action has to be carried out, e.g. “routine” or
+                                    “stat”. By default a Request will be considered "routine" unless
+                                    otherwise specified.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -502,8 +507,8 @@
                 <title>PerformanceCircumstance </title>
                 <para><?oxy_comment_start author="Ioana" timestamp="20190729T165730-0400" comment="Reworded" flag="done"?>This
                 class describes the circumstances associated with a statement. It is used when an
-                action or observation are performed and specifies the result of intervention using
-                both as a measure and a coded status.<?oxy_comment_end?></para>
+                action or observation is performed and  it specifies the result of intervention
+                using both measure and a coded status .<?oxy_comment_end?></para>
                 <para>For example, "<emphasis role="italic">Insulin placed on hold 24 hours prior to
                         catheterization</emphasis>" would have a status of "<emphasis role="italic">On hold</emphasis>". A typical, successfully completed procedure would have
                     a status of "<emphasis role="italic">Completed</emphasis>".</para>
@@ -651,7 +656,7 @@
                 and numeric values for a phenomenon. In general, the interval value represents the
                 numeric range within which the observed value of a phenomenon occurs. Note that this
                 formalism allows both exact values and ranges of values to be expressed. In case
-                that the beginning and end point of an interval are the same value, the meaning is
+                that the beginning and end points of an interval are the same value, the meaning is
                 that the value of the phenomenon is exactly that value.</para>
             <para><?oxy_comment_start author="Ioana" timestamp="20190804T133858-0400" comment="updated to provide an example that uses &quot;n&quot; - a generic numeric value"?>In
                 the case that the lower and upper bound of an measure are the same number, <emphasis
@@ -856,7 +861,7 @@
                                     increments. The Resolution is not always defined or known.
                                     Example: a clinical statement like “History of breast cancer”
                                     implies an undefined amount of time in the past and it is not
-                                    stated, if it is years, months, etc.</para>
+                                    stated if it is years, months, etc.</para>
                                 <para/>
                             </entry>
                         </row>
@@ -1002,7 +1007,7 @@
             </section>
             <section xml:id="logicalExpressionClass">
                 <title>LogicalExpression </title>
-                <para>This class represents is a wrapper for logical expression.</para>
+                <para>This class represents a wrapper for logical expression.</para>
                 <informaltable>
                     <tgroup cols="3">
                     <colspec colnum="1" colname="col1" colwidth="1*"/>
