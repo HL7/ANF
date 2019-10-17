@@ -188,13 +188,15 @@ Doing family history, donor statements using subject of information is now the n
                             Present.</emphasis></para>
                     </caption>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time, shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="16"?><?oxy_comment_end mid="16"?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time, shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="17"?><?oxy_comment_end mid="17"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes. It would be an observation that the patient has diabetes. We currently state that representing present would be with [1,inf). Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
-                    infinite (inf), and a measureSemantic of "Countable quantity". To see a more
-                    detailed representation see the tabular form here: <xref
+                    infinite (inf), and a measureSemantic of "Countable quantity". For more details
+                    on the syntax used to represent a Result see the Measure Class here: <xref
+                        linkend="measureClass"/>To see a more detailed representation of the
+                    Diabetes Mellitus Type 2 Present example see the tabular form here: <xref
                         linkend="table_perform_dmpresent"/></para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-presenceAbsence"/></para>
@@ -237,7 +239,7 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>To see a more detailed representation see the tabular form here: <xref
-                    linkend="table_perform_dbhpresent"/></para>
+                        linkend="table_perform_dbhpresent"/></para>
             </section>
             <section>
                 <title>Test/Screening or Procedure and Resultant Value</title>
@@ -702,8 +704,10 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>Systolic Blood Pressure for adults has a normal range of 90-120 and is
-                    represented in the reference. Systolic Blood pressure above 180 would represent
-                    a critical health risk and is represented in the healthRisk.</para>
+                    represented in the reference. The reference utilizes the same Measure class that
+                    the Result utilizes and the syntax represented in the image above is described
+                    in detail here: <xref linkend="measureClass"/>. Systolic Blood pressure above 180 would represent a critical
+                    health risk and is represented in the healthRisk.</para>
             </section>
         </section>
         <section>
