@@ -5,7 +5,6 @@
     <title>Building Blocks:
         <?oxy_comment_start author="kec" timestamp="20190721T191027-0700" comment="Move  before CIMI chapter" flag="done"?>ANF<?oxy_comment_end?>
         Reference Model</title>
-
     <para>The <glossterm>ANF</glossterm> Reference Model is a logical information model describing
         the format of a normalized clinical statement that may have originated from an information
         system data store, a standard-based message (e.g. HL7 Version 2), a standard-document (e.g.
@@ -15,18 +14,26 @@
         instance of a <glossterm baseform="Clinical Information Model">CIMI model</glossterm> (e.g.
         FHIR-based profile,
             <?oxy_comment_start author="timowilliams" timestamp="20190730T103208-0500" comment="Glossary?" id="sv3_g4t_43b" flag="done"?><?oxy_comment_start author="rcholan" timestamp="20190730T195022-0400" comment="openEHR is an open standard specification in health informatics that describes the management and storage, retrieval and exchange of health data in electronic health records." parentID="sv3_g4t_43b" flag="done" mid="2"?><glossterm>openEHR</glossterm><?oxy_comment_end?><?oxy_comment_end mid="2"?>
-        archetype).</para>
-    <para>The ANF Reference Modle describes the <emphasis role="bold">normal form </emphasis>.
-        Along with the editorial rules  it provides the building blocks needed to reduce redundancy
-        by transforming data analysis.</para>
+        archetype). </para>
+    <para>The ANF Reference Model describes the <emphasis role="bold">normal form
+        </emphasis>proposed by ANF. Along with the <link
+            linkend="anf-editorialrule-performanceRequest">editorial rules</link> , the ANF
+        Reference Model describes how to reduce data redundancy to support analysis of aggregated
+        clinical statements. A clinical statement expressed in the ANF Reference Model is in
+        Analysis Normal Form if and only if it conforms to all the Editorial Rules defined by this
+        specification.</para>
+    <para><?oxy_comment_start author="Ioana" timestamp="20191020T161704-0400" comment="Comment #49"?>Similar
+        to database schemas, clinical statements often include redunant information about the topic,
+        result, and circumstances of a action performed or requested. Often clinical statements
+        include redundant way to represent a request or performance. ANF provides a target normal
+        form along with rules/guidelines for normalization.</para><?oxy_comment_end?>
     <!-- These sections are replaced by the autho-generated RM 
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     -->
     <xi:include href="anf-reference-model-uml-report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
     <!-- examples-of-performance.xml is used in a previous chapter. -->
-<!--    
+    <!--    
     <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
       
     <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -35,6 +42,4 @@
     <xi:include href="examples-of-modeling-KNARTS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
     -->
-  
-
 </chapter>

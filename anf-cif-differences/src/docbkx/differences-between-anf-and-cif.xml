@@ -19,7 +19,7 @@
             model, but in this document we use SNOMED CT, as Solor would potentially have extensions
             to SNOMED CT. In the CIMI Statement model, all the pieces of information that make up
             the topic can be broken out and structured as needed into a tree of objects with
-            multiple properties and appropriate datatypes.</para>
+            multiple properties and appropriate data types.</para>
         <para>
             <figure>
                 <title>Topic Comparison</title>
@@ -78,7 +78,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <title>The Representation of Results</title>
         <para>In the CIMI model, EvaluationResult and Assertion models are used to represent
             observations. EvaluationResult has a topic representing what is being observed, and a
-            result represented by a choice of datatypes. EvaluationResult can be thought of as a
+            result represented by a choice of data types. EvaluationResult can be thought of as a
             question and an answer. An Assertion on the other hand, has simply a topic stating what
             is observed, and a coded result stating presence or absence.</para>
         <para>In the ANF model, the topic represents what is being observed and the result may only
@@ -138,7 +138,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
             <?oxy_comment_start author="kec" timestamp="20190722T173830-0700" comment="Is there potential for confusion betwen when to use evauation result, assertion, and other types of coded result? "?>EvaluationResult
             and Assertion <?oxy_comment_end?>becomes muddied. For example, a model for Breath Sound
             could be an EvaluationResult with a topic of 'breath sound' and a coded result with the
-            following valueset. Thus, any of the breath sounds within the valueset can act as a
+            following value set. Thus, any of the breath sounds within the value set can act as a
             result for this model. </para>
         <para>
             <table>
@@ -247,8 +247,8 @@ Also, the implications of a more complex seperation of concerns with respect to 
                         Representation</emphasis></para>
             </caption>
         </figure>
-        <para>The other option, is that each of the breath sounds in the valueset is modeled as an
-            Assertion with a topic of Tubular breathing and a contextCode indicating presence or
+        <para>The other option, is that each of the breath sounds in the value set is modeled as an
+            Assertion with a topic of Tubular breathing and a context Code indicating presence or
             absence. To decide which model is better, usually we ponder how the clinician thinks
             about the data, or how it will be collected, or how it will be queried.</para>
         <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="We need to fix the digram because CIMI has changed the assertion style to be more consistent with ANF, where the breath sound goes in the topicCode, and presence or absence goes in contextCode, sorry!.
@@ -282,9 +282,11 @@ Also, the implications of a more complex seperation of concerns with respect to 
             one of the breath sound values is not correctly placed under the higher level concept of
             366135003 |Finding of breath sounds (finding)|, then retrieving all breath sounds will
             require knowledge of all the possible breath sound values. With the EvaluationResult
-            style, querying is simpler as you simply query for a topic of 'breath sound', and the
-            coded result tells you what type of breath sound it is. Thus, you do not have to know
-            all the members of the valueset apriori to form the query.</para>
+            style supported by typical
+            <?oxy_comment_start author="Ioana" timestamp="20191020T143931-0400" comment="Comment #7  -  clarified the &quot;query simplicity&quot; - it was actually referring to classic CIMI models not ANF."?>CIMI
+            model, users may search for clinical statements that match topic of 'breath sound', and
+            the coded result will indicate type of breath sound<?oxy_comment_end?>. Thus, you do not
+            have to know all the members of the value set a priori to form the query.</para>
     </section>
     <section>
         <title>ANF vs CIMI Examples</title>

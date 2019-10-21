@@ -456,7 +456,11 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>This data element specifies the measurable result. </para>
+                                <para><?oxy_comment_start author="Ioana" timestamp="20191020T163227-0400" comment="Comment #60"?>This
+                                    data element specifies the measurable result; it may specify
+                                    that something must be completed (e.g. how many sessions of
+                                    counseling, how many refills, etc.) are requested or that
+                                    something be done.  <?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
@@ -557,9 +561,18 @@
 
                                     <para>[0...1]</para>
                                 </entry>
-                                <entry>This optional data element is used to flag a result with
-                                coded values such as 'low', 'normal', high', and 'critical'.
-                                </entry>
+                                <entry>
+                                <para>This optional data element is used to flag a result with coded
+                                    values to describe the health risk associated with result of the
+                                    ANF statement such as 'low', 'normal', high', 'critically low',
+                                    or 'critically high'. </para>
+                                <para><emphasis role="bold">Note</emphasis>: this data element is
+                                    not equivalent with an <emphasis role="bold"
+                                        >interpretation</emphasis>. Interpretations of clinical
+                                    statements are supposed to represented as a related ANF
+                                    statements (e.g. "hypertensive disorder" statements -
+                                    interpretation of a 'high' systolic blood pressure).</para>
+                            </entry>
                             </row>
                             <row>
                                 <entry>
@@ -659,7 +672,7 @@
                 that the beginning and end points of an interval are the same value, the meaning is
                 that the value of the phenomenon is exactly that value.</para>
             <para><?oxy_comment_start author="Ioana" timestamp="20190804T133858-0400" comment="updated to provide an example that uses &quot;n&quot; - a generic numeric value"?>In
-                the case that the lower and upper bound of an measure are the same number, <emphasis
+                the case that the lower and upper bound of a measure are the same number, <emphasis
                     role="bold"><emphasis role="italic">n</emphasis></emphasis>, the meaning is that
                 the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic"
                         >n</emphasis></emphasis>.</para>
@@ -694,13 +707,13 @@
             <para>Any interval value that includes only the number 0, itself, denotes the value
                 "absent". Any interval value that includes both the number 0 and at least one number
                 > 0 denotes the values "indeterminate". Lastly, there are two interval values that
-                explicitly denote "present" and "absent", respectively. These value may be assigned
+                explicitly denote "present" and "absent", respectively. These values may be assigned
                 to phenomena that would not otherwise take on a numeric value (such as
                 "nausea"):</para>
             <itemizedlist>
                 <listitem>
                     <para role="italic"
-                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added"?>Nausea
+                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added" flag="done"?>Nausea
                         value = (0,INF) : <emphasis role="bold">present</emphasis> (greater than
                         0)</para>
                 </listitem>
@@ -719,8 +732,8 @@
                             xlink:href="https://standards.ieee.org/standard/754-2019.html"> IEEE 754
                             standard for Floating Point Numbers</link>. </para>
                     <note>
-                        <para>A Java <emphasis role="bold">float</emphasis> number  uses 32 bits to
-                            represent the sign, exponent, and mantissa consistent with  <link
+                        <para>A Java <emphasis role="bold">float</emphasis> number uses 32 bits to
+                            represent the sign, exponent, and mantissa consistent with <link
                                 xlink:href="https://standards.ieee.org/standard/754-2019.html">IEEE
                                 754:1985</link>. The values <emphasis role="bold">+infinity
                             </emphasis>and -<emphasis role="bold">infinity</emphasis> are denoted
