@@ -456,11 +456,15 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para><?oxy_comment_start author="Ioana" timestamp="20191020T163227-0400" comment="Comment #60"?>This
+                                <para><procedure>
+                                        <step>
+                                            <para/>
+                                        </step>
+                                    </procedure><?oxy_comment_start author="Ioana" timestamp="20191020T163227-0400" comment="Comment #60"?>This
                                     data element specifies the measurable result; it may specify
                                     that something must be completed (e.g. how many sessions of
                                     counseling, how many refills, etc.) are requested or that
-                                    something be done.  <?oxy_comment_end?></para>
+                                    something be done. <?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
@@ -714,12 +718,12 @@
                 <listitem>
                     <para role="italic"
                         ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added" flag="done"?>Nausea
-                        value = (0,INF) : <emphasis role="bold">present</emphasis> (greater than
-                        0)</para>
+                        value = (0,INF) : <emphasis role="bold">present</emphasis> (an open interval
+                        that allows both presence or absence)</para>
                 </listitem>
                 <listitem>
                     <para>Nausea value = [0, INF): <emphasis role="bold">indeterminate</emphasis>
-                        (greater than or equal to 0)</para>
+                        (an open interval that allows both presence or absence)</para>
                 </listitem>
             </itemizedlist>
             <itemizedlist>
@@ -822,43 +826,6 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">semantic</emphasis>
-                                    LogicalExpression</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>Measure semantic represents a unit of measure or scale
-                                    specified by the interval values. It is described using a
-                                    logical expression using standard-based terminology (i.e. SNOMED
-                                    CT). </para>
-                                <para>For systolic blood pressure, the unit of measure is
-                                    millimeters of mercury, and thus the measure semantic is a
-                                    SNOMED CT concept: 259018001 |Millimeter of mercury (qualifier
-                                    value).</para>
-                                <para>For blood glucose measurement daily for 2 weeks, the measure
-                                    semantic would be “258705008 |week (qualifier value)”.</para>
-                                <para>For quantity/count measure values, the measure semantic to
-                                    express a number of findings or phenomena described in the
-                                    ANFStatement.topic "3 dot-and-blot hemorrhages " would be
-                                    "30766002 | Quantitative (qualifier value)".</para>
-                                <para>If Measure is used to represent date or time:</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Date/time using Unix Epoch time: [762636008] Duration,
-                                            [257997001] Seconds</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Duration using Unix Epoch time start time and end
-                                            time: [762636008] Duration, [257997001] Seconds</para>
-                                    </listitem>
-                                </itemizedlist>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
                                 <para><emphasis role="bold">resolution</emphasis>
                                 </para>
                                 <para>decimal-primitive</para>
@@ -923,6 +890,44 @@
                                     }.<?oxy_comment_end?></para>
                             </entry>
                         </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">semantic</emphasis>
+                                    LogicalExpression</para>
+                            </entry>
+                            <entry>
+                                <para>[1...1]</para>
+                            </entry>
+                            <entry>
+                                <para>Measure semantic represents a unit of measure or scale
+                                    specified by the interval values. It is described using a
+                                    logical expression using standard-based terminology (i.e. SNOMED
+                                    CT). </para>
+                                <para>For systolic blood pressure, the unit of measure is
+                                    millimeters of mercury, and thus the measure semantic is a
+                                    SNOMED CT concept: 259018001 |Millimeter of mercury (qualifier
+                                    value).</para>
+                                <para>For blood glucose measurement daily for 2 weeks, the measure
+                                    semantic would be “258705008 |week (qualifier value)”.</para>
+                                <para>For quantity/count measure values, the measure semantic to
+                                    express a number of findings or phenomena described in the
+                                    ANFStatement.topic "3 dot-and-blot hemorrhages " would be
+                                    "30766002 | Quantitative (qualifier value)".</para>
+                                <para>If Measure is used to represent date or time:</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Date/time using Unix Epoch time: [762636008] Duration,
+                                            [257997001] Seconds</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Duration using Unix Epoch time start time and end
+                                            time: [762636008] Duration, [257997001] Seconds</para>
+                                    </listitem>
+                                </itemizedlist>
+                                <para/>
+                            </entry>
+                        </row>
+                        
                     </tbody>
                 </tgroup>
             </informaltable>
