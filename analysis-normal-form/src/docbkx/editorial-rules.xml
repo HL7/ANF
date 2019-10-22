@@ -3,7 +3,14 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
 	<title>Editorial Rules</title>
-
+<?oxy_comment_start author="Ioana" timestamp="20191020T152822-0400" comment="Comment #50"?>
+    <para>set of rules that define what it means for a clinical statement to be in Analysis Normal
+        Form, but as far as I could tell, this is never explicitly stated. Consider making this a
+        more explicit aspect of the specification.<?oxy_comment_end?></para>
+    <para>The rules are provide criteria for disambiguating and removing redundancy between
+        t<?oxy_comment_start author="Ioana" timestamp="20191020T162815-0400" comment="Comment #51 - proposed classification by type of redundancy/ambiguity"?>opic
+        versus result, performance versus request, structured versus narrative:
+        <?oxy_comment_end?></para>
 	<section>
 	    <title>General Editorial Rules</title>
         <para>The most important editorial rule for ANF statements is to first decide whether
@@ -15,15 +22,21 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-performanceRequest-content">
                 <listitem>
-                    <para>ANF Statements must be either a Performance of an action or a Request for an action.
-                    </para>
+                    <para>This rule mandates that  an ANF Statement must describe either the
+                            <emphasis>performance of an action</emphasis> or the <emphasis>request
+                            for an action</emphasis>. </para>
                     <itemizedlist>
                         <listitem>
-                            <para>A Performance may include the passive observation of a phenomenon related to patients and their health status or family history, and may also include active interventions, such as providing education or administering medications or documenting that a patient is participating in exercise to improve their overall health status.
+                            <para>A Performance may include the passive observation of a phenomenon
+                                related to patients and their health status or family history, and
+                                may also include active interventions, such as providing education
+                                or administering medications or documenting that a patient is
+                                participating in exercise to improve their overall health status.
                             </para>
                         </listitem>
                         <listitem>
-                            <para>A Request may include requests for clinical testing, active interventions, future goals, or consultation with other providers.
+                            <para>A Request may include requests for clinical testing, active
+                                interventions, future goals, or consultation with other providers.
                             </para>
                         </listitem>
                     </itemizedlist>
@@ -78,8 +91,8 @@
     <editorial-rule xml:id="anf-editorialrule-topicsAreActions" xreflabel="Topics are always an action">
         <title>Topics are always an action</title>                    
         <mathphrase>
-        	<itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
-        		<listitem>
+            <itemizedlist xml:id="anf-editorialrule-topicsAreActions-content">
+                <listitem>
                     <para>The particulars of how topics—and other statement fields—are modeled
                         <?oxy_comment_start author="Ioana" timestamp="20190806T115233-0400" comment="Update: &quot;is&quot; to &quot;as&quot;  based on technical writer&apos;s review." flag="done"?>as<?oxy_comment_end?>
                         a Terminology Layer concern, not a Statement Layer concern. The Statement
@@ -108,22 +121,23 @@
                         attributes in the terminology model, including Method, Procedure site -
                         Direct, (if appropriate) Laterality, and Using device. </para>
                 </listitem>
-        		<listitem>
-					<para>Medication administrations will use an Administration of substance concept to represent
-                        the topic. All Administration of substance concepts will be refined with the
-                        substance, dose form and strength being requested. If Route of
-                        administration exists, then it will also be added. </para>
-				</listitem>
-				<listitem>
-					<para>Laboratory tests will use a Laboratory Procedure concept to represent the topic. These
-                        concepts can be further refined. </para>
-				</listitem>
-				<listitem>
-					<para>Imaging Procedures will use an Imaging Procedure concept to represent the topic. These
-                        concepts will be further refined with a Method, Procedure site and (if
-                        appropriate) a laterality for those sites that are lateralizable. </para>
-				</listitem>
-			</itemizedlist>
+                <listitem>
+                    <para>Medication administrations will use an Administration of substance concept
+                        to represent the topic. All Administration of substance concepts will be
+                        refined with the substance, dose form and strength being requested. If Route
+                        of administration exists, then it will also be added. </para>
+                </listitem>
+                <listitem>
+                    <para>Laboratory tests will use a Laboratory Procedure concept to represent the
+                        topic. These concepts can be further refined. </para>
+                </listitem>
+                <listitem>
+                    <para>Imaging Procedures will use an Imaging Procedure concept to represent the
+                        topic. These concepts will be further refined with a Method, Procedure site
+                        and (if appropriate) a laterality for those sites that are lateralizable.
+                    </para>
+                </listitem>
+            </itemizedlist>
         </mathphrase>
     </editorial-rule>
         <editorial-rule xml:id="anf-editorialrule-prerequisites" xreflabel="Prerequisites must be separated from the topic">
@@ -181,7 +195,8 @@
                 </listitem>
                 <listitem>
                     <para>A technique is a device used, a method applied, or a temporary state in
-                        which the patient was actively placed during performance of the action. </para>
+                        which the patient was actively placed during performance of the action.
+                    </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
@@ -251,31 +266,31 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-status-content">
                 <listitem>
-                	<para>The status of a Performance of action can be specified with concepts such as
-                        (on hold, needed, rejected, etc). </para>
+                    <para>The status of a Performance of action can be specified with concepts such
+                        as (on hold, needed, rejected, etc). </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
     </editorial-rule>
-
-    <editorial-rule xml:id="anf-editorialrule-healthRisk" xreflabel="HealthRisk indicates the clinical risk of the result">
-        <title>healthRisk indicates the clinical risk of the result</title>                    
+    <editorial-rule xml:id="anf-editorialrule-healthRisk"
+        xreflabel="HealthRisk indicates the clinical risk of the result">
+        <title>healthRisk indicates the clinical risk of the result</title>
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-healthRisk-content">
                 <listitem>
-                	<para>In PerformanceCircumstance, healthRisk is used to flag a result with coded
+                    <para>In PerformanceCircumstance, healthRisk is used to flag a result with coded
                         values such as 'low', 'normal', high', and 'critical'. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
     </editorial-rule>
-
-    <editorial-rule xml:id="anf-editorialrule-normalRange" xreflabel="Normal Range can be specified for a result">
-        <title>reference can be specified for a result</title>                    
+    <editorial-rule xml:id="anf-editorialrule-normalRange"
+        xreflabel="Normal Range can be specified for a result">
+        <title>reference can be specified for a result</title>
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                 <listitem>
-                	<para>In PerformanceCircumstance, reference is the interval of values that are
+                    <para>In PerformanceCircumstance, reference is the interval of values that are
                         normal for the observation/finding described by the "topic" for this
                         "subject. It refers to "normal" for the patient/subject with these
                         conditions.</para>
@@ -292,28 +307,27 @@
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-priority-content">
                 <listitem>
-                	<para>Priority is used to represent the priority for which a request is to be
+                    <para>Priority is used to represent the priority for which a request is to be
                         carried out. By default a Request will be considered "routine" unless
                         otherwise specified. </para>
                 </listitem>
             </itemizedlist>
         </mathphrase>
     </editorial-rule>
-
-    <editorial-rule xml:id="anf-editorialrule-repetition" xreflabel="Repetition is used to request multiple occurences of a topic">
+    <editorial-rule xml:id="anf-editorialrule-repetition"
+        xreflabel="Repetition is used to request multiple occurences of a topic">
         <title>Repetition is used to request multiple occurrences of the thing described in the
-            topic</title>                    
+            topic</title>
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-repetition-content">
                 <listitem>
-                	<para>Repetition is used to represent when an action is requested for more than a
-                        single occurrence. </para>
+                    <para>Repetition is used to represent when an action is requested for more than
+                        a single occurrence. </para>
                 </listitem>
                 <listitem>
                     <para>Repetition is an optional component for a RequestCircumstance and contains
                         five Measures that are used to further define the parameters of the
                         Repetition: </para>
-
                     <itemizedlist>
                         <listitem>
                             <para><emphasis>periodDuration:</emphasis> This required field is used
@@ -322,9 +336,9 @@
                                 weeks</para>
                         </listitem>
                         <listitem>
-                            <para><emphasis>periodStart:</emphasis> This required field is used to represent
-                                when a repeated action should begin. If it is not specified, a default value
-                                of [0,inf) will be used. e.g. NOW</para>
+                            <para><emphasis>periodStart:</emphasis> This required field is used to
+                                represent when a repeated action should begin. If it is not
+                                specified, a default value of [0,inf) will be used. e.g. NOW</para>
                         </listitem>
                         <listitem>
                             <para><emphasis>eventSeparation:</emphasis> This required field is used
@@ -342,14 +356,13 @@
                                 is used to represent how long every action should last. </para>
                         </listitem>
                     </itemizedlist>
-
                 </listitem>
             </itemizedlist>
         </mathphrase>
     </editorial-rule>
-
-    <editorial-rule xml:id="anf-editorialrule-requestedResult" xreflabel="A desired result can be specified in a request">
-        <title>A desired result can be specified in a request</title>                    
+    <editorial-rule xml:id="anf-editorialrule-requestedResult"
+        xreflabel="A desired result can be specified in a request">
+        <title>A desired result can be specified in a request</title>
         <mathphrase>
             <itemizedlist xml:id="anf-editorialrule-requestedResult-content">
                 <listitem>
@@ -361,7 +374,7 @@
                         lowerBound is specified with the correct Measure.semantic. </para>
                 </listitem>
                 <listitem>
-                	<para>If a requestedResult is not specified in the request, an upperBound and
+                    <para>If a requestedResult is not specified in the request, an upperBound and
                         lowerBound of 1 is used with a Measure.semantic of ISO 8601 after statement
                         time. </para>
                 </listitem>

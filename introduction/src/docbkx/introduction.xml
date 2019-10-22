@@ -18,12 +18,12 @@
     <?oxy_comment_start author="Ioana" timestamp="20190723T000019-0400" comment="Moved from previous section and removed redundant reference/bibliography, reworded" flag="done"?>Deployment
     of EHR systems is nearly ubiquitous in the US and there is increasing opportunity to leverage
     standards-based clinical statements<!--a substantial number of extant EHR mapped data sets--> to
-    improve the health of the population (or citizenry) through quality measures, case reporting, and decision support. The
-    ability to measure and improve outcomes relies on consistent, high-quality data that was
-    aggregated from a variety of systems. Analysis using normal form allows HROs to
-    <?oxy_comment_end?>derive added knowledge from data and reach high levels and safety. <link
-      linkend="bib2">[2]</link> A <emphasis>standard</emphasis> normal form can help replicate HROs
-    across our industry.</para>
+    improve the health of the population (or citizenry) through quality measures, case reporting,
+    and decision support. The ability to measure and improve outcomes relies on consistent,
+    high-quality data that was aggregated from a variety of systems. Analysis using normal form
+    allows HROs to <?oxy_comment_end?>derive added knowledge from data and reach high levels and
+    safety. <link linkend="bib2">[2]</link> A <emphasis>standard</emphasis> normal form can help
+    replicate HROs across our industry.</para>
   <para>In this document, we present <?oxy_comment_start author="Ioana" timestamp="20190722T235418-0400" comment="We should reserve the keyword &quot;normal&quot; for &quot;ANF&quot; - other clinical statements are either strcutured or standard-based - ANF should be the &quot;normal&quot; representation - the result of normalization of CIFs and other standard-based clinical satetement." flag="done"?>
     <!--normal forms--><?oxy_comment_end?> background on other logical
       <?oxy_comment_start author="rcholan" timestamp="20190730T082039-0400" comment="glossary HL7" flag="done"?><glossterm
@@ -32,13 +32,14 @@
       baseform="International Organization for Standardization">ISO</glossterm><?oxy_comment_end?>
     clinical statement models, and focus on the need for—and logical specification of—an <glossterm
       baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm>.
-    <?oxy_comment_start author="Ioana" timestamp="20190722T235956-0400" comment="Expanded this section." flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T085644-0700" comment="Insert introduction of URU here (Understandable, Reproducible, and Useful. " flag="done" mid="5"?>ANF
+    <?oxy_comment_start author="Ioana" timestamp="20190722T235956-0400" comment="Expanded this section." flag="done"?><?oxy_comment_start author="kec" timestamp="20190721T085644-0700" comment="Insert introduction of URU here (Understandable, Reproducible, and Useful. " flag="done" mid="5"?><?oxy_comment_start author="Ioana" timestamp="20191020T132239-0400" comment="Comment #1" mid="6"?>ANF
     is a <emphasis role="bold">normal</emphasis>
     <emphasis role="bold">form</emphasis> intended to safely and reliably support data analysis that
     can be used to aggregate data created using any standard or non-standard input form or exchange
     mechanism.<?oxy_comment_end?> The ANF Reference Model, is a <glossterm baseform="Logical Model"
-      >logical model</glossterm> and part of the <glossterm>CIMI</glossterm> library of
-    models.</para><?oxy_comment_end mid="5"?>
+      >logical model</glossterm>  that describe a standard normal form for clinical statements and
+    it belongs to  <glossterm>CIMI</glossterm> library of logical
+    models.<?oxy_comment_end mid="6"?></para><?oxy_comment_end mid="5"?>
   <?oxy_comment_start author="Ioana" timestamp="20190722T224830-0400" comment="Moved the URU references fron SoC section and expanded how URU is embodied by ANF." flag="done"?>
   <para>ANF is a model for clinical statements used in analysis that meet the following criteria:
         <emphasis><glossterm baseform="Understandable, Reproducible, Useful">Understandable,
@@ -148,12 +149,14 @@
                   <para>on the left side</para>
                 </listitem>
                 <listitem>
-                  <para>the micturition context is left empty/unknown<footnote><para>Studies have shown that systolic blood pressure measurements could increase 10 to 15mmHg with
-                        a full bladder. Micturition, the process of emptying the bladder, is
-                        therefore a data element that can be recorded with some Clinical Input
-                        Forms. <link linkend="bibA">[6]</link><link linkend="bibB">[7]</link><link
-                          linkend="bibC">[8]</link>
-                      </para></footnote></para>
+                  <para>the micturition context is left empty/unknown<footnote>
+                      <para>Studies have shown that systolic blood pressure measurements could
+                        increase 10 to 15mmHg with a full bladder. Micturition, the process of
+                        emptying the bladder, is therefore a data element that can be recorded with
+                        some Clinical Input Forms. <link linkend="bibA">[6]</link><link
+                          linkend="bibB">[7]</link><link linkend="bibC">[8]</link>
+                      </para>
+                    </footnote></para>
                 </listitem>
               </itemizedlist>
             </para>
@@ -279,15 +282,15 @@
         multiple care providers, health enterprises, and standards-based Healthcare Information
         Technology (HIT) systems. ANF does not define the terminology specification but relies on
           <glossterm baseform="Terminology Knowledge">terminology knowledge </glossterm> to specify
-        the meaning of clinical statements. ANF-coded data may use single codes, as well as any
+        the meaning of clinical statements. ANF-based data may use single codes, as well as any
         legal terminology expression defined within the terminology layer of the <link
           linkend="SoC_Section">architecture</link>.</para>
       <para>ANF
         supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         pre-coordinated concepts and
-          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="22"?><glossterm
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="23"?><glossterm
           baseform="Post-coordinated concept"
-        >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="22"?> terminology
+        >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="23"?> terminology
         expressions to provide greater content coverage than can be achieved by relying only on
           <glossterm baseform="Pre-coordinated concept">pre-coordinated concepts.</glossterm>
         Post-coordinated compositional terminologies are more expressive and can achieve better
@@ -593,7 +596,7 @@ Remove the definition from the figure, and link to glossary where appropriate. "
                   </listitem>
                 </itemizedlist>
                 <para><emphasis>In the case of an observation, its
-                    <?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." flag="done"?><?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?" flag="done" mid="55"?>mood<?oxy_comment_end?><?oxy_comment_end mid="55"?>
+                    <?oxy_comment_start author="Ioana" timestamp="20190716T011135-0400" comment="&quot;mood&quot; is a modifier in HL7 V3 -- this is a direct quote of the V3 Clinical Statement." flag="done"?><?oxy_comment_start author="kec" timestamp="20190708T104220-0700" comment="If we *must* use mood here, we need to give a definition of mood... Maybe a glossary entry. Do we have an abbreviated glossary and a glossary? Or?" flag="done" mid="50"?>mood<?oxy_comment_end?><?oxy_comment_end mid="50"?>
                     and presence, absence or value</emphasis></para>
                 <para><emphasis>In the case of a procedure, its mood and status</emphasis></para>
                 <para><emphasis>This clarity may be achieved by:</emphasis></para>
@@ -648,10 +651,10 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         Terminology Knowledge and provides a separate model for each type of statement, organized
         into a comprehensive library.</para>
       <para>For reader convenience,
-        <?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="55"?>CIMI
+        <?oxy_comment_start author="Ioana" timestamp="20190724T005719-0400" comment="Reference the chapter" id="drn_chr_43b"?><?oxy_comment_start author="rcholan" timestamp="20190730T121953-0400" comment="Kyle, can you please hyperlink this to clinical-input-form.xml" parentID="drn_chr_43b" mid="54"?>CIMI
         clinical statements are further explained in an appendix of this document <link
           linkend="clinical-input-form">(See Current CIMI Modeling
-        Efforts).</link><?oxy_comment_end?><?oxy_comment_end mid="55"?><!--For example, CIMI Clinical
+        Efforts).</link><?oxy_comment_end?><?oxy_comment_end mid="54"?><!--For example, CIMI Clinical
         Statement can be used to represent the following statements made about a patient. This can
         be the statement of a condition being present, a request for a procedure to be done, the
         results of lab tests or the patient’s family history of cancer.-->

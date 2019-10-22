@@ -456,7 +456,15 @@
                                 <para>[1...1]</para>
                             </entry>
                             <entry>
-                                <para>This data element specifies the measurable result. </para>
+                                <para><procedure>
+                                        <step>
+                                            <para/>
+                                        </step>
+                                    </procedure><?oxy_comment_start author="Ioana" timestamp="20191020T163227-0400" comment="Comment #60"?>This
+                                    data element specifies the measurable result; it may specify
+                                    that something must be completed (e.g. how many sessions of
+                                    counseling, how many refills, etc.) are requested or that
+                                    something be done. <?oxy_comment_end?></para>
                                 <para/>
                             </entry>
                         </row>
@@ -557,9 +565,18 @@
 
                                     <para>[0...1]</para>
                                 </entry>
-                                <entry>This optional data element is used to flag a result with
-                                coded values such as 'low', 'normal', high', and 'critical'.
-                                </entry>
+                                <entry>
+                                <para>This optional data element is used to flag a result with coded
+                                    values to describe the health risk associated with result of the
+                                    ANF statement such as 'low', 'normal', high', 'critically low',
+                                    or 'critically high'. </para>
+                                <para><emphasis role="bold">Note</emphasis>: this data element is
+                                    not equivalent with an <emphasis role="bold"
+                                        >interpretation</emphasis>. Interpretations of clinical
+                                    statements are supposed to represented as a related ANF
+                                    statements (e.g. "hypertensive disorder" statements -
+                                    interpretation of a 'high' systolic blood pressure).</para>
+                            </entry>
                             </row>
                             <row>
                                 <entry>
@@ -659,7 +676,7 @@
                 that the beginning and end points of an interval are the same value, the meaning is
                 that the value of the phenomenon is exactly that value.</para>
             <para><?oxy_comment_start author="Ioana" timestamp="20190804T133858-0400" comment="updated to provide an example that uses &quot;n&quot; - a generic numeric value"?>In
-                the case that the lower and upper bound of an measure are the same number, <emphasis
+                the case that the lower and upper bound of a measure are the same number, <emphasis
                     role="bold"><emphasis role="italic">n</emphasis></emphasis>, the meaning is that
                 the value of the phenomenon is exactly <emphasis role="bold"><emphasis role="italic"
                         >n</emphasis></emphasis>.</para>
@@ -694,19 +711,19 @@
             <para>Any interval value that includes only the number 0, itself, denotes the value
                 "absent". Any interval value that includes both the number 0 and at least one number
                 > 0 denotes the values "indeterminate". Lastly, there are two interval values that
-                explicitly denote "present" and "absent", respectively. These value may be assigned
+                explicitly denote "present" and "absent", respectively. These values may be assigned
                 to phenomena that would not otherwise take on a numeric value (such as
                 "nausea"):</para>
             <itemizedlist>
                 <listitem>
                     <para role="italic"
-                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added"?>Nausea
-                        value = (0,INF) : <emphasis role="bold">present</emphasis> (greater than
-                        0)</para>
+                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133639-0400" comment="added" flag="done"?>Nausea
+                        value = (0,INF) : <emphasis role="bold">present</emphasis> (an open interval
+                        that allows both presence or absence)</para>
                 </listitem>
                 <listitem>
                     <para>Nausea value = [0, INF): <emphasis role="bold">indeterminate</emphasis>
-                        (greater than or equal to 0)</para>
+                        (an open interval that allows both presence or absence)</para>
                 </listitem>
             </itemizedlist>
             <itemizedlist>
@@ -719,8 +736,8 @@
                             xlink:href="https://standards.ieee.org/standard/754-2019.html"> IEEE 754
                             standard for Floating Point Numbers</link>. </para>
                     <note>
-                        <para>A Java <emphasis role="bold">float</emphasis> number  uses 32 bits to
-                            represent the sign, exponent, and mantissa consistent with  <link
+                        <para>A Java <emphasis role="bold">float</emphasis> number uses 32 bits to
+                            represent the sign, exponent, and mantissa consistent with <link
                                 xlink:href="https://standards.ieee.org/standard/754-2019.html">IEEE
                                 754:1985</link>. The values <emphasis role="bold">+infinity
                             </emphasis>and -<emphasis role="bold">infinity</emphasis> are denoted
@@ -809,43 +826,6 @@
                         </row>
                         <row>
                             <entry>
-                                <para><emphasis role="bold">semantic</emphasis>
-                                    LogicalExpression</para>
-                            </entry>
-                            <entry>
-                                <para>[1...1]</para>
-                            </entry>
-                            <entry>
-                                <para>Measure semantic represents a unit of measure or scale
-                                    specified by the interval values. It is described using a
-                                    logical expression using standard-based terminology (i.e. SNOMED
-                                    CT). </para>
-                                <para>For systolic blood pressure, the unit of measure is
-                                    millimeters of mercury, and thus the measure semantic is a
-                                    SNOMED CT concept: 259018001 |Millimeter of mercury (qualifier
-                                    value).</para>
-                                <para>For blood glucose measurement daily for 2 weeks, the measure
-                                    semantic would be “258705008 |week (qualifier value)”.</para>
-                                <para>For quantity/count measure values, the measure semantic to
-                                    express a number of findings or phenomena described in the
-                                    ANFStatement.topic "3 dot-and-blot hemorrhages " would be
-                                    "30766002 | Quantitative (qualifier value)".</para>
-                                <para>If Measure is used to represent date or time:</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <para>Date/time using Unix Epoch time: [762636008] Duration,
-                                            [257997001] Seconds</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Duration using Unix Epoch time start time and end
-                                            time: [762636008] Duration, [257997001] Seconds</para>
-                                    </listitem>
-                                </itemizedlist>
-                                <para/>
-                            </entry>
-                        </row>
-                        <row>
-                            <entry>
                                 <para><emphasis role="bold">resolution</emphasis>
                                 </para>
                                 <para>decimal-primitive</para>
@@ -910,6 +890,44 @@
                                     }.<?oxy_comment_end?></para>
                             </entry>
                         </row>
+                        <row>
+                            <entry>
+                                <para><emphasis role="bold">semantic</emphasis>
+                                    LogicalExpression</para>
+                            </entry>
+                            <entry>
+                                <para>[1...1]</para>
+                            </entry>
+                            <entry>
+                                <para>Measure semantic represents a unit of measure or scale
+                                    specified by the interval values. It is described using a
+                                    logical expression using standard-based terminology (i.e. SNOMED
+                                    CT). </para>
+                                <para>For systolic blood pressure, the unit of measure is
+                                    millimeters of mercury, and thus the measure semantic is a
+                                    SNOMED CT concept: 259018001 |Millimeter of mercury (qualifier
+                                    value).</para>
+                                <para>For blood glucose measurement daily for 2 weeks, the measure
+                                    semantic would be “258705008 |week (qualifier value)”.</para>
+                                <para>For quantity/count measure values, the measure semantic to
+                                    express a number of findings or phenomena described in the
+                                    ANFStatement.topic "3 dot-and-blot hemorrhages " would be
+                                    "30766002 | Quantitative (qualifier value)".</para>
+                                <para>If Measure is used to represent date or time:</para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>Date/time using Unix Epoch time: [762636008] Duration,
+                                            [257997001] Seconds</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Duration using Unix Epoch time start time and end
+                                            time: [762636008] Duration, [257997001] Seconds</para>
+                                    </listitem>
+                                </itemizedlist>
+                                <para/>
+                            </entry>
+                        </row>
+                        
                     </tbody>
                 </tgroup>
             </informaltable>
