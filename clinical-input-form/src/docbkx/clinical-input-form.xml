@@ -7,7 +7,13 @@
 
         <para>This chapter describes the CIMI clinical statement model. This model uses a
         traditional structured data tree approach which can then be compared and contrasted with the
-        ANF model. </para>
+        ANF model. <note>
+            <?oxy_comment_start author="Ioana" timestamp="20191023T143537-0400" comment="Comment #60"?>
+            <para>The most recent CIMI FHIR implementation artifacts are available qt: <link
+                    xlink:href="http://models.opencimi.org/ig/"> http://models.opencimi.org/ig/
+                </link> under the heading "<emphasis>Reviewed</emphasis>".
+                <?oxy_comment_end?></para>
+        </note></para>
 
         <para>The central focus of the CIMI Reference Model is the CIMI Clinical Statement. A CIMI
         Clinical Statement represents structured electronic communication made about a patient
