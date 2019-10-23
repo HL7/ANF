@@ -6,7 +6,8 @@
     <title>Examples of Complex ANF Statements</title>
     <section>
         <title>Wound Assessment Panel</title>
-        <informaltable>
+        <table>
+            <title>Wound Assessment Panel Example</title>
             <tgroup cols="8">
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
@@ -549,7 +550,7 @@
                     </row>
                 </tbody>
             </tgroup>
-        </informaltable>
+        </table>
         <para> </para>
     </section>
 </section>
