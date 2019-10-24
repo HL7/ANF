@@ -14,7 +14,7 @@
                 <colspec colnum="3" colname="col3" colwidth="23"/>
                 <colspec colnum="4" colname="col4" colwidth="34"/>
                 <colspec colnum="5" colname="col5" colwidth="44"/>
-                <colspec colnum="6" colname="col6" colwidth="26"/>
+                <colspec colnum="6" colname="col6" colwidth="27"/>
                 <colspec colnum="7" colname="col7" colwidth="22"/>
                 <colspec colnum="8" colname="col8" colwidth="29"/>
                 <tbody>
@@ -22,12 +22,12 @@
                         <entry><emphasis role="bold">LOINC Code</emphasis></entry>
                         <entry><emphasis role="bold">LOINC Name</emphasis></entry>
                         <entry><emphasis role="bold">Value</emphasis></entry>
-                        <entry><emphasis role="bold">ANFStatement.id</emphasis></entry>
-                        <entry><emphasis role="bold">ANFStatement.topic</emphasis></entry>
-                        <entry><emphasis role="bold"
-                            >ANFStatement.circumstance.result</emphasis></entry>
-                        <entry><emphasis role="bold">AssociatedStatement.id</emphasis></entry>
-                        <entry><emphasis role="bold">AssociatedStatement.semantic</emphasis></entry>
+                        <entry><emphasis role="bold">ANFStatement id</emphasis></entry>
+                        <entry><emphasis role="bold">ANFStatement topic</emphasis></entry>
+                        <entry><emphasis role="bold">ANFStatement
+                            circumstance.result</emphasis></entry>
+                        <entry><emphasis role="bold">AssociatedStatement id</emphasis></entry>
+                        <entry><emphasis role="bold">AssociatedStatement semantic</emphasis></entry>
                     </row>
                     <row>
                         <entry>39135-9</entry>
@@ -43,19 +43,19 @@
                         <entry>81666-0</entry>
                         <entry>Wound number [Identifier]</entry>
                         <entry>1</entry>
-                        <entry>3a2fde00-222f-45c8-835e-220926c712b4</entry>
+                        <entry>Statement 2</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Wound number]</para>
                         </entry>
                         <entry>[1,1] Wound instance</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72300-7</entry>
                         <entry>Wound type</entry>
                         <entry>Pressure ulcer</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Pressure ulcer]- (Causative agent) [Device]- (Finding site) [Posterior Hip]- (Laterality) [Right]</para>
                         </entry>
@@ -67,32 +67,31 @@
                         <entry>89250-5</entry>
                         <entry>Device or anatomic structure visible in wound</entry>
                         <entry>Subcutaneous tissue</entry>
-                        <entry>f45b6d85-8ebc-482b-8795-7a9f457e219d</entry>
+                        <entry>Statement 3</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Anatomic structure visible in Wound] (Finding site) [Subcutaneous tissue]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>89251-3</entry>
                         <entry>Condition present on admission</entry>
                         <entry>Not present on admission</entry>
-                        <entry>f0fe75a1-5ac0-462e-b77f-7cd5a2a7f092</entry>
+                        <entry>Statement 4</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Condition presence on admission]</para>
                         </entry>
                         <entry>[0,0] Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>11373-8</entry>
                         <entry>Injury cause</entry>
                         <entry>Device related</entry>
-                        <entry namest="col4" nameend="col8">part of Statement
-                            57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry namest="col4" nameend="col8">part of Statement 1</entry>
                     </row>
                     <row>
                         <entry>88878-4</entry>
@@ -101,8 +100,7 @@
                         <entry>Separate Statement (if value is filled in)</entry>
                         <entry> -</entry>
                         <entry>- </entry>
-                        <entry>linked to Statement 57ccc7a3-b227-4982-90fc-cba0ae6c99e3 (if value is
-                            filled in)</entry>
+                        <entry>linked to Statement 1 (if value is filled in)</entry>
                         <entry> -</entry>
                     </row>
                     <row>
@@ -112,20 +110,19 @@
                         <entry>Separate Statement (if value is filled in)</entry>
                         <entry> -</entry>
                         <entry>- </entry>
-                        <entry>linked to Statement 57ccc7a3-b227-4982-90fc-cba0ae6c99e3 (if value is
-                            filled in)</entry>
+                        <entry>linked to Statement 1 (if value is filled in)</entry>
                         <entry> -</entry>
                     </row>
                     <row>
                         <entry>89252-1</entry>
                         <entry>Episode of Wound</entry>
                         <entry>Initial</entry>
-                        <entry>36aa0e39-24f9-4b9e-95af-c1bc9c17f73c</entry>
+                        <entry>Statement 5</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Initial episode of care]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -135,20 +132,19 @@
                         <entry>Separate Statement (if value is filled in)</entry>
                         <entry> -</entry>
                         <entry> -</entry>
-                        <entry>linked to Statement 57ccc7a3-b227-4982-90fc-cba0ae6c99e3 (if value is
-                            filled in)</entry>
+                        <entry>linked to Statement 1 (if value is filled in)</entry>
                         <entry> -</entry>
                     </row>
                     <row>
                         <entry>85585-8</entry>
                         <entry>Date of Onset of Impairment</entry>
                         <entry>9/16/2019</entry>
-                        <entry>7356d4ae-f8cc-4f90-9bd6-5d44eebbfb29</entry>
+                        <entry>Statement 6</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Date of Observation]</para>
                         </entry>
                         <entry>9/16/2019</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -165,45 +161,42 @@
                         <entry>39111-0</entry>
                         <entry>Body site</entry>
                         <entry>Hip</entry>
-                        <entry namest="col4" nameend="col8">part of Statement
-                            57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry namest="col4" nameend="col8">part of Statement 1</entry>
                     </row>
                     <row>
                         <entry>39112-8</entry>
                         <entry>Body location qualifier</entry>
                         <entry>Posterior</entry>
-                        <entry namest="col4" nameend="col8">part of Statement
-                            57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry namest="col4" nameend="col8">part of Statement 1</entry>
                     </row>
                     <row>
                         <entry>20228-3</entry>
                         <entry>Anatomic part Laterality</entry>
                         <entry>Right</entry>
-                        <entry namest="col4" nameend="col8">part of Statement
-                            57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry namest="col4" nameend="col8">part of Statement 1</entry>
                     </row>
                     <row>
                         <entry>72301-5</entry>
                         <entry>Description of Periwound</entry>
                         <entry>Moist</entry>
-                        <entry>9d1c7779-8ad9-4fcf-a237-6f2e87996da1</entry>
+                        <entry>Statement 7</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Moist periwound skin]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72527-5</entry>
                         <entry>Pressure ulcer stage NPUAP</entry>
                         <entry>Stage III</entry>
-                        <entry>93a87146-ad9e-49c2-a3fa-257ce3d4a690</entry>
+                        <entry>Statement 8</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Pressure ulcer stage 3]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -230,48 +223,48 @@
                         <entry>72371-8</entry>
                         <entry>Appearance of Wound base</entry>
                         <entry>Necrotic</entry>
-                        <entry>2a3dd6c2-f747-4e95-8ae9-a7decc525f78</entry>
+                        <entry>Statement 9</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Wound base finding]- (Associated Morphology) [Necrosis]</para>
                         </entry>
                         <entry>[1,inf] Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72370-0</entry>
                         <entry>Area of identified wound bed appearance/Area of wound</entry>
                         <entry>40%</entry>
-                        <entry>655458e0-6eda-40e4-a67c-91a76949d2af</entry>
+                        <entry>Statement 10</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Area of wound bed appearance]</para>
                         </entry>
                         <entry>[40,40] Percentage</entry>
-                        <entry>2a3dd6c2-f747-4e95-8ae9-a7decc525f78</entry>
+                        <entry>Statement 9</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>39132-6</entry>
                         <entry>Color of Wound base</entry>
                         <entry>Brown</entry>
-                        <entry>cf2a8a95-c933-4e01-840c-0cb7d615bea8</entry>
+                        <entry>Statement 11</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound base color]- (Has interpretation) [Brown]</para>
                         </entry>
                         <entry>[1,inf] Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>89255-4</entry>
                         <entry>Wound bed area identified by color/Area of wound bed</entry>
                         <entry>20%</entry>
-                        <entry>90e38d89-20cc-4acd-a24e-14af63b4fcc9</entry>
+                        <entry>Statement 12</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Area of wound color]</para>
                         </entry>
                         <entry>[20,20] Percentage</entry>
-                        <entry>cf2a8a95-c933-4e01-840c-0cb7d615bea8</entry>
+                        <entry>Statement 11</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -288,24 +281,24 @@
                         <entry>72304-9</entry>
                         <entry>Edge of wound description</entry>
                         <entry>Poorly defined</entry>
-                        <entry>d395443f-3133-4de6-9911-85b600fc9ee4</entry>
+                        <entry>Statement 13</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Wound edge finding]- (Interprets) [Wound edge]- (Has interpretation) [Poorly-defined]</para>
                         </entry>
                         <entry>[1,inf] Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>39133-4</entry>
                         <entry>Color of Wound edge</entry>
                         <entry>Red</entry>
-                        <entry>9226a2e5-a423-4219-beaa-a03774641daa</entry>
+                        <entry>Statement 14</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound edge color]- (Has interpretation) [Red]</para>
                         </entry>
                         <entry>[1,inf] Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -332,36 +325,36 @@
                         <entry>72298-3</entry>
                         <entry>Tunneling of Wound</entry>
                         <entry>Tunneling Present</entry>
-                        <entry>26e21f8e-d5ed-4bc2-a61c-acbc64b9516e</entry>
+                        <entry>Statement 15</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound tunneling]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72296-7</entry>
                         <entry>Tunneling [Length] of Wound</entry>
                         <entry>1 cm</entry>
-                        <entry>55abb030-7fbe-4937-b310-ab3b5ba7589d</entry>
+                        <entry>Statement 16</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Length of wound tunneling]</para>
                         </entry>
                         <entry>[1,1]Centimeters</entry>
-                        <entry>26e21f8e-d5ed-4bc2-a61c-acbc64b9516e</entry>
+                        <entry>Statement 15</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72297-5</entry>
                         <entry>Tunneling clock position of Wound</entry>
                         <entry>12 o'clock</entry>
-                        <entry>a08c46a8-b2d4-4737-b2f5-b2d1cc6807f8</entry>
+                        <entry>Statement 17</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of clock position of wound tunneling]</para>
                         </entry>
                         <entry>[12,12] O’clock</entry>
-                        <entry>26e21f8e-d5ed-4bc2-a61c-acbc64b9516e</entry>
+                        <entry>Statement 15</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -378,37 +371,37 @@
                         <entry>72295-9</entry>
                         <entry>Undermining of Wound</entry>
                         <entry>Undermining Present</entry>
-                        <entry>bc422ad4-7834-48f9-9e5b-c5a71f35f423</entry>
+                        <entry>Statement 18</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound undermining]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72293-4</entry>
                         <entry>Undermining [Length] of Wound</entry>
                         <entry>2 cm</entry>
-                        <entry>411e0d04-1979-47ed-9f2a-4e04ab66deb0</entry>
+                        <entry>Statement 19</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Length of wound undermining]</para>
                         </entry>
                         <entry>[2,2]Centimeters</entry>
-                        <entry>bc422ad4-7834-48f9-9e5b-c5a71f35f423</entry>
+                        <entry>Statement 18</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72294-2</entry>
                         <entry>Undermining clock position of Wound</entry>
                         <entry>6 o'clock</entry>
-                        <entry>6cc6508e-b593-41f5-b4aa-4aa76c54dc07</entry>
+                        <entry>Statement 20</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of clock position of wound
                                 undermining]</para>
                         </entry>
                         <entry>[6,6] O’clock</entry>
-                        <entry>bc422ad4-7834-48f9-9e5b-c5a71f35f423</entry>
+                        <entry>Statement 18</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -425,71 +418,71 @@
                         <entry>89259-6</entry>
                         <entry>Presence of wound exudate</entry>
                         <entry>wound exudate present</entry>
-                        <entry>6117aa6c-e402-480c-954c-c1928cf4c41d</entry>
+                        <entry>Statement 21</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Wound exudate finding]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>89260-4</entry>
                         <entry>Area of wound</entry>
                         <entry>20 cm</entry>
-                        <entry>c4934087-d124-4289-8912-0f5f583d6a52</entry>
+                        <entry>Statement 22</entry>
                         <entry><para>[Observation procedure]- (Has focus) [Finding of wound
                                 area]</para></entry>
                         <entry>[20,20] Centimeters</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>39116-9</entry>
                         <entry>Drainage amount of Wound</entry>
                         <entry>scant</entry>
-                        <entry>797d7c86-92d4-4e12-9146-9ced1cb4a9cc</entry>
+                        <entry>Statement 23</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of drainage amount of exudate]- (Has interpretation) [Scant]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>6117aa6c-e402-480c-954c-c1928cf4c41d</entry>
+                        <entry>Statement 21</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72288-4</entry>
                         <entry>Odor of Exudate from wound</entry>
                         <entry>No odor</entry>
-                        <entry>65b1c73b-7323-4fe6-9d52-75ccfc16b119</entry>
+                        <entry>Statement 24</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Wound exudate odor]</para>
                         </entry>
                         <entry>[0,0] Countable quantity</entry>
-                        <entry>6117aa6c-e402-480c-954c-c1928cf4c41d</entry>
+                        <entry>Statement 21</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72289-2</entry>
                         <entry>Color of Exudate from wound</entry>
                         <entry>yellow</entry>
-                        <entry>eeed15f6-598b-466c-8bb2-7e610b698a2c</entry>
+                        <entry>Statement 25</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of exudate color]- (Has interpretation) [Yellow]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>6117aa6c-e402-480c-954c-c1928cf4c41d</entry>
+                        <entry>Statement 21</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>72290-0</entry>
                         <entry>Appearance of Exudate from wound</entry>
                         <entry>Purulent Exudate</entry>
-                        <entry>ffb2eb18-f989-4990-b7de-66a0d3e48834</entry>
+                        <entry>Statement 26</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of appearance of exudate]- (Has interpretation) [Purulent]</para>
                         </entry>
                         <entry>[1,inf) Countable quantity</entry>
-                        <entry>6117aa6c-e402-480c-954c-c1928cf4c41d</entry>
+                        <entry>Statement 21</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
@@ -506,36 +499,36 @@
                         <entry>39125-0</entry>
                         <entry>Width of Wound</entry>
                         <entry>5 cm</entry>
-                        <entry>66754017-b2dd-4a0e-b208-c96c6f72b4cd</entry>
+                        <entry>Statement 27</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound width]</para>
                         </entry>
                         <entry>[5,5] Centimeters</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>39127-6</entry>
                         <entry>Depth of Wound</entry>
                         <entry>1 cm</entry>
-                        <entry>3c9c1016-be1c-46d3-9de4-e43dd470186d</entry>
+                        <entry>Statement 28</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound depth]</para>
                         </entry>
                         <entry>[1,1] Centimeters</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
                         <entry>39126-8</entry>
                         <entry>Length of Wound</entry>
                         <entry>4 cm</entry>
-                        <entry>037fae9c-f3c2-4caf-b818-43e983bda1dc</entry>
+                        <entry>Statement 29</entry>
                         <entry>
                             <para>[Observation procedure]- (Has focus) [Finding of wound length]</para>
                         </entry>
                         <entry>[4,4] Centimeters</entry>
-                        <entry>57ccc7a3-b227-4982-90fc-cba0ae6c99e3</entry>
+                        <entry>Statement 1</entry>
                         <entry>Associated observation</entry>
                     </row>
                     <row>
