@@ -660,6 +660,30 @@ Remove the definition from the figure, and link to glossary where appropriate. "
         results of lab tests or the patient’s family history of cancer.-->
       </para>
     </section>
+    <section><title>Related ISO Standards</title>
+      <para>ANF is intended for projects that aggregate clinical statements from a variety of
+        sources, independent of formalism or approach used by the source system. It normalizes
+        approaches and methodologies in use across the industry and provide a uniform representation
+        of data to enable analysis in a platform-independent view using context-free languages. ANF
+        underscore that both treatment and analysis of clinical statements require consistency not
+        only at the format level (e.g. CDA, FHIR, V2) but also the content model (i.e. an instance
+        of an ISO/TS 13972 DCM, CIMI model, etc.). Context-free languages offer a high level of
+        expressivity and formalization, so enabling the representation of any real-world artifact.
+        ANF can be applied to real world business systems using platform-specific representations
+        (e.g. FHIR profiles and resources, database schema definitions) Those representations may be
+        derived from the ANF Reference Model. Like other standards for defining and managing
+        clinical statements such as <link xlink:href="https://www.iso.org/standard/67868.html">ISO
+          13606 EHR Communication</link> or <link
+          xlink:href="https://www.iso.org/standard/62416.html">ISO 13972 Clinical Information
+          Models,</link> ANF may be extended by the <link
+          xlink:href="https://www.iso.org/standard/77337.html">ISO 23903 Interoperability and
+          Integration Reference Architecture</link> to enable the justification of correctness and
+        consistency of the content models and their relationships.</para>
+      <para>Different use cases
+      usually represent different contexts, frequently not reflected in the provided abstraction of
+      the models. However, the context impacts the semantics and therefore The ANF logical model
+      allows clinical statements to be associated/related to other statements to describe complex
+      clinical data. </para></section>
   </section>
   <section>
     <title>About this Document</title>

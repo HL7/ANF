@@ -53,6 +53,15 @@
       <xsl:call-template name="inline.charseq"/>
     </fo:inline>
   </xsl:template>
+  
+  <xsl:attribute-set name="table.properties">
+    <xsl:attribute name="background-color">
+      <xsl:choose>
+        <xsl:when test="@tabstyle='shaded'">#EEEEEE</xsl:when>
+        <xsl:otherwise>inherit</xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
+  </xsl:attribute-set>
 
   <xsl:template name="object.id">
     <xsl:param name="object" select="."/>

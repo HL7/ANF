@@ -17,10 +17,10 @@
         archetype). </para>
     <para>The ANF Reference Model describes the <emphasis role="bold">normal form
         </emphasis>proposed by ANF. Along with the <link
-            linkend="anf-editorialrule-performanceRequest">editorial rules</link> , the ANF
-        Reference Model describes how to reduce data redundancy to support analysis of aggregated
-        clinical statements. A clinical statement expressed in the ANF Reference Model is in
-        Analysis Normal Form if and only if it conforms to all the Editorial Rules defined by this
+            linkend="anf-editorialrule-performanceRequest">editorial rules</link>, the ANF Reference
+        Model describes how to reduce data redundancy to support analysis of aggregated clinical
+        statements. A clinical statement expressed in the ANF Reference Model is in Analysis Normal
+        Form if and only if it conforms to all the Editorial Rules defined by this
         specification.</para>
     <para><?oxy_comment_start author="Ioana" timestamp="20191020T161704-0400" comment="Comment #49"?>Similar
         to database schemas, clinical statements often include redundant information about the

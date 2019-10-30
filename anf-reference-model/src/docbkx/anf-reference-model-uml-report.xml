@@ -1092,7 +1092,7 @@
             <title>AssociatedStatement </title>
             <para>This class specifies how a statement may be associated with another statement.<note>
                     <para>Associated statements can be used to represent a complex model - see <link
-                            linkend="ANFStatement">Wound Assessment Panel</link>. </para>
+                            linkend="title_mrb_ht2_4jb">Wound Assessment</link> example.</para>
                 </note></para>
             <informaltable>
                 <tgroup cols="3">
