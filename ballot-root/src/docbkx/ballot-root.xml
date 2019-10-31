@@ -6,19 +6,22 @@
     <title>Intended Audience</title>
     <para><glossterm baseform="Analysis Normal Form">Analysis Normal Form (ANF)</glossterm> is
       intended for projects that aggregate clinical statements from a variety of sources,
-      independent of formalism or approach used by the source system. The users of ANF—and
-      subsequent implementation guidance—are developing applications that require determination if a
-      clinical fact or situation was observed to exist or happened, and they wish to ensure that
-      this determination is reliable and performed in accordance with the principles of patient
-      safety and high-reliability organizations. These applications may include clinical decision
+      independent of formalism or approach used by the source system. </para>
+    <para> The users of ANF are developing implementation guides, solutions, and applications that
+      require normalized clinical statements to establish that a clinical fact or situation was
+      observed to exist or happened, or that a particular procedure was requested. They wish to
+      ensure that this determination is reliable and performed in accordance with the principles of
+      patient safety and high-reliability organizations. ANF may be used for clinical decision
       support, reimbursement, public health reporting, outcomes research, and other types of data
       analysis. </para>
     <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other US
-      national, or international initiatives are all examples of efforts that can benefit from ANF as
-      they all depend on interoperable, reusable, and analysis-ready information that can improve
+      national, or international initiatives are all examples of efforts that can benefit from ANF
+      as they all depend on interoperable, reusable, and analysis-ready information that can improve
       outcomes, produce new therapies, and put into practice "precision medicine."</para>
   </preface>
-  <preface> <title>Acknowledgements</title><para> The project team would like to acknowledge the leadership and guidance from: </para>
+  <preface>
+    <title>Acknowledgements</title>
+    <para> The project team would like to acknowledge the leadership and guidance from: </para>
     <para>
       <itemizedlist>
         <listitem>
@@ -48,7 +51,6 @@
     <para>This Analysis Normal Form ballot received contributions and assistance from the following
       individuals: </para>
     <para>
-      
       <informaltable frame="none" rowsep="0" colsep="0">
         <tgroup cols="2" align="left">
           <colspec colname="c1" colnum="1" colwidth="1*"/>
@@ -72,27 +74,27 @@
                 <para>Andrew K. Sills<superscript>2</superscript></para>
                 <para>Walter Sujansky<superscript>5</superscript></para>
                 <para>Tim Williams<superscript>2</superscript></para>
-                
               </entry>
             </row>
           </tbody>
         </tgroup>
       </informaltable>
     </para>
-          <para> </para>
+    <para> </para>
     <para/>
     <para/>
     <para/>
     <para><superscript>1</superscript>Veterans Health Administration;
-      <superscript>2</superscript>Deloitte Consulting LLP;  <superscript>3</superscript>Book Zurman,
+      <superscript>2</superscript>Deloitte Consulting LLP; <superscript>3</superscript>Book Zurman,
       Inc; <superscript>4</superscript>HL7 CIMI Work Group; <superscript>5</superscript>Sujansky
       &amp; Associates, LLC </para>
     <para/>
     <para/>
-          <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics and Data Management Office. This work would not have
-      been possible without the support of Jonathan Nebeker and Steven Brown.</para>
-       
-    
+    <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics
+      and Data Management Office. This work would not have been possible without the support of
+      Jonathan Nebeker and Steven Brown.</para>
+
+
   </preface>
   <toc/>
 
@@ -100,7 +102,7 @@
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/abbreviated-glossary.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
+
   <!-- Introduction -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/introduction/introduction.xml"
@@ -116,7 +118,7 @@
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-clinical-statements/anf-clinical-statements.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-   <!-- Analysis Normal Form -->
+  <!-- Analysis Normal Form -->
   <xi:include
     href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/analysis-normal-form/analysis-normal-form.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -127,11 +129,13 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Precision -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/precision/precision.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Conclusion -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/conclusion/conclusion.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Acknowledgements -->
@@ -139,8 +143,9 @@
               xmlns:xi="http://www.w3.org/2001/XInclude"/>-->
 
   <!-- Complete Glossary -->
-  <xi:include href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/complete-glossary.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include
+    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/complete-glossary.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <!-- Bibliography -->
   <xi:include
@@ -150,17 +155,17 @@
   <part>
     <title>Appendices</title>
     <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/clinical-input-form/clinical-input-form.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/anf-cif-differences/differences-between-anf-and-cif.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/appendix.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
-    href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      href="../../target/extracted-dependencies/org.hl7.anf-ballot-submission/references/examples.xml"
+      xmlns:xi="http://www.w3.org/2001/XInclude"/>
   </part>
 
 

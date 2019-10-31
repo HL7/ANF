@@ -219,7 +219,7 @@
     <para><emphasis role="bold">Analysis Normal Form</emphasis> (ANF) is a logical model intended to
       represent a <emphasis role="bold">normalized</emphasis> view of aggregate clinical statements
       recorded during treatment for analysis, research, clinical decision support, and other
-      purposes. ANF can be used to represent any isosemantic clinical statements irrespective of how
+      purposes. ANF can be used to represent any isosemantic clinical statement irrespective of how
       the information was captured at its source (i.e. information systems or medical devices). ANF
       <?oxy_comment_start author="kec" timestamp="20190721T085712-0700" comment="can" flag="done"?>can<?oxy_comment_end?>
       be used in conjunction with other models intended to ensure that clinical information is
