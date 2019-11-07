@@ -288,7 +288,8 @@
           linkend="SoC_Section">architecture</link>.</para>
       <para>ANF supports<?oxy_comment_start author="kec" timestamp="20190721T123126-0700" comment="supports—but does not require—postcoordinated compositional terminologies" flag="done"?>
         <glossterm baseform="Pre-coordinated concept">pre-coordinated</glossterm> and
-          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="23"?><glossterm
+          <?oxy_comment_start author="rcholan" timestamp="20190730T110517-0400" comment="glossary" flag="done" mid="23"?>
+        <glossterm
           baseform="Post-coordinated concept"
         >post-coordinated</glossterm><?oxy_comment_end?><?oxy_comment_end mid="23"?> terminology
         expressions to provide greater content coverage than can be achieved by relying only on

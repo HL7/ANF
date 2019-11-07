@@ -88,7 +88,7 @@
                         <entry align="left"><para>116680003 |Is a|</para></entry>
                         <entry align="left"><para>271649006 [Systolic blood pressure]</para></entry>
                         <entry align="left"><para><emphasis role="bold">topic</emphasis></para></entry>
-                        <entry align="left"><para> 271649006 [Systolic blood pressure]</para></entry>
+                        <entry align="left"><para>363787002 |Observable entity| (Is a)  271649006 [Systolic blood pressure]</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> subject</para></entry>
@@ -211,7 +211,7 @@
                         <entry align="left"><para>368209003 [Right arm]</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic + |718497002 [Inherent location] 368209003 [Right arm]</para></entry>
+                        <entry align="left"><para>topic + (has) |718497002 [Inherent location] (is) 368209003 [Right arm]</para></entry>
                     </row>
                 </tbody>
             </tgroup>
@@ -331,7 +331,7 @@
                         <entry align="left"><para>371924009|Moderate to severe</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic + 371924009|Moderate to severe </para></entry>
+                        <entry align="left"><para>topic + (has) 371924009|Moderate to severe </para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>code</para></entry>
@@ -341,7 +341,7 @@
                         <entry align="left"><para>10001005 |Bacterial sepsis</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append] </para></entry>
-                        <entry align="left"><para>topic +  10001005 |Bacterial sepsis</para></entry>
+                        <entry align="left"><para>topic + (is) 10001005 |Bacterial sepsis</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>bodySite</para></entry>
@@ -350,7 +350,7 @@
                         <entry align="left"><para> 281158006 |Pulmonary vascular structure</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic + 363698007 |Finding site|+</para><para>281158006 |Pulmonary vascular structure</para></entry>
+                        <entry align="left"><para>topic +  363698007 |Finding site (is)</para><para>281158006 |Pulmonary vascular structure</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> subject</para></entry>

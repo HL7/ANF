@@ -17,16 +17,17 @@
         archetype). </para>
     <para>The ANF Reference Model describes the <emphasis role="bold">normal form
         </emphasis>proposed by ANF. Along with the <link
-            linkend="anf-editorialrule-performanceRequest">editorial rules</link>, the ANF Reference
+            linkend="anf-editorialrule-performanceRequest">editorial rules</link> the ANF Reference
         Model describes how to reduce data redundancy to support analysis of aggregated clinical
         statements. A clinical statement expressed in the ANF Reference Model is in Analysis Normal
         Form if and only if it conforms to all the Editorial Rules defined by this
         specification.</para>
-    <para><?oxy_comment_start author="Ioana" timestamp="20191020T161704-0400" comment="Comment #49"?>Similar
+    <para><?oxy_comment_start author="Ioana" timestamp="20191020T161704-0400" comment="Comment #49" flag="done"?>Similar
         to database schemas, clinical statements often include redundant information about the
-        topic, result, and circumstances of a action performed or requested. Often clinical
-        statements include redundant way to represent a request or performance. ANF provides a
-        target normal form along with rules/guidelines for normalization.</para><?oxy_comment_end?>
+        topic, result, and circumstances of an action performed or requested. Often clinical
+        statements include multiple ways to represent a request or performance. ANF provides a
+        target normal form along with rules/guidelines for normalization to make data available for
+        analysis.</para><?oxy_comment_end?>
     <!-- These sections are replaced by the autho-generated RM 
     <xi:include href="clinical-statement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
