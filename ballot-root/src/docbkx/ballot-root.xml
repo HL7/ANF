@@ -14,10 +14,11 @@
       patient safety and high-reliability organizations. ANF may be used for clinical decision
       support, reimbursement, public health reporting, outcomes research, and other types of data
       analysis. </para>
-    <para>The Learning EHR, 21st Century Cures, Patient-Centered Outcomes Research, and other US
-      national, or international initiatives are all examples of efforts that can benefit from ANF
-      as they all depend on interoperable, reusable, and analysis-ready information that can improve
-      outcomes, produce new therapies, and put into practice "precision medicine."</para>
+    <para>The Learning Health Systems, 21st Century Cures, Patient-Centered Outcomes Research, and
+      other US national, or international initiatives are all examples of efforts that can benefit
+      from ANF as they all depend on interoperable, reusable, and analysis-ready information that
+      can improve outcomes, produce new therapies, and put into practice "precision
+      medicine."</para>
   </preface>
   <preface>
     <title>Acknowledgements</title>
@@ -58,7 +59,7 @@
           <tbody>
             <row>
               <entry><para>&#x2003;&#x2003;&#x2003;Keith Campbell<superscript>1</superscript></para>
-                <para>&#x2003;&#x2003;&#x2003;Benson Chang<superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Benson Chang<superscript>2</superscript></para>
                 <para>&#x2003;&#x2003;&#x2003;Joey Coyle<superscript>3</superscript></para>
                 <para>&#x2003;&#x2003;&#x2003;Stephanie Klepacki<superscript>1</superscript></para>
                 <para>&#x2003;&#x2003;&#x2003;Ken Lord<superscript>3</superscript></para>

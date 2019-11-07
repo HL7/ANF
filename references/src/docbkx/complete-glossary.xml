@@ -42,15 +42,15 @@
                     customized content. Solor allows informaticists and developers to convert
                     user-supplied terminologies into a single model using open source software to
                     produce Solor content. For more information please see <link
-                        xlink:href="http://solor.io">http://solor.io</link>.</para>
+                        xlink:href="http://solor.io">solor.io</link>.</para>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Clinical-Statement">
         <glossterm>Clinical Statement</glossterm>
         <glossdef>
             <para>A clinical statement is a general informatics term. It is a definite and clear
-                    representation of a clinically-significant fact or situation that was observed
-                    to exist or requested to happen. </para>
+                    representation that clinically-significant fact or situation was observed to
+                    exist or happened, or that a particular procedure was requested. </para>
             <glossseealso otherterm="Statement">Statement</glossseealso>
             <glossseealso otherterm="Statement-Narrative">Statement Narrative</glossseealso>
         </glossdef>
@@ -59,7 +59,7 @@
         <glossterm>Statement</glossterm>
         <glossdef>
             <para>A representation of a fact or situation that was observed to exist or
-                    happen.</para>
+                    happen or that a particular action was requested.</para>
             <glossseealso otherterm="Clinical-Statement">Clinical Statement</glossseealso>
             <glossseealso otherterm="Statement-Narrative">Statement Narrative</glossseealso>
         </glossdef>
@@ -67,15 +67,16 @@
     <glossentry xml:id="Statement-Narrative">
         <glossterm>Statement Narrative</glossterm>
         <glossdef>
-            <para>A written account of a fact or situation that was observed to exist or happen,
-                    corresponding to one or more statements. See also Clinical Statement, Statement. </para>
+            <para>A written account corresponding to one or more statements.  </para>
+            <glossseealso otherterm="Clinical-Statement">Clinical Statement</glossseealso>
+            <glossseealso otherterm="Statement">Statement</glossseealso>
         </glossdef>
     </glossentry>
     <glossentry xml:id="Normal-Form">
         <glossterm>Normal Form</glossterm>
         <glossdef>
             <para>A well-defined definitional structure that eliminates redundancy and improves data
-                    integrity. Normal forms are widely used in databases schema design.</para>
+                    integrity. Normal forms are widely used in database schema design (e.g. Second Normal Form - 2NF).</para>
         </glossdef>
     </glossentry>
         <glossentry xml:id="Normalization">
@@ -434,7 +435,7 @@
         <acronym>URU</acronym>
         <glossdef>
             <para>A design principle that defines the solution to be Understandable, Reproducible,
-                    and Useful. See also Understandable, Reproducible, Useful</para>
+                    and Useful. See also Understandable, Reproducible, Useful.</para>
         </glossdef>
     </glossentry>
     <glossentry>
@@ -463,9 +464,10 @@
         <glossterm>Measure</glossterm>
         <glossdef>
             <para>Measure captures measurable elements of clinical statements, e.g. the results of
-                test procedures, time periods, frequencies of repetitions for procedures or
-                medication administrations using an Interval (upper and lower bound) as well as a
-                measureSemantic representing the unit of measure.</para>
+                    test procedures, time periods, frequencies of repetitions for procedures or
+                    medication administrations using an interval (upper and lower bound) as well as
+                    a measure semantic representing the meaning of the interval (e.g. milligrams,
+                    seconds, count  ).</para>
         </glossdef>
     </glossentry>
     <glossentry>

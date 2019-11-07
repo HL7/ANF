@@ -17,7 +17,7 @@
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
             href="complete-glossary.xml"
-            xpointer="element(Statement)"
+            xpointer="element(Clinical-Statement)"
             xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include
             href="complete-glossary.xml"
