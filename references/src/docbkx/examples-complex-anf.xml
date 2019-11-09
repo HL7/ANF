@@ -4,8 +4,8 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Examples of Complex ANF Statements</title>
-    <section>
-        <title xml:id="title_wound_panel" id="title_wound_panel">Wound Assessment Panel</title>
+    <section xml:id="complexExample">
+        <title>Wound Assessment Panel</title>
         <para>The Wound Assessment Panel demonstrates how ANF statements can be organized into
             complex structures consisting of interrelated observations and findings. </para>
         <para>Note that all the ANF statements associated with the assessment are of type

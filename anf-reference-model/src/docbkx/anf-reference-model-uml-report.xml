@@ -1112,7 +1112,7 @@
             <title>AssociatedStatement </title>
             <para>This class specifies how a statement may be associated with another statement.<note>
                 <para>Associated statements can be used to represent a complex model consisting of a set of associated
-                    statements (see <xref linkend="title_wound_panel" />).</para>
+                    statements (see <xref linkend="complexExample" />).</para>
                 </note></para>
             <informaltable>
                 <tgroup cols="3">

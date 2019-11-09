@@ -4,8 +4,6 @@
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>FHIR resources as ANF Statements</title>
-
-
     <para>This section includes logical transformations to demonstrate how a variety of FHIR
         resources may be normalized to ANF Statements. The examples in this section demonstrate that
         ANF can be used to aggregate any type of resource or profile.. </para>
@@ -13,8 +11,7 @@
             [<emphasis>append</emphasis>], [<emphasis>process interval</emphasis>]) and the"Data
         Elements" use path expressions using with <link xlink:href="http://hl7.org/fhirpath/"
             >FHIRpath</link>.</para>
-
-    <section>
+    <section xml:id="fhirObservation">
         <title>Normalizing a FHIR Observation</title>
         <para>This example demonstrates how a FHIR Observation (Systolic Blood Pressure) can be
             represented as a normalized statement using the ANF Reference Model and normalization
@@ -31,16 +28,18 @@
                 <thead>
                     <row>
                         <entry namest="col1" nameend="col3"><para><emphasis role="bold"
-                            >Observation</emphasis></para></entry>
+                                    >Observation</emphasis></para></entry>
                         <entry><para><emphasis role="bold">Systolic Blood Pressure</emphasis>
-                            Example</para></entry>
+                                Example</para></entry>
                         <entry namest="col5" nameend="col6"><para><emphasis role="bold"
-                            >ANFStatement</emphasis></para></entry>
+                                    >ANFStatement</emphasis></para></entry>
                     </row>
                     <row>
                         <entry><para><emphasis role="bold">Data Element</emphasis></para></entry>
-                        <entry><para><emphasis role="bold">Concept Domain Mapping</emphasis></para></entry>
-                        <entry><para><emphasis role="bold">Attribute Mapping</emphasis></para></entry>
+                        <entry><para><emphasis role="bold">Concept Domain
+                            Mapping</emphasis></para></entry>
+                        <entry><para><emphasis role="bold">Attribute
+                            Mapping</emphasis></para></entry>
                         <entry><para>Value</para></entry>
                         <entry><para><emphasis role="bold">Data Element</emphasis></para></entry>
                         <entry><para><emphasis role="bold">Value</emphasis></para></entry>
@@ -61,11 +60,13 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>reference to (Blood Pressure)</para></entry>
                         <entry align="left"><para>associated Statement (part of)</para></entry>
-                        <entry align="left"><para>"part of"</para><para> (Blood Pressure)</para></entry>
+                        <entry align="left"><para>"part of"</para><para> (Blood
+                            Pressure)</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>status</para></entry>
-                        <entry align="left"><para>&lt; 445584004 |Report by finality status|</para></entry>
+                        <entry align="left"><para>&lt; 445584004 |Report by finality
+                            status|</para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>"final"</para></entry>
                         <entry align="left"><para>circumstance.</para><para>status</para></entry>
@@ -87,8 +88,10 @@
                         </entry>
                         <entry align="left"><para>116680003 |Is a|</para></entry>
                         <entry align="left"><para>271649006 [Systolic blood pressure]</para></entry>
-                        <entry align="left"><para><emphasis role="bold">topic</emphasis></para></entry>
-                        <entry align="left"><para>363787002 |Observable entity| (Is a)  271649006 [Systolic blood pressure]</para></entry>
+                        <entry align="left"><para><emphasis role="bold"
+                            >topic</emphasis></para></entry>
+                        <entry align="left"><para>363787002 |Observable entity| (Is a) 271649006
+                                [Systolic blood pressure]</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> subject</para></entry>
@@ -103,7 +106,8 @@
                             <para>DateTime</para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para><emphasis role="bold">2017-09-17</emphasis></para></entry>
+                        <entry align="left"><para><emphasis role="bold"
+                            >2017-09-17</emphasis></para></entry>
                         <entry align="left"><para>time </para>
                             <para>[<emphasis>process interval</emphasis>]</para></entry>
                         <entry align="left"><para> </para></entry>
@@ -155,7 +159,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>107</para></entry>
-                        <entry align="left"><para>circumstance.</para><para>result.</para><para>lowerBound</para></entry>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>result.</para><para>lowerBound</para></entry>
                         <entry align="left"><para>107</para></entry>
                     </row>
                     <row>
@@ -163,7 +168,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para>circumstance.</para><para> result.</para><para>include</para>
+                        <entry align="left"><para>circumstance.</para><para>
+                                result.</para><para>include</para>
                             <para>LowerBound</para></entry>
                         <entry align="left"><para><emphasis>true</emphasis></para></entry>
                     </row>
@@ -173,9 +179,10 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para><emphasis role="underline"><link
-                                    xlink:href="http://unitsofmeasure.org/">http:// unitsof measure.
-                                    org</link></emphasis></para></entry>
-                        <entry align="left"><para>circumstance.</para><para>result.</para><para>upperBound</para></entry>
+                                        xlink:href="http://unitsofmeasure.org/">http:// unitsof
+                                        measure. org</link></emphasis></para></entry>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>result.</para><para>upperBound</para></entry>
                         <entry align="left"><para>107</para></entry>
                     </row>
                     <row>
@@ -183,7 +190,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry/>
-                        <entry align="left"><para>circumstance.</para><para>result.</para><para>Include</para>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>result.</para><para>Include</para>
                             <para>UpperBound</para></entry>
                         <entry align="left"><para><emphasis>true</emphasis></para></entry>
                     </row>
@@ -193,7 +201,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>mm[Hg]</para></entry>
-                        <entry align="left"><para>circumstance.</para><para>result.</para><para>semantic</para></entry>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>result.</para><para>semantic</para></entry>
                         <entry align="left"><para>mmHg |259018001</para></entry>
                     </row>
                     <row>
@@ -211,14 +220,15 @@
                         <entry align="left"><para>368209003 [Right arm]</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic + (has) |718497002 [Inherent location] (is) 368209003 [Right arm]</para></entry>
+                        <entry align="left"><para>topic + (has) |718497002 [Inherent location] (is)
+                                368209003 [Right arm]</para></entry>
                     </row>
                 </tbody>
             </tgroup>
         </table>
     </section>
-    
-    <section>
+
+    <section xml:id="fhirCondition">
         <title>Normalizing a FHIR Condition</title>
         <para>This example demonstrates how a FHIR Condition (Bacterial sepsis) can be represented
             as a normalized statement using the ANF Reference Model and normalization guidance
@@ -235,8 +245,9 @@
                 <tgroup cols="1">
                     <colspec colnum="1" colname="col1" colwidth="1*"/>
                     <tbody>
-                        <row><entry><para><citation>246090004 |Associated finding| (&lt; 404684003 |Clinical finding|
-                                    MINUS</citation></para>
+                        <row>
+                            <entry><para><citation>246090004 |Associated finding| (&lt; 404684003
+                                        |Clinical finding| MINUS</citation></para>
                                 <para><citation> &lt;&lt; 420134006 |Propensity to adverse
                                         reactions| MINUS<abbrev> </abbrev></citation></para>
                                 <para><citation>&lt;&lt; 473010000 |Hypersensitivity condition|
@@ -253,7 +264,9 @@
                                     </citation></para>
                                 <para><citation>&lt; 413350009 |Finding with explicit context| OR
                                         &lt;272379006 |Event||</citation>
-                                </para> </entry></row>
+                                </para>
+                            </entry>
+                        </row>
                     </tbody>
                 </tgroup>
             </table>
@@ -274,18 +287,20 @@
                     <row>
                         <entry namest="col1" nameend="col3">
                             <para>
-                            <emphasis role="bold"
-                                >Condition</emphasis>
+                                <emphasis role="bold">Condition</emphasis>
                             </para>
                         </entry>
-                        <entry><para><emphasis role="bold">Bacterial sepsis</emphasis> Example </para></entry>
+                        <entry><para><emphasis role="bold">Bacterial sepsis</emphasis> Example
+                            </para></entry>
                         <entry namest="col5" nameend="col6"><para><emphasis role="bold"
-                            >ANFStatement</emphasis></para></entry>
+                                    >ANFStatement</emphasis></para></entry>
                     </row>
                     <row>
                         <entry><para><emphasis role="bold">Data Element</emphasis></para></entry>
-                        <entry><para><emphasis role="bold">Concept Domain Mapping</emphasis></para></entry>
-                        <entry><para><emphasis role="bold">Attribute Mapping</emphasis></para></entry>
+                        <entry><para><emphasis role="bold">Concept Domain
+                            Mapping</emphasis></para></entry>
+                        <entry><para><emphasis role="bold">Attribute
+                            Mapping</emphasis></para></entry>
                         <entry><para>Value</para></entry>
                         <entry><para><emphasis role="bold">Data Element</emphasis></para></entry>
                         <entry><para><emphasis role="bold">Value</emphasis></para></entry>
@@ -321,7 +336,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>55607006| Problem</para></entry>
-                        <entry align="left"><para><emphasis role="bold">topic</emphasis></para></entry>
+                        <entry align="left"><para><emphasis role="bold"
+                            >topic</emphasis></para></entry>
                         <entry align="left"><para> 55607006|Problem </para></entry>
                     </row>
                     <row>
@@ -331,26 +347,33 @@
                         <entry align="left"><para>371924009|Moderate to severe</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic + (has) 371924009|Moderate to severe </para></entry>
+                        <entry align="left"><para>topic + (has) 371924009|Moderate to severe
+                            </para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>code</para></entry>
-                        <entry align="left"><para> See the <link linkend="condition_code_concept">concept domain expression</link>
-                        </para></entry>
+                        <entry align="left"><para> See the <link linkend="condition_code_concept"
+                                    >concept domain expression</link>
+                            </para></entry>
                         <entry align="left"><para>116680003 |Is a|</para></entry>
                         <entry align="left"><para>10001005 |Bacterial sepsis</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append] </para></entry>
-                        <entry align="left"><para>topic + (is) 10001005 |Bacterial sepsis</para></entry>
+                        <entry align="left"><para>topic + (is) 10001005 |Bacterial
+                            sepsis</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>bodySite</para></entry>
-                        <entry align="left"><para>&lt; 442083009 |Anatomical or acquired body structure|</para></entry>
+                        <entry align="left"><para>&lt; 442083009 |Anatomical or acquired body
+                                structure|</para></entry>
                         <entry align="left"><para>363698007 |Finding site|</para></entry>
-                        <entry align="left"><para> 281158006 |Pulmonary vascular structure</para></entry>
+                        <entry align="left"><para> 281158006 |Pulmonary vascular
+                            structure</para></entry>
                         <entry align="left"><para>topic </para>
                             <para>[append]</para></entry>
-                        <entry align="left"><para>topic +  363698007 |Finding site (is)</para><para>281158006 |Pulmonary vascular structure</para></entry>
+                        <entry align="left"><para>topic + 363698007 |Finding site
+                                (is)</para><para>281158006 |Pulmonary vascular
+                            structure</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> subject</para></entry>
@@ -364,7 +387,8 @@
                         <entry align="left"><para>onsetDateTime</para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para><emphasis role="bold">2013-03-08</emphasis></para></entry>
+                        <entry align="left"><para><emphasis role="bold"
+                            >2013-03-08</emphasis></para></entry>
                         <entry align="left"><para>circumstance.</para><para>timing </para>
                             <para>[<emphasis>process interval</emphasis>]</para></entry>
                         <entry align="left"><para> </para></entry>
@@ -374,7 +398,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para>circumstance.</para><para>timing</para><para>lowerBound</para></entry>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>timing</para><para>lowerBound</para></entry>
                         <entry align="left"><para>2013-03-08T</para><para>00:00:00</para></entry>
                     </row>
                     <row>
@@ -382,7 +407,8 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para>circumstance.</para><para>timing.</para><para>upperBound</para></entry>
+                        <entry align="left"
+                                ><para>circumstance.</para><para>timing.</para><para>upperBound</para></entry>
                         <entry align="left"><para>2013-03-08T</para><para>23:59:59 </para></entry>
                     </row>
                     <row>
@@ -397,8 +423,10 @@
                         <entry align="left"><para>recordedDate</para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
-                        <entry align="left"><para><emphasis role="bold">2013-03-11</emphasis></para></entry>
-                        <entry align="left"><para>time</para><para>[<emphasis>process interval</emphasis>]</para></entry>
+                        <entry align="left"><para><emphasis role="bold"
+                            >2013-03-11</emphasis></para></entry>
+                        <entry align="left"><para>time</para><para>[<emphasis>process
+                                    interval</emphasis>]</para></entry>
                         <entry align="left"><para> </para></entry>
                     </row>
                     <row>
@@ -432,8 +460,8 @@
                         <entry align="left"><para>Practitioner[]</para></entry>
                         <entry align="left"><para>author</para></entry>
                         <entry align="left"><para>Practitioner[]</para></entry>
-                    </row>      
-              </tbody>
+                    </row>
+                </tbody>
             </tgroup>
         </table>
     </section>

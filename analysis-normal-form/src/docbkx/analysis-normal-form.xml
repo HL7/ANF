@@ -27,19 +27,19 @@ Statement rules (rules about how to create statements).
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111534-0400" comment="Comment from WC:
 1) How do you quantify simplicity?
 2) Why not design the principles so they don’t collide?
-" id="wy3_4yp_ljb"?><?oxy_comment_start author="Ioana" timestamp="20191020T133429-0400" comment="- addressed comment #6" parentID="wy3_4yp_ljb" mid="2"?>In
+" id="wy3_4yp_ljb" mid="2"?><?oxy_comment_start author="Ioana" timestamp="20191020T133429-0400" comment="- addressed comment #6" parentID="wy3_4yp_ljb"?>In
                     cases where different principles collide, we shall favor simplicity of the
                     entire system over simplicity in one area of the
-                    system.<?oxy_comment_end mid="2"?><?oxy_comment_end?> This principle is achieved
+                    system.<?oxy_comment_end?><?oxy_comment_end mid="2"?> This principle is achieved
                     by avoiding complex types, inheritance/derivations, and extensions.
                     <?oxy_comment_start author="Ioana" timestamp="20191020T140020-0400" comment="Comment #6, #48"?>Instead,
-                    ANF relies on  sophisticated terminology and a polymorphic information model
-                    (see <link linkend="ANFStatement">ANF Reference Model)</link> that can be used
-                    to create complex model (see
-                    <?oxy_comment_start author="Ioana" timestamp="20191020T134348-0400" comment="TBD: insert link to wound model."?>…<?oxy_comment_end?>)
-                    and can use platform-specific primitive types. Simplicity is the direct result
-                    of normalization and maintaining a minimum set of data required to express
-                    clinical statements<?oxy_comment_end?>.</para>
+                    ANF relies on sophisticated terminology and a polymorphic information model (see
+                        <link linkend="ANFStatement">ANF Reference Model)</link> that can be used to
+                    create complex models of interrelated statements (see <link
+                        linkend="complexExample">Wound Assessment</link>) and can use
+                    platform-specific primitive types. Simplicity is the direct result of
+                    normalization and maintaining a minimum set of data required to express clinical
+                    statements<?oxy_comment_end?>.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Convention Over Configuration: </emphasis>Convention
@@ -52,13 +52,14 @@ Statement rules (rules about how to create statements).
                 <para><emphasis role="bold">Model Consistency:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111726-0400" comment="Comment from WC:
 Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
-" id="plg_4bq_ljb"?><?oxy_comment_start author="Ioana" timestamp="20191020T135719-0400" comment="FHIR profiles happen to be the current CIMI model representation. " parentID="plg_4bq_ljb" mid="6"?>Patterns
+" id="plg_4bq_ljb"?><?oxy_comment_start author="Ioana" timestamp="20191020T135719-0400" comment="FHIR profiles happen to be the current CIMI model representation. " parentID="plg_4bq_ljb" mid="5"?>Patterns
                     should allow the consistent representation of information that is commonly
                     shared across models. For instance, attribution and participation information
                     should be captured consistently. Failure to do so forces implementers to develop
                     heuristics to capture and normalize attribution information that is represented
-                    or extended differently in different classes (e.g., FHIR).</para>
-            </listitem><?oxy_comment_end?><?oxy_comment_end mid="6"?>
+                    or extended differently in different classes (see <xref linkend="fhirObservation"/> 
+                    and <xref linkend="fhirCondition"/>).</para>
+            </listitem><?oxy_comment_end?><?oxy_comment_end mid="5"?>
             <listitem>
                 <para><emphasis role="bold">No Semantic Overloading: </emphasis>Semantic overloading
                     occurs when a model attribute’s meaning changes entirely, depending on context.
@@ -92,7 +93,7 @@ Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Not
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111240-0400" comment="Joey: Item for Consideration: Should we say that we only allow inheritance for a single concern, i.e., we can subtype measurement but not subtype a combination of statement type and measurement type?" id="ckd_fyv_lhb"?><?oxy_comment_end?>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111255-0400" comment="Comment from WC:
 Why would ‘measurement’ be a single concern? Clearly, as indicated here, there are many subtypes. But then, even so clearly, ‘measurement’ is subtype of something else. What arguments do you have to place the ‘singularity’ at that level? This illustrates one of my qualms with the ‘separation of concern’ principle as indicated above.
-" parentID="ckd_fyv_lhb" mid="8"?><?oxy_comment_end mid="8"?>
+" parentID="ckd_fyv_lhb" mid="7"?><?oxy_comment_end mid="7"?>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">ANF Clinical Statements Represent the Minimum Disjoint
