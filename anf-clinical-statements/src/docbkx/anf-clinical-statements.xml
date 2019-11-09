@@ -8,32 +8,20 @@
             statement</glossterm> represents an entry in the patient record that documents, in a
         structured/computable manner, clinical information related to the patient that is asserted
         by a particular source, recorded, and potentially verified.</para>
-    <para>As seen in the <glossterm baseform="CIMI Clinical Statement">CIMI Clinical
-            Statements</glossterm> section, clinical information related to the patient can be
-        entered and stored in an EHR in multiple different ways. ANF strives to standardize the
-        structure of clinical statements to eliminate the disparity of clinical information by
-        limiting the design choices a clinical modeler must make. ANF can then act as a consistent
-        transformation target for the multiple differing clinical information representations that
-        currently exist, making this clinical information more easily computable and eliminating the
-        need to create multiple ways to analyze the same data.</para>
+    <para><glossterm baseform="Clinical Input Forms">Clinical Input Forms</glossterm> allow EHR
+        systems to capture and store clinical statements in multiple ways based on use cases, local
+        preferences, etc. ANF strives to standardize the structure of clinical statements to
+        eliminate the disparity of clinical information by introducing a common, normalized form.
+        ANF can be used as consistent transformation target for the multiple differing clinical
+        information representations that currently exist, making this clinical information more
+        easily computable. Thus it eliminates the need to create multiple ways to analyze the same
+        data.</para>
     <section>
         <title><anchor xml:id="_Toc1824812"/>Types of <glossterm baseform="ANF Statement">ANF
                 Statements</glossterm></title>
-        <para>There are two types of ANF Statements:</para>
-        <para><emphasis role="bold"
-                    ><?oxy_comment_start author="kec" timestamp="20190721T191842-0700" comment="Rules should have an IF and THEN component, even if the exact IF and THEN words are not use. Please review and update all rules. " flag="done"?><glossterm
-                    baseform="ANF Performance">Performance of
-                Action</glossterm><?oxy_comment_end?></emphasis></para>
-        <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="Suggest the removal of the words &apos;passive&apos; &amp; &apos;active&apos;. I don&apos;t think it adds any extra information and this will keep people from argueing whether observations are really passive or active." flag="done"?><?oxy_comment_end?>
-        <para>A Performance may include the observation of a phenomenon related to patients and
-            their health status or family history, and may also include interventions, such as
-            providing education or administering medications or documenting that a patient is
-            participating in exercise to improve their overall health status.</para>
-        <para><emphasis role="bold"><glossterm baseform="ANF Request">Request for
-                Action</glossterm></emphasis></para>
-        <para>Requests for clinical testing, active interventions, future goals, or consultation
-            with other providers.</para>
-        <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+        <para>ANF statement may express a <emphasis role="bold">performance</emphasis> or a
+                <emphasis role="bold">request</emphasis>; the criteria for differentiating them for
+            are described as <emphasis role="bold">editorial rules</emphasis>: <xref
                 linkend="anf-editorialrule-performanceRequest"/></para>
         <xi:include href="../analysis-normal-form/editorial-rules.xml"
             xpointer="element(anf-editorialrule-performanceRequest-content)">
@@ -41,24 +29,12 @@
         </xi:include>
         <section>
             <title><anchor xml:id="_Toc1824813"/>Performance of Action Statements</title>
-            <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110315-0400" comment="Comment from WC:
-As expected, it goes already wrong here: surely requesting something is an action that is performed, and the result might be that the request is accepted or denied.
-" id="xfp_jyf_nhb" mid="4"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100303-0400" comment="Joey Coyle:
-As expected?  Maybe just change this to performance of a topic and request of a topic and leave the word action out of it.
-" parentID="xfp_jyf_nhb"?>A
-                Performance of Action statement describes a topic that has previously been
-                performed, and—if applicable—the result that corresponds to the
-                topic.<?oxy_comment_end?><?oxy_comment_end mid="4"?>  Examples of the types of
-                performances of actions that can be documented for a subject of information are
-                shown below.:</para>
-            <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="The insertion of editorial rule here broke up the flow from the previous sentence which ended with a colon and depended on the list, now it doesn&apos;t seem to make sense when reading." flag="done"?><?oxy_comment_end?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="Change all diagrams peach colored box to say ANF Statement rather than ANF Performane or Request Clinical Statement" flag="done" mid="6"?><?oxy_comment_end mid="6"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;if possible&apos;, I believe the result will always exist." flag="done" mid="7"?><?oxy_comment_end mid="7"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the &apos;subject of record&apos;, maybe say subject of information, because it could be the father, uncle, donor that is being described." flag="done" mid="8"?><?oxy_comment_end mid="8"?>
-            <?oxy_comment_start author="jcoyle" timestamp="20190721T100827-0400" comment="I screwed up here, because the last example - Family history of breast cancer, can&apos;t be stated about the subject of information. As subject of information is built into the narrative. All of the others can be stated about the subject of information." mid="9"?><?oxy_comment_end mid="9"?>
+            <para>A Performance of Action statements describe an action performed, and any result
+                associated with the action specified by the topic.</para>
+            <para>The following are examples of performance statements:</para>
             <itemizedlist>
                 <listitem>
-                    <para>The presence or absence of a clinical phenomenon</para>
+                    <para>The presence or absence of a clinical finding</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Diabetes mellitus is present</para>
@@ -72,7 +48,7 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>The results of specific test/screening or procedure</para>
+                    <para>The results of a specific test/screening or procedure</para>
                     <itemizedlist spacing="compact">
                         <listitem>
                             <para>Pulse Rate 68 bpm, taken by pulse oximeter</para>
@@ -113,21 +89,22 @@ As expected?  Maybe just change this to performance of a topic and request of a 
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
+                    <para>he presence of any other
+                        state<?oxy_comment_start author="kmaulden" timestamp="20190418T110327-0400" comment="Comment from WC:
 For instance that a test is ordered?
-"?>Has
-                        any other state or specific characteristic that is clinically
+"?>
+                        or specific characteristic that is clinically
                         relevant<?oxy_comment_end?></para>
                     <para>
                         <itemizedlist spacing="compact">
                             <listitem>
                                 <para><?oxy_comment_start author="kmaulden" timestamp="20190418T110351-0400" comment="Comment from WC:
 Such family history is clinically relevant but is not a characteristic of the patient. I suggest to make this a 3rd type of clinical statement. If you insist on classifying statements based on what they are about, then you would have (1) statements which describe the patient as a whole, any part of him, or any entities that depend on him or his parts (qualities, realizables, processes in which he or his parts participate); (2) statements about requests for actions that once executed will results in statements of type 1 or type 3, and (3) statements about clinically relevant phenomena that occurred or have occurred in his environment but are not about the patient himself.
-" id="ppm_nyf_nhb" mid="12"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
+" id="ppm_nyf_nhb" mid="11"?><?oxy_comment_start author="kmaulden" timestamp="20190423T100412-0400" comment="Joey Coyle:
 Doing family history, donor statements using subject of information is now the norm. Another statement type is not.
 " parentID="ppm_nyf_nhb"?>Family
                                     history of breast
-                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="12"?></para>
+                                    cancer<?oxy_comment_end?><?oxy_comment_end mid="11"?></para>
                             </listitem>
                         </itemizedlist>
                     </para>
@@ -155,20 +132,22 @@ Doing family history, donor statements using subject of information is now the n
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
                 -->
-                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
-                        linkend="anf-editorialrule-timing"/></para>
-                <xi:include href="../analysis-normal-form/editorial-rules.xml"
-                    xpointer="element(anf-editorialrule-timing-content)">
-                    <xi:fallback/>
-                </xi:include>
-                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
-                        linkend="anf-editorialrule-topicsAreActions"/></para>
+                <para>To describe the presence of absence of a phenomenon, an ANF statement requires
+                    a topic, timing, and a result defined based on editorial rules:</para>
+
+                <para>
+                    <xref linkend="anf-editorialrule-topicsAreActions"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-topicsAreActions-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
-                        linkend="anf-editorialrule-presenceAbsence"/></para>
+                <para>
+                    <xref linkend="anf-editorialrule-timing"/></para>
+                <xi:include href="../analysis-normal-form/editorial-rules.xml"
+                    xpointer="element(anf-editorialrule-timing-content)">
+                    <xi:fallback/>
+                </xi:include>
+                <para/>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-presenceAbsence-content)">
                     <xi:fallback/>
@@ -188,12 +167,12 @@ Doing family history, donor statements using subject of information is now the n
                             Present.</emphasis></para>
                     </caption>
                 </figure>
-                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time, shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="17"?><?oxy_comment_end mid="17"?>
+                <?oxy_comment_start author="jcoyle" timestamp="20190615T100303-0400" comment="in regard to the diagrams - 2 questions:  Are we always using observation procedure for stating patient has diabetes?, but more importantly why is the measure semantic = unit of time, shouldn&apos;t this be a count of 1,1 ? - Previous duplicate probem" id="arz_nrb_l3b" flag="done" mid="15"?><?oxy_comment_end mid="15"?>
                 <?oxy_comment_start author="timowilliams" timestamp="20190717T142515-0500" comment="Yes. It would be an observation that the patient has diabetes. We currently state that representing present would be with [1,inf). Absent would be [0,0]" parentID="arz_nrb_l3b" flag="done"?>
                 <para><?oxy_comment_end?>In the Diabetes Mellitus type 2 example above, the Topic is
                     an Observation procedure with a Has focus of Diabetes mellitus type 2. To
                     represent that it is present, the Result is a lowerBound of 1, an upperBound of
-                    infinite (inf), and a measureSemantic of "Countable quantity". For more details
+                    infinite (inf), and a measure semantic of "Countable quantity". For more details
                     on the syntax used to represent a Result see the Measure Class here: <xref
                         linkend="measureClass"/>To see a more detailed representation of the
                     Diabetes Mellitus Type 2 Present example see the tabular form here: <xref
@@ -222,9 +201,9 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <para>In the Diabetes Mellitus Type 2 Absent example, the topic is the same as
                     Diabetes Mellitus Type 2 Present example. The difference is in the Result which
-                    is represented as an upperBound and lowerBound of zero with the same
-                    measureSemantic. To see a more detailed representation see the tabular form
-                    here: <xref linkend="table_perform_dmabsent"/></para>
+                    is represented as an upperBound and lowerBound of zero with the same measure
+                    semantic. To see a more detailed representation see the tabular form here: <xref
+                        linkend="table_perform_dmabsent"/></para>
                 <figure>
                     <title>Retinal Hemorrhage Present ANF Example</title>
                     <mediaobject>
@@ -413,7 +392,7 @@ Doing family history, donor statements using subject of information is now the n
                         Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/bp_complex2_anf.svg" format="SVG"
+                            <imagedata fileref="images/bp_complex2_anf.png" format="PNG"
                                 scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
@@ -429,10 +408,12 @@ Doing family history, donor statements using subject of information is now the n
                     <mediaobject>
                         <imageobject>
                             <?oxy_comment_start author="timowilliams" timestamp="20190618T143741-0500" comment="From Joey, not sure how we should capture the “prior to measurement” here? We used “timing” in the TSRs with “ISO 8601 prior to statement time”, but that is not quite right, either…" id="eys_3pz_23b"?>
-                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="24"?>
-                            <imagedata fileref="images/bp_complex3_anf.svg" format="SVG"
+                            <?oxy_comment_start author="timowilliams" timestamp="20190625T204051-0500" comment="Should I add a timing here?" parentID="eys_3pz_23b" mid="25"?>
+                            <?oxy_comment_start author="Ioana" timestamp="20191107T221111-0500" comment="The result = 30 minutes for &quot;micturition finding&quot; needs to be replaced with result = [1,1] and timing = no more 30 minutes before the main statement.
+The table representation is correct." mid="24"?>
+                            <imagedata fileref="images/bp_complex3_anf.png" format="png"
                                 scalefit="1" width="100%" contentdepth="100%"
-                            /><?oxy_comment_end?><?oxy_comment_end mid="24"?>
+                            /><?oxy_comment_end?><?oxy_comment_end mid="25"?><?oxy_comment_end mid="24"?>
                         </imageobject>
                     </mediaobject>
                     <caption>
@@ -447,7 +428,7 @@ Doing family history, donor statements using subject of information is now the n
                     lowerBound. Additionally, while the narrative does not explicitly state that the
                     blood pressure is taken in the sitting position, it is implied by the
                     prerequisite that it is taken in the sitting position based on the prerequisite
-                    that the patient was in the sitting position for at least 5 minutes.  To see a
+                    that the patient was in the sitting position for at least 5 minutes. To see a
                     more detailed representation see the tabular form here: <xref
                         linkend="table_perform_bpm"/></para>
                 <figure>
@@ -562,13 +543,13 @@ Doing family history, donor statements using subject of information is now the n
                         with a hasFocus attribute describing the purpose.</mathphrase>
                 </editorial-rule>-->
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
+                        linkend="anf-editorialrule-topicsAreActions"/></para>
+                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
                         linkend="anf-editorialrule-purpose"/></para>
                 <xi:include href="../analysis-normal-form/editorial-rules.xml"
                     xpointer="element(anf-editorialrule-purpose-content)">
                     <xi:fallback/>
                 </xi:include>
-                <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
-                        linkend="anf-editorialrule-topicsAreActions"/></para>
                 <!--<editorial-rule>
                     <title>Administration of Medication Topic - Performance of Action</title>
                     <mathphrase>To represent the performance of an administration of medication, the
@@ -591,12 +572,13 @@ Doing family history, donor statements using subject of information is now the n
                     </caption>
                 </figure>
                 <para>In the medication example above a purpose is specified using Pain control
-                    which has a focus of pain. The Topic is built using Administration of substance
-                    with a Direct substance specifying the pharmaceutical product including the
-                    strength and dose form and a Route of Administration specifying Oral.  In
-                    addition to the dose form in the Topic, the dose form is also specified in the
-                    Measure semantic for the Result.  This allows for the specification of multiple
-                    or partial dose forms.</para>
+                    which has the <emphasis role="bold">purpose</emphasis> of <emphasis role="bold"
+                        >pain control</emphasis>. The Topic is built using Administration of
+                    substance with a Direct substance specifying the pharmaceutical product
+                    including the strength and dose form and a Route of Administration specifying
+                    Oral. In addition to the dose form in the Topic, the dose form is also specified
+                    in the Measure semantic for the Result. This allows for the specification of
+                    multiple or partial dose forms.</para>
             </section>
             <section>
                 <title>Provision of Educational Materials</title>
@@ -623,21 +605,21 @@ Doing family history, donor statements using subject of information is now the n
                 </figure>
                 <para>In this example, the concept Provision of educational material is used with a
                     Has focus of Diabetes mellitus.</para>
-                
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
-                    linkend="anf-editorialrule-status"/></para>
-                
+                        linkend="anf-editorialrule-status"/></para>
                 <figure>
-                    <title>Provision of Educational Material Stopped Before Completion ANF Example</title>
+                    <title>Provision of Educational Material Stopped Before Completion ANF
+                        Example</title>
                     <mediaobject>
                         <imageobject>
-                            <imagedata fileref="images/educ_partial_anf.svg" format="SVG" scalefit="1"
-                                width="100%" contentdepth="100%"/>
+                            <imagedata fileref="images/educ_partial_anf.svg" format="SVG"
+                                scalefit="1" width="100%" contentdepth="100%"/>
                         </imageobject>
                     </mediaobject>
                     <caption>
                         <para><emphasis role="italics">Patient was Provided with Educational
-                            Material on Diabetes but Education was Stopped Before Completion.</emphasis></para>
+                                Material on Diabetes but Education was Stopped Before
+                                Completion.</emphasis></para>
                     </caption>
                 </figure>
                 <para>This example is similar to the prior example of completing the education,
@@ -688,9 +670,9 @@ Doing family history, donor statements using subject of information is now the n
                 </xi:include>
             </section>
             <section>
-                <title>Normal Range Information or Health Risk Specified</title>
+                <title>Reference Range Information or Health Risk Specified</title>
                 <figure>
-                    <title>Systolic Blood Pressure with Normal Range and Health Risk ANF
+                    <title>Systolic Blood Pressure with Reference Range and Health Risk ANF
                         Example</title>
                     <mediaobject>
                         <imageobject>
@@ -699,15 +681,16 @@ Doing family history, donor statements using subject of information is now the n
                         </imageobject>
                     </mediaobject>
                     <caption>
-                        <para><emphasis role="italics">Systolic Blood Pressure 190 mmHg, Normal
+                        <para><emphasis role="italics">Systolic Blood Pressure 190 mmHg, Reference
                                 Range (90-120), Health Risk Critical.</emphasis></para>
                     </caption>
                 </figure>
-                <para>Systolic Blood Pressure for adults has a normal range of 90-120 and is
+                <para>Systolic Blood Pressure for adults has a reference range of 90-120 and is
                     represented in the reference. The reference utilizes the same Measure class that
                     the Result utilizes and the syntax represented in the image above is described
-                    in detail here: <xref linkend="measureClass"/>. Systolic Blood pressure above 180 would represent a critical
-                    health risk and is represented in the healthRisk.</para>
+                    in detail here: <xref linkend="measureClass"/>. Systolic Blood pressure above
+                    180 would represent a critical health risk and is represented in the
+                    healthRisk.</para>
             </section>
         </section>
         <section>
@@ -786,7 +769,7 @@ The distinction with a performance clinical statement concerning giving him educ
                 </figure>
                 <para>The Laboratory Request example above shows how the topic is built using a
                     laboratory procedure concept, with no refinements in this case. It also has a
-                    Priority of Routine as stated in the narrative description.  The requestedResult
+                    Priority of Routine as stated in the narrative description. The requestedResult
                     in this example is used to represent that you are requesting a single
                     measurement be performed.</para>
                 <para><emphasis role="bold">See Editorial Rule</emphasis>: <xref
@@ -899,12 +882,12 @@ The distinction with a performance clinical statement concerning giving him educ
                 </figure>
                 <para>The Medication request example represents one of the more complicated ANF
                     Statements that includes not only the Topic, but also the Repetition information
-                    for completing the request.  The Topic is built using Administration of
-                    substance with a Direct substance specifying the pharmaceutical product
-                    including the strength and dose form and a Route of Administration specifying
-                    Oral.  In addition to the dose form in the Topic, the dose form is also
-                    specified in the Measure semantic for the requestedResult.  This allows for the
-                    specification of multiple or partial dose forms.</para>
+                    for completing the request. The Topic is built using Administration of substance
+                    with a Direct substance specifying the pharmaceutical product including the
+                    strength and dose form and a Route of Administration specifying Oral. In
+                    addition to the dose form in the Topic, the dose form is also specified in the
+                    Measure semantic for the requestedResult. This allows for the specification of
+                    multiple or partial dose forms.</para>
                 <figure>
                     <title>Counseling Request ANF Example</title>
                     <mediaobject>

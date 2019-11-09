@@ -5,7 +5,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Examples of Complex ANF Statements</title>
     <section>
-        <title xml:id="title_mrb_ht2_4jb">Wound Assessment Panel</title>
+        <title xml:id="title_wound_panel" id="title_wound_panel">Wound Assessment Panel</title>
         <para>The Wound Assessment Panel demonstrates how ANF statements can be organized into
             complex structures consisting of interrelated observations and findings. </para>
         <para>Note that all the ANF statements associated with the assessment are of type
@@ -54,22 +54,22 @@
                         <entry><para>81666-0</para></entry>
                         <entry><para>Wound number [Identifier]</para></entry>
                         <entry><para>1</para></entry>
-                        <entry><para> 2</para></entry>
+                        <entry><para> 1</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Wound
                             number]</para></entry>
                         <entry><para>[1,1] Wound instance</para></entry>
-                        <entry><para> 1</para></entry>
+                        <entry><para> </para></entry>
                     </row>
                     <row>
                         <entry><para>72300-7</para></entry>
                         <entry><para>Wound type</para></entry>
                         <entry><para>Pressure ulcer</para></entry>
-                        <entry><para> 1</para></entry>
+                        <entry><para> 2</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Pressure ulcer]-
                                 (Causative agent) [Device]- (Finding site) [Posterior Hip]-
                                 (Laterality) [Right]</para></entry>
                         <entry><para>[1,inf) Countable Quantity</para></entry>
-                        <entry><para> </para></entry>
+                        <entry><para> 1</para></entry>
                     </row>
                     <row>
                         <entry><para>89250-5</para></entry>
@@ -205,7 +205,7 @@
                         <entry><para>[Observation procedure]- (Has focus) [Finding of wound base
                                 color]- (Has interpretation) [Brown]</para></entry>
                         <entry><para>[1,inf] Countable Quantity</para></entry>
-                        <entry><para> 1</para></entry>
+                        <entry><para> 9</para></entry>
                     </row>
                     <row>
                         <entry><para>89255-4</para></entry>
@@ -243,7 +243,7 @@
                         <entry><para>[Observation procedure]- (Has focus) [Finding of wound edge
                                 color]- (Has interpretation) [Red]</para></entry>
                         <entry><para>[1,inf] Countable Quantity</para></entry>
-                        <entry><para> 1</para></entry>
+                        <entry><para> 13</para></entry>
                     </row>
                     <row>
                         <entry><para><emphasis>72299-1</emphasis></para></entry>

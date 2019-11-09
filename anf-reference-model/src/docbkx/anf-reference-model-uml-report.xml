@@ -358,7 +358,7 @@
                             </entry>
                             <entry>
                                 <para>This data element describes in a post-coordinated expression
-                                    the reason for a performance or request.  </para>
+                                    the reason for a performance or request. </para>
                                 <para>For example in the case of a procedure, the purpose may be
                                     either:</para>
                                 <para>
@@ -902,7 +902,7 @@
                                     never included. If "true" the upper bound is part of the
                                     interval.</para>
                                 <para><emphasis role="bold"
-                                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133749-0400" comment="updated"?>Invariant</emphasis>:
+                                        ><?oxy_comment_start author="Ioana" timestamp="20190804T133749-0400" comment="updated" flag="done"?>Invariant</emphasis>:
                                     if (<emphasis>upperBound</emphasis> == INF) {
                                         <emphasis>includeUpperBound</emphasis> = false
                                     }.<?oxy_comment_end?></para>
@@ -1111,8 +1111,8 @@
         <section>
             <title>AssociatedStatement </title>
             <para>This class specifies how a statement may be associated with another statement.<note>
-                    <para>Associated statements can be used to represent a complex model - see <link
-                            linkend="title_mrb_ht2_4jb">Wound Assessment</link> example.</para>
+                <para>Associated statements can be used to represent a complex model consisting of a set of associated
+                    statements (see <xref linkend="title_wound_panel" />).</para>
                 </note></para>
             <informaltable>
                 <tgroup cols="3">

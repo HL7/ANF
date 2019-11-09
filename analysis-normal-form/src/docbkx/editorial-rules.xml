@@ -298,7 +298,7 @@
             </mathphrase>
         </editorial-rule>
         <editorial-rule xml:id="anf-editorialrule-normalRange"
-            xreflabel="Normal Range can be specified for a result">
+            xreflabel="Reference Range can be specified for a result">
             <title>reference can be specified for a result</title>
             <mathphrase>
                 <itemizedlist xml:id="anf-editorialrule-normalRange-content">

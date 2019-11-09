@@ -114,7 +114,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.lowerBound</para></entry>
-                        <entry align="left"><para>2017-09-17T</para><para>200:00:00+14:00 </para></entry>
+                        <entry align="left"><para>2017-09-17T</para><para>00:00:00</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -122,7 +122,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.upperBound</para></entry>
-                        <entry align="left"><para>2017-09-17T</para><para>23:59:59-12:00 </para></entry>
+                        <entry align="left"><para>2017-09-17T</para><para>23:59:59 </para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -130,7 +130,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.semantics</para></entry>
-                        <entry align="left"><para>UTC/Epic Time</para></entry>
+                        <entry align="left"><para>UTC</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>performer</para></entry>
@@ -375,7 +375,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>circumstance.</para><para>timing</para><para>lowerBound</para></entry>
-                        <entry align="left"><para>2013-03-08T</para><para>00:00:00+14:00 </para></entry>
+                        <entry align="left"><para>2013-03-08T</para><para>00:00:00</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -383,7 +383,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>circumstance.</para><para>timing.</para><para>upperBound</para></entry>
-                        <entry align="left"><para>2013-03-08T</para><para>23:59:59-12:00 </para></entry>
+                        <entry align="left"><para>2013-03-08T</para><para>23:59:59 </para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -391,7 +391,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>circumstance. timing. semantics</para></entry>
-                        <entry align="left"><para>UTC/Epic Time</para></entry>
+                        <entry align="left"><para>UTC</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>recordedDate</para></entry>
@@ -407,7 +407,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.</para><para>lowerBound</para></entry>
-                        <entry align="left"><para>2013-03-11T</para><para>00:00:00+14:00 </para></entry>
+                        <entry align="left"><para>2013-03-11T</para><para>00:00:00</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -415,7 +415,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.</para><para>upperBound</para></entry>
-                        <entry align="left"><para>2013-03-11T</para><para>23:59:59-12:00 </para></entry>
+                        <entry align="left"><para>2013-03-11T</para><para>23:59:59</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para> </para></entry>
@@ -423,7 +423,7 @@
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para> </para></entry>
                         <entry align="left"><para>time.</para><para>semantics</para></entry>
-                        <entry align="left"><para>UTC/Epic Time</para></entry>
+                        <entry align="left"><para>UTC</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>asserter</para></entry>
