@@ -525,7 +525,7 @@ so these templates do nothing-->
       <!--</xsl:when>-->
       <xsl:when test="$position='left'">
         <fo:block>Page <fo:page-number/></fo:block>
-        <fo:block>© 2019 Logica Health &#x26; HL7. Licensed under the Apache License 2.0.</fo:block>
+        <fo:block>© 2019 Logica Health &#x26; HL7. Licensed under version 4.0 of the Creative Commons CC-BY license.</fo:block>
       </xsl:when>
       <xsl:when test="$position='right'">HL7_CIMI_LM_ANF_R1_I1_2019SEP
         September 2019 Ballot</xsl:when>
