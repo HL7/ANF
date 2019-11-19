@@ -69,8 +69,8 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic"
+                                            >[Provider]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
@@ -711,7 +711,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[3,3] Number</para>
+                                            <para>[3,3] Countable Quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -859,7 +859,7 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <para>Timing: [1, inf) ISO 8601 prior to statement time</para>
+                                    <para>Timing: [prior to statement time]</para>
                                 </listitem>
                                 <listitem>
                                     <para>Purposes: Ø</para>
@@ -884,7 +884,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1,inf) Countable quantity</para>
+                                            <para>[1,inf) </para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>

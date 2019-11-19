@@ -122,8 +122,9 @@ Or maybe reference back to the interoperability levels, of which semantic was th
   <section>
     <title>Enhanced Clinical Decision Support</title>
     <para>A 2012 Literature Review commissioned by the Agency for Healthcare Research and Quality
-      (AHRQ) found evidence showing that CDS had positive impact on process measures and increasing
-      user knowledge relevant to a medical condition. <link linkend="bib17">[21]</link></para>
+      (AHRQ) found evidence showing that CDS had a positive impact on process measures and
+      increasing user knowledge relevant to a medical condition. <link linkend="bib17"
+      >[21]</link></para>
     <para>Additional studies show that well-executed CDS can <link linkend="bib17">[21]</link>
       :</para>
     <itemizedlist spacing="compact" >
@@ -157,7 +158,7 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       adoption of CDS across health systems is clear.</para>
     <para>A report entitled “<emphasis role="italic">Optimizing Strategies for Clinical Decision
         Support: Summary of a Meeting Series</emphasis>” <link linkend="bib17">[21]</link> was
-      produced out of the collaboration between The Office of the National Coordinator for Health
+      produced out of the collaboration between the Office of the National Coordinator for Health
       Information Technology (ONC) and the National Academy of Medicine (NAM). The report states
       that there are at least four important technical challenges to sharing and therefore
       standardizing implementations of CDS content: <link linkend="bib17">[21]</link></para>
@@ -174,11 +175,11 @@ Or maybe reference back to the interoperability levels, of which semantic was th
       relies on inferencing using patient data, this heterogeneity in patient data representation
       poses an immense obstacle to sharing CDS." <link linkend="bib17">[21]</link>
     </para>
-    <para>ANF aims to reduce the variability of clinical data inputted into EHR systems and
-      modeled/stored in data repositories. The standardization of clinical observations in a manner
-      that supports automated processing requires a formal clinical statement model, such as ANF.
-      The most important requirements of such a statement model are that (1) it can represent any
-      clinician-specified observation accurately and precisely and (2) it can support automated
+    <para>ANF aims to reduce the variability of clinical data managed by clinical information
+      systems and stored in data repositories. The standardization of clinical observations in a
+      manner that supports automated processing requires a formal clinical statement model, such as
+      ANF. The most important requirements of such a statement model are that (1) it can represent
+      any clinician-specified observation accurately and precisely and (2) it can support automated
       query and retrieval operations correctly and efficiently.</para>
     <para>ANF aims to reduce the variability of clinical data within the value sets and clinical
       decision rules managed by EHR systems and modeled/stored in data repositories. For example, a
@@ -237,8 +238,8 @@ Would you want to state that the opposite could be true as well, where patients 
       primary care clinics, failure to include or exclude patients could have led to real harm. </para>
     <para>With eCQM implementation and QI infrastructure increasing, the problem of having, and
       using, inaccurate eCQM implementations or CDS implementations could have significant potential
-      negative impact on population health by not avoiding events and avoiding harms for patients.
-      ANF reduces these erroneous implementations. Without a precise logical model for clinical data
+      negative impact on population health by not avoiding adverse events and harm to patients. ANF
+      reduces these erroneous implementations. Without a precise logical model for clinical data
       like ANF, comparability of eCQMs for payment programs and utility of CQM data for targeted
       quality improvement may be limited.</para>
   </section>
@@ -249,9 +250,9 @@ Would you want to state that the opposite could be true as well, where patients 
       two types, Performance of an action, finding, or observation and Request for Action, both
       clinical statement types with topics. ANF is compatible with other work in statement
       representation models such as the CIMI Clinical Statement approach, with its focus on more
-      traditional complex structured trees, whereas ANF focuses on structuring data in a way CDS
-      systems can extract data in an unambiguous way. ANF provides a single, normalized, form for
-      clinical statements that may be used to create assertional or procedural knowledge artifacts,
-      such as clinical decision support rules and clinical alerts.</para>
+      traditional complex structured trees, whereas ANF focuses on structuring data in a way that
+      CDS systems can extract data in an unambiguous way. ANF provides a single, normalized, form
+      for clinical statements that may be used to create assertional or procedural knowledge
+      artifacts, such as clinical decision support rules and clinical alerts.</para>
   </section>
 </chapter>

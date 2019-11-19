@@ -264,13 +264,7 @@ The problem with this approach is that expressions of this sort are restricted t
                         </entry>
                     </row>
                     <row>
-                        <entry>
-                            <itemizedlist>
-                                <listitem>
-                                    <para>requestedResult</para>
-                                </listitem>
-                            </itemizedlist>
-                        </entry>
+                        <entry/>
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">

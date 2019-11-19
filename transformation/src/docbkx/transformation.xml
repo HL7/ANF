@@ -45,7 +45,7 @@
         <title>Modeling Style</title>
 
         <para>Another variation that currently exists is the allowed design choices which can be
-            made by model authors. For example, a modeler may choose to model breath sounds, as
+            made by model authors. For example, a modeler may choose to model breath sounds as
             'breath sounds' with a coded result of 'rales', or as 'rales' with a result of
             'present'. Currently, organizations try to minimize this type of variation by
             documenting design choice rules in modeling "style guides". For instance, a common style
@@ -103,7 +103,7 @@
             across domains of clinical statements or even within a single domain of clinical
             statements. As presented, it will involve navigating disparate data structure trees and
             include variable representations to then generate a well-formed terminology expression.
-            It is most likely possible to target subdomains for consistent transformation, such as
+            It is most likely possible to target sub-domains for consistent transformation, such as
             all quantitative laboratory results, but in some cases, it may be that each detailed
             clinical model needs its own unique transformation. </para>
 
@@ -111,20 +111,35 @@
 
             <itemizedlist spacing='compact'>
                 <listitem>
-                    <para>One source instance will frequently be transformed to many ANF instances</para>
+                    <para>One complex statement/assessment may be transformed frequently be
+                    transformed to many ANF instances (see <xref linkend="complexExample"/>)</para>
                 </listitem>
                 <listitem>
-                    <para>Implied clinical meaning of some data structure and bound terminology must be transformed into complex post-coordinated SNOMED CT expression for inclusion as <glossterm>ANF Topic</glossterm></para>
+                    <para>Implied clinical meaning or mapping associated with data structures and
+                    bound terminology must be transformed into post-coordinated SNOMED CT expression
+                    for inclusion as <glossterm>ANF Topic</glossterm> (see <xref
+                        linkend="fhirTransform"/> as examples using explicit and implied semantics
+                    to normalize clinical statements.) </para>
                 </listitem>
             </itemizedlist>
 
 
         <para>Currently, there are three basic categories of errors that might be associated with
-            attempts at normalizing clinical statement representation. The first is error associated
-            with normalization of content of the terminology; the second is error associated with
-            normalization of the semantics of the terminology; and, third are errors that result
-            from ambiguous or misleading interaction between the structured clinical input and
-            presentation of compound terminology to clinician end-users. </para>
+            attempts at normalizing clinical statement representation:</para>
+        <itemizedlist>
+            <listitem>
+                <para> errors associated with normalization of content of the terminology; </para>
+            </listitem>
+            <listitem>
+                <para>errors associated with normalization of the semantics of the terminology;
+                </para>
+            </listitem>
+            <listitem>
+                <para>errors that result from ambiguous or misleading interaction between the
+                    structured clinical input and presentation of compound terminology to clinician
+                    end-users. </para>
+            </listitem>
+        </itemizedlist>
 
     </section>
 
@@ -515,7 +530,8 @@ Probably should define FHIM since it hasn&apos;t been used previously in the doc
             <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
-                        <para>Any to Any transformations versus point to point language mappings allow reuse of transformation models for different use cases.</para>
+                        <para>Any-to-Any transformations versus point to point language mappings
+                        allow reuse of transformation models for different use cases.</para>
                     </listitem>
                     <listitem>
                         <para>It minimizes change. If one MDMI Model changes (e.g. FHIR 4 to FHIR 5), this does not require changes to other existing MDMI Models such as CCDA 2.1, HL7 V2.8, or a proprietary model.</para>

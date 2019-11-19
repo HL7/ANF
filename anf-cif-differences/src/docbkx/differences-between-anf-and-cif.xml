@@ -84,7 +84,7 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <para>In the ANF model, the topic represents what is being observed and the result may only
             be a range of a quantity. No coded results are allowed. Not allowing coded results
             forces more of the semantics to be represented in the terminology model and limits the
-            ability to allow multiple different representations of the same data. In the example
+            ability to allow multiple different representations of the same data. In the examples
             below we see Retinal hemorrhage represented in ANF as either present or with the number
             of hemorrhages that exist.</para>
         <figure>
@@ -324,15 +324,15 @@ Also, the implications of a more complex seperation of concerns with respect to 
         <section>
             <title>Complex Systolic Blood Pressure Statement</title>
             <para>In this systolic blood pressure example the ANF model requires multiple statements
-                to accurately capture all parts of the narrative clinical statement. The ANF model
-                requires a clinical statement to be separated if the clinical statement could stand
-                on its own. For example, in the clinical statement "Systolic Blood Pressure 120
-                mmHg, taken on right brachial artery, using BP cuff adult size, patient in sitting
-                position for at least 5 minutes, urinated not more than 30 minutes prior to
-                measurement", the patient sitting position and urination parts of the statement are
-                recorded as separate associated clinical statements since they could both be
-                recorded as clinical statements on their own if they were not associated with the
-                blood pressure clinical statement.</para>
+                to accurately capture all parts of the narrative clinical statement. ANF may require
+                several statements to represent a single, complex CIMI statement.</para>
+            <para>For example, in the clinical statement "Systolic Blood Pressure 120 mmHg, taken on
+                right brachial artery, using BP cuff adult size, patient in sitting position for at
+                least 5 minutes, urinated not more than 30 minutes prior to measurement", the
+                patient sitting position and urination parts of the statement are recorded as
+                separate associated clinical statements since they could both be recorded as
+                clinical statements on their own if they were not associated with the blood pressure
+                clinical statement.</para>
             <para>The ANF model is much more expressive and is able to capture the timing
                 information for the position and urination that requires a separate precondition code to be created in the CIMI model.</para>
             <figure>

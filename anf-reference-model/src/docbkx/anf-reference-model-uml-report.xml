@@ -927,10 +927,21 @@
                                     value).</para>
                                 <para>For blood glucose measurement daily for 2 weeks, the measure
                                     semantic would be “258705008 |week (qualifier value)”.</para>
-                                <para>For quantity/count measure values, the measure semantic to
-                                    express a number of findings or phenomena described in the
-                                    ANFStatement.topic "3 retinal hemorrhages " would be "30766002 |
-                                    Quantitative (qualifier value)".</para>
+                                <para>The semantic is also used to specify that the result is a
+                                    countable quantity of findings or phenomena described in the
+                                        <emphasis>topic.</emphasis>
+                                </para>
+                                <itemizedlist>
+                                    <listitem>
+                                        <para>For example, if the <emphasis role="bold"
+                                                >topic</emphasis> is "retinal hemorrhages" with a
+                                                <emphasis role="bold">result</emphasis> of three (
+                                            i.e. [3,3]) the <emphasis role="bold">result</emphasis>
+                                            semantic of "countable quantity" specifies that
+                                                <emphasis>exactly three hemorrhages were
+                                                counted/observed</emphasis>.</para>
+                                    </listitem>
+                                </itemizedlist>
                                 <para>If Measure is used to represent date or time:</para>
                                 <itemizedlist>
                                     <listitem>
@@ -949,7 +960,7 @@
                 </tgroup>
             </informaltable>
         </section>
-        <section>
+        <section xml:id="repetition">
             <title xlink:href="repetitionClass">Repetition </title>
             <para>This class builds on <emphasis role="underline"><link linkend="measureClass"
                         >Measure</link></emphasis> and it is used to represent when an action is
@@ -978,7 +989,15 @@
                             <entry>
                                 <para>This required field is used to represent when a repeated
                                     action should begin (e.g. NOW). If it is not specified, a
-                                    default value of [0,INF) will be used. </para>
+                                    default value of [0,INF) will be used. <itemizedlist>
+                                        <listitem>
+                                            <para>NOW is represented as a interval of time values.
+                                                If the timing is precise the lower and upper bounds
+                                                may be identical; otherwise the interval would match
+                                                the precision of the original time observations.
+                                            </para>
+                                        </listitem>
+                                    </itemizedlist></para>
                                 <para/>
                             </entry>
                         </row>

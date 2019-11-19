@@ -155,8 +155,8 @@
             <mathphrase>
                 <itemizedlist xml:id="anf-editorialrule-prerequisites-content">
                     <listitem>
-                        <para>A prerequisite is separable from the topic and can be expressed as a
-                            stand-alone clinical statement </para>
+                        <para>A prerequisite must be separable from the topic and should be
+                            expressed as a stand-alone clinical statement.</para>
                     </listitem>
                     <listitem>
                         <para>A prerequisite is a state that must exist before something else can
@@ -270,6 +270,23 @@
                 </itemizedlist>
             </mathphrase>
         </editorial-rule>
+        <editorial-rule xml:id="anf-editorialrule-purpose"
+            xreflabel="Purpose indicates the reason for a request or performance">
+            <title>Purpose indicates the reason for a request or performance</title>
+            <mathphrase>
+                <itemizedlist xml:id="anf-editorialrule-purpose-content">
+                    <listitem>
+                        <para>The purpose is why an action was requested or performed. The purpose
+                            of the topic is typically some type of therapeutic intent, diagnostic
+                            intent, or both. There can be more than one therapeutic intent and
+                            diagnostic intent. While the purpose can also exist as a separate
+                            clinical statement, if you specifically want to state that a action was
+                            performed for a particular purpose, it must be represented using the
+                            purpose.</para>
+                    </listitem>
+                </itemizedlist>
+            </mathphrase>
+        </editorial-rule>
     </section>
     <section>
         <title>Performance Circumstance Editorial Rules</title>
@@ -280,7 +297,7 @@
                 <itemizedlist xml:id="anf-editorialrule-status-content">
                     <listitem>
                         <para>The status of a Performance of action can be specified with concepts
-                            such as (on hold, needed, rejected, etc). </para>
+                            such as "on hold", "completed", "rejected", etc. </para>
                     </listitem>
                 </itemizedlist>
             </mathphrase>
@@ -303,10 +320,10 @@
             <mathphrase>
                 <itemizedlist xml:id="anf-editorialrule-normalRange-content">
                     <listitem>
-                        <para>In PerformanceCircumstance, reference is the interval of values that
-                            are normal for the observation/finding described by the "topic" for this
-                            "subject. It refers to "normal" for the patient/subject with these
-                            conditions.</para>
+                        <para>In Performance Circumstance "referenceRange" is the interval of values
+                            that are normal for the observation/finding described by the "topic" for
+                            this "subject". It refers to "normal" for the patient/subject under
+                            specific conditions.</para>
                     </listitem>
                 </itemizedlist>
             </mathphrase>
@@ -337,42 +354,6 @@
                         <para>Repetition is used to represent when an action is requested for more
                             than a single occurrence. </para>
                     </listitem>
-                    <listitem>
-                        <para>Repetition is an optional component for a RequestCircumstance and
-                            contains five Measures that are used to further define the parameters of
-                            the Repetition: </para>
-                        <itemizedlist>
-                            <listitem>
-                                <para><emphasis>periodDuration:</emphasis> This required field is
-                                    used to represent how long a repetition should persist. If it is
-                                    not specified, a default value of [0,inf) will be used. e.g. for
-                                    3 weeks</para>
-                            </listitem>
-                            <listitem>
-                                <para><emphasis>periodStart:</emphasis> This required field is used
-                                    to represent when a repeated action should begin. If it is not
-                                    specified, a default value of [0,inf) will be used. e.g.
-                                    NOW</para>
-                            </listitem>
-                            <listitem>
-                                <para><emphasis>eventSeparation:</emphasis> This required field is
-                                    used to represent how long between actions. If it is not
-                                    specified, a default value of [0,inf) will be used. e.g. for 2
-                                    weeks</para>
-                            </listitem>
-                            <listitem>
-                                <para><emphasis>eventFrequency:</emphasis> This required field is
-                                    used to represent how often the action should occur. If it is
-                                    not specified, a default value of [0,inf) will be used. e.g. 3
-                                    times per week</para>
-                            </listitem>
-                            <listitem>
-                                <para><emphasis>eventDuration:</emphasis> This is an optional field
-                                    that is used to represent how long every action should last.
-                                </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
                 </itemizedlist>
             </mathphrase>
         </editorial-rule>
@@ -397,22 +378,5 @@
                 </itemizedlist>
             </mathphrase>
         </editorial-rule>
-        <editorial-rule xml:id="anf-editorialrule-purpose"
-            xreflabel="Purpose indicates the reason for a request">
-            <title>Purpose indicates the reason for a request</title>
-            <mathphrase>
-                <itemizedlist xml:id="anf-editorialrule-purpose-content">
-                    <listitem>
-                        <para>The purpose is why an action was requested. The purpose of the topic
-                            is typically some type of therapeutic intent, diagnostic intent, or
-                            both. There can be more than one therapeutic intent and diagnostic
-                            intent. While the purpose can also exist as a separate clinical
-                            statement, if you specifically want to state that a topic was performed
-                            for a particular purpose, it must be represented using the
-                            purpose.</para>
-                    </listitem>
-                </itemizedlist>
-            </mathphrase>
-        </editorial-rule>
-    </section>
+           </section>
 </section>

@@ -2,12 +2,12 @@
 <?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1" xml:id="fhirTransform">
     <title>FHIR resources as ANF Statements</title>
     <para>This section includes logical transformations to demonstrate how a variety of FHIR
         resources may be normalized to ANF Statements. The examples in this section demonstrate that
-        ANF can be used to aggregate any type of resource or profile.. </para>
-    <para>Processing instruction are represented using natural language,(e.g.
+        ANF can be used to aggregate any type of resource or profile..</para>
+    <para>Processing instructions are represented using natural language,(e.g.
             [<emphasis>append</emphasis>], [<emphasis>process interval</emphasis>]) and the"Data
         Elements" use path expressions using with <link xlink:href="http://hl7.org/fhirpath/"
             >FHIRpath</link>.</para>
@@ -271,7 +271,7 @@
                 </tgroup>
             </table>
         </para>
-        <para>. Implementers will use AllergyIntolerance resources to represent allergies. Both
+        <para>Implementers will use AllergyIntolerance resources to represent allergies. Both
             Condition and AllergyIntolerance resources can be normalized to a common form using
             ANF.</para>
         <table>
@@ -321,7 +321,7 @@
                         <entry align="left"><para> 408729009 |Finding context</para></entry>
                         <entry align="left"><para>"active"</para></entry>
                         <entry align="left"><para>circumstance. result</para></entry>
-                        <entry align="left"><para> [1,inf) Countable Quantity/present</para></entry>
+                        <entry align="left"><para> [1,inf) Countable Quantity</para></entry>
                     </row>
                     <row>
                         <entry align="left"><para>verificationStatus. coding</para></entry>

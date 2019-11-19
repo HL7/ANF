@@ -54,11 +54,11 @@ Statement rules (rules about how to create statements).
 Not just FHIR, but also CDMs like OMOP and PCORI are blundering in this way. Note that this criterion means that the different models not necessarily have the same structure, nor must rely on the same terminology, but that when you ‘look through’ each model+terminology, you are able to see the same reality at the same level of granularity. That means that both models and terminologies must be based on the same ontology.
 " id="plg_4bq_ljb"?><?oxy_comment_start author="Ioana" timestamp="20191020T135719-0400" comment="FHIR profiles happen to be the current CIMI model representation. " parentID="plg_4bq_ljb" mid="5"?>Patterns
                     should allow the consistent representation of information that is commonly
-                    shared across models. For instance, attribution and participation information
+                    shared across models. For instance, attribution and participant information
                     should be captured consistently. Failure to do so forces implementers to develop
                     heuristics to capture and normalize attribution information that is represented
-                    or extended differently in different classes (see <xref linkend="fhirObservation"/> 
-                    and <xref linkend="fhirCondition"/>).</para>
+                    or extended differently in different classes (see <xref
+                        linkend="fhirObservation"/> and <xref linkend="fhirCondition"/>).</para>
             </listitem><?oxy_comment_end?><?oxy_comment_end mid="5"?>
             <listitem>
                 <para><emphasis role="bold">No Semantic Overloading: </emphasis>Semantic overloading
@@ -100,11 +100,10 @@ Why would ‘measurement’ be a single concern? Clearly, as indicated here, the
                         Set:
                     </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111314-0400" comment="Comment from WC:
 This is too cryptic for me to understand. Any source suggestion?
-"?>Analysis
-                    Normal Form (ANF) clinical statements represent the minimum disjoint set of
-                    statement topic, result, and circumstance and may not be further
-                    specified.<?oxy_comment_end?>
-                </para>
+" flag="done"?>Analysis
+                    Normal Form (ANF) clinical statements contain the minimum disjoint set of data
+                    elements needed to specify a statement using data elements and structures (e.g.
+                    topic, result, and circumstance<?oxy_comment_end?>). </para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Clinical Statement Model Stability: </emphasis>Stable
@@ -135,22 +134,23 @@ But in line with previous principle, you have then to drag with you the entire m
                     refine encapsulation when composition is considered.</para>
             </listitem>
             <listitem>
-                <para><emphasis role="bold">No False Dichotomies:
-                    </emphasis><?oxy_comment_start author="kmaulden" timestamp="20190418T111659-0400" comment="Comment from WC:
+                <para><emphasis role="bold">No False Dichotomies: </emphasis>Dichotomies are created
+                    when data elements are not mutually-exclusive thus as allowing a certain
+                    clinical statement information to be conveyed in two ways. For example if family
+                    history to be represented in the topic field in addition to the subject of
+                    information field we would characterize it as a dichotomy. False dichotomies
+                    lead to arbitrary classification rules and result in ambiguity based on
+                    different assumptions about the domain. False dichotomies must be eliminated by
+                    ensuring that fields in the model cannot be used interchangeably.</para>
+                <?oxy_comment_start author="kmaulden" timestamp="20190418T111659-0400" comment="Comment from WC:
 Examples needed, although I would favor such an approach, one can’t argue that there is no ambiguity when a model is built such that disjointness of classes is to be asserted explicitly and when it isn’t, disjointness should not be assumed. Another issue is how this is impacted by temporality, e.g. ‘child’ and ‘adult’ are disjoint for human beings in the sense that at a time a human being is a child, it can’t be also an adult or the other way round. But cross time, every adult was at some earlier time a child. In the clinical notes of a longitudinal EHR the phrases ‘this child’ and ‘this adult’ may very well denote just one particular person.
-"?>Dichotomies
-                    are created when model fields are not completely disjoint (mutually exclusive),
-                    such as allowing family history to be represented in the topic field in addition
-                    to the subject of information field. False dichotomies lead to arbitrary
-                    classification rules and result in ambiguity based on different assumptions
-                    about the domain. False dichotomies must be eliminated by ensuring that fields
-                    in the model are mutually exclusive.</para>
+"?>
             </listitem><?oxy_comment_end?>
             <listitem>
                 <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
 "?>
                 <para><emphasis role="bold">Model Symmetry: </emphasis>Symmetric models are more
-                    consistent, and easier to comprehend and
+                    consistent, easier to comprehend, and
                     use<?oxy_comment_start author="kmaulden" timestamp="20190418T111756-0400" comment="Comment from WC:
 I don’t see why, or what the ‘symmetry’ would apply to.
 "?>.<?oxy_comment_end?>
@@ -166,6 +166,8 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </orderedlist>
 
     </section>
+    
+    <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <section>
         <title>Shared Modeling Guidelines</title>
         <para>All ANF statements share some common model components. The following modeling
@@ -584,5 +586,4 @@ I&apos;m confused. Previously and also on the next page it was said that ANF doe
         </editorial-rule> -->
     </section>
 
-    <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>

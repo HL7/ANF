@@ -132,7 +132,7 @@ Doing family history, donor statements using subject of information is now the n
                         1, and measureSemantic of "Countable quantity".</mathphrase>
                 </editorial-rule>
                 -->
-                <para>To describe the presence of absence of a phenomenon, an ANF statement requires
+                <para>To describe the presence or absence of a phenomenon, an ANF statement requires
                     a topic, timing, and a result defined based on editorial rules:</para>
 
                 <para>
@@ -157,7 +157,7 @@ Doing family history, donor statements using subject of information is now the n
                     <title>Diabetes Mellitus Present ANF Example</title>
                     <mediaobject>
                         <imageobject>
-                            <?oxy_comment_start author="kec" timestamp="20190722T172538-0700" comment="For topics where more than 1 is nonsensical, such as diabetes, maybe have the interval [1,1], and reserve the [1, inf) for situations where it is possible there is more than one, but we don&apos;t know how many there are... Dot, blot hemorrhage comes to mind: [1,inf), there is at least one dot blot hemorrhage. "?>
+                            <?oxy_comment_start author="kec" timestamp="20190722T172538-0700" comment="For topics where more than 1 is nonsensical, such as diabetes, maybe have the interval [1,1], and reserve the [1, inf) for situations where it is possible there is more than one, but we don&apos;t know how many there are... Dot, blot hemorrhage comes to mind: [1,inf), there is at least one dot blot hemorrhage. " flag="done"?>
                             <imagedata fileref="images/dm_anf.svg" format="SVG" scalefit="1"
                                 width="100%" contentdepth="100%"/><?oxy_comment_end?>
                         </imageobject>

@@ -54,7 +54,7 @@
                         <entry><para>81666-0</para></entry>
                         <entry><para>Wound number [Identifier]</para></entry>
                         <entry><para>1</para></entry>
-                        <entry><para> 1</para></entry>
+                        <entry><para><emphasis role="bold"> 1</emphasis></para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Wound
                             number]</para></entry>
                         <entry><para>[1,1] Wound instance</para></entry>
@@ -96,8 +96,8 @@
                         <entry><para><emphasis>11373-8</emphasis></para></entry>
                         <entry><para><emphasis>Injury cause</emphasis></para></entry>
                         <entry><para><emphasis>Device related</emphasis></para></entry>
-                        <entry namest="col4" nameend="col7"><para><emphasis>part of Statement 1
-                                    topic</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            stattement #2]</entry>
                     </row>
                     <row>
                         <entry><para>89252-1</para></entry>
@@ -129,22 +129,22 @@
                         <entry><para><emphasis>39111-0</emphasis></para></entry>
                         <entry><para><emphasis>Body site</emphasis></para></entry>
                         <entry><para><emphasis>Hip</emphasis></para></entry>
-                        <entry namest="col4" nameend="col7"><para><emphasis>part of Statement 1 -
-                                    topic</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            stattement #2]</entry>
                     </row>
                     <row>
                         <entry><para><emphasis>39112-8</emphasis></para></entry>
                         <entry><para><emphasis>Body location qualifier</emphasis></para></entry>
                         <entry><para><emphasis>Posterior</emphasis></para></entry>
-                        <entry namest="col4" nameend="col7"><para><emphasis>part of Statement 1 -
-                                    topic</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            stattement #2]</entry>
                     </row>
                     <row>
                         <entry><para><emphasis>20228-3</emphasis></para></entry>
                         <entry><para><emphasis>Anatomic part Laterality</emphasis></para></entry>
                         <entry><para><emphasis>Right</emphasis></para></entry>
-                        <entry namest="col4" nameend="col7"><para><emphasis>part of Statement -
-                                    topic 1</emphasis></para></entry>
+                        <entry namest="col4" nameend="col7">[the value is added to the topic of
+                            stattement #2]</entry>
                     </row>
                     <row>
                         <entry><para>72301-5</para></entry>
@@ -183,7 +183,7 @@
                         <entry><para> 9</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Wound base finding]-
                                 (Associated Morphology) [Necrosis]</para></entry>
-                        <entry><para>[1,inf] Countable Quantity</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
                         <entry><para> 1</para></entry>
                     </row>
                     <row>
@@ -204,7 +204,7 @@
                         <entry><para> 11</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Finding of wound base
                                 color]- (Has interpretation) [Brown]</para></entry>
-                        <entry><para>[1,inf] Countable Quantity</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
                         <entry><para> 9</para></entry>
                     </row>
                     <row>
@@ -242,7 +242,7 @@
                         <entry><para> 14</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Finding of wound edge
                                 color]- (Has interpretation) [Red]</para></entry>
-                        <entry><para>[1,inf] Countable Quantity</para></entry>
+                        <entry><para>[1,inf) Countable Quantity</para></entry>
                         <entry><para> 13</para></entry>
                     </row>
                     <row>
@@ -310,7 +310,7 @@
                         <entry><para> 19</para></entry>
                         <entry><para>[Observation procedure]- (Has focus) [Length of wound
                                 undermining]</para></entry>
-                        <entry><para>[2,2]Centimeters</para></entry>
+                        <entry><para>[2,2] Centimeters</para></entry>
                         <entry><para> 18</para></entry>
                     </row>
                     <row>
