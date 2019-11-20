@@ -69,11 +69,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic"
-                                            >[Provider]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -161,25 +164,26 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
                     </row>
                     <row>
                         <entry>
-                            <?oxy_comment_start author="kmaulden" timestamp="20190418T112624-0400" comment=" can we allow in the result, e.g. result status, like “pending”, or “complete” or “performed”? Maybe add a section somewhere on how we would represent “pending” or ‘in progress” – or do we?
- "?><?oxy_comment_end?>
                             <itemizedlist>
                                 <listitem>
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[5,inf) minute</para>
+                                            <para>[1,inf) Countable Quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -250,11 +254,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -266,7 +273,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[0,30] minute</para>
+                                            <para>[1, inf) Countable Quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -343,11 +350,14 @@
                                         <para>Triggers: Ø</para>
                                     </listitem>
                                     <listitem>
-                                        <para>Participants: <emphasis role="italic">[Subject of
-                                                record]</emphasis></para>
+                                        <para>Participants: <emphasis role="italic">[Healthcare
+                                                professional]</emphasis></para>
                                     </listitem>
                                     <listitem>
                                         <para>Priority: Ø</para>
+                                    </listitem>
+                                    <listitem>
+                                        <para>Status : completed</para>
                                     </listitem>
                                 </itemizedlist>
                             </entry>
@@ -433,11 +443,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professiona]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -520,11 +533,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -576,8 +592,8 @@
                                         >[Performance]</emphasis></emphasis></para>
                             <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
                             <para/>
@@ -607,11 +623,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -695,11 +714,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -782,11 +804,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -868,11 +893,14 @@
                                     <para>Triggers: Ø</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Participants: <emphasis role="italic">[Subject of
-                                            record]</emphasis></para>
+                                    <para>Participants: <emphasis role="italic">[Healthcare
+                                            professional]</emphasis></para>
                                 </listitem>
                                 <listitem>
                                     <para>Priority: Ø</para>
+                                </listitem>
+                                <listitem>
+                                    <para>Status : completed</para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
