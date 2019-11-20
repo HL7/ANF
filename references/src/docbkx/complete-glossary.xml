@@ -575,9 +575,10 @@
         <glossentry>
             <glossterm>Knowledge Architecture</glossterm>
             <glossdef>
-                <para>A layered healthcare informatics knowledge architecture; it enables a clean
-                    separation of concerns and contains the following layers: Architectural,
-                    Terminology, <link linkend="Statement-Model">Statement Model</link>, <link
+                <para>As defined in this document, a Knowledge Architecture promotes semantics
+                    interoperability and enables a clean separation of concerns along the following
+                    layers: Foundational Architecture, Terminology Knowledge, <link
+                        linkend="Statement-Model">Statement Model</link>, <link
                         linkend="Assertional-Model">Assertional Knowledge</link>, and <link
                         linkend="Procedural-Knowledge">Procedural Knowledge</link>. </para>
                 <para><link linkend="Analysis-Normal-Form">ANF</link> is part of the Statement
