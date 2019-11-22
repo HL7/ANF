@@ -3,7 +3,7 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <section xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Examples of Performance Clinical Statements</title>
+    <title>Examples of Performance ANF Statements</title>
     <para> </para>
     <para>For the examples in the following chapters, the focus has been to illustrate the ANF
         Model, using easy and intuitive examples, rather than focus on the correctness of the
@@ -27,16 +27,13 @@
                                         cuff;</emphasis></emphasis> patient in sitting position for
                                 at least 5 minutes; urinated not more than 30 minutes prior to
                                 measurement</para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -63,17 +60,8 @@
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -104,13 +92,8 @@
                             <para><emphasis>[UUID]</emphasis><emphasis role="bold"><emphasis
                                         role="italic">(Table: Associated Clinical Statement
                                         2)</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z Statement id: <emphasis>[UUID]</emphasis></para>
-                            <para/>
                             <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
@@ -131,16 +114,13 @@
                                         in sitting position for at least 5
                                     minutes</emphasis></emphasis>; urinated not more than 30 minutes
                                 prior to measurement</para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Has focus) [Sitting position
@@ -158,17 +138,8 @@
                                     <para>Timing: ≥ 5 min. prior to statement time </para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -192,15 +163,9 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: <emphasis>[UUID]</emphasis></para>
-                            <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z</para>
                             <para>Statement id: fc48551f-876a-42c1-b179-3169e3748332</para>
-                            <para/>
                             <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
@@ -221,16 +186,13 @@
                                     <emphasis role="bold"><emphasis role="italic">urinated not more
                                         than 30 minutes prior to
                                 measurement</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Has focus) [Micturition
@@ -248,17 +210,8 @@
                                     <para>Timing: ≤ 30 min. prior to statement time </para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -273,7 +226,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[1, inf) Countable Quantity</para>
+                                            <para>[1, inf) Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -282,15 +235,9 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: <emphasis>[UUID]</emphasis></para>
-                            <para/>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis></para>
                             <para>Statement id: df478857-2eae-40b2-909f-68ef0d0b9eb5</para>
-                            <para/>
                             <para>Subject of record ID:<emphasis>[UUID]</emphasis></para>
                         </entry>
                     </row>
@@ -312,16 +259,13 @@
                                 <para><emphasis role="bold">Narrative</emphasis>: <emphasis
                                         role="bold"><emphasis role="italic">Pulse Rate 68 bpm, taken
                                             by pulse oximeter</emphasis></emphasis></para>
-                                <para/>
                                 <para>Statement type:<emphasis role="underline"><emphasis
                                             role="italic">[Performance]</emphasis></emphasis></para>
-                                <para/>
                                 <para>Subject of info: <emphasis role="italic">[Subject of
-                                        record]</emphasis></para>
-                                <para> </para>
+                                        record]</emphasis>
+                                </para>
                                 <para>Authors: <emphasis role="italic">[Healthcare
                                         professional]</emphasis></para>
-                                <para/>
                                 <para>Topic: <emphasis role="italic">[Observation
                                         procedure]-</emphasis></para>
                                 <para><emphasis role="italic">(Method) [Examination -
@@ -344,17 +288,8 @@
                                                 format]</emphasis></para>
                                     </listitem>
                                     <listitem>
-                                        <para>Purposes: Ø</para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Triggers: Ø</para>
-                                    </listitem>
-                                    <listitem>
                                         <para>Participants: <emphasis role="italic">[Healthcare
                                                 professional]</emphasis></para>
-                                    </listitem>
-                                    <listitem>
-                                        <para>Priority: Ø</para>
                                     </listitem>
                                     <listitem>
                                         <para>Status : completed</para>
@@ -378,13 +313,8 @@
                         </row>
                         <row>
                             <entry namest="col1" nameend="col2">
-                                <para>Associations: Ø</para>
                                 <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                         format]</emphasis></para>
-                                <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                    </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                    2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis>
-                                </para>
                                 <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                             </entry>
                         </row>
@@ -407,16 +337,12 @@
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Patient has thromboembolism
                                         history</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
                                     record]</emphasis></para>
-                            <para> </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -437,17 +363,8 @@
                                         time</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professiona]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -471,12 +388,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID] </emphasis></para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -497,16 +410,13 @@
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Diabetes Mellitus
                                         present</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -527,17 +437,8 @@
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -561,12 +462,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID] </emphasis></para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -587,16 +484,13 @@
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Diabetes Mellitus not
                                         present</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
                                     record]</emphasis>
                             </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -617,17 +511,8 @@
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -651,12 +536,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
-                                    format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: <emphasis>[UUID]</emphasis>
+                                    format]</emphasis>
                             </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
@@ -666,7 +547,7 @@
         </table>
     </section>
     <section>
-        <title><anchor xml:id="table_perform_3dbh"/>Three Retinal Hemorrhages</title>
+        <title><anchor xml:id="table_perform_3dbh"/>Retinal Hemorrhages Counted</title>
         <table>
             <title>Three Retinal Hemorrhages Performance Clinical Statement</title>
             <tgroup cols="2">
@@ -676,18 +557,15 @@
                     <row>
                         <entry namest="col1" nameend="col2">
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
-                                        ><emphasis role="italic">Three retinal
-                                        hemorrhages</emphasis></emphasis></para>
-                            <para/>
+                                        ><emphasis role="italic">Three retinal hemorrhages
+                                        observed</emphasis></emphasis></para>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
-                                    record]</emphasis></para>
-                            <para> </para>
+                                    record]</emphasis>
+                            </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -708,17 +586,8 @@
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -733,7 +602,7 @@
                                     <para>Result:</para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>[3,3] Countable Quantity</para>
+                                            <para>[3,3] Countable quantity</para>
                                         </listitem>
                                     </itemizedlist>
                                 </listitem>
@@ -742,12 +611,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -768,16 +633,12 @@
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Retinal hemorrhage
                                         present</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Subject of
                                     record]</emphasis></para>
-                            <para> </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -798,17 +659,8 @@
                                             format]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -832,12 +684,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>
@@ -858,16 +706,12 @@
                             <para><emphasis role="bold">Narrative</emphasis>: <emphasis role="bold"
                                         ><emphasis role="italic">Family history (mother) of colon
                                         cancer</emphasis></emphasis></para>
-                            <para/>
                             <para>Statement type:<emphasis role="underline"><emphasis role="italic"
                                         >[Performance]</emphasis></emphasis></para>
-                            <para/>
                             <para>Subject of info: <emphasis role="italic">[Mother of
                                     subject]</emphasis></para>
-                            <para> </para>
                             <para>Authors: <emphasis role="italic">[Healthcare
                                     professional]</emphasis></para>
-                            <para/>
                             <para>Topic: <emphasis role="italic">[Observation
                                 procedure]-</emphasis></para>
                             <para><emphasis role="italic">(Method) [Examination -
@@ -887,17 +731,8 @@
                                     <para>Timing: [prior to statement time]</para>
                                 </listitem>
                                 <listitem>
-                                    <para>Purposes: Ø</para>
-                                </listitem>
-                                <listitem>
-                                    <para>Triggers: Ø</para>
-                                </listitem>
-                                <listitem>
                                     <para>Participants: <emphasis role="italic">[Healthcare
                                             professional]</emphasis></para>
-                                </listitem>
-                                <listitem>
-                                    <para>Priority: Ø</para>
                                 </listitem>
                                 <listitem>
                                     <para>Status : completed</para>
@@ -921,12 +756,8 @@
                     </row>
                     <row>
                         <entry namest="col1" nameend="col2">
-                            <para>Associations: Ø</para>
                             <para>Statement time: <emphasis role="italic">[ISO 8601 date/time
                                     format]</emphasis></para>
-                            <para>Stamp coordinate: <emphasis role="italic">[Solor Module]
-                                </emphasis>, <emphasis role="italic">[Release Path] </emphasis>,
-                                2007-04-05T14:30Z, Statement id: [<emphasis>UUID</emphasis>] </para>
                             <para>Subject of record ID:[<emphasis>UUID</emphasis>]</para>
                         </entry>
                     </row>

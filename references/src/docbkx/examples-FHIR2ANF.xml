@@ -6,7 +6,7 @@
     <title>FHIR resources as ANF Statements</title>
     <para>This section includes logical transformations to demonstrate how a variety of FHIR
         resources may be normalized to ANF Statements. The examples in this section demonstrate that
-        ANF can be used to aggregate any type of resource or profile..</para>
+        ANF can be used to aggregate any type of resource or profile.</para>
     <para>Processing instructions are represented using natural language,(e.g.
             [<emphasis>append</emphasis>], [<emphasis>process interval</emphasis>]) and the"Data
         Elements" use path expressions using with <link xlink:href="http://hl7.org/fhirpath/"

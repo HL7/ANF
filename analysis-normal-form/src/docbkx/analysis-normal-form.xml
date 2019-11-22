@@ -127,34 +127,23 @@ What does that mean for the table example I gave? Clearly it changes, which of t
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Reusability:</emphasis> Architectural patterns should
-                    <?oxy_comment_start author="kmaulden" timestamp="20190418T111607-0400" comment="Comment from WC:
-But in line with previous principle, you have then to drag with you the entire module in which the class resides. Examples please of what you mean.
-"?>encourage
-                    class reusability where possible.<?oxy_comment_end?> Reusability may further
-                    refine encapsulation when composition is considered.</para>
+                    encourage class reusability where possible. Reusability may further refine
+                    encapsulation when composition is considered.</para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">No False Dichotomies: </emphasis>Dichotomies are created
                     when data elements are not mutually-exclusive thus as allowing a certain
                     clinical statement information to be conveyed in two ways. For example if family
-                    history to be represented in the topic field in addition to the subject of
-                    information field we would characterize it as a dichotomy. False dichotomies
-                    lead to arbitrary classification rules and result in ambiguity based on
-                    different assumptions about the domain. False dichotomies must be eliminated by
-                    ensuring that fields in the model cannot be used interchangeably.</para>
-                <?oxy_comment_start author="kmaulden" timestamp="20190418T111659-0400" comment="Comment from WC:
-Examples needed, although I would favor such an approach, one can’t argue that there is no ambiguity when a model is built such that disjointness of classes is to be asserted explicitly and when it isn’t, disjointness should not be assumed. Another issue is how this is impacted by temporality, e.g. ‘child’ and ‘adult’ are disjoint for human beings in the sense that at a time a human being is a child, it can’t be also an adult or the other way round. But cross time, every adult was at some earlier time a child. In the clinical notes of a longitudinal EHR the phrases ‘this child’ and ‘this adult’ may very well denote just one particular person.
-"?>
-            </listitem><?oxy_comment_end?>
+                    history were represented in the <emphasis>topic</emphasis> field in addition to
+                    the <emphasis>subject of information</emphasis> field we would characterize it
+                    as a dichotomy. False dichotomies lead to arbitrary classification rules and
+                    result in ambiguity based on different assumptions about the domain. False
+                    dichotomies must be eliminated by ensuring that fields in the model cannot be
+                    used interchangeably.</para>
+            </listitem>
             <listitem>
-                <?oxy_comment_start author="kmaulden" timestamp="20190418T111741-0400" comment="This needs more elaboration; what is “model symmetry”? Joey?
-"?>
                 <para><emphasis role="bold">Model Symmetry: </emphasis>Symmetric models are more
-                    consistent, easier to comprehend, and
-                    use<?oxy_comment_start author="kmaulden" timestamp="20190418T111756-0400" comment="Comment from WC:
-I don’t see why, or what the ‘symmetry’ would apply to.
-"?>.<?oxy_comment_end?>
-                </para><?oxy_comment_end?>
+                    consistent, easier to comprehend, and use. </para>
             </listitem>
             <listitem>
                 <para><emphasis role="bold">Iterative development and validation of model using use
@@ -166,8 +155,9 @@ I don’t see why, or what the ‘symmetry’ would apply to.
         </orderedlist>
 
     </section>
-    
+    <!-- Editorial rules 
     <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+     -->
     <section>
         <title>Shared Modeling Guidelines</title>
         <para>All ANF statements share some common model components. The following modeling

@@ -33,14 +33,9 @@
     <xi:include href="measure-and-result.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     -->
     <xi:include href="anf-reference-model-uml-report.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <!-- examples-of-performance.xml is used in a previous chapter. -->
-    <!--    
-    <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-      
-    <xi:include href="examples-of-performance.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="examples-of-modeling-request.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="examples-of-modeling-CCDA.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="examples-of-modeling-KNARTS.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-    -->
+    <!-- Editorial rules  -->
+    <xi:include href="editorial-rules.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    
+        
+   
 </chapter>

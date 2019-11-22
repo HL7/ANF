@@ -507,9 +507,13 @@
             </figure>
 
 
-            <para>
-                There is a project underway in the OMG to extend the MDMI SEER. The Business Elements in the MDMI SEER are <glossterm baseform="Pre-coordinated concept">pre-coordinated semantic concepts</glossterm> represented in industry standard healthcare ontologies and terminologies. The project is using the ANF Clinical Statement Model as a Reference Model to develop a semantic model that can precisely define the meaning of the Business Element in a detailed, structured, unambiguous, computable formalism.
-            </para>
+            <para> There is a project underway in the OMG to extend the MDMI SEER. The Business
+                Elements in the MDMI SEER are <glossterm baseform="Pre-coordinated concept"
+                    >pre-coordinated semantic concepts</glossterm> represented in industry standard
+                healthcare ontologies and terminologies. The project is using the ANF Statement
+                Model as a Reference Model to develop a semantic model that can precisely define the
+                meaning of the Business Element in a detailed, structured, unambiguous, computable
+                formalism. </para>
 
             <para>An open source implementation of MDMI started in the Open Healthcare Tools
                 organization which built an MDMI compliant tooling for healthcare. The MDMI Open
@@ -530,7 +534,7 @@ Probably should define FHIM since it hasn&apos;t been used previously in the doc
             <para><emphasis role="bold">Advantages</emphasis></para>
                 <itemizedlist spacing="compact">
                     <listitem>
-                        <para>Any-to-Any transformations versus point to point language mappings
+                        <para>Any-to-Any transformations versus point-to-point language mappings
                         allow reuse of transformation models for different use cases.</para>
                     </listitem>
                     <listitem>

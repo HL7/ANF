@@ -374,9 +374,6 @@
                         <para>If a requestedResult is unspecifiedt, the value is set to [0, inf)
                             with a result semantic of "Countable quantity". </para>
                     </listitem>
-                    <listitem>
-                        <para/>
-                    </listitem>
                 </itemizedlist>
             </mathphrase>
         </editorial-rule>
