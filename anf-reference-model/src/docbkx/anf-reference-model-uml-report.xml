@@ -32,11 +32,9 @@
     </figure>
     <section xml:id="ANFStatement">
         <title>ANFStatement </title>
-        <para>This is the main class which describes a clinical statement. Most importantly it
-            contains the <emphasis role="bold">'topic' </emphasis>which describes what this
-            statement is about, and the <emphasis role="bold">'circumstance' </emphasis>which will
-            contain either request or result information regarding the <emphasis role="bold"
-                >'topic'</emphasis>.</para>
+        <para>This is the main class of the ANF reference model and it describes the structure of a
+            normalized clinical statement that complies with ANF. </para>
+        <para/>
         <informaltable>
             <tgroup cols="3">
                 <colspec colnum="1" colname="col1" colwidth="1.93*"/>
@@ -58,7 +56,7 @@
                             <para>[1...1]</para>
                         </entry>
                         <entry>
-                            <para>Unique Identifier of the statement.</para>
+                            <para>Unique identifier of the statement.</para>
                             <para/>
                         </entry>
                     </row>
@@ -92,7 +90,7 @@
                                     <para>interval.includeLowerBound = true</para>
                                 </listitem>
                                 <listitem>
-                                    <para>semantic = Seconds | 257997001</para>
+                                    <para>semantic = Seconds, Unix Epoch Time</para>
                                 </listitem>
                             </itemizedlist>
                             <para>The ANFStatement separates the timing related to documenting a
