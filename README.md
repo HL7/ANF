@@ -6,17 +6,19 @@
 
 # Official Release
 The official release is available in the **document-storage** folder:
--https://github.com/HL7/ANF/blob/master/document-storage/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf
+
+> https://github.com/HL7/ANF/blob/master/document-storage/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf
 
 ## **Developer Guidance**
 
 >All Git functionality in this guide is based on the **Fork Git** client (https://git-fork.com/). 
 
-**Prerequisite: You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build.** 
+**Prerequisite:**
+You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build.** 
 
 ### Steps to edit, add, and update content for the ANF specification:
 
-**1.	If it is your first time working with the HL7 ANF repository you must start by cloning the repository. Otherwise, you must pull to get the most recent version of the repository.**
+**1.	If it is your first time working with the HL7 ANF repository you must start by cloning the repository.** Otherwise, you must pull to get the most recent version of the repository.**
 
 To clone the repository, follow the following steps:
 1.	Open Fork
@@ -59,6 +61,6 @@ Verify that you changes have been pushed successfully by clicking on “All Comm
 2.	Perform a “mvn clean install” as described in step 4 above to build the PDF document.
 3.	Go to the ANF root repository and navigate to *ballot-root/target folder*.
 4. Unzip the “ballot-root-0.13-SNAPSHOT-pdf.zip”  
- dNavigate to org.hl7 ->  ballot-root
-5.	Open the “hl7-anf-ballot-root.pdf” document.    
+5. Navigate to org.hl7 ->  ballot-root
+6.	Open the “hl7-anf-ballot-root.pdf” document.    
 
