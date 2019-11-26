@@ -85,7 +85,7 @@ The problem with this approach is that expressions of this sort are restricted t
                             <itemizedlist>
                                 <listitem>
                                     <para>requestedResult: <emphasis>[1,inf) Countable
-                                            Quantity</emphasis></para>
+                                            quantity</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -163,7 +163,7 @@ The problem with this approach is that expressions of this sort are restricted t
                             <itemizedlist>
                                 <listitem>
                                     <para>requestedResult: <emphasis>[3,3] Countable
-                                            Quantity</emphasis></para>
+                                            quantity</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                         </entry>
@@ -199,8 +199,8 @@ The problem with this approach is that expressions of this sort are restricted t
                             </para>
                             <para>Authors: <emphasis role="italic">[Healthcare professional]
                                 </emphasis></para>
-                            <para>Topic: <emphasis role="italic">[Plain chest
-                                X-ray]</emphasis></para>
+                            <para>Topic: <emphasis>[Observation procedure]-[Plain chest
+                                    X-ray</emphasis>]</para>
                         </entry>
                     </row>
                     <row>
@@ -227,7 +227,7 @@ The problem with this approach is that expressions of this sort are restricted t
                                         >[Routine]</emphasis></para>
                                 </listitem>
                                 <listitem>
-                                    <para>requestedResult: <emphasis>[0, inf) Countable Quantity
+                                    <para>requestedResult: <emphasis>[1, 1] Countable quantity
                                         </emphasis>
                                     </para>
                                 </listitem>
