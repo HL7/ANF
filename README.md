@@ -1,50 +1,41 @@
-This repository contains the contents for the HL7 ANF ballot submission.
 
-The contents of this repository are in draft format and may be published in another format.
+# Analysis Normal Form (ANF), Release 1
 
-Below is the SOP for editing content in DocBook:
+(approved during the September 2019 ballot cycle, published: TBD)
 
-# **ANF Ballot GitHub Repository SOP**
 
-*Notes: All Git functionality in this guide is described using the Fork Git GUI. It is recommended but not required to use Fork to interface with Git and GitHub. You may use other Git GUI’s or the command line if you prefer. Additionally, all XML editing is described for use of the Oxygen XML editor. Use of this editing tool is once again not required, but recommended.*
+# Official Release
+The official release is available in the **document-storage** folder:
 
-**Prerequisite: You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build.** 
+> https://github.com/HL7/ANF/blob/master/document-storage/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf
 
-## Steps to edit, add, and update content for the ANF Ballot:
+## **Developer Guidance**
 
-**1.	If it is your first time working with the ANF Ballot repository you must start by cloning the repository. Otherwise, you must pull to get the most recent version of the repository.**
+>All Git functionality in this guide is based on the **Fork Git** client (https://git-fork.com/). 
+
+**Prerequisite:**
+You must have java and maven installed. Fork and Oxygen are recommended. You can find installation instruction in the “Installation Guide for DocBook development” document. After installing, please do not update your Java version from Java 8. This could potentially cause problems with the PDF build.** 
+
+### Steps to edit, add, and update content for the ANF specification:
+
+**1.	If it is your first time working with the HL7 ANF repository you must start by cloning the repository.** Otherwise, you must pull to get the most recent version of the repository.**
 
 To clone the repository, follow the following steps:
-a.	Open Fork
-b.	Select File -> Clone…
-c.	Place “https://github.com/HL7/ANF.git” in the “Repository URL” field.
-d.	Select where you would like your local repository to live in the “Parent Folder” field – if you have already set up a parent folder for another repository (i.e C:\code), please consider using the same folder for consistency. 
-e.	In the name field, enter the name for your local repository (i.e. how the repository will appear in your file explorer). I suggest something like “ANF Ballot”
-f.	Click “Clone”
+1.	Open Fork
+2.	Select File -> Clone…
+3.	Place “https://github.com/HL7/ANF.git” in the “Repository URL” field.
+4.	Select where you would like your local repository to live in the “Parent Folder” field – if you have already set up a parent folder for another repository (i.e C:\code), please consider using the same folder for consistency. 
+5.	In the name field, enter the name for your local repository (i.e. how the repository will appear in your file explorer) using a name like “ANF Specifcation”.
+6.	Click “Clone”
 
 If you already have a local version of the repository, follow the steps below:
-a.	Open Fork
-b.	The repository might already be open in the Fork GUI. If so, you will see the name of the repository (from step e above) in a tab on the top portion of the screen. Click on the tab and the skip to step e below. If the repository is not already open, proceed to step c.
-c.	Select File -> Open Repository…
-d.	Navigate to the directory that you cloned the repository and click “Select folder”
-e.	Once the repository is open Fork, click the “Pull” button in the upper left (the arrow that is pointing downward      )
+1.	Open Fork
+2.	The repository might already be open in the Fork GUI. If so, you will see the name of the repository (from step e above) in a tab on the top portion of the screen. Click on the tab and the skip to step e below. If the repository is not already open, proceed to step c.
+3.	Select File -> Open Repository…
+4.	Navigate to the directory that you cloned the repository and click “Select folder”
+5.	Once the repository is open Fork, click the “Pull” button in the upper left (the arrow that is pointing downward      )
 
-**2.	Locate the appropriate XML file that you would like to make your changes in.** Each XML file corresponds to a different section of the repository. The “root” xml file is called “hl7-anf-ballot-root.xml” and is in the “ballot-root” module. Within this file, you will find a reference to other XML files for each section of the ANF Ballot document.
-
-The current sections can be found in the following XML files:
-•	Introduction: introduction/src/docbkx/introduction.xml
-•	Introduction to Clinical Statements: clinical-statements/src/docbkx/clinical-statements-intro.xml
-•	ANF Clinical Statements: anf-clinical-statements/src/docbkx/anf-clinical-statements.xml
-•	Clinical Input Form: clinical-input-form/src/docbkx/clinical-input-form.xml
-•	Analysis Normal Form: analysis-normal-form/src/docbkx/analysis-normal-form.xml
-•	ANF Reference Model: anf-reference-model/src/docbkx/anf-reference-model.xml
-•	Transformation: transformation/src/docbkx/transformation.xml
-•	Differences between ANF and CIF: anf-cif-differences/src/docbkx/differences-between-anf-and-cif.xml
-•	Acknowledgements: acknowledgements/src/docbkx/acknowledgements.xml
-•	Bibliography:  references/src/docbkx/bibliography.xml
-•	Glossary:  references/src/docbkx/glossary.xml
-
-Note: If you wish to create a completely new section of the document, you should create a new XML file and reference this file from the existing root xml file. Please contact Kyle Maulden and Benson Chang, at kmaulden@deloitte.com and bechang@deloitte.com, for assistance.
+**2.	Locate the appropriate XML file that you would like to make your changes in.** Each XML file corresponds to a different section of the repository. The “root” xml file is called “hl7-anf-ballot-root.xml” and is in the “ballot-root” module. Within this file, you will find a reference to other XML files for each section of the ANF document.
 
 **3.	Make any changes that you would like, by adding, editing, or deleting existing content in the XML file.** This can be done by editing in Oxygen’s Author (WYSIWYG) view or Text (raw XML) view. Save your work.
 
@@ -64,14 +55,12 @@ Once all desired files have been staged, enter a commit subject and description 
 
 Verify that you changes have been pushed successfully by clicking on “All Commits” on the left hand part of the screen. You should see your commit description and name on the top row with both the red “master” tag and the green “origin/master” tag. This indicates that your local version of the repository is in sync with what is on GitHub and that all changes have been made public.
 
-## **Steps to obtain the PDF output from the ANF Ballot repository:**
+### Steps to build the PDF output from the ANF repository:
 
 1.	Start by obtaining a local copy of the most recent version of the repository. This process is described in step 1 above.
 2.	Perform a “mvn clean install” as described in step 4 above to build the PDF document.
-3.	Navigate to the appropriate folder
-a.	Find the ANF Ballot repository in your local file explorer
-b.	Then go to ballot-root  >  target
-c.	Unzip the “ballot-root-0.13-SNAPSHOT-pdf.zip”  
-d.	Navigate to org.hl7  >  ballot-root
-4.	Open the “hl7-anf-ballot-root.pdf” document with you favorite PDF viewer.    
+3.	Go to the ANF root repository and navigate to *ballot-root/target folder*.
+4. Unzip the “ballot-root-0.13-SNAPSHOT-pdf.zip”  
+5. Navigate to org.hl7 ->  ballot-root
+6.	Open the “hl7-anf-ballot-root.pdf” document.    
 
