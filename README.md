@@ -1,13 +1,13 @@
 
 # Analysis Normal Form (ANF), Release 1
 
-(approved during the September 2019 ballot cycle, published: TBD)
+(approved during the September 2019 ballot cycle, published: January 2020)
 
 
 # Official Release
 The official release is available in the **document-storage** folder:
 
-> https://github.com/HL7/ANF/blob/master/document-storage/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf
+> https://github.com/HL7/ANF/blob/master/document-storage/HL7_CIMI_LM_ANF_R1_INFORM_2020JAN.pdf
 
 ## **Developer Guidance**
 
